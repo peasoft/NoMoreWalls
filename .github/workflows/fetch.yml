@@ -16,9 +16,10 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+    - name: 安装依赖
+      run: pip install requests
     - name: 执行任务
-      run: |
-        python ./fetch.py
+      run: python ./fetch.py
       
     - name: 提交更改
       run: |                 
