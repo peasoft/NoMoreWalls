@@ -1,0 +1,33 @@
+name: Fetch
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 表达式生成  https://crontab.guru/
+    - cron: '0 8 * * *'
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 迁出代码
+      uses: actions/checkout@v2
+    - name: 安装Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: 执行任务
+      run: |
+        python ./fetch.py
+      
+    - name: 提交更改
+      run: |                 
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git pull origin master
+        git add list*
+        git commit -m "$(date '+%Y-%m-%d')抓取节点"
+    - name: 推送更改
+      uses:  ad-m/github-push-action@master
+      with:
+        branch: master
