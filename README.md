@@ -7,7 +7,6 @@
 添加Base64订阅：
 
 - [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
-
 - [加速链接](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 
 ## 免责声明
