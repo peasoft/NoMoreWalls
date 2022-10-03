@@ -3,32 +3,34 @@ name: Fetch
 on:
   workflow_dispatch:
   schedule:
-    # ±í´ïÊ½Éú³É  https://crontab.guru/
-    - cron: '0 8 * * *'
+    # è¡¨è¾¾å¼ç”Ÿæˆ  https://crontab.guru/
+    - cron: '0 0 * * *'
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-    - name: Ç¨³ö´úÂë
+    - name: è¿å‡ºä»£ç 
       uses: actions/checkout@v2
-    - name: °²×°Python
+    - name: å®‰è£…Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-    - name: °²×°ÒÀÀµ
+    - name: è®¾ç½®æ—¶åŒº
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: å®‰è£…ä¾èµ–
       run: pip install requests
-    - name: Ö´ĞĞÈÎÎñ
+    - name: æ‰§è¡Œä»»åŠ¡
       run: python ./fetch.py
       
-    - name: Ìá½»¸ü¸Ä
+    - name: æäº¤æ›´æ”¹
       run: |                 
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
         git add list*
-        git commit -m "$(date '+%Y-%m-%d')×¥È¡½Úµã"
-    - name: ÍÆËÍ¸ü¸Ä
-      uses:  ad-m/github-push-action@master
+        git commit -m "$(date '+%Y-%m-%d')æŠ“å–èŠ‚ç‚¹"
+    - name: æ¨é€æ›´æ”¹
+      uses: ad-m/github-push-action@master
       with:
         branch: master
