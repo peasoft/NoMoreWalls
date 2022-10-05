@@ -46,7 +46,25 @@ try:
     sub_url = re.search(r'<p><strong>这是v2订阅地址</strong>：(.*?)</p>',res.text).groups()[0]
 
     res = requests.get(sub_url,headers=headers)
-    merge += str(base64.b64decode(res.text.encode()),'utf-8').strip().split('\r\n')
+    merge += str(base64.b64decode(res.text.encode()),'utf-8').strip().replace('\r\n','\n').split('\n')
+except:
+    traceback.print_exc()
+
+# ========== 抓取 JACKUSR2089/v2ray-subscribed 的节点 ==========
+try:
+    res = requests.get("https://api.github.com/repos/JACKUSR2089/v2ray-subscribed/contents").json()
+    subs = {}
+
+    for file in res:
+        name = re.match(r"(\d+)(-|\.)(\d+)(-|\.)(\d+)",file['name'])
+        if name:
+            subs[name.group()] = int(name.groups()[0])*10000+int(name.groups()[2])*100+int(name.groups()[4])
+
+    subs = sorted(subs.items(),key=lambda k:k[1])
+    sub_url = "https://raw.githubusercontent.com/JACKUSR2089/v2ray-subscribed/master/"+subs[-1][0]
+
+    res = requests.get(sub_url)
+    merge += str(base64.b64decode(res.text.encode()),'utf-8').strip().replace('\r\n','\n').split('\n')
 except:
     traceback.print_exc()
 
