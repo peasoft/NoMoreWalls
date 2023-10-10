@@ -18,7 +18,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: '0,2,4,6,7,8,15,20,29,39|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz... #2'
+  name: '0,2,4,6,7,8,15,20,39|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz... #2'
   network: ws
   port: 30000
   server: 45.199.138.152
@@ -139,7 +139,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 6,7,23,24,29,36|V1C | 美国 01
+  name: 6,7,23,24,36|V1C | 美国 01
   network: ws
   port: 31235
   server: kr-cdn-6273819.starnetcn.top
@@ -201,11 +201,10 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 6,7,15,29,39|🇺🇸_US_美国->🇱🇺_LU_卢森堡_33
+  name: 6,7,15,39|🇺🇸_US_美国->🇱🇺_LU_卢森堡_33
   network: ws
   port: 2052
   server: 162.159.152.6
-  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -215,19 +214,41 @@ proxies:
     headers:
       Host: lu.wx.alue.link
     path: /
-- alterId: 0
-  cipher: auto
-  name: 10|中转 🇨🇳 China 01 @nodpai
-  network: ws
-  port: 19709
-  server: 123.249.101.15
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: '10,17|中转 🇦🇺 Australia 01 @nodpai #1'
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10704
+  server: yidong.liulangdiqiu.cyou
+  type: ss
   udp: true
-  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
-  ws-opts:
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 10,17|中转 🇫🇷 France 02 @nodpai
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10716
+  server: yidong.liulangdiqiu.cyou
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 10|中转 🇸🇪 Sweden 01 @nodpai
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10719
+  server: yidong.liulangdiqiu.cyou
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 10|中转 🇸🇬 Singapore 02 @nodpai
+  password: 66bcb880-6b98-4861-8b93-43e3bedbf7a4
+  port: 17345
+  server: aliyun.ws
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 10|中转 🇿🇦 South Africa 01 @nodpai
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10723
+  server: yidong.liulangdiqiu.cyou
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 10|🇨🇳_CN_中国->🇦🇹_AT_奥地利_16@33
@@ -1911,14 +1932,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,16,17,23|加拿大 192
+  name: 10,23|加拿大 192
   network: ws
   port: 2052
   server: 162.159.152.6
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
   ws-opts:
     headers:
@@ -2046,3 +2066,38 @@ proxies:
     headers:
       host: vnpt.iiio.wiki
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 17|中转 🇮🇹 Italy 01 @nodpai
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10718
+  server: yidong.liulangdiqiu.cyou
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 17|中转 🇯🇵 Japan 01 @nodpai
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10701
+  server: yidong.liulangdiqiu.cyou
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 17|中转 🇰🇷 South Korea 01 @nodpai
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10703
+  server: yidong.liulangdiqiu.cyou
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 17|中转 🇺🇸 United States 03 @nodpai
+  password: 2739ce85d3b9e145
+  port: 41026
+  server: jscm01.celerlink.one
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 17|中转 🇬🇧 United Kingdom 02 @nodpa...
+  password: 51239bce-01ab-454d-baa5-c0940c9f1751
+  port: 10713
+  server: yidong.liulangdiqiu.cyou
+  type: ss
+  udp: true
