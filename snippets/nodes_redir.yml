@@ -48,7 +48,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0,2,4,6,7,8,15,29,39|🇺🇸_US_美国->🇱🇺_LU_卢森堡_43
+  name: 0,2,4,6,7,8,15,24,29,39|🇺🇸_US_美国->🇱🇺_LU_卢森堡_43
   network: ws
   port: 2052
   server: 104.16.68.38
@@ -136,13 +136,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 3,5,9,10,23|加拿大 192
+  name: 3,5,9,10,16,17,23|加拿大 192
   network: ws
   port: 2052
   server: 162.159.152.6
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
   ws-opts:
     headers:
@@ -244,14 +245,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇫🇷_FR_法国_11@28
+  name: 10,16|中转 🇩🇪 Germany 01 @nodpai
   network: tcp
-  port: 50041
+  port: '50041'
   server: 41.kccic2pa.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441
+  uuid: f6602bb3-d438-4f7c-9cf5-5fd548bc76dd
 - cipher: aes-256-gcm
   name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_10@34
   password: 0ea9950e-f1ac-40ed-9b77-c629ef502bd3
@@ -278,14 +279,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_6@2
+  name: 10,16|中转 🇬🇧 United Kingdom 01 @nodpa...
   network: tcp
-  port: 50009
+  port: '50009'
   server: 09.kccic2pa.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 66a5e5f4-4d18-474a-ad2d-3f11e09058e9
+  uuid: f6602bb3-d438-4f7c-9cf5-5fd548bc76dd
 - alterId: 0
   cipher: auto
   name: 10|🇨🇳_CN_中国->🇭🇰_HK_香港_11@9
@@ -743,14 +744,14 @@ proxies:
     path: /6
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇹🇼_TW_台湾_1_11@5
+  name: 10,16|「eggtartcloud.shop 自选入口,速度保证」🇹...
   network: tcp
-  port: 50008
+  port: '50008'
   server: 08.kccic2pa.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441
+  uuid: f6602bb3-d438-4f7c-9cf5-5fd548bc76dd
 - cipher: aes-256-gcm
   name: 10|🇨🇳_CN_中国->🇹🇼_TW_台湾_24@24
   password: a845f902-f4d2-44e8-b774-aea733ae3e48
@@ -978,14 +979,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_11@7
+  name: 10,16|中转 🇺🇸 United States 03 @nodpai
   network: tcp
-  port: 50020
+  port: '50020'
   server: 20.kccic2pa.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441
+  uuid: f6602bb3-d438-4f7c-9cf5-5fd548bc76dd
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_13@12
   password: 9f37ff25-99f3-4e3f-bd7b-a0ed6638246e
@@ -1086,11 +1087,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_8_11@24
+  name: 10,16|中转 🇭🇰 Hong Kong 02 @nodpai
   network: tcp
-  port: 40158
+  port: '40158'
   server: 183.240.232.82
   skip-cert-verify: true
   tls: false
@@ -1977,3 +1978,12 @@ proxies:
     headers:
       host: vnpt.iiio.wiki
     path: /
+- alterId: 0
+  cipher: auto
+  name: 16|中转 🇮🇳 India 01 @nodpai
+  network: tcp
+  port: '15086'
+  server: 15086.kuaiyin.win
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
