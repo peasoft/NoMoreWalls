@@ -1,33 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 0,2,4,6,7,8,23|日本 013
+  name: 0,23|日本 013
   network: ws
   port: 55959
   server: 178.173.230.174
   skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
   uuid: 28bc85a7-b380-49db-87c1-6b87ad33e717
   ws-opts:
     headers:
       Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_JP_ #2'
-  network: ws
-  port: 55959
-  server: 178.173.230.174
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 28bc85a7-b380-49db-87c1-6b87ad33e717
-  ws-opts:
-    headers:
-      host: tms.dingtalk.com
     path: /
 - alterId: 0
   cipher: auto
@@ -169,7 +153,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 3812dc4e-573b-437c-81f0-89adb1f57ec4
+  uuid: a6c41327-0fce-4ce8-8182-65e0f9a88805
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本05
@@ -179,7 +163,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 3812dc4e-573b-437c-81f0-89adb1f57ec4
+  uuid: a6c41327-0fce-4ce8-8182-65e0f9a88805
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本06
@@ -189,7 +173,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 3812dc4e-573b-437c-81f0-89adb1f57ec4
+  uuid: a6c41327-0fce-4ce8-8182-65e0f9a88805
 - alterId: 0
   cipher: auto
   name: 23|日本 002
@@ -409,7 +393,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ed2ea9b9-8003-462a-8edc-8cf4d6ac0bfe
+  uuid: e932cd2d-cbab-478f-9fd7-7ca08c30a789
 - alterId: 0
   cipher: auto
   name: 30|日本 05  | 1x JP
@@ -419,7 +403,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ed2ea9b9-8003-462a-8edc-8cf4d6ac0bfe
+  uuid: e932cd2d-cbab-478f-9fd7-7ca08c30a789
 - alterId: 0
   cipher: auto
   name: 30|日本 06  | 1x JP
@@ -429,7 +413,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ed2ea9b9-8003-462a-8edc-8cf4d6ac0bfe
+  uuid: e932cd2d-cbab-478f-9fd7-7ca08c30a789
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 31|🇯🇵 日本KT|@ripaojiedian
@@ -462,6 +446,38 @@ proxies:
   server: 183.232.170.32
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 31,32|日本A|@ripaojiedian
+  network: ws
+  port: '8443'
+  server: 35.220.140.58
+  servername: dj.kxking.eu.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541
+  ws-opts:
+    headers:
+      Host: dj.kxking.eu.org
+    path: /vm?ed=2048
+- client-fingerprint: chrome
+  name: 31|🇯🇵 日本快|@ripaojiedian
+  network: ws
+  password: faf42aa0a9ad4c1e
+  port: 3306
+  server: 3.113.215.86
+  skip-cert-verify: false
+  sni: n2.gladns.com
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: n2.gladns.com
+    path: /gateway/connect
 - alterId: 0
   cipher: auto
   name: 33|🇯🇵日本 | 101 | 负载优化 | 1x
