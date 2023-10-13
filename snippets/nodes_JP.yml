@@ -124,7 +124,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 6511527b-cca3-4e61-b0a1-d0d980b01067
+  uuid: 404b7cf3-295f-456c-899c-13e699e7c002
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本05
@@ -134,7 +134,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 6511527b-cca3-4e61-b0a1-d0d980b01067
+  uuid: 404b7cf3-295f-456c-899c-13e699e7c002
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本06
@@ -144,7 +144,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 6511527b-cca3-4e61-b0a1-d0d980b01067
+  uuid: 404b7cf3-295f-456c-899c-13e699e7c002
 - alterId: 0
   cipher: auto
   name: 23|日本 002
@@ -156,10 +156,11 @@ proxies:
   uuid: 2d98a577-c108-3dfa-baeb-8d70819ec5b7
 - alterId: 0
   cipher: auto
-  name: 23,36|V1C | 动态 01
+  name: '23,29,36|V1C | 动态 01 #1'
   network: ws
   port: 53782
   server: kr-cdn-6273819.starnetcn.top
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -226,6 +227,16 @@ proxies:
       Host: jxhoisldy718922.starnetcn.top
     path: /315d825893fc34aca0231ab967157986
   ws-path: /315d825893fc34aca0231ab967157986
+- alterId: 0
+  cipher: auto
+  name: 29|🔒 VM-TCP-NA 🇯🇵 JP-141.147.146....
+  network: tcp
+  port: '46222'
+  server: 141.147.146.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4283de01-cff7-4b06-81f9-30a0543fb4a3
 - alterId: 64
   cipher: auto
   name: 29|🔒 VM-TCP-NA 🇯🇵 JP-45.88.43.143...
@@ -237,31 +248,18 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 29,31,32|东京|tg频道:@ripaojiedian
+  name: 29|🇯🇵 日本_1013024 2 2
   network: ws
-  port: '8443'
-  server: 8.217.147.230
-  servername: dj.kxking.eu.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541
-  ws-opts:
-    headers:
-      Host: dj.kxking.eu.org
-    path: /vm?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 29|🇯🇵 日本 57
-  network: tcp
-  port: 46222
-  server: 141.147.146.29
+  port: 80
+  server: v13.jiedian.stream
   servername: ''
   tls: false
   type: vmess
-  uuid: 4283de01-cff7-4b06-81f9-30a0543fb4a3
+  uuid: 464350ea-9d68-40cc-b4e3-c7f82312b123
+  ws-opts:
+    headers:
+      Host: v13.jiedian.stream
+    path: /
 - alterId: 0
   cipher: auto
   name: 30|日本 04  | 1x JP
@@ -271,7 +269,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9ba6adfb-02a2-4fde-9e58-7825d64f92dd
+  uuid: 8fcfb8ed-028c-4ddb-8e91-9a9b0157dbee
 - alterId: 0
   cipher: auto
   name: 30|日本 05  | 1x JP
@@ -281,7 +279,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9ba6adfb-02a2-4fde-9e58-7825d64f92dd
+  uuid: 8fcfb8ed-028c-4ddb-8e91-9a9b0157dbee
 - alterId: 0
   cipher: auto
   name: 30|日本 06  | 1x JP
@@ -291,7 +289,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9ba6adfb-02a2-4fde-9e58-7825d64f92dd
+  uuid: 8fcfb8ed-028c-4ddb-8e91-9a9b0157dbee
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 31|🇯🇵 日本KT|@ripaojiedian
@@ -324,6 +322,23 @@ proxies:
   server: 183.232.170.32
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 31,32|东京|tg频道:@ripaojiedian
+  network: ws
+  port: '8443'
+  server: 8.217.147.230
+  servername: dj.kxking.eu.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541
+  ws-opts:
+    headers:
+      Host: dj.kxking.eu.org
+    path: /vm?ed=2048
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 31|🇯🇵 日本特殊|@ripaojiedian
