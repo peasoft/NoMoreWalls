@@ -44,7 +44,7 @@ proxies:
     path: /hkbn
 - alterId: 64
   cipher: auto
-  name: 10|🇭🇰_HK_香港_1_11@17
+  name: 10,23|荷兰 011
   network: tcp
   port: 42952
   server: 156.245.8.146
@@ -105,16 +105,9 @@ proxies:
   sni: 103.15.217.182
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇰HK
-  name: 12|Relay_HK-🇦AR_23 | 8.84Mb
-  password: 8cfdc816-26ae-4bc0-9dc8-efd58d9c4e47
-  port: 50015
-  server: api-wx-5.rancho.gay
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '16,32|香港C|@ripaojiedian #1'
+  name: 16,32|香港C|@ripaojiedian
   network: tcp
   port: '25001'
   server: a.baozinet.top
@@ -131,7 +124,7 @@ proxies:
   servername: hk04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e23e28ef-88d1-48d1-a675-40f282e0d00e
+  uuid: 91f0aed0-970b-4984-9a67-1011ed0d4f31
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰香港05
@@ -141,7 +134,7 @@ proxies:
   servername: hk05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e23e28ef-88d1-48d1-a675-40f282e0d00e
+  uuid: 91f0aed0-970b-4984-9a67-1011ed0d4f31
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰香港06
@@ -151,7 +144,7 @@ proxies:
   servername: hk06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e23e28ef-88d1-48d1-a675-40f282e0d00e
+  uuid: 91f0aed0-970b-4984-9a67-1011ed0d4f31
 - alterId: 0
   cipher: auto
   name: 23|香港 001
@@ -509,6 +502,23 @@ proxies:
     headers:
       Host: chunchuan.kxking.eu.org
     path: /vm?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 23,31,32|日本B|@ripaojiedian
+  network: ws
+  port: '8443'
+  server: 37.123.199.134
+  servername: dj.kxking.eu.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541
+  ws-opts:
+    headers:
+      Host: dj.kxking.eu.org
+    path: /vm?ed=2048
 - alterId: 64
   cipher: auto
   name: 29|🇭🇰 香港_1015052
@@ -542,7 +552,7 @@ proxies:
   servername: hk04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 82c097ad-91b7-403d-bfe7-92b1e2bc1d41
+  uuid: 6580977f-2711-4bb8-ada9-25d5b5814858
 - alterId: 0
   cipher: auto
   name: 30|香港 05 | 1x HK
@@ -552,7 +562,7 @@ proxies:
   servername: hk05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 82c097ad-91b7-403d-bfe7-92b1e2bc1d41
+  uuid: 6580977f-2711-4bb8-ada9-25d5b5814858
 - alterId: 0
   cipher: auto
   name: 30|香港 06 | 1x HK
@@ -562,7 +572,7 @@ proxies:
   servername: hk06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 82c097ad-91b7-403d-bfe7-92b1e2bc1d41
+  uuid: 6580977f-2711-4bb8-ada9-25d5b5814858
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 31|🇭🇰 香港KT|@ripaojiedian
@@ -583,12 +593,16 @@ proxies:
   client-fingerprint: chrome
   name: 31|🇭🇰 香港KT2|@ripaojiedian
   password: a-wym4ovY4Yw
-  plugin: obfs
+  plugin: v2ray-plugin
   plugin-opts:
     host: ''
-    mode: http
-  port: 80
-  server: 8.217.135.145
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 20291
+  server: 223.95.40.85
   tfo: false
   type: ss
 - cipher: aes-128-gcm
@@ -603,44 +617,40 @@ proxies:
     path: ''
     skip-cert-verify: true
     tls: false
-  port: 20100
-  server: 223.95.40.85
+  port: 443
+  server: 8.217.94.208
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 32|香港C|@ripaojiedian
+  client-fingerprint: chrome
+  name: 31|🇭🇰 香港B|@ripaojiedian
+  network: ws
+  port: 13002
+  server: cdn.node.user-sub.pddns-usersdk.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 26ec8c6b-47ca-3b2c-bef3-5b88c65d30ec
+  ws-opts:
+    headers:
+      Host: cdn.node.user-sub.pddns-usersdk.com
+    path: /ef483582-6269-468c-93af-c511eccb8a69
+- alterId: 0
+  cipher: auto
+  name: 32|香港B|@ripaojiedian
   network: ws
   port: '13002'
   server: cdn.node.user-sub.pddns-usersdk.com
   servername: ''
   tls: false
   type: vmess
-  uuid: a69cc072-3574-3377-83f3-15e1d61f2c5a
+  uuid: 26ec8c6b-47ca-3b2c-bef3-5b88c65d30ec
   ws-opts:
     headers:
       Host: ''
     path: /ef483582-6269-468c-93af-c511eccb8a69
-- alterId: 0
-  cipher: auto
-  name: 32|香港D|@ripaojiedian
-  network: tcp
-  port: '50002'
-  server: 02.kccic2pa.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b4ff3b77-82b0-4f85-b7d1-df17967cf045
-- alterId: 64
-  cipher: auto
-  name: 32|香港A|@ripaojiedian
-  network: tcp
-  port: '53300'
-  server: 112.29.94.22
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 33|🇭🇰香港 | 101 | 负载优化 | 1x
@@ -673,7 +683,7 @@ proxies:
   uuid: 8b1efedf-58fd-3524-914d-bb4f2c92ea2b
 - alterId: 0
   cipher: auto
-  name: 38|🇭🇰_HK_香港_56
+  name: 39|🇭🇰_HK_香港_56
   network: ws
   port: 80
   server: hktddns.aikun.online
