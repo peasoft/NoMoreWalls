@@ -1,11 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,29|🇺🇸 _US_美国->🇩🇪_DE_德国_38
+  name: 0,23,29|🇺🇸 _US_美国->🇩🇪_DE_德国_38
   network: ws
   port: 2087
   server: x10.mehdimoghaddam.fun
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: b4d5538c-3119-478a-b4c5-c59c330eb88b
@@ -86,7 +87,7 @@ proxies:
     path: /ef483582-6269-468c-93af-c512ec2b8a61
 - alterId: 0
   cipher: auto
-  name: 0,10,16,17,29|سروش♣🇺🇸♣US
+  name: 0,10,29|سروش♣🇺🇸♣US
   network: ws
   port: '80'
   server: xn3.shabijichang.com
@@ -1086,17 +1087,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_6@8
+  name: '10,16,17|中转 🇺🇸 United States 04 @nodpai #1'
   network: ws
   port: 61001
   server: 112.29.156.248
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: d531ebd3-64d7-3ccb-b49e-e2bfbdf70dfc
+  udp: true
+  uuid: 5cd1422b-dd81-3cd8-ada6-55ffa5e55fab
   ws-opts:
-    headers:
-      host: a.cn-db.top
     path: /dabai.in
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_8@7
@@ -2170,53 +2170,6 @@ proxies:
     headers:
       Host: lu.wx.alue.link
     path: /
-- alterId: 0
-  cipher: auto
-  name: 16,32|美国C|@ripaojiedian
-  network: tcp
-  port: '25006'
-  server: b.baozinet.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e
-- alterId: 0
-  cipher: auto
-  name: 16|中转 🇦🇹 Austria 01 @nodpai
-  network: tcp
-  port: '50007'
-  server: 07.kccic2pa.xyz
-  tls: false
-  type: vmess
-  uuid: ffd54c78-560d-47fb-af3c-b1fe2a87e17e
-- alterId: 0
-  cipher: auto
-  name: 16|中转 🇺🇸 United States 04 @nodpai
-  network: tcp
-  port: '50014'
-  server: 14.kccic2pa.xyz
-  tls: false
-  type: vmess
-  uuid: ffd54c78-560d-47fb-af3c-b1fe2a87e17e
-- alterId: 0
-  cipher: auto
-  name: 16|中转 🇺🇸 United States 07 @nodpai
-  network: tcp
-  port: '50002'
-  server: 02.kccic2pa.xyz
-  tls: false
-  type: vmess
-  uuid: ffd54c78-560d-47fb-af3c-b1fe2a87e17e
-- alterId: 0
-  cipher: auto
-  name: 16,32|台湾B|@ripaojiedian
-  network: tcp
-  port: '25010'
-  server: b.baozinet.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e
 - alterId: 64
   cipher: auto
   name: 16,32|香港A|@ripaojiedian
@@ -2227,6 +2180,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 16,32|香港C|@ripaojiedian
+  network: tcp
+  port: '25001'
+  server: a.baozinet.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e
+- alterId: 0
+  cipher: auto
+  name: 16|中转 🇭🇰 Hong Kong 03 @nodpai
+  network: tcp
+  port: '25002'
+  server: b.baozinet.top
+  tls: false
+  type: vmess
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 17,31|🇸🇬 新加坡B|@ripaojiedian
@@ -2234,13 +2206,6 @@ proxies:
   port: 41009
   server: gzcm01.celerlink.one
   tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 17|中转 🇭🇰 Hong Kong 04 @nodpai
-  password: 3525588ee14ea924
-  port: 41035
-  server: gzcm01.celerlink.one
   type: ss
   udp: true
 - alterId: 0
