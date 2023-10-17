@@ -1,33 +1,20 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,10|中转 🇨🇳 China 03 @nodpai
+  name: 0|_CN_中国
   network: ws
-  port: 80
+  port: '80'
   server: 124.220.57.75
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 1b3dd95b-f6dc-4f20-97aa-3b365358419c
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|「节点冠名招商 @nodpai」🇨🇳 CN 01
-  network: ws
-  port: 19709
-  server: 123.249.101.15
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10,16,17|中转 🇨🇳 China 02 @nodpai #1'
+  name: '10,16,17|「蛋挞云,流媒体全解锁」🇨🇳 CN 01 #1'
   network: ws
   port: 80
   server: 1.117.69.235
@@ -36,6 +23,19 @@ proxies:
   type: vmess
   udp: true
   uuid: ee0a4b54-be8d-4f56-be4d-521bd1ae443d
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10,16,17|中转 🇨🇳 China 02 @nodpai #1'
+  network: ws
+  port: 19709
+  server: 123.249.101.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
   ws-opts:
     path: /
 - alterId: 0
@@ -161,17 +161,43 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '16,17|「节点冠名招商 @nodpai」🇨🇳 CN 01 #2'
-  network: ws
-  port: 20036
-  server: 222.187.238.9
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 12|🇨🇳CN_03 | 3.25Mb
+  network: tcp
+  port: 56002
+  server: 39.103.165.178
   skip-cert-verify: true
-  tls: false
   type: vmess
-  udp: true
-  uuid: ee0a4b54-be8d-4f56-be4d-521bd1ae443d
-  ws-opts:
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 12|🇨🇳CN_04 | 5.84Mb
+  network: tcp
+  port: 50002
+  server: 114.117.234.12
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 12|🇨🇳CN_05 | 6.59Mb
+  network: tcp
+  port: 50002
+  server: 111.230.252.149
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: 24,29,32|香港2|@ripaojiedian
@@ -184,7 +210,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 39|🇨🇳_CN_中国_由快嘴科技提供;kkzui.com_29
+  name: 40|🇨🇳_CN_中国_由快嘴科技提供;kkzui.com_29
   network: ws
   port: 80
   server: 1.117.69.235
@@ -197,7 +223,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 39|🇨🇳_CN_中国_2_35
+  name: 40|🇨🇳_CN_中国_2_35
   network: ws
   port: 80
   server: 175.178.65.137
