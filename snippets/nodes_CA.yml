@@ -1,19 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 10,15,23,24|github.com/freefq - 美国  8
-  network: ws
-  port: '56301'
-  server: ca-000.xiaoxiaobujidao.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ffbd4a77-297b-3ec8-8631-b592334aafac
-  ws-opts:
-    headers:
-      Host: ca-000.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
 - cipher: aes-256-cfb
   name: 10|🇨🇦CA-143.244.43.216-0611 | 45....
   password: asdKkaskJKfnsa
@@ -83,6 +68,21 @@ proxies:
   sni: 4-193-163-88.nhost.00cdn.com
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 15,23|加拿大 241
+  network: ws
+  port: 56301
+  server: ca-000.xiaoxiaobujidao.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ffbd4a77-297b-3ec8-8631-b592334aafac
+  ws-opts:
+    headers:
+      Host: ca-000.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
 - alterId: 0
   cipher: auto
   name: 23|加拿大 001
@@ -2561,6 +2561,45 @@ proxies:
     path: /xtsmol
 - alterId: 0
   cipher: auto
+  name: 23,29|CDN中转-美国3-1倍率
+  network: ws
+  port: '2095'
+  server: auto.ccccdn.tk
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 65da50e6-89c0-4d10-b7cf-16404dae0879
+  ws-opts:
+    headers:
+      Host: usa.chisi.link
+    path: /wo.img
+- alterId: 0
+  cipher: auto
+  name: 23,29|CDN中转-新加坡-1倍率
+  network: ws
+  port: '443'
+  server: auto.ccccdn.tk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 65da50e6-89c0-4d10-b7cf-16404dae0879
+  ws-opts:
+    headers:
+      Host: sg.chisi.link
+    path: /wo.img
+- alterId: 0
+  cipher: auto
+  name: 23,29|🔒 VM-TCP-NA 🇨🇦 CA-134.122.38.2...
+  network: tcp
+  port: '3389'
+  server: 134.122.38.203
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
   name: 29|🇨🇦TG频道 @oeo12  =CA
   network: tcp
   port: 20070
@@ -2569,16 +2608,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b38a6b0e-4e55-426f-a154-d12399381d6f
-- alterId: 0
-  cipher: auto
-  name: 29|🔒 VM-TCP-NA 🇨🇦 CA-134.122.38.2...
-  network: tcp
-  port: '3389'
-  server: 134.122.38.203
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
   name: 29|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
@@ -2598,7 +2627,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: dc728f6d-9256-43dd-92e3-bae38610e190
+  uuid: a267f040-67e8-4645-8e96-b537f1025bb2
 - alterId: 0
   cipher: auto
   name: 33|🇨🇦加拿大 | 101 | 负载优化 | 1x
