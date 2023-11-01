@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '0,23,29|荷兰 022 #1'
+  name: '0,2,4,6,7,8,23,29|荷兰 022 #1'
   network: ws
   port: 30000
   server: 156.245.8.172
@@ -13,6 +13,20 @@ proxies:
   ws-opts:
     headers:
       Host: www.16046626.xyz
+    path: /path/1698579913173
+- alterId: 64
+  cipher: auto
+  name: '3,5,9|_HK_ #2'
+  network: ws
+  port: 30000
+  server: 156.245.8.172
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf
+  ws-opts:
+    headers:
+      host: www.16046626.xyz
     path: /path/1698579913173
 - alterId: 0
   cipher: auto
@@ -37,7 +51,7 @@ proxies:
   servername: hk04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7640b027-82c3-4c4f-b70f-be2beb2964ca
+  uuid: 30335948-3c06-4430-9489-232db636f41f
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰香港05
@@ -47,7 +61,7 @@ proxies:
   servername: hk05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7640b027-82c3-4c4f-b70f-be2beb2964ca
+  uuid: 30335948-3c06-4430-9489-232db636f41f
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰香港06
@@ -57,7 +71,7 @@ proxies:
   servername: hk06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7640b027-82c3-4c4f-b70f-be2beb2964ca
+  uuid: 30335948-3c06-4430-9489-232db636f41f
 - alterId: 0
   cipher: auto
   name: 23|香港 001
@@ -126,19 +140,40 @@ proxies:
     headers:
       Host: dl.ops.kgvn.garenanow.com
     path: /5gtocdocao.com
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 24|github.com/freefq - 香港阿里云 22
+  client-fingerprint: chrome
+  name: 23,31,32|香港2|@ripaojiedian
   network: ws
-  port: 443
-  server: n1698551273.aaigefm.cn
+  port: '443'
+  server: 27.124.44.71
+  servername: www.68758745.xyz
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
-  uuid: 07d2edac-2a3b-48c2-b9a1-e967cbce445b
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: www.68758745.xyz
+    path: /path/143534141104
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 23,31,32|美国2|@ripaojiedian
+  network: ws
+  port: '30000'
+  server: 45.58.180.136
+  servername: www.68006008.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.68006008.xyz
+    path: /path/282428170310
 - alterId: 0
   cipher: auto
   name: 30|香港 04 | 1x HK
@@ -148,7 +183,7 @@ proxies:
   servername: hk04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 71991e19-4474-4b24-8283-d06ec529e3d4
+  uuid: 49521041-35e3-44ba-8963-f752578a1d65
 - alterId: 0
   cipher: auto
   name: 30|香港 05 | 1x HK
@@ -158,7 +193,7 @@ proxies:
   servername: hk05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 71991e19-4474-4b24-8283-d06ec529e3d4
+  uuid: 49521041-35e3-44ba-8963-f752578a1d65
 - alterId: 0
   cipher: auto
   name: 30|香港 06 | 1x HK
@@ -168,7 +203,7 @@ proxies:
   servername: hk06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 71991e19-4474-4b24-8283-d06ec529e3d4
+  uuid: 49521041-35e3-44ba-8963-f752578a1d65
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 31|🇭🇰 香港KT2|@ripaojiedian
@@ -197,23 +232,6 @@ proxies:
   server: 8.217.134.91
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 31,32|香港1|@ripaojiedian
-  network: ws
-  port: '443'
-  server: n1697685465.aaigefm.cn
-  servername: n1697685465.aaigefm.cn
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 4749c381-5d2e-40cd-aadb-4f3f57189874
-  ws-opts:
-    headers:
-      Host: n1697685465.aaigefm.cn
-    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 31|🇭🇰 香港6|@ripaojiedian
@@ -230,6 +248,16 @@ proxies:
   server: 43.240.15.69
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 32|香港4|@ripaojiedian
+  network: tcp
+  port: '50005'
+  server: 05.kccic2pa.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 692faa8a-01d1-421d-89af-1f1eea22dba1
 - alterId: 0
   cipher: auto
   name: 33|🇭🇰香港 | 101 | 负载优化 | 1x
