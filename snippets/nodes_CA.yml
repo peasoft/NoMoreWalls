@@ -1,6 +1,12 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇦CA-134.195.196.178-11526 | 4...
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 134.195.196.178
+  type: ss
 - cipher: aes-256-cfb
-  name: 10|🇨🇦CA-143.244.43.216-0631 | 71....
+  name: 10|🇨🇦CA-143.244.43.216-0631 | 39....
   password: asdKkaskJKfnsa
   port: 110
   server: 143.244.43.216
@@ -269,12 +275,11 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: '23,29|加拿大 055 #1'
+  cipher: chacha20-poly1305
+  name: 23|加拿大 055
   network: ws
   port: 2086
   server: 172.67.229.19
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -346,7 +351,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,29|加拿大 061 #1'
+  name: '23,24,29|加拿大 061 #1'
   network: ws
   port: 80
   server: 104.21.3.4
@@ -374,7 +379,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,29|加拿大 063 #1'
+  name: 23,29|unknown 77
   network: ws
   port: 2086
   server: 162.159.134.52
@@ -689,9 +694,9 @@ proxies:
     headers:
       Host: yhnsb2.shabijichang.com
     path: /
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 23,29|🇺🇸 US 314
+  name: '23,24,29|加拿大 086 #1'
   network: ws
   port: 443
   server: 104.16.67.38
@@ -760,11 +765,10 @@ proxies:
     path: /XQ2WCa29jfDM25GBcbnQ
 - alterId: 0
   cipher: auto
-  name: 23,29|🇺🇸 US 407
+  name: 23|加拿大 093
   network: ws
   port: 443
   server: 104.27.193.64
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1111,11 +1115,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23,29|🆓18@oneclickvpnkeys
+  name: '23,29|加拿大 123 #1'
   network: ws
-  port: '443'
+  port: 443
   server: www.speedtest.net
-  servername: edeen.makeup
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1323,20 +1327,6 @@ proxies:
     path: /miao
 - alterId: 0
   cipher: auto
-  name: 23|加拿大 138
-  network: ws
-  port: 2096
-  server: 104.25.38.74
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
-  ws-opts:
-    headers:
-      Host: s1.shargh.shop
-    path: /
-- alterId: 0
-  cipher: auto
   name: 23|加拿大 139
   network: ws
   port: 80
@@ -1489,11 +1479,13 @@ proxies:
     path: /vui2
 - alterId: 0
   cipher: auto
-  name: 23|加拿大 150
+  name: '23,29|加拿大 150 #1'
   network: ws
   port: 80
   server: 172.67.64.215
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 62b024bb-3e45-41eb-e8ff-60502a4e791d
   ws-opts:
@@ -1502,11 +1494,10 @@ proxies:
     path: /vui2
 - alterId: 0
   cipher: auto
-  name: '23,29|加拿大 151 #1'
+  name: 23|加拿大 151
   network: ws
   port: 443
   server: cf1.txrui.top
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1531,11 +1522,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,29|加拿大 153 #1'
+  name: 23|加拿大 153
   network: ws
   port: 443
   server: cf3.txrui.top
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2447,7 +2437,7 @@ proxies:
   uuid: 7878acaf-f555-4bad-b1fa-a8c94272d4dd
 - alterId: 0
   cipher: auto
-  name: '23,24|github.com/freefq - 美国CloudFla... #7'
+  name: '23,24|github.com/freefq - 美国CloudFla... #3'
   network: ws
   port: '2095'
   server: 172.67.215.230
@@ -2514,6 +2504,16 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
+  name: 29|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9...
+  network: tcp
+  port: '3389'
+  server: 142.93.144.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
   name: 30|加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -2521,7 +2521,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ef6158d8-b634-423b-bc27-f77d3a02c53e
+  uuid: 110394da-2bd7-42d5-95dc-f6a1fb260c46
 - alterId: 0
   cipher: auto
   name: 33|🇨🇦加拿大 | 101 | 负载优化 | 1x
