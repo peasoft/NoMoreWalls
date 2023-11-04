@@ -1,64 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '10,23,29|日本 001 #1'
-  network: ws
-  port: 25826
-  server: jpb.zerodisk.site
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f8ef7c47-9735-439c-a42b-355bae224656
-  ws-opts:
-    headers:
-      Host: jpb.zerodisk.site
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10,23,29|日本 002 #1'
-  network: ws
-  port: 48493
-  server: jpd.zerodisk.site
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f8ef7c47-9735-439c-a42b-355bae224656
-  ws-opts:
-    headers:
-      Host: jpd.zerodisk.site
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|🇯🇵JP-172.233.81.246-7948 | 23....
-  network: ws
-  port: 8080
-  server: jp-o-v2.66688888.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 08a231e0-611d-4dcd-8fbc-9a722c37656d
-  ws-opts:
-    headers:
-      Host: jp-o-v2.66688888.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|🇯🇵JP-45.159.51.15-7971 | 21.42...
-  network: ws
-  port: 3306
-  server: iij2.csznet.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 888ad13a-2e0d-4f6e-b5cf-6b06356f20c6
-  ws-opts:
-    headers:
-      Host: iij2.csznet.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
   name: 21|🇯🇵日本04 PRO
   network: tcp
   port: '36116'
@@ -87,6 +29,48 @@ proxies:
   tls: true
   type: vmess
   uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- alterId: 0
+  cipher: auto
+  name: 23|日本 001
+  network: ws
+  port: 25826
+  server: jpb.zerodisk.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8ef7c47-9735-439c-a42b-355bae224656
+  ws-opts:
+    headers:
+      Host: jpb.zerodisk.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|日本 002
+  network: ws
+  port: 48493
+  server: jpd.zerodisk.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8ef7c47-9735-439c-a42b-355bae224656
+  ws-opts:
+    headers:
+      Host: jpd.zerodisk.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|日本 003
+  network: ws
+  port: 38453
+  server: vn.zerodisk.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8ef7c47-9735-439c-a42b-355bae224656
+  ws-opts:
+    headers:
+      Host: vn.zerodisk.site
+    path: /
 - alterId: 0
   cipher: auto
   name: 23|日本 004
@@ -206,27 +190,33 @@ proxies:
     path: /path/143534141104
 - alterId: 0
   cipher: auto
-  name: 23|日本 013
+  name: 23,24|github.com/freefq - 亚太地区  12
   network: ws
-  port: 80
+  port: '80'
   server: 103.57.131.115
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 6873a137-077c-4775-996b-3225ed0cc999
   ws-opts:
     headers:
       Host: dl.kgvn.garenanow.com
     path: /vpngiare.net
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 29|日本 - 东京 - Amazon.com, Inc.
-  network: tcp
-  port: 21586
-  server: jp03-alt-vm0.entry.srthdw.art
-  servername: ''
+  name: 23|日本 014
+  network: ws
+  port: 3306
+  server: iij2.csznet.eu.org
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 272291d0-18b5-39eb-ac67-202de689dd44
+  uuid: 888ad13a-2e0d-4f6e-b5cf-6b06356f20c6
+  ws-opts:
+    headers:
+      Host: iij2.csznet.eu.org
+    path: /sometimesnaive
 - alterId: 0
   cipher: auto
   name: 29|🇯🇵白嫖-053
@@ -237,16 +227,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 64
-  cipher: auto
-  name: 29|🔒 VM-TCP-NA 🇯🇵 JP-45.88.43.143...
-  network: tcp
-  port: '51801'
-  server: 45.88.43.143
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 29|🇯🇵白嫖-061
@@ -257,6 +237,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
+- alterId: 64
+  cipher: auto
+  name: 29|🔒 VM-TCP-NA 🇯🇵 JP-45.88.43.143...
+  network: tcp
+  port: '51801'
+  server: 45.88.43.143
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 30|日本 04  | 1x JP PRO

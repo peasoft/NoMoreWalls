@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供;kkz...
+  name: 0,6,7,39|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供;kkz...
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7,23|加拿大 090
+  name: 0,6,7,15,23|加拿大 090
   network: ws
   port: 2082
   server: 104.31.16.164
@@ -29,7 +29,7 @@ proxies:
     path: /franc.digires.shop/11201
 - alterId: 64
   cipher: auto
-  name: 0,6,7,20,23,24|github.com/freefq - 南非  10
+  name: 0,2,4,6,7,8,15,20,23,24|github.com/freefq - 南非  7
   network: ws
   port: '30000'
   server: 156.225.67.106
@@ -71,7 +71,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,4,6,7,8,15|🇺🇸_US_美国->🇮🇳_IN_印度 #6'
+  name: '0,6,7|🇺🇸 _US_美国->🇮🇳_IN_印度 #2'
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -85,7 +85,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7|🇺🇸 _US_美国->🇬🇧_GB_英国 #4'
+  name: 0,6,7,15|🇺🇸_US_美国->🇬🇧_GB_英国
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -99,18 +99,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇺🇸美国05
-  network: tcp
-  port: '36506'
-  server: 3u1s05.abzoones.xyz
-  servername: us05.abpilot.xyz
+  country: 🇺🇦UA
+  h2-opts: {}
+  http-opts: {}
+  name: '2,3,4,5,8,9,10,15|🇮🇷_IR_伊朗->🇹🇷_TR_土耳其 #3'
+  network: ws
+  port: 55007
+  server: 176.126.120.38
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+  uuid: 26840da4-9dbe-476c-bc44-05ea3b7c7a87
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  name: '2,4,8,15|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
+  name: '2,4,8|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
   network: ws
   port: 80
   server: sbl4.shabijichang.com
@@ -121,195 +125,27 @@ proxies:
     headers:
       Host: sbl4.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '2,4,8|🇨🇳_CN_中国->🇺🇸_US_美国 #15'
-  network: ws
-  port: 16648
-  server: yes.cnmjcn.net
-  tls: false
-  type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  ws-opts:
-    headers:
-      Host: yes.cnmjcn.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,4,8|🇨🇳_CN_中国->🇺🇸_US_美国 #16'
-  network: ws
-  port: 16648
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  ws-opts:
-    headers:
-      Host: t.cnmjcn.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇺🇸美国06
+- name: 3,5,9,10|🇨🇳_CN_中国->🇦🇹_AT_奥地利_0@18
   network: tcp
-  port: '36511'
-  server: 3u1s06.abzoones.xyz
-  servername: us06.abpilot.xyz
+  password: 5c97ca4b-8640-423d-9d50-ba025e15729f
+  port: 10848
+  server: other.kunlun-ppg.com
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇦🇷阿根廷04
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: '3,5,9|_CN_->_UA_ #2'
   network: tcp
-  port: '36861'
-  server: 9a8r04.abzoones.xyz
-  servername: ar04.abpilot.xyz
+  password: 5c97ca4b-8640-423d-9d50-ba025e15729f
+  port: 10845
+  server: other.kunlun-ppg.com
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇧🇷巴西04
-  network: tcp
-  port: '36877'
-  server: 6i2r04.abzoones.xyz
-  servername: br04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇵🇹葡萄牙04
-  network: tcp
-  port: '36881'
-  server: 4p2t01.abzoones.xyz
-  servername: pt04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: '2,4,8|🇨🇳_CN_中国->🇺🇸_US_美国 #18'
-  network: ws
-  port: 16626
-  server: yes.cnmjcn.net
-  tls: false
-  type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  ws-opts:
-    headers:
-      Host: yes.cnmjcn.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇭🇺匈牙利04
-  network: tcp
-  port: '36864'
-  server: 2h4u04.abzoones.xyz
-  servername: hu04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: '2,4,8,15|🇺🇸_US_美国->🇮🇳_IN_印度 #7'
-  network: ws
-  port: 80
-  server: hdlb2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: hdlb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇦🇺澳大利亚04
-  network: tcp
-  port: '36821'
-  server: 5a4u04.abzoones.xyz
-  servername: au04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇮🇳印度04
-  network: tcp
-  port: '36831'
-  server: 7i4n04.abzoones.xyz
-  servername: in04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇹🇷土耳其04
-  network: tcp
-  port: '36868'
-  server: 2t1u04.abzoones.xyz
-  servername: tr04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇬🇧英国04
-  network: tcp
-  port: '36811'
-  server: 2u3k04.abzoones.xyz
-  servername: uk04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇨🇦加拿大04
-  network: tcp
-  port: '36701'
-  server: 5c1a04.abzoones.xyz
-  servername: ca04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,5,8,9,10,15,21|🇺🇸美国04 PRO
-  network: tcp
-  port: '36501'
-  server: 3u1s04.abzoones.xyz
-  servername: us04.abpilot.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
-- alterId: 0
-  cipher: auto
-  name: '2,4,8|🇨🇳_CN_中国->🇺🇸_US_美国 #20'
-  network: ws
-  port: 16648
-  server: m.cnmjcn.com
-  tls: false
-  type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  ws-opts:
-    headers:
-      Host: m.cnmjcn.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 3,5,9,10|🇺🇸_US_美国->🇧🇷_BR_巴西_0@13
+  name: 3,5,9,10|🇺🇸_US_美国->🇧🇷_BR_巴西_1@13
   network: ws
   port: 80
   server: sbl4.shabijichang.com
@@ -321,84 +157,28 @@ proxies:
     headers:
       host: sbl4.shabijichang.com
     path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '3,5,9|_CN_->_US__2 #2'
+  country: 🇿🇦ZA
+  h2-opts: {}
+  http-opts: {}
+  name: 3,5,9,10|🇺🇸_US_美国->🇳🇱_NL_荷兰_0@16
   network: ws
-  port: 16648
-  server: yes.cnmjcn.net
+  port: 30000
+  server: 156.225.67.106
+  servername: www.41758112.xyz
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
+  uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
   ws-opts:
     headers:
-      host: yes.cnmjcn.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_CN_->_US__3 #2'
-  network: ws
-  port: 16648
-  server: t.cnmjcn.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  ws-opts:
-    headers:
-      host: t.cnmjcn.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 3,5,9,10|🇺🇸_US_美国->🇬🇧_GB_英国_2_0@18
-  network: ws
-  port: 80
-  server: mrb2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mrb2.shabijichang.com
-    path: /
-- name: 3,5,9,10|🇯🇵_JP_日本->🇨🇦_CA_加拿大_0@6
+      host: www.41758112.xyz
+    path: /path/1698671600986
+- name: 3,5,9,10|🇨🇳_CN_中国->🇺🇸_US_美国_0@19
   network: tcp
-  password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  port: 443
-  server: usla.mjt000.com
-  skip-cert-verify: true
-  sni: usla.mjt000.com
-  type: trojan
-  udp: true
-- name: '3,5,9|_JP_->_UA_ #2'
-  network: tcp
-  password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  port: 443
-  server: ua.mjt000.com
-  skip-cert-verify: true
-  sni: ua.mjt000.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 3,5,9,10,23|加拿大 005
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
-    path: /
-- name: 3,5,9,10|🇨🇳_CN_中国->🇺🇸_US_美国_1_0@1
-  network: tcp
-  password: 3e3cd44f-a06f-4571-8721-ce06a5fc12b7
-  port: 10837
+  password: 5c97ca4b-8640-423d-9d50-ba025e15729f
+  port: 10838
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
@@ -406,97 +186,63 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_CN_->_US__6 #2'
-  network: ws
-  port: 16626
-  server: yes.cnmjcn.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  ws-opts:
-    headers:
-      host: yes.cnmjcn.net
-    path: /
-- name: 3,5,9,10|🇯🇵_JP_日本->🇵🇹_PT_葡萄牙_0@15
+  name: 10,21|🇦🇷阿根廷04
   network: tcp
-  password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  port: 443
-  server: pt.mjt000.com
+  port: '36861'
+  server: 9a8r04.abzoones.xyz
+  servername: ar04.abpilot.xyz
   skip-cert-verify: true
-  sni: pt.mjt000.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 3,5,9,10|🇺🇸_US_美国->🇮🇳_IN_印度_2_0@14
-  network: ws
-  port: 80
-  server: hdlb2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: hdlb2.shabijichang.com
-    path: /
-- name: 3,5,9,10|🇯🇵_JP_日本->🇦🇷_AR_阿根廷_0@16
-  network: tcp
-  password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  port: 443
-  server: ar.mjt000.com
-  skip-cert-verify: true
-  sni: ar.mjt000.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_CN_->_US__8 #2'
-  network: ws
-  port: 16648
-  server: m.cnmjcn.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
-  ws-opts:
-    headers:
-      host: m.cnmjcn.com
-    path: /
-- name: '3,5,9|_CN_->_US__9 #2'
-  network: tcp
-  password: bd5ad33d-d267-4393-928a-50f425d1b68c
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇦🇷_AR_阿根廷_23@7
+  name: 10|🇨🇳_CN_中国->🇦🇷_AR_阿根廷_24@7
   password: d376f270-1807-4522-9f92-b499658a2678
   port: 27131
   server: foshan.chiguayun.cc
   type: ss
-- name: 10|🇨🇳_CN_中国->🇦🇹_AT_奥地利_12@25
+- alterId: 0
+  cipher: auto
+  name: 10,21|🇦🇺澳大利亚04
   network: tcp
-  password: 9daf849c-6310-4fa4-9855-65049737216b
-  port: 10848
-  server: other.kunlun-ppg.com
+  port: '36821'
+  server: 5a4u04.abzoones.xyz
+  servername: au04.abpilot.xyz
   skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇧🇬_BG_保加利亚_23@22
+  name: 10|🇨🇳_CN_中国->🇧🇬_BG_保加利亚_24@22
   password: d376f270-1807-4522-9f92-b499658a2678
   port: 27127
   server: foshan.chiguayun.cc
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇨🇦_CA_加拿大_1_19@22
+  name: 10,21|🇧🇷巴西04
+  network: tcp
+  port: '36877'
+  server: 6i2r04.abzoones.xyz
+  servername: br04.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- alterId: 0
+  cipher: auto
+  name: 10,21|🇨🇦加拿大04
+  network: tcp
+  port: '36701'
+  server: 5c1a04.abzoones.xyz
+  servername: ca04.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇳_CN_中国->🇨🇦_CA_加拿大_1_20@22
   network: ws
   port: 11302
   server: cdn.node.user-sub.pddns-usersdk.com
@@ -509,20 +255,14 @@ proxies:
       host: cdn.node.user-sub.pddns-usersdk.com
     path: /ef483582-6269-468c-93af-c512ec2b8a61
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇨🇦_CA_加拿大_23@18
+  name: 10|🇨🇳_CN_中国->🇨🇦_CA_加拿大_24@18
   password: 51239bce-01ab-454d-baa5-c0940c9f1751
   port: 10712
   server: yidong.liulangdiqiu.cyou
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇨🇦_CA_加拿大_24@4
-  password: cdb06941-b4e8-4aeb-8cd5-62c129edd075
-  port: 26902
-  server: ydyh.nanbei.info
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_19@23
+  name: 10|🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_20@23
   network: ws
   port: 11301
   server: cdn.node.user-sub.pddns-usersdk.com
@@ -535,7 +275,7 @@ proxies:
       host: cdn.node.user-sub.pddns-usersdk.com
     path: /ef483582-6269-468c-93af-c512ec2b8a61
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇩🇪_DE_德国_1_14@11
+  name: 10|🇨🇳_CN_中国->🇩🇪_DE_德国_1_15@11
   password: 3131fb42-5c82-4624-ae2b-a01a9d05327d
   port: 62506
   server: gzyd.jcnode.top
@@ -552,14 +292,14 @@ proxies:
   type: vmess
   uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇩🇪_DE_德国_2_14@17
+  name: 10|🇨🇳_CN_中国->🇩🇪_DE_德国_2_15@17
   password: 3131fb42-5c82-4624-ae2b-a01a9d05327d
   port: 14562
   server: gzdx.jcnode.top
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,15,21|🇪🇸西班牙04
+  name: 10,21|🇪🇸西班牙04
   network: tcp
   port: '36884'
   server: 6e2s04.abzoones.xyz
@@ -570,7 +310,7 @@ proxies:
   uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇫🇷_FR_法国_16@1
+  name: 10|🇨🇳_CN_中国->🇫🇷_FR_法国_17@1
   network: tcp
   port: 50041
   server: 41.kccic2pa.xyz
@@ -579,12 +319,12 @@ proxies:
   type: vmess
   uuid: 5c3d60c1-ec2b-41f4-bd22-b7336d7e37bb
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_14@0
+  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_15@0
   password: 3131fb42-5c82-4624-ae2b-a01a9d05327d
   port: 21781
   server: gzdx.jcnode.top
   type: ss
-- name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_15@32
+- name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_16@32
   network: tcp
   password: Mdb811a0
   port: 28154
@@ -595,7 +335,34 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_1_1@4
+  name: 10,21|🇬🇧英国04
+  network: tcp
+  port: '36811'
+  server: 2u3k04.abzoones.xyz
+  servername: uk04.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_1_22@0
+  network: tcp
+  port: 50009
+  server: 09.kccic2pa.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f6602bb3-d438-4f7c-9cf5-5fd548bc76dd
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_1_24@4
+  password: d376f270-1807-4522-9f92-b499658a2678
+  port: 27120
+  server: hefei.chiguayun.cc
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_1_2@4
   network: ws
   port: 30040
   server: v01.gutingting.com
@@ -607,31 +374,15 @@ proxies:
     headers:
       host: sh01.fastcloud.club
     path: /aceamedv
-- alterId: 0
-  cipher: auto
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_1_21@0
-  network: tcp
-  port: 50009
-  server: 09.kccic2pa.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f6602bb3-d438-4f7c-9cf5-5fd548bc76dd
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_1_23@4
+  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_2_24@5
   password: d376f270-1807-4522-9f92-b499658a2678
-  port: 27120
+  port: 27123
   server: hefei.chiguayun.cc
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_24@6
-  password: yCf03vE7phaImZaVjeAF3L
-  port: 19923
-  server: uk.shawbrothersstudio.com
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_2_1@11
+  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_2_2@11
   network: ws
   port: 30041
   server: v02.gutingting.com
@@ -644,32 +395,34 @@ proxies:
       host: sh01.fastcloud.club
     path: /aceamedv
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇬🇧_GB_英国_2_23@5
-  password: d376f270-1807-4522-9f92-b499658a2678
-  port: 27123
-  server: hefei.chiguayun.cc
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇬🇷_GR_希腊_21@12
+  name: 10|🇨🇳_CN_中国->🇬🇷_GR_希腊_22@12
   password: d376f270-1807-4522-9f92-b499658a2678
   port: 27134
   server: hefei.chiguayun.cc
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,23|香港 009
-  network: ws
-  port: 10005
-  server: 103.235.18.2
+  name: 10,21|🇭🇺匈牙利04
+  network: tcp
+  port: '36864'
+  server: 2h4u04.abzoones.xyz
+  servername: hu04.abpilot.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: a783230b-cd66-4492-9517-7f6cf569e1c9
-  ws-opts:
-    headers:
-      host: ylsl.kxking.eu.org
-    path: /vm?ed=2048
-- name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_1_1@6
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- alterId: 0
+  cipher: auto
+  name: 10,21|🇮🇳印度04
+  network: tcp
+  port: '36831'
+  server: 7i4n04.abzoones.xyz
+  servername: in04.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_1_2@6
   network: tcp
   password: 89324ca8-f77d-4249-8f56-2579bd8e4c58
   port: 22243
@@ -680,7 +433,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_2_1@8
+  name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_2_2@8
   network: ws
   port: 30028
   server: v02.gutingting.com
@@ -694,7 +447,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_3_1@9
+  name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_3_2@9
   network: ws
   port: 30027
   server: v01.gutingting.com
@@ -706,7 +459,7 @@ proxies:
     headers:
       host: sh01.fastcloud.club
     path: /aceamedv
-- name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_4_1@16
+- name: 10|🇨🇳_CN_中国->🇮🇳_IN_印度_4_2@16
   network: tcp
   password: 89324ca8-f77d-4249-8f56-2579bd8e4c58
   port: 18085
@@ -715,6 +468,17 @@ proxies:
   sni: id01.ckcloud.info
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 10,21|🇵🇹葡萄牙04
+  network: tcp
+  port: '36881'
+  server: 4p2t01.abzoones.xyz
+  servername: pt04.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - alterId: 0
   cipher: auto
   name: 10,21|🇷🇺俄罗斯04
@@ -727,12 +491,23 @@ proxies:
   type: vmess
   uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇹🇷_TR_土耳其_14@6
+  name: 10|🇨🇳_CN_中国->🇹🇷_TR_土耳其_15@6
   password: 3131fb42-5c82-4624-ae2b-a01a9d05327d
   port: 27048
   server: gzyd.jcnode.top
   type: ss
-- name: 10|🇨🇳_CN_中国->🇹🇷_TR_土耳其_1@12
+- alterId: 0
+  cipher: auto
+  name: 10,21|🇹🇷土耳其04
+  network: tcp
+  port: '36868'
+  server: 2t1u04.abzoones.xyz
+  servername: tr04.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- name: 10|🇨🇳_CN_中国->🇹🇷_TR_土耳其_2@12
   network: tcp
   password: 89324ca8-f77d-4249-8f56-2579bd8e4c58
   port: 46541
@@ -743,7 +518,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10,15,21|🇺🇦乌克兰04
+  name: 10,21|🇺🇦乌克兰04
   network: tcp
   port: '36871'
   server: 8u9a04.abzoones.xyz
@@ -753,14 +528,14 @@ proxies:
   type: vmess
   uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇺🇦_UA_乌克兰_23@10
+  name: 10|🇨🇳_CN_中国->🇺🇦_UA_乌克兰_24@10
   password: d376f270-1807-4522-9f92-b499658a2678
   port: 27121
   server: hefei.chiguayun.cc
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_10_1@18
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_10_2@18
   network: ws
   port: 62684
   server: gzdx.jcnode.top
@@ -771,7 +546,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_11_1@19
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_11_2@19
   network: ws
   port: 21036
   server: gzyd.jcnode.top
@@ -780,7 +555,7 @@ proxies:
   type: vmess
   uuid: 89324ca8-f77d-4249-8f56-2579bd8e4c58
   ws-opts: {}
-- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_12@7
+- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_13@7
   network: tcp
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 41929
@@ -790,7 +565,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_13@0
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_14@0
   network: ws
   port: 37539
   server: shenzhoul.nices.pro
@@ -803,14 +578,23 @@ proxies:
       host: shenzhoul.nices.pro
     path: /xtsmol
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_14@7
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_15@7
   password: 3131fb42-5c82-4624-ae2b-a01a9d05327d
   port: 41868
   server: gzyd.jcnode.top
   type: ss
+- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_1@1
+  network: tcp
+  password: 3e3cd44f-a06f-4571-8721-ce06a5fc12b7
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_19@19
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_20@19
   network: tcp
   port: 33210
   server: us.nodegroups.ink
@@ -818,9 +602,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 2d31764d-8633-3170-a946-27ec418bbb78
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_24@9
+  password: d376f270-1807-4522-9f92-b499658a2678
+  port: 27138
+  server: foshan.chiguayun.cc
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_1@0
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_2@0
   network: ws
   port: 30000
   server: v02.gutingting.com
@@ -832,15 +622,9 @@ proxies:
     headers:
       host: gz.fastcloud.club
     path: /aceamedv
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_23@9
-  password: d376f270-1807-4522-9f92-b499658a2678
-  port: 27138
-  server: foshan.chiguayun.cc
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_6@2
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_1_7@2
   network: ws
   port: 62001
   server: 120.241.46.222
@@ -853,20 +637,31 @@ proxies:
       host: data.db-link01.top
     path: /dabai.in
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_22@10
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_23@10
   password: d376f270-1807-4522-9f92-b499658a2678
   port: 27124
   server: hefei.chiguayun.cc
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_14@10
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_15@10
   password: 3131fb42-5c82-4624-ae2b-a01a9d05327d
   port: 20887
   server: gzdx.jcnode.top
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_19@20
+  name: 10,21|🇺🇸美国04 PRO
+  network: tcp
+  port: '36501'
+  server: 3u1s04.abzoones.xyz
+  servername: us04.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_20@20
   network: tcp
   port: 33209
   server: us.nodegroups.ink
@@ -874,7 +669,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 2d31764d-8633-3170-a946-27ec418bbb78
-- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_1@1
+- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_2@1
   network: tcp
   password: 89324ca8-f77d-4249-8f56-2579bd8e4c58
   port: 56102
@@ -885,7 +680,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_6@3
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_2_7@3
   network: ws
   port: 63091
   server: 120.241.46.222
@@ -897,13 +692,30 @@ proxies:
     headers:
       host: data.db-link01.top
     path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 10,21|🇺🇸美国05
+  network: tcp
+  port: '36506'
+  server: 3u1s05.abzoones.xyz
+  servername: us05.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_19@21
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_20@21
   password: 6cc1b03a-2eab-4f13-ab25-32e7622f0a56
   port: 19290
   server: starspeed.tbh.iosds.com
   type: ss
-- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_1@3
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_24@14
+  password: d376f270-1807-4522-9f92-b499658a2678
+  port: 27140
+  server: hefei.chiguayun.cc
+  type: ss
+- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_2@3
   network: tcp
   password: 89324ca8-f77d-4249-8f56-2579bd8e4c58
   port: 65097
@@ -912,15 +724,9 @@ proxies:
   sni: us04.ckcloud.info
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_23@14
-  password: d376f270-1807-4522-9f92-b499658a2678
-  port: 27140
-  server: hefei.chiguayun.cc
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_6@4
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_3_7@4
   network: ws
   port: 62014
   server: 120.241.46.223
@@ -934,7 +740,18 @@ proxies:
     path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_4_1@5
+  name: 10,21|🇺🇸美国06
+  network: tcp
+  port: '36511'
+  server: 3u1s06.abzoones.xyz
+  servername: us06.abpilot.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fb786c6e-87ab-4ae0-8a69-bad567b41812
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_4_2@5
   network: ws
   port: 30048
   server: v01.gutingting.com
@@ -948,7 +765,7 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_4_6@5
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_4_7@5
   network: ws
   port: 62004
   server: 120.241.46.222
@@ -962,7 +779,7 @@ proxies:
     path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_5_1@7
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_5_2@7
   network: ws
   port: 26611
   server: gzdx01.jcnode.top
@@ -973,7 +790,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_5_6@6
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_5_7@6
   network: ws
   port: 61001
   server: 120.241.46.222
@@ -987,7 +804,7 @@ proxies:
     path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_6_1@10
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_6_2@10
   network: ws
   port: 38381
   server: gzyd.jcnode.top
@@ -998,7 +815,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_6_6@7
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_6_7@7
   network: ws
   port: 62011
   server: 120.241.46.222
@@ -1012,7 +829,7 @@ proxies:
     path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_7_1@13
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_7_2@13
   network: tcp
   port: 54004
   server: ep.superjj.cc
@@ -1022,7 +839,7 @@ proxies:
   uuid: 1df37af4-121f-416a-b813-860aabc2ff57
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_7_6@8
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_7_7@8
   network: ws
   port: 64091
   server: 120.241.46.222
@@ -1035,14 +852,14 @@ proxies:
       host: data.db-link02.top
     path: /dabai.in
 - cipher: aes-256-gcm
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_8_1@14
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_8_2@14
   password: 5c8b210a-2f00-4292-964b-05281c7ad5d1
   port: 33952
   server: bjcu.xzyunjiasu.icu
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_8_6@11
+  name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_8_7@11
   network: ws
   port: 61002
   server: 120.241.46.222
@@ -1054,7 +871,7 @@ proxies:
     headers:
       host: data.db-link02.top
     path: /dabai.in
-- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_9_1@17
+- name: 10|🇨🇳_CN_中国->🇺🇸_US_美国_9_2@17
   network: tcp
   password: 4f0fe0cd-7ed5-443a-afbd-7827a746da77
   port: 20225
@@ -1065,7 +882,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10|🇫🇮_FI_芬兰->🇩🇪_DE_德国_15@16
+  name: 10|🇫🇮_FI_芬兰->🇩🇪_DE_德国_16@16
   network: tcp
   port: 49017
   server: 65.109.191.22
@@ -1074,14 +891,14 @@ proxies:
   type: vmess
   uuid: 11053029-cc94-46b2-bff4-8019a1efaeba
 - cipher: aes-256-gcm
-  name: 10|🇫🇷_FR_法国->🇨🇳_CN_中国_2@2
+  name: 10|🇫🇷_FR_法国->🇨🇳_CN_中国_3@2
   password: faBAoD54k87UJG7
   port: 2375
   server: 54.36.174.181
   type: ss
 - alterId: 64
   cipher: auto
-  name: 10|🇫🇷_FR_法国->🇳🇱_NL_荷兰_10@23
+  name: 10|🇫🇷_FR_法国->🇳🇱_NL_荷兰_11@23
   network: ws
   port: 30000
   server: 156.249.18.4
@@ -1092,20 +909,6 @@ proxies:
   uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4
   ws-opts:
     path: /path/1697719506275
-- alterId: 0
-  cipher: auto
-  name: 10|🇬🇧_GB_英国->🇺🇸_US_美国_24@5
-  network: ws
-  port: 2096
-  server: best.fakeopen.link
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 12859d73-1c81-4909-e071-c1aacfeea221
-  ws-opts:
-    headers:
-      host: us2.fakeopen.link
-    path: /us
 - alterId: 0
   cipher: auto
   name: 10,23|德国 004
@@ -1120,6 +923,33 @@ proxies:
     headers:
       host: host.mtn.jd-vpn.shop
     path: /
+- name: 10|🇯🇵_JP_日本->🇦🇷_AR_阿根廷_1@16
+  network: tcp
+  password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
+  port: 443
+  server: ar.mjt000.com
+  skip-cert-verify: true
+  sni: ar.mjt000.com
+  type: trojan
+  udp: true
+- name: 10|🇯🇵_JP_日本->🇨🇦_CA_加拿大_1@6
+  network: tcp
+  password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
+  port: 443
+  server: usla.mjt000.com
+  skip-cert-verify: true
+  sni: usla.mjt000.com
+  type: trojan
+  udp: true
+- name: 10|🇯🇵_JP_日本->🇵🇹_PT_葡萄牙_1@15
+  network: tcp
+  password: 61d2b2f6-d6ce-4724-9a5d-cc1123a1c949
+  port: 443
+  server: pt.mjt000.com
+  skip-cert-verify: true
+  sni: pt.mjt000.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 10,23|韩国 001
@@ -1136,7 +966,7 @@ proxies:
     path: /ophelia.mom:443/linkvws
 - alterId: 0
   cipher: auto
-  name: 10|🇰🇷_KR_韩国->🇺🇸_US_美国_4@7
+  name: 10|🇰🇷_KR_韩国->🇺🇸_US_美国_5@7
   network: ws
   port: 443
   server: 130.162.144.196
@@ -1148,7 +978,7 @@ proxies:
     headers:
       host: tg.wxgqlfx883.xyz
     path: /2d08a9f8-204f-4c11-aab5-f5bb8daf9b4c
-- name: 10|🇹🇼_TW_台湾->🇺🇸_US_美国_21@10
+- name: 10|🇹🇼_TW_台湾->🇺🇸_US_美国_22@10
   network: tcp
   password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
   port: 48004
@@ -1158,7 +988,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 10|🇹🇼_TW_台湾->🇺🇸_US_美国_8@13
+  name: 10|🇹🇼_TW_台湾->🇺🇸_US_美国_9@13
   network: ws
   port: 80
   server: 107.167.182.230
@@ -1200,7 +1030,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇦🇺_AU_澳大利亚_19@26
+  name: 10|🇺🇸_US_美国->🇦🇺_AU_澳大利亚_20@26
   network: ws
   port: 80
   server: xn3.shabijichang.com
@@ -1214,7 +1044,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_11@16
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_12@16
   network: ws
   port: 80
   server: freeyx.cloudflare88.eu.org
@@ -1228,7 +1058,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_1_12@0
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_1_13@0
   network: ws
   port: 2086
   server: freeyx.cloudflare88.eu.org
@@ -1242,7 +1072,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_2_12@1
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_2_13@1
   network: ws
   port: 2082
   server: freeyx.cloudflare88.eu.org
@@ -1256,7 +1086,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_4_12@5
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_4_13@5
   network: ws
   port: 2052
   server: 104.26.1.116
@@ -1270,7 +1100,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_5_12@6
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_5_13@6
   network: ws
   port: 443
   server: freeyx.cloudflare88.eu.org
@@ -1284,7 +1114,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_6_12@15
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_6_13@15
   network: ws
   port: 8080
   server: freeyx.cloudflare88.eu.org
@@ -1298,7 +1128,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_7_12@16
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_7_13@16
   network: ws
   port: 2095
   server: freeyx.cloudflare88.eu.org
@@ -1312,7 +1142,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_8_12@17
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_8_13@17
   network: ws
   port: 8880
   server: freeyx.cloudflare88.eu.org
@@ -1326,7 +1156,7 @@ proxies:
     path: /服务器4元月，节点2.5元月@natdcibot
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_9_12@18
+  name: 10|🇺🇸_US_美国->🇧🇷_BR_巴西_9_13@18
   network: ws
   port: 2052
   server: freeyx.cloudflare88.eu.org
@@ -1338,6 +1168,20 @@ proxies:
     headers:
       host: jd2kuai5yuan.cloudflare88.eu.org
     path: /服务器4元月，节点2.5元月@natdcibot
+- alterId: 0
+  cipher: auto
+  name: 10|🇺🇸_US_美国->🇩🇪_DE_德国_0@14
+  network: ws
+  port: 2082
+  server: 104.31.16.164
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d
+  ws-opts:
+    headers:
+      host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+    path: /franc.digires.shop/11201
 - alterId: 0
   cipher: auto
   name: 10,23|加拿大 013
@@ -1368,7 +1212,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇩🇪_DE_德国_2_14@26
+  name: 10|🇺🇸_US_美国->🇩🇪_DE_德国_2_15@26
   network: ws
   port: 2052
   server: yd1.992688.xyz
@@ -1382,7 +1226,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇩🇪_DE_德国_2_20@1
+  name: 10|🇺🇸_US_美国->🇩🇪_DE_德国_2_21@1
   network: ws
   port: 2053
   server: v15.583182.xyz
@@ -1396,7 +1240,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇩🇪_DE_德国_4@4
+  name: 10|🇺🇸_US_美国->🇩🇪_DE_德国_5@4
   network: ws
   port: 80
   server: flkf2.shabijichang.com
@@ -1410,7 +1254,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇫🇷_FR_法国_15@29
+  name: 10|🇺🇸_US_美国->🇫🇷_FR_法国_16@29
   network: ws
   port: 80
   server: 104.18.202.232
@@ -1438,7 +1282,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇬🇧_GB_英国_1_19@4
+  name: 10|🇺🇸_US_美国->🇬🇧_GB_英国_1_20@4
   network: ws
   port: 80
   server: xn2.shabijichang.com
@@ -1449,6 +1293,20 @@ proxies:
   ws-opts:
     headers:
       host: xn2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|🇺🇸_US_美国->🇬🇧_GB_英国_2_1@18
+  network: ws
+  port: 80
+  server: mrb2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mrb2.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
@@ -1466,17 +1324,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇮🇳_IN_印度_1@26
+  name: 10,23|加拿大 005
   network: ws
   port: 80
-  server: mm3.shabijichang.com
+  server: mm2.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      host: mm3.shabijichang.com
+      host: mm2.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
@@ -1491,6 +1349,34 @@ proxies:
   ws-opts:
     headers:
       host: a.109420.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|🇺🇸_US_美国->🇮🇳_IN_印度_2@26
+  network: ws
+  port: 80
+  server: mm3.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm3.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|🇺🇸_US_美国->🇮🇳_IN_印度_2_1@14
+  network: ws
+  port: 80
+  server: hdlb2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: hdlb2.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
@@ -1522,7 +1408,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇮🇷_IR_伊朗_17@10
+  name: 10|🇺🇸_US_美国->🇮🇷_IR_伊朗_18@10
   network: ws
   port: 2052
   server: cf.yx.alue.link
@@ -1592,7 +1478,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇰🇷_KR_韩国_7@4
+  name: 10|🇺🇸_US_美国->🇰🇷_KR_韩国_8@4
   network: ws
   port: 21106
   server: cadld2.gophers.gay
@@ -1660,7 +1546,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇳🇱_NL_荷兰_1_7@6
+  name: 10|🇺🇸_US_美国->🇳🇱_NL_荷兰_1_8@6
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -1687,20 +1573,6 @@ proxies:
     headers:
       host: s1.shargh.shop
     path: /
-- alterId: 64
-  cipher: auto
-  name: 10,23|美国 005
-  network: ws
-  port: 30000
-  server: 45.199.138.152
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
-  ws-opts:
-    headers:
-      host: www.32522178.xyz
-    path: /path/1696598013851
 - alterId: 0
   cipher: auto
   name: 10,23|加拿大 017
@@ -1718,7 +1590,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇳🇱_NL_荷兰_2_7@10
+  name: 10|🇺🇸_US_美国->🇳🇱_NL_荷兰_2_8@10
   network: ws
   port: 30000
   server: 156.225.67.234
@@ -1732,7 +1604,7 @@ proxies:
     path: /path/1698239888914
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇵🇱_PL_波兰_6@1
+  name: 10|🇺🇸_US_美国->🇵🇱_PL_波兰_7@1
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-diana.xyz
@@ -1775,7 +1647,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸_US_美国->🇿🇦_ZA_南非_10@21
+  name: 10|🇺🇸_US_美国->🇿🇦_ZA_南非_11@21
   network: ws
   port: 80
   server: yhnsb3.shabijichang.com
