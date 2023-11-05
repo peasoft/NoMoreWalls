@@ -1,6 +1,23 @@
 proxies:
 - alterId: 0
   cipher: auto
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 10|Relay_🇹🇼TW-🇹🇼TW_58
+  network: ws
+  port: 80
+  server: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a0816b2-3af5-4739-9784-941b75150e98
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 21|🇹🇼台湾04 PRO
   network: tcp
   port: '36301'
@@ -8,7 +25,7 @@ proxies:
   servername: tw04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: dcbaa35a-d287-41d2-aef4-51009acc5364
+  uuid: 7708c8f5-ffa4-402b-a951-34eae5911476
 - alterId: 0
   cipher: auto
   name: 21|🇹🇼台湾05
@@ -18,7 +35,7 @@ proxies:
   servername: tw05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: dcbaa35a-d287-41d2-aef4-51009acc5364
+  uuid: 7708c8f5-ffa4-402b-a951-34eae5911476
 - alterId: 0
   cipher: auto
   name: 21|🇹🇼台湾06
@@ -28,7 +45,7 @@ proxies:
   servername: tw06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: dcbaa35a-d287-41d2-aef4-51009acc5364
+  uuid: 7708c8f5-ffa4-402b-a951-34eae5911476
 - alterId: 0
   cipher: auto
   name: 23|台湾 001
@@ -51,7 +68,7 @@ proxies:
   servername: tw04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cf8f03ea-45fb-4f90-b105-21b41d1ea168
+  uuid: c9a3124f-a2f8-4c73-b098-e40ed6362acd
 - alterId: 0
   cipher: auto
   name: 30|台湾 05  | 1x TWN
@@ -61,7 +78,7 @@ proxies:
   servername: tw05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cf8f03ea-45fb-4f90-b105-21b41d1ea168
+  uuid: c9a3124f-a2f8-4c73-b098-e40ed6362acd
 - alterId: 0
   cipher: auto
   name: 30|台湾 06  | 1x TWN
@@ -71,17 +88,24 @@ proxies:
   servername: tw06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cf8f03ea-45fb-4f90-b105-21b41d1ea168
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 31|🇹🇼 台湾|@ripaojiedian
-  password: 8ac00a0d-3aca-4d01-b7a5-89feee52948e
-  port: 27260
-  server: gtm.ktmwan.com
+  uuid: c9a3124f-a2f8-4c73-b098-e40ed6362acd
+- alterId: 0
+  cipher: auto
+  name: 31,32|台湾|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: hytron.io
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 010c265f-5455-4141-ca23-4d69357ded0d
+  ws-opts:
+    headers:
+      Host: aktw.daozhang.love
+    path: /
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 31|🇹🇼 台湾2|@ripaojiedian
   password: a0068c048cb0
   plugin: v2ray-plugin

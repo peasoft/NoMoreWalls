@@ -1,4 +1,73 @@
 proxies:
+- name: '3,5,9|_CA__1 #2'
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.29
+  skip-cert-verify: true
+  sni: jus2.jsjc.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /jsjc/us2
+- name: '3,5,9|_CA__2 #2'
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.45
+  skip-cert-verify: true
+  sni: jus3.jsjc.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /jsjc/us3
+- name: '3,5,9|_CA__3 #2'
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.19
+  skip-cert-verify: true
+  sni: jus1.jsjc.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /jsjc/us1
+- name: 7|🇨🇦 _CA_加拿大
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.29
+  skip-cert-verify: false
+  sni: jus2.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus2.jsjc.sbs
+    path: /jsjc/us2
+- name: 7|🇨🇦 _CA_加拿大 2
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.19
+  skip-cert-verify: false
+  sni: jus1.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus1.jsjc.sbs
+    path: /jsjc/us1
+- name: 7|🇨🇦 _CA_加拿大 3
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.45
+  skip-cert-verify: false
+  sni: jus3.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus3.jsjc.sbs
+    path: /jsjc/us3
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇦CA-134.195.196.178-11526 | 4...
   password: G!yBwPWH3Vao
@@ -13,7 +82,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦_CA_加拿大_14@16
+  name: 10,23|加拿大 233
   network: ws
   port: 56301
   server: ca-000.xiaoxiaobujidao.xyz
@@ -110,6 +179,21 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: '23,29|🇺🇸_US_美国 #15'
+  network: ws
+  port: 8443
+  server: 172.67.184.53
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42
+  ws-opts:
+    headers:
+      Host: cloudconebbb.gorgorchicken.one
+    path: /cloudconebbb
+- alterId: 0
+  cipher: auto
   name: '23,29|加拿大 043 #1'
   network: ws
   port: 443
@@ -172,6 +256,22 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
+  name: 23,29|⚡️@DeamNet_🔻 🇨🇦Canada 15
+  network: ws
+  port: 2086
+  server: 172.67.229.25
+  servername: 'null'
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
   name: 23|加拿大 048
   network: ws
   port: 8880
@@ -202,7 +302,7 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: 23,29|⚡️@DeamNet_🔻 🇨🇦Canada 10
+  name: '23,29|加拿大 050 #1'
   network: ws
   port: 2086
   server: 172.67.229.39
@@ -248,11 +348,12 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 23|加拿大 053
+  cipher: auto
+  name: '23,29|加拿大 053 #1'
   network: ws
   port: 2086
   server: 172.67.229.37
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -385,11 +486,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23|加拿大 063
+  name: '23,29|加拿大 063 #1'
   network: ws
   port: 2086
   server: 162.159.134.52
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 865897ad-8d07-4021-b7c3-d8eb4a29ee8d
   ws-opts:
@@ -438,7 +541,7 @@ proxies:
     path: /xtsmol
 - alterId: 0
   cipher: auto
-  name: 23,29|🇺🇸 _US_美国_wmt_28
+  name: '23,29|加拿大 067 #1'
   network: ws
   port: 443
   server: api.jquery.com
@@ -468,7 +571,7 @@ proxies:
     path: /ophelia.mom:443/linkvws
 - alterId: 0
   cipher: auto
-  name: '23,29|@Hope_Net-join-us-on-Telegram #2'
+  name: '23,29|@Hope_Net-join-us-on-Telegram #1'
   network: ws
   port: '443'
   server: 104.21.4.29
@@ -608,11 +711,11 @@ proxies:
     path: /f0uncvgo.ts
 - alterId: 0
   cipher: auto
-  name: 23,29|⚡️@DeamNet_🔻 🇨🇦Canada 74
+  name: 23,29|🇺🇸 US 324
   network: ws
   port: 8443
   server: 104.31.16.120
-  servername: cloudconebbb.gorgorchicken.one
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -745,11 +848,13 @@ proxies:
     path: /cloudconebbb
 - alterId: 0
   cipher: auto
-  name: 23|加拿大 091
+  name: '23,29|加拿大 091 #1'
   network: ws
   port: 8880
   server: 104.18.87.21
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 4b5e4565-322f-4223-a891-78a84f189726
   ws-opts:
@@ -842,7 +947,7 @@ proxies:
     path: /ec3a017507e0/
 - alterId: 0
   cipher: auto
-  name: 23,29|🇺🇸 US 390
+  name: '23,29|加拿大 099 #1'
   network: ws
   port: 8443
   server: 104.21.84.60
@@ -1074,6 +1179,19 @@ proxies:
     path: /quanstring?ed=2048
 - alterId: 0
   cipher: auto
+  name: 23|加拿大 117
+  network: ws
+  port: 8080
+  server: us-new04.gujuji.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  ws-opts:
+    headers:
+      Host: us-new04.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
   name: 23|加拿大 118
   network: ws
   port: 8080
@@ -1084,6 +1202,19 @@ proxies:
   ws-opts:
     headers:
       Host: uk-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 119
+  network: ws
+  port: 8080
+  server: fr-new01.gujuji.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  ws-opts:
+    headers:
+      Host: fr-new01.gujuji.top
     path: /
 - alterId: 0
   cipher: auto
@@ -1113,11 +1244,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23,29|🆓18@oneclickvpnkeys
+  name: 23|加拿大 122
   network: ws
-  port: '443'
+  port: 8080
+  server: de-new01.gujuji.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  ws-opts:
+    headers:
+      Host: de-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '23,29|加拿大 123 #1'
+  network: ws
+  port: 443
   server: www.speedtest.net
-  servername: edeen.makeup
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1220,7 +1364,7 @@ proxies:
     path: /35d5ef49ce?ed=2048
 - alterId: 0
   cipher: auto
-  name: '23,29|加拿大 130 #1'
+  name: 23|加拿大 130
   network: ws
   port: 443
   server: us-1.8080.eu.org
@@ -1366,10 +1510,11 @@ proxies:
     path: /mp4
 - alterId: 0
   cipher: auto
-  name: 23|加拿大 142
+  name: '23,29|加拿大 142 #1'
   network: ws
   port: 8443
   server: 172.67.187.30
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1448,11 +1593,11 @@ proxies:
     path: /uasfbbc
 - alterId: 0
   cipher: auto
-  name: 23,29|⚡️@DeamNet_🔻 🇳🇱Netherlands 22
+  name: '23,29|加拿大 148 #1'
   network: ws
   port: 443
   server: edeen.makeup
-  servername: edeen.makeup
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1617,11 +1762,11 @@ proxies:
     path: /fteivws
 - alterId: 1
   cipher: auto
-  name: 23,29|⚡️@DeamNet_🔻 🇨🇦Canada 18
+  name: 23,29|🇺🇸 _US_美国_wmt_19
   network: ws
   port: 443
   server: 104.21.53.12
-  servername: ophelia.mom
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2198,11 +2343,10 @@ proxies:
     path: /wo.img
 - alterId: 0
   cipher: auto
-  name: '23,29|加拿大 201 #1'
+  name: 23|加拿大 201
   network: ws
   port: 443
   server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2478,25 +2622,12 @@ proxies:
     path: /public
 - alterId: 0
   cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 2
-  network: ws
-  port: 80
-  server: 104.31.16.27
-  servername: 'null'
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ca5.tehme2.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 32
+  name: 23,29|⚡️@DeamNet_🔻 🇨🇦Canada 32
   network: ws
   port: 2086
   server: join4.vmessprotocol.sbs
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -2504,61 +2635,76 @@ proxies:
     headers:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 113
-  network: ws
-  port: 8443
-  server: 104.21.36.26
-  servername: cloudconebbb.gorgorchicken.one
-  tls: true
-  type: vmess
-  uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42
-  ws-opts:
-    headers:
-      Host: cloudconebbb.gorgorchicken.one
-    path: /cloudconebbb
-- alterId: 0
-  cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 92
-  network: ws
-  port: 443
-  server: ming2.kiwireich.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
-  ws-opts:
-    headers:
-      Host: ming2.kiwireich.com
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 12
-  network: ws
-  port: 443
-  server: 104.21.91.254
-  servername: waynn.makeup
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: waynn.makeup
-    path: linkvws
 - alterId: 1
   cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 47
+  name: 23,29|⚡️@DeamNet_🔻 🇨🇦Canada 47
   network: ws
   port: 443
   server: 64.68.192.77
   servername: 03fcc618-b93d-6796-6aed-8a38c975d581.ophelia.mom
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
       Host: ophelia.mom
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 236
+  network: ws
+  port: 2053
+  server: hackteam.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4134efe7-d935-416c-c2cc-24943e4a80ca
+  ws-opts:
+    headers:
+      Host: hackteam.link
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,29|🔒 VM-WS-TLS 🏴‍☠️ NA-162.159.13...
+  network: ws
+  port: '2096'
+  server: 162.159.136.232
+  servername: 0pefestL0udust8z.pouriya.cf
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 49dc7300-1fc1-4c93-866f-aa493c4a3e5b
+  ws-opts:
+    headers:
+      Host: yuxORu6Ljohicef9.pouriya.cf
+    path: /Amsterdam
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 29
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: it1.xv2ray.net
+  tls: true
+  type: vmess
+  uuid: f8502145-b560-4f62-b2d7-9301ac914e32
+  ws-opts:
+    headers:
+      Host: it1.xv2ray.net
+    path: /vmess
+- alterId: 1
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 78
+  network: ws
+  port: 443
+  server: oliv.beauty
+  servername: oliv.beauty
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: oliv.beauty
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -2576,30 +2722,6 @@ proxies:
     path: /asdas
 - alterId: 0
   cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 37
-  network: ws
-  port: 443
-  server: cdnjs.com
-  servername: Lille.kotick.site
-  tls: true
-  type: vmess
-  uuid: 691C16EE-D3A5-4BA6-AE8B-59C12B278D86
-  ws-opts:
-    headers:
-      Host: Lille.kotick.site
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: 29|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9...
-  network: tcp
-  port: '3389'
-  server: 142.93.144.99
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
   name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 22
   network: ws
   port: 443
@@ -2612,68 +2734,6 @@ proxies:
     headers:
       Host: edeen.makeup
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 29|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
-  network: tcp
-  port: '22324'
-  server: 198.57.27.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 63
-  network: ws
-  port: 8880
-  server: cdn.narutos.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  ws-opts:
-    headers:
-      Host: poland.yj2022.gq
-    path: /XQ2WCa29jfDM25GBcbnQ
-- alterId: 0
-  cipher: auto
-  name: 29|🔒 VM-TCP-NA 🇨🇦 CA-178.128.237....
-  network: tcp
-  port: '3389'
-  server: 178.128.237.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 29
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: it1.xv2ray.net
-  tls: true
-  type: vmess
-  uuid: f8502145-b560-4f62-b2d7-9301ac914e32
-  ws-opts:
-    headers:
-      Host: it1.xv2ray.net
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 62
-  network: ws
-  port: 8443
-  server: cloudconeaaa.gorgorchicken.one
-  servername: cloudconeaaa.gorgorchicken.one
-  tls: true
-  type: vmess
-  uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60
-  ws-opts:
-    headers:
-      Host: cloudconeaaa.gorgorchicken.one
-    path: /cloudconeaaa
 - alterId: 1
   cipher: auto
   name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 9
@@ -2690,6 +2750,124 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
+  name: 29|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9...
+  network: tcp
+  port: '3389'
+  server: 142.93.144.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 12
+  network: ws
+  port: 443
+  server: 104.21.91.254
+  servername: waynn.makeup
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: waynn.makeup
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 62
+  network: ws
+  port: 8443
+  server: cloudconeaaa.gorgorchicken.one
+  servername: cloudconeaaa.gorgorchicken.one
+  tls: true
+  type: vmess
+  uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60
+  ws-opts:
+    headers:
+      Host: cloudconeaaa.gorgorchicken.one
+    path: /cloudconeaaa
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 103
+  network: tcp
+  port: 22324
+  server: 198.57.27.212
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 30
+  network: ws
+  port: 443
+  server: 104.21.40.162
+  servername: be1.xv2ray.net
+  tls: true
+  type: vmess
+  uuid: d196ccc9-db42-475d-a7e4-7c27a6a326d1
+  ws-opts:
+    headers:
+      Host: be1.xv2ray.net
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 92
+  network: ws
+  port: 443
+  server: ming2.kiwireich.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+  ws-opts:
+    headers:
+      Host: ming2.kiwireich.com
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 37
+  network: ws
+  port: 443
+  server: cdnjs.com
+  servername: Lille.kotick.site
+  tls: true
+  type: vmess
+  uuid: 691C16EE-D3A5-4BA6-AE8B-59C12B278D86
+  ws-opts:
+    headers:
+      Host: Lille.kotick.site
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 2
+  network: ws
+  port: 80
+  server: 104.31.16.27
+  servername: 'null'
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca5.tehme2.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 29|⚡️@DeamNet_🔻 🇨🇦Canada 113
+  network: ws
+  port: 8443
+  server: 104.21.36.26
+  servername: cloudconebbb.gorgorchicken.one
+  tls: true
+  type: vmess
+  uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42
+  ws-opts:
+    headers:
+      Host: cloudconebbb.gorgorchicken.one
+    path: /cloudconebbb
+- alterId: 0
+  cipher: auto
   name: 30|加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -2697,7 +2875,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cf8f03ea-45fb-4f90-b105-21b41d1ea168
+  uuid: c9a3124f-a2f8-4c73-b098-e40ed6362acd
 - alterId: 0
   cipher: auto
   name: 33|🇨🇦加拿大 | 101 | 负载优化 | 1x
