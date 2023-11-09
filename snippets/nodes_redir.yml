@@ -1,7 +1,7 @@
 proxies:
 - alterId: 1
   cipher: auto
-  name: 0,2,4,6,7,8,23,29,39|🇨🇦_CA_加拿大->🇬🇧_GB_英国_6
+  name: 0,2,4,6,7,8,23,29,40|🇨🇦_CA_加拿大->🇬🇧_GB_英国_6
   network: ws
   port: 443
   server: 64.68.192.77
@@ -15,7 +15,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 0,6,7,39|🇺🇸_US_美国->🇮🇳_IN_印度_3
+  name: 0,6,7,40|🇺🇸_US_美国->🇮🇳_IN_印度_3
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -36,7 +36,7 @@ proxies:
   servername: de04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   name: 0,6,15,21|🇬🇧英国04
@@ -46,10 +46,10 @@ proxies:
   servername: uk04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,15,39|🇺🇸_US_美国->🇮🇳_IN_印度_2_52
+  name: 0,6,7,15,40|🇺🇸_US_美国->🇮🇳_IN_印度_2_52
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -70,13 +70,13 @@ proxies:
   servername: tr04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 64
   cipher: auto
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 0,6,10,24,29,32,39|🇨🇳_CN_中国->🇬🇧_GB_英国_2
+  name: '0,2,3,4,5,6,8,9,10,24,29,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_2 #1'
   network: tcp
   port: 49006
   server: 112.29.94.23
@@ -95,22 +95,37 @@ proxies:
   servername: es04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
-  name: 2,4,8,39|🇺🇸_US_美国->🇮🇳_IN_印度_由快嘴科技提供;kkz...
+  name: 2,4,8,40|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供;kkz...
   network: ws
   port: 80
-  server: mm3.shabijichang.com
+  server: mrb2.shabijichang.com
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      Host: mm3.shabijichang.com
+      Host: mrb2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '2,4,6,7,8,15,23,24,29|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
+  network: ws
+  port: 2082
+  server: main.doctorweb.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 137b3288-0fbe-4ac1-b73e-a2de0c543635
+  ws-opts:
+    headers:
+      Host: main.doctorweb.sbs
+    path: /
 - alterId: 64
   cipher: auto
-  name: 2,4,6,7,8,29,39|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供;kkz...
+  name: 2,4,6,7,8,24,29,40|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供;kkz...
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -124,204 +139,7 @@ proxies:
     path: /path/1699280099138
 - alterId: 0
   cipher: auto
-  name: 2,4,8,23,29,39|🇺🇸_US_美国->🇳🇱_NL_荷兰_2_34
-  network: ws
-  port: 2096
-  server: 162.159.138.232
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c58c0655-d722-4ad1-8ad5-2452c77a753a
-  ws-opts:
-    headers:
-      Host: stiyUs6usw.pouriya.cf
-    path: /Amsterdam
-- alterId: 0
-  cipher: auto
-  name: 2,4,8,23,39|🇺🇸_US_美国->🇫🇷_FR_法国_由快嘴科技提供;kkz...
-  network: ws
-  port: 2082
-  server: 104.25.77.185
-  tls: false
-  type: vmess
-  uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
-  ws-opts:
-    headers:
-      Host: bold-mud-c089.owotaa.workers.dev
-    path: /Lille.kotick.site:443/speedtest
-- alterId: 0
-  cipher: auto
-  name: 2,4,8,23,39|🇺🇸_US_美国->🇫🇷_FR_法国_2_42
-  network: ws
-  port: 2082
-  server: 162.159.25.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
-  ws-opts:
-    headers:
-      Host: bold-mud-c089.owotaa.workers.dev
-    path: /Lille.kotick.site:443/speedtest
-- alterId: 1
-  cipher: auto
-  name: 2,4,8,23,29,39|🇳🇱_NL_荷兰->🇬🇧_GB_英国_46
-  network: ws
-  port: 443
-  server: 188.114.97.1
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: odelia.autos
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 2,4,8,39|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供;kkz...
-  network: ws
-  port: 80
-  server: mrb2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mrb2.shabijichang.com
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 2,4,8,23,39|🇫🇷_FR_法国->🇳🇱_NL_荷兰_50
-  network: ws
-  port: 30000
-  server: 156.249.18.157
-  tls: true
-  type: vmess
-  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
-  ws-opts:
-    headers:
-      Host: www.53489761.xyz
-    path: /path/1699280099138
-- alterId: 0
-  cipher: auto
-  name: 2,4,6,7,8,15,39|🇺🇸_US_美国->🇬🇧_GB_英国_2_60
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US_->_IN__1 #2'
-  network: ws
-  port: 80
-  server: mm3.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm3.shabijichang.com
-- alterId: 64
-  cipher: auto
-  name: '3,5,9|_US_->_NL__1 #2'
-  network: ws
-  port: 30000
-  server: 45.199.138.191
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      host: www.42077230.xyz
-    path: /path/1699280099138
-- name: '3,5,9|_CN_->_US__1 #2'
-  network: tcp
-  password: bef35a85-22a4-47d6-856b-a612a7ce50c4
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US_->_NL__2 #2'
-  network: ws
-  port: 2096
-  server: 162.159.138.232
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c58c0655-d722-4ad1-8ad5-2452c77a753a
-  ws-opts:
-    headers:
-      host: stiyUs6usw.pouriya.cf
-    path: /Amsterdam
-- name: '3,5,9|_CN_->_UA_ #2'
-  network: tcp
-  password: bef35a85-22a4-47d6-856b-a612a7ce50c4
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US_->_FR__1 #2'
-  network: ws
-  port: 2082
-  server: 104.25.77.185
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
-  ws-opts:
-    headers:
-      host: bold-mud-c089.owotaa.workers.dev
-    path: /Lille.kotick.site:443/speedtest
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US_->_FR__2 #2'
-  network: ws
-  port: 2082
-  server: 162.159.25.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
-  ws-opts:
-    headers:
-      host: bold-mud-c089.owotaa.workers.dev
-    path: /Lille.kotick.site:443/speedtest
-- alterId: 1
-  cipher: auto
-  name: '3,5,9|_NL_->_GB_ #2'
-  network: ws
-  port: 443
-  server: 188.114.97.1
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: odelia.autos
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US_->_GB__1 #2'
+  name: '3,5,9|_US_->_GB_ #2'
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -338,7 +156,7 @@ proxies:
   country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 3,5,9,10|Relay_🇨🇦CA-🇺🇸US_09
+  name: 3,5,9,10|Relay_🇨🇦CA-🇺🇸US_07
   network: ws
   port: 443
   server: 64.68.192.77
@@ -351,67 +169,34 @@ proxies:
     headers:
       HOST: ophelia.mom
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US_->_DE_ #2'
+  network: ws
+  port: 2082
+  server: main.doctorweb.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 137b3288-0fbe-4ac1-b73e-a2de0c543635
+  ws-opts:
+    headers:
+      host: main.doctorweb.sbs
+    path: /
 - alterId: 64
   cipher: auto
-  name: '3,5,9|_FR_->_NL_ #2'
+  name: '3,5,9|_US_->_NL_ #2'
   network: ws
   port: 30000
-  server: 156.249.18.157
+  server: 45.199.138.191
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      host: www.53489761.xyz
+      host: www.42077230.xyz
     path: /path/1699280099138
-- name: '3,5,9|_CN_->_US__2 #2'
-  network: tcp
-  password: bef35a85-22a4-47d6-856b-a612a7ce50c4
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 3,5,9,23|加拿大 005
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
-    path: /
-- name: '3,5,9|_CN_->_AT_ #2'
-  network: tcp
-  password: bef35a85-22a4-47d6-856b-a612a7ce50c4
-  port: 10848
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9,23,29|加拿大 008 #1'
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇺🇸美国06
@@ -421,7 +206,7 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇺🇸美国04 PRO
@@ -431,7 +216,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇮🇳印度04
@@ -441,7 +226,7 @@ proxies:
   servername: in04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇨🇦加拿大04
@@ -451,7 +236,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇦🇺澳大利亚04
@@ -461,21 +246,7 @@ proxies:
   servername: au04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
-- alterId: 0
-  cipher: auto
-  name: '6,7,15,23,29|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
-  network: ws
-  port: 2082
-  server: main.doctorweb.sbs
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 137b3288-0fbe-4ac1-b73e-a2de0c543635
-  ws-opts:
-    headers:
-      Host: main.doctorweb.sbs
-    path: /
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇺🇦乌克兰04
@@ -485,7 +256,7 @@ proxies:
   servername: ua04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇵🇹葡萄牙04
@@ -495,7 +266,21 @@ proxies:
   servername: pt04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
+- alterId: 0
+  cipher: auto
+  name: 6,7,15,40|🇺🇸_US_美国->🇬🇧_GB_英国_2_60
+  network: ws
+  port: 80
+  server: ld2.shabijichang.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 6,15,21|🇧🇷巴西04
@@ -505,10 +290,24 @@ proxies:
   servername: br04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
+- alterId: 64
+  cipher: auto
+  name: 6,7,24,40|🇺🇸_US_美国_9_30
+  network: ws
+  port: 30000
+  server: 45.199.138.146
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  ws-opts:
+    headers:
+      Host: www.19229362.xyz
+    path: /path/1699193100388
 - alterId: 0
   cipher: auto
-  name: 6,7,15|🇮🇷_IR_伊朗->🇩🇪_DE_德国
+  name: '6,7,15,29|🇮🇷_IR_伊朗->🇩🇪_DE_德国 #1'
   network: ws
   port: 2083
   server: de1.cloudfa.pw
@@ -529,17 +328,17 @@ proxies:
   servername: ar04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f0773226-6afe-41c5-a9f1-897d6606df59
+  uuid: fe402c7e-8311-46eb-8578-eb1768a7c89e
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 7,10,19,20,31|🇺🇸 美国2|@ripaojiedian
+  name: 7,10,12,19,20,31|🇺🇸 美国2|@ripaojiedian
   password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
   port: 23566
   server: 154.12.39.113
-  servername: 175.27.154.61
+  servername: 39.103.165.178
   skip-cert-verify: false
   sni: glc-vn.windowsupdatea.com
   tfo: false
@@ -548,16 +347,29 @@ proxies:
   udp: true
   uuid: 041170e1-95fd-40b1-9bd0-1d28826f97e7
   ws-path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 39|🇸🇬_SG_新加坡->🇺🇸_US_美国_由快嘴科技提供;kk...
+  name: 29|🇺🇸_US_美国->🇳🇱_NL_荷兰_1
   network: ws
-  port: 80
-  server: 8.222.198.105
-  tls: false
+  port: 30000
+  server: 45.199.138.146
+  servername: ''
+  tls: true
   type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
   ws-opts:
     headers:
-      Host: warp.chigua.tk
-    path: /
+      Host: ''
+    path: /path/1699193100388
+- alterId: 0
+  cipher: auto
+  name: 40|🇺🇸_US_美国->🇮🇳_IN_印度_由快嘴科技提供;kkz...
+  network: ws
+  port: 80
+  server: mm3.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm3.shabijichang.com
