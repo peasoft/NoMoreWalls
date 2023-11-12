@@ -1,9 +1,9 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '0,6,7,29|🇺🇸 _US_美国 #9'
+  name: '0,2,4,6,7,8,15,24,29|🇺🇸_US_美国->🇳🇱_NL_荷兰 #4'
   network: ws
-  port: '30000'
+  port: 30000
   server: 45.199.138.146
   skip-cert-verify: false
   tls: true
@@ -45,7 +45,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 0,6,7,15,22,24,40|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz...
+  name: '0,6,7,22,24,29,40|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz... #1'
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -59,7 +59,7 @@ proxies:
     path: /path/1699280099138
 - alterId: 0
   cipher: auto
-  name: 0,6,7,15,22,24,40|🇺🇸_US_美国->🇬🇧_GB_英国_2_24
+  name: 0,6,7,22,24,40|🇺🇸_US_美国->🇬🇧_GB_英国_2_24
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -73,7 +73,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,22|中国 阿里云
+  name: 0,6,7,22|中国 阿里云
   network: ws
   port: 80
   server: 8.222.198.105
@@ -101,7 +101,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇮🇳_IN_印度_2由快嘴科技提供：kk...
+  name: 0,6,7,40|🇺🇸_US_美国->🇮🇳_IN_印度_2由快嘴科技提供：kk...
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -115,10 +115,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: '0,6,10,12,22,24,29,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz... #1'
+  name: 0,2,3,4,5,6,8,9,15,22,24,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
   network: tcp
   port: 49056
   server: 112.29.94.23
@@ -127,84 +124,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_SG_->_US_ #2'
+  name: 2,4,8,15,40|🇺🇸_US_美国_4_25
   network: ws
   port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
+  server: mm3.shabijichang.com
   tls: false
   type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      host: warp.chigua.tk
+      Host: mm3.shabijichang.com
     path: /
-- name: '3,5,9|_CN_->_UA_ #2'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
+- alterId: 64
+  cipher: auto
+  name: '3,5,9|_US_->_NL_ #2'
+  network: ws
+  port: 30000
+  server: 45.199.138.146
   skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_US__1 #2'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_US__2 #2'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  ws-opts:
+    headers:
+      host: www.19229362.xyz
+    path: /path/1699193100388
 - alterId: 0
   cipher: auto
-  name: 3,5,9,23|加拿大 005
+  name: '3,5,9|_US_->_IN_ #2'
   network: ws
   port: 80
-  server: mm2.shabijichang.com
+  server: mm3.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      host: mm2.shabijichang.com
-    path: /
-- name: '3,5,9|_CN_->_US__3 #2'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 15,22,23,29,40|🇺🇸_US_美国->🇬🇧_GB_英国_3_26
-  network: ws
-  port: 2052
-  server: family.mgtajhiz.ir
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
-  ws-opts:
-    headers:
-      Host: family.mgtajhiz.ir
+      host: mm3.shabijichang.com
     path: /
