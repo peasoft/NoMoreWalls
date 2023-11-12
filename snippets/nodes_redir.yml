@@ -1,10 +1,11 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '0,29|🇺🇸 _US_美国 #11'
+  name: '0,6,7,29|🇺🇸 _US_美国 #9'
   network: ws
   port: '30000'
   server: 45.199.138.146
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
@@ -14,10 +15,11 @@ proxies:
     path: /path/1699193100388
 - alterId: 0
   cipher: auto
-  name: 0,23|加拿大 131
+  name: 0,6,7,22,23|加拿大 131
   network: ws
   port: 80
   server: yhnsb3.shabijichang.com
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -29,10 +31,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇸🇬 _SG_新加坡->🇺🇸_US_美国
+  name: 0,6,7|🇸🇬 _SG_新加坡->🇺🇸_US_美国 2
   network: ws
-  port: '80'
+  port: 80
   server: 8.222.235.92
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
@@ -42,7 +45,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 0,6,7,15,22,24,39|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz...
+  name: 0,6,7,15,22,24,40|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz...
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -56,7 +59,7 @@ proxies:
     path: /path/1699280099138
 - alterId: 0
   cipher: auto
-  name: 0,6,7,15,24,39|🇺🇸_US_美国->🇬🇧_GB_英国_2_24
+  name: 0,6,7,15,22,24,40|🇺🇸_US_美国->🇬🇧_GB_英国_2_24
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -70,10 +73,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,4,8|🇸🇬_SG_新加坡->🇺🇸_US_美国 #2'
+  name: 0,2,4,6,7,8,22|中国 阿里云
   network: ws
   port: 80
   server: 8.222.198.105
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
@@ -83,7 +87,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7,15,39|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+  name: 0,6,7,15,22,40|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -97,7 +101,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,15,39|🇺🇸_US_美国->🇮🇳_IN_印度_2由快嘴科技提供：kk...
+  name: 0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇮🇳_IN_印度_2由快嘴科技提供：kk...
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -111,14 +115,19 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '0,22,24,29,32,39|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz... #1'
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '0,6,10,12,22,24,29,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz... #1'
   network: tcp
   port: 49056
   server: 112.29.94.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '3,5,9|_SG_->_US_ #2'
@@ -185,7 +194,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 6,7,15,23,29,39|🇺🇸_US_美国->🇬🇧_GB_英国_3_26
+  name: 15,22,23,29,40|🇺🇸_US_美国->🇬🇧_GB_英国_3_26
   network: ws
   port: 2052
   server: family.mgtajhiz.ir
