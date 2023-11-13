@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,6,7,22|中国阿里云 39
+  name: '0,2,4,6,7,8,15|🇸🇬_SG_新加坡->🇺🇸_US_美国 #6'
   network: ws
   port: 80
   server: 8.222.198.105
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7,39|🇺🇸_US_美国->🇮🇳_IN_印度_6
+  name: 0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇮🇳_IN_印度_6
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -29,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7,15,39|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz... #1'
+  name: '0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz... #1'
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -43,19 +43,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇬🇧 _CN_中国->🇬🇧_GB_英国
+  name: '0,2,3,4,5,6,8,9,15|🇨🇳_CN_中国->🇬🇧_GB_英国 #3'
   network: tcp
-  port: '50009'
+  port: 50009
   server: 09.kccic2pa.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a24d165e-408c-41cb-9997-0fcb012cb138
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国->🇧🇷_BR_巴西
+  name: '0,2,4,6,7,8,15|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
   network: ws
-  port: '80'
+  port: 80
   server: sbl4.shabijichang.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -65,7 +67,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7,24|github.com/freefq - 中国阿里云 34
+  name: 0,2,4,6,7,8,15,22,24|github.com/freefq - 中国阿里云 34
   network: ws
   port: '80'
   server: 8.222.235.92
@@ -80,10 +82,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,4,8,15,39|🇺🇸_US_美国->🇮🇳_IN_印度_由快嘴科技提供：kkz...
+  name: 0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇮🇳_IN_印度_由快嘴科技提供：kkz...
   network: ws
   port: 80
   server: mm3.shabijichang.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -93,7 +96,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 0,6,7,39|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz...
+  name: 0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz...
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -107,7 +110,7 @@ proxies:
     path: /path/1699280099138
 - alterId: 0
   cipher: auto
-  name: 0,6,7,39|🇺🇸_US_美国->🇬🇧_GB_英国_2_9
+  name: 0,2,4,6,7,8,15,40|🇺🇸_US_美国->🇬🇧_GB_英国_2_9
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -121,55 +124,87 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _CN_中国->🇺🇸_US_美国
+  name: '0,2,3,4,5,6,8,9,15|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
   network: tcp
-  port: '50020'
+  port: 50020
   server: 20.kccic2pa.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a24d165e-408c-41cb-9997-0fcb012cb138
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '2,4,6,7,8,15,39|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz... #1'
+  name: '3,5,9|_SG_->_US__1 #2'
   network: ws
-  port: 30000
-  server: 45.199.138.146
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
-  ws-opts:
-    headers:
-      Host: www.19229362.xyz
-    path: /path/1699193100388
-- alterId: 64
-  cipher: auto
-  name: 2,3,4,5,6,8,9,15,22,32,39|🇨🇳_CN_中国->🇬🇧_GB_英国_2
-  network: tcp
-  port: 49056
-  server: 112.29.94.23
-  servername: ''
+  port: 80
+  server: 8.222.198.105
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- alterId: 64
-  cipher: auto
-  name: '3,5,9|_US_->_NL_ #2'
-  network: ws
-  port: 30000
-  server: 45.199.138.146
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
   ws-opts:
     headers:
-      host: www.19229362.xyz
-    path: /path/1699193100388
+      host: warp.chigua.tk
+    path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_US_->_IN_ #2'
+  name: 3,5,9,23|加拿大 005
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 3,5,9,23|加拿大 008
+  network: ws
+  port: 80
+  server: ld2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: ld2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US_->_BR_ #2'
+  network: ws
+  port: 80
+  server: sbl4.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: sbl4.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_SG_->_US__2 #2'
+  network: ws
+  port: 80
+  server: 8.222.235.92
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US_->_IN__2 #2'
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -181,19 +216,71 @@ proxies:
     headers:
       host: mm3.shabijichang.com
     path: /
+- alterId: 64
+  cipher: auto
+  name: '3,5,9|_US_->_NL_ #2'
+  network: ws
+  port: 30000
+  server: 45.199.138.191
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      host: www.42077230.xyz
+    path: /path/1699280099138
 - alterId: 0
   cipher: auto
-  name: '6,7,22,23,24|github.com/freefq - 美国CloudFla... #3'
+  name: '3,5,9|_US_->_GB__2 #2'
   network: ws
-  port: '80'
-  server: yhnsb3.shabijichang.com
-  servername: ''
+  port: 80
+  server: mrb2.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      Host: yhnsb3.shabijichang.com
+      host: mrb2.shabijichang.com
     path: /
+- alterId: 64
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 7,10,12,19,20,31|🇭🇰 香港5|@ripaojiedian
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  port: 443
+  server: 112.120.127.9
+  servername: 175.27.154.61
+  skip-cert-verify: false
+  sni: glc-hkt2.windowsupdatea.com
+  tfo: false
+  tls: false
+  type: trojan
+  udp: true
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 40|🇨🇳_CN_中国->🇬🇧_GB_英国_2
+  network: tcp
+  port: 49056
+  server: 112.29.94.23
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: '40|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz... #1'
+  network: ws
+  port: 30000
+  server: 45.199.138.146
+  tls: true
+  type: vmess
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  ws-opts:
+    headers:
+      Host: www.19229362.xyz
+    path: /path/1699193100388
