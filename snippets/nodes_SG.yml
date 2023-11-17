@@ -1,4 +1,36 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 10|🇸🇬SG-139.162.5.19-8698 | 9.972...
+  password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
+  port: 8099
+  server: 139.162.5.19
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 10|🇸🇬SG-170.187.230.221-10102 | 9...
+  network: ws
+  port: 443
+  server: 170.187.230.221
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b0437ccd-08aa-4c74-8f31-27cbed8a2de6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|🇸🇬SG-170.187.230.221-1485 | 10...
+  network: ws
+  port: 443
+  server: 170.187.230.221
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b0437ccd-08aa-4c74-8f31-27cbed8a2de6
+  ws-opts:
+    headers:
+      Host: us02web.zoom.us
+    path: /
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡04
@@ -8,7 +40,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a4576b51-6b3a-4ea4-b8d8-a9b44d82782f
+  uuid: d66d3dfe-59ed-4826-8292-2a3b1e75a6dd
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡05
@@ -18,7 +50,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a4576b51-6b3a-4ea4-b8d8-a9b44d82782f
+  uuid: d66d3dfe-59ed-4826-8292-2a3b1e75a6dd
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡06
@@ -28,7 +60,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a4576b51-6b3a-4ea4-b8d8-a9b44d82782f
+  uuid: d66d3dfe-59ed-4826-8292-2a3b1e75a6dd
 - alterId: 0
   cipher: auto
   name: 23|新加坡 001
@@ -51,10 +83,11 @@ proxies:
   uuid: e9882e7b-c7bc-4c13-ab4d-bc127d39925c
 - alterId: 0
   cipher: auto
-  name: 23|新加坡 003
+  name: '23,29|新加坡 003 #1'
   network: ws
   port: 443
   server: 170.187.230.221
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -87,24 +120,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 23,29|🔒 VM-TCP-NA 🇸🇬 SG-146.190.96.1...
+  name: 23|新加坡 006
   network: tcp
-  port: '8081'
+  port: 8081
   server: 146.190.96.182
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 06660b7f-46e7-4182-a41e-9e1d1b00b7b4
 - alterId: 0
   cipher: auto
-  name: '29|Anycast [1.0x] V0 新加坡 03 #1'
+  name: 29|Anycast [1.0x] V0 新加坡 03
   network: ws
   port: '80'
   server: 172.64.84.214
   tls: false
   type: vmess
-  uuid: 182d5857-231e-4fa0-8b58-ea31b4c83ac1
+  uuid: 52614954-6b1b-408d-9c12-bb67f0d21a80
   ws-opts:
     headers:
       Host: freewhoringinkoreasg01.360ddns.online
@@ -118,7 +149,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: de92899a-5fb8-4bb0-bb7f-b6d955984a65
+  uuid: f856eddd-d2b3-40d1-8487-e0d30d57d446
 - alterId: 0
   cipher: auto
   name: 30|【BGP】新加坡 05 | 1x SG
@@ -128,7 +159,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: de92899a-5fb8-4bb0-bb7f-b6d955984a65
+  uuid: f856eddd-d2b3-40d1-8487-e0d30d57d446
 - alterId: 0
   cipher: auto
   name: 30|【BGP】新加坡 06 | 1x SG
@@ -138,7 +169,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: de92899a-5fb8-4bb0-bb7f-b6d955984a65
+  uuid: f856eddd-d2b3-40d1-8487-e0d30d57d446
 - cipher: aes-256-cfb
   name: 31|🇸🇬 新加坡特殊|浏览器输入 翻墙.com
   password: amazonskr05
