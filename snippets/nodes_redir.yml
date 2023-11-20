@@ -1,23 +1,22 @@
 proxies:
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 0,2,3,4,5,6,8,9,15,23|伊朗 004
+  name: 0,2,3,4,5,6,8,9,22,24,29,32,39|🇨🇳_CN_中国->🇬🇧_GB_英国_24
   network: tcp
-  port: 46585
-  server: 78.39.56.6
+  port: 49223
+  server: 112.29.94.23
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 05af75d7-4c45-4222-b245-d36c5618135d
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 0
   cipher: auto
-  name: 0,1,6,7,15,24,40|🇺🇸_US_美国->🇮🇳_IN_印度_20
+  name: 0,6,7,15,39|🇺🇸_US_美国->🇮🇳_IN_印度_20
   network: ws
   port: 80
   server: mm2.shabijichang.com
-  servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -27,12 +26,37 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,1,2,4,6,7,8,15,22,40|🇺🇸_US_美国->🇬🇧_GB_英国_4
+  name: 0|🇺🇸 _US_美国->🇬🇧_GB_英国
+  network: ws
+  port: '80'
+  server: mrb2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mrb2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸 _US_美国->🇮🇷_IR_伊朗
+  network: ws
+  port: '2053'
+  server: 104.26.13.8
+  tls: true
+  type: vmess
+  uuid: a4089f68-2bb1-4734-d77a-8b049a80ae8c
+  ws-opts:
+    headers:
+      Host: BAmIlo.ONlINeviSioNsTore.sITE
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0,2,4,6,7,8,15,22,39|🇺🇸_US_美国->🇬🇧_GB_英国_4
   network: ws
   port: 80
   server: ld2.shabijichang.com
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -40,48 +64,29 @@ proxies:
     headers:
       Host: ld2.shabijichang.com
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 0,2,3,4,5,6,8,9,12,22,24,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_24
+  name: 0|🇺🇸 _US_美国->🇫🇷_FR_法国
+  network: ws
+  port: '2096'
+  server: web.parspack.com
+  tls: true
+  type: vmess
+  uuid: a98626c1-88ee-47db-ad1d-a8bd15910a83
+  ws-opts:
+    headers:
+      Host: tElEWebIOn.onlIneVIsioNStorE.sITE
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 2,3,4,5,6,8,9,15,23|伊朗 004
   network: tcp
-  port: 49223
-  server: 112.29.94.23
-  servername: ''
+  port: 46585
+  server: 78.39.56.6
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '0,6|🇩🇪 _CN_中国->🇩🇪_DE_德国 #2'
-  network: tcp
-  port: '50707'
-  server: 183.237.20.148
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 1,7,10,12,19,20,31|🇭🇰 香港3|浏览器输入 翻墙.com
-  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  port: 55002
-  server: 36.141.40.59
-  servername: 114.117.234.12
-  skip-cert-verify: false
-  sni: trj.rollingnext.co.uk
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
+  uuid: 05af75d7-4c45-4222-b245-d36c5618135d
 - name: '3,5,9|_CN_->_US__1 #2'
   network: tcp
   password: b1169481-07ac-4eff-91f2-4306aa1c545c
@@ -141,3 +146,30 @@ proxies:
     headers:
       host: ld2.shabijichang.com
     path: /
+- alterId: 64
+  cipher: auto
+  name: 6|🇩🇪 _CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: '50707'
+  server: 183.237.20.148
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 7,10,19,20,31|🇭🇰 香港3|浏览器输入 翻墙.com
+  password: d02058f4f819dced
+  port: 55002
+  server: 36.141.40.59
+  servername: 114.117.234.12
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
