@@ -4,7 +4,7 @@ proxies:
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 0,2,3,4,5,6,8,9,10,12,15,22,24,29,32,39|🇨🇳_CN_中国->🇬🇧_GB_英国_24
+  name: 0,2,3,4,5,6,8,9,10,15,22,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_24
   network: tcp
   port: 49223
   server: 112.29.94.23
@@ -16,7 +16,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7,15,22,39|🇺🇸_US_美国->🇮🇳_IN_印度_20
+  name: 0,2,4,6,7,8,15,22,40|🇺🇸_US_美国->🇮🇳_IN_印度_20
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -31,7 +31,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7,15|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
+  name: 0,6,7,15|🇺🇸_US_美国->🇬🇧_GB_英国
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -59,7 +59,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,15,39|🇺🇸_US_美国->🇬🇧_GB_英国_4
+  name: 0,6,7,15,40|🇺🇸_US_美国->🇬🇧_GB_英国_4
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -73,9 +73,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7|🇺🇸 _US_美国->🇫🇷_FR_法国 #2'
+  name: '0,6,7,29|🇺🇸 _US_美国->🇫🇷_FR_法国 #3'
   network: ws
-  port: 2096
+  port: '2096'
   server: web.parspack.com
   skip-cert-verify: false
   tls: true
@@ -87,70 +87,28 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 2,3,4,5,8,9,23|伊朗 004
-  network: tcp
-  port: 46585
-  server: 78.39.56.6
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 05af75d7-4c45-4222-b245-d36c5618135d
-- name: '3,5,9|_CN_->_US__1 #2'
-  network: tcp
-  password: b1169481-07ac-4eff-91f2-4306aa1c545c
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_US__2 #2'
-  network: tcp
-  password: b1169481-07ac-4eff-91f2-4306aa1c545c
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_US__3 #2'
-  network: tcp
-  password: b1169481-07ac-4eff-91f2-4306aa1c545c
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_UA_ #2'
-  network: tcp
-  password: b1169481-07ac-4eff-91f2-4306aa1c545c
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_AT_ #2'
-  network: tcp
-  password: b1169481-07ac-4eff-91f2-4306aa1c545c
-  port: 10848
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 3,5,9,23|加拿大 007
+  name: 3,5,9,23|加拿大 004
   network: ws
   port: 80
-  server: ld2.shabijichang.com
+  server: mm2.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      host: ld2.shabijichang.com
+      host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15,40|🇺🇸_US_美国_2_由快嘴科技提供：kkzui.com2
+  network: ws
+  port: 80
+  server: mm3.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm3.shabijichang.com
     path: /
