@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,6,7,15,39|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz... #1'
+  name: '0,2,4,6,7,8,15,39|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz... #1'
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7,15,22,24,39|🇺🇸_US_美国->🇮🇳_IN_印度_2_47
+  name: 0,2,4,6,7,8,15,22,24,39|🇺🇸_US_美国->🇮🇳_IN_印度_2_47
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -29,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7,23,29|加拿大 252 #1'
+  name: '0,2,4,6,7,8,23,29|加拿大 252 #1'
   network: ws
   port: 2052
   server: family.mgtajhiz.ir
@@ -57,16 +57,72 @@ proxies:
     headers:
       Host: mm2.shabijichang.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: 2,3,4,5,8,9,39|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+- name: '3,5,9|_HK_->_CA_ #2'
   network: tcp
-  port: 49223
-  server: 112.29.94.23
+  password: 4f2f34cc-d2e9-4ca8-a687-68efe5ad5959
+  port: 443
+  server: ca.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US_->_GB__1 #2'
+  network: ws
+  port: 80
+  server: mrb2.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mrb2.shabijichang.com
+    path: /
+- name: '3,5,9|_HK_->_FR_ #2'
+  network: tcp
+  password: 4f2f34cc-d2e9-4ca8-a687-68efe5ad5959
+  port: 443
+  server: uk.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: '3,5,9|_HK_->_US_ #2'
+  network: tcp
+  password: 4f2f34cc-d2e9-4ca8-a687-68efe5ad5959
+  port: 443
+  server: usa.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US_->_IN__1 #2'
+  network: ws
+  port: 80
+  server: mm3.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm3.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US_->_GB__2 #2'
+  network: ws
+  port: 2052
+  server: family.mgtajhiz.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
+  ws-opts:
+    headers:
+      host: family.mgtajhiz.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 3,5,9,23|加拿大 004
@@ -87,10 +143,10 @@ proxies:
   h2-opts: {}
   http-opts: {}
   name: 7,10,19,20,31|🇭🇰 香港3|浏览器输入 翻墙.com
-  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
+  password: 70face6dd320ea29
   port: 34996
   server: 36.141.40.59
-  servername: 112.132.212.112
+  servername: 39.103.165.178
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   tfo: false
@@ -109,3 +165,12 @@ proxies:
   protocol-param: 40575:fV3Nxq
   server: yd-05.paofunlink.com
   type: ssr
+- alterId: 64
+  cipher: auto
+  name: 39|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+  network: tcp
+  port: 49223
+  server: 112.29.94.23
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
