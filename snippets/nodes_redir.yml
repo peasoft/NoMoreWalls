@@ -1,10 +1,10 @@
 proxies:
 - alterId: 64
   cipher: auto
-  country: CN
+  country: 🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 0,6,10,12,15,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+  name: 0,2,3,4,5,6,8,9,10,12,15,24,29,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
   network: tcp
   port: 43526
   server: 112.29.94.23
@@ -23,19 +23,19 @@ proxies:
     method: GET
     path:
     - /
-  name: 0,6,7,15|🇫🇮_FI_芬兰->🇩🇪_DE_德国
+  name: '0,2,3,4,5,6,7,8,9,15|🇫🇮_FI_芬兰->🇩🇪_DE_德国 #3'
   network: http
   port: 2053
   server: bia-kanal-telegram.freev2alpha.cfd
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4a923b7d-7f20-4e8a-81e3-1e7eaf9cc504
 - alterId: 0
   cipher: auto
-  name: '0,6,7,10,15,29|🇺🇸 _US_美国->🇬🇧_GB_英国 #3'
+  name: '0,2,4,6,7,8,15|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
   network: ws
-  port: '80'
+  port: 80
   server: ld2.shabijichang.com
   skip-cert-verify: false
   tls: false
@@ -45,6 +45,56 @@ proxies:
     headers:
       Host: ld2.shabijichang.com
     path: /
+- name: '3,5,9|_CN_->_US__1 #2'
+  network: tcp
+  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: '3,5,9|_CN_->_UA_ #2'
+  network: tcp
+  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: '3,5,9|_CN_->_US__2 #2'
+  network: tcp
+  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 3,5,9,23|加拿大 007
+  network: ws
+  port: 80
+  server: ld2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: ld2.shabijichang.com
+    path: /
+- name: '3,5,9|_CN_->_US__3 #2'
+  network: tcp
+  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国
   obfs: plain
@@ -107,12 +157,12 @@ proxies:
   h2-opts: {}
   http-opts: {}
   name: 7,10,12,19,20,31|🇭🇰 香港5|@ripaojiedian
-  password: d02058f4f819dced
+  password: d4e41ff772c7fd45
   port: 50010
   server: 10.kccic2pa.xyz
-  servername: 112.132.212.112
+  servername: 175.27.154.61
   skip-cert-verify: false
-  sni: lovehjq.xyz
+  sni: 13-231-155-134.nhost.00cdn.com
   tfo: false
   tls: false
   type: vmess
