@@ -1,7 +1,45 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: 0,10,12,22,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+  network: tcp
+  port: 43526
+  server: 112.29.94.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7|🇺🇸 _US_美国->🇬🇧_GB_英国 2
+  name: 0|🇩🇪 _FI_芬兰->🇩🇪_DE_德国
+  network: http
+  port: '2053'
+  server: bia-kanal-telegram.freev2alpha.cfd
+  tls: false
+  type: vmess
+  uuid: 4a923b7d-7f20-4e8a-81e3-1e7eaf9cc504
+- alterId: 0
+  cipher: auto
+  name: '0,6,7,10,29|🇺🇸 _US_美国->🇬🇧_GB_英国 #4'
+  network: ws
+  port: '80'
+  server: ld2.shabijichang.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6,7|🇺🇸 _US_美国->🇬🇧_GB_英国 2
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -12,20 +50,6 @@ proxies:
   ws-opts:
     headers:
       Host: mrb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,6,7,10|RELAY-172.64.80.1-0263 | 13.46...
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
     path: /
 - cipher: chacha20-ietf
   name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国
