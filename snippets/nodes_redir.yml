@@ -4,7 +4,7 @@ proxies:
   country: CN
   h2-opts: {}
   http-opts: {}
-  name: 0,10,12,22,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+  name: 0,6,10,12,15,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
   network: tcp
   port: 43526
   server: 112.29.94.23
@@ -16,16 +16,24 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇪 _FI_芬兰->🇩🇪_DE_德国
+  http-opts:
+    headers:
+      Host:
+      - bia-kanal-telegram.freev2alpha.cfd
+    method: GET
+    path:
+    - /
+  name: 0,6,7,15|🇫🇮_FI_芬兰->🇩🇪_DE_德国
   network: http
-  port: '2053'
+  port: 2053
   server: bia-kanal-telegram.freev2alpha.cfd
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 4a923b7d-7f20-4e8a-81e3-1e7eaf9cc504
 - alterId: 0
   cipher: auto
-  name: '0,6,7,10,29|🇺🇸 _US_美国->🇬🇧_GB_英国 #4'
+  name: '0,6,7,10,15,29|🇺🇸 _US_美国->🇬🇧_GB_英国 #3'
   network: ws
   port: '80'
   server: ld2.shabijichang.com
@@ -37,26 +45,12 @@ proxies:
     headers:
       Host: ld2.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 6,7|🇺🇸 _US_美国->🇬🇧_GB_英国 2
-  network: ws
-  port: 80
-  server: mrb2.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mrb2.shabijichang.com
-    path: /
 - cipher: chacha20-ietf
   name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国
   obfs: plain
   obfs-param: TG@wangcai_1
   password: jFa4F1
-  port: 7703
+  port: 7709
   protocol: auth_aes128_sha1
   protocol-param: 84263:3gj7aB
   server: cm01.newcome.xyz
@@ -66,27 +60,27 @@ proxies:
   obfs: plain
   obfs-param: TG@wangcai_1
   password: jFa4F1
-  port: 7706
+  port: 7703
   protocol: auth_aes128_sha1
   protocol-param: 84263:3gj7aB
-  server: 120.240.88.111
+  server: cm01.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf
   name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 3
   obfs: plain
   obfs-param: TG@wangcai_1
   password: jFa4F1
-  port: 7704
+  port: 7706
   protocol: auth_aes128_sha1
   protocol-param: 84263:3gj7aB
-  server: cm01.newcome.xyz
+  server: 120.240.88.111
   type: ssr
 - cipher: chacha20-ietf
   name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 4
   obfs: plain
   obfs-param: TG@wangcai_1
   password: jFa4F1
-  port: 7709
+  port: 7708
   protocol: auth_aes128_sha1
   protocol-param: 84263:3gj7aB
   server: cm01.newcome.xyz
@@ -96,27 +90,41 @@ proxies:
   obfs: plain
   obfs-param: TG@wangcai_1
   password: jFa4F1
-  port: 7701
+  port: 7707
   protocol: auth_aes128_sha1
   protocol-param: 84263:3gj7aB
   server: 120.240.88.111
   type: ssr
-- cipher: chacha20-ietf
-  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 6
-  obfs: plain
-  obfs-param: TG@wangcai_1
-  password: jFa4F1
-  port: 7709
-  protocol: auth_aes128_sha1
-  protocol-param: 84263:3gj7aB
-  server: 120.240.88.111
-  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: 7|🇮🇳 _CN_中国->🇮🇳_IN_印度
+  password: ff21950f-e77d-4132-bbc1-d864b515251c
+  port: 10911
+  server: host-053.crazyspeed.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 7,10,12,19,20,31|🇭🇰 香港5|@ripaojiedian
+  password: d02058f4f819dced
+  port: 50010
+  server: 10.kccic2pa.xyz
+  servername: 112.132.212.112
+  skip-cert-verify: false
+  sni: lovehjq.xyz
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c17a31ce-d574-40c4-8d4e-07d8299c9fd7
+  ws-path: /
 - cipher: chacha20-ietf
   name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 7
   obfs: plain
   obfs-param: TG@wangcai_1
   password: jFa4F1
-  port: 7707
+  port: 7701
   protocol: auth_aes128_sha1
   protocol-param: 84263:3gj7aB
   server: 120.240.88.111
@@ -132,7 +140,7 @@ proxies:
   server: cm01.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf
-  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 9
+  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 10
   obfs: plain
   obfs-param: TG@wangcai_1
   password: jFa4F1
@@ -140,6 +148,26 @@ proxies:
   protocol: auth_aes128_sha1
   protocol-param: 84263:3gj7aB
   server: cm01.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 11
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: jFa4F1
+  port: 7704
+  protocol: auth_aes128_sha1
+  protocol-param: 84263:3gj7aB
+  server: cm01.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 12
+  obfs: plain
+  obfs-param: TG@wangcai_1
+  password: jFa4F1
+  port: 7709
+  protocol: auth_aes128_sha1
+  protocol-param: 84263:3gj7aB
+  server: 120.240.88.111
   type: ssr
 - alterId: 0
   cipher: auto
