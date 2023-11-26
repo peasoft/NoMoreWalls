@@ -1,11 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,22,24,29,40|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_由快嘴科技提供：...
+  name: 0,6,7,22,24,29,40|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_由快嘴科技提供：...
   network: ws
   port: 80
   server: upload.ir
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
@@ -15,11 +16,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 0,22|美国CloudFlare公司CDN节点 24
+  name: 0,6,7,15|🇺🇸_US_美国->🇮🇳_IN_印度
   network: ws
-  port: '80'
+  port: 80
   server: mm3.shabijichang.com
-  servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -29,7 +30,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,23,40|🇯🇵_JP_日本->🇺🇸_US_美国_由快嘴科技提供：kkz...
+  name: 0,6,7,15,23,40|🇯🇵_JP_日本->🇺🇸_US_美国_由快嘴科技提供：kkz...
   network: ws
   port: 443
   server: aa1.wuxianliulianng.xyz
@@ -43,7 +44,7 @@ proxies:
     path: /apple
 - alterId: 0
   cipher: auto
-  name: 0,23,29|Salt Lake City 优选IP 0.1
+  name: 0,6,7,23,29|Salt Lake City 优选IP 0.1
   network: ws
   port: '2052'
   server: us.lonan.can.1145114.me
@@ -57,7 +58,7 @@ proxies:
     path: /lonan
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,10,40|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+  name: 0,2,4,6,7,8,10,15,40|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -71,7 +72,10 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 0,2,3,4,5,6,8,9,15,22,24,29,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_7
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 0,2,3,4,5,6,8,9,10,12,15,22,24,29,32,40|🇨🇳_CN_中国->🇬🇧_GB_英国_7
   network: tcp
   port: 43526
   server: 112.29.94.23
@@ -80,9 +84,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0,23,29|🇺🇸_US_美国->🇧🇷_BR_巴西
+  name: '0,6,7,15,23,29|🇺🇸_US_美国->🇧🇷_BR_巴西 #1'
   network: ws
   port: 2052
   server: snmxw.qkhbyf.tech
@@ -100,7 +105,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 2,3,4,5,8,9,15,23|德国 011
+  name: 2,3,4,5,8,9,23|德国 011
   network: http
   port: 443
   server: 91.107.145.222
@@ -122,45 +127,27 @@ proxies:
     headers:
       host: ld2.shabijichang.com
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 7,10,19,20,31|🇺🇸 美国4|浏览器输入 翻墙.com
-  password: 312d6c9a-a39b-4581-9c04-b27be91e47a2
-  port: 20802
-  server: 150.230.193.91
-  servername: 112.132.212.112
+  name: 7,10,12,19,20,31|🇹🇼 台湾1|@ripaojiedian
+  password: d02058f4f819dced
+  port: 16132
+  server: 117.164.185.222
+  servername: 114.117.234.12
   skip-cert-verify: false
   sni: 13-231-155-134.nhost.00cdn.com
   tfo: false
   tls: false
-  type: trojan
+  type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: f2dc204c-c78a-3a8d-9bcc-a3f13a22c171
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '15|🇮🇷_IR_伊朗->🇩🇪_DE_德国 #3'
-  network: http
-  port: 443
-  server: 91.107.157.61
-  tls: false
-  type: vmess
-  uuid: d20e38ef-1a4d-4009-a00d-2f0d44e3c65a
-- alterId: 0
-  cipher: auto
-  name: '15|🇮🇷_IR_伊朗->🇩🇪_DE_德国 #4'
-  network: http
-  port: 443
-  server: 128.140.65.147
-  tls: false
-  type: vmess
-  uuid: 3cd02bd2-8ee0-448a-e553-692d0ec31173
-- alterId: 0
-  cipher: auto
-  name: '29|🇺🇸 _US_美国->🇬🇧_GB_英国 #1'
+  name: '29|🇺🇸 _US_美国->🇬🇧_GB_英国 #3'
   network: ws
   port: '80'
   server: mrb2.shabijichang.com
