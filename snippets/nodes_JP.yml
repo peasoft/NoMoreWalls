@@ -78,7 +78,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c6449884-918c-48f1-8f79-9bcf6b09d9f5
+  uuid: e7e156de-e59b-467d-88de-308c88b2f56b
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本05
@@ -88,7 +88,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c6449884-918c-48f1-8f79-9bcf6b09d9f5
+  uuid: e7e156de-e59b-467d-88de-308c88b2f56b
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本06
@@ -98,35 +98,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c6449884-918c-48f1-8f79-9bcf6b09d9f5
-- alterId: 0
-  cipher: auto
-  name: 22|日本 东京Digital VM
-  network: ws
-  port: '80'
-  server: rbtow.yunjisuan.cf
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 22|日本 东京Amazon数据中心
-  network: ws
-  port: '443'
-  server: jp3.jidexufei.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8ab61f8b-2d9f-4105-90ad-9ab1540bbdda
-  ws-opts:
-    headers:
-      Host: jp3.jidexufei.top
-    path: /cctv13/hd.m3u8
+  uuid: e7e156de-e59b-467d-88de-308c88b2f56b
 - alterId: 0
   cipher: auto
   name: 23|日本 001
@@ -195,20 +167,6 @@ proxies:
     headers:
       Host: 555.golinkwuxian.top
     path: /apple
-- alterId: 0
-  cipher: auto
-  name: 23|日本 006
-  network: ws
-  port: 443
-  server: 64.110.99.155
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4d7732ee-986a-4c25-8443-d6fefa8d2190
-  ws-opts:
-    headers:
-      Host: 4444.golinkwuxian.top
-    path: /apple
 - alterId: 64
   cipher: auto
   name: 29|🔒 VM-TCP-NA 🇯🇵 JP-45.88.43.143...
@@ -221,17 +179,27 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 29|🇯🇵|JP|日本|@wxgqlfx|1
+  name: 29|[vmess]日本a10
   network: ws
-  port: 443
-  server: jp2.jidexufei.top
-  tls: false
+  port: '443'
+  server: aa8.wuxianliulianng.xyz
+  servername: golinkwuxian.top
+  tls: true
   type: vmess
-  uuid: 8ab61f8b-2d9f-4105-90ad-9ab1540bbdda
+  uuid: 4d7732ee-986a-4c25-8443-d6fefa8d2190
   ws-opts:
     headers:
-      Host: jp2.jidexufei.top
-    path: /cctv13/hd.m3u8
+      Host: 4444.golinkwuxian.top
+    path: /apple
+- alterId: 1
+  cipher: auto
+  name: 29|🇯🇵Japan_2
+  network: tcp
+  port: 21586
+  server: jp01-alt-vm0.entry.srthdw.art
+  tls: true
+  type: vmess
+  uuid: 870eab3a-58ef-3920-9e29-e1a91dc7530d
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 04  | 1x JP
@@ -241,7 +209,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d9227928-1634-48c9-94df-8b5a6d6a63dc
+  uuid: ce09442e-e053-4030-87b6-f67eb3271a53
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 05  | 1x JP
@@ -251,7 +219,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d9227928-1634-48c9-94df-8b5a6d6a63dc
+  uuid: ce09442e-e053-4030-87b6-f67eb3271a53
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 06  | 1x JP
@@ -261,7 +229,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d9227928-1634-48c9-94df-8b5a6d6a63dc
+  uuid: ce09442e-e053-4030-87b6-f67eb3271a53
 - cipher: aes-128-gcm
   name: 31|🇯🇵 日本KT|@ripaojiedian
   password: g12sQi#ss#&1
@@ -288,14 +256,30 @@ proxies:
     path: ''
     skip-cert-verify: true
     tls: false
-  port: 10014
+  port: 10011
   server: 139.227.182.207
   tfo: false
   type: ss
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 31,32|日本2|@ripaojiedian
+  network: ws
+  port: '44640'
+  server: gzct1.xlb.lol
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 52bed0db-a37e-430f-a393-cfaa54eae9d0
+  ws-opts:
+    headers:
+      Host: gzct1.xlb.lol
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 31|🇯🇵 日本|@ripaojiedian
-  password: a58024d9-e277-49df-91aa-2fdad751f76d
-  port: 50005
+  password: d49dd50e-d1b9-4815-a938-7886bae110b8
+  port: 50001
   server: service.ouluyun9803.com
   tfo: false
   type: ss
@@ -303,21 +287,14 @@ proxies:
   name: 31|🇯🇵 东京特殊|浏览器输入 翻墙.com
   password: amazonskr05
   port: 443
-  server: 43.206.224.156
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 31|🇯🇵 日本特殊|浏览器输入 翻墙.com
-  password: amazonskr05
-  port: 443
-  server: 52.196.208.208
+  server: 57.180.247.46
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 31|🇯🇵 东京特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.250.241.238
+  server: 57.180.13.26
   tfo: false
   type: ss
 - alterId: 0
