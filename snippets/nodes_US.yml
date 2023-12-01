@@ -1,10 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国
+  name: 0,2,4,6,7,8,23|加拿大 368
   network: ws
-  port: '8080'
+  port: 8080
   server: k1.forwardv2raytelegramchannel.fun
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d2a28a5c-3e3d-4fa0-be5b-e6a8136d2039
@@ -14,10 +15,11 @@ proxies:
     path: /FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国 #1'
+  name: '0,2,4,6,7,8|🇺🇸_US_美国 #23'
   network: ws
-  port: '80'
+  port: 80
   server: cf-lt.sharecentre.online
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
@@ -41,10 +43,11 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国 #3'
+  name: 0,2,4,6,7,8,23|加拿大 386
   network: ws
-  port: '2095'
+  port: 2095
   server: xyz8.forwardv2raytelegramchannel.fun
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
@@ -54,10 +57,11 @@ proxies:
     path: /FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国 #4'
+  name: 0,2,4,6,7,8,23|加拿大 392
   network: ws
-  port: '80'
+  port: 80
   server: 162.159.133.68
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
@@ -67,10 +71,11 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 0,15,40|🇺🇸_US_美国_3_6
+  name: 0,2,4,6,7,8,40|🇺🇸_US_美国_3_6
   network: ws
   port: 80
   server: ns1.v2-vip.fun
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
@@ -94,10 +99,11 @@ proxies:
     path: /search
 - alterId: 0
   cipher: auto
-  name: '0,24|github.com/freefq - 美国CloudFla... #4'
+  name: '0,2,4,6,7,8,15,23,24|github.com/freefq - 美国CloudFla... #4'
   network: ws
   port: 80
   server: 198.41.223.215
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
@@ -107,19 +113,28 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国 #8'
+  http-opts:
+    headers:
+      Host:
+      - fr-v2ray.freevmess.com
+    method: GET
+    path:
+    - /
+  name: '0,2,3,4,5,6,7,8,9|_US__9 #2'
   network: http
-  port: '8442'
+  port: 8442
   server: fr-v2ray.freevmess.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6773a666-5593-4c9f-aacd-52300b6a02d4
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国 #9'
+  name: 0,2,4,6,7,8,23|加拿大 388
   network: ws
-  port: '2095'
+  port: 2095
   server: xyz24.forwardv2raytelegramchannel.fun
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
@@ -143,19 +158,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '2,3,4,5,8,9|_US__1 #2'
-  network: ws
-  port: 2096
-  server: xyz29.forwardv2raytelegramchannel.fun
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 819f16dc-5632-42dd-8427-09a702867016
-  ws-opts:
-    path: /FORWARDV2RAY
-- alterId: 0
-  cipher: auto
-  name: '2,3,4,5,8,9,15,24,29|🇺🇸_US_美国 #31'
+  name: '2,3,4,5,8,9,15,24,29|🇺🇸_US_美国 #44'
   network: ws
   port: 443
   server: tttt.ssfree.ru
@@ -167,78 +170,105 @@ proxies:
     path: /search
 - alterId: 0
   cipher: auto
-  name: '2,4,6,7,8,15,29|🇺🇸 _US_美国 5 #1'
+  name: '3,5,9|_US__1 #2'
   network: ws
-  port: 80
-  server: 104.21.75.246
-  servername: ''
-  skip-cert-verify: false
+  port: 8080
+  server: k1.forwardv2raytelegramchannel.fun
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: d2a28a5c-3e3d-4fa0-be5b-e6a8136d2039
   ws-opts:
     headers:
-      Host: sbl2.shabijichang.com
-    path: /
+      host: k1.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: 2,4,6,7,8,40|🇺🇸_US_美国_由快嘴科技提供：kkzui.com0_26
+  name: '3,5,9|_US__2 #2'
   network: ws
   port: 80
   server: cf-lt.sharecentre.online
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
   ws-opts:
     headers:
-      Host: ssrsub.v006.ssrsub.com
+      host: ssrsub.v004.ssrsub.com
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '2,4,6,7,8,15|🇺🇸_US_美国 #30'
+  name: '3,5,9|_US__4 #2'
   network: ws
-  port: 8880
-  server: usd.yj2022.gq
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  ws-opts:
-    headers:
-      Host: usd.yj2022.gq
-    path: /XSjeg73o6ZdsheahCb5JG
-- alterId: 0
-  cipher: auto
-  name: '2,4,6,7,8,15|🇺🇸_US_美国 #27'
-  network: ws
-  port: 80
-  server: 172.64.88.169
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ffbfc19a-6495-4d14-c95c-06a09d013309
-  ws-opts:
-    headers:
-      Host: tgdns68.9669.link
-    path: /ffbfc19a-6495-4d14-c95c-06a09d013309
-- alterId: 0
-  cipher: auto
-  name: 3,5,9,23|美国 001
-  network: ws
-  port: 80
-  server: 104.21.75.246
+  port: 2095
+  server: xyz8.forwardv2raytelegramchannel.fun
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
   ws-opts:
     headers:
-      host: sbl2.shabijichang.com
-    path: /
+      host: xyz8.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_US__4 #2'
+  name: '3,5,9|_US__5 #2'
+  network: ws
+  port: 80
+  server: 162.159.133.68
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
+  ws-opts:
+    headers:
+      host: ssrsub.v004.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US__6 #2'
+  network: ws
+  port: 80
+  server: ns1.v2-vip.fun
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
+  ws-opts:
+    headers:
+      host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US__8 #2'
+  network: ws
+  port: 80
+  server: 198.41.223.215
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
+  ws-opts:
+    headers:
+      host: ssrsub.v004.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US__10 #2'
+  network: ws
+  port: 2095
+  server: xyz24.forwardv2raytelegramchannel.fun
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
+  ws-opts:
+    headers:
+      host: xyz24.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US__11 #2'
   network: ws
   port: 80
   server: singapore.com
@@ -250,74 +280,12 @@ proxies:
     headers:
       host: ssrsub.v005.ssrsub.com
     path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US__6 #2'
-  network: ws
-  port: 80
-  server: cf-lt.sharecentre.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
-  ws-opts:
-    headers:
-      host: ssrsub.v006.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US__7 #2'
-  network: ws
-  port: 8880
-  server: usd.yj2022.gq
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  ws-opts:
-    headers:
-      host: usd.yj2022.gq
-    path: /XSjeg73o6ZdsheahCb5JG
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US__8 #2'
-  network: ws
-  port: 80
-  server: 172.64.88.169
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffbfc19a-6495-4d14-c95c-06a09d013309
-  ws-opts:
-    headers:
-      host: tgdns68.9669.link
-    path: /ffbfc19a-6495-4d14-c95c-06a09d013309
-- alterId: 0
-  cipher: auto
-  name: 6,7|🇺🇸 _US_美国 6
-  network: ws
-  port: 2096
-  server: xyz29.forwardv2raytelegramchannel.fun
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 819f16dc-5632-42dd-8427-09a702867016
-  ws-opts:
-    headers:
-      Host: xyz29.forwardv2raytelegramchannel.fun
-    path: /FORWARDV2RAY
-- cipher: aes-256-cfb
-  name: 7|🇺🇸 _US_美国 2
-  password: amazonskr05
-  port: 443
-  server: 34.209.235.189
-  type: ss
 - alterId: 64
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 10|Pool_🇺🇸US_160
+  name: 10|Pool_🇺🇸US_170
   network: ws
   port: 443
   server: 23.108.100.103
@@ -330,56 +298,12 @@ proxies:
     headers:
       HOST: www.40587333.xyz
     path: /footers
-- alterId: 1
-  cipher: auto
-  country: 🇦🇺AU
-  h2-opts: {}
-  http-opts: {}
-  name: 10|Relay_🇦🇺AU-🇺🇸US_08
-  network: tcp
-  port: 28785
-  server: jp06-vm0.entry.jpojpoh.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-  ws-path: /
-- alterId: 1
-  cipher: auto
-  country: 🇦🇺AU
-  h2-opts: {}
-  http-opts: {}
-  name: 10|Relay_🇦🇺AU-🇺🇸US_10
-  network: tcp
-  port: 28787
-  server: jp06-vm0.entry.jpojpoh.art
-  servername: jp06-vm0.entry.jpojpoh.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-  ws-path: /hlsrthe214/8u4692j
-- alterId: 0
-  cipher: auto
-  country: 🇦🇺AU
-  h2-opts: {}
-  http-opts: {}
-  name: 10|Relay_🇦🇺AU-🇺🇸US_12
-  network: tcp
-  port: 28783
-  server: jp06-vm0.entry.jpojpoh.art
-  servername: jp1.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
-  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 10|Relay_🇺🇸US-🇬🇧GB_157
+  name: 10|Relay_🇺🇸US-🇬🇧GB_175
   network: ws
   port: 443
   server: octavi.cfd
@@ -397,7 +321,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 10|Relay_🇺🇸US-🇬🇧GB_164
+  name: 10|Relay_🇺🇸US-🇬🇧GB_176
   network: ws
   port: 443
   server: 104.21.31.183
@@ -415,56 +339,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 10|Relay_🇺🇸US-🇺🇸US_158
-  network: tcp
-  port: 21583
-  server: jp03-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 10|Relay_🇺🇸US-🇺🇸US_168
-  network: ws
-  port: 80
-  server: cdn.ahdark.gay
-  servername: hytron.aresboot.io
-  skip-cert-verify: true
-  type: vmess
-  uuid: caa995ed-86a9-4968-a332-9c11e7e13107
-  ws-opts:
-    headers:
-      HOST: hytron.aresboot.io
-    path: /
-- alterId: 1
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 10|Relay_🇺🇸US-🇺🇸US_170
-  network: ws
-  port: 443
-  server: ophelia.mom
-  servername: ophelia.mom
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      HOST: ophelia.mom
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 10|Relay_🇺🇸US-🇺🇸US_173
+  name: 10|Relay_🇺🇸US-🇺🇸US_159
   network: ws
   port: 443
   server: alvvin.click
@@ -482,10 +357,78 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 10|Relay_🇺🇸US-🏁ZZ_166
+  name: 10|Relay_🇺🇸US-🇺🇸US_163
+  network: ws
+  port: 443
+  server: ophelia.mom
+  servername: ophelia.mom
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: ophelia.mom
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 10|Relay_🇺🇸US-🇺🇸US_168
+  network: ws
+  port: 80
+  server: cdn.ahdark.gay
+  servername: hytron.aresboot.io
+  skip-cert-verify: true
+  type: vmess
+  uuid: caa995ed-86a9-4968-a332-9c11e7e13107
+  ws-opts:
+    headers:
+      HOST: hytron.aresboot.io
+    path: /
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 10|Relay_🇺🇸US-🇺🇸US_174
+  network: ws
+  port: 30000
+  server: 38.54.185.111
+  servername: www.73664999.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      HOST: www.73664999.xyz
+    path: /path/1700571207277
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 10|Relay_🇺🇸US-🏁ZZ_165
   network: ws
   port: 443
   server: odelia.autos
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 10|Relay_🇺🇸US-🏁ZZ_169
+  network: ws
+  port: 443
+  server: waynn.makeup
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -565,7 +508,7 @@ proxies:
   server: 167.88.61.175
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
+  country: 🇺US
   name: 10,12| | 3.10Mb
   password: Y6R9pAtvxxzmGC
   port: 5000
@@ -743,6 +686,19 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
+  name: 10,12| |18.93Mb
+  network: tcp
+  port: 22324
+  server: 162.251.62.115
+  skip-cert-verify: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
   name: 10,12,29|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
   network: tcp
   port: '52408'
@@ -752,20 +708,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a797ff7b-8161-40a6-d577-1b2c213b3885
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 10,12|🇺🇸US |15.78Mb
-  network: tcp
-  port: 22324
-  server: 172.99.190.12
-  servername: ceshii.1234567890spcloud.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
 - alterId: 64
   cipher: auto
@@ -784,10 +726,10 @@ proxies:
     path: /footers
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
+  country: 🇸US
   h2-opts: {}
   http-opts: {}
-  name: 10,12|🇺🇸US |26.12Mb
+  name: 10,12| |26.12Mb
   network: tcp
   port: 22324
   server: 38.75.137.27
@@ -800,102 +742,21 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 10,12|🇸US |18.93Mb
+  name: 10,12| |15.78Mb
   network: tcp
   port: 22324
-  server: 162.251.62.115
+  server: 172.99.190.12
+  servername: ceshii.1234567890spcloud.com
   skip-cert-verify: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
-- alterId: 1
-  cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 12|Relay_🇸US | 9.50Mb
-  network: ws
-  port: 443
-  server: ophelia.mom
-  servername: ophelia.mom
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: ophelia.mom
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 12,29|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: 1069
-  server: 152.69.197.60
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-  ws-path: /
-- alterId: 1
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 12|Relay_🇺🇸US |10.99Mb
-  network: ws
-  port: 443
-  server: 104.21.31.183
-  servername: octavi.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: octavi.cfd
-  ws-path: linkvws
-- alterId: 64
-  cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 12|Relay_🇸US-🇺🇸US_86
-  network: ws
-  port: 30000
-  server: 38.54.185.112
-  servername: www.73664999.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    HOST: www.73664999.xyz
-  ws-path: /path/1701091133409
 - alterId: 64
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 12|Pool_🇸US |29.90Mb
-  network: ws
-  port: 443
-  server: 23.108.100.103
-  servername: www.40587333.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    HOST: www.40587333.xyz
-  ws-path: /footers
-- alterId: 64
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 12|Relay_🇺🇸US | 7.29Mb
+  name: 12|Relay_🇺🇸US-🇺🇸US_85 | 7.29Mb
   network: ws
   port: 30000
   server: 38.54.185.111
@@ -907,48 +768,114 @@ proxies:
   ws-headers:
     HOST: www.73664999.xyz
   ws-path: /path/1700571207277
-- alterId: 1
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 12|Relay_🇺🇸US |10.60Mb
-  network: ws
-  port: 443
-  server: odelia.autos
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: linkvws
 - alterId: 64
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 12|🇺🇸US |31.31Mb
+  name: 12|Relay_🇺🇸US-🇺🇸US_89 | 7.99Mb
   network: ws
-  port: 443
-  server: 23.108.100.101
+  port: 30000
+  server: 38.54.185.112
+  servername: www.73664999.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /footers
+  ws-headers:
+    HOST: www.73664999.xyz
+  ws-path: /path/1701091133409
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 12|🇺🇸US | 5.11Mb
+  name: 15,23|加拿大 328
   network: ws
-  port: 443
-  server: 172.99.190.109
-  skip-cert-verify: true
-  tls: true
+  port: 8080
+  server: b.forwardv2raytelegramchannel.fun
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: linkvws
+  uuid: d2a28a5c-3e3d-4fa0-be5b-e6a8136d2039
+  ws-opts:
+    headers:
+      Host: b.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 15,23|加拿大 272
+  network: ws
+  port: 80
+  server: sbl2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: sbl2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15,23|加拿大 342
+  network: ws
+  port: 2052
+  server: l.forwardv2raytelegramchannel.fun
+  tls: false
+  type: vmess
+  uuid: d62e72b0-14a2-439a-9912-c133bf89237b
+  ws-opts:
+    headers:
+      Host: l.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 15,23|加拿大 343
+  network: ws
+  port: 2052
+  server: k1.forwardv2raytelegramchannel.fun
+  tls: false
+  type: vmess
+  uuid: d62e72b0-14a2-439a-9912-c133bf89237b
+  ws-opts:
+    headers:
+      Host: k1.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 15,23|加拿大 344
+  network: ws
+  port: 2052
+  server: xyz30.forwardv2raytelegramchannel.fun
+  tls: false
+  type: vmess
+  uuid: d62e72b0-14a2-439a-9912-c133bf89237b
+  ws-opts:
+    headers:
+      Host: xyz30.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 15,23|加拿大 346
+  network: ws
+  port: 2052
+  server: xyz28.forwardv2raytelegramchannel.fun
+  tls: false
+  type: vmess
+  uuid: d62e72b0-14a2-439a-9912-c133bf89237b
+  ws-opts:
+    headers:
+      Host: xyz28.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 15,23|加拿大 349
+  network: ws
+  port: 2095
+  server: k1.forwardv2raytelegramchannel.fun
+  tls: false
+  type: vmess
+  uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
+  ws-opts:
+    headers:
+      Host: k1.forwardv2raytelegramchannel.fun
+    path: /FORWARDV2RAY
 - alterId: 1
   cipher: auto
   name: 20|🇺🇸 Relay_🇺🇸US-🏁ZZ_87 | 9.10Mb
@@ -1059,7 +986,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c00d7cfc-ba05-40fa-b4f6-eb306e6de92f
+  uuid: 8cf976d8-b743-440b-99f7-f284220307f4
 - alterId: 0
   cipher: auto
   name: 21|🇺🇸美国05
@@ -1069,7 +996,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c00d7cfc-ba05-40fa-b4f6-eb306e6de92f
+  uuid: 8cf976d8-b743-440b-99f7-f284220307f4
 - alterId: 0
   cipher: auto
   name: 21|🇺🇸美国06
@@ -1079,7 +1006,21 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c00d7cfc-ba05-40fa-b4f6-eb306e6de92f
+  uuid: 8cf976d8-b743-440b-99f7-f284220307f4
+- alterId: 0
+  cipher: auto
+  name: 23|美国 001
+  network: ws
+  port: 80
+  server: 104.21.75.246
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: sbl2.shabijichang.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 23|美国 002
@@ -2083,6 +2024,29 @@ proxies:
     headers:
       Host: www.20332959.xyz
     path: /path/1701001686463
+- alterId: 64
+  cipher: auto
+  name: 23|美国 076
+  network: ws
+  port: 30000
+  server: 45.199.138.191
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      host: www.42077230.xyz
+    path: /path/1696251522438
+- alterId: 0
+  cipher: auto
+  name: 23|美国 077
+  network: tcp
+  port: 2082
+  server: 172.232.157.199
+  skip-cert-verify: true
+  type: vmess
+  uuid: 66887259-707a-411a-9552-304a0d278022
 - alterId: 0
   cipher: auto
   name: 24,29|🇦🇺|AU|澳大利亚|@wxgqlfx|16
@@ -2260,20 +2224,6 @@ proxies:
     path: /9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b
 - alterId: 0
   cipher: auto
-  name: 29|[vmess]美国a1-流媒体解锁
-  network: ws
-  port: 443
-  server: aa1.wuxianliulianng.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 4d7732ee-986a-4c25-8443-d6fefa8d2190
-  ws-opts:
-    headers:
-      Host: 111.golinkwuxian.top
-    path: /apple
-- alterId: 0
-  cipher: auto
   name: 29|🔒 VM-WS-TLS 🇺🇸 US-192.9.241.16...
   network: ws
   port: 55555
@@ -2285,6 +2235,20 @@ proxies:
   ws-opts:
     headers:
       Host: sj.alieszvps.cf
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '29|🇺🇸 _US_美国 5 #1'
+  network: ws
+  port: 80
+  server: 104.21.75.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: sbl2.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
@@ -2351,7 +2315,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d7b1fdbf-d108-4df2-ae0b-d66fd19bed8e
+  uuid: 324f6648-3f12-44d2-acd4-7b1aceb49461
 - alterId: 0
   cipher: auto
   name: 30|【BGP】美国 05 | 1x US
@@ -2361,7 +2325,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d7b1fdbf-d108-4df2-ae0b-d66fd19bed8e
+  uuid: 324f6648-3f12-44d2-acd4-7b1aceb49461
 - alterId: 0
   cipher: auto
   name: 30|【BGP】美国 06 | 1x US
@@ -2371,25 +2335,26 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d7b1fdbf-d108-4df2-ae0b-d66fd19bed8e
+  uuid: 324f6648-3f12-44d2-acd4-7b1aceb49461
 - alterId: 0
   cipher: auto
-  name: 31|🇺🇸 美国4|浏览器输入 翻墙.com
+  name: 31,32|美国2|浏览器输入 翻墙.com
   network: ws
-  port: 2052
-  server: i1.forwardv2raytelegramchannel.fun
+  port: '2086'
+  server: 23.26.226.45
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: d62e72b0-14a2-439a-9912-c133bf89237b
+  uuid: 70408f5d-78f2-44d0-9747-ae68da8651a4
   ws-opts:
     headers:
-      Host: i1.forwardv2raytelegramchannel.fun
-    path: /FORWARDV2RAY
+      Host: ''
+    path: 70408f5d-78f2-44d0-9747-ae68da8651a4-vm
 - cipher: chacha20-ietf-poly1305
   name: 31|🇺🇸 美国5|频道:@ripaojiedian
-  password: ef97382d-3a90-4958-b861-a18756124d72
+  password: 44e0be59-7777-49d7-8b2d-d4b0a287c2a8
   port: 20003
   server: service.ouluyun9803.com
   tfo: false
@@ -2404,20 +2369,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 6773a666-5593-4c9f-aacd-52300b6a02d4
-- alterId: 0
-  cipher: auto
-  name: 32|美国2|浏览器输入 翻墙.com
-  network: ws
-  port: '2086'
-  server: 23.26.226.45
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 70408f5d-78f2-44d0-9747-ae68da8651a4
-  ws-opts:
-    headers:
-      Host: ''
-    path: 70408f5d-78f2-44d0-9747-ae68da8651a4-vm
 - alterId: 0
   cipher: auto
   name: 33|🇺🇸美国 | 101 | 负载优化 | 1x
@@ -2466,7 +2417,7 @@ proxies:
   server: gdct003.jcnode.top
   tls: false
   type: vmess
-  uuid: 34ffaa16-9f2c-4827-8113-9bbca862b1de
+  uuid: 995b9a0d-dad1-4ab8-9fa9-e48831ad37be
   ws-opts:
     headers:
       Host: ''
@@ -2479,7 +2430,7 @@ proxies:
   server: gdct002.jcnode.top
   tls: false
   type: vmess
-  uuid: 34ffaa16-9f2c-4827-8113-9bbca862b1de
+  uuid: 995b9a0d-dad1-4ab8-9fa9-e48831ad37be
   ws-opts:
     headers:
       Host: ''
@@ -2492,7 +2443,7 @@ proxies:
   server: gdct001.jcnode.top
   tls: false
   type: vmess
-  uuid: 34ffaa16-9f2c-4827-8113-9bbca862b1de
+  uuid: 995b9a0d-dad1-4ab8-9fa9-e48831ad37be
   ws-opts:
     headers:
       Host: ''
@@ -2505,7 +2456,7 @@ proxies:
   server: gdct003.jcnode.top
   tls: false
   type: vmess
-  uuid: 34ffaa16-9f2c-4827-8113-9bbca862b1de
+  uuid: 995b9a0d-dad1-4ab8-9fa9-e48831ad37be
   ws-opts:
     headers:
       Host: ''
@@ -2518,7 +2469,7 @@ proxies:
   server: gdct002.jcnode.top
   tls: false
   type: vmess
-  uuid: 34ffaa16-9f2c-4827-8113-9bbca862b1de
+  uuid: 995b9a0d-dad1-4ab8-9fa9-e48831ad37be
   ws-opts:
     headers:
       Host: ''
@@ -2531,73 +2482,21 @@ proxies:
   server: gdct001.jcnode.top
   tls: false
   type: vmess
-  uuid: 34ffaa16-9f2c-4827-8113-9bbca862b1de
+  uuid: 995b9a0d-dad1-4ab8-9fa9-e48831ad37be
   ws-opts:
     headers:
       Host: ''
     path: ''
 - alterId: 0
   cipher: auto
-  name: 40|🇺🇸_US_美国_由快嘴科技提供：kkzui.com_3
+  name: 40|🇺🇸_US_美国_由快嘴科技提供：kkzui.com0_26
   network: ws
-  port: 2052
-  server: o.forwardv2raytelegramchannel.fun
+  port: 80
+  server: cf-lt.sharecentre.online
   tls: false
   type: vmess
-  uuid: d62e72b0-14a2-439a-9912-c133bf89237b
+  uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
   ws-opts:
     headers:
-      Host: o.forwardv2raytelegramchannel.fun
-    path: /FORWARDV2RAY
-- alterId: 0
-  cipher: auto
-  name: 40|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com1
-  network: ws
-  port: 2052
-  server: xyz48.forwardv2raytelegramchannel.fun
-  tls: false
-  type: vmess
-  uuid: d62e72b0-14a2-439a-9912-c133bf89237b
-  ws-opts:
-    headers:
-      Host: xyz48.forwardv2raytelegramchannel.fun
-    path: /FORWARDV2RAY
-- alterId: 0
-  cipher: auto
-  name: 40|🇺🇸_US_美国_8_23
-  network: ws
-  port: 2095
-  server: y1.forwardv2raytelegramchannel.fun
-  tls: false
-  type: vmess
-  uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
-  ws-opts:
-    headers:
-      Host: y1.forwardv2raytelegramchannel.fun
-    path: /FORWARDV2RAY
-- alterId: 0
-  cipher: auto
-  name: 40|🇺🇸_US_美国_由快嘴科技提供：kkzui.com2_31
-  network: ws
-  port: 2095
-  server: xyz30.forwardv2raytelegramchannel.fun
-  tls: false
-  type: vmess
-  uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
-  ws-opts:
-    headers:
-      Host: xyz30.forwardv2raytelegramchannel.fun
-    path: /FORWARDV2RAY
-- alterId: 0
-  cipher: auto
-  name: 40|🇺🇸_US_美国_由快嘴科技提供：kkzui.com3_32
-  network: ws
-  port: 2095
-  server: h1.forwardv2raytelegramchannel.fun
-  tls: false
-  type: vmess
-  uuid: 19529d4e-8c0e-47d0-93de-bd9a31b476d2
-  ws-opts:
-    headers:
-      Host: h1.forwardv2raytelegramchannel.fun
-    path: /FORWARDV2RAY
+      Host: ssrsub.v006.ssrsub.com
+    path: /api/v3/download.getFile
