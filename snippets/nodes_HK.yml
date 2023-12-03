@@ -15,6 +15,19 @@ proxies:
     path: /vm-tls1?ed=2048
 - alterId: 0
   cipher: auto
+  name: 23|香港 002
+  network: ws
+  port: 80
+  server: hk05.xpoti.online
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4dc8d145-ac2f-46d6-8117-002e845904ce
+  ws-opts:
+    headers:
+      Host: hk05.xpoti.online
+    path: /
+- alterId: 0
+  cipher: auto
   name: 24|github.com/freefq - 香港阿里云 3
   network: ws
   port: 8080
@@ -67,59 +80,13 @@ proxies:
   server: 1.65.139.94
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  name: 31|🇭🇰 香港S|频道:@ripaojiedian
-  password: b21af1e78d194c2093aabbee770c8529
-  port: 10101
-  server: 7690-hk45.hmbcloud-client.com
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 31|🇭🇰 香港3|@ripaojiedian
-  password: b9525800-9423-4322-a0e5-551f22314033
+  password: 97b2338c-7390-4810-847f-7028d17ff938
   port: 20001
   server: service.ouluyun9803.com
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  name: 31|🇭🇰 香港1|浏览器输入 翻墙.com
-  password: 8580d2ea-510f-40d3-b941-73dabd429fc0
-  port: 52215
-  server: zf05.yuwan.link
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 31,32,40|🇭🇰_HK_香港_23
-  network: ws
-  port: 2082
-  server: 8.217.147.230
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 81c08762-4fdb-4b38-81ee-b85c3369b3fc
-  ws-opts:
-    headers:
-      Host: hk-300.changding.tech
-    path: /changding-tls0?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 31,32|香港5|浏览器输入 翻墙.com
-  network: ws
-  port: '443'
-  server: 202.79.169.43
-  servername: www.55174688.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 195ec551-6217-4a30-a188-f21e7281d159
-  ws-opts:
-    headers:
-      Host: www.55174688.xyz
-    path: /path/143534141104
 - alterId: 64
   cipher: auto
   name: 32|香港6|频道:@ripaojiedian
@@ -160,3 +127,16 @@ proxies:
   tls: true
   type: vmess
   uuid: d629d26e-982c-3201-9f81-88edc413b7d1
+- alterId: 0
+  cipher: auto
+  name: 40|🇭🇰_HK_香港_23
+  network: ws
+  port: 2082
+  server: 8.217.147.230
+  tls: false
+  type: vmess
+  uuid: 81c08762-4fdb-4b38-81ee-b85c3369b3fc
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls0?ed=2048

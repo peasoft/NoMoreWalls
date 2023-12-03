@@ -1,11 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 2,3,4,5,6,7,8,9,15,23|加拿大 286
+  name: 2,3,4,5,8,9,15,23|加拿大 286
   network: http
   port: 2082
   server: 193.203.203.88
@@ -24,6 +20,42 @@ proxies:
   sni: dl.kgvn.garenanow.com
   type: trojan
   udp: true
+- name: 7,23|加拿大 185
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.45
+  skip-cert-verify: true
+  sni: jus3.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus3.jsjc.sbs
+    path: /jsjc/us3
+- name: 7,23|加拿大 187
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.19
+  skip-cert-verify: true
+  sni: jus1.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus1.jsjc.sbs
+    path: /jsjc/us1
+- name: 7,23|加拿大 188
+  network: ws
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  port: 443
+  server: 23.227.38.29
+  skip-cert-verify: true
+  sni: jus2.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus2.jsjc.sbs
+    path: /jsjc/us2
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇦CA-134.195.196.178-0770 | 3....
   password: G!yBwPWH3Vao
@@ -57,7 +89,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b5f11551-9b87-4c1e-a2d3-b58702a70006
+  uuid: 416c6f3c-503f-4431-8dc7-f1ff2c021324
 - alterId: 0
   cipher: auto
   name: 23|加拿大 001
@@ -2631,18 +2663,6 @@ proxies:
     headers:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 23|加拿大 185
-  network: ws
-  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
-  port: 443
-  server: 23.227.38.45
-  skip-cert-verify: true
-  sni: jus3.jsjc.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: jus3.jsjc.sbs
-    path: /jsjc/us3
 - name: 23|加拿大 186
   network: ws
   password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
@@ -2655,30 +2675,6 @@ proxies:
     headers:
       Host: jde1.jsjc.sbs
     path: /jsjc/de1
-- name: 23|加拿大 187
-  network: ws
-  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
-  port: 443
-  server: 23.227.38.19
-  skip-cert-verify: true
-  sni: jus1.jsjc.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: jus1.jsjc.sbs
-    path: /jsjc/us1
-- name: 23|加拿大 188
-  network: ws
-  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
-  port: 443
-  server: 23.227.38.29
-  skip-cert-verify: true
-  sni: jus2.jsjc.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: jus2.jsjc.sbs
-    path: /jsjc/us2
 - alterId: 0
   cipher: auto
   name: 23|加拿大 189
@@ -3955,6 +3951,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 23|加拿大 284
+  network: ws
+  port: 443
+  server: tttt.ssfree.ru
+  tls: true
+  type: vmess
+  uuid: 2fe62184-8e07-11ee-ae94-00163e49219e
+  ws-opts:
+    headers:
+      Host: tttt.ssfree.ru
+    path: /search
+- alterId: 0
+  cipher: auto
   name: 23|加拿大 285
   network: ws
   port: 2082
@@ -4127,6 +4136,21 @@ proxies:
   ws-opts:
     headers:
       Host: gr-cl.whaleproject.tech
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '23,29|加拿大 299 #1'
+  network: ws
+  port: 2052
+  server: 104.21.33.130
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
+  ws-opts:
+    headers:
+      Host: family.mgtajhiz.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -5042,11 +5066,12 @@ proxies:
     path: /asdas
 - alterId: 0
   cipher: auto
-  name: 23,29|🇺🇸|US|美国|@wxgqlfx|41
+  name: 23,29,31|🇺🇸 美国|浏览器输入 翻墙.com
   network: ws
   port: 8080
   server: us-new02.gujuji.top
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 6dbf462a-73f3-42fd-93c4-cee0a19e962d
@@ -5160,6 +5185,473 @@ proxies:
     path: /FORWARDV2RAY
 - alterId: 0
   cipher: auto
+  name: 23|加拿大 380
+  network: ws
+  port: 443
+  server: f01.bzshare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f15e5f90-469f-4a08-863c-5198ca4e1cc8
+  ws-opts:
+    headers:
+      Host: fs02.appls.eu.org
+    path: /D26xvdqUdCpvvPTz4R
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 381
+  network: ws
+  port: 80
+  server: v4.cfnode.eu.org
+  servername: xgkp.doinbtimes.cf
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 98f21d2e-807a-4233-cacd-45be467b0309
+  ws-opts:
+    headers:
+      Host: v4.cfnode.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 385
+  network: ws
+  port: 80
+  server: v118a.ai88888.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  ws-opts:
+    headers:
+      Host: v118a.ai88888.top
+    path: /526-dekDP6Otf
+- alterId: 0
+  cipher: auto
+  name: 23,29|【ccbaohe.com】 永久免费机场节点_74
+  network: ws
+  port: '8080'
+  server: zfc.windowsupdate1.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9edb5c77-8818-4780-9cef-d81b7e2d932b
+  ws-opts:
+    headers:
+      Host: kryx.651568.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,29|🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.14....
+  network: ws
+  port: '2053'
+  server: 104.26.14.85
+  servername: varda2.manwe.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ee0d0f5b-d84e-401f-bca8-a24bb38ccee9
+  ws-opts:
+    headers:
+      Host: varda2.manwe.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,40|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_2
+  network: ws
+  port: 2086
+  server: 162.159.143.45
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a0475bd4-51e9-497f-bb9a-7bb798d6c0b9
+  ws-opts:
+    headers:
+      Host: els_cdnthree.yunjisuan.cf
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 389
+  network: grpc
+  port: 2087
+  server: y28.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 390
+  network: ws
+  port: 80
+  server: f7.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a609.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 391
+  network: ws
+  port: 80
+  server: rt6.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a601.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 392
+  network: grpc
+  port: 2087
+  server: y23.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 393
+  network: grpc
+  port: 2087
+  server: y5.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 394
+  network: ws
+  port: 80
+  server: y52.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1040.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 395
+  network: ws
+  port: 80
+  server: y13.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: d12.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 396
+  network: ws
+  port: 8080
+  server: y30.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1032.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 397
+  network: ws
+  port: 80
+  server: y47.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1039.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 398
+  network: ws
+  port: 80
+  server: y15.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: d13.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 399
+  network: ws
+  port: 80
+  server: y11.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: d11.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 400
+  network: ws
+  port: 80
+  server: y17.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: d14.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 401
+  network: ws
+  port: 80
+  server: z2.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1016.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 402
+  network: ws
+  port: 80
+  server: f1.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a602.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 403
+  network: ws
+  port: 80
+  server: f4.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a603.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 404
+  network: ws
+  port: 80
+  server: y6.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1030.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 405
+  network: grpc
+  port: 2087
+  server: y56.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 406
+  network: grpc
+  port: 2087
+  server: y36.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 407
+  network: ws
+  port: 80
+  server: y42.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1038.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 408
+  network: grpc
+  port: 2087
+  server: y51.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 409
+  network: grpc
+  port: 2087
+  server: y41.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 410
+  network: grpc
+  port: 2087
+  server: y46.huamaoyun.live
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 411
+  network: ws
+  port: 8080
+  server: z17.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: us1.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 412
+  network: ws
+  port: 8080
+  server: z16.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a3.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 413
+  network: ws
+  port: 80
+  server: y37.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1037.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 414
+  network: ws
+  port: 80
+  server: y32.huamaoyun.live
+  skip-cert-verify: true
+  type: vmess
+  uuid: f69f0135-812c-404b-9628-3b9368c013b5
+  ws-opts:
+    headers:
+      Host: a1036.huamaoyun.live
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 415
+  network: ws
+  port: 2052
+  server: 162.159.129.79
+  skip-cert-verify: true
+  type: vmess
+  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+  ws-opts:
+    headers:
+      Host: els_cdnone.yunjisuan.cf
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 416
+  network: ws
+  port: 2082
+  server: 162.159.141.214
+  skip-cert-verify: true
+  type: vmess
+  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+  ws-opts:
+    headers:
+      Host: els_cdntow.yunjisuan.cf
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 417
+  network: ws
+  port: 2052
+  server: 162.159.138.110
+  skip-cert-verify: true
+  type: vmess
+  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+  ws-opts:
+    headers:
+      Host: xg_cdnone.yunjisuan.cf
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 418
+  network: ws
+  port: 2082
+  server: 162.159.129.244
+  skip-cert-verify: true
+  type: vmess
+  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+  ws-opts:
+    headers:
+      Host: xg_cdntow.yunjisuan.cf
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|加拿大 419
+  network: ws
+  port: 2086
+  server: 162.159.137.128
+  skip-cert-verify: true
+  type: vmess
+  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+  ws-opts:
+    headers:
+      Host: xg_cdnthree.yunjisuan.cf
+    path: /
+- alterId: 0
+  cipher: auto
   name: 29|🔒 VM-TCP-NA 🇨🇦 CA-178.128.237....
   network: tcp
   port: '3389'
@@ -5177,7 +5669,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0d176559-8c97-4358-84de-854dfceb8f1b
+  uuid: bd283180-d16f-444a-9e15-84171aaf81fa
 - alterId: 0
   cipher: auto
   name: 33|🇨🇦加拿大 | 101 | 负载优化 | 1x
