@@ -1,56 +1,16 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 12|HK_61 |177.06Mb
-  network: tcp
-  port: 35654
-  server: 103.230.120.182
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2f00552a-7ac7-48e3-db57-afe51115eba3
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 12|🇭🇰HK_62 |77.76Mb
-  network: tcp
-  port: 25614
-  server: 103.230.120.162
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8de1a956-b54e-4384-8e88-0d0dbe3ccdfe
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 12|🇰HK_63 |93.05Mb
-  network: tcp
-  port: 19588
-  server: 152.32.167.166
-  skip-cert-verify: true
-  type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 12|🇭🇰HK_64 | 1.92Mb
+  name: 20|🇭🇰 HK_59 | 1.92Mb
   network: ws
   port: 443
   server: 123.58.197.70
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-path: /
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 22,23,24|github.com/freefq - 香港腾讯云 16
@@ -64,6 +24,20 @@ proxies:
   uuid: 75ed6c0d-cd32-4b10-f71f-cd0b9c6efa3f
   ws-headers:
     Host: 43.132.164.99
+- alterId: 0
+  cipher: auto
+  name: 22,24,32|美国3|@ripaojiedian
+  network: ws
+  port: '443'
+  server: n1701761456.gxpnmtg.cn
+  servername: n1701761456.gxpnmtg.cn
+  tls: true
+  type: vmess
+  uuid: bce406ed-1435-4afd-bb81-54ee21b696a7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 22,24|github.com/freefq - 香港科盈电信集团有限...
@@ -103,17 +77,17 @@ proxies:
     path: /vm-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,32|美国3|@ripaojiedian
+  name: '29|HK香港(mibei77.com 米贝节点分享) #1'
   network: ws
-  port: '443'
-  server: n1701761456.gxpnmtg.cn
-  servername: n1701761456.gxpnmtg.cn
-  tls: true
+  port: '8080'
+  server: d.mac2win.top
+  servername: ''
+  tls: false
   type: vmess
-  uuid: bce406ed-1435-4afd-bb81-54ee21b696a7
+  uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
   ws-opts:
     headers:
-      Host: ''
+      Host: icu.mac2win.top
     path: /
 - alterId: 0
   cipher: auto
@@ -170,19 +144,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 29|🇭🇰香港1丨白嫖机场.com
-  network: ws
-  port: '80'
-  server: 162.159.142.211
-  tls: false
-  type: vmess
-  uuid: 5c36dba4-de68-42be-a07f-937d9f920357
-  ws-opts:
-    headers:
-      Host: hk3.889611.com
     path: /
 - alterId: 0
   cipher: auto
@@ -244,16 +205,13 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 32|香港5|@ripaojiedian
-  network: tcp
-  port: '34001'
-  server: 183.240.232.93
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-128-gcm
+  name: 31|🇭🇰 香港1|浏览器输入 翻墙.com
+  password: kveALYbe1TZ5GAlAsf3XnjLNxoUmrr3Inbzumbt7BDAp
+  port: 52210
+  server: 91.229.132.214
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 33|🇭🇰香港 | 101 | 负载优化 | 1x
