@@ -1,10 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,4,8|🇺🇸_US_美国 #22'
+  name: 0,2,4,6,7,8,17|🇺🇸_US_美国->🇬🇧_GB_英国
   network: ws
   port: 80
   server: ld2.shabijichang.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -14,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,3,4,5,8,9,10|伊朗 008
+  name: 2,3,4,5,8,9,25|伊朗 005
   network: tcp
   port: 58339
   server: 31.47.45.104
@@ -22,6 +23,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 78b9909f-289d-4cff-9f05-73644dcc92a9
+  ws-headers:
+    Host: 31.47.45.104
 - name: '3,5,9|_CA_->_US_ #2'
   network: tcp
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
@@ -31,20 +34,6 @@ proxies:
   sni: frontend.kuangbiaoyun.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '6,7|🇺🇸 _US_美国->🇬🇧_GB_英国 #2'
-  network: ws
-  port: 2052
-  server: family.mgtajhiz.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
-  ws-opts:
-    headers:
-      Host: family.mgtajhiz.ir
-    path: /
 - alterId: 0
   cipher: auto
   name: 31|🇺🇸_US_美国->🇱🇺_LU_卢森堡_由快嘴科技提供：kk...
@@ -58,3 +47,16 @@ proxies:
     headers:
       Host: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
     path: /azumase.ren
+- alterId: 0
+  cipher: auto
+  name: 41|🇺🇸_US_美国->🇦🇺_AU_澳大利亚_35
+  network: ws
+  port: 443
+  server: www.wto.org
+  tls: true
+  type: vmess
+  uuid: 539d1f3c-619c-4180-9603-d23e2b4db62f
+  ws-opts:
+    headers:
+      Host: copies-bandwidth-harold-tops.trycloudflare.com
+    path: 539d1f3c-619c-4180-9603-d23e2b4db62f-vm
