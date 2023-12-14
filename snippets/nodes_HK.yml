@@ -28,7 +28,7 @@ proxies:
     path: /vm-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: 10,25,31|🇭🇰|HK|香港|@wxgqlfx|15
+  name: '10,25|香港 003 #1'
   network: ws
   port: 21010
   server: 103.103.245.81
@@ -42,37 +42,9 @@ proxies:
     headers:
       Host: vn11-ji.455773.xyz
     path: /
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 10,14|🇺🇸US_107 |98.78Mb
-  password: rUx8mqUsI0
-  port: 10841
-  server: 47.243.108.41
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 10,14|🇸US_110 |24.38Mb
-  password: bI51Uc7CL6
-  port: 6666
-  server: 50.114.159.250
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇬SG
-  name: 10,14|🇬SG_91 |78.77Mb
-  password: jmtgsmW40R
-  port: 1146
-  server: 8.210.231.146
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇦UA
-  name: 10,14|🇦UA_101 |70.85Mb
-  password: COCA2quJLg
-  port: 29524
-  server: 89.185.31.107
-  type: ss
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 14|Relay_HK-🇭🇰HK_64 | 2.44Mb
+  name: 14|Relay_HK-🇭🇰HK_61 | 2.44Mb
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -82,6 +54,34 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14,31|🔒 VM-TCP-NA 🇹🇼 TW-152.32.167.1...
+  network: tcp
+  port: '19588'
+  server: 152.32.167.166
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰HK_63 | 3.27Mb
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
   name: 14,31|@ZDYZ2_830
@@ -96,30 +96,82 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰HK_66 |76.05Mb
-  network: tcp
-  port: 19588
-  server: 152.32.167.166
-  skip-cert-verify: true
-  type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰HK_67 | 3.27Mb
+  name: 22,31|@ZDYZ2_164
   network: ws
   port: 443
   server: 123.58.197.70
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-path: /
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 31|香港01{优化1|V2ray}
+  network: ws
+  port: '25242'
+  server: hk1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: b50cfa49-c0d7-4e52-b489-364d7955aae9
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 31|香港02{优化2|V2ray}
+  network: ws
+  port: '25242'
+  server: hk2.awslcn.info
+  tls: false
+  type: vmess
+  uuid: b50cfa49-c0d7-4e52-b489-364d7955aae9
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 31|香港05{优化1|V2ray}
+  network: ws
+  port: '25244'
+  server: hk1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: b50cfa49-c0d7-4e52-b489-364d7955aae9
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 31|香港【TG：@ccbaohe】定时更新节点订阅 2
+  network: ws
+  port: 2086
+  server: cdn.yifenjichang.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 900ceafc-30b8-4581-a305-31854f563e4f
+  ws-opts:
+    headers:
+      Host: pmid-mask-albums-heights.trycloudflare.com
+    path: 900ceafc-30b8-4581-a305-31854f563e4f-vm
+- alterId: 0
+  cipher: auto
+  name: 31|香港04{优化1|V2ray}
+  network: ws
+  port: '25250'
+  server: hk1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: b50cfa49-c0d7-4e52-b489-364d7955aae9
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - cipher: aes-128-gcm
   name: 33|🇭🇰 香港KT1|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -181,7 +233,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3452bf4a-7e43-3f33-b798-d46527eac2e4
+  uuid: fbcbe182-d840-3afd-80f7-c9129c6c0dc0
 - alterId: 0
   cipher: auto
   name: 35|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -191,7 +243,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3452bf4a-7e43-3f33-b798-d46527eac2e4
+  uuid: fbcbe182-d840-3afd-80f7-c9129c6c0dc0
 - alterId: 0
   cipher: auto
   name: 35|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -201,4 +253,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3452bf4a-7e43-3f33-b798-d46527eac2e4
+  uuid: fbcbe182-d840-3afd-80f7-c9129c6c0dc0

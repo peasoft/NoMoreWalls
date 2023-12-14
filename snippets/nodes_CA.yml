@@ -1,13 +1,4 @@
 proxies:
-- name: '3,5,9|_CA_ #2'
-  network: tcp
-  password: 027c71ac-026b-4755-9a33-26558ce6f6a2
-  port: 443
-  server: 172.105.5.158
-  skip-cert-verify: true
-  sni: ddragon.leagueoflegends.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '10,25|加拿大 001 #1'
@@ -91,6 +82,20 @@ proxies:
   ws-opts:
     headers:
       host: wnd3.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10,25|加拿大 007 #1'
+  network: ws
+  port: 80
+  server: ld2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: ld2.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
@@ -531,11 +536,10 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 039 #2'
+  name: '10,25|加拿大 039 #1'
   network: ws
   port: 2086
   server: 172.67.229.25
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -563,11 +567,10 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 041 #2'
+  name: '10,25|加拿大 041 #1'
   network: ws
   port: 8880
   server: 172.67.229.39
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -608,12 +611,11 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: '10,25,31|加拿大 044 #2'
+  cipher: chacha20-poly1305
+  name: '10,25|加拿大 044 #1'
   network: ws
   port: 2086
   server: 172.67.229.36
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -624,12 +626,11 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: '10,25,31|加拿大 045 #2'
+  cipher: chacha20-poly1305
+  name: '10,25|加拿大 045 #1'
   network: ws
   port: 2086
   server: 172.67.229.37
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -640,12 +641,11 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: '10,25,31|加拿大 046 #2'
+  cipher: chacha20-poly1305
+  name: 10,25,31|@ZDYZ2_614
   network: ws
   port: 2086
   server: 172.67.229.33
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -656,8 +656,8 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: 10,25,31|@ZDYZ2_620
+  cipher: chacha20-poly1305
+  name: '10,25|加拿大 047 #1'
   network: ws
   port: 2086
   server: 172.67.229.19
@@ -730,7 +730,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 052 #2'
+  name: 10,25,26,31|@ZDYZ2_279
   network: ws
   port: 80
   server: 104.21.3.4
@@ -1295,13 +1295,14 @@ proxies:
     path: /quanstring?ed=2048
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 094 #1'
+  name: 10,25,31|🇺🇸|US|美国|@wxgqlfx|52
   network: ws
   port: 8080
   server: us-new04.gujuji.top
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  uuid: 927a0bb0-4428-4086-9700-a23f81d4d75e
   ws-opts:
     headers:
       Host: us-new04.gujuji.top
@@ -1347,26 +1348,30 @@ proxies:
     path: /sssddd
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 098 #1'
+  name: 10,25,31|美国new01（1x） - 快狗云〖电报：@ccbaohe】...
   network: ws
   port: 8080
   server: us-new01.gujuji.top
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
   ws-opts:
     headers:
       Host: us-new01.gujuji.top
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 099 #1'
+  name: 10,25,31|德国new01（1x） - 快狗云〖电报：@ccbaohe】...
   network: ws
   port: 8080
   server: de-new01.gujuji.top
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
   ws-opts:
     headers:
       Host: de-new01.gujuji.top
@@ -2417,13 +2422,11 @@ proxies:
     path: /public
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 173 #2'
+  name: '10,25|加拿大 173 #1'
   network: ws
   port: 2086
   server: join4.vmessprotocol.sbs
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -2480,13 +2483,11 @@ proxies:
     path: /jsjc/us2
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 178 #2'
+  name: '10,25|加拿大 178 #1'
   network: ws
   port: 2086
   server: 14.vmessprotocol.telegram-vmessprotocol-channel.space
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -2972,13 +2973,15 @@ proxies:
     path: /MScKp0V1fOrj1KT78dJc2lG
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 213 #1'
+  name: 10,25,31|加拿大new01（1x） - 快狗云〖电报：@ccbaohe...
   network: ws
   port: 8080
   server: ca-new01.gujuji.top
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: fd2c62e1-eff8-420f-88b1-c46df63dc6dc
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
   ws-opts:
     headers:
       Host: ca-new01.gujuji.top
@@ -3052,13 +3055,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 219 #2'
+  name: '10,25|加拿大 219 #1'
   network: ws
   port: 2086
   server: 172.67.229.34
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -3375,7 +3376,7 @@ proxies:
     path: /forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 243 #2'
+  name: '10,25,26,31|加拿大 243 #2'
   network: ws
   port: 80
   server: 172.67.229.14
@@ -3604,13 +3605,15 @@ proxies:
     path: /xwdn8sj2aw
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 260 #1'
+  name: 10,25,31|韩国01（1x） - 快狗云〖电报：@ccbaohe】免费节...
   network: ws
   port: 8080
   server: kr-01.gujuji.top
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: f199b5ef-c3a2-4913-9b4f-8032c6b62177
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
   ws-opts:
     headers:
       Host: kr-01.gujuji.top
@@ -3657,10 +3660,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,25,31|@ZDYZ2_264
+  name: '10,25,31|加拿大 264 #2'
   network: ws
   port: 80
   server: 104.21.24.72
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -3801,13 +3805,11 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 275 #2'
+  name: '10,25|加拿大 275 #1'
   network: ws
   port: 80
   server: 104.18.202.232
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -3816,13 +3818,15 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 276 #1'
+  name: 10,25,31|【电报：@ccbaohe|免费机场节点 4
   network: ws
   port: 8080
   server: us-new03.gujuji.top
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: afcff523-ba80-46ca-9d72-8753c271bae7
+  uuid: dba20da9-40e7-48ba-8c99-e24ec84836a0
   ws-opts:
     headers:
       Host: us-new03.gujuji.top
@@ -3989,13 +3993,11 @@ proxies:
     path: /lonan
 - alterId: 0
   cipher: auto
-  name: '10,25,31|加拿大 289 #2'
+  name: '10,25|加拿大 289 #1'
   network: ws
   port: 2086
   server: 172.67.229.38
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -4291,13 +4293,15 @@ proxies:
     path: /FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 311 #1'
+  name: 10,25,31|KR韩国 B - 可乐云〖电报：@ccbaohe】免费节点定...
   network: ws
   port: 80
   server: cp2.colacloud.site
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 872270f5-f3ef-45d6-ac6b-14c50d07dcdb
+  uuid: 6dd86408-c1b4-4bc5-90ad-16f65d56548b
   ws-opts:
     headers:
       Host: cf-kr.colacloud.site
@@ -4317,26 +4321,29 @@ proxies:
     path: /sssddd
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 313 #1'
+  name: 10,25,31|🇹🇼台湾01
   network: ws
-  port: 80
+  port: '80'
   server: dl1.doushimeng.com
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: e5f21a4d-c194-4628-a0f8-3b2723df0032
+  uuid: cbdc5a4d-1544-459b-b3fb-4b493b4cb5de
   ws-opts:
     headers:
       Host: cf-tww.doushimeng.com
     path: /asdas
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 314 #1'
+  name: 10,25,31|美国new02（1x） - 快狗云〖电报：@ccbaohe】...
   network: ws
   port: 8080
   server: us-new02.gujuji.top
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 3bbea0a7-6b6a-47fb-8c0a-7d535a5ea56e
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
   ws-opts:
     headers:
       Host: us-new02.gujuji.top
@@ -4705,7 +4712,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24,25,26|github.com/freefq - 美国CloudFla... #3'
+  name: '10,24,25,26|github.com/freefq - 美国CloudFla... #7'
   network: ws
   port: '8080'
   server: cloudflare.cfgo.cc
@@ -4719,7 +4726,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,24,25,26|github.com/freefq - 美国CloudFla...
+  name: '10,24,25,26|github.com/freefq - 美国CloudFla... #5'
   network: ws
   port: '8080'
   server: scadn.yydsii.com
@@ -4760,11 +4767,13 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: '10,25|加拿大 343 #1'
+  name: '10,25,31|加拿大 343 #2'
   network: ws
   port: 8080
   server: polouk.yj2022.gq
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 4b5e4565-322f-4223-a891-78a84f189726
   ws-opts:
@@ -5268,12 +5277,11 @@ proxies:
     path: /vVNUJOgb/
 - alterId: 0
   cipher: auto
-  name: 10,25,31|@ZDYZ2_515
+  name: '10,25|加拿大 381 #1'
   network: ws
   port: 8880
   server: 172.67.229.27
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
   ws-opts:
@@ -5282,12 +5290,11 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: 10,25,31|@ZDYZ2_519
+  name: '10,25|加拿大 382 #1'
   network: ws
   port: 8880
   server: 172.67.229.26
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
   ws-opts:
@@ -5296,12 +5303,11 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: 10,25,31|@ZDYZ2_518
+  name: '10,25|加拿大 383 #1'
   network: ws
   port: 8880
   server: 172.67.229.36
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
   ws-opts:
@@ -5352,7 +5358,7 @@ proxies:
   cipher: auto
   name: 10,25,31|【ccbaohe.com】 永久免费机场节点_30
   network: ws
-  port: '2095'
+  port: 2095
   server: frsadubicc.76898102.xyz
   servername: ''
   skip-cert-verify: true
@@ -5375,6 +5381,20 @@ proxies:
   ws-opts:
     headers:
       Host: cc.992688.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10,25,40|🇺🇸_US_美国->🇩🇪_DE_德国_2_39
+  network: ws
+  port: 8880
+  server: 162.159.134.234
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2f1435e0-a3e6-40c7-bc4f-05f5befeb789
+  ws-opts:
+    headers:
+      Host: free.1alphaomega.org
     path: /
 - alterId: 0
   cipher: auto
@@ -5692,6 +5712,19 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: '10,25|加拿大 416 #1'
+  network: ws
+  port: 8880
+  server: free2.1alphaomega.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f1435e0-a3e6-40c7-bc4f-05f5befeb789
+  ws-opts:
+    headers:
+      Host: free.1alphaomega.org
+    path: /
+- alterId: 0
+  cipher: auto
   name: '10,25|加拿大 417 #1'
   network: ws
   port: 8880
@@ -5731,7 +5764,7 @@ proxies:
     path: /Onlinemedicallearningvideos/HEAC*?ed=2048
 - alterId: 0
   cipher: auto
-  name: 10,25,41|🇺🇸_US_美国->🇩🇪_DE_德国_由快嘴科技提供：kkz...
+  name: 10,25,40|🇺🇸_US_美国->🇩🇪_DE_德国_由快嘴科技提供：kkz...
   network: ws
   port: 80
   server: cdn0.host-speed.net
@@ -5854,33 +5887,59 @@ proxies:
     headers:
       Host: LosAngeles.gafn.online
     path: /speedtest
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-3946 | 12...
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-3968 | 12...
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-9098 | 11...
-  password: G!yBwPWH3Vao
-  port: 807
-  server: 134.195.196.178
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '10,25|加拿大 430 #1'
+  network: ws
+  port: 2082
+  server: djb.tuzi226.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e16b7a3b-5dc5-4849-a446-ed7a6bf50da4
+  ws-opts:
+    headers:
+      Host: cf1.tuzi226.top
+    path: /miao
+- alterId: 0
+  cipher: auto
+  name: '10,25|加拿大 431 #1'
+  network: ws
+  port: 8080
+  server: cf.openxai.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: e2695bd0-945f-4476-aac5-0e37bcdbd7fc
+  ws-opts:
+    headers:
+      Host: eu5.openxai.link
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10,25,31|🟣4@oneclickvpnkeys
+  network: ws
+  port: '80'
+  server: 172.67.229.13
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7300c5af-8657-48ea-ba35-4cc1176c5220
+  ws-opts:
+    headers:
+      Host: de55.v2-teh.fun
+    path: /RO4vpgRqVSLPRRQi97uOJujdeO
 - cipher: aes-256-cfb
-  name: 10|🇨🇦CA-143.244.43.216-0856 | 71....
+  name: 10|🇨🇦CA-143.244.43.216-0856 | 62....
   password: asdKkaskJKfnsa
   port: 110
   server: 143.244.43.216
   type: ss
 - cipher: aes-256-gcm
   country: 🇦CA
-  name: 14|🇦CA_06 | 1.52Mb
+  name: 14|🇦CA_05 | 1.52Mb
   password: qw7lnQ2zj3
   port: 24422
   server: 104.234.202.187
@@ -5890,7 +5949,7 @@ proxies:
   country: 🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 14|🇦CA_07 |23.57Mb
+  name: 14|🇦CA_06 |23.57Mb
   network: tcp
   port: 13469
   server: 142.171.229.164
@@ -5907,53 +5966,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7a3705e8-de2c-441e-b73b-673636801209
-- alterId: 0
-  cipher: auto
-  name: 25|加拿大 430
-  network: ws
-  port: 2082
-  server: djb.tuzi226.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e16b7a3b-5dc5-4849-a446-ed7a6bf50da4
-  ws-opts:
-    headers:
-      Host: cf1.tuzi226.top
-    path: /miao
-- alterId: 0
-  cipher: auto
-  name: 25,31|美国【TG：@ccbaohe】定时更新节点订阅 2
-  network: ws
-  port: 8080
-  server: cf.openxai.link
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e2695bd0-945f-4476-aac5-0e37bcdbd7fc
-  ws-opts:
-    headers:
-      Host: eu5.openxai.link
-    path: /
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 25,31|🔒 VM-WS-NA 🇺🇸 US-172.67.229.13...
-  network: ws
-  port: '80'
-  server: 172.67.229.13
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7300c5af-8657-48ea-ba35-4cc1176c5220
-  ws-opts:
-    headers:
-      Host: de55.v2-teh.fun
-    path: /RO4vpgRqVSLPRRQi97uOJujdeO
+  uuid: e52541c3-d133-4ad2-b16d-1ce3dfe676e0
 - alterId: 0
   cipher: auto
   name: 31|🔒 VM-TCP-NA 🇨🇦 CA-167.99.179.2...
@@ -5973,7 +5986,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 93285c7c-92d4-4b9a-bad7-e87cfbd10a48
+  uuid: 1bb9dc5b-ca7d-4228-9b0f-fd344b9c925f
 - alterId: 0
   cipher: auto
   name: 35|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -5983,4 +5996,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3452bf4a-7e43-3f33-b798-d46527eac2e4
+  uuid: fbcbe182-d840-3afd-80f7-c9129c6c0dc0

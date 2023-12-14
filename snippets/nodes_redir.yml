@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,6,7,10,24,25,26|github.com/freefq - 美国CloudFla... #4'
+  name: '0,2,4,6,7,8,10,24,25,26|github.com/freefq - 美国CloudFla... #4'
   network: ws
   port: '8080'
   server: cloud.dragonrzm.sbs
@@ -16,7 +16,65 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,4,8,17|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
+  name: '3,5,9|_US_->_LT_ #2'
+  network: ws
+  port: 8080
+  server: cloud.dragonrzm.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ce0d5151-7734-4189-b6ae-eb58e9af5603
+  ws-opts:
+    headers:
+      host: cloud.dragonrzm.sbs
+    path: /
+- name: '3,5,9|_CN_->_US__1 #2'
+  network: tcp
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: '3,5,9|_CN_->_AT_ #2'
+  network: tcp
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  port: 10848
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: '3,5,9|_CA_->_US_ #2'
+  network: tcp
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  port: 40007
+  server: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: '3,5,9|_CN_->_US__2 #2'
+  network: tcp
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: '3,5,9|_CN_->_UA_ #2'
+  network: tcp
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸_US_美国->🇬🇧_GB_英国
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -26,18 +84,4 @@ proxies:
   ws-opts:
     headers:
       Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,5,9,10,25|加拿大 007 #1'
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: ld2.shabijichang.com
     path: /
