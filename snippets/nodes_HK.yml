@@ -28,9 +28,9 @@ proxies:
     path: /vm-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: 10,25,31,33,34|越南|浏览器输入 翻墙.com
+  name: 10,25,31|🇭🇰|HK|香港|@wxgqlfx|15
   network: ws
-  port: '21010'
+  port: 21010
   server: 103.103.245.81
   servername: vn11-ji.455773.xyz
   skip-cert-verify: false
@@ -44,35 +44,35 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 10,14| |98.78Mb
+  name: 10,14|🇺🇸US_107 |98.78Mb
   password: rUx8mqUsI0
   port: 10841
   server: 47.243.108.41
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 10,14| |24.38Mb
+  name: 10,14|🇸US_110 |24.38Mb
   password: bI51Uc7CL6
   port: 6666
   server: 50.114.159.250
   type: ss
 - cipher: aes-256-gcm
-  country: 🇸🇬SG
-  name: 10,14| |78.77Mb
+  country: 🇬SG
+  name: 10,14|🇬SG_91 |78.77Mb
   password: jmtgsmW40R
   port: 1146
   server: 8.210.231.146
   type: ss
 - cipher: aes-256-gcm
-  country: 🇦UA
-  name: 10,14| |70.85Mb
+  country: 🇺🇦UA
+  name: 10,14|🇦UA_101 |70.85Mb
   password: COCA2quJLg
   port: 29524
   server: 89.185.31.107
   type: ss
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 14|Relay_HK-🇭🇰HK_65 | 2.44Mb
+  name: 14|Relay_HK-🇭🇰HK_64 | 2.44Mb
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -82,19 +82,6 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰HK_66 |76.05Mb
-  network: tcp
-  port: 19588
-  server: 152.32.167.166
-  skip-cert-verify: true
-  type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
   name: 14,31|@ZDYZ2_830
@@ -112,7 +99,20 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰HK_68 | 3.27Mb
+  name: 14|🇰HK_66 |76.05Mb
+  network: tcp
+  port: 19588
+  server: 152.32.167.166
+  skip-cert-verify: true
+  type: vmess
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰HK_67 | 3.27Mb
   network: ws
   port: 443
   server: 123.58.197.70
@@ -132,7 +132,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-128-gcm
-  name: 33|🇭🇰 香港K|浏览器输入 翻墙.com
+  name: 33|🇭🇰 香港KT2|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -146,20 +146,32 @@ proxies:
   server: 1.65.139.94
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 33|🇭🇰 香港2|@ripaojiedian
-  password: 3f9dc5c4-85ad-461a-95af-68712eb6ad74
-  port: 13907
-  server: 91d71684cea0a49a.cdn.jiashule.com
+- alterId: 0
+  cipher: auto
+  name: 33,34|香港2|@ripaojiedian
+  network: ws
+  port: '50000'
+  server: 202.86.138.58
+  servername: hkt-ji.455773.xyz
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  name: 33|🇭🇰 香港3|浏览器输入 翻墙.com
-  password: 4fc77152e665415b9986d5b9b8f43601
-  port: 10086
-  server: 7690-hk45.hmbcloud-client.com
-  tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: 33fef73f-cf19-4e70-b071-ddb0155a9556
+  ws-opts:
+    headers:
+      Host: hkt-ji.455773.xyz
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 34|香港5|@ripaojiedian
+  network: tcp
+  port: '42055'
+  server: 112.28.208.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 35|🇭🇰香港 | 101 | 负载优化 | 1x
