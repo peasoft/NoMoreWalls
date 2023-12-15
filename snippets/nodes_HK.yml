@@ -28,7 +28,7 @@ proxies:
     path: /vm-tls1?ed=2048
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 10,14| |20.22Mb
+  name: 10,14|🇸US_98 |20.22Mb
   password: rUx8mqUsI0
   port: 10841
   server: 47.243.108.41
@@ -40,12 +40,52 @@ proxies:
   server: 47.57.232.119
   type: ss
 - cipher: aes-256-gcm
-  country: 🇸🇬SG
-  name: 10,14| |124.17Mb
+  name: 10|🇭🇰HK-8.210.231.146-0572 | 16.4...
   password: jmtgsmW40R
   port: 1146
   server: 8.210.231.146
   type: ss
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 14|Relay_HK-🇭🇰HK_61 | 4.28Mb
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
+- alterId: 2
+  cipher: auto
+  name: 25|香港 003
+  network: ws
+  port: 14742
+  server: hk1c.budog.xyz
+  servername: bing.com
+  type: vmess
+  udp: true
+  uuid: 0509ec73-6fc9-3f5c-9277-202a64bec224
+  ws-headers:
+    Host: bing.com
+  ws-opts:
+    headers:
+      Host: bing.com
+    path: /index
+- alterId: 2
+  cipher: auto
+  name: 25|香港 004
+  network: ws
+  port: 19112
+  server: hk1d.budog.xyz
+  servername: bing.com
+  type: vmess
+  udp: true
+  uuid: 0509ec73-6fc9-3f5c-9277-202a64bec224
+  ws-headers:
+    Host: bing.com
+  ws-opts:
+    headers:
+      Host: bing.com
+    path: /index
 - cipher: aes-128-gcm
   name: 33|🇭🇰 香港KT1|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -94,6 +134,16 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 34|香港5|@ripaojiedian
+  network: tcp
+  port: '42055'
+  server: 112.28.208.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 34|香港4|@ripaojiedian
@@ -128,16 +178,6 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 34|香港1|@ripaojiedian
-  network: tcp
-  port: '46602'
-  server: 112.28.208.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 35|🇭🇰香港 | 101 | 负载优化 | 1x
