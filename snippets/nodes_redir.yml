@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,6,7|🇨🇦 _CN_中国->🇨🇦_CA_加拿大 #4'
+  name: '0,2,4,6,7,8|🇨🇳_CN_中国->🇨🇦_CA_加拿大 #8'
   network: ws
   port: 16648
   server: t.cnmjcn.cyou
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,7,41|🇨🇳_CN_中国->🇨🇦_CA_加拿大_由快嘴科技提供：kk...
+  name: 0,2,4,6,7,8,26,41|🇨🇳_CN_中国->🇨🇦_CA_加拿大_由快嘴科技提供：kk...
   network: ws
   port: 16648
   server: m.cnmjcn.com
@@ -29,76 +29,102 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,4,8|🇺🇸_US_美国->🇱🇹_LT_立陶宛 #2'
+  name: 2,4,8,41|🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_36
   network: ws
-  port: 8080
-  server: cloud.dragonrzm.sbs
+  port: 16648
+  server: yes.cnmjcn.net
   tls: false
   type: vmess
-  uuid: ce0d5151-7734-4189-b6ae-eb58e9af5603
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
   ws-opts:
     headers:
-      Host: cloud.dragonrzm.sbs
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_US_->_LT_ #2'
+  name: 2,4,8,10,25,26,31|🔒 VM-WS-TLS 🏴‍☠️ NA-104.19.154...
   network: ws
-  port: 8080
-  server: cloud.dragonrzm.sbs
+  port: '2087'
+  server: 104.19.154.92
+  servername: uFGYa.mookomeilz.homes
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  ws-opts:
+    headers:
+      Host: pAnel159.moOkomeILz.homes
+    path: /kqlqqv
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_CA__1 #2'
+  network: ws
+  port: 16648
+  server: yes.cnmjcn.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ce0d5151-7734-4189-b6ae-eb58e9af5603
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
   ws-opts:
     headers:
-      host: cloud.dragonrzm.sbs
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
     path: /
-- name: '3,5,9|_CN_->_US__1 #2'
-  network: tcp
-  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
-  port: 10850
-  server: other.kunlun-ppg.com
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_CA__2 #2'
+  network: ws
+  port: 16648
+  server: m.cnmjcn.com
   skip-cert-verify: true
-  sni: alibaba-node.cn
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_CA__3 #2'
+  network: ws
+  port: 16648
+  server: t.cnmjcn.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_US_->_DE__1 #2'
+  network: ws
+  port: 2087
+  server: 104.19.154.92
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  ws-opts:
+    headers:
+      host: pAnel159.moOkomeILz.homes
+    path: /kqlqqv
+- name: '3,5,9|_US_->_DE__2 #2'
+  network: ws
+  password: biwe49r2Tv
+  port: 2096
+  server: amini2.ddns.net
+  skip-cert-verify: true
+  sni: Qoakq.mookomeilz.homes
   type: trojan
   udp: true
-- name: '3,5,9|_CN_->_AT_ #2'
-  network: tcp
-  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
-  port: 10848
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CA_->_US_ #2'
-  network: tcp
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  port: 40007
-  server: frontend.kuangbiaoyun.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_US__2 #2'
-  network: tcp
-  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_UA_ #2'
-  network: tcp
-  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 7,25|加拿大 378
+  ws-opts:
+    headers:
+      host: pANeL159.moOkoMEilz.homeshttp/1.1
+    path: /mskqq
+- name: '7,10,25|加拿大 378 #1'
   network: ws
   password: biwe49r2Tv
   port: 2096
@@ -115,19 +141,6 @@ proxies:
   name: 41|🇨🇳_CN_中国->🇿🇦_ZA_南非_2由快嘴科技提供：kk...
   network: ws
   port: 16638
-  server: yes.cnmjcn.net
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 41|🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_36
-  network: ws
-  port: 16648
   server: yes.cnmjcn.net
   tls: false
   type: vmess
