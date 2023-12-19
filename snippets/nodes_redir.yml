@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,6,7,10,15,23,29|🇺🇸_US_美国->🇬🇧_GB_英国 #1'
+  name: '0,2,4,6,7,8,10,15,23,29|🇺🇸_US_美国->🇬🇧_GB_英国 #4'
   network: ws
   port: 2052
   server: 104.21.33.130
@@ -43,7 +43,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,7,8,15,23,29,39|🇺🇸_US_美国->🇫🇮_FI_芬兰_5
+  name: 0,2,4,6,7,8,10,15,23,29,39|🇺🇸_US_美国->🇫🇮_FI_芬兰_5
   network: ws
   port: 443
   server: 162.159.192.244
@@ -85,132 +85,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,4,8,29|🇺🇸_US_美国->🇨🇦_CA_加拿大 #3'
+  name: '3,5,9|_US_->_GB_ #2'
   network: ws
-  port: 80
-  server: free.domain.photos
+  port: 2052
+  server: 104.21.33.130
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 44ed6043-a70e-44ce-c1f9-649f69efce7c
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
   ws-opts:
     headers:
-      Host: free.domain.photos
-    path: /free
-- alterId: 0
-  cipher: auto
-  name: 2,4,8,39|🇨🇳_CN_中国->🇺🇸_US_美国_2_由快嘴科技提供;k...
-  network: ws
-  port: 25256
-  server: us1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: us1.awslcn.info
+      host: family.mgtajhiz.ir
     path: /
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US_->_CA_ #2'
-  network: ws
-  port: 80
-  server: free.domain.photos
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 44ed6043-a70e-44ce-c1f9-649f69efce7c
-  ws-opts:
-    headers:
-      host: free.domain.photos
-    path: /free
-- name: '3,5,9|_CN_->_AT_ #2'
-  network: tcp
-  password: b6825e95-39b1-4e99-98c2-7b344f0f698a
-  port: 10848
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_UA_ #2'
-  network: tcp
-  password: b6825e95-39b1-4e99-98c2-7b344f0f698a
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_CN_->_RU_ #2'
-  network: ws
-  port: 25230
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      host: cm1.awslcn.info
-    path: /
-- name: '3,5,9|_HK_->_US_ #2'
-  network: tcp
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: us01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: '3,5,9|_CN_->_US__1 #2'
-  network: tcp
-  password: b6825e95-39b1-4e99-98c2-7b344f0f698a
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_CN_->_MX_ #2'
-  network: ws
-  port: 25284
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      host: cu.awslcn.info
-    path: /
-- name: '3,5,9|_CN_->_US__2 #2'
-  network: tcp
-  password: b6825e95-39b1-4e99-98c2-7b344f0f698a
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_CN_->_US__3 #2'
-  network: ws
-  port: 25256
-  server: us1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      host: us1.awslcn.info
-    path: /
-- name: '3,5,9|_HK_->_RU_ #2'
+- name: '3,5,9|_US_->_RU_ #2'
   network: tcp
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   port: 443
@@ -219,17 +106,9 @@ proxies:
   sni: ru01.trojanyyds.xyz
   type: trojan
   udp: true
-- name: '3,5,9|_CA_->_US_ #2'
-  network: tcp
-  password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
-  port: 40007
-  server: frontend.kuangbiaoyun.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_CN_->_US__4 #2'
+  name: '3,5,9|_CN_->_US__1 #2'
   network: ws
   port: 25257
   server: us2.awslcn.info
@@ -243,7 +122,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_CN_->_US__5 #2'
+  name: '3,5,9|_CN_->_US__2 #2'
   network: ws
   port: 25239
   server: us1.awslcn.info
@@ -269,8 +148,45 @@ proxies:
     headers:
       host: cowochtmtrkers.turbo021.link
     path: /673ba378-840f-4928-81f2-203148d07350
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_MX_ #2'
+  network: ws
+  port: 25284
+  server: cu.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      host: cu.awslcn.info
+    path: /
+- name: '3,5,9|_CN_->_GB_ #2'
+  network: tcp
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  port: 17728
+  server: gbs.pptv-tv.store
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_RU_ #2'
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      host: cm1.awslcn.info
+    path: /
 - cipher: chacha20-ietf
-  name: '7|🇺🇸 _CN_中国->🇺🇸_US_美国 #4'
+  country: 🇨🇳CN
+  name: 7,12|Relay_🇨🇳CN-US_08 | 3.37Mb
   obfs: plain
   obfs-param: 511df45641.microsoft.com
   password: jFa4F1
@@ -280,7 +196,8 @@ proxies:
   server: cm01.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf
-  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 2
+  country: 🇨🇳CN
+  name: 7,12|Relay_🇨🇳CN-🇺🇸US_09 | 2.39Mb
   obfs: plain
   obfs-param: 511df45641.microsoft.com
   password: jFa4F1
@@ -289,3 +206,16 @@ proxies:
   protocol-param: 45641:1119_jE165t
   server: cm01.newcome.xyz
   type: ssr
+- alterId: 0
+  cipher: auto
+  name: 39|🇨🇳_CN_中国->🇺🇸_US_美国_2_由快嘴科技提供;k...
+  network: ws
+  port: 25256
+  server: us1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: us1.awslcn.info
+    path: /
