@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 2,4,6,7,8,10,15,23,29,39|🇺🇸_US_美国->🇬🇧_GB_英国_2_42
+  name: 2,4,8,10,23,29,39|🇺🇸_US_美国->🇬🇧_GB_英国_2_42
   network: ws
   port: 2052
   server: 104.21.33.130
@@ -15,11 +15,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,6,7,8,15,39|🇨🇳_CN_中国->🇺🇸_US_美国_3_55
+  name: 2,4,8,39|🇨🇳_CN_中国->🇺🇸_US_美国_3_55
   network: ws
   port: 25257
   server: us2.awslcn.info
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
@@ -29,11 +28,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,6,7,8,15,39|🇨🇳_CN_中国->🇺🇸_US_美国_4_56
+  name: 2,4,8,39|🇨🇳_CN_中国->🇺🇸_US_美国_4_56
   network: ws
   port: 25239
   server: us1.awslcn.info
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
@@ -43,11 +41,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,6,7,8,10,15,39|🇺🇸_US_美国->🇫🇮_FI_芬兰_36
+  name: 2,4,8,39|🇺🇸_US_美国->🇫🇮_FI_芬兰_36
   network: ws
   port: 443
   server: 162.159.192.244
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 673ba378-840f-4928-81f2-203148d07350
@@ -57,11 +54,10 @@ proxies:
     path: /673ba378-840f-4928-81f2-203148d07350
 - alterId: 0
   cipher: auto
-  name: 2,4,6,7,8,15,39|🇨🇳_CN_中国->🇲🇽_MX_墨西哥_22
+  name: 2,4,8,39|🇨🇳_CN_中国->🇲🇽_MX_墨西哥_22
   network: ws
   port: 25284
   server: cu.awslcn.info
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
@@ -71,11 +67,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,6,7,8,15,39|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_5由快嘴科技提供...
+  name: 2,4,8,39|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_5由快嘴科技提供...
   network: ws
   port: 25230
   server: cm1.awslcn.info
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
@@ -185,13 +180,23 @@ proxies:
       host: cm1.awslcn.info
     path: /
 - cipher: chacha20-ietf
-  name: '7|🇺🇸 _CN_中国->🇺🇸_US_美国 #2'
+  name: 7|🇷🇴 _CN_中国->🇷🇴_RO_罗马尼亚
   obfs: plain
-  obfs-param: 511df45641.microsoft.com
+  obfs-param: ffc9c50916.microsoft.com
   password: jFa4F1
-  port: 7706
+  port: 7705
   protocol: auth_aes128_sha1
-  protocol-param: 45641:1119_jE165t
+  protocol-param: 50916:1129K_n259
+  server: cm01.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国
+  obfs: plain
+  obfs-param: ffc9c50916.microsoft.com
+  password: jFa4F1
+  port: 7709
+  protocol: auth_aes128_sha1
+  protocol-param: 50916:1129K_n259
   server: cm01.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf
@@ -204,3 +209,27 @@ proxies:
   protocol-param: 45641:1119_jE165t
   server: cm01.newcome.xyz
   type: ssr
+- cipher: chacha20-ietf
+  name: 7|🇺🇸 _CN_中国->🇺🇸_US_美国 3
+  obfs: plain
+  obfs-param: 511df45641.microsoft.com
+  password: jFa4F1
+  port: 7706
+  protocol: auth_aes128_sha1
+  protocol-param: 45641:1119_jE165t
+  server: cm01.newcome.xyz
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: '15,22,24|github.com/freefq - 美国CloudFla... #2'
+  network: ws
+  port: '443'
+  server: hexsen.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  ws-opts:
+    headers:
+      Host: us.king361.cf
+    path: /argo-vmess?ed=2048
