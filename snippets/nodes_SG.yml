@@ -1,4 +1,16 @@
 proxies:
+- name: 7,23|新加坡 008
+  network: ws
+  password: d07a02a06191c99f
+  port: 3306
+  server: 185.230.245.213
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: n2.gladns.com
+    path: /gateway/connect
 - alterId: 0
   cipher: auto
   name: '10,23|新加坡 001 #1'
@@ -89,22 +101,6 @@ proxies:
     headers:
       Host: bing.com
     path: /index
-- alterId: 2
-  cipher: auto
-  name: 10|新加坡 007
-  network: ws
-  port: 10447
-  server: sg2d.budog.xyz
-  servername: bing.com
-  type: vmess
-  udp: true
-  uuid: 0509ec73-6fc9-3f5c-9277-202a64bec224
-  ws-headers:
-    Host: bing.com
-  ws-opts:
-    headers:
-      Host: bing.com
-    path: /index
 - alterId: 0
   cipher: auto
   name: '10,23|新加坡 007 #1'
@@ -119,29 +115,6 @@ proxies:
     Host: sg7.ip8.shop
 - alterId: 0
   cipher: auto
-  name: 10|新加坡 009
-  network: ws
-  port: 20552
-  server: 146.190.97.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 48cbd108-fd2a-4fb7-b46d-9982b9de9c6e
-  ws-opts:
-    headers:
-      Host: m.linkedin.com
-    path: /
-- name: 10|新加坡 010
-  network: tcp
-  password: 2e0cb061-2d9c-412e-aa8b-f35aa3aa00c3
-  port: 443
-  server: sg1.lxjc.app
-  skip-cert-verify: true
-  sni: 16-163-218-240.nhost.00cdn.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
   name: 10|🇸🇬SG-146.190.99.71-8993 | 14.4...
   network: ws
   port: 21378
@@ -154,10 +127,20 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 10|🇸🇬SG-18.142.250.63-0945 | 14.2...
+  country: 🇸🇬SG
+  name: 10,12| |551.67Mb
   password: amazonskr05
   port: 443
   server: 18.142.250.63
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇬SG
+  name: 12,31|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.0.183.169
+  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
@@ -168,7 +151,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0b4ec71a-f3ac-4ef6-80c8-2db18a843b08
+  uuid: d57ac3d2-07a3-4752-8fec-b4866c26c38a
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡05
@@ -178,7 +161,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0b4ec71a-f3ac-4ef6-80c8-2db18a843b08
+  uuid: d57ac3d2-07a3-4752-8fec-b4866c26c38a
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡06
@@ -188,14 +171,38 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0b4ec71a-f3ac-4ef6-80c8-2db18a843b08
+  uuid: d57ac3d2-07a3-4752-8fec-b4866c26c38a
 - alterId: 0
   cipher: auto
-  name: 29|🔒 VM-WS-NONE 🇸🇬 SG-45.77.248.9...
+  name: 23|新加坡 009
+  network: ws
+  port: 20552
+  server: 146.190.97.8
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 48cbd108-fd2a-4fb7-b46d-9982b9de9c6e
+  ws-opts:
+    headers:
+      Host: m.linkedin.com
+    path: /
+- name: 23|新加坡 010
+  network: tcp
+  password: 2e0cb061-2d9c-412e-aa8b-f35aa3aa00c3
+  port: 443
+  server: sg1.lxjc.app
+  skip-cert-verify: true
+  sni: 16-163-218-240.nhost.00cdn.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 23,29|🔒 VM-WS-NONE 🇸🇬 SG-45.77.248.9...
   network: ws
   port: '38938'
   server: 45.77.248.94
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f08de967-1f69-48a7-d39c-86d141cefa43
@@ -205,11 +212,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 29|新加坡 - 新加坡 - Amazon Technologie...
+  name: 23,29|新加坡 - 新加坡 - Amazon Technologie...
   network: tcp
   port: 12353
   server: 00000000000000000000000000000000000000000000000000000000000045.bgroup-node-for-bigairport.sbs
   servername: 00000000000000000000000000000000000000000000000000000000000045.bgroup-node-for-bigairport.sbs
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ded7f8b1-c9e0-430d-a0f0-34188f9a1265
@@ -264,7 +272,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 1aa39386-1330-4c52-881b-a4a2138550af
+  uuid: 898415f6-55ae-41a8-8d38-6518fd9dbe9e
 - alterId: 0
   cipher: auto
   name: 30|【BGP】新加坡 05 | 1x SG
@@ -274,7 +282,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 1aa39386-1330-4c52-881b-a4a2138550af
+  uuid: 898415f6-55ae-41a8-8d38-6518fd9dbe9e
 - alterId: 0
   cipher: auto
   name: 30|【BGP】新加坡 06 | 1x SG
@@ -284,8 +292,26 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 1aa39386-1330-4c52-881b-a4a2138550af
+  uuid: 898415f6-55ae-41a8-8d38-6518fd9dbe9e
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 31,32|新加坡2|@ripaojiedian
+  network: ws
+  port: '16618'
+  server: yes.cnmjcn.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
 - cipher: chacha20-ietf
+  client-fingerprint: chrome
   name: 31|🇸🇬 新加坡R|@ripaojiedian
   obfs: plain
   obfs-param: 511df45641.microsoft.com
