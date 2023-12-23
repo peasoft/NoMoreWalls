@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,6,7,15|🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  name: '0,2,4,6,7,8,15|🇨🇳_CN_中国->🇨🇦_CA_加拿大 #6'
   network: ws
   port: 16648
   server: t.cnmjcn.cyou
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7,15|🇨🇳_CN_中国->🇨🇦_CA_加拿大 #1'
+  name: '0,2,4,6,7,8,15|🇨🇳_CN_中国->🇨🇦_CA_加拿大 #7'
   network: ws
   port: 16648
   server: m.cnmjcn.com
@@ -44,7 +44,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,4,6,7,8,15|🇨🇳_CN_中国->🇺🇸_US_美国 #9'
+  name: '0,6,7,15|🇨🇳_CN_中国->🇺🇸_US_美国 #9'
   network: ws
   port: 443
   server: hexsen.com
@@ -58,7 +58,7 @@ proxies:
     path: /argo-vmess?ed=2048
 - alterId: 0
   cipher: none
-  name: '0,6,7,15,29|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
+  name: '0,6,7,15,29|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 8443
   server: skk.moe
@@ -72,27 +72,29 @@ proxies:
     path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-vm
 - alterId: 0
   cipher: auto
-  name: '2,3,4,5,8,9|_CN_->_US__1 #2'
+  name: '2,4,8|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦 #2'
   network: ws
-  port: 25257
-  server: us2.awslcn.info
-  skip-cert-verify: true
+  port: 25230
+  server: cm1.awslcn.info
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
+    headers:
+      Host: cm1.awslcn.info
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,3,4,5,8,9|_CN_->_MX_ #2'
+  name: 2,4,8,39|🇨🇳_CN_中国->🇺🇸_US_美国_由快嘴科技提供：kkz...
   network: ws
-  port: 25284
-  server: cu.awslcn.info
-  skip-cert-verify: true
+  port: 25256
+  server: us1.awslcn.info
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
+    headers:
+      Host: us1.awslcn.info
     path: /
 - alterId: 0
   cipher: auto
@@ -109,75 +111,28 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,4,8|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
+  name: '2,3,4,5,8,9|_CN_->_MX_ #2'
   network: ws
-  port: 2096
-  server: heleneski.ravenxer.top
-  tls: true
-  type: vmess
-  uuid: c99de061-8231-4e3c-abe2-13b5560fc39c
-  ws-opts:
-    headers:
-      Host: heleneski.ravenxer.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,4,8|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦 #2'
-  network: ws
-  port: 25230
-  server: cm1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: cm1.awslcn.info
-    path: /
-- name: '3,5,9|_CA_->_US_ #2'
-  network: tcp
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  port: 40007
-  server: frontend.kuangbiaoyun.com
-  skip-cert-verify: true
-  sni: frontend.kuangbiaoyun.com
-  type: trojan
-  udp: true
-- name: '3,5,9|_JP_->_RU_ #2'
-  network: tcp
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: ru01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: ru01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_CN_->_US__2 #2'
-  network: ws
-  port: 25239
-  server: us1.awslcn.info
+  port: 25284
+  server: cu.awslcn.info
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
-    headers:
-      host: us1.awslcn.info
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_US_->_DE_ #2'
+  name: '2,4,8|🇨🇳_CN_中国->🇺🇸_US_美国 #8'
   network: ws
-  port: 2096
-  server: heleneski.ravenxer.top
-  skip-cert-verify: true
-  tls: true
+  port: 25257
+  server: us2.awslcn.info
+  tls: false
   type: vmess
-  uuid: c99de061-8231-4e3c-abe2-13b5560fc39c
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      host: heleneski.ravenxer.top
+      Host: us2.awslcn.info
     path: /
 - alterId: 0
   cipher: auto
@@ -195,18 +150,122 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_CN_->_US__3 #2'
+  name: '3,5,9|_CN_->_CA__1 #2'
   network: ws
-  port: 443
-  server: hexsen.com
+  port: 16648
+  server: t.cnmjcn.cyou
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
   ws-opts:
     headers:
-      host: us.king361.cf
-    path: /argo-vmess?ed=2048
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- name: '3,5,9|_US_->_DE_ #2'
+  network: ws
+  password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
+  port: 8443
+  server: skk.moe
+  skip-cert-verify: true
+  sni: vps.restia.love
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: tj.restia.love
+    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_US__1 #2'
+  network: ws
+  port: 25256
+  server: us1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      host: us1.awslcn.info
+    path: /
+- name: '3,5,9|_CA_->_US_ #2'
+  network: tcp
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  port: 40007
+  server: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  sni: frontend.kuangbiaoyun.com
+  type: trojan
+  udp: true
+- name: '3,5,9|_HK_->_US_ #2'
+  network: tcp
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: us01.trojanyyds.xyz
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_CA__2 #2'
+  network: ws
+  port: 16648
+  server: m.cnmjcn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_US__2 #2'
+  network: ws
+  port: 25239
+  server: us1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      host: us1.awslcn.info
+    path: /
+- name: '3,5,9|_HK_->_RU_ #2'
+  network: tcp
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: ru01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: ru01.trojanyyds.xyz
+  type: trojan
+  udp: true
+- name: '3,5,9|_CN_->_SK_ #2'
+  network: tcp
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  port: 17728
+  server: gbs.pptv-tv.store
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_->_US__3 #2'
+  network: ws
+  port: 25257
+  server: us2.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      host: us2.awslcn.info
+    path: /
 - cipher: chacha20-ietf
   name: '7|🇺🇸 _CN_中国->🇺🇸_US_美国 #2'
   obfs: plain
@@ -237,7 +296,7 @@ proxies:
   protocol-param: 46961:1210-Tha
   server: cm01.newcome.xyz
   type: ssr
-- name: 7,23|加拿大 411
+- name: '7,10,23|加拿大 411 #1'
   network: ws
   password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
   port: 8443
@@ -249,16 +308,3 @@ proxies:
     headers:
       Host: vps.restia.love
     path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
-- alterId: 0
-  cipher: auto
-  name: 39|🇨🇳_CN_中国->🇺🇸_US_美国_由快嘴科技提供：kkz...
-  network: ws
-  port: 25256
-  server: us1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: us1.awslcn.info
-    path: /
