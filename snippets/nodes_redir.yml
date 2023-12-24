@@ -29,21 +29,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7,10,23,24,29|加拿大 264 #2'
-  network: ws
-  port: 2052
-  server: 104.21.33.130
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
-  ws-opts:
-    headers:
-      Host: family.mgtajhiz.ir
-    path: /
-- alterId: 0
-  cipher: auto
   name: '0,6,7,15|🇨🇳_CN_中国->🇺🇸_US_美国 #9'
   network: ws
   port: 443
@@ -57,19 +42,20 @@ proxies:
       Host: us.king361.cf
     path: /argo-vmess?ed=2048
 - alterId: 0
-  cipher: none
-  name: 0,6,7,15|🇺🇸_US_美国->🇩🇪_DE_德国
+  cipher: auto
+  name: '0,6,7,10,23,29|加拿大 264 #2'
   network: ws
-  port: 8443
-  server: skk.moe
-  skip-cert-verify: false
-  tls: true
+  port: 2052
+  server: 104.21.33.130
+  servername: ''
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
   ws-opts:
     headers:
-      Host: vm.restia.love
-    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-vm
+      Host: family.mgtajhiz.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 2,4,8,39|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_由快嘴科技提供:...
@@ -266,6 +252,20 @@ proxies:
     headers:
       host: us2.awslcn.info
     path: /
+- alterId: 0
+  cipher: none
+  name: 6,7,15|🇺🇸_US_美国->🇩🇪_DE_德国
+  network: ws
+  port: 8443
+  server: skk.moe
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
+  ws-opts:
+    headers:
+      Host: vm.restia.love
+    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-vm
 - cipher: chacha20-ietf
   name: '7|🇺🇸 _CN_中国->🇺🇸_US_美国 #2'
   obfs: plain
