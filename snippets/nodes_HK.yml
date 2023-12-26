@@ -34,17 +34,28 @@ proxies:
   server: 47.243.108.41
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇭🇰HK-50.114.159.250-0583 | 8.8...
+  country: 🇺🇸US
+  name: 10,12| |21.14Mb
   password: bI51Uc7CL6
   port: 6666
   server: 50.114.159.250
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇭🇰HK-8.210.231.146-0585 | 16.1...
+  country: 🇬SG
+  name: 10,12| |97.06Mb
   password: jmtgsmW40R
   port: 1146
   server: 8.210.231.146
   type: ss
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 12|Relay_🇰HK-🇭🇰HK_77 | 2.82Mb
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 31|🇭🇰 香港KT1|@ripaojiedian
@@ -70,7 +81,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 42.2.116.58
+  server: 1.65.215.179
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -81,14 +92,36 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 31|🇭🇰 香港3|@ripaojiedian
-  password: b098ec55-ba4f-49d2-9e58-235cb25f0e6b
-  port: 33938
-  server: b.35.hk.open.ga
+  network: ws
+  port: 25242
+  server: hk1.awslcn.info
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: hk1.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 32|香港3|@ripaojiedian
+  network: ws
+  port: '25242'
+  server: hk1.awslcn.info
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 33|🇭🇰香港 | 101 | 负载优化 | 1x
