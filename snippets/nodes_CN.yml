@@ -1,37 +1,38 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,3,4,5,6,7,8,9|_CN_ #2'
+  name: 2,4,6,7,8,39|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_6
   network: ws
-  port: 47551
-  server: 159.75.178.50
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,5,9|_CN_ #2'
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 2500a228-8c00-4934-81e0-22281c015a33
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
+    headers:
+      host: cm1.awslcn.info
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '7|_CN_中国 #1'
-  password: f7EI0dGWQM42T8gwN9CZIj
-  port: 6199
-  server: 45.87.153.246
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇳CN-183.240.222.221-1065 | 9....
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
   port: 19511
   server: nc.cm.go002.xyz
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 22|中国 阿里云
-  network: tcp
-  port: 12681
-  server: 8.219.59.63
-  tls: false
-  type: vmess
-  uuid: cc58cbdc-c36f-42f4-9254-8f4fc564246b
 - alterId: 0
   cipher: auto
   name: 22,24,29|🔒 VM-TCP-NA 🇸🇬 SG-8.219.240.12...
@@ -44,14 +45,10 @@ proxies:
   uuid: 95249020-fbb7-4592-efce-6ad3954c3fad
 - alterId: 0
   cipher: auto
-  name: 22|广东省广州市移动 9
-  network: ws
-  port: '25243'
-  server: sg1.awslcn.info
+  name: '22|中国 阿里云 #1'
+  network: tcp
+  port: 12681
+  server: 8.219.59.63
   tls: false
   type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: sg1.awslcn.info
-    path: /
+  uuid: cc58cbdc-c36f-42f4-9254-8f4fc564246b
