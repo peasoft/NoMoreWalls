@@ -12,7 +12,7 @@ proxies:
     headers:
       host: n2.gladns.com
     path: /gateway/connect
-- name: '7,10,22|日本 003 #1'
+- name: '7,10,23|日本 003 #1'
   network: ws
   password: d07a02a06191c99f
   port: 3306
@@ -26,7 +26,7 @@ proxies:
     path: /gateway/connect
 - alterId: 2
   cipher: auto
-  name: '10,22|日本 001 #1'
+  name: '10,23|日本 001 #1'
   network: ws
   port: 12194
   server: jp1c.budog.xyz
@@ -42,7 +42,7 @@ proxies:
     path: /index
 - alterId: 2
   cipher: auto
-  name: '10,22|日本 002 #1'
+  name: '10,23|日本 002 #1'
   network: ws
   port: 31103
   server: jp1c.budog.xyz
@@ -58,7 +58,7 @@ proxies:
     path: /index
 - alterId: 0
   cipher: auto
-  name: '10,22|日本 004 #1'
+  name: '10,23|日本 004 #1'
   network: tcp
   port: 49499
   server: 139.162.125.97
@@ -70,9 +70,9 @@ proxies:
     Host: 139.162.125.97
 - alterId: 0
   cipher: auto
-  name: 10,21,22,23|github.com/freefq - 日本东京Choopa...
+  name: '10,22,23|日本 005 #1'
   network: tcp
-  port: '42280'
+  port: 42280
   server: 149.28.19.63
   skip-cert-verify: true
   tls: false
@@ -82,7 +82,10 @@ proxies:
     Host: 149.28.19.63
 - alterId: 0
   cipher: auto
-  name: '10,21,22|日本 006 #1'
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: '10,12,22,23|日本 006 #1'
   network: tcp
   port: 16142
   server: 45.77.176.217
@@ -93,9 +96,10 @@ proxies:
   uuid: 1f57a1cc-d395-4bde-bfcf-f62a8a4f9559
   ws-headers:
     Host: 45.77.176.217
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '10,21,22|日本 007 #1'
+  name: '10,22,23|日本 007 #1'
   network: tcp
   port: 14431
   server: 64.176.58.7
@@ -107,7 +111,7 @@ proxies:
     Host: 64.176.58.7
 - alterId: 0
   cipher: auto
-  name: '10,22|日本 008 #1'
+  name: '10,23|日本 008 #1'
   network: tcp
   port: 12626
   server: 202.182.107.52
@@ -119,7 +123,7 @@ proxies:
     Host: 202.182.107.52
 - alterId: 0
   cipher: auto
-  name: '10,22|日本 009 #1'
+  name: '10,23|日本 009 #1'
   network: ws
   port: 80
   server: scadn.yydsii.com
@@ -132,9 +136,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,21,22|日本 010 #1'
+  name: 10,22,23,24|github.com/freefq - 日本东京Choopa...
   network: tcp
-  port: 42434
+  port: '42434'
   server: 139.180.202.213
   servername: ''
   skip-cert-verify: true
@@ -186,7 +190,8 @@ proxies:
       Host: internet.life.com.by
     path: /
 - cipher: aes-256-cfb
-  name: 10|🇯🇵JP-18.181.171.223-1042 | 8.8...
+  country: 🇵JP
+  name: 10,12|🇯🇵JP_84 |23.42Mb
   password: amazonskr05
   port: 443
   server: 18.181.171.223
@@ -278,7 +283,8 @@ proxies:
       Host: jp3.36routes.online
     path: /
 - cipher: aes-256-cfb
-  name: 10|🇯🇵JP-54.64.134.112-10240 | 6.2...
+  country: 🇯🇵JP
+  name: 10,12| |41.93Mb
   password: amazonskr05
   port: 443
   server: 54.64.134.112
@@ -289,39 +295,73 @@ proxies:
   port: 443
   server: 57.180.13.136
   type: ss
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  name: 12|🇯🇵JP_85 |66.98Mb
+  password: amazonskr05
+  port: 443
+  server: 52.194.252.137
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  name: 12|🇯🇵JP_86 |69.48Mb
+  password: amazonskr05
+  port: 443
+  server: 13.230.132.209
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  name: 12|🇯🇵JP_88 |49.51Mb
+  password: amazonskr05
+  port: 443
+  server: 13.115.27.76
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇯🇵日本04
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 12|🇯🇵JP_90 |58.01Mb
+  network: tcp
+  port: 14935
+  server: 167.179.111.237
+  skip-cert-verify: true
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 21|🇯🇵日本04
   network: tcp
   port: '36116'
   server: 1j8p04.abzoones.xyz
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 81827eb0-95a1-47c8-9430-a82a46c6f8dc
+  uuid: 987b9603-6e37-4637-8290-7aa68b2556d5
 - alterId: 0
   cipher: auto
-  name: 20|🇯🇵日本05
+  name: 21|🇯🇵日本05
   network: tcp
   port: '36106'
   server: 1j8p05.abzoones.xyz
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 81827eb0-95a1-47c8-9430-a82a46c6f8dc
+  uuid: 987b9603-6e37-4637-8290-7aa68b2556d5
 - alterId: 0
   cipher: auto
-  name: 20|🇯🇵日本06
+  name: 21|🇯🇵日本06
   network: tcp
   port: '36111'
   server: 1j8p06.abzoones.xyz
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 81827eb0-95a1-47c8-9430-a82a46c6f8dc
+  uuid: 987b9603-6e37-4637-8290-7aa68b2556d5
 - alterId: 0
   cipher: auto
-  name: 21|日本 东京都Amazon数据中心
+  name: 22|日本 东京都Amazon数据中心
   network: ws
   port: 80
   server: jp2.36routes.online
@@ -334,7 +374,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|日本 东京阿里云
+  name: 22|日本 东京阿里云
   network: ws
   port: 80
   server: kkyx.yydsii.com
@@ -347,7 +387,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|日本东京Amazon数据中心 24
+  name: 22|日本东京Amazon数据中心 24
   network: ws
   port: '80'
   server: jp1.s2fjeyeeyafe.bond
@@ -361,7 +401,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 21,23|github.com/freefq - 日本东京阿里云 18
+  name: 22,24|github.com/freefq - 香港阿里云 39
   network: ws
   port: '80'
   server: kkyx.yydsii.com
@@ -375,46 +415,37 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23|github.com/freefq - 日本东京Linode...
-  network: tcp
-  port: 36173
-  server: 172.105.226.166
-  tls: false
-  type: vmess
-  uuid: 5de808d1-b707-462c-83f3-68739504ad70
-- alterId: 0
-  cipher: auto
-  name: 29|【BGP】日本 04  | 1x JP
+  name: 30|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
   server: 6w7j3p04.mcfront.xyz
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 52ba407d-85e7-42ae-8e78-20518ec82f61
+  uuid: 379208b2-e375-445e-9b5f-d43a3776cf93
 - alterId: 0
   cipher: auto
-  name: 29|【BGP】日本 05  | 1x JP
+  name: 30|【BGP】日本 05  | 1x JP
   network: tcp
   port: '31106'
   server: 6w7j3p05.mcfront.xyz
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 52ba407d-85e7-42ae-8e78-20518ec82f61
+  uuid: 379208b2-e375-445e-9b5f-d43a3776cf93
 - alterId: 0
   cipher: auto
-  name: 29|【BGP】日本 06  | 1x JP
+  name: 30|【BGP】日本 06  | 1x JP
   network: tcp
   port: '31111'
   server: 6w7j3p06.mcfront.xyz
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 52ba407d-85e7-42ae-8e78-20518ec82f61
+  uuid: 379208b2-e375-445e-9b5f-d43a3776cf93
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 30|🇯🇵 日本KT|@ripaojiedian
+  name: 31|🇯🇵 日本KT|@ripaojiedian
   password: g12sQi#ss#&1
   plugin: v2ray-plugin
   plugin-opts:
@@ -430,7 +461,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 30|🇯🇵 日本KT2|@ripaojiedian
+  name: 31|🇯🇵 日本KT2|@ripaojiedian
   password: g12sQi#ss#&1
   plugin: v2ray-plugin
   plugin-opts:
@@ -446,7 +477,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 30|🇯🇵 日本1|@ripaojiedian
+  name: 31|🇯🇵 日本1|@ripaojiedian
   password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
   port: 20007
   server: service.ouluyun9803.com
@@ -454,7 +485,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 30|🇯🇵 日本特殊2|@ripaojiedian
+  name: 31|🇯🇵 日本特殊2|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 46.137.227.248
@@ -462,7 +493,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 30|🇯🇵 东京特殊|@ripaojiedian
+  name: 31|🇯🇵 东京特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.36.92.179
@@ -470,7 +501,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 30|🇯🇵 日本特殊|@ripaojiedian
+  name: 31|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 43.201.104.144
@@ -478,7 +509,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 32|🇯🇵日本 | 101 | 负载优化 | 1x
+  name: 33|🇯🇵日本 | 101 | 负载优化 | 1x
   network: tcp
   port: '30101'
   server: fujimount01.linkzoones.xyz
@@ -488,7 +519,7 @@ proxies:
   uuid: e3f10e7c-91fa-3bd3-b299-8eb4a5fa89da
 - alterId: 0
   cipher: auto
-  name: 32|🇯🇵日本 | 102 | 流媒体优化 | 1x
+  name: 33|🇯🇵日本 | 102 | 流媒体优化 | 1x
   network: tcp
   port: '30106'
   server: fujimount02.linkzoones.xyz
@@ -498,7 +529,7 @@ proxies:
   uuid: e3f10e7c-91fa-3bd3-b299-8eb4a5fa89da
 - alterId: 0
   cipher: auto
-  name: 32|🇯🇵日本 | 103 | 负载优化 | 1x
+  name: 33|🇯🇵日本 | 103 | 负载优化 | 1x
   network: tcp
   port: '30111'
   server: fujimount03.linkzoones.xyz
@@ -508,7 +539,7 @@ proxies:
   uuid: e3f10e7c-91fa-3bd3-b299-8eb4a5fa89da
 - alterId: 0
   cipher: auto
-  name: 32|🇯🇵日本[国外直连]
+  name: 33|🇯🇵日本[国外直连]
   network: tcp
   port: '30101'
   server: dir01.netorigins2u.site
