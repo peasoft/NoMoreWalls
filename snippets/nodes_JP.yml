@@ -12,18 +12,6 @@ proxies:
     headers:
       host: n2.gladns.com
     path: /gateway/connect
-- name: '7,10,23|日本 003 #1'
-  network: ws
-  password: d07a02a06191c99f
-  port: 3306
-  server: 54.168.244.142
-  skip-cert-verify: true
-  sni: n2.gladns.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: n2.gladns.com
-    path: /gateway/connect
 - alterId: 2
   cipher: auto
   name: '10,23|日本 001 #1'
@@ -56,12 +44,25 @@ proxies:
     headers:
       Host: bing.com
     path: /index
+- name: '10,23|日本 003 #1'
+  network: ws
+  password: d07a02a06191c99f
+  port: 3306
+  server: 54.168.244.142
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: n2.gladns.com
+    path: /gateway/connect
 - alterId: 0
   cipher: auto
-  name: '10,23|日本 004 #1'
+  name: 10,23,29|日本10〖电报：@ccbaohe】免费节点定时更新
   network: tcp
-  port: 49499
+  port: '49499'
   server: 139.162.125.97
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -74,6 +75,7 @@ proxies:
   network: tcp
   port: '42280'
   server: 149.28.19.63
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -82,11 +84,10 @@ proxies:
     Host: 149.28.19.63
 - alterId: 0
   cipher: auto
-  name: '10,22,23|日本 006 #1'
+  name: '10,23|日本 006 #1'
   network: tcp
   port: 16142
   server: 45.77.176.217
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -95,7 +96,7 @@ proxies:
     Host: 45.77.176.217
 - alterId: 0
   cipher: auto
-  name: '10,22,23|日本 007 #1'
+  name: '10,23|日本 007 #1'
   network: tcp
   port: 14431
   server: 64.176.58.7
@@ -107,7 +108,7 @@ proxies:
     Host: 64.176.58.7
 - alterId: 0
   cipher: auto
-  name: '10,23,24|github.com/freefq - 日本东京Choopa... #1'
+  name: '10,22,23,24|github.com/freefq - 日本东京Choopa... #1'
   network: tcp
   port: '12626'
   server: 202.182.107.52
@@ -120,11 +121,13 @@ proxies:
     Host: 202.182.107.52
 - alterId: 0
   cipher: auto
-  name: '10,23|日本 009 #1'
+  name: 10,23,29|【TG：@ccbaohe}定时更新节点订阅  美国045
   network: ws
   port: 80
   server: scadn.yydsii.com
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: cef51002-47b0-4e48-9d91-850e15ff95e8
   ws-opts:
@@ -299,7 +302,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1ccd1497-9b48-41cb-b878-3c8c9e3eef08
+  uuid: cfba4b86-103a-4bef-adef-dd259246fdd6
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本05
@@ -309,7 +312,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1ccd1497-9b48-41cb-b878-3c8c9e3eef08
+  uuid: cfba4b86-103a-4bef-adef-dd259246fdd6
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本06
@@ -319,20 +322,17 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1ccd1497-9b48-41cb-b878-3c8c9e3eef08
+  uuid: cfba4b86-103a-4bef-adef-dd259246fdd6
 - alterId: 0
   cipher: auto
-  name: 22|日本 东京都Amazon数据中心
-  network: ws
-  port: 80
-  server: jp2.36routes.online
+  name: 22,24,29|文文1-日【TG：@ccbaohe】定时更新节点订阅〖电报：...
+  network: tcp
+  port: 14935
+  server: 167.179.111.237
+  servername: ''
   tls: false
   type: vmess
-  uuid: 8efc7e9d-716e-440c-8573-5c52e8c503e3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - alterId: 0
   cipher: auto
   name: 22|日本 东京阿里云
@@ -348,42 +348,27 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22|日本东京Amazon数据中心 24
-  network: ws
-  port: '80'
-  server: jp1.s2fjeyeeyafe.bond
-  servername: www.microsoft.com
-  tls: true
+  name: 22|日本 东京Linode数据中心
+  network: tcp
+  port: '36173'
+  server: 172.105.226.166
+  tls: false
   type: vmess
-  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
+  uuid: 5de808d1-b707-462c-83f3-68739504ad70
+- alterId: 0
+  cipher: auto
+  name: 29|日本 - 东京 - Contabo Asia Private...
+  network: ws
+  port: 80
+  server: jp.takeshi.wiki
+  servername: dl.kgvn.garenanow.com
+  tls: false
+  type: vmess
+  uuid: a19f357b-c836-4cf6-9e43-72390e6a00df
   ws-opts:
     headers:
       Host: ''
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 22,24|github.com/freefq - 中国阿里云 13
-  network: ws
-  port: '80'
-  server: kkyx.yydsii.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cef51002-47b0-4e48-9d91-850e15ff95e8
-  ws-opts:
-    headers:
-      Host: yxtw.651568.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24|github.com/freefq - 日本东京Choopa... #2'
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
+    path: /takeshi.wiki
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 04  | 1x JP
@@ -393,7 +378,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: efc03d0d-34ba-4e1a-9b9d-5f0f9c259378
+  uuid: 7b0653dc-8257-4357-9aca-41c33a49024e
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 05  | 1x JP
@@ -403,7 +388,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: efc03d0d-34ba-4e1a-9b9d-5f0f9c259378
+  uuid: 7b0653dc-8257-4357-9aca-41c33a49024e
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 06  | 1x JP
@@ -413,7 +398,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: efc03d0d-34ba-4e1a-9b9d-5f0f9c259378
+  uuid: 7b0653dc-8257-4357-9aca-41c33a49024e
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 31|🇯🇵 日本KT|@ripaojiedian
@@ -459,7 +444,7 @@ proxies:
   name: 31|🇯🇵 日本特殊2|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 46.137.227.248
+  server: 43.201.100.232
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -475,9 +460,19 @@ proxies:
   name: 31|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.201.104.144
+  server: 3.34.191.21
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 32|日本2|@ripaojiedian
+  network: tcp
+  port: '11019'
+  server: 120.233.43.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 703e2cfe-23ce-391a-bc76-f46348254d38
 - alterId: 0
   cipher: auto
   name: 33|🇯🇵日本 | 101 | 负载优化 | 1x
