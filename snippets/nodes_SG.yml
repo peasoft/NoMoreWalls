@@ -9,49 +9,9 @@ proxies:
   tls: true
   type: vmess
   uuid: e9882e7b-c7bc-4c13-ab4d-bc127d39925c
-- alterId: 0
-  cipher: auto
-  name: 10|新加坡 002
-  network: ws
-  port: 80
-  server: jp1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 71d5d969-1c58-4bc9-b36c-111616f03c03
-  ws-opts:
-    headers:
-      Host: jp1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|新加坡 003
-  network: ws
-  port: 20552
-  server: 146.190.97.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 48cbd108-fd2a-4fb7-b46d-9982b9de9c6e
-  ws-opts:
-    headers:
-      Host: m.linkedin.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|新加坡 004
-  network: ws
-  port: 80
-  server: 54.169.232.154
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7b529a8b-d306-4744-b4e5-c29aaa42ec0b
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 10,12|🇸US_136 |128.86Mb
+  name: 10,12|🇸US_140 |128.86Mb
   password: amazonskr05
   port: 443
   server: 13.212.204.117
@@ -139,18 +99,31 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇬SG
-  name: 12|🇬SG_126 |34.59Mb
-  password: amazonskr05
-  port: 443
-  server: 13.250.55.22
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
   name: 12|🇬SG_127 |72.19Mb
   password: amazonskr05
   port: 443
   server: 18.142.250.63
   type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 12|🇬SG_128 |34.59Mb
+  password: amazonskr05
+  port: 443
+  server: 13.250.55.22
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 12|🇸🇬SG_129 |19.36Mb
+  network: tcp
+  port: 12681
+  server: 8.219.59.63
+  skip-cert-verify: true
+  type: vmess
+  uuid: cc58cbdc-c36f-42f4-9254-8f4fc564246b
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡04
@@ -160,7 +133,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4efd19d4-ac2d-4b91-add1-e3d4f9509646
+  uuid: 4245ae81-3c49-486f-aa3e-e7de16ea679c
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡05
@@ -170,7 +143,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4efd19d4-ac2d-4b91-add1-e3d4f9509646
+  uuid: 4245ae81-3c49-486f-aa3e-e7de16ea679c
 - alterId: 0
   cipher: auto
   name: 21|🇸🇬新加坡06
@@ -180,7 +153,51 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4efd19d4-ac2d-4b91-add1-e3d4f9509646
+  uuid: 4245ae81-3c49-486f-aa3e-e7de16ea679c
+- alterId: 0
+  cipher: auto
+  name: 23|新加坡 002
+  network: ws
+  port: 20552
+  server: 146.190.97.8
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 48cbd108-fd2a-4fb7-b46d-9982b9de9c6e
+  ws-opts:
+    headers:
+      Host: m.linkedin.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,29|🔒 VM-WS-NA 🇸🇬 SG-45.76.145.105...
+  network: ws
+  port: '37410'
+  server: 45.76.145.105
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 90997746-e123-4c98-8973-fffa6fe71c55
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,29|🔒 VM-WS-NONE 🇸🇬 SG-45.32.122.1...
+  network: ws
+  port: '41853'
+  server: 45.32.122.135
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e62604ec-f48c-44cc-c00c-4d0f6e85b2e4
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
 - alterId: 0
   cipher: auto
   name: 29|🇸🇬|SG|新加坡|@wxgqlfx|152
@@ -194,32 +211,18 @@ proxies:
     path: /telegram:@hkaa0
 - alterId: 0
   cipher: auto
-  name: 29|🔒 VM-WS-NA 🇸🇬 SG-45.76.145.105...
+  name: 29|新加坡175〖电报：@ccbaohe】免费节点定时更新
   network: ws
-  port: '37410'
-  server: 45.76.145.105
+  port: 80
+  server: sg.vpndata.vn
   servername: ''
   tls: false
   type: vmess
-  uuid: 90997746-e123-4c98-8973-fffa6fe71c55
+  uuid: a2c7eeea-53f9-480a-be9d-536518b4fb0b
   ws-opts:
     headers:
-      Host: m.zoom.us
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 29|🔒 VM-WS-NONE 🇸🇬 SG-45.32.122.1...
-  network: ws
-  port: '41853'
-  server: 45.32.122.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e62604ec-f48c-44cc-c00c-4d0f6e85b2e4
-  ws-opts:
-    headers:
-      Host: m.zoom.us
-    path: /
+      Host: dl.kgvn.garenanow.com
+    path: /VPNDATA.xYx
 - alterId: 0
   cipher: auto
   name: 30|【BGP】新加坡 04 | 1x SG
@@ -229,7 +232,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0c327d9d-e6c4-455b-a075-730fd9fd1ba8
+  uuid: dfabfb5c-219a-4f0e-a8bc-8c66562439e2
 - alterId: 0
   cipher: auto
   name: 30|【BGP】新加坡 05 | 1x SG
@@ -239,7 +242,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0c327d9d-e6c4-455b-a075-730fd9fd1ba8
+  uuid: dfabfb5c-219a-4f0e-a8bc-8c66562439e2
 - alterId: 0
   cipher: auto
   name: 30|【BGP】新加坡 06 | 1x SG
@@ -249,7 +252,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0c327d9d-e6c4-455b-a075-730fd9fd1ba8
+  uuid: dfabfb5c-219a-4f0e-a8bc-8c66562439e2
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 31|🇸🇬 狮城R|@ripaojiedian
