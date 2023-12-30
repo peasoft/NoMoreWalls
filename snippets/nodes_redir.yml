@@ -1,10 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国->🇫🇷_FR_法国
+  name: '0,10,23|加拿大 468 #1'
   network: ws
-  port: '80'
+  port: 80
   server: fr1e-unmetered.v2freevpn.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
@@ -14,11 +15,10 @@ proxies:
     path: /v133PDXkklxLEcOvD
 - alterId: 0
   cipher: auto
-  name: 0,29|德国 - Falkenstein - Hetzner Onl...
+  name: 0|🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
-  port: 8080
+  port: '8080'
   server: zula.ir
-  servername: ''
   tls: false
   type: vmess
   uuid: 7b9c828a-27fe-4d61-9174-c138fce3da09
@@ -70,13 +70,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '29,39|🇮🇷_IR_伊朗->🇷🇺_RU_俄罗斯联邦_26 #1'
-  network: tcp
-  port: 20404
-  server: 81.12.27.3
+  name: 29|美国洛杉矶-中转|1x
+  network: ws
+  port: '38888'
+  server: aws.daxun.cyou
   tls: false
   type: vmess
-  uuid: 2825cac3-6acc-4468-ad31-b6d3a3e8fe6e
+  uuid: be6139ca-822e-460a-acc3-e7e805b1cbad
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us1
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳_CN_中国->🇺🇸_US_美国_由快嘴科技提供：kkz...
