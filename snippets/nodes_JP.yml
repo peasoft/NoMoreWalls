@@ -33,7 +33,10 @@ proxies:
     path: /index
 - alterId: 0
   cipher: auto
-  name: 10,23,24|github.com/freefq - 日本东京都品川区Li...
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 10,12,22,23,24|github.com/freefq - 日本东京都品川区Li...
   network: tcp
   port: '49499'
   server: 139.162.125.97
@@ -44,6 +47,7 @@ proxies:
   uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
   ws-headers:
     Host: 139.162.125.97
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '10,22,23|日本 004 #1'
@@ -71,7 +75,10 @@ proxies:
     Host: 45.77.176.217
 - alterId: 0
   cipher: auto
-  name: '10,23|日本 006 #1'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '10,12,22,23|日本 006 #1'
   network: tcp
   port: 14431
   server: 64.176.58.7
@@ -81,6 +88,7 @@ proxies:
   uuid: ff681ba6-55f5-4e79-8f40-ad6bbdf14044
   ws-headers:
     Host: 64.176.58.7
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '10,23|日本 007 #1'
@@ -99,6 +107,7 @@ proxies:
   network: tcp
   port: 42434
   server: 139.180.202.213
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -196,7 +205,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 10|🇯🇵JP-18.181.171.223-1098 | 24....
+  country: 🇯🇵JP
+  name: 10,12|🇯🇵JP_83 |18.07Mb
   password: amazonskr05
   port: 443
   server: 18.181.171.223
@@ -226,25 +236,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇯🇵JP-47.74.10.135-2286 | 15.15...
+  name: 10,23|日本 017
   network: ws
   port: 80
   server: kkyx.yydsii.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: cef51002-47b0-4e48-9d91-850e15ff95e8
+  uuid: f32fb637-67eb-48be-9f29-4523c4720de7
   ws-opts:
     headers:
       Host: yxtw.651568.xyz
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,22|日本东京阿里云 54
+  name: 10|🇯🇵JP-47.74.41.87-0304 | 12.457...
   network: ws
   port: 80
   server: kkyx.yydsii.com
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -265,6 +274,20 @@ proxies:
   port: 443
   server: 57.180.13.136
   type: ss
+- cipher: aes-256-cfb
+  country: 🇵JP
+  name: 12|🇵JP_81 |56.37Mb
+  password: amazonskr05
+  port: 443
+  server: 54.64.134.112
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  name: 12|🇯🇵JP_84 |62.53Mb
+  password: amazonskr05
+  port: 443
+  server: 13.230.132.209
+  type: ss
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本04
@@ -274,7 +297,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7be255ef-efab-4521-a0f1-b2d9dc0b2476
+  uuid: 17cd0689-fd47-4d28-b92c-f5dd60b91b88
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本05
@@ -284,7 +307,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7be255ef-efab-4521-a0f1-b2d9dc0b2476
+  uuid: 17cd0689-fd47-4d28-b92c-f5dd60b91b88
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵日本06
@@ -294,7 +317,30 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7be255ef-efab-4521-a0f1-b2d9dc0b2476
+  uuid: 17cd0689-fd47-4d28-b92c-f5dd60b91b88
+- alterId: 0
+  cipher: auto
+  name: 22,24|github.com/freefq - 日本东京阿里云 60
+  network: ws
+  port: 80
+  server: 47.245.2.84
+  tls: false
+  type: vmess
+  uuid: cef51002-47b0-4e48-9d91-850e15ff95e8
+  ws-opts:
+    headers:
+      Host: jpyx.651568.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '22,24|github.com/freefq - 日本东京Choopa... #1'
+  network: tcp
+  port: 14935
+  server: 167.179.111.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - alterId: 0
   cipher: auto
   name: 22,24|github.com/freefq - 日本  12
@@ -307,29 +353,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24|github.com/freefq - 日本东京Choopa... #1'
-  network: tcp
-  port: 14935
-  server: 167.179.111.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
-- alterId: 0
-  cipher: auto
-  name: 24|github.com/freefq - 日本东京阿里云 60
-  network: ws
-  port: 80
-  server: 47.245.2.84
-  tls: false
-  type: vmess
-  uuid: cef51002-47b0-4e48-9d91-850e15ff95e8
-  ws-opts:
-    headers:
-      Host: jpyx.651568.xyz
     path: /
 - alterId: 0
   cipher: auto
@@ -347,16 +370,6 @@ proxies:
     path: /takeshi.wiki
 - alterId: 0
   cipher: auto
-  name: 29|🔒 VM-TCP-NA 🇯🇵 JP-138.2.44.211...
-  network: tcp
-  port: '20081'
-  server: 138.2.44.211
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
-- alterId: 0
-  cipher: auto
   name: 30|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -364,7 +377,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 95d1a4b0-90e3-43c8-b980-675e71dc2d83
+  uuid: 520d44f7-a97c-4d5d-9ee0-b262ed3344d8
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 05  | 1x JP
@@ -374,7 +387,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 95d1a4b0-90e3-43c8-b980-675e71dc2d83
+  uuid: 520d44f7-a97c-4d5d-9ee0-b262ed3344d8
 - alterId: 0
   cipher: auto
   name: 30|【BGP】日本 06  | 1x JP
@@ -384,7 +397,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 95d1a4b0-90e3-43c8-b980-675e71dc2d83
+  uuid: 520d44f7-a97c-4d5d-9ee0-b262ed3344d8
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 31|🇯🇵 日本KT|@ripaojiedian
