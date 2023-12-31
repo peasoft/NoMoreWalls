@@ -81,7 +81,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '1,2,4,6,8,15,29|🇺🇸_US_美国 #50'
+  name: '1,2,4,6,8,15,24,29|🇺🇸_US_美国 #50'
   network: ws
   port: 80
   server: cf-lt.sharecentre.online
@@ -110,7 +110,10 @@ proxies:
     path: /path/1702392255355
 - alterId: 0
   cipher: auto
-  name: '2,3,4,5,6,7,8,9,10,23|美国 063 #1'
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '2,3,4,5,6,7,8,9,10,12,23|美国 063 #1'
   network: tcp
   port: 57848
   server: 144.202.84.47
@@ -120,6 +123,7 @@ proxies:
   uuid: e48643e7-0462-4055-f796-6ca6aa9f946d
   ws-headers:
     Host: 144.202.84.47
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '2,3,4,5,6,7,8,9,15|🇺🇸_US_美国 #37'
@@ -1077,9 +1081,12 @@ proxies:
     Host: 158.178.227.16
 - alterId: 0
   cipher: auto
-  name: '10,22,23|美国 066 #1'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 10,12,22,23,24|github.com/freefq - 美国加利福尼亚 16
   network: tcp
-  port: 45930
+  port: '45930'
   server: 64.176.37.216
   servername: ''
   skip-cert-verify: true
@@ -1088,6 +1095,7 @@ proxies:
   uuid: b2930b0d-02b4-45dc-8025-a3c19879d4ab
   ws-headers:
     Host: 64.176.37.216
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '10,23,29|🌊【TG：@ccbaohe】定时更新节点订阅 #1'
@@ -1575,7 +1583,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: '10,12| |13.11Mb #1'
+  name: 10,12| |13.11Mb
   password: g13S7doXar0A
   port: 443
   server: 205.134.180.137
@@ -1643,7 +1651,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-45.58.39.13-0704 | 26.398...
+  country: 🇺🇸US
+  name: 10,12|🇸US_130 |16.00Mb
   password: 31LdYhP8Ae
   port: 58428
   server: 45.58.39.13
@@ -1695,25 +1704,11 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 12|🇺🇸US_121 | 8.27Mb
-  password: AK4J1sRt2v3dLDUVC2P5lj
-  port: 37726
-  server: 94.131.12.245
-  type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 12|🇸US_123 |11.60Mb
-  password: wwq6Xo5gJ8
-  port: 18808
-  server: 38.54.104.184
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 12|🇺🇸US_124 | 0.74Mb
-  password: RexnBgU7EV5ADxG
-  port: 7001
+  name: 12|🇺🇸US_124 | 0.99Mb
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 38.91.107.37
   type: ss
 - alterId: 0
@@ -1721,51 +1716,67 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 12|Relay_🇸US-🇺🇸US_152 | 2.00Mb
-  network: ws
-  port: 2095
-  server: cm-cdn.kfcvme50.life
-  servername: uk.kfcvme50.life
+  name: 12|🇸US_161
+  network: tcp
+  port: 45343
+  server: 154.90.39.63
   skip-cert-verify: true
   type: vmess
-  uuid: 7b529a8b-d306-4744-b4e5-c29aaa42ec0b
-  ws-headers:
-    HOST: uk.kfcvme50.life
+  uuid: 08aa8499-d616-4ff1-d6ab-ce0c522824aa
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '12,22|美国 加利福尼亚 #1'
+  network: tcp
+  port: '56262'
+  server: 64.176.39.31
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 590f2744-e9d1-4f2c-a384-d35b736bca41
   ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: '12,15|🇺🇸_US_美国 #48'
+  name: '12,24|github.com/freefq - 美国华盛顿Cogen... #3'
   network: tcp
-  port: 56272
-  server: 96.30.197.59
+  port: '56502'
+  server: 38.54.86.217
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 8e8d5a10-7fd0-4818-8265-a4dc4a569d31
+  uuid: d20747ad-e689-4111-a46e-d5cf21ff4827
   ws-path: /
-- alterId: 64
+- alterId: 1
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 12|Relay_🇺🇸US-🇺🇸US_162 |22.91Mb
+  name: 12|Relay_🇸US-🇸US_170 | 9.31Mb
   network: ws
-  port: 30000
-  server: 198.2.200.37
+  port: 443
+  server: ophelia.mom
+  servername: ophelia.mom
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /path/1702215223320
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: ophelia.mom
+  ws-path: linkvws
 - alterId: 1
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 12|Relay_ZZ-🇺🇸US_177 |10.38Mb
+  name: 12|Relay_ZZ-🇺🇸US_192 |10.38Mb
   network: ws
   port: 443
   server: 188.114.99.0
@@ -1782,7 +1793,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 12|Relay_🏁ZZ-🇺🇸US_178 |11.29Mb
+  name: 12|Relay_🏁ZZ-🇺🇸US_193 |11.29Mb
   network: ws
   port: 443
   server: 188.114.97.3
@@ -1799,7 +1810,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 12|Relay_🏁ZZ-🇺🇸US_180 |10.38Mb
+  name: 12|Relay_🏁ZZ-🇺🇸US_194 |10.38Mb
   network: ws
   port: 443
   server: 188.114.96.3
@@ -1813,19 +1824,11 @@ proxies:
   ws-path: linkvws
 - alterId: 0
   cipher: auto
-  name: '15|🇺🇸_US_美国 #38'
+  name: '15,24|github.com/freefq - 美国华盛顿Cogen... #2'
   network: tcp
-  port: 55579
-  server: 172.233.188.217
-  tls: false
-  type: vmess
-  uuid: 610f7b76-a4e2-4b5a-c458-96e69cbffb5e
-- alterId: 0
-  cipher: auto
-  name: '15|🇺🇸_US_美国 #39'
-  network: tcp
-  port: 50104
+  port: '50104'
   server: 38.180.33.136
+  servername: ''
   tls: false
   type: vmess
   uuid: 790f6802-7535-4109-de6d-15f676d5e3f7
@@ -1898,6 +1901,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '15|🇺🇸_US_美国 #48'
+  network: tcp
+  port: 56272
+  server: 96.30.197.59
+  tls: false
+  type: vmess
+  uuid: 8e8d5a10-7fd0-4818-8265-a4dc4a569d31
+- alterId: 0
+  cipher: auto
   name: 21|🇺🇸美国04
   network: tcp
   port: '36501'
@@ -1905,7 +1917,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: fdbf3408-84c7-43f2-bbc0-81230cbd544d
+  uuid: 8b0ad4cb-df39-4bdf-b326-6fe70f84f3bd
 - alterId: 0
   cipher: auto
   name: 21|🇺🇸美国05
@@ -1915,7 +1927,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: fdbf3408-84c7-43f2-bbc0-81230cbd544d
+  uuid: 8b0ad4cb-df39-4bdf-b326-6fe70f84f3bd
 - alterId: 0
   cipher: auto
   name: 21|🇺🇸美国06
@@ -1925,10 +1937,10 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: fdbf3408-84c7-43f2-bbc0-81230cbd544d
+  uuid: 8b0ad4cb-df39-4bdf-b326-6fe70f84f3bd
 - alterId: 0
   cipher: auto
-  name: 22|美国加利福尼亚 53
+  name: 22,24|github.com/freefq - 美国加利福尼亚 92
   network: tcp
   port: '46154'
   server: 64.176.58.15
@@ -1938,17 +1950,7 @@ proxies:
   uuid: adcbe160-3010-483d-b438-d6057f465b1d
 - alterId: 0
   cipher: auto
-  name: '22|美国 加利福尼亚 #1'
-  network: tcp
-  port: '56262'
-  server: 64.176.39.31
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 590f2744-e9d1-4f2c-a384-d35b736bca41
-- alterId: 0
-  cipher: auto
-  name: 22,29|美国 Microsoft数据中心〖电报：@ccbaohe】免...
+  name: 22,24,29|美国 Microsoft数据中心〖电报：@ccbaohe】免...
   network: ws
   port: 443
   server: 20.239.80.27
@@ -1989,7 +1991,7 @@ proxies:
     path: /path/1699624723213
 - alterId: 0
   cipher: auto
-  name: 22,24,29|【电报：@ccbaohe|免费机场节点 🇭🇰 中国 - 香港...
+  name: 22,29|【电报：@ccbaohe|免费机场节点 🇭🇰 中国 - 香港...
   network: ws
   port: 443
   server: hkaz.takeshi.wiki
@@ -2003,7 +2005,7 @@ proxies:
     path: /takeshi.wiki
 - alterId: 0
   cipher: auto
-  name: 22,24,29|中国 - 香港 - Microsoft Corporatio...
+  name: 22,29|中国 - 香港 - Microsoft Corporatio...
   network: ws
   port: 443
   server: hkaz.takeshi.wiki
@@ -2059,7 +2061,7 @@ proxies:
     path: /D26xvdqUdCpvvPTz4R
 - alterId: 0
   cipher: auto
-  name: 22,24|github.com/freefq - 美国华盛顿Cogen...
+  name: '22,24|github.com/freefq - 美国华盛顿Cogen... #1'
   network: ws
   port: '8080'
   server: 38.180.98.215
@@ -2072,21 +2074,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 22,24|github.com/freefq - 美国  65
+  name: 22,24|github.com/freefq - 美国  100
   network: ws
   port: 80
   server: au.takeshi.wiki
   servername: ''
   tls: false
   type: vmess
-  uuid: a19f357b-c836-4cf6-9e43-72390e6a00df
+  uuid: 877aa2a8-5854-4cb2-9aba-4a1413a6b2de
   ws-opts:
     headers:
       Host: dl.kgvn.garenanow.com
     path: /takeshi.wiki
 - alterId: 0
   cipher: auto
-  name: 22,24|github.com/freefq - 美国  59
+  name: 22,24|github.com/freefq - 美国  36
   network: ws
   port: '80'
   server: 154.26.157.244
@@ -2100,7 +2102,7 @@ proxies:
     path: /takeshi.wiki
 - alterId: 0
   cipher: auto
-  name: 22|美国加利福尼亚 99
+  name: 22,24|github.com/freefq - 美国加利福尼亚 10...
   network: tcp
   port: '29414'
   server: 64.176.47.200
@@ -2108,6 +2110,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 4d5e8aa2-0641-4323-e92c-2c061cdc8e34
+- alterId: 0
+  cipher: auto
+  name: 24,29|-2467-TH【ccbaohe.com〗 永久免费节点机场
+  network: tcp
+  port: '41604'
+  server: 38.54.82.54
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 54de50e5-5e4b-443f-d9b8-9e9e0eee865c
+- alterId: 0
+  cipher: auto
+  name: 24|github.com/freefq - 美国  101
+  network: ws
+  port: '443'
+  server: 108.165.113.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ef22fad3-652a-48fc-e80a-46faa3a6a787
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 29|🇺🇲 United States 337
@@ -2301,7 +2327,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 89442e7c-23fe-4ba7-99e0-214d582ebf5d
+  uuid: 3317603d-bfe3-4c6e-8ef4-337cc7a69a4f
 - alterId: 0
   cipher: auto
   name: 30|【BGP】美国 05 | 1x US
@@ -2311,7 +2337,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 89442e7c-23fe-4ba7-99e0-214d582ebf5d
+  uuid: 3317603d-bfe3-4c6e-8ef4-337cc7a69a4f
 - alterId: 0
   cipher: auto
   name: 30|【BGP】美国 06 | 1x US
@@ -2321,7 +2347,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 89442e7c-23fe-4ba7-99e0-214d582ebf5d
+  uuid: 3317603d-bfe3-4c6e-8ef4-337cc7a69a4f
 - alterId: 0
   cipher: auto
   name: 33|🇺🇸美国 | 101 | 负载优化 | 1x
@@ -2370,7 +2396,7 @@ proxies:
   server: gdct001.theyydsnode.top
   tls: false
   type: vmess
-  uuid: fc8ddd7d-3ac8-4fb8-ac23-e7d957421be6
+  uuid: 7c7a4158-2a4a-4a50-bd16-509c03c8289c
   ws-opts:
     headers:
       Host: ''
@@ -2383,7 +2409,7 @@ proxies:
   server: shcm002.theyydsnode.top
   tls: false
   type: vmess
-  uuid: fc8ddd7d-3ac8-4fb8-ac23-e7d957421be6
+  uuid: 7c7a4158-2a4a-4a50-bd16-509c03c8289c
   ws-opts:
     headers:
       Host: ''
@@ -2396,7 +2422,7 @@ proxies:
   server: gdct003.theyydsnode.top
   tls: false
   type: vmess
-  uuid: fc8ddd7d-3ac8-4fb8-ac23-e7d957421be6
+  uuid: 7c7a4158-2a4a-4a50-bd16-509c03c8289c
   ws-opts:
     headers:
       Host: ''
@@ -2409,7 +2435,7 @@ proxies:
   server: shcm002.theyydsnode.top
   tls: false
   type: vmess
-  uuid: fc8ddd7d-3ac8-4fb8-ac23-e7d957421be6
+  uuid: 7c7a4158-2a4a-4a50-bd16-509c03c8289c
   ws-opts:
     headers:
       Host: ''
@@ -2422,7 +2448,7 @@ proxies:
   server: gdct001.theyydsnode.top
   tls: false
   type: vmess
-  uuid: fc8ddd7d-3ac8-4fb8-ac23-e7d957421be6
+  uuid: 7c7a4158-2a4a-4a50-bd16-509c03c8289c
   ws-opts:
     headers:
       Host: ''
@@ -2435,7 +2461,7 @@ proxies:
   server: gdct003.theyydsnode.top
   tls: false
   type: vmess
-  uuid: fc8ddd7d-3ac8-4fb8-ac23-e7d957421be6
+  uuid: 7c7a4158-2a4a-4a50-bd16-509c03c8289c
   ws-opts:
     headers:
       Host: ''
