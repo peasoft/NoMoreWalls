@@ -13,48 +13,6 @@ proxies:
     headers:
       Host: dj.changding.tech
     path: /vm-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 10|香港 002
-  network: ws
-  port: 443
-  server: 199.15.76.35
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 752384e2-92eb-4a18-bad9-17c0f64fa888
-  ws-opts:
-    headers:
-      Host: shs.changding.tech
-    path: /vm-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 10|香港 003
-  network: ws
-  port: 80
-  server: hkcn2.s2fjeyeeyafe.bond
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
-  ws-opts:
-    headers:
-      Host: hkcn2.s2fjeyeeyafe.bond
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 10|香港 004
-  network: ws
-  port: 80
-  server: 202.64.124.207
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7b529a8b-d306-4744-b4e5-c29aaa42ec0b
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 32
   cipher: auto
   name: 10|🇭🇰HK-182.16.1.194-12021 | 8.54...
@@ -99,18 +57,70 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 29|【ccbaohe.com】 永久免费机场节点|深港隧道|流媒...
+  name: 10,29|【ccbaohe.com】 永久免费机场节点|深港隧道|解锁...
   network: ws
-  port: 443
-  server: hdfy7c1.cpionline.co
+  port: '80'
+  server: kkyx.yydsii.com
   servername: ''
-  tls: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 01596265-168b-46a7-bcb7-25662c7a9546
+  uuid: cef51002-47b0-4e48-9d91-850e15ff95e8
   ws-opts:
     headers:
-      Host: hdfy7c1.cpionline.co
-    path: /mrX5XBSsE4fQALebvMmvby47
+      Host: yxtw.651568.xyz
+    path: /
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 12|Relay_HK-🇭🇰HK_77 | 3.46Mb
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 23|香港 002
+  network: ws
+  port: 80
+  server: hkcn2.s2fjeyeeyafe.bond
+  servername: www.microsoft.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
+  ws-opts:
+    headers:
+      Host: hkcn2.s2fjeyeeyafe.bond
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 23|香港 003
+  network: ws
+  port: 443
+  server: 199.15.76.35
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 752384e2-92eb-4a18-bad9-17c0f64fa888
+  ws-opts:
+    headers:
+      Host: shs.changding.tech
+    path: /vm-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|香港 004
+  network: ws
+  port: 80
+  server: 202.64.124.207
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7b529a8b-d306-4744-b4e5-c29aaa42ec0b
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '29|【ccbaohe.com】 永久免费机场节点|深港隧道|流媒... #1'
@@ -159,16 +169,12 @@ proxies:
   client-fingerprint: chrome
   name: 31|🇭🇰 香港KT2|@ripaojiedian
   password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
+  plugin: obfs
   plugin-opts:
     host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 47.76.189.253
+    mode: http
+  port: 80
+  server: 8.217.217.138
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -189,6 +195,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 32|香港3|@ripaojiedian
+  network: tcp
+  port: '50008'
+  server: ieplhk.lanyunshi.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e5bb057-a232-389f-9793-bd44d32c0cd5
 - alterId: 0
   cipher: auto
   name: 33|🇭🇰香港 | 101 | 负载优化 | 1x
