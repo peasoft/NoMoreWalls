@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0,1,2,3,4,5,6,7,8,9,15,22,24,29,39|🇨🇦_CA_加拿大_2_由快嘴科技提供;kkzui.com2...
+  name: 0,1,2,3,4,5,6,7,8,9,15,22,24,39|🇨🇦_CA_加拿大_2_由快嘴科技提供;kkzui.com2...
   network: ws
   port: 38767
   server: 45.138.70.247
@@ -16,7 +16,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 0,1,2,4,6,8,22,24,29,39|🇨🇦_CA_加拿大_由快嘴科技提供;kkzui.com_12...
+  name: '0,1,2,4,6,8,22,24,29,39|🇨🇦_CA_加拿大_由快嘴科技提供;kkzui.com_12... #1'
   network: ws
   port: 443
   server: 142.171.202.130
@@ -31,15 +31,17 @@ proxies:
     path: /path/1702650992491
 - alterId: 64
   cipher: auto
-  name: 3,5,7,9,20||12.25Mb
+  name: '3,5,7,9|_CA__1 #3'
   network: ws
   port: 443
   server: 142.171.202.130
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
+    headers:
+      host: www.87981532.xyz
     path: /path/1702650992491
 - alterId: 0
   cipher: auto
@@ -551,11 +553,10 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: 10,23,29|🔒 VM-WS-NA 🇺🇸 US-172.67.229.25...
+  name: '10,23|加拿大 037 #1'
   network: ws
-  port: '2086'
+  port: 2086
   server: 172.67.229.25
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -643,12 +644,11 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: '10,23,29|加拿大 043 #2'
+  cipher: chacha20-poly1305
+  name: '10,23|加拿大 043 #1'
   network: ws
   port: 2086
   server: 172.67.229.37
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -674,12 +674,11 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: '10,23,29|加拿大 045 #2'
+  cipher: chacha20-poly1305
+  name: '10,23|加拿大 045 #1'
   network: ws
   port: 2086
   server: 172.67.229.19
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -690,12 +689,11 @@ proxies:
       Host: ca6.tehme100.fun
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
-  cipher: auto
-  name: '10,23,29|加拿大 046 #2'
+  cipher: chacha20-poly1305
+  name: '10,23|加拿大 046 #1'
   network: ws
   port: 2086
   server: 172.67.229.35
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1204,6 +1202,49 @@ proxies:
     path: /quanstring?ed=2048
 - alterId: 0
   cipher: auto
+  name: 10,23,29|🇺🇸|US|美国|@wxgqlfx|187
+  network: ws
+  port: '8080'
+  server: us-new04.gujuji.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0088ccf-9a9a-431f-995e-ef9cc175ffe9
+  ws-opts:
+    headers:
+      Host: us-new04.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10,23|加拿大 085 #1'
+  network: ws
+  port: 8080
+  server: uk-new01.gujuji.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  ws-opts:
+    headers:
+      Host: uk-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10,23,24|github.com/freefq - 美国CloudFla... #1'
+  network: ws
+  port: 8080
+  server: fr-new01.gujuji.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0088ccf-9a9a-431f-995e-ef9cc175ffe9
+  ws-opts:
+    headers:
+      Host: fr-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
   name: '10,23|加拿大 087 #1'
   network: ws
   port: 2086
@@ -1217,18 +1258,30 @@ proxies:
     path: /sssddd
 - alterId: 0
   cipher: auto
-  name: '10,23,29|美国 - 威奇托 - Cloudflare, Inc. - ... #1'
+  name: '10,23|加拿大 088 #1'
   network: ws
   port: 8080
   server: us-new01.gujuji.top
-  servername: ''
+  skip-cert-verify: true
+  type: vmess
+  uuid: e85e0c81-337d-49b6-8687-500fd225dfc3
+  ws-opts:
+    headers:
+      Host: us-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10,23,29|🇺🇸|US|美国|@wxgqlfx|108
+  network: ws
+  port: 8080
+  server: de-new01.gujuji.top
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f0088ccf-9a9a-431f-995e-ef9cc175ffe9
   ws-opts:
     headers:
-      Host: us-new01.gujuji.top
+      Host: de-new01.gujuji.top
     path: /
 - alterId: 0
   cipher: auto
@@ -2098,13 +2151,11 @@ proxies:
     path: /public
 - alterId: 0
   cipher: auto
-  name: '10,23,29|加拿大 151 #2'
+  name: '10,23|加拿大 151 #1'
   network: ws
   port: 2086
   server: join4.vmessprotocol.sbs
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -2161,13 +2212,11 @@ proxies:
     path: /jsjc/us2
 - alterId: 0
   cipher: auto
-  name: '10,23,29|加拿大 156 #2'
+  name: '10,23|加拿大 156 #1'
   network: ws
   port: 2086
   server: 14.vmessprotocol.telegram-vmessprotocol-channel.space
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -2599,13 +2648,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,23|加拿大 187 #1'
+  name: 10,23,29|🇺🇸|US|美国|@wxgqlfx|148
   network: ws
   port: 8080
   server: ca-new01.gujuji.top
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: fd2c62e1-eff8-420f-88b1-c46df63dc6dc
+  uuid: f0088ccf-9a9a-431f-995e-ef9cc175ffe9
   ws-opts:
     headers:
       Host: ca-new01.gujuji.top
@@ -2653,7 +2703,7 @@ proxies:
     path: /Amsterdam
 - alterId: 0
   cipher: auto
-  name: '10,22,23,24|github.com/freefq - 美国CloudFla... #4'
+  name: 10,22,23,24|github.com/freefq - 美国CloudFla...
   network: ws
   port: 8080
   server: 104.17.129.28
@@ -2668,13 +2718,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,23,29|加拿大 192 #2'
+  name: '10,23|加拿大 192 #1'
   network: ws
   port: 2086
   server: 172.67.229.34
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -3149,13 +3197,15 @@ proxies:
     path: /xwdn8sj2aw
 - alterId: 0
   cipher: auto
-  name: '10,23|加拿大 229 #1'
+  name: 10,23,29|韩国 - 首尔特别市 - Oracle Corporatio...
   network: ws
   port: 8080
   server: kr-01.gujuji.top
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: f199b5ef-c3a2-4913-9b4f-8032c6b62177
+  uuid: f0088ccf-9a9a-431f-995e-ef9cc175ffe9
   ws-opts:
     headers:
       Host: kr-01.gujuji.top
@@ -3331,6 +3381,20 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
+  name: 10,23,29|🇺🇸|US|美国|@wxgqlfx|114
+  network: ws
+  port: 8080
+  server: us-new03.gujuji.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0088ccf-9a9a-431f-995e-ef9cc175ffe9
+  ws-opts:
+    headers:
+      Host: us-new03.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
   name: '10,23|加拿大 244 #1'
   network: ws
   port: 80
@@ -3423,7 +3487,7 @@ proxies:
     path: /aHFYCl4zLtepo0YwKHeQ
 - alterId: 0
   cipher: auto
-  name: '10,22,23,24|github.com/freefq - 美国CloudFla... #3'
+  name: '10,22,23|加拿大 251 #1'
   network: ws
   port: 2082
   server: us-02.jikuai.xyz
@@ -3437,13 +3501,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,23,29|加拿大 252 #2'
+  name: '10,23|加拿大 252 #1'
   network: ws
   port: 2086
   server: 172.67.229.38
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -3718,15 +3780,13 @@ proxies:
     path: /sssddd
 - alterId: 0
   cipher: auto
-  name: 10,23,29|美国 - 威奇托 - Cloudflare, Inc. - ...
+  name: '10,23|加拿大 273 #1'
   network: ws
   port: 8080
   server: us-new02.gujuji.top
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: f0088ccf-9a9a-431f-995e-ef9cc175ffe9
+  uuid: 3bbea0a7-6b6a-47fb-8c0a-7d535a5ea56e
   ws-opts:
     headers:
       Host: us-new02.gujuji.top
@@ -4330,9 +4390,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,22,23,24,29|Channel id: @ShadowProxy66🇨🇦 #1'
+  name: '10,22,23,24|github.com/freefq - 美国CloudFla... #2'
   network: ws
-  port: '8080'
+  port: 8080
   server: 104.17.193.145
   servername: ''
   skip-cert-verify: true
@@ -4386,13 +4446,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '10,23,29|加拿大 321 #2'
+  name: '10,23|加拿大 321 #1'
   network: ws
   port: 2052
   server: jp.784654.xyz
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 59a660f7-508f-476c-a38f-0a37de0ca415
   ws-opts:
@@ -5303,7 +5361,7 @@ proxies:
     path: /snsk
 - alterId: 0
   cipher: auto
-  name: '10,23,29|Channel id: @ShadowProxy66🇨🇦'
+  name: '10,23,29|Channel id: @ShadowProxy66🇨🇦 #1'
   network: ws
   port: '80'
   server: 172.67.189.60
@@ -5318,7 +5376,7 @@ proxies:
     path: /skincare
 - alterId: 0
   cipher: auto
-  name: '10,23,29|Channel id: @ShadowProxy66🇨🇦 #2'
+  name: '10,23,29|Channel id: @ShadowProxy66🇨🇦 #3'
   network: ws
   port: '80'
   server: 172.67.229.13
@@ -5467,19 +5525,6 @@ proxies:
     path: /uruydhewjjiqiiqiqjdj1238q30
 - alterId: 0
   cipher: auto
-  name: '10,23|加拿大 401 #1'
-  network: ws
-  port: 80
-  server: cf.kfcvme50.life
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7b529a8b-d306-4744-b4e5-c29aaa42ec0b
-  ws-opts:
-    headers:
-      Host: hytron.kfcvme50.life
-    path: /
-- alterId: 0
-  cipher: auto
   name: '10,23|加拿大 402 #1'
   network: ws
   port: 443
@@ -5559,6 +5604,20 @@ proxies:
     path: /forwardv2ray1forwardv2ray4
 - alterId: 0
   cipher: auto
+  name: '10,22,23|加拿大 408 #1'
+  network: ws
+  port: 8080
+  server: 104.18.188.20
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cef51002-47b0-4e48-9d91-850e15ff95e8
+  ws-opts:
+    headers:
+      Host: kryx.651568.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: '10,23|加拿大 409 #1'
   network: ws
   port: 2087
@@ -5615,39 +5674,70 @@ proxies:
     headers:
       Host: mg_cdn.yunjisuan.cf
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-10015 | 8...
-  password: G!yBwPWH3Vao
-  port: 806
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-1118 | 9....
-  password: G!yBwPWH3Vao
-  port: 807
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-1124 | 11...
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-4534 | 15...
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-4556 | 21...
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 134.195.196.178
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-192.46.223.61-0264 | 157....
+  client-fingerprint: chrome
+  name: 10,23,31,32|美国2|@ripaojiedian
+  network: ws
+  port: '8880'
+  server: 21.namesilo123.top
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 40e71b6a-00cf-437d-8232-4e83e6437286
+  ws-opts:
+    headers:
+      Host: uspp.sanfen002.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '10,23|加拿大 415 #1'
+  network: ws
+  port: 8443
+  server: 104.31.16.120
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60
+  ws-opts:
+    headers:
+      Host: cloudconeaaa.gorgorchicken.one
+    path: /cloudconeaaa
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '10,23|加拿大 416 #1'
+  network: ws
+  port: 2082
+  server: mehdi20.goodbyefilteringchannel.space
+  skip-cert-verify: true
+  type: vmess
+  uuid: 819aa317-b82f-45a4-8226-c1de31361f97
+  ws-opts:
+    headers:
+      Host: mehdi20.goodbyefilteringchannel.space
+    path: /forwardv2ray1forwardv2ray4
+- alterId: 0
+  cipher: auto
+  name: '10,23|加拿大 417 #1'
+  network: ws
+  port: 443
+  server: 172.67.204.19
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
+    path: /azumase.ren
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇦CA-192.46.223.61-9937 | 37.3...
   network: ws
   port: 443
   server: ca2-full.privateip.net
@@ -5661,7 +5751,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-192.53.121.224-9895 | 189...
+  name: 10|🇨🇦CA-192.53.121.224-9958 | 40....
   network: ws
   port: 443
   server: ca-full.privateip.net
@@ -5682,92 +5772,16 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4500d2f4-2ede-4b92-8a1c-a1438cbeb667
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 23,31,32|美国2|@ripaojiedian
-  network: ws
-  port: '8880'
-  server: 21.namesilo123.top
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 40e71b6a-00cf-437d-8232-4e83e6437286
-  ws-opts:
-    headers:
-      Host: uspp.sanfen002.top
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 23|加拿大 415
-  network: ws
-  port: 8443
-  server: 104.31.16.120
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60
-  ws-opts:
-    headers:
-      Host: cloudconeaaa.gorgorchicken.one
-    path: /cloudconeaaa
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 23|加拿大 416
-  network: ws
-  port: 2082
-  server: mehdi20.goodbyefilteringchannel.space
-  skip-cert-verify: true
-  type: vmess
-  uuid: 819aa317-b82f-45a4-8226-c1de31361f97
-  ws-opts:
-    headers:
-      Host: mehdi20.goodbyefilteringchannel.space
-    path: /forwardv2ray1forwardv2ray4
-- alterId: 0
-  cipher: auto
-  name: 23,29|🔒 VM-WS-TLS 🇺🇸 US-172.67.204.1...
-  network: ws
-  port: '443'
-  server: 172.67.204.19
-  servername: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      Host: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
-    path: /azumase.ren
-- alterId: 0
-  cipher: auto
-  name: 29|%F0%9F%87%A8%F0%9F%87%A6%20Can...
-  network: ws
-  port: 80
-  server: fr1e-unmetered.v2freevpn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /v133PDXkklxLEcOvD
+  uuid: 35530688-5267-4f82-8852-b0ec601a5b29
 - cipher: chacha20-ietf
-  name: 29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC...
+  name: 29|5Lit5Zu9IC0g6aaZ5rivIC0gUENDVy...
   obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '6704'
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm03.newcome.xyz
+  obfs-param: ''
+  password: mblank1port
+  port: '601'
+  protocol: auth_aes128_md5
+  protocol-param: MTU5Nzk6UjBjXVY3bC02SnltSjM%3D
+  server: cmlayer2.labtechs.xyz
   type: ssr
 - cipher: chacha20-ietf
   name: 29|5pel5pysIC0g5Lic5LqsIC0gRGF0YW...
@@ -5780,27 +5794,7 @@ proxies:
   server: cm01.newcome.xyz
   type: ssr
 - cipher: chacha20-ietf
-  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #1'
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '6702'
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm03.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #2'
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '6703'
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm03.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #3'
+  name: 29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC...
   obfs: plain
   obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
   password: jFa4F1
@@ -5809,49 +5803,9 @@ proxies:
   protocol-param: NDY5NjE6MTIxMC1UaGE%3D
   server: cm03.newcome.xyz
   type: ssr
-- cipher: chacha20-ietf
-  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #4'
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '6707'
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm03.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #5'
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '6701'
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm03.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  name: '29|5pel5pysIC0g5Lic5LqsIC0gRGF0YW... #1'
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '3700'
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm01.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  name: '29|5pel5pysIC0g5Lic5LqsIC0gRGF0YW... #2'
-  obfs: plain
-  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '3701'
-  protocol: auth_aes128_sha1
-  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
-  server: cm01.newcome.xyz
-  type: ssr
 - alterId: 0
   cipher: auto
-  name: '29|Channel id: @ShadowProxy66🇨🇦 #3'
+  name: '29|Channel id: @ShadowProxy66🇨🇦'
   network: ws
   port: '80'
   server: fr2e-portmapper.v2freevpn.com
@@ -5863,6 +5817,60 @@ proxies:
     headers:
       Host: ''
     path: /frfrfffvmn01N
+- cipher: chacha20-ietf
+  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #1'
+  obfs: plain
+  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
+  password: jFa4F1
+  port: '6704'
+  protocol: auth_aes128_sha1
+  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
+  server: cm03.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  name: '29|5pel5pysIC0g5Lic5LqsIC0gRGF0YW... #1'
+  obfs: plain
+  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
+  password: jFa4F1
+  port: '3701'
+  protocol: auth_aes128_sha1
+  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
+  server: cm01.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #2'
+  obfs: plain
+  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
+  password: jFa4F1
+  port: '6701'
+  protocol: auth_aes128_sha1
+  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
+  server: cm03.newcome.xyz
+  type: ssr
+- cipher: chacha20-ietf
+  name: '29|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #3'
+  obfs: plain
+  obfs-param: NWQzZWU0Njk2MS5taWNyb3NvZnQuY29t
+  password: jFa4F1
+  port: '6703'
+  protocol: auth_aes128_sha1
+  protocol-param: NDY5NjE6MTIxMC1UaGE%3D
+  server: cm03.newcome.xyz
+  type: ssr
+- alterId: 1
+  cipher: auto
+  name: '29|Channel id: @ShadowProxy66🇨🇦 #2'
+  network: ws
+  port: '443'
+  server: 172.67.215.202
+  servername: octavi.cfd
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: octavi.cfd
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: 30|【BGP】加拿大 02 | 1x CA
@@ -5872,7 +5880,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5e8ffe4b-3278-4ddc-b911-fce96881476c
+  uuid: e7e63e8d-7222-4f0c-81a9-962b590b2b65
 - alterId: 0
   cipher: auto
   name: 33|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -5882,4 +5890,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b60345d9-ccc6-3406-9986-8e9ff2165285
+  uuid: 7806ef63-bb7a-3939-95d0-5201fd184d9d
