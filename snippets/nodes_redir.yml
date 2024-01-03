@@ -43,10 +43,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,4,6,8,22,24,39|🇨🇳_CN_中国->🇮🇳_IN_印度_25
+  name: 0,2,4,6,7,8,22,24,39|🇨🇳_CN_中国->🇮🇳_IN_印度_25
   network: ws
   port: 16626
   server: yes.cnmjcn.net
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
@@ -56,43 +57,45 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 0|🇩🇪 _CN_中国->🇩🇪_DE_德国
+  name: '0,2,3,4,5,6,8,9|_CN_->_DE_ #2'
   network: tcp
-  port: '52707'
+  port: 52707
   server: 183.237.20.148
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '2,4,6,8,10,15,23,29|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: '2,4,6,7,8,15,29|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
   network: ws
-  port: 2095
-  server: frsadubiaa.76898102.xyz
-  tls: false
+  port: 2087
+  server: 104.21.69.44
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
   ws-opts:
     headers:
-      Host: frsadubias.76898102.xyz
-    path: /funsdfrh
+      Host: pAnel159.moOkomeILz.homes
+    path: /@FreeVPNHomes@FreeVPNHomes
 - alterId: 0
   cipher: auto
-  name: '3,5,7,9|_US_->_FR_ #3'
+  name: '3,5,9|_US_->_DE_ #2'
   network: ws
-  port: 2095
-  server: frsadubiaa.76898102.xyz
+  port: 2087
+  server: 104.21.69.44
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
   ws-opts:
     headers:
-      host: frsadubias.76898102.xyz
-    path: /funsdfrh
+      host: pAnel159.moOkomeILz.homes
+    path: /@FreeVPNHomes@FreeVPNHomes
 - alterId: 0
   cipher: auto
-  name: '3,5,7,9|_CN_->_IN_ #3'
+  name: '3,5,9|_CN_->_IN_ #2'
   network: ws
   port: 16626
   server: yes.cnmjcn.net
@@ -104,7 +107,7 @@ proxies:
     headers:
       host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
     path: /
-- name: '3,5,7,9|_CN_->_GI_ #3'
+- name: '3,5,9|_CN_->_GI_ #2'
   network: tcp
   password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
   port: 17728
@@ -112,19 +115,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 29|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 2087
-  server: 104.21.69.44
-  tls: true
-  type: vmess
-  uuid: 8fada9c0-c348-4465-aade-ff0311454178
-  ws-opts:
-    headers:
-      Host: pAnel159.moOkomeILz.homes
-    path: /@FreeVPNHomes@FreeVPNHomes
+- cipher: chacha20-ietf-poly1305
+  name: 7|🇮🇹 _CN_中国->🇮🇹_IT_意大利
+  password: b098ec55-ba4f-49d2-9e58-235cb25f0e6b
+  port: 44191
+  server: b.01.mil.it.open.ga
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 7,31|🇮🇳 印度|tg频道:@ripaojiedian
+  password: 73637cec-699d-4d87-99af-0776ac880604
+  port: 21003
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 39|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_由快嘴科技提供：...
