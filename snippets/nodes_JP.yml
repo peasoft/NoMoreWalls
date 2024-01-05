@@ -89,7 +89,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,16,23,24,25|github.com/freefq - 日本阿里云 34
+  name: 10,16,23,24,25|github.com/freefq - 日本阿里云 20
   network: ws
   port: 2052
   server: 47.91.28.15
@@ -117,13 +117,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24|日本 009 #1'
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: '10,12,24|日本 009 #1'
   network: tcp
   port: 46482
   server: jp05-vm0.entry.srthdw.art
+  servername: jp05-vm0.entry.srthdw.art
   skip-cert-verify: true
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '10,24|日本 010 #1'
@@ -192,17 +197,22 @@ proxies:
     path: /admin
 - alterId: 0
   cipher: auto
-  name: '10,24|日本 015 #1'
+  country: 🇦🇺AU
+  h2-opts: {}
+  http-opts: {}
+  name: '10,12,24|日本 015 #1'
   network: tcp
   port: 28783
   server: jp06-vm0.entry.jpojpoh.art
+  servername: jp1.xn--mes358a9urctx.com
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
+  ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇵JP
+  country: 🇸US
   h2-opts: {}
   http-opts: {}
   name: '10,12,24|日本 016 #1'
@@ -213,60 +223,88 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
-  ws-path: /ttf
+  ws-path: /path/040525210130
+- alterId: 0
+  cipher: auto
+  name: '10,24|日本 017 #1'
+  network: ws
+  port: 80
+  server: hg1.s2fjeyeeyafe.bond
+  servername: www.microsoft.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /zh-cn
+- cipher: aes-256-cfb
+  name: 10|🇯🇵JP-13.231.210.254-1134 | 15....
+  password: amazonskr05
+  port: 443
+  server: 13.231.210.254
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-8686 | 2....
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-8687 | 2....
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-8688 | 2....
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-8689 | 2....
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-8690 | 2....
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-8691 | 2....
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-8692 | 2....
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 185.172.113.182
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇯🇵JP-54.95.107.168-1132 | 4.22...
+  password: amazonskr05
+  port: 443
+  server: 54.95.107.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇯🇵JP-57.180.13.136-5383 | 14.8...
+  password: amazonskr05
+  port: 443
+  server: 57.180.13.136
+  type: ss
 - cipher: aes-256-cfb
   country: 🇯🇵JP
-  name: 10,12| |66.55Mb
+  name: 12|🇯🇵JP_79 |66.55Mb
   password: amazonskr05
   port: 443
   server: 13.115.27.76
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇯🇵JP-13.230.96.57-5468 | 15.53...
-  password: amazonskr05
-  port: 443
-  server: 13.230.96.57
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 10|🇯🇵JP-152.69.197.74-4950 | 11.2...
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 10,32|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.112.29.118
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸US
-  name: 10,12| |31.41Mb
-  password: amazonskr05
-  port: 443
-  server: 35.77.105.112
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: 10,12| |68.73Mb
-  password: amazonskr05
-  port: 443
-  server: 52.194.252.137
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: 12|🇯🇵JP_73 |36.13Mb
-  password: amazonskr05
-  port: 443
-  server: 52.193.77.139
   type: ss
 - alterId: 0
   cipher: auto
@@ -300,19 +338,31 @@ proxies:
   uuid: b9fb8ecd-bcc6-4f16-b62a-2398ab6e2b12
 - alterId: 0
   cipher: auto
-  name: 24|日本 017
+  name: 30|🇯🇵日本4丨电报群@bp520
   network: ws
-  port: 80
-  server: hg1.s2fjeyeeyafe.bond
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tls: true
+  port: '80'
+  server: 162.159.200.4
+  tls: false
   type: vmess
-  uuid: 65d79be3-7327-45f8-86fc-bd7f27948eec
+  uuid: f46f5827-facb-4786-9bd3-24e4e5aedadc
   ws-opts:
     headers:
-      Host: www.microsoft.com
-    path: /zh-cn
+      Host: jp3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|JP-Microsoft_Azure-vm
+  network: ws
+  port: '443'
+  server: hexsen.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  ws-opts:
+    headers:
+      Host: cup-without-disappointed-objects.trycloudflare.com
+    path: /argo-vmess?ed=2048
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 04  | 1x JP
@@ -381,6 +431,14 @@ proxies:
   password: 73637cec-699d-4d87-99af-0776ac880604
   port: 20007
   server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 32|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.112.29.118
   tfo: false
   type: ss
 - alterId: 1
