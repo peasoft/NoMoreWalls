@@ -43,62 +43,6 @@ proxies:
       Host: shs.changding.tech
     path: /vm-tls1?ed=2048
 - alterId: 0
-  cipher: auto
-  name: 10|香港 004
-  network: ws
-  port: 10001
-  server: cmhk.zzzzzl.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 42969d1b-e0b8-429c-88ba-efd6c212e333
-  ws-opts:
-    headers:
-      Host: cmhk.zzzzzl.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|香港 005
-  network: ws
-  port: 10002
-  server: cmhk.zzzzzl.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 42969d1b-e0b8-429c-88ba-efd6c212e333
-  ws-opts:
-    headers:
-      Host: cmhk.zzzzzl.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|香港 006
-  network: ws
-  port: 30001
-  server: cmsg.zzzzzl.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 42969d1b-e0b8-429c-88ba-efd6c212e333
-  ws-opts:
-    headers:
-      Host: cmsg.zzzzzl.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|香港 007
-  network: ws
-  port: 30002
-  server: cmsg.zzzzzl.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 42969d1b-e0b8-429c-88ba-efd6c212e333
-  ws-opts:
-    headers:
-      Host: cmsg.zzzzzl.me
-    path: /
-- alterId: 0
   cipher: chacha20-poly1305
   name: '10,24|香港 004 #1'
   network: ws
@@ -167,6 +111,15 @@ proxies:
     headers:
       Host: dl.kgvn.garenanow.com
     path: /
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 12|Relay_🇰HK-🇭🇰HK_75 | 0.67Mb
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 23,25|github.com/freefq - 香港特别行政区 43
@@ -218,6 +171,30 @@ proxies:
   server: 8.217.217.138
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 32|🇭🇰 香港2|@ripaojiedian
+  password: 73637cec-699d-4d87-99af-0776ac880604
+  port: 20001
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 32|🇭🇰 香港
+  network: ws
+  port: 54222
+  server: first.jinyuxiaowo.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5623a7eb-d3b1-4e97-9d0b-efa6f649ad52
+  ws-opts:
+    headers:
+      Host: first.jinyuxiaowo.net
+    path: /
 - alterId: 64
   cipher: auto
   name: 33|香港1|@ripaojiedian
@@ -228,16 +205,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 33|香港3|@ripaojiedian
-  network: tcp
-  port: '46602'
-  server: 112.28.208.10
+  name: 33|香港
+  network: ws
+  port: '54222'
+  server: first.jinyuxiaowo.net
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 5623a7eb-d3b1-4e97-9d0b-efa6f649ad52
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
