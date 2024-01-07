@@ -27,6 +27,19 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
+  name: 10,15,24,38|🇯🇵 _JP_日本->🇺🇸_US_美国
+  network: ws
+  port: '2052'
+  server: 47.91.28.15
+  tls: false
+  type: vmess
+  uuid: bf3d038a-93a2-4e24-886c-6bc64e3c3a90
+  ws-opts:
+    headers:
+      Host: mgtow_cdn.yunjisuan.cf
+    path: /
+- alterId: 0
+  cipher: auto
   name: '10,24|日本 004 #1'
   network: ws
   port: 80
@@ -73,11 +86,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,24|日本 008 #1'
+  name: '10,23,24|日本 008 #1'
   network: tcp
   port: 49499
   server: 139.162.125.97
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
 - alterId: 0
@@ -107,6 +121,22 @@ proxies:
   sni: sg01.lovemc.xyz
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 10,23,24,25,30|日本 - 东京 - Contabo Asia Private...
+  network: ws
+  port: 80
+  server: jp.takeshi.wiki
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b6ede839-a472-4b75-9961-1b5a82c38a6a
+  ws-opts:
+    headers:
+      Host: dl.kgvn.garenanow.com
+    path: /takeshi.wiki
 - cipher: aes-256-cfb
   name: 10|🇯🇵JP-13.115.27.76-0858 | 25.05...
   password: amazonskr05
@@ -150,7 +180,7 @@ proxies:
   server: 185.172.113.182
   type: ss
 - cipher: aes-256-cfb
-  name: 10,32|🇯🇵 日本特殊|@ripaojiedian
+  name: 10|🇯🇵JP-3.112.29.118-5252 | 4.686...
   password: amazonskr05
   port: 443
   server: 3.112.29.118
@@ -167,6 +197,19 @@ proxies:
   port: 443
   server: 54.95.107.168
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '16,23,25,30|🇯🇵_JP_日本 #1'
+  network: ws
+  port: 80
+  server: 103.35.188.226
+  tls: false
+  type: vmess
+  uuid: 098e7cdd-03b4-435d-8c41-ea608fa637c2
+  ws-opts:
+    headers:
+      Host: 103.35.188.226
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本04
@@ -248,7 +291,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 10016
-  server: 61.224.72.205
+  server: 61.224.85.178
   type: ss
 - cipher: aes-128-gcm
   name: 32|🇯🇵 日本KT2|@ripaojiedian
@@ -262,13 +305,34 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 10012
-  server: 61.224.72.205
+  server: 61.224.85.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 32|🇯🇵 日本|@ripaojiedian
   password: 73637cec-699d-4d87-99af-0776ac880604
   port: 26668
   server: service.ouluyun9803.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 32,33|日本2|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 103.35.188.226
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 098e7cdd-03b4-435d-8c41-ea608fa637c2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- cipher: aes-256-cfb
+  name: 32|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.215.209.192
   type: ss
 - alterId: 0
   cipher: auto
