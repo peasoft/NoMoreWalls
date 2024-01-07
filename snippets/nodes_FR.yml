@@ -46,14 +46,31 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '10,24|法国 004 #1'
+  network: ws
+  port: 30870
+  server: 141.11.123.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8e7c07a-4c32-4fc7-9169-073669416331
+  ws-opts:
+    headers:
+      Host: 141.11.123.205
+    path: /
 - cipher: aes-256-cfb
-  name: 10|🇫🇷FR-195.154.169.198-0318 | 33...
+  country: 🇫🇷FR
+  name: 10,12|🇫🇷FR_41
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇫🇷FR-195.154.185.174-0324 | 33...
+  country: 🇫🇷FR
+  name: 10,12|🇫🇷FR_32
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -65,13 +82,15 @@ proxies:
   server: 51.15.27.48
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇫🇷FR-51.159.106.157-0944 | 32....
+  country: 🇫🇷FR
+  name: 10,12|🇫🇷FR_34
   password: VV5v4GjMdKsNt8j0bfTW6y
   port: 6917
   server: 51.159.106.157
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇫🇷FR-51.159.111.208-0319 | 30....
+  country: 🇫🇷FR
+  name: 10,12|🇫🇷FR_47
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.111.208
@@ -90,19 +109,44 @@ proxies:
     headers:
       Host: sazgar22.zapto.org
     path: /
-- alterId: 0
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 12|🇫🇷FR_26
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 12|🇫🇷FR_35
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 12|🇫🇷FR_37
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 149.202.82.172
+  type: ss
+- alterId: 64
   cipher: auto
-  name: 30|FR_youtube@资源分享师_123
+  country: 🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 12|Relay_🇷FR-NL_70 | 9.71Mb
   network: ws
-  port: 443
-  server: 92.223.55.6
+  port: 31000
+  server: 156.249.18.66
+  servername: www.72281149.xyz
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 14bb927f-a4ec-4de7-90fb-388c1f69dbc1
-  ws-opts:
-    headers:
-      Host: sazgar22.zapto.org
-    path: /@forwardv2ray
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  ws-headers:
+    HOST: www.72281149.xyz
+  ws-path: /path/1704276466760
 - alterId: 0
   cipher: auto
   name: 30|FR法国(mibei77.com 米贝节点分享)
@@ -117,3 +161,13 @@ proxies:
     headers:
       Host: mizban888.servecounterstrike.com
     path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇫🇷 FR-141.94.86.92...
+  network: tcp
+  port: '6443'
+  server: 141.94.86.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 61c0c74b-7fbd-45df-9fc5-d988c2494319
