@@ -1,7 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10,23,24,30|🔒 VM-TCP-NA 🇹🇼 TW-45.121.48.19...
+  country: TW
+  h2-opts: {}
+  http-opts: {}
+  name: '10,12,23,24|台湾 001 #1'
   network: tcp
   port: 10001
   server: 45.121.48.196
@@ -12,6 +15,7 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
   ws-headers:
     Host: 45.121.48.196
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '10,24|台湾 002 #1'
@@ -37,6 +41,19 @@ proxies:
   uuid: d3f5c39d-610c-4b98-9b01-d5b847033cf9
 - alterId: 0
   cipher: auto
+  name: 30|台湾vmess①
+  network: ws
+  port: '80'
+  server: kkyx.yydsii.com
+  tls: false
+  type: vmess
+  uuid: 2b0c5996-216f-4933-9aed-92458ff4988f
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 30|TW-板桥2-3(TCP) - 麻雀加速器 Sparrow〖...
   network: tcp
   port: 2024
@@ -47,32 +64,9 @@ proxies:
   uuid: d3f5c39d-610c-4b98-9b01-d5b847033cf9
 - alterId: 0
   cipher: auto
-  name: 30|台湾【TG：@ccbaohe】定时更新节点订阅
-  network: tcp
-  port: '4211'
-  server: nb36.ntbq.dynu.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d3f5c39d-610c-4b98-9b01-d5b847033cf9
-- alterId: 0
-  cipher: auto
-  name: 30|台湾vmess②
-  network: ws
-  port: '80'
-  server: scadn.yydsii.com
-  tls: false
-  type: vmess
-  uuid: 2b0c5996-216f-4933-9aed-92458ff4988f
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 30|TW-板桥2-4(TCP) - 麻雀加速器 Sparrow〖...
   network: tcp
-  port: '4443'
+  port: 4443
   server: nb24.ntbq.dynu.net
   servername: ''
   tls: false
@@ -82,7 +76,7 @@ proxies:
   cipher: auto
   name: 30|TW-板桥2-2(TCP) - 麻雀加速器 Sparrow〖...
   network: tcp
-  port: '12002'
+  port: 12002
   server: nb22.ntbq.dynu.net
   servername: ''
   tls: false
