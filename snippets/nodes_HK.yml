@@ -1,23 +1,7 @@
 proxies:
-- cipher: aes-256-gcm
-  country: 🇸🇬SG
-  name: 10,12|🇬SG_104 |117.09Mb
-  password: jmtgsmW40R
-  port: 1146
-  server: 8.210.231.146
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰HK
-  name: 12|Relay_HK-🇭🇰HK_77 | 4.99Mb
-  obfs: tls1.2_ticket_auth
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  server: 150.107.46.21
-  type: ssr
 - alterId: 0
   cipher: auto
-  name: 24|香港 001
+  name: '10,24|香港 001 #1'
   network: ws
   port: 1111
   server: 156.251.226.106
@@ -30,7 +14,7 @@ proxies:
     path: /changding-tls0?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|香港 002
+  name: '10,24|香港 002 #1'
   network: ws
   port: 443
   server: 199.15.76.35
@@ -44,14 +28,47 @@ proxies:
     path: /changding-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
-  network: tcp
-  port: '26389'
-  server: 34.92.50.99
+  name: 10,32,33|日本3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: hk02.duckulaolga.online
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+  uuid: 5f373214-b955-4467-a582-62be14c59bce
+  ws-opts:
+    headers:
+      Host: hk02.xpoti.online
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 10,32|🇭🇰 香港3|@ripaojiedian
+  password: MZ7ldA
+  port: 56005
+  server: ef30833c.t1v0e4l6w3-fb-hk05.6pzfwf.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10,32|🇺🇸 美国|@ripaojiedian
+  password: MZ7ldA
+  port: 56053
+  server: ef30833c.p1s6x6l9p5-fb-us03.6pzfwf.com
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇸🇬SG
+  name: 10,12| |117.09Mb
+  password: jmtgsmW40R
+  port: 1146
+  server: 8.210.231.146
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 12|Relay_HK-🇭🇰HK_77 | 4.99Mb
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 30|【ccbaohe.com】 永久免费机场节点|深港隧道|流媒...
@@ -102,12 +119,6 @@ proxies:
   port: 19511
   server: nc.cn2.go002.xyz
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 32|🇭🇰 香港3|@ripaojiedian
-  password: MZ7ldA
-  port: 56005
-  server: ef30833c.t1v0e4l6w3-fb-hk05.6pzfwf.com
-  type: ss
 - alterId: 64
   cipher: auto
   name: 33|香港A|@ripaojiedian
@@ -137,7 +148,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9ebe2a15-80f4-353c-85c0-e0c3b00f0672
+  uuid: 791a7e1f-2cac-38f3-94f1-84ebf123d10a
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -147,7 +158,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9ebe2a15-80f4-353c-85c0-e0c3b00f0672
+  uuid: 791a7e1f-2cac-38f3-94f1-84ebf123d10a
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -157,4 +168,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9ebe2a15-80f4-353c-85c0-e0c3b00f0672
+  uuid: 791a7e1f-2cac-38f3-94f1-84ebf123d10a
