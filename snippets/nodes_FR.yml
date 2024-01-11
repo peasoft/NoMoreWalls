@@ -1,31 +1,34 @@
 proxies:
-- name: '3,5,9,10,24|美国 042 #1'
+- name: '3,5,9|_FR__1 #2'
   network: tcp
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   port: 22222
-  server: 13.38.208.28
-  skip-cert-verify: true
+  server: 13.36.46.99
+  skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
   udp: true
-- alterId: 64
-  cipher: auto
-  name: 7,10,20,21,32|🇭🇰 香港B|@ripaojiedian
-  password: 57101ded-8147-4098-ab54-31d9b23692ba
-  port: 53300
-  server: 112.28.208.15
+- name: '3,5,9|_FR__2 #2'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.181.36.26
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  sni: trj.rollingnext.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 7,10,20,21||27.21Mb
+  password: d4e41ff772c7fd45
+  port: 22324
+  server: 38.75.137.27
+  skip-cert-verify: false
+  sni: us-full.privateip.net
   tls: false
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: 7|🇫🇷 _FR_法国 2
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
-  type: ss
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: aes-256-cfb
   name: 10|🇫🇷FR-195.154.169.198-0879 | 27...
   password: f8f7aCzcPKbsF8p3
@@ -123,4 +126,17 @@ proxies:
   ws-opts:
     headers:
       Host: skuone.serveminecraft.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 30|FR_youtube@资源分享师_31
+  network: ws
+  port: 443
+  server: 92.223.55.4
+  tls: true
+  type: vmess
+  uuid: 8dbd3db3-c530-4ec0-a929-be4da535f663
+  ws-opts:
+    headers:
+      Host: soft99.gotdns.ch
     path: /@forwardv2ray
