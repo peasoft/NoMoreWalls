@@ -96,21 +96,25 @@ proxies:
       Host: db.changding.tech
     path: /
 - cipher: aes-256-gcm
-  country: 🇬SG
-  name: 10,12| |24.02Mb
+  name: 10|🇭🇰HK-8.210.231.146-0482 | 6.62...
   password: jmtgsmW40R
   port: 1146
   server: 8.210.231.146
   type: ss
-- cipher: aes-256-cfb
-  country: 🇰HK
-  name: 12|Relay_HK-🇭🇰HK_81 |10.57Mb
-  obfs: tls1.2_ticket_auth
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  server: 150.107.46.21
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 24|香港 005
+  network: ws
+  port: 61656
+  server: 156.251.180.63
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls1?ed=2048
 - alterId: 0
   cipher: auto
   name: 30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
@@ -184,21 +188,6 @@ proxies:
   port: 80
   server: 8.217.217.138
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 32,33|香港|@ripaojiedian
-  network: ws
-  port: '80'
-  server: nv1wt598e45j.sanfen006.xyz
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ae16d5a4-9a22-4177-8884-77aa3b309d30
-  ws-opts:
-    headers:
-      Host: www.microsoft.com
-    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
