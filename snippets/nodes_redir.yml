@@ -1,11 +1,66 @@
 proxies:
 - alterId: 0
+  cipher: aes-128-gcm
+  name: '0,2,6,7,8,10,16,24,30|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
+  network: ws
+  port: 443
+  server: tgju.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21
+  ws-opts:
+    headers:
+      Host: cdn.pokerad.fun
+    path: /fa
+- alterId: 0
   cipher: auto
-  name: '0,2,4,6,7,8,15,16,38|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #6'
+  name: '0,2,6,7,8,10,16,24|香港 006 #1'
+  network: ws
+  port: 56120
+  server: 156.251.226.142
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '3,9|_US_->_DE_ #2'
+  network: ws
+  port: 443
+  server: tgju.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21
+  ws-opts:
+    headers:
+      host: cdn.pokerad.fun
+    path: /fa
+- alterId: 0
+  cipher: auto
+  name: '3,9|_SC_->_HK_ #1'
+  network: ws
+  port: 56120
+  server: 156.251.226.142
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
+  ws-opts:
+    headers:
+      host: hk-300.changding.tech
+    path: /changding-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '4,15,38|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
   network: ws
   port: '80'
   server: 162.159.200.3
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
@@ -15,7 +70,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,4,6,7,8,10,15,16,24,38|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #3'
+  name: 4,10,15,24,38|🇺🇸 _US_美国->🇺🇦_UA_乌克兰
   network: ws
   port: '80'
   server: 104.17.2.183
@@ -30,21 +85,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,4,6,7,8,15,16,23,38|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其 #3'
-  network: ws
-  port: '80'
-  server: 197.215.140.234
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
-  ws-opts:
-    headers:
-      Host: softiri.serveirc.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '0,2,4,6,7,8,10,15,16,24,38|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #5'
+  name: 4,10,15,24,38|🇺🇸 _US_美国->🇨🇦_CA_加拿大
   network: ws
   port: '80'
   server: 162.159.200.4
@@ -58,7 +99,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_US_->_CA__1 #2'
+  name: 5|_US_->_CA__1
   network: ws
   port: 80
   server: 162.159.200.3
@@ -72,7 +113,7 @@ proxies:
     path: /
 - grpc-opts:
     grpc-service-name: mahanvip.mahantu.top
-  name: '3,5,9|_US_->_DE_ #2'
+  name: '5|_US_->_DE_ #1'
   network: grpc
   password: Mahanvpn
   port: 443
@@ -84,7 +125,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_US_->_UA_ #2'
+  name: 5|_US_->_UA_
   network: ws
   port: 80
   server: 104.17.2.183
@@ -98,21 +139,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,5,9|_LY_->_TR_ #2'
-  network: ws
-  port: 80
-  server: 197.215.140.234
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
-  ws-opts:
-    headers:
-      host: softiri.serveirc.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '3,5,9|_US_->_CA__2 #2'
+  name: 5|_US_->_CA__2
   network: ws
   port: 80
   server: 162.159.200.4
@@ -126,14 +153,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  name: 7,10,12,20,21,32|🇺🇸 美国4|@ripaojiedian
-  password: 27876_t7d7f4e3f
+  name: 16,23,25|github.com/freefq - 伊拉克  16
+  network: ws
   port: 443
-  server: los16.ttddd.xyz
-  skip-cert-verify: false
-  sni: los16.ttddd.xyz
-  tls: false
-  type: trojan
-  udp: true
-  uuid: a36db716-c6d0-4bc2-bd76-69e278215124
+  server: 130.193.166.2
+  tls: true
+  type: vmess
+  uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
+  ws-opts:
+    headers:
+      Host: soft8989.redirectme.net
+    path: /@forwardv2ray
