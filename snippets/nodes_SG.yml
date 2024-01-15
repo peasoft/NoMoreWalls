@@ -11,20 +11,6 @@ proxies:
   uuid: e9882e7b-c7bc-4c13-ab4d-bc127d39925c
 - alterId: 0
   cipher: auto
-  name: 10|新加坡 002
-  network: ws
-  port: 20552
-  server: 146.190.97.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 48cbd108-fd2a-4fb7-b46d-9982b9de9c6e
-  ws-opts:
-    headers:
-      Host: m.linkedin.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: '10,24|新加坡 002 #1'
   network: ws
   port: 80
@@ -176,6 +162,19 @@ proxies:
     headers:
       Host: sgb.kalaa.online
     path: /
+- alterId: 0
+  cipher: auto
+  name: '10,24|新加坡 014 #1'
+  network: ws
+  port: 80
+  server: 139.99.45.193
+  skip-cert-verify: true
+  type: vmess
+  uuid: a0cfd598-f09f-440b-9204-77d6ae923dc5
+  ws-opts:
+    headers:
+      Host: 139.99.45.193
+    path: /vmess
 - cipher: aes-256-cfb
   name: 10|🇸🇬SG-103.172.116.103-0805 | 10...
   password: rpgbNnU9rDDU4aWZ
@@ -298,7 +297,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 10,12|ZZ |358.23Mb
+  name: 10,12| |358.23Mb
   password: KBGjZYcy4SyRShmA
   port: 9044
   server: 103.172.116.79
@@ -513,39 +512,11 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  country: 🇬SG
-  name: 12|🇬SG |63.64Mb
+  country: 🇸🇬SG
+  name: 12|🇸🇬SG_117 |63.64Mb
   password: amazonskr05
   port: 443
   server: 54.169.114.116
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 12|🇬SG |382.09Mb
-  password: amazonskr05
-  port: 443
-  server: 18.142.250.63
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 12|🇸🇬SG |65.07Mb
-  password: amazonskr05
-  port: 443
-  server: 54.251.150.231
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 12|🇬SG |185.39Mb
-  password: amazonskr05
-  port: 443
-  server: 13.250.25.60
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 12|🇸🇬SG |220.65Mb
-  password: amazonskr05
-  port: 443
-  server: 13.250.55.22
   type: ss
 - alterId: 0
   cipher: auto
@@ -556,7 +527,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e1128cdb-d19a-41cd-8830-281700df05ac
+  uuid: 23cf8e24-e9a7-4c6c-82a0-59ec9da6d7b9
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡05
@@ -566,7 +537,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e1128cdb-d19a-41cd-8830-281700df05ac
+  uuid: 23cf8e24-e9a7-4c6c-82a0-59ec9da6d7b9
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡06
@@ -576,20 +547,21 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e1128cdb-d19a-41cd-8830-281700df05ac
+  uuid: 23cf8e24-e9a7-4c6c-82a0-59ec9da6d7b9
 - alterId: 0
   cipher: auto
-  name: '24|新加坡 014 #1'
+  name: 24|新加坡 015
   network: ws
-  port: 80
-  server: 139.99.45.193
+  port: 20552
+  server: 146.190.97.8
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: a0cfd598-f09f-440b-9204-77d6ae923dc5
+  uuid: 48cbd108-fd2a-4fb7-b46d-9982b9de9c6e
   ws-opts:
     headers:
-      Host: 139.99.45.193
-    path: /vmess
+      Host: m.linkedin.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 04 | 1x SG
@@ -599,7 +571,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b9ca6c6a-4f48-44ad-b782-c1646a57fc07
+  uuid: a33ec4a4-4006-4216-ace4-b642cc3097c4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 05 | 1x SG
@@ -609,7 +581,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b9ca6c6a-4f48-44ad-b782-c1646a57fc07
+  uuid: a33ec4a4-4006-4216-ace4-b642cc3097c4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 06 | 1x SG
@@ -619,27 +591,19 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b9ca6c6a-4f48-44ad-b782-c1646a57fc07
+  uuid: a33ec4a4-4006-4216-ace4-b642cc3097c4
 - cipher: chacha20-ietf-poly1305
   name: 32|🇸🇬 新加坡|@ripaojiedian
   password: 451a39bb-fc9c-4ef7-b0ef-19de25d9279a
   port: 26601
   server: service.ouluyun9803.com
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 33|新加坡2|@ripaojiedian
-  network: ws
-  port: '51727'
-  server: 146.190.100.185
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7cfe06b4-8130-4b30-9338-9de63be9a04f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+- cipher: aes-256-cfb
+  name: 32|🇸🇬 狮城特殊2|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.125.218.115
+  type: ss
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 101 | 负载优化 | 1x
