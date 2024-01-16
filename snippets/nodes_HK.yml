@@ -109,6 +109,15 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
+  name: '10,24|香港 009 #1'
+  network: http
+  port: 30515
+  server: 103.30.76.173
+  skip-cert-verify: true
+  type: vmess
+  uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
+- alterId: 0
+  cipher: auto
   name: 10|🇭🇰HK-38.207.161.127-1933 | 11....
   network: ws
   port: 36632
@@ -123,11 +132,27 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   country: 🇸🇬SG
-  name: 10,12|🇬SG_118 |91.69Mb
+  name: 10,12|🇬SG_121 |91.69Mb
   password: jmtgsmW40R
   port: 1146
   server: 8.210.231.146
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 12|Relay_🇭🇰HK-🇭🇰HK_79 |130.33Mb
+  network: ws
+  port: 80
+  server: hk02.duckulaolga.online
+  servername: hk02.xpoti.online
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5f373214-b955-4467-a582-62be14c59bce
+  ws-headers:
+    HOST: hk02.xpoti.online
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰 HK_77 | 2.36Mb
@@ -140,39 +165,6 @@ proxies:
   uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 24|香港 009
-  network: http
-  port: 30515
-  server: 103.30.76.173
-  skip-cert-verify: true
-  type: vmess
-  uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-TLS 🇭🇰 HK-38.207.161.1...
-  network: ws
-  port: '36632'
-  server: 38.207.161.127
-  servername: testray.zanylee.uk
-  tls: true
-  type: vmess
-  uuid: 8716d6e0-7032-43ad-9196-7427220e2850
-  ws-opts:
-    headers:
-      Host: testray.zanylee.uk
-    path: /ImUT5xAj/
-- alterId: 0
-  cipher: auto
-  name: '30,33|香港2|@ripaojiedian #1'
-  network: tcp
-  port: '10241'
-  server: 38.147.191.185
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
 - cipher: aes-128-gcm
   name: 32|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -197,6 +189,16 @@ proxies:
   port: 80
   server: 8.217.217.138
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 33|香港2|@ripaojiedian
+  network: tcp
+  port: '10241'
+  server: 38.147.191.185
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
 - alterId: 0
   cipher: auto
   name: 33|香港|@ripaojiedian
