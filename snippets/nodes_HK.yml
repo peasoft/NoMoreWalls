@@ -122,27 +122,31 @@ proxies:
       Host: testray.zanylee.uk
     path: /
 - cipher: aes-256-gcm
-  name: 10|🇭🇰HK-8.210.231.146-0505 | 16.4...
+  country: 🇸🇬SG
+  name: 10,12|🇸🇬SG_122 |91.69Mb
   password: jmtgsmW40R
   port: 1146
   server: 8.210.231.146
   type: ss
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 12|Relay_HK-🇭🇰HK_76 | 6.68Mb
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 12|Relay_🇭🇰HK-🇦AU_83 |130.33Mb
-  network: ws
-  port: 80
-  server: hk02.duckulaolga.online
-  servername: hk02.xpoti.online
-  skip-cert-verify: true
+  name: 30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
+  network: tcp
+  port: '26389'
+  server: 34.92.50.99
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 5f373214-b955-4467-a582-62be14c59bce
-  ws-headers:
-    HOST: hk02.xpoti.online
-  ws-path: /
+  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
 - alterId: 0
   cipher: auto
   name: 30|🔒 VM-WS-TLS 🇭🇰 HK-38.207.161.1...
@@ -159,14 +163,17 @@ proxies:
     path: /ImUT5xAj/
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
-  network: tcp
-  port: '26389'
-  server: 34.92.50.99
-  servername: ''
+  name: 30|🇭🇰香港4丨白嫖机场.com
+  network: ws
+  port: '80'
+  server: 162.159.200.5
   tls: false
   type: vmess
-  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+  uuid: 351b931c-16b5-40ef-8846-269c3a43c5c1
+  ws-opts:
+    headers:
+      Host: hk3.889611.com
+    path: /
 - cipher: aes-128-gcm
   name: 32|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -191,21 +198,6 @@ proxies:
   port: 80
   server: 8.217.217.138
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 32,33|香港4|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cd2e0bc7-b25d-4a99-b8d6-a80570db994a
-  ws-opts:
-    headers:
-      Host: yvhnbevxhk1.yofnhkfc.xyz
-    path: /video/34kKXbLM
 - alterId: 0
   cipher: auto
   name: 33|香港2|@ripaojiedian
@@ -235,7 +227,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 88d3b7ac-8ea5-30f9-b42e-8da11505b2f7
+  uuid: c0960c64-e100-3dee-a395-6fde39dbe4fa
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -245,7 +237,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 88d3b7ac-8ea5-30f9-b42e-8da11505b2f7
+  uuid: c0960c64-e100-3dee-a395-6fde39dbe4fa
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -255,4 +247,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 88d3b7ac-8ea5-30f9-b42e-8da11505b2f7
+  uuid: c0960c64-e100-3dee-a395-6fde39dbe4fa
