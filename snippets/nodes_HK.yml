@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,6,7,8,10,15,16,23,24,38|🇭🇰 _HK_香港 #3'
+  name: '0,2,6,7,8,10,15,16,24,38|🇭🇰 _HK_香港 #3'
   network: ws
   port: '443'
   server: 199.15.76.35
@@ -156,18 +156,27 @@ proxies:
       Host: testray.zanylee.uk
     path: /
 - cipher: aes-256-gcm
-  country: 🇸🇬SG
-  name: 10,12|🇸🇬SG_125 | 7.68Mb
+  country: 🇬SG
+  name: 10,12| | 7.68Mb
   password: jmtgsmW40R
   port: 1146
   server: 8.210.231.146
   type: ss
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 12|Relay_HK-🇭🇰HK_73 | 3.38Mb
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 12|🇰HK_78 | 2.36Mb
+  name: 12|🇰HK_74 | 2.36Mb
   network: ws
   port: 443
   server: 123.58.197.70
@@ -175,6 +184,20 @@ proxies:
   type: vmess
   uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 24|香港 011
+  network: ws
+  port: 56120
+  server: hk5.ansh.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1fec02d1-d750-424f-a552-6eb5770c7e2c
+  ws-opts:
+    headers:
+      Host: ywhk1.kcjs.me
+    path: /gd3245vd2S32cr
 - alterId: 0
   cipher: auto
   name: 30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
@@ -231,16 +254,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
-- alterId: 64
-  cipher: auto
-  name: 33|香港3|@ripaojiedian
-  network: tcp
-  port: '40702'
-  server: 112.28.208.14
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
