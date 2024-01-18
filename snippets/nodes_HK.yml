@@ -1,7 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,6,7,8,10,15,16,24,38|🇭🇰 _HK_香港 #3'
+  name: 10,15,24,38|🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+  network: ws
+  port: '1111'
+  server: 156.251.226.106
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls0?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 10,15,24,38|🇭🇰 _HK_香港
   network: ws
   port: '443'
   server: 199.15.76.35
@@ -12,20 +26,6 @@ proxies:
   ws-opts:
     headers:
       Host: hk-300.changding.tech
-    path: /changding-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '3,9|_HK_ #1'
-  network: ws
-  port: 443
-  server: 199.15.76.35
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 64424354-f4ff-42a0-8884-8f52f2bb7235
-  ws-opts:
-    headers:
-      host: hk-300.changding.tech
     path: /changding-tls1?ed=2048
 - alterId: 0
   cipher: auto
@@ -142,7 +142,7 @@ proxies:
     path: /gd3245vd2S32cr
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 12|Relay_HK-🇭🇰HK_79 | 3.69Mb
+  name: 12|Relay_HK-🇭🇰HK_80 | 3.69Mb
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -181,7 +181,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 1.65.139.54
+  server: 42.3.135.230
   type: ss
 - cipher: aes-128-gcm
   name: 32|🇭🇰 香港KT2|@ripaojiedian
@@ -191,19 +191,13 @@ proxies:
     host: ''
     mode: http
   port: 80
-  server: 8.217.217.138
+  server: 8.217.53.93
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 32|🇭🇰 香港1|@ripaojiedian
-  password: bfgph2xwr4q
-  port: 56001
-  server: ef30833c.h2m5m5m7s3-fb-hk01.6pzfwf.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 32|🇭🇰 香港5|@ripaojiedian
-  password: 893562d2-2e36-4c87-aebc-3ca3fc78de3e
-  port: 19511
-  server: nc.cn2.go002.xyz
+- cipher: aes-256-gcm
+  name: 32|🇭🇰 香港|@ripaojiedian
+  password: 47c97380-6525-46ca-88ef-d23866fc904c
+  port: 36999
+  server: a3ca.e2s.buzz
   type: ss
 - alterId: 0
   cipher: auto
@@ -215,6 +209,26 @@ proxies:
   tls: false
   type: vmess
   uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
+- alterId: 64
+  cipher: auto
+  name: '33|香港4|@ripaojiedian #1'
+  network: tcp
+  port: '41702'
+  server: 112.28.208.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 33|香港5|@ripaojiedian
+  network: tcp
+  port: '35601'
+  server: 183.240.232.94
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
