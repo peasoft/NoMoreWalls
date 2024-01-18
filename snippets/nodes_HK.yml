@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10,15,24,38|🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+  name: '10,15,24|香港 001 #1'
   network: ws
-  port: '1111'
+  port: 1111
   server: 156.251.226.106
   skip-cert-verify: true
   tls: false
@@ -15,9 +15,9 @@ proxies:
     path: /changding-tls0?ed=2048
 - alterId: 0
   cipher: auto
-  name: 10,15,24,38|🇭🇰 _HK_香港
+  name: '10,15,24|香港 002 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 199.15.76.35
   skip-cert-verify: true
   tls: true
@@ -140,9 +140,31 @@ proxies:
     headers:
       Host: ywhk1.kcjs.me
     path: /gd3245vd2S32cr
+- alterId: 0
+  cipher: auto
+  name: 10|🇭🇰HK-199.15.76.35-5161 | 12.17...
+  network: ws
+  port: 443
+  server: 199.15.76.35
+  servername: 🇭🇰HK-199.15.76.35-5161 | 12.171MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 1a3765c8-790f-4bb5-bf3d-c1fa19afd98c
+  ws-opts:
+    headers:
+      Host: sometimes-able-imported-drainage.trycloudflare.com
+    path: /
+- cipher: aes-256-gcm
+  country: 🇬SG
+  name: 10,12|🇬SG_109 |19.30Mb
+  password: jmtgsmW40R
+  port: 1146
+  server: 8.210.231.146
+  type: ss
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 12|Relay_HK-🇭🇰HK_80 | 3.69Mb
+  name: 12|Relay_HK-🇭🇰HK_75 | 3.69Mb
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
@@ -151,14 +173,36 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50.99:...
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 12|🇰HK_76 | 0.01Mb
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '30,33|香港5|@ripaojiedian #1'
   network: tcp
-  port: '26389'
-  server: 34.92.50.99
+  port: '35601'
+  server: 183.240.232.94
   servername: ''
   tls: false
   type: vmess
-  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 30|【直连】香港 - 4 - A Group
+  network: tcp
+  port: '443'
+  server: 00000000000000000000000000000000000000000000000000000000000032.agroup-node-for-bigairport.sbs
+  tls: false
+  type: vmess
+  uuid: 843764ed-637a-4085-856e-72c507df3447
 - alterId: 0
   cipher: auto
   name: 30|🔒 VM-TCP-NA 🇭🇰 HK-103.30.76.17...
@@ -169,6 +213,16 @@ proxies:
   tls: false
   type: vmess
   uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
+- alterId: 64
+  cipher: auto
+  name: '30,33|香港4|@ripaojiedian #1'
+  network: tcp
+  port: '41702'
+  server: 112.28.208.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
   name: 32|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -209,26 +263,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
-- alterId: 64
-  cipher: auto
-  name: '33|香港4|@ripaojiedian #1'
-  network: tcp
-  port: '41702'
-  server: 112.28.208.14
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 33|香港5|@ripaojiedian
-  network: tcp
-  port: '35601'
-  server: 183.240.232.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
