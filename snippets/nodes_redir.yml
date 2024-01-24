@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,15,16,24,38|🇺🇸 _US_美国->🇫🇷_FR_法国 #2'
+  name: '0,2,8,15,16,24,38|🇺🇸 _US_美国->🇫🇷_FR_法国 #1'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -13,7 +13,7 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
-- name: '3,7,9|_CN_->_AT_ #2'
+- name: '3,9|_CN_->_AT_ #1'
   network: tcp
   password: c71b7574-aeaa-40f0-989b-47f3fe7ac85a
   port: 10848
@@ -22,7 +22,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '3,7,9|_CN_->_US_ #2'
+- name: '3,9|_CN_->_US_ #1'
   network: tcp
   password: c71b7574-aeaa-40f0-989b-47f3fe7ac85a
   port: 10847
@@ -51,3 +51,80 @@ proxies:
   port: 21003
   server: service.ouluyun9803.com
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 6,24|加拿大 438
+  network: ws
+  port: 80
+  server: 162.159.200.3
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9b170ad4-3211-4f0f-8bc9-80d356b67662
+  ws-opts:
+    headers:
+      Host: ca3.889611.com
+    path: /
+- name: 7|_CN_->_CZ_
+  network: tcp
+  password: 1fe65af9-6677-4a4d-8427-a5f9b0bae94e
+  port: 10846
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 7|_CN_->_US__1
+  network: tcp
+  password: 1fe65af9-6677-4a4d-8427-a5f9b0bae94e
+  port: 10838
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 7|_CN_->_US__2
+  network: tcp
+  password: 1fe65af9-6677-4a4d-8427-a5f9b0bae94e
+  port: 10837
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 7|_CN_->_UA_
+  network: tcp
+  password: 1fe65af9-6677-4a4d-8427-a5f9b0bae94e
+  port: 10845
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '7|_US_->_CA__1 #1'
+  network: ws
+  port: 80
+  server: 162.159.200.3
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9b170ad4-3211-4f0f-8bc9-80d356b67662
+  ws-opts:
+    headers:
+      host: ca3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇺🇸_US_美国->🇹🇷_TR_土耳其
+  network: ws
+  port: 80
+  server: 104.18.15.149
+  tls: false
+  type: vmess
+  uuid: 9b170ad4-3211-4f0f-8bc9-80d356b67662
+  ws-opts:
+    headers:
+      Host: tr3.889611.com
+    path: /
