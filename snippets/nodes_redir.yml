@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,10,24|加拿大 189 #1'
+  name: 0,2,8,16,24|加拿大 189
   network: ws
   port: 80
   server: 162.159.200.7
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,10,24|加拿大 185 #1'
+  name: 0,2,8,16,24|加拿大 185
   network: ws
   port: 80
   server: 104.18.15.148
@@ -29,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,10,24|加拿大 186 #1'
+  name: 0,2,8,16,24|加拿大 186
   network: ws
   port: 80
   server: 104.18.15.149
@@ -57,7 +57,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,10,24|加拿大 188 #1'
+  name: 0,2,8,16,24|加拿大 188
   network: ws
   port: 80
   server: 162.159.200.6
@@ -71,16 +71,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇵🇰 _CN_中国->🇵🇰_PK_巴基斯坦
+  name: '0,2,3,8,9,16|🇨🇳_CN_中国->🇵🇰_PK_巴基斯坦 #2'
   network: tcp
-  port: '33311'
+  port: 33311
   server: 36.212.152.13
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 83a348a5-c711-4b43-a365-c4ecb94c005c
 - alterId: 0
   cipher: auto
-  name: '0,10,24|韩国 010 #1'
+  name: 0,2,8,16,24|韩国 010
   network: ws
   port: 8002
   server: 185.214.103.249
@@ -92,7 +93,7 @@ proxies:
     headers:
       Host: cache-hk-1.cn-db.top
     path: /db00
-- name: '1,3,9|_CN_->_AT_ #2'
+- name: 1|_CN_->_AT_
   network: tcp
   password: 3e5d1046-5807-4b79-8397-31a006f546d1
   port: 10848
@@ -103,7 +104,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,3,9|_US_->_DE__1 #1'
+  name: '1,3,9|_US__2 #2'
   network: ws
   port: 8080
   server: 104.31.16.104
@@ -129,7 +130,7 @@ proxies:
     headers:
       host: soft8989.redirectme.net
     path: /@forwardv2ray
-- name: '1,3,9|_CN_->_GB_ #2'
+- name: 1|_CN_->_GB_
   network: tcp
   password: 7c266797-c2f6-43cf-8cdb-3e3a8e67de8b
   port: 35008
@@ -140,36 +141,77 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2,8,10,15,16,23,24,25,38|🇺🇸 _US_美国->🇫🇷_FR_法国
+  name: '3,9|_US_->_RU__1 #1'
   network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  servername: ''
+  port: 80
+  server: 162.159.200.7
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
   ws-opts:
     headers:
-      Host: s1c.v2.v001sss.xyz
+      host: er3.visaapp.top
     path: /
 - alterId: 0
   cipher: auto
-  name: 3,9,23|美国 CloudFlare节点
+  name: '3,9|_US_->_RU__2 #1'
   network: ws
-  port: 2082
-  server: s1c.v2.v001sss.xyz
+  port: 80
+  server: 104.18.15.148
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
   ws-opts:
     headers:
-      Host: ''
+      host: er3.889611.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,7,23,25,30,32,33|罗马尼亚|@ripaojiedian
+  name: '3,9|_US_->_RU__3 #1'
+  network: ws
+  port: 80
+  server: 104.18.15.149
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
+  ws-opts:
+    headers:
+      host: er3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,9|_US_->_RU__4 #1'
+  network: ws
+  port: 80
+  server: 162.159.200.6
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
+  ws-opts:
+    headers:
+      host: er3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,9|_ES_->_HK_ #1'
+  network: ws
+  port: 8002
+  server: 185.214.103.249
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e096b14e-b746-3dda-bc95-a435b4b2aceb
+  ws-opts:
+    headers:
+      host: cache-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '6,7,23,25,30,32,33,38|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #3'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -181,4 +223,25 @@ proxies:
   ws-opts:
     headers:
       Host: lmnyvpn.catnipballs.gay
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 7|🇮🇳 _CN_中国->🇮🇳_IN_印度
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  port: 21003
+  server: service.ouluyun9803.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '15,23,24,25|github.com/freefq - 美国CloudFla... #8'
+  network: ws
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
     path: /
