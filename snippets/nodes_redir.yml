@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,8,10,15,16,24|加拿大 189 #1'
+  name: 0,15,16,24|加拿大 189
   network: ws
   port: 80
   server: 162.159.200.7
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,8,10,15,16,24|加拿大 185 #1'
+  name: 0,15,16,24|加拿大 185
   network: ws
   port: 80
   server: 104.18.15.148
@@ -29,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,8,10,15,16,24|加拿大 186 #1'
+  name: 0,15,16,24|加拿大 186
   network: ws
   port: 80
   server: 104.18.15.149
@@ -43,11 +43,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,6,7,8,15,16,38|🇹🇷 _IQ_伊拉克->🇹🇷_TR_土耳其 #3'
+  name: '0,2,6,8,15,16,38|🇹🇷 _IQ_伊拉克->🇹🇷_TR_土耳其 #2'
   network: ws
   port: '443'
   server: 130.193.166.2
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
@@ -57,7 +56,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,2,8,10,15,16,24|加拿大 188 #1'
+  name: 0,15,16,24|加拿大 188
   network: ws
   port: 80
   server: 162.159.200.6
@@ -71,17 +70,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,3,8,9,15,16|🇨🇳_CN_中国->🇵🇰_PK_巴基斯坦 #3'
+  name: '0,15,16|🇨🇳_CN_中国->🇵🇰_PK_巴基斯坦 #1'
   network: tcp
   port: 33311
   server: 36.212.152.13
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 83a348a5-c711-4b43-a365-c4ecb94c005c
 - alterId: 0
   cipher: auto
-  name: '0,2,8,10,15,16,24|韩国 010 #1'
+  name: 0,15,16,23,24|韩国 010
   network: ws
   port: 8002
   server: 185.214.103.249
@@ -93,9 +91,9 @@ proxies:
     headers:
       Host: cache-hk-1.cn-db.top
     path: /db00
-- name: 1|_CN_->_AT_
+- name: '1,3,7,9|_CN_->_AT_ #3'
   network: tcp
-  password: 3e5d1046-5807-4b79-8397-31a006f546d1
+  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
   port: 10848
   server: xibaozi.19890604.day
   skip-cert-verify: true
@@ -104,7 +102,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,3,9|_US__2 #2'
+  name: '1,3,9|_US_->_DE__2 #1'
   network: ws
   port: 8080
   server: 104.31.16.104
@@ -141,102 +139,90 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '3,9|_US_->_RU__1 #1'
+  name: 2,6,8,24|加拿大 501
   network: ws
-  port: 80
-  server: 162.159.200.7
+  port: 8080
+  server: www.darkroom.lol
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
-      host: er3.visaapp.top
+      Host: www.darkroom.lol
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,9|_US_->_RU__2 #1'
+  name: 2,6,8,30|🇺🇸|US|美国|@wxgqlfx|21
   network: ws
-  port: 80
-  server: 104.18.15.148
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
-  ws-opts:
-    headers:
-      host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,9|_US_->_RU__3 #1'
-  network: ws
-  port: 80
-  server: 104.18.15.149
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
-  ws-opts:
-    headers:
-      host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,9|_US_->_RU__4 #1'
-  network: ws
-  port: 80
-  server: 162.159.200.6
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
-  ws-opts:
-    headers:
-      host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,9|_ES_->_HK_ #1'
-  network: ws
-  port: 8002
-  server: 185.214.103.249
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e096b14e-b746-3dda-bc95-a435b4b2aceb
-  ws-opts:
-    headers:
-      host: cache-hk-1.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '6,7,23,25,32,33,38|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #2'
-  network: ws
-  port: '80'
-  server: 104.17.25.1
+  port: '8080'
+  server: hamrahaval.asan3a.shop
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 4e23bd4f-cc11-4ade-fbc1-fcaf245662bf
+  uuid: 3a6752b4-8353-4172-85b1-32202116714d
   ws-opts:
     headers:
-      Host: lmnyvpn.catnipballs.gay
+      Host: asan3.azad1.tech
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 7|🇮🇳 _CN_中国->🇮🇳_IN_印度
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  port: 21003
-  server: service.ouluyun9803.com
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 30|🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+  name: '2,3,6,8,9|_CN_->_US__4 #2'
+  network: tcp
+  port: 50005
+  server: 05.kccic2pa.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
+- name: '3,7,9|_AU_->_US__1 #2'
+  network: ws
+  password: 933e3c9c-701e-45df-978b-ca8f42fb8871
+  port: 443
+  server: 192.65.217.200
+  skip-cert-verify: true
+  sni: k6us1.yfjc.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: k6us1.yfjc.sbs
+    path: /yfjc/kus1
+- name: '3,7,9|_CN_->_US__1 #2'
+  network: tcp
+  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
+  port: 10838
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: '3,7,9|_CN_->_UA_ #2'
+  network: tcp
+  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
+  port: 10845
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: '3,7,9|_CN_->_US__2 #2'
+  network: tcp
+  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
+  port: 10837
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 3,9,30|🇺🇸_US_美国->🇮🇷_IR_伊朗_3
   network: ws
   port: 8080
   server: www.darkroom.lol
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -244,3 +230,70 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '3,7,9|_AM_->_NL_ #2'
+  network: ws
+  password: 933e3c9c-701e-45df-978b-ca8f42fb8871
+  port: 443
+  server: 185.162.231.208
+  skip-cert-verify: true
+  sni: k8nl2.yfjc.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: k8nl2.yfjc.sbs
+    path: /yfjc/knl2
+- alterId: 0
+  cipher: auto
+  name: '3,9|_US_->_DE__1 #1'
+  network: ws
+  port: 8080
+  server: hamrahaval.asan3a.shop
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3a6752b4-8353-4172-85b1-32202116714d
+  ws-opts:
+    headers:
+      host: asan3.azad1.tech
+    path: /
+- name: '3,7,9|_CN_->_US__3 #2'
+  network: tcp
+  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
+  port: 10850
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: '3,7,9|_CN_->_CZ_ #2'
+  network: tcp
+  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
+  port: 10846
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: '3,7,9|_CN_->_US__5 #1'
+  network: tcp
+  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
+  port: 10847
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: '3,7,9|_AU_->_US__2 #2'
+  network: ws
+  password: 933e3c9c-701e-45df-978b-ca8f42fb8871
+  port: 443
+  server: 192.65.217.247
+  skip-cert-verify: true
+  sni: k5us2.yfjc.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: k5us2.yfjc.sbs
+    path: /yfjc/kus2
