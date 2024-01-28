@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,2,8,15,16,38|🇺🇸 _US_美国->🇩🇪_DE_德国 #3'
+  name: '0,1,15,38|🇺🇸 _US_美国->🇩🇪_DE_德国 #3'
   network: ws
   port: '8080'
   server: hamrahaval.asan3a.shop
@@ -44,7 +44,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,2,8,15,16,23,38|🇺🇸 _US_美国->🇩🇪_DE_德国 #4'
+  name: '0,1,15,38|🇺🇸 _US_美国->🇩🇪_DE_德国 #4'
   network: ws
   port: '8080'
   server: 104.31.16.104
@@ -68,7 +68,7 @@ proxies:
   uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
 - alterId: 0
   cipher: auto
-  name: '0,1,2,8,15,16,38|🇹🇷 _IQ_伊拉克->🇹🇷_TR_土耳其 #2'
+  name: '0,1,15,38|🇹🇷 _IQ_伊拉克->🇹🇷_TR_土耳其 #2'
   network: ws
   port: '443'
   server: 130.193.166.2
@@ -82,7 +82,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,1,2,8,15,16,24,30,38|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #3'
+  name: '0,1,2,8,15,16,23,24,30,38|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #3'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -133,84 +133,35 @@ proxies:
     path: /yfjc/kus2
 - alterId: 0
   cipher: auto
+  name: 2,8,16,24,30|Youtube破解广告3
+  network: ws
+  port: '80'
+  server: 104.18.15.149
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2bc07c42-4420-4b94-b029-f5f83a20602a
+  ws-opts:
+    headers:
+      Host: er3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,9|_US_->_RU_ #1'
+  network: ws
+  port: 80
+  server: 104.18.15.149
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2bc07c42-4420-4b94-b029-f5f83a20602a
+  ws-opts:
+    headers:
+      host: er3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: '3,9|_US_->_IR__1 #1'
-  network: ws
-  port: 8080
-  server: www.crispyrainbow.biz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      host: www.crispyrainbow.biz
-    path: /
-- name: '3,9|_AU_->_US__1 #1'
-  network: ws
-  password: 933e3c9c-701e-45df-978b-ca8f42fb8871
-  port: 443
-  server: 192.65.217.200
-  skip-cert-verify: true
-  sni: k6us1.yfjc.sbs
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: k6us1.yfjc.sbs
-    path: /yfjc/kus1
-- name: '3,9|_CN_->_AT_ #1'
-  network: tcp
-  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
-  port: 10848
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: '3,9|_CN_->_US__1 #1'
-  network: tcp
-  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
-  port: 10838
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: '3,9|_CN_->_UA_ #1'
-  network: tcp
-  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
-  port: 10845
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: '3,9|_CN_->_US__2 #1'
-  network: tcp
-  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
-  port: 10837
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,9|_US_->_IR__2 #1'
-  network: ws
-  port: 8080
-  server: www.coldstone.club
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      host: www.coldstone.club
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,9|_US_->_IR__3 #1'
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -222,98 +173,17 @@ proxies:
     headers:
       host: www.darkroom.lol
     path: /
-- name: '3,9|_AM_->_NL_ #1'
-  network: ws
-  password: 933e3c9c-701e-45df-978b-ca8f42fb8871
-  port: 443
-  server: 185.162.231.208
-  skip-cert-verify: true
-  sni: k8nl2.yfjc.sbs
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: k8nl2.yfjc.sbs
-    path: /yfjc/knl2
 - alterId: 0
   cipher: auto
-  name: '3,9|_US_->_DE__1 #1'
+  name: '3,9|_US_->_IR__2 #1'
   network: ws
   port: 8080
-  server: hamrahaval.asan3a.shop
+  server: www.crispyrainbow.biz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 3a6752b4-8353-4172-85b1-32202116714d
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
-      host: asan3.azad1.tech
+      host: www.crispyrainbow.biz
     path: /
-- name: '3,9|_CN_->_US__3 #1'
-  network: tcp
-  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
-  port: 10850
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: '3,9|_CN_->_CZ_ #1'
-  network: tcp
-  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
-  port: 10846
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,9|_US_->_DE__2 #1'
-  network: ws
-  port: 8080
-  server: 104.31.16.104
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3a6752b4-8353-4172-85b1-32202116714d
-  ws-opts:
-    headers:
-      host: asan3.azad1.tech
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,9|_IQ_->_TR_ #1'
-  network: ws
-  port: 443
-  server: 130.193.166.2
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
-  ws-opts:
-    headers:
-      host: soft8989.redirectme.net
-    path: /@forwardv2ray
-- name: '3,9|_CN_->_US__5 #1'
-  network: tcp
-  password: 329d1d2a-c4f5-471d-abd3-3f6f234947bb
-  port: 10847
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: '3,9|_AU_->_US__2 #1'
-  network: ws
-  password: 933e3c9c-701e-45df-978b-ca8f42fb8871
-  port: 443
-  server: 192.65.217.247
-  skip-cert-verify: true
-  sni: k5us2.yfjc.sbs
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: k5us2.yfjc.sbs
-    path: /yfjc/kus2
