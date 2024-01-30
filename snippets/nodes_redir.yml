@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,15,23,24,25,38|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #5'
+  name: '0,2,6,8,15,23,24,25,30,38|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #5'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -72,7 +72,6 @@ proxies:
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
-  servername: ''
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -127,19 +126,18 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 3,9,30|Youtube顺丰资源  US00192
+  cipher: auto
+  name: '3,9|_US_->_IR__1 #1'
   network: ws
-  port: '8080'
+  port: 8080
   server: www.darkroom.lol
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
-      Host: ''
+      host: www.darkroom.lol
     path: /
 - alterId: 0
   cipher: auto
@@ -220,16 +218,3 @@ proxies:
   udp: true
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇮🇱_IL_以色列->🇳🇱_NL_荷兰
-  network: ws
-  port: 80
-  server: 5.188.94.5
-  tls: false
-  type: vmess
-  uuid: 75916879-adcf-45b3-98d8-54a2412470b5
-  ws-opts:
-    headers:
-      Host: sahar55.serveirc.com
-    path: /@forwardv2ray
