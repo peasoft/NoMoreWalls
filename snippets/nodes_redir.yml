@@ -6,6 +6,7 @@ proxies:
   network: ws
   port: '8080'
   server: www.darkroom.lol
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -45,7 +46,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,1,2,6,8,16,38|🇦🇷 _AR_阿根廷->🇳🇱_NL_荷兰 #3'
+  name: '0,1,2,6,8,15,16,38|🇦🇷 _AR_阿根廷->🇳🇱_NL_荷兰 #3'
   network: ws
   port: '80'
   server: 87.120.164.7
@@ -191,7 +192,20 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 15,16,24|加拿大 441
+  name: 16,23|美国CloudFlare节点 9
+  network: ws
+  port: 80
+  server: 162.159.200.3
+  tls: false
+  type: vmess
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
+  ws-opts:
+    headers:
+      Host: ca3.visaapp.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 16,24|加拿大 441
   network: ws
   port: 80
   server: 162.159.200.5
@@ -205,97 +219,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15|🇺🇸_US_美国->🇮🇳_IN_印度
-  network: ws
-  port: 2082
-  server: cf-cdn.981545.xyz
-  tls: false
-  type: vmess
-  uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
-  ws-opts:
-    headers:
-      Host: cfydmm.981545.xyz
-    path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15,16,23|美国CloudFlare节点 9
-  network: ws
-  port: 80
-  server: 162.159.200.3
-  tls: false
-  type: vmess
-  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
-  ws-opts:
-    headers:
-      Host: ca3.visaapp.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-  network: ws
-  port: 80
-  server: 104.18.15.149
-  tls: false
-  type: vmess
-  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
-  ws-opts:
-    headers:
-      Host: er3.visaapp.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15,24|加拿大 177
-  network: ws
-  port: 80
-  server: 162.159.200.7
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f425df23-6ab6-449a-87bd-3ba74fdc1777
-  ws-opts:
-    headers:
-      Host: er3.visaapp.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 11114
-  server: dx-us.85413.xyz
-  tls: false
-  type: vmess
-  uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
-- alterId: 0
-  cipher: auto
-  name: 15,24|加拿大 173
-  network: ws
-  port: 80
-  server: 104.18.15.148
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f425df23-6ab6-449a-87bd-3ba74fdc1777
-  ws-opts:
-    headers:
-      Host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15,24|加拿大 175
-  network: ws
-  port: 80
-  server: 104.18.15.150
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f425df23-6ab6-449a-87bd-3ba74fdc1777
-  ws-opts:
-    headers:
-      Host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15,16,24|加拿大 176
+  name: 16,24|加拿大 176
   network: ws
   port: 80
   server: 162.159.200.6
