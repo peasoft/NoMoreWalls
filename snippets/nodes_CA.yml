@@ -1,18 +1,5 @@
 proxies:
-- name: 7|_CA__1
-  network: ws
-  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
-  port: 443
-  server: 23.227.38.18
-  skip-cert-verify: true
-  sni: jus1.jsjc.sbs
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: jus1.jsjc.sbs
-    path: /jsjc/us1
-- name: 7|_CA__2
+- name: '3,7,9|_CA__1 #2'
   network: ws
   password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
   port: 443
@@ -25,7 +12,20 @@ proxies:
     headers:
       host: jus3.jsjc.sbs
     path: /jsjc/us3
-- name: 7|_CA__3
+- name: '3,7,9|_CA__2 #2'
+  network: ws
+  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
+  port: 443
+  server: 23.227.38.18
+  skip-cert-verify: true
+  sni: jus1.jsjc.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: jus1.jsjc.sbs
+    path: /jsjc/us1
+- name: '3,7,9|_CA__3 #2'
   network: ws
   password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
   port: 443
@@ -39,26 +39,26 @@ proxies:
       host: jus2.jsjc.sbs
     path: /jsjc/us2
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0925 | 9....
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0940 | 9....
+  name: 10|🇨🇦CA-134.195.196.178-0863 | 9....
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-1739 | 6....
+  name: 10|🇨🇦CA-134.195.196.178-0866 | 9....
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 134.195.196.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇦CA-134.195.196.178-0877 | 10...
   password: G!yBwPWH3Vao
   port: 803
   server: 134.195.196.178
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 10,12| | 4.72Mb
+  name: 10,12|🇸US_135 | 4.72Mb
   password: 06gZKkeC2J
   port: 51981
   server: 23.94.76.55
@@ -68,7 +68,7 @@ proxies:
   country: 🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 12|Pool_🇦CA_07 |23.08Mb
+  name: 12|Pool_🇦CA_09 |23.08Mb
   network: ws
   port: 443
   server: 142.171.237.214
@@ -97,6 +97,37 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 12|Relay_ZZ-🇦CA_225 |20.09Mb
+  network: ws
+  port: 443
+  server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
+  servername: mikasa.erenyeager.cloudns.biz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-headers:
+    HOST: mikasa.erenyeager.cloudns.biz
+  ws-path: /glweidf.sbs/linkws
+- alterId: 64
+  cipher: auto
+  name: 21|Pool_🇨🇦CA_09 |23.08Mb
+  network: ws
+  port: 443
+  server: 142.171.237.214
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23168499.xyz
+    path: /path/221312281009
+- alterId: 0
+  cipher: auto
   name: 22|🇨🇦加拿大04
   network: tcp
   port: '36701'
@@ -104,46 +135,14 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c4a05948-78a2-4284-8349-a1cc5ee2932d
+  uuid: cc71b535-003b-41f3-9bea-98efa67668bb
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 001 #1'
-  network: ws
-  port: 8880
-  server: 104.21.73.14
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
-  ws-opts:
-    headers:
-      Host: yaghoob55freenodes.repaco69437403.workers.dev
-    path: /adenc35.fixedlfoat.top/linkws
-- alterId: 0
-  cipher: auto
-  name: '24,30|加拿大 002 #1'
-  network: ws
-  port: 2082
-  server: 104.18.202.250
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
-    path: /nina.bond/linkvws
-- alterId: 0
-  cipher: auto
-  name: '24,30|加拿大 003 #1'
+  name: 24|加拿大 003
   network: ws
   port: 8080
   server: cf.openxai.link
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
   ws-opts:
@@ -195,7 +194,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 24,30|HK2-Vm
+  name: '24,30|加拿大 016 #1'
   network: ws
   port: 443
   server: chrome.cloudflare-dns.com
@@ -223,7 +222,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 018 #1'
+  name: 24,30|Glitch-US【TG：@ccbaohe】定时更新节点订阅
   network: ws
   port: 443
   server: glitch.speedarrow.tk
@@ -251,11 +250,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 021 #1'
+  name: 24|加拿大 021
   network: ws
   port: 443
   server: icook.hk
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -360,7 +358,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 030 #1'
+  name: 24,30|redme-onrender【TG：@ccbaohe】定时更...
   network: ws
   port: 443
   server: government.se
@@ -375,11 +373,11 @@ proxies:
     path: /vmess?ed=2048
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 031 #1'
+  name: '24,30|@Hope_Net-join-us-on-Telegram #1'
   network: ws
-  port: 443
+  port: '443'
   server: vip2323.cfd
-  servername: ''
+  servername: vip2323.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -635,11 +633,11 @@ proxies:
     path: /jsjc/nl1
 - alterId: 0
   cipher: auto
-  name: 24,30|🔒 VM-WS-TLS 🇺🇸 US-172.67.68.24...
+  name: '24,30|加拿大 052 #1'
   network: ws
   port: 443
   server: 172.67.68.246
-  servername: vip2323.cfd
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -650,11 +648,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24,30|🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.8.2...
+  name: '24,30|加拿大 053 #1'
   network: ws
   port: 443
   server: 104.26.8.202
-  servername: vip2323.cfd
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -665,11 +663,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24,30|⏯️16@oneclickvpnkeys
+  name: 24|加拿大 054
   network: ws
-  port: '443'
+  port: 443
   server: 104.16.6.65
-  servername: 39f62d22c3c0d4f4.publcenem.shop
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -695,6 +692,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '80'
+  server: 172.67.187.109
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2e87cebc-977b-4fec-b079-b1ddc55b19c8
+  ws-opts:
+    headers:
+      Host: ee1.xv2ray.net
+    path: /vmess
+- alterId: 0
+  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -702,7 +713,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5a369e4a-bcf8-44af-b1a8-9761f3fd3cfb
+  uuid: 9c152fcd-d287-4e3c-ba3a-cc4740e186b5
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -712,4 +723,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 140775f0-5ced-3b66-8db0-98bcd85d8ce5
+  uuid: 1ba4122d-9f7b-3e9d-a31c-b6989b928bfa
