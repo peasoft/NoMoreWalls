@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,3,6,8,9,15,16,38|🇨🇳_CN_中国->🇮🇳_IN_印度 #5'
+  name: '0,2,3,8,9,15,16,38|🇨🇳_CN_中国->🇮🇳_IN_印度 #4'
   network: tcp
   port: 30128
   server: 183.232.170.22
@@ -22,7 +22,7 @@ proxies:
     headers:
       Host: jnl1.jsjc.sbs
     path: /jsjc/nl1
-- name: '3,7,9|_CN_->_CZ_ #2'
+- name: '3,9|_CN_->_CZ_ #1'
   network: tcp
   password: 4623e7ff-47b4-41d6-8f5a-33c8e6ac3fd5
   port: 10846
@@ -31,7 +31,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '3,7,9|_US_->_DE_ #2'
+- name: '3,9|_US_->_DE_ #1'
   network: ws
   password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
   port: 443
@@ -44,3 +44,15 @@ proxies:
     headers:
       host: jnl1.jsjc.sbs
     path: /jsjc/nl1
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 7,24|加拿大 065
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 172.67.204.84
+  skip-cert-verify: true
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
