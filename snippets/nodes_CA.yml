@@ -1,4 +1,30 @@
 proxies:
+- client-fingerprint: chrome
+  name: 1|🇨🇦 _CA_加拿大
+  network: ws
+  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
+  port: 443
+  server: 23.227.38.46
+  skip-cert-verify: false
+  sni: jus3.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus3.jsjc.sbs
+    path: /jsjc/us3
+- client-fingerprint: chrome
+  name: 1,24|加拿大 050
+  network: ws
+  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
+  port: 443
+  server: 23.227.38.18
+  skip-cert-verify: true
+  sni: jus1.jsjc.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jus1.jsjc.sbs
+    path: /jsjc/us1
 - name: '3,7,9|_CA__1 #2'
   network: ws
   password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
@@ -26,18 +52,14 @@ proxies:
       host: jus1.jsjc.sbs
     path: /jsjc/us1
 - name: '3,7,9|_CA__3 #2'
-  network: ws
-  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
-  port: 443
-  server: 23.227.38.30
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.97.94.114
   skip-cert-verify: true
-  sni: jus2.jsjc.sbs
+  sni: trojan.miwan.co.uk
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: jus2.jsjc.sbs
-    path: /jsjc/us2
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇦CA-134.195.196.178-0863 | 5....
   password: G!yBwPWH3Vao
@@ -71,22 +93,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5f98a094-1b36-4a1b-bfef-4ba77800c300
-- alterId: 0
-  cipher: auto
-  name: '24,30|加拿大 001 #1'
-  network: ws
-  port: 8880
-  server: 104.21.73.14
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
-  ws-opts:
-    headers:
-      Host: yaghoob55freenodes.repaco69437403.workers.dev
-    path: /adenc35.fixedlfoat.top/linkws
+  uuid: 34cb3afb-5e8c-4225-ba4d-f8f09d079447
 - alterId: 0
   cipher: auto
   name: '24,30|加拿大 002 #1'
@@ -104,6 +111,21 @@ proxies:
     path: /nina.bond/linkvws
 - alterId: 0
   cipher: auto
+  name: '24,30|加拿大 003 #1'
+  network: ws
+  port: 8080
+  server: cf.openxai.link
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+  ws-opts:
+    headers:
+      Host: eu1.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 24|加拿大 011
   network: ws
   port: 8880
@@ -114,6 +136,19 @@ proxies:
   ws-opts:
     headers:
       Host: server6.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 012
+  network: ws
+  port: 2095
+  server: 172.67.185.208
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3c1cca21-1373-4707-a575-195e9da0fb71
+  ws-opts:
+    headers:
+      Host: ebiii.fozool76.lol
     path: /
 - alterId: 0
   cipher: auto
@@ -571,30 +606,6 @@ proxies:
     headers:
       Host: jus2.jsjc.sbs
     path: /jsjc/us2
-- name: 24|加拿大 050
-  network: ws
-  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
-  port: 443
-  server: 23.227.38.18
-  skip-cert-verify: true
-  sni: jus1.jsjc.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: jus1.jsjc.sbs
-    path: /jsjc/us1
-- name: 24|加拿大 051
-  network: ws
-  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
-  port: 443
-  server: 104.17.175.159
-  skip-cert-verify: true
-  sni: jnl1.jsjc.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: jnl1.jsjc.sbs
-    path: /jsjc/nl1
 - alterId: 0
   cipher: auto
   name: '24,30|加拿大 052 #1'
@@ -671,6 +682,19 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
+  name: 24|加拿大 057
+  network: ws
+  port: 8880
+  server: server3.beheshtbaneh.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: e305fc57-6153-4650-8c52-9a36865a199d
+  ws-opts:
+    headers:
+      Host: server3.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: '24,30|加拿大 058 #1'
   network: ws
   port: 443
@@ -697,20 +721,6 @@ proxies:
   ws-opts:
     headers:
       Host: joooin.golestan-vpn.link
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '24,30|🇺🇸_US_美国 #78'
-  network: ws
-  port: 8080
-  server: 104.21.89.252
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.crispyrainbow.online
     path: /
 - alterId: 0
   cipher: auto
@@ -742,6 +752,33 @@ proxies:
     path: /vVNUJOgb/
 - alterId: 0
   cipher: auto
+  name: 24|加拿大 063
+  network: ws
+  port: 8080
+  server: 172.67.166.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.coldstone.club
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '80'
+  server: 172.67.229.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
+  ws-opts:
+    headers:
+      Host: fr9.tehme100.fun
+    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
+- alterId: 0
+  cipher: auto
   name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
   network: ws
   port: '80'
@@ -763,7 +800,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9cdceb0c-6b32-43ce-ab1e-c65d19585250
+  uuid: 2f3b5b6c-bf48-42e7-b7c5-03253e9564aa
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -773,4 +810,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 5534d1d6-d351-3f02-9b72-6449331f27d0
+  uuid: 9172563c-df4f-3712-88e7-113c817ef628
