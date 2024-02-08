@@ -35,7 +35,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,1,6,10,16,23,24,38|🇺🇸_US_美国 #118'
+  name: '0,1,6,10,16,24,38|🇺🇸_US_美国 #118'
   network: ws
   port: 8080
   server: 172.67.166.190
@@ -147,7 +147,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,1,6,10,16,24,30,38|🇺🇸_US_美国 #107'
+  name: '0,1,6,10,16,23,24,30,38|🇺🇸_US_美国 #107'
   network: ws
   port: 8880
   server: server33.beheshtbaneh.com
@@ -164,7 +164,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,1,2,6,8,15,16,23,30,38|🇺🇸_US_美国 #116'
+  name: '0,1,2,6,8,15,16,30,38|🇺🇸_US_美国 #116'
   network: ws
   port: 80
   server: 104.20.231.30
@@ -198,11 +198,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0,1,10|RELAY-104.21.82.183-0147 | 30....
+  name: 0,1,10,24|加拿大 086
   network: ws
   port: 8880
   server: server20.beheshtbaneh.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -263,7 +263,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,1,6,10,38|🇺🇸_US_美国 #117'
+  name: '0,1,6,10,24,38|🇺🇸_US_美国 #117'
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -336,7 +336,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,8,15,23,24,30,38|🇺🇸_US_美国 #106'
+  name: '2,6,8,15,24,30,38|🇺🇸_US_美国 #106'
   network: ws
   port: 3331
   server: ffbf920.u3.gladns.com
@@ -367,7 +367,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,8,15,16,23,24,30|🇺🇸_US_美国 #101'
+  name: '2,8,15,16,24,30|🇺🇸_US_美国 #101'
   network: ws
   port: 80
   server: s1.956256.xyz
@@ -382,7 +382,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,8,10,15,16,23,30|🇺🇸_US_美国 #99'
+  name: '2,8,10,15,16,30|🇺🇸_US_美国 #99'
   network: ws
   port: 80
   server: s12.956256.xyz
@@ -708,7 +708,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '6,24,38|🇺🇸_US_美国 #123'
+  name: '6,23,24,38|🇺🇸_US_美国 #123'
   network: ws
   port: 3331
   server: ffbf920.u2.gladns.com
@@ -935,7 +935,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '16,23,30|🇺🇸_US_美国 #100'
+  name: '16,30|🇺🇸_US_美国 #100'
   network: ws
   port: 80
   server: daxiongda.top
@@ -1021,7 +1021,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 76577c0d-6243-4627-87e9-434f3c10f728
+  uuid: ba61730f-654d-4e22-b0b1-2d88f90ffeae
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国05
@@ -1031,7 +1031,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 76577c0d-6243-4627-87e9-434f3c10f728
+  uuid: ba61730f-654d-4e22-b0b1-2d88f90ffeae
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国06
@@ -1041,7 +1041,7 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 76577c0d-6243-4627-87e9-434f3c10f728
+  uuid: ba61730f-654d-4e22-b0b1-2d88f90ffeae
 - alterId: 0
   cipher: auto
   name: 23|美国 CloudFlare节点
@@ -1058,6 +1058,20 @@ proxies:
     path: /qZTtpya?ed=2048
 - alterId: 0
   cipher: auto
+  name: '23|美国 CloudFlare节点 #1'
+  network: ws
+  port: '8080'
+  server: cf.openxai.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  ws-opts:
+    headers:
+      Host: eu3.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 23,25,30|美国CloudFlare公司CDN节点 4〖电报：@ccba...
   network: ws
   port: '8880'
@@ -1070,34 +1084,6 @@ proxies:
     headers:
       Host: server31.beheshtbaneh.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '23|美国 CloudFlare节点 #2'
-  network: ws
-  port: '8080'
-  server: 162.159.137.28
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca
-  ws-opts:
-    headers:
-      Host: eu4.openxai.link
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '23|美国 CloudFlare节点 #6'
-  network: ws
-  port: '8080'
-  server: cf.openxai.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
-  ws-opts:
-    headers:
-      Host: eu2.openxai.link
-    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 23,25,37|美国测试节点
@@ -1641,6 +1627,15 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
+  name: 24|美国 058
+  network: tcp
+  port: 35063
+  server: 135.148.67.129
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f1c9600-706e-4a0d-93da-53bb42a27487
+- alterId: 0
+  cipher: auto
   name: 30|🔒 VM-WS-TLS 🇺🇸 US-172.67.133.7...
   network: ws
   port: '2053'
@@ -1745,20 +1740,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-WS-TLS 🇺🇸 US-172.67.132.2...
-  network: ws
-  port: '443'
-  server: 172.67.132.209
-  servername: pl1-vmess.sshmax.xyz
-  tls: true
-  type: vmess
-  uuid: 33653184-91f3-4f3f-b707-2fc21e9adeb8
-  ws-opts:
-    headers:
-      Host: pl1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
   name: 30|美国【TG：@ccbaohe】定时更新节点订阅
   network: ws
   port: '80'
@@ -1814,7 +1795,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7caaea46-cffd-466d-90b7-29997279d7ca
+  uuid: 99c01866-cb19-44a5-88be-7caf27211649
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 05 | 1x US
@@ -1824,7 +1805,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7caaea46-cffd-466d-90b7-29997279d7ca
+  uuid: 99c01866-cb19-44a5-88be-7caf27211649
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 06 | 1x US
@@ -1834,7 +1815,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7caaea46-cffd-466d-90b7-29997279d7ca
+  uuid: 99c01866-cb19-44a5-88be-7caf27211649
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 32|🇺🇸 美国1|@ripaojiedian
@@ -1869,7 +1850,7 @@ proxies:
   servername: us01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3cfc72bd-0934-31c7-a2cd-15d7de53d2a5
+  uuid: b79165be-bf1b-33dc-88ca-45c85abfe0ea
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 102 | 负载优化 | 1x
@@ -1879,7 +1860,7 @@ proxies:
   servername: us02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3cfc72bd-0934-31c7-a2cd-15d7de53d2a5
+  uuid: b79165be-bf1b-33dc-88ca-45c85abfe0ea
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 103 | 负载优化 | 1x
@@ -1889,7 +1870,7 @@ proxies:
   servername: us03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3cfc72bd-0934-31c7-a2cd-15d7de53d2a5
+  uuid: b79165be-bf1b-33dc-88ca-45c85abfe0ea
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国[国外直连]
@@ -1899,4 +1880,4 @@ proxies:
   servername: us01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3cfc72bd-0934-31c7-a2cd-15d7de53d2a5
+  uuid: b79165be-bf1b-33dc-88ca-45c85abfe0ea
