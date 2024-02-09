@@ -55,7 +55,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ac3cd7de-2fb6-4abe-acdd-e27e59ef8b0f
+  uuid: a22870c1-3bcd-42df-8ce5-b9986cbf7f7f
 - alterId: 0
   cipher: auto
   name: 24|加拿大 001
@@ -1083,14 +1083,28 @@ proxies:
     path: /video/c9efxRCi
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-147.182.148....
+  name: 24,30|🔒 VM-TCP-NA 🇨🇦 CA-147.182.148....
   network: tcp
   port: '3389'
   server: 147.182.148.225
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 097
+  network: ws
+  port: 80
+  server: cloudflare.alipay.ovh
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5857ff14-9bbd-46ef-d17d-413084aa35dc
+  ws-opts:
+    headers:
+      Host: openworld.alipay.ovh
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
@@ -1100,7 +1114,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 31bd7cd2-0be2-4f0c-b304-a8ac111fd170
+  uuid: 4b3b4981-29b5-4a60-aa30-5bc324ed0fea
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1110,4 +1124,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 164b39a2-d007-3eba-b393-f4046a4774fc
+  uuid: 5c78e958-c039-34fc-a62a-c72838e14e42
