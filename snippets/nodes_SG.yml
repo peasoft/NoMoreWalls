@@ -58,7 +58,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 75192602-93cf-4361-8143-d1037b81e0f2
+  uuid: 042e6cd5-7e1f-4b37-bc98-d3a7870758de
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡05
@@ -68,7 +68,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 75192602-93cf-4361-8143-d1037b81e0f2
+  uuid: 042e6cd5-7e1f-4b37-bc98-d3a7870758de
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡06
@@ -78,7 +78,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 75192602-93cf-4361-8143-d1037b81e0f2
+  uuid: 042e6cd5-7e1f-4b37-bc98-d3a7870758de
 - alterId: 0
   cipher: auto
   name: 24|新加坡 001
@@ -199,11 +199,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-WS-NONE 🇸🇬 SG-146.190.105...
+  name: 24,30|🔒 VM-WS-NONE 🇸🇬 SG-146.190.105...
   network: ws
   port: '28960'
   server: 146.190.105.70
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c4fd5905-adad-4c46-809e-e229ed9080ea
@@ -211,6 +212,35 @@ proxies:
     headers:
       Host: android.googleapis.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 24,30|🔒 VM-WS-NONE 🇸🇬 SG-207.148.123...
+  network: ws
+  port: '24569'
+  server: 207.148.123.132
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e0cab20a-7859-40ae-867d-593277c0d5ad
+  ws-opts:
+    headers:
+      Host: m.instagram.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|新加坡 012
+  network: ws
+  port: 443
+  server: sg-5.0rd.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b7200fb0-b107-11ed-b233-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: sg-5.0rd.net
+    path: /uvxrjhi0
 - alterId: 0
   cipher: auto
   name: 30|SG_youtube@资源分享师_294
@@ -226,20 +256,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-WS-NONE 🇸🇬 SG-207.148.123...
-  network: ws
-  port: '24569'
-  server: 207.148.123.132
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e0cab20a-7859-40ae-867d-593277c0d5ad
-  ws-opts:
-    headers:
-      Host: m.instagram.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 31|【BGP】新加坡 04 | 1x SG
   network: tcp
   port: '31201'
@@ -247,7 +263,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c1d95ad6-e7a9-4f90-9c15-a031345ce011
+  uuid: f196cfa8-14d5-45eb-a075-286ffc113f4c
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 05 | 1x SG
@@ -257,7 +273,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c1d95ad6-e7a9-4f90-9c15-a031345ce011
+  uuid: f196cfa8-14d5-45eb-a075-286ffc113f4c
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 06 | 1x SG
@@ -267,7 +283,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c1d95ad6-e7a9-4f90-9c15-a031345ce011
+  uuid: f196cfa8-14d5-45eb-a075-286ffc113f4c
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 32|🇸🇬 新加坡|@ripaojiedian
@@ -284,6 +300,22 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 32|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.203.195.243
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 32|🇸🇬 狮城特殊2|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.238.189.9
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 101 | 负载优化 | 1x
@@ -293,7 +325,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6464ed49-0650-375c-87c7-81e9ec2763f3
+  uuid: 2863c6a9-3b23-373e-bb22-6b8e51bc5de7
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 102 | 流媒体优化 | 1x
@@ -303,7 +335,7 @@ proxies:
   servername: sg02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6464ed49-0650-375c-87c7-81e9ec2763f3
+  uuid: 2863c6a9-3b23-373e-bb22-6b8e51bc5de7
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 103 | 负载优化 | 1x
@@ -313,7 +345,7 @@ proxies:
   servername: sg03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6464ed49-0650-375c-87c7-81e9ec2763f3
+  uuid: 2863c6a9-3b23-373e-bb22-6b8e51bc5de7
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡[国外直连]
@@ -323,4 +355,4 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6464ed49-0650-375c-87c7-81e9ec2763f3
+  uuid: 2863c6a9-3b23-373e-bb22-6b8e51bc5de7
