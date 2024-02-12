@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,8,16,24,30|🇨🇦_CA_加拿大 #3'
+  name: 2,8,10,16,24|美国 093
   network: ws
   port: 45627
   server: 20.220.192.220
@@ -15,26 +15,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,9|_CA_ #1'
+  name: 3,9,10|🇨🇦CA-20.220.192.220-0065 | 40....
   network: ws
   port: 45627
   server: 20.220.192.220
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 33609fe4-5965-46cc-9fbc-01b84d4b8dbb
   ws-opts:
-    headers:
-      host: www.alipay.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0929 | 9....
+  name: 10|🇨🇦CA-134.195.196.178-0907 | 10...
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0946 | 6....
+  name: 10|🇨🇦CA-134.195.196.178-0927 | 10...
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
@@ -48,16 +46,14 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 042e6cd5-7e1f-4b37-bc98-d3a7870758de
+  uuid: ed9eecbe-b93f-4ffa-8afa-a77d06a4cf8c
 - alterId: 0
   cipher: auto
-  name: '24,30|US美国(mibei77.com 米贝节点分享) #8'
+  name: 24|加拿大 001
   network: ws
-  port: '8880'
+  port: 8880
   server: 104.21.73.14
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
   ws-opts:
@@ -66,13 +62,11 @@ proxies:
     path: /adenc35.fixedlfoat.top/linkws
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 002 #1'
+  name: 24|加拿大 002
   network: ws
   port: 2082
   server: 104.18.202.250
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
@@ -121,6 +115,23 @@ proxies:
     headers:
       Host: mianfei-jp-0001.bpjc.site
     path: /?ed
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24,30|美国(yudou66.com 玉豆免费节点)
+  network: ws
+  port: '80'
+  server: ip.sb
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
+  ws-opts:
+    headers:
+      Host: kr1.ljyyds.top
+    path: /
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: a47af5e1-0ae6-4e98-85b5-0e3c32dda445___bf4e49304c8193d16c7551b1f84aee3a
@@ -672,12 +683,11 @@ proxies:
       Host: dk1.xv2ray.net
     path: /vmess
 - alterId: 0
-  cipher: auto
-  name: '24,30|加拿大 056 #1'
+  cipher: chacha20-poly1305
+  name: 24|加拿大 056
   network: ws
   port: 443
   server: 104.21.20.155
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -797,29 +807,18 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 067
+  name: '24,30|加拿大 067 #1'
   network: ws
   port: 8080
   server: 104.21.61.214
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
       Host: www.darkroom.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 068
-  network: ws
-  port: 80
-  server: 104.17.25.1
-  skip-cert-verify: true
-  type: vmess
-  uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
-  ws-opts:
-    headers:
-      Host: kr1.ljyyds.top
     path: /
 - alterId: 0
   cipher: auto
@@ -1063,11 +1062,10 @@ proxies:
     path: /linkws
 - alterId: 1
   cipher: auto
-  name: '24,30|加拿大 090 #1'
+  name: 24|加拿大 090
   network: ws
   port: 443
   server: hms082.gwdef.sbs
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1078,10 +1076,11 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 091
+  name: '24,30|加拿大 091 #1'
   network: ws
   port: 443
   server: 172.67.71.160
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1154,11 +1153,11 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 097 #1'
+  name: 24,30|🎯14@oneclickvpnkeys
   network: ws
-  port: 443
+  port: '443'
   server: 172.67.155.82
-  servername: ''
+  servername: kristin.makeup
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1197,11 +1196,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24,30|🇺🇸|US|美国|@wxgqlfx|133
+  name: '24,30|加拿大 100 #1'
   network: ws
-  port: '443'
+  port: 443
   server: janett.click
-  servername: janett.click
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1299,12 +1298,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '24,38|🇺🇸_US_美国 #101'
+  name: 24|加拿大 107
   network: ws
   port: 2086
   server: 104.16.57.82
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 851278d6-8c0b-4147-8939-89cface46627
   ws-opts:
@@ -1354,11 +1352,13 @@ proxies:
     path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 111
+  name: '24,30|加拿大 111 #1'
   network: ws
   port: 80
   server: 162.159.5.6
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 845d3e81-1f2c-4d21-c1ce-21d48dcb6e50
   ws-opts:
@@ -1410,11 +1410,13 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 116
+  name: '24,30|加拿大 116 #1'
   network: ws
   port: 80
   server: 162.159.0.33
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 845d3e81-1f2c-4d21-c1ce-21d48dcb6e50
   ws-opts:
@@ -1423,11 +1425,10 @@ proxies:
     path: /test?ed=2048
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 117 #1'
+  name: 24|加拿大 117
   network: ws
   port: 443
   server: 172.67.81.238
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1453,11 +1454,10 @@ proxies:
     path: /doxwPZje9wMMZi4m9xY8GkU5zT3Hs4kRDL4W3nistSRmDw3x2
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 119 #1'
+  name: 24|加拿大 119
   network: ws
   port: 443
   server: 104.24.177.9
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1478,11 +1478,13 @@ proxies:
   uuid: b5a75d3a-cd95-4b04-9cd6-b1ef4d9b763c
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 121
+  name: '24,30|加拿大 121 #1'
   network: ws
   port: 80
   server: 162.159.8.55
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 845d3e81-1f2c-4d21-c1ce-21d48dcb6e50
   ws-opts:
@@ -1516,26 +1518,13 @@ proxies:
     path: /test?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🔒 VM-WS-NA 🇺🇸 US-172.67.204.84...
+  name: 24,30|🔒 VM-WS-NA 🏴‍☠️ NA-104.16.221....
   network: ws
-  port: '8880'
-  server: 172.67.204.84
+  port: '2052'
+  server: 104.16.221.144
   servername: ''
   skip-cert-verify: true
   tls: false
-  type: vmess
-  uuid: 2a346c57-5ff4-4e4b-a4d1-f3d008cbe09e
-  ws-opts:
-    headers:
-      Host: server28.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 125
-  network: ws
-  port: 2052
-  server: 104.16.221.144
-  skip-cert-verify: true
   type: vmess
   uuid: c752a139-42cd-48db-a4d5-ff9b5df86808
   ws-opts:
@@ -1593,7 +1582,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: f196cfa8-14d5-45eb-a075-286ffc113f4c
+  uuid: 9d93a8d2-5d80-4100-a76a-944e83eb56b2
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1603,4 +1592,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 2863c6a9-3b23-373e-bb22-6b8e51bc5de7
+  uuid: 02021cb3-43ef-3cb2-bc49-a14999d7217f
