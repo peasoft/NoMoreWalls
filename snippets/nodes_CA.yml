@@ -1,32 +1,39 @@
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 1,10,20,21,32|🇭🇰 香港B
-  password: d02058f4f819dced
-  port: 54137
-  server: 183.236.51.41
+  name: '0,1,2,6,8,16,30|🇨🇦_CA_加拿大 #4'
+  network: ws
+  port: 80
+  server: tg-dns68.shift.cloudns.org
   skip-cert-verify: false
-  sni: uk2-full.privateip.net
   tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '3,9|_CA_ #2'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.223.142.94
+  uuid: 54133fe6-4578-48bc-ffb0-183ad760bd85
+  ws-opts:
+    headers:
+      Host: tg-dns68.shift.cloudns.org
+    path: /TG@dns68
+- alterId: 0
+  cipher: auto
+  name: '3,7,9|_CA__1 #2'
+  network: ws
+  port: 80
+  server: tg-dns68.shift.cloudns.org
   skip-cert-verify: true
-  sni: trojan.miwan.co.uk
-  type: trojan
-  udp: true
-- name: '7|_CA_ #1'
+  tls: false
+  type: vmess
+  uuid: 54133fe6-4578-48bc-ffb0-183ad760bd85
+  ws-opts:
+    headers:
+      host: tg-dns68.shift.cloudns.org
+    path: /TG@dns68
+- name: '3,7,9|_CA__2 #2'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 3.97.100.116
+  server: 15.157.8.36
   skip-cert-verify: true
   sni: trojan.miwan.co.uk
   type: trojan
@@ -58,14 +65,15 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e7e277a9-a55f-4d4d-81b2-e6a1d85326f0
+  uuid: f8dfd54a-b9b8-409d-931c-87e704d182d4
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 001
+  name: 24,30|VPN招代理电报联系@xiaoying229
   network: ws
   port: 8880
   server: 104.21.73.14
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
   ws-opts:
@@ -74,24 +82,13 @@ proxies:
     path: /adenc35.fixedlfoat.top/linkws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 002
-  network: ws
-  port: 2082
-  server: 104.18.202.250
-  skip-cert-verify: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
-    path: /nina.bond/linkvws
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 004
+  name: '24,30|加拿大 004 #1'
   network: ws
   port: 8080
   server: www.blueberrywindow.online
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
@@ -221,19 +218,6 @@ proxies:
     headers:
       Host: kr1.ljyyds.top
     path: /
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: a47af5e1-0ae6-4e98-85b5-0e3c32dda445___bf4e49304c8193d16c7551b1f84aee3a
-  name: 24|加拿大 014
-  network: grpc
-  password: 5528de7e9efc37a45714fe24d7c2d7a5d19dc55a1ad162a7372d7595a14e998f
-  port: 443
-  server: 172.67.143.221
-  skip-cert-verify: false
-  sni: m1.ifixripper.link
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '24,30|加拿大 015 #1'
@@ -265,10 +249,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|加拿大 017
+  name: 24,30|长期更新节点@mftizi
   network: ws
-  port: 8080
+  port: '8080'
   server: www.coldstone.club
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -603,10 +588,11 @@ proxies:
     path: /elhm
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 042
+  name: '24,30|加拿大 042 #1'
   network: ws
   port: 443
   server: 104.26.9.202
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -923,11 +909,11 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 24,30|🎲10@oneclickvpnkeys
+  name: '24,30|加拿大 071 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.71.160
-  servername: obdii.cfd
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1027,10 +1013,11 @@ proxies:
     path: /video/VDXcaM7r
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 079
+  name: 24,30|🔒 VM-WS-TLS 🇺🇸 US-172.67.184.1...
   network: ws
-  port: 443
+  port: '443'
   server: 172.67.184.11
+  servername: janett.click
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1041,7 +1028,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 083 #1'
+  name: '24,30|加拿大 080 #1'
   network: ws
   port: 443
   server: janett.click
@@ -1056,11 +1043,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 084 #1'
+  name: 24|加拿大 081
   network: ws
   port: 443
   server: 172.67.158.126
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1155,10 +1141,11 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 088
+  name: '24,30|加拿大 088 #2'
   network: ws
   port: 443
   server: nelly.homes
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1208,10 +1195,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 092
+  name: '24,30|加拿大 092 #1'
   network: ws
   port: 8080
   server: 172.67.221.183
+  servername: ''
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -1221,10 +1209,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 093
+  name: '24,30|加拿大 093 #1'
   network: ws
   port: 443
   server: 172.67.168.34
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1235,10 +1224,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 094
+  name: '24,30|加拿大 094 #1'
   network: ws
   port: 443
   server: 104.21.46.63
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1324,18 +1314,6 @@ proxies:
     headers:
       Host: newtest.alipay.ovh
     path: /test?ed=2048
-- name: 24|加拿大 101
-  network: ws
-  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
-  port: 443
-  server: 104.19.154.92
-  skip-cert-verify: true
-  sni: sshhiddifyc1.cpionline.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sshhiddifyc1.cpionline.cc
-    path: /u5ht27KSp8j3Z2QIPbkyFm3I
 - alterId: 0
   cipher: auto
   name: 24|加拿大 102
@@ -1391,10 +1369,11 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 106
+  name: '24,30|加拿大 106 #1'
   network: ws
   port: 443
   server: 172.67.132.15
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1433,10 +1412,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 109
+  name: '24,30|加拿大 109 #1'
   network: ws
   port: 443
   server: inna.cfd
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1460,7 +1440,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 114 #1'
+  name: '24,30|加拿大 111 #1'
   network: ws
   port: 443
   server: kristin.makeup
@@ -1870,10 +1850,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 143
+  name: '24,30|加拿大 143 #1'
   network: ws
   port: 443
   server: obdii.cfd
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2078,18 +2059,6 @@ proxies:
     headers:
       Host: 116.supermanapp.top
     path: /kdakfdff55
-- name: 24|加拿大 160
-  network: ws
-  password: e8105dfd24414268b6c7652c63731097
-  port: 443
-  server: 198.41.220.20
-  skip-cert-verify: true
-  sni: avianrecruit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: avianrecruit.com
-    path: 6b777a91
 - alterId: 0
   cipher: auto
   name: 24|加拿大 161
@@ -2105,10 +2074,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,30|US_youtube@资源分享师_86
+  name: '24,30|加拿大 162 #1'
   network: ws
   port: 443
   server: hdfy5c1.foriran.trade
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2215,7 +2185,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24,32,33|加拿大
+  name: 24,30,32,33|美国|@ripaojiedian
   network: ws
   port: '8080'
   server: 162.159.136.253
@@ -2244,10 +2214,11 @@ proxies:
     path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 173
+  name: '24,30|加拿大 173 #1'
   network: ws
   port: 443
   server: 104.21.75.142
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2283,10 +2254,11 @@ proxies:
     path: /trojan
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 176
+  name: '24,30|@Hope_Net-join-us-on-Telegram #1'
   network: ws
-  port: 8443
+  port: '8443'
   server: 172.66.45.41
+  servername: warp-sub.pages.dev
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2336,10 +2308,11 @@ proxies:
     path: /sssddd
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 181
+  name: '24,30|加拿大 181 #1'
   network: ws
   port: 443
   server: 172.67.166.31
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2350,10 +2323,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 182
+  name: '24,30|加拿大 182 #1'
   network: ws
   port: 443
   server: gur.gov.ua
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2511,18 +2485,6 @@ proxies:
     headers:
       Host: 6exEa2RpxrVmgn.lowerpingservise.ir
     path: /kg1gATzuCPEFTouGlCp
-- name: 24|加拿大 197
-  network: ws
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  port: 443
-  server: 104.19.171.3
-  skip-cert-verify: true
-  sni: sherasheba.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sherasheba.com
-    path: 6b777a91
 - alterId: 0
   cipher: auto
   name: 24|加拿大 199
@@ -2548,37 +2510,9 @@ proxies:
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 201
+  name: '24,30|@Hope_Net-join-us-on-Telegram #2'
   network: ws
-  port: 443
-  server: 104.21.28.62
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0d9776dd-e12e-4a5e-9bf2-8cceb1b502f1
-  ws-opts:
-    headers:
-      Host: pt1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 202
-  network: ws
-  port: 443
-  server: channel.hopev2ray.link
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e2e25aa2-aab9-486c-9ab4-495bcbcea4d8
-  ws-opts:
-    headers:
-      Host: se2-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '24,30|🔒 VM-WS-TLS 🇺🇸 US-172.66.45.41... #1'
-  network: ws
-  port: '2096'
+  port: 2096
   server: 172.66.45.41
   servername: warp-sub.pages.dev
   skip-cert-verify: true
@@ -2934,6 +2868,61 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: 24,30|Relay_🏁ZZ-🇺🇸US_1276
+  network: ws
+  port: 8080
+  server: www.velvetmountain.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24,30|Relay_🏁ZZ-🇺🇸US_1279
+  network: ws
+  port: '8080'
+  server: www.velvetmountain.shop
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24,30|🔒 VM-WS-NA 🏴‍☠️ NA-104.21.236....
+  network: ws
+  port: '80'
+  server: 104.21.236.63
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt5.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-159.203.6.14...
+  network: tcp
+  port: '3389'
+  server: 159.203.6.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -2951,4 +2940,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8a9f5ee1-efd0-346a-ba78-6686169bfa42
+  uuid: 92db7aac-aaaa-3ff3-bcdf-b2152d18347f
