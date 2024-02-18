@@ -5,78 +5,19 @@ proxies:
   port: 1146
   server: 8.210.231.146
   type: ss
-- alterId: 0
-  cipher: auto
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: mm_grpc
   name: 24|香港 001
-  network: ws
-  port: 80
-  server: hk02.xpoti.online
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7fbba873-7223-43e8-9a31-ef9bb443aa82
-  ws-opts:
-    headers:
-      Host: hk02.xpoti.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|香港 002
-  network: ws
-  port: 10000
-  server: 185.244.208.71
-  skip-cert-verify: true
-  type: vmess
-  uuid: e7093298-c066-11ee-ade9-4b28e1112dca
-  ws-opts:
-    headers:
-      Host: 185.244.208.71
-    path: /vpnjantit
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - internet.life.com.by
-    method: GET
-  name: 24|香港 003
-  network: http
-  port: 3389
-  server: 185.244.208.61
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: 24|香港 004
-  network: ws
-  port: 20759
-  server: 223.17.12.192
-  skip-cert-verify: true
-  type: vmess
-  uuid: f1647a11-25bc-439e-b7a8-224c240019e4
-  ws-opts:
-    headers:
-      Host: hkt.littleqqq.co
-    path: /hls/cctv5phd.m3u8
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|香港 005
-  network: ws
+  network: grpc
+  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
   port: 443
-  server: 27.124.6.148
-  servername: www.37327255.xyz
-  skip-cert-verify: false
-  tfo: false
+  server: kaizen-hk-11.cmydns2.com
+  sni: paydiu.com
   tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.37327255.xyz
-    path: /path/340323081726
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 32|🇭🇰 香港KT|@ripaojiedian
@@ -161,7 +102,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 43359353-b0b3-3d88-ad9d-c7803ef46a60
+  uuid: 42d05416-46e1-3553-b992-49572c23bc15
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -171,7 +112,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 43359353-b0b3-3d88-ad9d-c7803ef46a60
+  uuid: 42d05416-46e1-3553-b992-49572c23bc15
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -181,4 +122,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 43359353-b0b3-3d88-ad9d-c7803ef46a60
+  uuid: 42d05416-46e1-3553-b992-49572c23bc15
