@@ -58,7 +58,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7c4deb55-f871-4276-b41d-6da48393a54a
+  uuid: a906a14c-36d1-477c-b87d-a908a0ba22ca
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本05
@@ -68,7 +68,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7c4deb55-f871-4276-b41d-6da48393a54a
+  uuid: a906a14c-36d1-477c-b87d-a908a0ba22ca
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本06
@@ -78,7 +78,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7c4deb55-f871-4276-b41d-6da48393a54a
+  uuid: a906a14c-36d1-477c-b87d-a908a0ba22ca
 - alpn:
   - h2
   grpc-opts:
@@ -133,14 +133,18 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
-  servername: ''
-  tls: false
+  name: 24|日本 005
+  network: ws
+  port: 443
+  server: vjp2.0bad.com
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vjp2.0bad.com
+    path: /chat
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 04  | 1x JP
@@ -150,7 +154,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ca50704e-49b8-4f94-8bcb-2a00493362df
+  uuid: dedbbf65-905b-416b-a412-2df48dc44ae6
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 05  | 1x JP
@@ -160,7 +164,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ca50704e-49b8-4f94-8bcb-2a00493362df
+  uuid: dedbbf65-905b-416b-a412-2df48dc44ae6
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 06  | 1x JP
@@ -170,7 +174,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ca50704e-49b8-4f94-8bcb-2a00493362df
+  uuid: dedbbf65-905b-416b-a412-2df48dc44ae6
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -213,7 +217,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d3442469-d169-3bfc-9aae-fca60e95a18f
+  uuid: b1bcf056-28b4-314e-8c75-306f12c689da
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 102 | 流媒体优化 | 1x
@@ -223,7 +227,7 @@ proxies:
   servername: jp02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d3442469-d169-3bfc-9aae-fca60e95a18f
+  uuid: b1bcf056-28b4-314e-8c75-306f12c689da
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 103 | 负载优化 | 1x
@@ -233,7 +237,7 @@ proxies:
   servername: jp03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d3442469-d169-3bfc-9aae-fca60e95a18f
+  uuid: b1bcf056-28b4-314e-8c75-306f12c689da
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本[国外直连]
@@ -243,4 +247,4 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d3442469-d169-3bfc-9aae-fca60e95a18f
+  uuid: b1bcf056-28b4-314e-8c75-306f12c689da
