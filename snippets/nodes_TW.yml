@@ -1,33 +1,46 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 16,24,33|台湾|@ripaojiedian
+  name: 2,3,8,9,24|中国 009
   network: tcp
-  port: '5681'
-  server: 118.167.66.25
+  port: 3278
+  server: 118.167.69.188
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b534a780-d521-402d-9a68-aea33e47a5de
+- alterId: 0
+  cipher: auto
+  name: 23,24|中国 007
+  network: tcp
+  port: 14431
+  server: 36.232.170.53
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: de9558f3-d11b-410e-ab27-26956dde256d
+  uuid: b534a780-d521-402d-9a68-aea33e47a5de
 - alterId: 0
   cipher: auto
-  name: 16,24|中国 008
+  name: 30|⚡️@DeamNet 🇹🇼Taiwan 3
   network: tcp
-  port: 3278
-  server: 118.167.81.140
-  skip-cert-verify: true
+  port: 12002
+  server: nb22.ntbq.dynu.net
+  servername: ''
   tls: false
   type: vmess
-  uuid: de9558f3-d11b-410e-ab27-26956dde256d
-- cipher: chacha20-ietf-poly1305
+  uuid: bbbf3acb-bfaa-4545-9d2c-dcac332b71ac
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: 32|🇹🇼 台湾2|@ripaojiedian
-  password: 2770a662-61db-40ed-a17c-783e521084ce
-  port: 20005
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
+  name: 32|🇹🇼 台湾R|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: 8443f83013.www.gov.hk
+  password: di15PV
+  port: 6502
+  protocol: auth_aes128_md5
+  protocol-param: 83013:lrh5bO
+  server: mysql.accessconnect.cc
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 34|🇹🇼台湾 | 101 | 原生 | 1x
@@ -37,7 +50,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d90e3f6d-777f-33fd-9f2b-c66fc7df0670
+  uuid: 492cd70c-1767-3c5f-a502-574baa2e40ef
 - alterId: 0
   cipher: auto
   name: 34|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -47,7 +60,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d90e3f6d-777f-33fd-9f2b-c66fc7df0670
+  uuid: 492cd70c-1767-3c5f-a502-574baa2e40ef
 - alterId: 0
   cipher: auto
   name: 34|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -57,4 +70,4 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d90e3f6d-777f-33fd-9f2b-c66fc7df0670
+  uuid: 492cd70c-1767-3c5f-a502-574baa2e40ef

@@ -1,11 +1,9 @@
 proxies:
 - cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 10,32|🇯🇵 日本1|@ripaojiedian
+  name: 10|🇯🇵JP-154.47.20.240-1081 | 16.8...
   password: shadowsocks
   port: 443
   server: 154.47.20.240
-  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 10|🇯🇵JP-185.172.113.182-1135 | 2....
@@ -58,7 +56,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 255a5991-ecd1-4aec-90b7-f8a7fc68be87
+  uuid: 06de170b-6fb0-48d7-826c-c9c1cb96b93b
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本05
@@ -68,7 +66,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 255a5991-ecd1-4aec-90b7-f8a7fc68be87
+  uuid: 06de170b-6fb0-48d7-826c-c9c1cb96b93b
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本06
@@ -78,63 +76,10 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 255a5991-ecd1-4aec-90b7-f8a7fc68be87
-- alterId: 0
-  cipher: auto
-  name: 23|日本 东京Fastly节点
-  network: ws
-  port: '80'
-  server: fastly.alipay.ovh
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: nmsl.kp
-    path: /aries?ed=2048
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 24|日本 001
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-2.cmydns2.com
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 24|日本 002
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-5.cmydns2.com
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 24|日本 003
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-jp-8.cmydns2.com
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
+  uuid: 06de170b-6fb0-48d7-826c-c9c1cb96b93b
 - alterId: 1
   cipher: auto
-  name: 24|日本 004
+  name: 24|日本 001
   network: ws
   port: 80
   server: ntt3.ddddns.xyz
@@ -147,7 +92,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 24|日本 005
+  name: 24|日本 002
   network: ws
   port: 443
   server: vjp2.0bad.com
@@ -161,6 +106,49 @@ proxies:
     path: /chat
 - alterId: 0
   cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- alterId: 64
+  cipher: auto
+  name: 30|⚡️@DeamNet 🇯🇵Japan 4
+  network: tcp
+  port: 24445
+  server: 140.83.63.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+- alterId: 0
+  cipher: auto
+  name: 30|⚡️@DeamNet 🇯🇵Japan
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: 152.69.197.74
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: 30|⚡️@DeamNet_🔻 🇯🇵Japan
+  network: tcp
+  port: 20081
+  server: 138.2.44.211
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
+- alterId: 0
+  cipher: auto
   name: 31|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -168,7 +156,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cdc42e7e-26cc-4573-b3e3-84c0bfaa526c
+  uuid: d9adc321-2bca-43a4-9b3e-83d843a3be61
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 05  | 1x JP
@@ -178,7 +166,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cdc42e7e-26cc-4573-b3e3-84c0bfaa526c
+  uuid: d9adc321-2bca-43a4-9b3e-83d843a3be61
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 06  | 1x JP
@@ -188,21 +176,55 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cdc42e7e-26cc-4573-b3e3-84c0bfaa526c
+  uuid: d9adc321-2bca-43a4-9b3e-83d843a3be61
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 32|🇯🇵 日本2|@ripaojiedian
-  password: 2770a662-61db-40ed-a17c-783e521084ce
-  port: 50005
+  name: 32|🇯🇵 日本|@ripaojiedian
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  port: 26668
   server: service.ouluyun9803.com
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 32,33|日本2|@ripaojiedian
+  network: ws
+  port: '8880'
+  server: jp-01.snangua.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 607f0dfa-c659-4661-982f-2a9d7072c39c
+  ws-opts:
+    headers:
+      Host: jp-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 32,33|日本3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  ws-opts:
+    headers:
+      Host: GWYp69Yujp2.yofnhkfc.xyz
+    path: /video/VDXcaM7r
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 32|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.231.224.133
+  server: 13.215.252.57
   tfo: false
   type: ss
 - alterId: 0
@@ -214,7 +236,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d90e3f6d-777f-33fd-9f2b-c66fc7df0670
+  uuid: 492cd70c-1767-3c5f-a502-574baa2e40ef
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 102 | 流媒体优化 | 1x
@@ -224,7 +246,7 @@ proxies:
   servername: jp02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d90e3f6d-777f-33fd-9f2b-c66fc7df0670
+  uuid: 492cd70c-1767-3c5f-a502-574baa2e40ef
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 103 | 负载优化 | 1x
@@ -234,7 +256,7 @@ proxies:
   servername: jp03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d90e3f6d-777f-33fd-9f2b-c66fc7df0670
+  uuid: 492cd70c-1767-3c5f-a502-574baa2e40ef
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本[国外直连]
@@ -244,4 +266,4 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d90e3f6d-777f-33fd-9f2b-c66fc7df0670
+  uuid: 492cd70c-1767-3c5f-a502-574baa2e40ef

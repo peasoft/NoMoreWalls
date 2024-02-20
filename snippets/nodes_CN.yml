@@ -15,10 +15,11 @@ proxies:
     path: /debian
 - alterId: 64
   cipher: auto
-  name: 24|中国 001
+  name: '24,30|中国 001 #1'
   network: ws
   port: 36000
   server: 142.4.97.68
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -54,35 +55,9 @@ proxies:
     headers:
       Host: cn.bing.com
     path: /soda
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 24|中国 004
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-tw-7.cmydns2.com
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 24|中国 005
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 443
-  server: kaizen-hk-1.cmydns2.com
-  sni: paydiu.com
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 24|中国 006
+  name: 24|中国 004
   network: tcp
   port: 10010
   server: 114.132.158.222
@@ -91,28 +66,30 @@ proxies:
   uuid: 7d04bf22-ef75-47ee-8038-036f6e24ede6
 - alterId: 0
   cipher: auto
-  name: 24|中国 009
+  name: 24|中国 005
   network: tcp
-  port: 14431
-  server: 36.232.170.53
+  port: 5681
+  server: 118.167.66.25
   skip-cert-verify: true
   type: vmess
-  uuid: b534a780-d521-402d-9a68-aea33e47a5de
+  uuid: de9558f3-d11b-410e-ab27-26956dde256d
 - alterId: 0
   cipher: auto
-  name: 24|中国 010
+  name: 24|中国 006
+  network: tcp
+  port: 3278
+  server: 118.167.81.140
+  skip-cert-verify: true
+  type: vmess
+  uuid: de9558f3-d11b-410e-ab27-26956dde256d
+- alterId: 0
+  cipher: auto
+  name: 24,30|21|TW-板桥2-3(TCP) - 麻雀加速器 Sparr...
   network: tcp
   port: 5681
   server: b23.ntbq.dynu.net
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 814879ae-a670-4423-be9d-f4cbf4923ada
-- alterId: 0
-  cipher: auto
-  name: 24|中国 011
-  network: tcp
-  port: 3278
-  server: 118.167.69.188
-  skip-cert-verify: true
-  type: vmess
-  uuid: b534a780-d521-402d-9a68-aea33e47a5de
