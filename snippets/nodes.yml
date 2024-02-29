@@ -27,7 +27,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,10,15,16,23,24,38|🇺🇸_US_美国->🇫🇷_FR_法国 #11'
+  name: '0,2,6,8,15,16,23,24,38|🇺🇸_US_美国->🇫🇷_FR_法国 #11'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -99,11 +99,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,10,15,16,38|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #5'
+  name: '0,2,6,8,15,16,38|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #5'
   network: ws
   port: 8880
   server: 94.140.0.110
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
@@ -153,11 +152,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,10,15,16,38|🇫🇷_FR_法国->🇬🇧_GB_英国 #5'
+  name: '0,2,6,8,15,16,38|🇫🇷_FR_法国->🇬🇧_GB_英国 #5'
   network: ws
   port: 8880
   server: 57.128.173.202
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
@@ -652,15 +650,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,3,7,9,10|🇫🇷FR-57.128.173.202-1328 | 18....
+  name: '1,3,7,9|_FR_->_GB_ #3'
   network: ws
   port: 8880
   server: 57.128.173.202
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
+    headers:
+      host: internet.life.com.by
     path: /
 - alterId: 0
   cipher: auto
@@ -761,7 +761,7 @@ proxies:
       host: newus2.xn--mes53ddysu0o3gl.top
     path: /xn--mes53ddysu0o3gl
 - cipher: aes-256-cfb
-  name: '1,7|_US__3 #2'
+  name: 1,7,10|🇺🇸US-54.202.3.34-0379 | 38.119...
   password: amazonskr05
   port: 443
   server: 54.202.3.34
@@ -1002,126 +1002,98 @@ proxies:
       host: my1.tooters.ir
     path: /
 - cipher: aes-256-cfb
-  name: 10|AL-31.171.153.181-1068 | 1.698...
+  name: 10|AL-31.171.153.181-1150 | 19.59...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 31.171.153.181
   type: ss
 - cipher: aes-256-cfb
-  name: 10|AR-190.103.176.29-1097 | 3.998...
+  name: 10|AR-190.103.176.29-1117 | 6.208...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 190.103.176.29
   type: ss
 - cipher: aes-256-cfb
-  name: 10|AT-185.180.12.81-1056 | 13.087...
+  name: 10|AT-185.180.12.81-1054 | 23.514...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.180.12.81
   type: ss
 - cipher: aes-256-cfb
-  name: 10|AZ-180.149.44.120-1084 | 10.01...
+  name: 10|AZ-180.149.44.120-1069 | 7.554...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 180.149.44.120
   type: ss
 - cipher: aes-256-cfb
-  name: 10|BA-185.164.35.9-1086 | 7.28MB
+  name: 10|BA-185.164.35.9-1093 | 15.468M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.164.35.9
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 10|BE-95.164.62.231-2658 | 3.614M...
-  network: ws
-  port: 80
-  server: be1-vmess.sshmax.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 38df59ec-30e2-45e9-86c7-5a58667e6994
-  ws-opts:
-    headers:
-      Host: be1-vmess.sshmax.xyz
-    path: /
 - cipher: aes-128-cfb
-  name: 10|CH-156.146.62.160-1048 | 14.99...
+  name: 10|CH-156.146.62.160-1040 | 24.18...
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - cipher: aes-256-cfb
-  name: 10|CL-190.120.230.9-1101 | 5.322M...
+  name: 10|CL-190.120.230.9-1101 | 5.012M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 190.120.230.9
   type: ss
 - cipher: aes-256-cfb
-  name: 10|CO-190.120.231.45-1103 | 5.401...
+  name: 10|CO-190.120.231.45-1099 | 4.634...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 190.120.231.45
   type: ss
 - cipher: aes-256-cfb
-  name: 10|CY-213.169.137.221-1106 | 4.20...
+  name: 10|CY-213.169.137.221-1111 | 8.22...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 213.169.137.221
   type: ss
 - cipher: aes-256-cfb
-  name: 10|FI-37.143.129.230-1134 | 7.59M...
+  name: 10|EC-179.49.5.114-2565 | 1.213MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 179.49.5.114
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|FI-37.143.129.230-1090 | 19.75...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.143.129.230
   type: ss
 - cipher: aes-256-cfb
-  name: 10|IE-23.92.127.133-1123 | 2.113M...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 23.92.127.133
-  type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 10,20,21,32|🇩🇪 德国|@ripaojiedian
-  password: 13tfB0OPVA
-  port: 43526
-  server: 112.28.208.19
-  skip-cert-verify: false
-  sni: sg-singapore-oracle-4f34e8.ip1.shop
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- cipher: aes-256-cfb
-  name: 10|KE-62.12.116.66-1093 | 3.677MB
+  name: 10|KE-62.12.116.66-1125 | 7.073MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.12.116.66
   type: ss
 - cipher: aes-256-cfb
-  name: 10|MX-190.103.179.23-2726 | 3.635...
+  name: 10|MX-190.103.179.23-1126 | 1.959...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 190.103.179.23
   type: ss
 - cipher: aes-256-cfb
-  name: 10|NO-185.90.61.153-1091 | 4.287M...
+  name: 10|NO-185.90.61.153-1110 | 6.802M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.90.61.153
   type: ss
 - cipher: aes-256-cfb
-  name: 10|PA-138.186.142.4-1089 | 1.123M...
+  name: 10|PA-138.186.142.4-1159 | 6.428M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 138.186.142.4
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.17.123.55-0452 | 10....
+  name: 10|RELAY-104.17.123.55-0390 | 1.0...
   network: ws
   port: 8080
   server: 104.17.123.55
@@ -1135,7 +1107,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.17.208.202-4304 | 18...
+  name: 10|RELAY-104.17.208.202-1504 | 10...
   network: ws
   port: 80
   server: cfcdn3.sanfencdn9.com
@@ -1149,35 +1121,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.18.202.250-1399 | 22...
-  network: ws
-  port: 2082
-  server: 104.18.202.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-104.19.245.212-4310 | 12...
-  network: ws
-  port: 2086
-  server: cfcdn1.sanfencdn9.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-104.21.12.103-9423 | 2.4...
+  name: 10|RELAY-172.67.132.15-9221 | 1.7...
   network: ws
   port: 443
   server: ming2.kiwireich.com
@@ -1191,7 +1135,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.18.30-1551 | 62.2...
+  name: 10|RELAY-104.21.15.212-1528 | 21....
+  network: ws
+  port: 443
+  server: hms182.glweidf.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-104.21.18.30-1526 | 38.2...
   network: ws
   port: 443
   server: urnxewzvh.site
@@ -1203,13 +1161,27 @@ proxies:
     headers:
       Host: urnxewzvh.site
     path: /
+- alterId: 1
+  cipher: auto
+  name: 10|RELAY-104.21.21.88-7333 | 25.9...
+  network: ws
+  port: 443
+  server: odelia.autos
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: odelia.autos
+    path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.27.139-2797 | 48....
+  name: 10|RELAY-104.21.27.139-2650 | 26....
   network: ws
   port: 443
   server: 104.21.27.139
-  servername: RELAY-104.21.27.139-2797 | 48.674MB
+  servername: RELAY-104.21.27.139-2650 | 26.679MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1234,11 +1206,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.30.254-0169 | 14....
+  name: 10|RELAY-104.21.30.254-0159 | 52....
   network: ws
   port: 443
   server: 104.21.30.254
-  servername: RELAY-104.21.30.254-0169 | 14.796MB
+  servername: RELAY-104.21.30.254-0159 | 52.745MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1249,11 +1221,11 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-104.21.31.183-2769 | 44....
+  name: 10|RELAY-104.21.31.183-2622 | 17....
   network: ws
   port: 443
   server: 104.21.31.183
-  servername: RELAY-104.21.31.183-2769 | 44.027MB
+  servername: RELAY-104.21.31.183-2622 | 17.242MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1264,11 +1236,26 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.33.32-0236 | 15.5...
+  name: 10|RELAY-104.21.31.183-7338 | 25....
+  network: ws
+  port: 443
+  server: octavi.cfd
+  servername: RELAY-104.21.31.183-7338 | 25.096MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: octavi.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-104.21.33.32-0226 | 27.7...
   network: ws
   port: 443
   server: 104.21.33.32
-  servername: RELAY-104.21.33.32-0236 | 15.563MB
+  servername: RELAY-104.21.33.32-0226 | 27.724MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1279,11 +1266,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.4.29-2810 | 45.17...
+  name: 10|RELAY-104.21.4.29-2663 | 18.96...
   network: ws
   port: 443
   server: 104.21.4.29
-  servername: RELAY-104.21.4.29-2810 | 45.17MB
+  servername: RELAY-104.21.4.29-2663 | 18.966MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1292,58 +1279,13 @@ proxies:
     headers:
       Host: oliv.beauty
     path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-104.21.44.64-0350 | 41.2...
-  network: ws
-  port: 443
-  server: kellie.makeup
-  servername: RELAY-104.21.44.64-0350 | 41.257MB
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kellie.makeup
-    path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-104.21.50.177-7538 | 23....
-  network: ws
-  port: 443
-  server: alvvin.click
-  servername: RELAY-104.21.50.177-7538 | 23.239MB
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: alvvin.click
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 10|RELAY-104.21.53.12-2784 | 22.9...
+  name: 10|RELAY-104.21.53.12-2637 | 29.6...
   network: ws
   port: 443
   server: 104.21.53.12
-  servername: RELAY-104.21.53.12-2784 | 22.972MB
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ophelia.mom
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 10|RELAY-104.21.53.12-7539 | 22.4...
-  network: ws
-  port: 443
-  server: ophelia.mom
-  servername: RELAY-104.21.53.12-7539 | 22.473MB
+  servername: RELAY-104.21.53.12-2637 | 29.641MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1354,11 +1296,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.75.244-0125 | 23....
+  name: 10|RELAY-104.21.75.244-0115 | 52....
   network: ws
   port: 443
   server: 104.21.75.244
-  servername: RELAY-104.21.75.244-0125 | 23.481MB
+  servername: RELAY-104.21.75.244-0115 | 52.733MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1369,11 +1311,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.75.246-0301 | 39....
+  name: 10|RELAY-104.21.75.246-0291 | 29....
   network: ws
   port: 443
   server: 104.21.75.246
-  servername: RELAY-104.21.75.246-0301 | 39.484MB
+  servername: RELAY-104.21.75.246-0291 | 29.273MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1384,21 +1326,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.83.10-2585 | 62.7...
-  network: ws
-  port: 8080
-  server: 104.21.83.10
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.coldstone.club
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-104.21.90.218-1014 | 21....
+  name: 10|RELAY-104.21.90.218-1012 | 31....
   network: ws
   port: 2086
   server: 104.21.90.218
@@ -1412,11 +1340,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.21.91.254-2753 | 21....
+  name: 10|RELAY-104.21.91.254-2606 | 25....
   network: ws
   port: 443
   server: 104.21.91.254
-  servername: RELAY-104.21.91.254-2753 | 21.64MB
+  servername: RELAY-104.21.91.254-2606 | 25.069MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1427,7 +1355,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-104.31.16.28-2807 | 8.03...
+  name: 10|RELAY-104.31.16.28-2660 | 6.48...
   network: ws
   port: 80
   server: 104.31.16.28
@@ -1441,21 +1369,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-162.159.130.208-0460 | 8...
-  network: ws
-  port: 8080
-  server: 162.159.130.208
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 53329cdb-8a9e-4ab9-8391-d3e628140c76
-  ws-opts:
-    headers:
-      Host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-162.159.36.5-1560 | 42.1...
+  name: 10|RELAY-162.159.36.5-1535 | 41.0...
   network: ws
   port: 443
   server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
@@ -1467,55 +1381,13 @@ proxies:
     headers:
       Host: mikasa.erenyeager.cloudns.biz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-172.64.107.246-4317 | 25...
-  network: ws
-  port: 80
-  server: 172.64.107.246
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  ws-opts:
-    headers:
-      Host: newus2.xn--mes53ddysu0o3gl.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-172.64.141.3-0457 | 238....
-  network: ws
-  port: 80
-  server: 172.64.141.3
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  ws-opts:
-    headers:
-      Host: newus2.xn--mes53ddysu0o3gl.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-172.67.129.47-4019 | 1.4...
-  network: ws
-  port: 8080
-  server: cf.openxai.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
-  ws-opts:
-    headers:
-      Host: eu1.openxai.link
-    path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-172.67.131.150-2787 | 36...
+  name: 10|RELAY-172.67.131.150-2640 | 10...
   network: ws
   port: 443
   server: 172.67.131.150
-  servername: RELAY-172.67.131.150-2787 | 36.745MB
+  servername: RELAY-172.67.131.150-2640 | 10.057MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1526,25 +1398,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-172.67.132.15-1813 | 4.5...
-  network: ws
-  port: 443
-  server: 172.67.132.15
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
-  ws-opts:
-    headers:
-      Host: ming2.kiwireich.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-172.67.142.191-2777 | 32...
+  name: 10|RELAY-172.67.142.191-2630 | 12...
   network: ws
   port: 443
   server: 172.67.142.191
-  servername: RELAY-172.67.142.191-2777 | 32.49MB
+  servername: RELAY-172.67.142.191-2630 | 12.009MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1555,11 +1413,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-172.67.152.200-0132 | 22...
+  name: 10|RELAY-172.67.152.200-0122 | 58...
   network: ws
   port: 443
   server: 172.67.152.200
-  servername: RELAY-172.67.152.200-0132 | 22.67MB
+  servername: RELAY-172.67.152.200-0122 | 58.905MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1568,70 +1426,28 @@ proxies:
     headers:
       Host: meroiy.icu
     path: /
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '10,30|VPN招代理电报联系@xiaoying229 #2'
-  network: ws
-  port: '8080'
-  server: www.coldstone.club
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.coldstone.club
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10,30|🇺🇸_相亲相爱一家人_168
-  network: ws
-  port: 80
-  server: us65.netfilx.live
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
-  ws-opts:
-    headers:
-      Host: us65.netfilx.live
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-172.67.172.127-4020 | 1....
-  network: ws
-  port: 8080
-  server: cf.openxai.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
-  ws-opts:
-    headers:
-      Host: eu2.openxai.link
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|RELAY-172.67.179.37-7540 | 36....
+  name: 10|RELAY-172.67.164.184-7336 | 28...
   network: ws
   port: 443
-  server: octavi.cfd
-  servername: RELAY-172.67.179.37-7540 | 36.075MB
+  server: alvvin.click
+  servername: RELAY-172.67.164.184-7336 | 28.436MB
   skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: octavi.cfd
+      Host: alvvin.click
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-172.67.183.110-2773 | 22...
+  name: 10|RELAY-172.67.183.110-2626 | 26...
   network: ws
   port: 443
   server: 172.67.183.110
-  servername: RELAY-172.67.183.110-2773 | 22.781MB
+  servername: RELAY-172.67.183.110-2626 | 26.249MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1642,7 +1458,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-172.67.183.110-7536 | 22...
+  name: 10|RELAY-172.67.183.110-7334 | 20...
   network: ws
   port: 443
   server: waynn.makeup
@@ -1656,25 +1472,11 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-172.67.197.82-7535 | 22....
-  network: ws
-  port: 443
-  server: odelia.autos
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: odelia.autos
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 10|RELAY-172.67.207.114-2767 | 13...
+  name: 10|RELAY-172.67.207.114-2620 | 53...
   network: ws
   port: 443
   server: 172.67.207.114
-  servername: RELAY-172.67.207.114-2767 | 13.497MB
+  servername: RELAY-172.67.207.114-2620 | 53.303MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1683,27 +1485,28 @@ proxies:
     headers:
       Host: ophelia.mom
     path: /
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 10|RELAY-172.67.207.26-1553 | 118...
+  name: 10|RELAY-172.67.207.114-7337 | 28...
   network: ws
   port: 443
-  server: hms182.glweidf.sbs
+  server: ophelia.mom
+  servername: RELAY-172.67.207.114-7337 | 28.203MB
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: glweidf.sbs
+      Host: ophelia.mom
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-172.67.215.202-2756 | 50...
+  name: 10|RELAY-172.67.215.202-2609 | 25...
   network: ws
   port: 443
   server: 172.67.215.202
-  servername: RELAY-172.67.215.202-2756 | 50.878MB
+  servername: RELAY-172.67.215.202-2609 | 25.551MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1714,7 +1517,77 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-172.67.66.46-1434 | 1.40...
+  name: 10|RELAY-172.67.229.25-2631 | 1.4...
+  network: ws
+  port: 2086
+  server: 172.67.229.25
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-172.67.229.33-2615 | 2.2...
+  network: ws
+  port: 2086
+  server: 172.67.229.33
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-172.67.229.34-2651 | 1.3...
+  network: ws
+  port: 2086
+  server: 172.67.229.34
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-172.67.229.35-2607 | 2.4...
+  network: ws
+  port: 2086
+  server: 172.67.229.35
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-172.67.229.38-2652 | 1.4...
+  network: ws
+  port: 2086
+  server: 172.67.229.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-172.67.66.46-1156 | 4.04...
   network: ws
   port: 8080
   server: 172.67.66.46
@@ -1726,13 +1599,27 @@ proxies:
     headers:
       Host: eu2.openxai.link
     path: /
+- alterId: 0
+  cipher: auto
+  name: 10|RELAY-173.245.49.136-1151 | 5....
+  network: ws
+  port: 8080
+  server: cf.openxai.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
+  ws-opts:
+    headers:
+      Host: eu2.openxai.link
+    path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-188.114.96.2-2803 | 23.6...
+  name: 10|RELAY-188.114.96.2-2656 | 29.6...
   network: ws
   port: 443
   server: 188.114.96.2
-  servername: RELAY-188.114.96.2-2803 | 23.626MB
+  servername: RELAY-188.114.96.2-2656 | 29.603MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1743,11 +1630,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-188.114.96.3-2829 | 45.7...
+  name: 10|RELAY-188.114.96.3-2682 | 20.3...
   network: ws
   port: 443
   server: 188.114.96.3
-  servername: RELAY-188.114.96.3-2829 | 45.732MB
+  servername: RELAY-188.114.96.3-2682 | 20.34MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1758,11 +1645,11 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-188.114.96.7-2776 | 33.3...
+  name: 10|RELAY-188.114.96.7-2629 | 14.4...
   network: ws
   port: 443
   server: 188.114.96.7
-  servername: RELAY-188.114.96.7-2776 | 33.342MB
+  servername: RELAY-188.114.96.7-2629 | 14.464MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1773,11 +1660,11 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-188.114.97.1-2758 | 19.9...
+  name: 10|RELAY-188.114.97.1-2611 | 24.9...
   network: ws
   port: 443
   server: 188.114.97.1
-  servername: RELAY-188.114.97.1-2758 | 19.982MB
+  servername: RELAY-188.114.97.1-2611 | 24.938MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1788,11 +1675,11 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-188.114.97.7-2747 | 22.3...
+  name: 10|RELAY-188.114.97.7-2600 | 49.9...
   network: ws
   port: 443
   server: 188.114.97.7
-  servername: RELAY-188.114.97.7-2747 | 22.352MB
+  servername: RELAY-188.114.97.7-2600 | 49.977MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1803,11 +1690,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|RELAY-188.114.98.0-2801 | 21.6...
+  name: 10|RELAY-188.114.98.0-2654 | 28.8...
   network: ws
   port: 443
   server: 188.114.98.0
-  servername: RELAY-188.114.98.0-2801 | 21.639MB
+  servername: RELAY-188.114.98.0-2654 | 28.843MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1818,11 +1705,11 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 10|RELAY-188.114.99.0-2744 | 23.5...
+  name: 10|RELAY-188.114.99.0-2597 | 29.6...
   network: ws
   port: 443
   server: 188.114.99.0
-  servername: RELAY-188.114.99.0-2744 | 23.519MB
+  servername: RELAY-188.114.99.0-2597 | 29.652MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1832,118 +1719,94 @@ proxies:
       Host: ophelia.mom
     path: /
 - cipher: aes-256-cfb
-  name: 10|RO-194.14.217.115-1069 | 13.81...
+  name: 10|RO-194.14.217.115-1049 | 20.66...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 194.14.217.115
   type: ss
 - cipher: aes-256-cfb
-  name: 10|SE-121.127.46.147-1060 | 14.86...
+  name: 10|SE-121.127.46.147-1042 | 22.14...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
   type: ss
 - cipher: aes-256-cfb
-  name: 10|TR-45.89.52.66-9666 | 1.959MB
-  password: HSZuyJQcWe8dxNdF
-  port: 9043
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|TR-45.89.52.66-9667 | 1.598MB
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|TR-45.89.52.66-9668 | 1.863MB
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|TR-45.89.52.66-9669 | 1.772MB
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|TR-45.89.52.66-9670 | 1.869MB
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|TR-45.89.52.66-9671 | 2.041MB
+  name: 10|TR-45.89.52.66-1141 | 6.681MB
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 10|UA-5.188.6.8-1073 | 3.836MB
+  name: 10|TR-45.89.52.66-1146 | 2.832MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|TR-45.89.52.66-1147 | 2.771MB
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|TR-45.89.52.66-1149 | 2.748MB
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|TR-45.89.52.66-1153 | 4.827MB
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|UA-5.188.6.8-1121 | 19.443MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 5.188.6.8
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 10|ZA-129.151.164.152-1087 | 6.0M...
-  network: ws
-  port: 55600
-  server: 129.151.164.152
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e30f8588-2555-48b8-c354-c8e63f57232d
-  ws-opts:
-    path: /
 - cipher: aes-256-cfb
-  name: 10|ZA-41.203.4.34-1090 | 7.982MB
+  name: 10|VN-103.163.218.2-2932 | 8.207M...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.163.218.2
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|ZA-41.203.4.34-1089 | 10.526MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 41.203.4.34
   type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 10,20,21,32|🇩🇪 德国|@ripaojiedian
+  password: 13tfB0OPVA
+  port: 43526
+  server: 112.28.208.19
+  skip-cert-verify: false
+  sni: sg-singapore-oracle-4f34e8.ip1.shop
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-1099 | 8....
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-1100 | 8....
+  name: 10|🇨🇦CA-134.195.196.178-1084 | 5....
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇦CA-134.195.196.178-1087 | 4....
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 134.195.196.178
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇩🇪DE-104.248.253.28-1513 | 15....
-  network: ws
-  port: 80
-  server: 104.248.253.28
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
-  ws-opts:
-    headers:
-      Host: de04.hajimihajimihajimi.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|🇩🇪DE-104.248.253.28-4320 | 15....
-  network: ws
-  port: 80
-  server: 104.248.253.28
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|🇩🇪DE-130.162.47.123-10270 | 12...
+  name: 10|🇩🇪DE-130.162.47.123-10068 | 24...
   network: ws
   port: 6854
   server: 130.162.47.123
@@ -1954,24 +1817,25 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-gcm
-  name: 10|🇩🇪DE-159.69.12.205-1053 | 15.4...
+  name: 10|🇩🇪DE-159.69.12.205-1039 | 23.5...
   password: TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON
   port: 25365
   server: 159.69.12.205
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇩🇪DE-165.232.70.135-4318 | 15....
+  name: 10,23|美国 v2rayfree.eu.org
   network: ws
-  port: 80
-  server: 165.232.70.135
+  port: '80'
+  server: 165.232.78.169
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 22b502a4-0886-4c97-9538-49faa23d2912
   ws-opts:
     headers:
-      Host: de01.hajimihajimihajimi.online
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1985,76 +1849,74 @@ proxies:
   uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 10|🇩🇪DE-77.91.73.244-0283 | 1.324...
-  network: ws
-  port: 80
-  server: de3-vmess.sshmax.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7142b543-45a8-4274-b80d-f401e7892f5c
-  ws-opts:
-    headers:
-      Host: de3-vmess.sshmax.xyz
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇩🇪DE-94.131.111.32-1454 | 12.4...
+  password: ZmU3ZGRh
+  port: 1443
+  server: 94.131.111.32
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇩🇪DE-94.131.111.32-2186 | 10.7...
+  password: ZmU3ZGRh
+  port: 8388
+  server: 94.131.111.32
+  type: ss
 - cipher: aes-256-cfb
-  name: 10|🇪🇸ES-5.188.181.201-9627 | 2.40...
+  name: 10|🇪🇸ES-5.188.181.201-1136 | 2.77...
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 5.188.181.201
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇪🇸ES-5.188.181.201-9628 | 1.97...
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
+  name: 10|🇪🇸ES-5.188.181.201-1137 | 2.64...
+  password: GeregetR8cvQHzYr
+  port: 9030
   server: 5.188.181.201
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇪🇸ES-5.188.181.201-9629 | 1.93...
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  server: 5.188.181.201
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇪🇸ES-5.188.181.201-9630 | 1.87...
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 5.188.181.201
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇪🇸ES-5.188.181.201-9631 | 2.13...
+  name: 10|🇪🇸ES-5.188.181.201-1138 | 2.57...
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 5.188.181.201
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇪🇸ES-5.188.181.201-9632 | 2.29...
-  password: GeregetR8cvQHzYr
-  port: 9030
+  name: 10|🇪🇸ES-5.188.181.201-1142 | 2.47...
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
   server: 5.188.181.201
   type: ss
-- cipher: aes-256-gcm
-  name: 10|🇫🇷FR-193.243.147.128-1500 | 5....
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
+- cipher: aes-256-cfb
+  name: 10|🇪🇸ES-5.188.181.201-1144 | 3.12...
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 5.188.181.201
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇫🇷FR-195.154.185.174-1040 | 4....
+  name: 10|🇪🇸ES-5.188.181.201-1145 | 3.17...
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇫🇷FR-195.154.169.198-9690 | 26...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇫🇷FR-195.154.185.174-1116 | 25...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇫🇷FR-51.15.27.48-1031 | 17.89M...
+  name: 10|🇫🇷FR-51.15.27.48-1027 | 27.088...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.27.48
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇫🇷FR-51.159.111.208-1953 | 3.8...
+  name: 10|🇫🇷FR-51.159.111.208-1955 | 25....
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.111.208
@@ -2072,27 +1934,9 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-13.42.109.144-1020 | 17.7...
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a1.samanehha.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-13.42.109.144-1024 | 3.26...
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: java.ct.arvancode.eu.Org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-13.42.109.144-1027 | 18.0...
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: java.ct.arvancode.eu.org
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇬🇧GB-172.99.190.109-1555 | 5.5...
+  name: 10|🇬🇧GB-172.99.190.109-1530 | 28....
   network: ws
   port: 443
   server: 172.99.190.109
@@ -2103,112 +1947,116 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-18.133.104.13-1018 | 8.49...
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: series-a2-mec.samanehha.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-18.133.104.13-1517 | 11.8...
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: wxwctxxx.arvancode.eu.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-18.168.26.46-1536 | 12.19...
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: 18.168.26.46
-  type: ss
-- cipher: aes-128-gcm
-  name: 10|🇬🇧GB-212.102.53.194-0477 | 18....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  name: 10|🇬🇧GB-212.102.53.195-1063 | 12....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 10|🇬🇧GB-212.102.53.196-1130 | 16....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
-  name: 10|🇬🇧GB-212.102.53.197-1085 | 16....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 10|🇬🇧GB-212.102.53.78-1120 | 19.0...
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: 10|🇬🇧GB-212.102.53.80-1080 | 8.70...
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  name: 10|🇬🇧GB-212.102.53.81-1054 | 9.05...
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 10,32|🇬🇧 英国|@ripaojiedian
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: series-a2-me.samanehha.co
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-3.9.226.86-1022 | 6.155MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: jseyu.arvancode.eu.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-3.9.226.86-1526 | 6.991MB
+  name: 10|🇬🇧GB-18.133.46.170-1094 | 27.3...
   password: Bog0ELmMM9DSxDdQ
   port: 443
   server: jseyu.arvancode.eu.Org
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-51.142.159.23-1036 | 3.34...
+  name: 10|🇬🇧GB-18.133.46.170-1096 | 27.6...
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: jseyu.arvancode.eu.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇬🇧GB-18.135.170.76-1062 | 27.4...
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: wxwctxxx.arvancode.eu.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇬🇧GB-18.135.170.76-1083 | 27.1...
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: series-a2-mec.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇬🇧GB-18.135.20.101-1026 | 27.7...
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: java.ct.arvancode.eu.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇬🇧GB-18.135.20.101-1028 | 27.2...
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇬🇧GB-18.135.20.101-1133 | 27.7...
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: java.ct.arvancode.eu.Org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇬🇧GB-18.135.20.101-2199 | 27.2...
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+- cipher: aes-128-gcm
+  name: 10|🇬🇧GB-212.102.53.194-0458 | 1.2...
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 10|🇬🇧GB-212.102.53.195-1055 | 28....
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 10|🇬🇧GB-212.102.53.196-1032 | 11....
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 10|🇬🇧GB-212.102.53.197-1033 | 12....
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 10|🇬🇧GB-212.102.53.80-1079 | 25.7...
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
+  name: 10|🇬🇧GB-212.102.53.81-1072 | 28.7...
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇬🇧GB-51.142.159.23-1131 | 25.9...
   password: 5ii16fmPTms8icYnYvxUfa
   port: 32790
   server: 51.142.159.23
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-51.142.173.103-1055 | 19....
+  name: 10|🇬🇧GB-51.142.173.103-1018 | 23....
   password: gcpVehVytslepmkHHRLXYx
   port: 51899
   server: 51.142.173.103
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-51.143.138.171-1045 | 12....
+  name: 10|🇬🇧GB-51.143.138.171-1058 | 26....
   password: EaCRQJmijrVP3uZuCwDLr9
   port: 9424
   server: 51.143.138.171
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇬🇧GB-51.143.138.181-2237 | 8.5...
+  name: 10|🇬🇧GB-51.143.138.181-1082 | 27....
   password: T53sUVc6QhOja2R5CZPGCd
   port: 25664
   server: 51.143.138.181
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇬🇧GB-51.38.64.145-1041 | 11.92...
+  name: 10|🇬🇧GB-51.38.64.145-1061 | 26.24...
   network: ws
   port: 2086
   server: 51.38.64.145
@@ -2221,54 +2069,20 @@ proxies:
       Host: internet.life.com.by
     path: /
 - cipher: aes-256-cfb
-  name: 10|🇬🇧GB-77.72.5.113-1043 | 18.512...
+  name: 10|🇬🇧GB-77.72.5.113-1022 | 24.346...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 77.72.5.113
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇬🇧GB-77.72.5.150-1047 | 18.236...
+  name: 10|🇬🇧GB-77.72.5.150-1024 | 3.508M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 77.72.5.150
   type: ss
-- alterId: 32
-  cipher: auto
-  name: 10|🇭🇰HK-182.16.1.194-9450 | 8.596...
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /
-- cipher: aes-256-gcm
-  name: 10|🇭🇰HK-8.210.231.146-0740 | 15.9...
-  password: jmtgsmW40R
-  port: 1146
-  server: 8.210.231.146
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇭🇰HK-8.217.93.104-1550 | 3.71M...
-  network: ws
-  port: 443
-  server: 8.217.93.104
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dcd70249-06fa-4fe7-aaed-cbba86ac125b
-  ws-opts:
-    headers:
-      Host: sptufp5n3o19imic.iwebsocket.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|🇯🇵JP-152.69.197.74-3603 | 5.32...
+  name: 10|🇯🇵JP-152.69.197.74-3456 | 11.6...
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -2279,122 +2093,70 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-gcm
-  name: 10|🇯🇵JP-154.47.20.240-1072 | 25.5...
+  name: 10|🇯🇵JP-154.47.20.240-0998 | 18.0...
   password: shadowsocks
   port: 443
   server: 154.47.20.240
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 10|🇯🇵JP-183.181.36.194-0605 | 1.6...
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 10,32|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.181.194.63
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇯🇵JP-185.172.113.182-1108 | 4....
+  name: 10|🇯🇵JP-185.172.113.182-1105 | 3....
   password: G!yBwPWH3Vao
   port: 806
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇯🇵JP-185.172.113.182-1109 | 4....
+  name: 10|🇯🇵JP-185.172.113.182-1107 | 3....
   password: G!yBwPWH3Vao
   port: 812
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇯🇵JP-185.172.113.182-1113 | 3....
-  password: G!yBwPWH3Vao
-  port: 810
-  server: 185.172.113.182
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇯🇵JP-185.172.113.182-1115 | 3....
-  password: G!yBwPWH3Vao
-  port: 809
-  server: 185.172.113.182
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇯🇵JP-185.172.113.182-1116 | 3....
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 185.172.113.182
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇯🇵JP-185.172.113.182-1117 | 3....
+  name: 10|🇯🇵JP-185.172.113.182-1118 | 3....
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇯🇵JP-185.172.113.182-1118 | 3....
+  name: 10|🇯🇵JP-185.172.113.182-1120 | 3....
   password: G!yBwPWH3Vao
   port: 804
   server: 185.172.113.182
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 10,32|🇰🇷 韩国1|@ripaojiedian
-  password: qwerREWQ@@
-  port: 4319
-  server: p228.panda004.net
-  tfo: false
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-1122 | 3....
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 185.172.113.182
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 10|🇰🇷KR-152.67.218.38-4568 | 14.9...
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|🇰🇷KR-152.67.218.38-6773 | 13.7...
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: 152.67.218.38
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10,24|韩国 002
-  network: ws
-  port: 80
-  server: 3.34.200.244
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
-  ws-opts:
-    headers:
-      Host: kr03.hajimihajimihajimi.online
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-1127 | 3....
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 185.172.113.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇯🇵JP-185.172.113.182-1130 | 3....
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 185.172.113.182
+  type: ss
 - cipher: aes-128-cfb
-  name: 10|🇳🇱NL-109.201.152.181-1030 | 8....
+  name: 10|🇳🇱NL-109.201.152.181-1078 | 26...
   password: shadowsocks
   port: 443
   server: 109.201.152.181
   type: ss
 - alterId: 64
   cipher: auto
-  name: 10|🇳🇱NL-154.85.1.2-1431 | 9.942MB
+  name: 10|🇳🇱NL-154.85.1.2-1412 | 27.05MB
   network: ws
   port: 41003
   server: 154.85.1.2
@@ -2407,74 +2169,68 @@ proxies:
       Host: www.42077230.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇳🇱NL-172.233.51.96-1993 | 12.2...
+  name: 10|🇳🇱NL-172.233.51.96-2007 | 19.0...
   password: XvK0ltH67Xhv9ht9RhYsFy
   port: 8080
   server: masting.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇳🇱NL-185.242.86.156-1046 | 14....
+  name: 10|🇳🇱NL-185.242.86.156-1046 | 23....
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇵🇱PL-217.30.10.70-1057 | 13.63...
-  password: KBGjZYcy4SyRShmA
-  port: 9044
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.103-1128 | 8....
-  password: NvS8N4Vf8qAGPSCL
-  port: 9046
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.103-1129 | 8....
+  name: 10|🇸🇬SG-103.172.116.103-1076 | 1....
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.103-4357 | 4....
-  password: fG2artUmHfNT2cX7
-  port: 9018
+  name: 10|🇸🇬SG-103.172.116.103-1077 | 2....
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.103-4361 | 4....
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.103-4363 | 4....
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.103-4366 | 4....
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.103-4373 | 5....
+  name: 10|🇸🇬SG-103.172.116.103-1103 | 3....
   password: rNBfNuuANFCAk7KB
   port: 9056
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇸🇬SG-103.172.116.79-1092 | 14....
+  name: 10|🇸🇬SG-103.172.116.103-1106 | 3....
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇸🇬SG-103.172.116.103-1113 | 3....
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇸🇬SG-103.172.116.103-1114 | 2....
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇸🇬SG-103.172.116.103-1115 | 2....
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  name: 10|🇸🇬SG-103.172.116.79-1044 | 2.6...
   password: KBGjZYcy4SyRShmA
   port: 9044
   server: 103.172.116.79
   type: ss
 - alterId: 64
   cipher: auto
-  name: 10|🇸🇬SG-202.79.171.239-1547 | 2.1...
+  name: 10|🇸🇬SG-202.79.171.239-1522 | 1.5...
   network: ws
   port: 443
   server: 202.79.171.239
@@ -2494,14 +2250,6 @@ proxies:
   server: 52.77.241.246
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 10,32|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.251.73.151
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸 United States 01 @nodpai
@@ -2519,7 +2267,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸US-108.165.113.99-0710 | 58....
+  name: 10|🇺🇸US-108.165.113.99-0691 | 75....
   network: ws
   port: 443
   server: 108.165.113.99
@@ -2529,77 +2277,99 @@ proxies:
   uuid: ef22fad3-652a-48fc-e80a-46faa3a6a787
   ws-opts:
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 10|🇺🇸US-142.4.97.76-4044 | 52.529...
+  name: 10|🇺🇸US-129.213.25.87-4137 | 72.8...
   network: ws
-  port: 36000
-  server: 142.4.97.76
+  port: 80
+  server: 129.213.25.87
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 491a3df6-e24e-48ba-bcb5-449d1ae1a776
   ws-opts:
-    headers:
-      Host: www.31033708.xyz
     path: /
 - cipher: aes-128-cfb
-  name: 10|🇺🇸US-156.146.38.163-2005 | 70....
+  name: 10|🇺🇸US-156.146.38.163-2027 | 124...
   password: shadowsocks
   port: 443
   server: 156.146.38.163
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-167.88.61.175-8022 | 1.08...
+  name: 10|🇺🇸US-167.88.61.175-7320 | 1.08...
   password: FoOiGlkAA9yPEGP
-  port: 7307
+  port: 7306
   server: 167.88.61.175
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-167.88.61.175-8443 | 1.08...
+  name: 10|🇺🇸US-167.88.61.175-7791 | 1.07...
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 167.88.61.175
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-167.88.61.175-7821 | 1.08...
   password: cdBIDV42DCwnfIN
-  port: 8119
+  port: 8118
   server: 167.88.61.175
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-167.88.61.175-8520 | 1.08...
-  password: TEzjfAYq2IjtuoS
-  port: 6679
+  name: '10,26|SS--NF-ChatGPT-TikTok-YouTubeP... #1'
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 167.88.61.175
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-167.88.61.175-8178 | 1.07...
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 167.88.61.175
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-167.88.61.175-8384 | 1.07...
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 167.88.61.175
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-167.88.61.175-8707 | 1.08...
+  password: PCnnH6SQSnfoS27
+  port: 8090
   server: 167.88.61.175
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇺🇸US-172.233.214.104-0985 | 48...
+  name: 10|🇺🇸US-172.233.214.104-0980 | 89...
   password: qGjmI8WQlF0tfhDbkLqGdN
   port: 8080
   server: passconf.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇺🇸US-205.134.180.137-1062 | 6....
+  name: 10|🇺🇸US-205.134.180.137-1095 | 60...
   password: g13S7doXar0A
   port: 443
   server: 205.134.180.137
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇺🇸US-205.134.180.145-0991 | 9....
+  name: 10|🇺🇸US-205.134.180.145-1073 | 63...
   password: hgLCgfLRgB6d
   port: 443
   server: 205.134.180.145
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇺🇸US-205.134.180.147-0994 | 10...
+  name: 10|🇺🇸US-205.134.180.147-1067 | 63...
   password: 9Bvkw5aupNy8
   port: 443
   server: 205.134.180.147
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇺🇸US-205.134.180.151-0993 | 8....
+  name: 10|🇺🇸US-205.134.180.151-1086 | 51...
   password: 5cp9Z3iWnJZ2
   port: 443
   server: 205.134.180.151
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸US-205.185.125.200-0189 | 1....
+  name: 10|🇺🇸US-205.185.125.200-0179 | 1....
   network: ws
   port: 11451
   server: 205.185.125.200
@@ -2610,14 +2380,104 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-cfb
-  name: 10|🇺🇸US-212.102.47.198-0998 | 25....
+  name: 10|🇺🇸US-212.102.47.198-0999 | 53....
   password: shadowsocks
   port: 443
   server: 212.102.47.198
   type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-7798 | 1.0...
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-7936 | 1.0...
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-7937 | 1.0...
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-7976 | 1.0...
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-7977 | 1.0...
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-7983 | 1.0...
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-8495 | 1.0...
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-8912 | 1.0...
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.146-8978 | 1.0...
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.107.226.146
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.49-7972 | 1.07...
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.107.226.49
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.49-8301 | 1.08...
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.107.226.49
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.49-8456 | 1.07...
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.107.226.49
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.107.226.49-8587 | 1.07...
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.107.226.49
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.121.43.142-8200 | 1.07...
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.121.43.142
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.121.43.97-7959 | 1.078...
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.121.43.97
+  type: ss
 - alterId: 64
   cipher: auto
-  name: 10|🇺🇸US-38.14.107.226-1456 | 86.9...
+  name: 10|🇺🇸US-38.14.107.226-1437 | 46.9...
   network: ws
   port: 38100
   server: 38.14.107.226
@@ -2629,45 +2489,137 @@ proxies:
     headers:
       Host: www.23179753.xyz
     path: /
+- alterId: 64
+  cipher: auto
+  name: 10|🇺🇸US-38.14.107.227-1506 | 45.5...
+  network: ws
+  port: 38100
+  server: 38.14.107.227
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23179753.xyz
+    path: /
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-38.75.136.135-1173 | 1.08...
+  name: 10|🇺🇸US-38.143.66.87-8136 | 1.077...
   password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 38.75.136.135
+  port: 5000
+  server: 38.143.66.87
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-38.75.136.135-8461 | 1.08...
+  name: 10|🇺🇸US-38.143.66.87-8764 | 1.078...
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.143.66.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.134.85-8316 | 1.077...
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.68.134.85
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.134.85-8361 | 1.078...
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 38.68.134.85
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.134.85-8626 | 1.077...
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.68.134.85
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.134.85-8766 | 1.076...
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.68.134.85
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.134.85-8774 | 1.076...
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.68.134.85
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.134.9-7297 | 1.077M...
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.68.134.9
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.135.18-6551 | 1.078...
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 38.68.135.18
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.68.135.18-6555 | 1.076...
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.68.135.18
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.75.136.135-1164 | 1.08...
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 38.75.136.135
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-38.75.136.135-8915 | 1.08...
-  password: FoOiGlkAA9yPEGP
-  port: 7306
+  name: 10|🇺🇸US-38.75.136.135-2039 | 1.07...
+  password: Y6R9pAtvxxzmGC
+  port: 8888
   server: 38.75.136.135
   type: ss
 - cipher: aes-256-gcm
-  name: 10|🇺🇸US-38.75.136.135-9133 | 1.09...
-  password: XKFKl2rULjIp74
-  port: 8008
+  name: 10|🇺🇸US-38.75.136.135-8094 | 1.07...
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.75.136.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.75.136.135-8113 | 1.07...
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.75.136.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 10,26|SS--NF-ChatGPT-TikTok-YouTubeP...
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.75.136.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.75.136.135-8273 | 1.07...
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.75.136.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 10|🇺🇸US-38.75.136.135-8581 | 1.07...
+  password: KixLvKzwjekG00rm
+  port: 8000
   server: 38.75.136.135
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇺🇸US-45.55.2.232-1010 | 56.642...
+  name: 10|🇺🇸US-45.55.2.232-0975 | 44.195...
   password: 2170f8
   port: 14293
   server: 45.55.2.232
   type: ss
 - cipher: aes-256-cfb
-  name: 10|🇺🇸US-74.121.191.98-1078 | 8.33...
+  name: 10|🇺🇸US-74.121.191.98-1085 | 25.8...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 74.121.191.98
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸US-80.92.205.112-1064 | 9.62...
+  name: 10|🇺🇸US-80.92.205.112-1071 | 25.5...
   network: ws
   port: 443
   server: 80.92.205.112
@@ -3243,7 +3195,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本05
@@ -3253,7 +3205,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本06
@@ -3263,7 +3215,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡04
@@ -3273,7 +3225,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡05
@@ -3283,7 +3235,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡06
@@ -3293,7 +3245,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国04
@@ -3303,7 +3255,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国05
@@ -3313,7 +3265,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国06
@@ -3323,7 +3275,7 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇷🇺俄罗斯04
@@ -3333,7 +3285,7 @@ proxies:
   servername: ru04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇲🇾马来西亚04
@@ -3343,7 +3295,7 @@ proxies:
   servername: my04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇹🇭泰国04
@@ -3353,7 +3305,7 @@ proxies:
   servername: th04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇵🇭菲律宾04
@@ -3363,7 +3315,7 @@ proxies:
   servername: ph04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇰🇷韩国04
@@ -3373,7 +3325,7 @@ proxies:
   servername: kr04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇮🇳印度04
@@ -3383,7 +3335,7 @@ proxies:
   servername: in04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇧🇷巴西04
@@ -3393,7 +3345,7 @@ proxies:
   servername: br04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇻🇳越南04
@@ -3403,7 +3355,7 @@ proxies:
   servername: vn04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇭🇺匈牙利04
@@ -3413,7 +3365,7 @@ proxies:
   servername: hu04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇦🇷阿根廷04
@@ -3423,7 +3375,7 @@ proxies:
   servername: ar04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇹🇷土耳其04
@@ -3433,7 +3385,7 @@ proxies:
   servername: tr04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇺🇦乌克兰04
@@ -3443,7 +3395,7 @@ proxies:
   servername: ua04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇦🇺澳大利亚04
@@ -3453,7 +3405,7 @@ proxies:
   servername: au04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇬🇧英国04
@@ -3463,7 +3415,7 @@ proxies:
   servername: uk04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇩🇪德国04
@@ -3473,7 +3425,7 @@ proxies:
   servername: de04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇨🇦加拿大04
@@ -3483,7 +3435,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 22|🇪🇸西班牙04
@@ -3493,7 +3445,7 @@ proxies:
   servername: es04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: '23,30|🇺🇸_US_美国->🇩🇪_DE_德国 #130'
@@ -3560,20 +3512,6 @@ proxies:
     headers:
       Host: nmsl.kp
     path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 23|美国 v2rayfree.eu.org
-  network: ws
-  port: '80'
-  server: 165.232.78.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 23,30|美国  4〖电报：@ccbaohe】免费节点定时更新
@@ -4686,6 +4624,19 @@ proxies:
     headers:
       Host: www.99555130.xyz
     path: /path/271624282113
+- alterId: 0
+  cipher: auto
+  name: 24|韩国 002
+  network: ws
+  port: 80
+  server: 3.34.200.244
+  skip-cert-verify: true
+  type: vmess
+  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
+  ws-opts:
+    headers:
+      Host: kr03.hajimihajimihajimi.online
+    path: /
 - alterId: 64
   cipher: auto
   name: 24|美国 033
@@ -4792,12 +4743,6 @@ proxies:
   server: 190.103.176.29
   type: ssr
 - cipher: aes-256-gcm
-  name: 26|SS--NF-ChatGPT-TikTok-YouTubeP...
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 38.75.136.135
-  type: ss
-- cipher: aes-256-gcm
   name: 26|SS-:-locked-ChatGPT-TikTok-You...
   password: RexnBgU7EV5ADxG
   port: 7002
@@ -4814,12 +4759,6 @@ proxies:
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  name: '26|SS--NF-ChatGPT-TikTok-YouTubeP... #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 167.88.61.175
   type: ss
 - cipher: aes-256-cfb
   name: '26|SSR--NF-ChatGPT-TikTok-YouTube... #1'
@@ -4902,7 +4841,7 @@ proxies:
   server: 167.88.61.175
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 26|SS--locked-ChatGPT-TikTok-51.1...
+  name: 26|SS-:-locked-ChatGPT-TikTok-51....
   password: G!yBwPWH3Vao
   port: 800
   server: 51.178.87.37
@@ -5757,6 +5696,19 @@ proxies:
     headers:
       Host: a.prapt5.ir
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: 30|🇺🇸_相亲相爱一家人_168
+  network: ws
+  port: 80
+  server: us65.netfilx.live
+  tls: false
+  type: vmess
+  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
+  ws-opts:
+    headers:
+      Host: us65.netfilx.live
+    path: /
 - alterId: 0
   cipher: auto
   name: 30|US_youtube@资源分享师_231
@@ -7173,6 +7125,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '30|VPN招代理电报联系@xiaoying229 #2'
+  network: ws
+  port: '8080'
+  server: www.coldstone.club
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.coldstone.club
+    path: /
+- alterId: 0
+  cipher: auto
   name: 30|US_(TG：@ccbaohe|定时更新节点订阅)_14
   network: ws
   port: '80'
@@ -8130,7 +8095,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 05  | 1x JP
@@ -8140,7 +8105,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 06  | 1x JP
@@ -8150,7 +8115,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 04 | 1x SG
@@ -8160,7 +8125,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 05 | 1x SG
@@ -8170,7 +8135,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 06 | 1x SG
@@ -8180,7 +8145,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 04 | 1x US
@@ -8190,7 +8155,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 05 | 1x US
@@ -8200,7 +8165,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 06 | 1x US
@@ -8210,7 +8175,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】韩国 02 | 1x KR
@@ -8220,7 +8185,7 @@ proxies:
   servername: kr04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】菲律宾 04 | 1x PH
@@ -8230,7 +8195,7 @@ proxies:
   servername: ph04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】俄罗斯 04 | 1x RU
@@ -8240,7 +8205,7 @@ proxies:
   servername: ru04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】马来西亚 04 | 1x MY
@@ -8250,7 +8215,7 @@ proxies:
   servername: my04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】泰国 04 | 1x TH
@@ -8260,7 +8225,7 @@ proxies:
   servername: th04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】阿根廷 04 | 1x AR
@@ -8270,7 +8235,7 @@ proxies:
   servername: ar04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】匈牙利 04 | 1x HU
@@ -8280,7 +8245,7 @@ proxies:
   servername: hu04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】土耳其 04 | 1x TR
@@ -8290,7 +8255,7 @@ proxies:
   servername: tr04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】乌克兰 04 | 1x UA
@@ -8300,7 +8265,7 @@ proxies:
   servername: ua04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】越南 04 | 1x VN
@@ -8310,7 +8275,7 @@ proxies:
   servername: vn04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】巴西 04 | 1x BR
@@ -8320,7 +8285,7 @@ proxies:
   servername: br04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】印度 04 | 1x IN
@@ -8330,7 +8295,7 @@ proxies:
   servername: in04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】澳大利亚 04 | 1x AU
@@ -8340,7 +8305,7 @@ proxies:
   servername: au04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】英国 04 | 1x UK
@@ -8350,7 +8315,7 @@ proxies:
   servername: uk04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】德国 04 | 1x AU
@@ -8360,7 +8325,7 @@ proxies:
   servername: de04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
@@ -8370,7 +8335,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - alterId: 0
   cipher: auto
   name: 31|【BGP】西班牙 02 | 1x ES
@@ -8380,7 +8345,7 @@ proxies:
   servername: es04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 32|🇭🇰 香港KT|@ripaojiedian
@@ -8441,6 +8406,14 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 32|🇰🇷 韩国1|@ripaojiedian
+  password: qwerREWQ@@
+  port: 4319
+  server: p228.panda004.net
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 32|🇸🇬 新加坡2|@ripaojiedian
@@ -8476,10 +8449,10 @@ proxies:
     path: /video/Z7qdcrAGRw
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 32|🇰🇷 韩国特殊|@ripaojiedian
+  name: 32|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.181.194.63
+  server: 54.251.73.151
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -8488,6 +8461,14 @@ proxies:
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
   port: 21003
   server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 32|🇬🇧 英国|@ripaojiedian
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: series-a2-me.samanehha.co
   tfo: false
   type: ss
 - alterId: 64
@@ -8539,7 +8520,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -8549,7 +8530,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -8559,7 +8540,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 101 | 负载优化 | 1x
@@ -8569,7 +8550,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 102 | 流媒体优化 | 1x
@@ -8579,7 +8560,7 @@ proxies:
   servername: jp02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 103 | 负载优化 | 1x
@@ -8589,7 +8570,7 @@ proxies:
   servername: jp03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇹🇼台湾 | 101 | 原生 | 1x
@@ -8599,7 +8580,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -8609,7 +8590,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -8619,7 +8600,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 101 | 负载优化 | 1x
@@ -8629,7 +8610,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 102 | 流媒体优化 | 1x
@@ -8639,7 +8620,7 @@ proxies:
   servername: sg02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 103 | 负载优化 | 1x
@@ -8649,7 +8630,7 @@ proxies:
   servername: sg03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇰🇷韩国 | 101 | 负载优化 | 1x
@@ -8659,7 +8640,7 @@ proxies:
   servername: kr01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇰🇷韩国 | 104 | 负载优化 | 1x
@@ -8669,7 +8650,7 @@ proxies:
   servername: kr04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇵🇭菲律宾 | 101 | 负载优化 | 1x
@@ -8679,7 +8660,7 @@ proxies:
   servername: ph01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇵🇭菲律宾 | 104 | 负载优化 | 1x
@@ -8689,7 +8670,7 @@ proxies:
   servername: ph04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇦🇷阿根廷 | 101 | 负载优化 | 1x
@@ -8699,7 +8680,7 @@ proxies:
   servername: ar01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇦🇷阿根廷 | 104 | 负载优化 | 1x
@@ -8709,7 +8690,7 @@ proxies:
   servername: ar04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇷🇺匈牙利 | 104 | 负载优化 | 1x
@@ -8719,7 +8700,7 @@ proxies:
   servername: hu04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇹🇷土耳其 | 101 | 负载优化 | 1x
@@ -8729,7 +8710,7 @@ proxies:
   servername: tr01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇹🇷土耳其 | 104 | 负载优化 | 1x
@@ -8739,7 +8720,7 @@ proxies:
   servername: tr04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇺🇦乌克兰 | 101 | 负载优化 | 1x
@@ -8749,7 +8730,7 @@ proxies:
   servername: ua01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇺🇦乌克兰 | 104 | 负载优化 | 1x
@@ -8759,7 +8740,7 @@ proxies:
   servername: ua04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇷🇺俄罗斯 | 101 | 负载优化 | 1x
@@ -8769,7 +8750,7 @@ proxies:
   servername: ru01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇷🇺俄罗斯 | 104 | 负载优化 | 1x
@@ -8779,7 +8760,7 @@ proxies:
   servername: ru04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇮🇳印度 | 101 | 负载优化 | 1x
@@ -8789,7 +8770,7 @@ proxies:
   servername: in01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇮🇳印度 | 104 | 负载优化 | 1x
@@ -8799,7 +8780,7 @@ proxies:
   servername: in04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇦🇺澳大利亚 | 101 | 负载优化 | 1x
@@ -8809,7 +8790,7 @@ proxies:
   servername: au01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇦🇺澳大利亚 | 104 | 负载优化 | 1x
@@ -8819,7 +8800,7 @@ proxies:
   servername: au04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇬🇧英国 | 101 | 负载优化 | 1x
@@ -8829,7 +8810,7 @@ proxies:
   servername: uk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇬🇧英国 | 104 | 负载优化 | 1x
@@ -8839,7 +8820,7 @@ proxies:
   servername: uk04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇩🇪德国 | 101 | 负载优化 | 1x
@@ -8849,7 +8830,7 @@ proxies:
   servername: de01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇩🇪德国 | 104 | 负载优化 | 1x
@@ -8859,7 +8840,7 @@ proxies:
   servername: de04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇻🇳越南 | 101 | 负载优化 | 1x
@@ -8869,7 +8850,7 @@ proxies:
   servername: vn01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇻🇳越南 | 104 | 负载优化 | 1x
@@ -8879,7 +8860,7 @@ proxies:
   servername: vn04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇧🇷巴西 | 101 | 负载优化 | 1x
@@ -8889,7 +8870,7 @@ proxies:
   servername: br01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇧🇷巴西 | 104 | 负载优化 | 1x
@@ -8899,7 +8880,7 @@ proxies:
   servername: br04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇪🇸西班牙| 101 | 负载优化 | 1x
@@ -8909,7 +8890,7 @@ proxies:
   servername: es01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇪🇸西班牙 104 | 负载优化 | 1x
@@ -8919,7 +8900,7 @@ proxies:
   servername: es04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇲🇾马来西亚| 101 | 负载优化 | 1x
@@ -8929,7 +8910,7 @@ proxies:
   servername: my01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇲🇾马来西亚 104 | 负载优化 | 1x
@@ -8939,7 +8920,7 @@ proxies:
   servername: my04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇹🇭泰国| 101 | 负载优化 | 1x
@@ -8949,7 +8930,7 @@ proxies:
   servername: th01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇹🇭泰国| 104 | 负载优化 | 1x
@@ -8959,7 +8940,7 @@ proxies:
   servername: th04.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 101 | 负载优化 | 1x
@@ -8969,7 +8950,7 @@ proxies:
   servername: us01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 102 | 负载优化 | 1x
@@ -8979,7 +8960,7 @@ proxies:
   servername: us02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 103 | 负载优化 | 1x
@@ -8989,7 +8970,7 @@ proxies:
   servername: us03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -8999,7 +8980,7 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇷🇺匈牙利[国外直连]
@@ -9009,7 +8990,7 @@ proxies:
   servername: hu01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡[国外直连]
@@ -9019,7 +9000,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本[国外直连]
@@ -9029,7 +9010,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国[国外直连]
@@ -9039,4 +9020,4 @@ proxies:
   servername: us01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: aeead6c6-3988-3868-b751-b66868848219
+  uuid: f99eef1b-53de-3fba-91f0-a9e1f6b5c782
