@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,15,16,23,38|🇺🇸_US_美国 #55'
+  name: '0,2,6,8,15,16,38|🇺🇸_US_美国 #55'
   network: ws
   port: 80
   server: 172.67.217.144
@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,10,15,16,24,30,38|🇺🇸_US_美国 #51'
+  name: '0,2,6,8,10,15,16,23,24,30,38|🇺🇸_US_美国 #51'
   network: ws
   port: 8080
   server: 104.21.54.252
@@ -87,7 +87,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,2,6,8,15,16,23,32,33,38|🇺🇸_US_美国 #48'
+  name: '0,2,6,8,15,16,32,33,38|🇺🇸_US_美国 #48'
   network: ws
   port: 8080
   server: 162.159.130.208
@@ -480,7 +480,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9be62fa2-52ff-4106-a50f-c1cf028a7f10
+  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国05
@@ -490,7 +490,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9be62fa2-52ff-4106-a50f-c1cf028a7f10
+  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国06
@@ -500,14 +500,13 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9be62fa2-52ff-4106-a50f-c1cf028a7f10
+  uuid: 1e3170b5-2b13-405e-9448-1d1245cb8e45
 - alterId: 0
   cipher: auto
-  name: '23|美国 CloudFlare节点 #3'
+  name: '23,30|🇺🇸_US_美国->🇩🇪_DE_德国 #130'
   network: ws
-  port: '80'
-  server: 104.21.231.57
-  servername: ''
+  port: 80
+  server: 104.21.224.2
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -517,38 +516,67 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '23|美国 CloudFlare节点 #4'
+  client-fingerprint: chrome
+  name: 23,32,33|日本2|@ripaojiedian
   network: ws
   port: '80'
-  server: 104.21.234.54
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
+  ws-opts:
+    headers:
+      Host: agzbjszujp4.yofnhkfc.xyz
+    path: /video/ibCT6z55
+- alterId: 64
+  cipher: auto
+  name: 23|美国 华盛顿Cogent通信公司
+  network: ws
+  port: '38100'
+  server: 38.14.107.227
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23179753.xyz
+    path: /path/271624282113
+- alterId: 0
+  cipher: auto
+  name: 23|美国 Fastly全球Anycast节点
+  network: ws
+  port: '80'
+  server: fastly.com
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 23|美国 v2rayfree.eu.org
+  network: ws
+  port: '80'
+  server: 165.232.78.169
   servername: ''
   tls: false
   type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
   ws-opts:
     headers:
-      Host: a.prapt5.ir
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '23,25|github.com/freefq - 美国CloudFla... #3'
+  name: 23,30|美国  4〖电报：@ccbaohe】免费节点定时更新
   network: ws
-  port: 8880
-  server: server32.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
-  ws-opts:
-    headers:
-      Host: server32.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '23|美国 CloudFlare节点 #7'
-  network: ws
-  port: '80'
-  server: 172.67.253.230
+  port: 80
+  server: 104.16.77.74
   servername: ''
   tls: false
   type: vmess
@@ -556,7 +584,21 @@ proxies:
   ws-opts:
     headers:
       Host: my1.tooters.ir
-    path: /?ed=2048
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '23|美国 CloudFlare节点 #8'
+  network: ws
+  port: '2086'
+  server: 104.16.35.48
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
+  ws-opts:
+    headers:
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
   name: 23,25|github.com/freefq - 美国CloudFla...
@@ -612,6 +654,20 @@ proxies:
     headers:
       Host: zheshiscp.com
     path: /77848824
+- alterId: 0
+  cipher: auto
+  name: '23,25|github.com/freefq - 美国CloudFla... #3'
+  network: ws
+  port: 8880
+  server: server32.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+  ws-opts:
+    headers:
+      Host: server32.beheshtbaneh.com
+    path: /
 - name: 24|美国 001
   network: tcp
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
@@ -1033,6 +1089,76 @@ proxies:
     headers:
       Host: www.99555130.xyz
     path: /path/271624282113
+- alterId: 64
+  cipher: auto
+  name: 24|美国 033
+  network: ws
+  port: 38000
+  server: 38.48.141.211
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.83429197.xyz
+    path: /path/271624282113
+- alterId: 64
+  cipher: auto
+  name: 24|美国 034
+  network: ws
+  port: 36000
+  server: 38.173.197.17
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23602249.xyz
+    path: /path/271624282113
+- alterId: 64
+  cipher: auto
+  name: 24|美国 035
+  network: ws
+  port: 37000
+  server: 38.38.181.226
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.60184527.xyz
+    path: /path/271624282113
+- alterId: 64
+  cipher: auto
+  name: 24|美国 036
+  network: ws
+  port: 36000
+  server: 38.11.218.162
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.63181393.xyz
+    path: /path/271624282113
+- alterId: 0
+  cipher: auto
+  name: 24|美国 037
+  network: ws
+  port: 4591
+  server: IT-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 11a5286f-44fc-4d35-992f-2db2773b1aa5
+  ws-opts:
+    headers:
+      Host: bing.com
+    path: /WER3212221T
 - alterId: 0
   cipher: auto
   name: 30|US_(TG：@ccbaohe|定时更新节点订阅) 11
@@ -2446,20 +2572,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|美国  4〖电报：@ccbaohe】免费节点定时更新
-  network: ws
-  port: 80
-  server: 104.16.77.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: my1.tooters.ir
-    path: /
-- alterId: 0
-  cipher: auto
   name: 30|US_youtube@资源分享师_219
   network: ws
   port: 80
@@ -3250,7 +3362,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5e4e6e4a-e910-493d-a465-b89896be0c3e
+  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 05 | 1x US
@@ -3260,7 +3372,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5e4e6e4a-e910-493d-a465-b89896be0c3e
+  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 06 | 1x US
@@ -3270,7 +3382,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5e4e6e4a-e910-493d-a465-b89896be0c3e
+  uuid: b1ffcdee-0410-4052-baf9-945352f7cd95
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3297,7 +3409,7 @@ proxies:
   servername: us01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d744db0e-0ff7-3318-a398-c22250ec0949
+  uuid: aeead6c6-3988-3868-b751-b66868848219
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 102 | 负载优化 | 1x
@@ -3307,7 +3419,7 @@ proxies:
   servername: us02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d744db0e-0ff7-3318-a398-c22250ec0949
+  uuid: aeead6c6-3988-3868-b751-b66868848219
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 103 | 负载优化 | 1x
@@ -3317,7 +3429,7 @@ proxies:
   servername: us03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d744db0e-0ff7-3318-a398-c22250ec0949
+  uuid: aeead6c6-3988-3868-b751-b66868848219
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国[国外直连]
@@ -3327,4 +3439,4 @@ proxies:
   servername: us01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d744db0e-0ff7-3318-a398-c22250ec0949
+  uuid: aeead6c6-3988-3868-b751-b66868848219
