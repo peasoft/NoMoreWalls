@@ -1,12 +1,12 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0842 | 13...
+  name: 10|🇨🇦CA-134.195.196.178-0804 | 3....
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0848 | 12...
+  name: 10|🇨🇦CA-134.195.196.178-0810 | 4....
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
@@ -20,7 +20,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0db31968-dfd3-4720-bd30-dd4960cdc372
+  uuid: 90cf7dba-f48b-46e2-a253-4707374be630
 - alterId: 0
   cipher: auto
   name: 24|加拿大 001
@@ -93,9 +93,9 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇺🇸|US|美国|@wxgqlfx|79
+  name: '24,30|加拿大 008 #1'
   network: ws
-  port: '8080'
+  port: 8080
   server: 172.67.143.192
   servername: ''
   skip-cert-verify: true
@@ -108,9 +108,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 011
+  name: 24|加拿大 010
   network: ws
-  port: '443'
+  port: 2052
+  server: 172.67.214.33
+  skip-cert-verify: true
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 011
+  network: ws
+  port: 443
   server: 104.20.39.186
   skip-cert-verify: true
   tls: true
@@ -148,6 +161,19 @@ proxies:
     path: /xn--mes53ddysu0o3gl
 - alterId: 0
   cipher: auto
+  name: 30|🇨🇦 加拿大 021
+  network: ws
+  port: '80'
+  server: 172.67.241.39
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt5.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
   name: 30|🇨🇦 加拿大 073
   network: ws
   port: '80'
@@ -159,94 +185,6 @@ proxies:
     headers:
       Host: de2.xv2ray.net
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 023
-  network: ws
-  port: '80'
-  server: 104.21.226.78
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt5.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦|CA|加拿大|@wxgqlfx|17
-  network: ws
-  port: 8080
-  server: 23.227.38.44
-  tls: false
-  type: vmess
-  uuid: 33eb512b-8f3a-459b-b823-3cccb6e82049
-  ws-opts:
-    headers:
-      Host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    path: 33eb512b-8f3a-459b-b823-3cccb6e82049-vm
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 030
-  network: ws
-  port: '80'
-  server: 104.21.226.196
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt5.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 027
-  network: ws
-  port: '80'
-  server: 104.21.226.136
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt5.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 041
-  network: ws
-  port: '80'
-  server: 104.21.226.251
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt5.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9...
-  network: tcp
-  port: '3389'
-  server: 142.93.144.99
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 070
-  network: ws
-  port: '443'
-  server: 172.67.220.64
-  tls: true
-  type: vmess
-  uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
-  ws-opts:
-    headers:
-      Host: www.31000oooowe2.bf
-    path: /df97b21e-3943-4865-af18-b5ea9676b037
 - alterId: 0
   cipher: auto
   name: 30|🇨🇦|CA|加拿大|@wxgqlfx|33
@@ -262,17 +200,27 @@ proxies:
     path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm
 - alterId: 0
   cipher: auto
-  name: 30|🇨🇦 加拿大 071
+  name: 30|🇨🇦|CA|加拿大|@wxgqlfx|17
   network: ws
-  port: '443'
-  server: 104.21.25.78
-  tls: true
+  port: 8080
+  server: 23.227.38.44
+  tls: false
   type: vmess
-  uuid: 1cbb309d-cf3f-464d-a61d-ebaa91983f24
+  uuid: 33eb512b-8f3a-459b-b823-3cccb6e82049
   ws-opts:
     headers:
-      Host: dk2-vmess.sshmax.xyz
-    path: /vmess
+      Host: widescreen-instruction-breakdown-postage.trycloudflare.com
+    path: 33eb512b-8f3a-459b-b823-3cccb6e82049-vm
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9...
+  network: tcp
+  port: '3389'
+  server: 142.93.144.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
   name: 30|🇨🇦|CA|加拿大|@wxgqlfx|21
@@ -288,10 +236,49 @@ proxies:
     path: 1a855748-ec07-408a-a3a2-7e1099a30616-vm
 - alterId: 0
   cipher: auto
-  name: 30|🇨🇦 加拿大 025
+  name: 30|🇨🇦 加拿大 071
+  network: ws
+  port: '443'
+  server: 104.21.25.78
+  tls: true
+  type: vmess
+  uuid: 1cbb309d-cf3f-464d-a61d-ebaa91983f24
+  ws-opts:
+    headers:
+      Host: dk2-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇦|CA|加拿大|@wxgqlfx|53
+  network: ws
+  port: 8080
+  server: 23.227.38.11
+  tls: false
+  type: vmess
+  uuid: 4a5ae806-ee72-473a-83b2-531808f454d5
+  ws-opts:
+    headers:
+      Host: championship-bidding-oxygen-brochure.trycloudflare.com
+    path: 4a5ae806-ee72-473a-83b2-531808f454d5-vm
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇦 加拿大 070
+  network: ws
+  port: '443'
+  server: 172.67.220.64
+  tls: true
+  type: vmess
+  uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
+  ws-opts:
+    headers:
+      Host: www.31000oooowe2.bf
+    path: /df97b21e-3943-4865-af18-b5ea9676b037
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇦 加拿大 041
   network: ws
   port: '80'
-  server: 104.21.226.100
+  server: 104.21.226.251
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -314,30 +301,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🇨🇦|CA|加拿大|@wxgqlfx|53
+  name: 30|🇨🇦|CA|加拿大|@wxgqlfx|29
   network: ws
   port: 8080
-  server: 23.227.38.11
+  server: 23.227.39.45
   tls: false
   type: vmess
-  uuid: 4a5ae806-ee72-473a-83b2-531808f454d5
+  uuid: 33eb512b-8f3a-459b-b823-3cccb6e82049
   ws-opts:
     headers:
-      Host: championship-bidding-oxygen-brochure.trycloudflare.com
-    path: 4a5ae806-ee72-473a-83b2-531808f454d5-vm
+      Host: widescreen-instruction-breakdown-postage.trycloudflare.com
+    path: 33eb512b-8f3a-459b-b823-3cccb6e82049-vm
 - alterId: 0
   cipher: auto
-  name: 30|🇨🇦 加拿大 021
+  name: 30|🇨🇦 加拿大 025
   network: ws
   port: '80'
-  server: 172.67.241.39
+  server: 104.21.226.100
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt5.ir
-    path: /?ed=2048&Telegram🇨🇳
+    path: /
 - alterId: 0
   cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
@@ -347,7 +334,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 67e59822-7720-4bb3-86e1-a43ac9b7cd40
+  uuid: 2aa0a881-562b-4d2c-ba3a-c4cf2b25fcf5
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -357,4 +344,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4da8dd7f-82ac-3ac3-aec2-5be5d5a34802
+  uuid: fceed1eb-f6f8-30fd-9ac7-d7eb7c5fc44f
