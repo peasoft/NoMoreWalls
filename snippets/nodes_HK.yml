@@ -1,14 +1,32 @@
 proxies:
-- alterId: 0
+- alterId: 32
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇭🇰 HK-185.242.232....
-  network: tcp
-  port: '25185'
-  server: 185.242.232.164
-  servername: ''
+  name: 10|🇭🇰HK-182.16.1.194-8686 | 6.04M...
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 784e7466-c926-4c50-dbf4-f07fe8eaf77d
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|[vmess]🇭🇰 HK | 香港 LB
+  network: ws
+  port: '443'
+  server: hkcft01.xqc.best
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: d51c0c55-1393-4826-ad5c-727c26fbfa38
+  ws-opts:
+    headers:
+      Host: d26d41lxntyhp6.cloudfront.net
+    path: /stream
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 32|🇭🇰 香港KT|@ripaojiedian
@@ -70,7 +88,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3870cdf8-b4f7-36e3-828a-8325988b4328
+  uuid: 40bf8bf5-2be1-3cd2-bf83-2379c2d42577
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -80,7 +98,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3870cdf8-b4f7-36e3-828a-8325988b4328
+  uuid: 40bf8bf5-2be1-3cd2-bf83-2379c2d42577
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -90,4 +108,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3870cdf8-b4f7-36e3-828a-8325988b4328
+  uuid: 40bf8bf5-2be1-3cd2-bf83-2379c2d42577
