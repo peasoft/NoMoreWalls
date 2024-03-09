@@ -9,22 +9,16 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0914 | 5....
+  name: 10|🇨🇦CA-134.195.196.178-0787 | 12...
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0916 | 4....
+  name: 10|🇨🇦CA-134.195.196.178-0791 | 11...
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
-  type: ss
-- cipher: aes-256-gcm
-  name: 10|🇨🇦CA-134.195.196.231-6362 | 1....
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 134.195.196.231
   type: ss
 - alterId: 0
   cipher: auto
@@ -35,16 +29,14 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 2965c1e9-a552-4a58-9807-f6519aa45d0d
+  uuid: 983d118f-07dc-466f-acbd-8f3d3f295256
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 001 #1'
+  name: 24|加拿大 001
   network: ws
   port: 2082
   server: 104.18.202.250
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
@@ -147,6 +139,19 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 24|加拿大 015
+  network: ws
+  port: 2052
+  server: 104.21.23.231
+  skip-cert-verify: true
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
   name: '24,30|加拿大 016 #1'
   network: ws
   port: 443
@@ -200,10 +205,11 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 020
+  name: '24,30|加拿大 020 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.24.0.11
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -310,9 +316,23 @@ proxies:
     headers:
       Host: www.68841301.xyz
     path: /path/153428133302
-- alterId: 0
+- alterId: 1
   cipher: auto
   name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '443'
+  server: 104.21.4.29
+  servername: oliv.beauty
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: oliv.beauty
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
   network: ws
   port: '443'
   server: 104.21.75.246
@@ -326,6 +346,20 @@ proxies:
     path: /ophelia.mom:443/linkvws
 - alterId: 0
   cipher: auto
+  name: 30|🔒 VM-WS-NA 🇨🇦 CA-23.26.239.147...
+  network: ws
+  port: '46768'
+  server: 23.26.239.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1362cc37-0917-4e40-dce4-c689609d9e82
+  ws-opts:
+    headers:
+      Host: 23.26.239.147
+    path: /
+- alterId: 0
+  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -333,7 +367,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 234a5e0a-2777-4f6b-a885-5d7b0601da07
+  uuid: 54bd8dbb-e91c-4691-a1bd-b39343f32e85
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -343,4 +377,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 12b70143-504d-35f6-8a4f-b25cffbb9d24
+  uuid: a5694c41-1a00-34b3-bce1-e6dd3ee13f29
