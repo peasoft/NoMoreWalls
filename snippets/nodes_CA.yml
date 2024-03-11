@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,6,8,16,38|🇨🇦_CA_加拿大 #4'
+  name: '0,2,6,8,15,16,30,38|🇨🇦_CA_加拿大 #5'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -47,7 +47,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 06d57c80-b5db-4adb-8235-1d0b3b878a41
+  uuid: fdf3f5c7-ea1c-4622-8f97-7a6fd92715ca
 - alterId: 0
   cipher: auto
   name: 24|加拿大 001
@@ -277,11 +277,10 @@ proxies:
     path: f8c92b3b
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 022 #1'
+  name: 24,30|🇨🇦 加拿大 022
   network: ws
-  port: 443
+  port: '443'
   server: 104.21.25.94
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -401,13 +400,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 031 #1'
+  name: 24|加拿大 031
   network: ws
   port: 8080
   server: ip1.ag.cn.eu.org
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 6c6b7018-654f-42cc-bbbc-2ff6e5be8cd4
   ws-opts:
@@ -444,10 +441,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 034
+  name: '24,30|加拿大 034 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.21.31.87
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -512,10 +510,11 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 039
+  name: '24,30|加拿大 039 #1'
   network: ws
-  port: '2096'
+  port: 2096
   server: zula.ir
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -539,12 +538,11 @@ proxies:
     path: /video/u4eCZTxW
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 041
+  name: 24|加拿大 041
   network: ws
-  port: '2095'
+  port: 2095
   server: russia.com
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
   ws-opts:
@@ -553,36 +551,48 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 24,30|🇺🇸|US|美国|@wxgqlfx|64
+  name: 24|加拿大 042
   network: ws
-  port: '8880'
+  port: 8880
   server: russia.com
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
   ws-opts:
     headers:
       Host: ssrsub.v03.ssrsub.com
     path: /api/v3/download.getFile
+- alterId: 64
+  cipher: auto
+  name: 24|加拿大 043
+  network: ws
+  port: 37001
+  server: 74.48.156.201
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.60493269.xyz
+    path: /path/153428133302
+- alterId: 0
+  cipher: auto
+  name: 24,30|🇨🇦 加拿大 044
+  network: ws
+  port: '2096'
+  server: 104.21.25.8
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 22999f0a-20b0-485d-b000-fa59586940f9
+  ws-opts:
+    headers:
+      Host: fr2-vmess.sshmax.xyz
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: '30|Channel id: @ShadowProxy66 🇨🇦'
-  network: ws
-  port: '443'
-  server: 104.21.75.246
-  servername: cf.tonyluk.link
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: cf.tonyluk.link
-    path: /ophelia.mom:443/linkvws
-- alterId: 0
-  cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
   network: ws
   port: '443'
   server: 104.21.55.223
@@ -593,6 +603,20 @@ proxies:
   ws-opts:
     headers:
       Host: jader.fun
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
+  network: ws
+  port: '443'
+  server: 104.21.12.173
+  servername: meroiy.icu
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -610,20 +634,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #3'
-  network: ws
-  port: '443'
-  server: 104.21.12.173
-  servername: meroiy.icu
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: meroiy.icu
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -631,7 +641,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d6a1cc50-74a9-4bdb-ad0d-1870e2db3e53
+  uuid: 0d5fcdd4-c236-4b49-a337-516dd24074f4
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -641,4 +651,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 312e76f2-4bca-3da2-b3d2-99ef74fd7add
+  uuid: a7781eaa-d59f-3f08-9e8c-822f6f98bfa9
