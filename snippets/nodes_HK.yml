@@ -92,22 +92,41 @@ proxies:
   server: 42.2.115.231
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-poly1305
   client-fingerprint: chrome
-  name: 32|🇭🇰 香港2|@ripaojiedian
-  password: 06a4d7d1-8169-4bd1-9726-d68d5c2fe92a
-  port: 44606
-  server: hk.1.thap.xyz
+  name: 32,33|香港2|@ripaojiedian
+  network: ws
+  port: '58080'
+  server: 223.113.130.55
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 5d75216f-c2ec-3136-b749-fcfe40ed4b4e
+  ws-opts:
+    headers:
+      Host: cache-hk-1.cn-db.top
+    path: /db00
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 32|🇭🇰 香港4|@ripaojiedian
-  password: 07d1caeb-1357-48fc-9dd6-19d70024e0fd
+  password: 069e43cb-15cd-4d3c-9710-6aeb074a5b18
   port: 43217
   server: hk05.jjjjjj.icu
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 33|香港3|@ripaojiedian
+  network: tcp
+  port: '25469'
+  server: 103.30.76.87
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8691b44b-3736-4576-b2d1-b70e4bea5044
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
@@ -117,7 +136,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c9282bc5-fb37-3bd0-ab91-418bfb9725f4
+  uuid: 703a24d4-a05e-3095-8075-c3c747c02a87
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -127,7 +146,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c9282bc5-fb37-3bd0-ab91-418bfb9725f4
+  uuid: 703a24d4-a05e-3095-8075-c3c747c02a87
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -137,4 +156,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c9282bc5-fb37-3bd0-ab91-418bfb9725f4
+  uuid: 703a24d4-a05e-3095-8075-c3c747c02a87
