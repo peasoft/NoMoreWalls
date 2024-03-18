@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,6,8|🇨🇦_CA_加拿大 #10'
+  name: '2,6,8,38|🇨🇦_CA_加拿大 #20'
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -14,7 +14,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '2,6,8|🇨🇦_CA_加拿大 #11'
+  name: '2,6,8,38|🇨🇦_CA_加拿大 #23'
   network: ws
   port: 8080
   server: 23.227.38.22
@@ -27,7 +27,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '2,6,8,15,16,30,38|🇨🇦_CA_加拿大 #21'
+  name: '2,6,8,15,16,38|🇨🇦_CA_加拿大 #24'
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -47,7 +47,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '2,3,6,7,8,9,15,16,24,38|🇨🇦_CA_加拿大 #22'
+  name: '2,3,6,7,8,9,15,16,24,38|🇨🇦_CA_加拿大 #21'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -58,7 +58,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '2,6,8,16|🇨🇦_CA_加拿大 #17'
+  name: '2,6,8,16,38|🇨🇦_CA_加拿大 #22'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -126,13 +126,13 @@ proxies:
       host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0940 | 3....
+  name: 10|🇨🇦CA-134.195.196.178-0969 | 13...
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0941 | 2....
+  name: 10|🇨🇦CA-134.195.196.178-0973 | 14...
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
@@ -146,7 +146,20 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9e3ace31-adc3-4429-8e48-f37fe0420529
+  uuid: f7e8fe62-2567-4acb-9eaa-edfce4ba3695
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 002
+  network: ws
+  port: 8080
+  server: www.velvetmountain.shop
+  skip-cert-verify: true
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
+    path: /
 - alterId: 0
   cipher: auto
   name: 24|加拿大 003
@@ -188,29 +201,16 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 009
+  name: 24|加拿大 007
   network: ws
-  port: 2052
-  server: 172.67.214.33
+  port: 8080
+  server: 172.67.143.192
   skip-cert-verify: true
   type: vmess
-  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 010
-  network: ws
-  port: 2052
-  server: 104.21.23.231
-  skip-cert-verify: true
-  type: vmess
-  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
+      Host: www.velvetmountain.shop
     path: /
 - alterId: 0
   cipher: auto
@@ -283,11 +283,10 @@ proxies:
     path: /twos
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 017 #1'
+  name: 24,30|🇨🇦 加拿大 017
   network: ws
-  port: 2086
+  port: '2086'
   server: 172.67.229.38
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -408,10 +407,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 026
+  name: '24,30|加拿大 026 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.252
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -437,7 +437,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '24,30|美国 CloudFlare节点 #69'
+  name: '24,30|加拿大 029 #1'
   network: ws
   port: 80
   server: 104.21.221.247
@@ -467,11 +467,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 031 #1'
+  name: 24,30|🇨🇦 加拿大 031
   network: ws
-  port: 2087
+  port: '2087'
   server: backend.app-browser.org
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -512,10 +511,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '24,30|美国 CloudFlare节点 #50'
+  name: '24,30|加拿大 035 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.133
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -541,10 +541,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 038
+  name: '24,30|加拿大 038 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.169
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -698,11 +699,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 052 #1'
+  name: 24,30|🇨🇦 加拿大 052
   network: ws
-  port: 80
+  port: '80'
   server: 104.21.221.203
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -851,10 +851,11 @@ proxies:
     path: /video/f8ZKTGaGoC/
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 064
+  name: '24,30|加拿大 064 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.65
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -991,11 +992,12 @@ proxies:
     path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 074
+  name: '24,30|🇺🇸 美国 CloudFlare节点 #18'
   network: ws
-  port: 80
+  port: '80'
   server: 104.21.224.233
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1102,11 +1104,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 084
+  name: '24,30|加拿大 084 #1'
   network: ws
   port: 80
   server: 104.21.224.201
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1282,11 +1286,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦CA | vmess | @v2Line | 1
+  name: 24,30|🇨🇦 加拿大 101
   network: ws
   port: '443'
   server: 104.20.231.21
-  servername: vpnsupportfast.vpnsuortfast.workers.dev
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1295,6 +1298,72 @@ proxies:
     headers:
       Host: vpnsupportfast.vpnsuortfast.workers.dev
     path: /kellie.makeup/linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|%F0%9F%87%A8%F0%9F%87%A6%20Can...
+  network: ws
+  port: '443'
+  server: muriel.makeup
+  servername: muriel.makeup
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: muriel.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '443'
+  server: 172.67.68.246
+  servername: vip2323.cfd
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vip2323.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
+  network: tcp
+  port: '22324'
+  server: 198.57.27.212
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
+  network: ws
+  port: '443'
+  server: 172.67.166.31
+  servername: inna.cfd
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇦CA | vmess | @ShadowProxy66 ...
+  network: ws
+  port: '443'
+  server: 104.21.11.133
+  servername: inna.cfd
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 30|🇨🇦CA | vmess | @DeamNet_Proxy ...
@@ -1311,66 +1380,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 30|🇨🇦CA | vmess | @ROMAX_VPN | 1
+  name: '30|%F0%9F%87%A8%F0%9F%87%A6%20Can... #1'
   network: ws
   port: '443'
-  server: 104.26.9.202
-  servername: vip2323.cfd
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: vip2323.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦CA | vmess | @mftizi | 14
-  network: ws
-  port: '80'
-  server: 104.21.225.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt5.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦'
-  network: ws
-  port: '443'
-  server: changupmecca.com
-  servername: cpisub7.cPifoRpERSIA.uk
-  tls: true
-  type: vmess
-  uuid: a4a23449-5267-41bc-b32c-c903cef6a6e3
-  ws-opts:
-    headers:
-      Host: cpisub7.cPifoRpERSIA.uk
-    path: /hdfy8c2.mahsaamini.cc/Av8czorIlYicU6D349brWUw6a
-- alterId: 0
-  cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
-  network: ws
-  port: '443'
-  server: 104.21.11.133
-  servername: inna.cfd
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #2'
-  network: ws
-  port: '443'
-  server: 172.67.166.31
+  server: inna.cfd
   servername: inna.cfd
   tls: true
   type: vmess
@@ -1395,14 +1408,18 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
-  network: tcp
-  port: '22324'
-  server: 198.57.27.212
-  servername: ''
-  tls: false
+  name: '30|Channel id: @ShadowProxy66 🇨🇦 #2'
+  network: ws
+  port: '443'
+  server: changupmecca.com
+  servername: cpisub7.cPifoRpERSIA.uk
+  tls: true
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: a4a23449-5267-41bc-b32c-c903cef6a6e3
+  ws-opts:
+    headers:
+      Host: cpisub7.cPifoRpERSIA.uk
+    path: /hdfy8c2.mahsaamini.cc/Av8czorIlYicU6D349brWUw6a
 - alterId: 0
   cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
@@ -1412,7 +1429,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 93f4975c-9c88-48ce-941c-ece08713293e
+  uuid: 1ff0ec85-3ccc-4911-a982-52dc0118d803
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1422,4 +1439,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4b52dd61-a9e9-3682-9a24-cb5705e27939
+  uuid: dc4cba02-ce23-3809-b250-aa114fc7a08a
