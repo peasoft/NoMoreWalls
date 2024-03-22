@@ -15,11 +15,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,30|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2...
+  name: 10|🇭🇰HK-152.32.190.239-0081 | 3.1...
   network: ws
-  port: '4431'
+  port: 4431
   server: 152.32.190.239
-  servername: cfhk.393930.xyz
+  servername: 🇭🇰HK-152.32.190.239-0081 | 3.164MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -117,9 +117,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,30|🇭🇰 香港 001
+  name: 24|香港 001
   network: ws
-  port: '443'
+  port: 443
   server: 194.104.147.80
   skip-cert-verify: true
   tls: true
@@ -145,18 +145,19 @@ proxies:
     path: /pdd?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|香港02-高速｜x1
-  network: ws
-  port: '443'
-  server: 18.167.20.205
-  servername: hk.pddf.buzz
-  tls: true
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 24|香港 003
+  network: http
+  port: 12696
+  server: 154.198.227.34
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
-  ws-opts:
-    headers:
-      Host: hk.pddf.buzz
-    path: /pdd?ed=2048
+  udp: true
+  uuid: a2f6696a-bf90-43ae-960b-c5bdc1fe947a
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 32|🇭🇰 香港KT|@ripaojiedian
@@ -264,7 +265,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: cad6b7d0-df2a-36b7-885d-d58623f62811
+  uuid: 8a8434fb-571a-3b42-9fad-44162a9ab120
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -274,7 +275,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: cad6b7d0-df2a-36b7-885d-d58623f62811
+  uuid: 8a8434fb-571a-3b42-9fad-44162a9ab120
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -284,4 +285,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: cad6b7d0-df2a-36b7-885d-d58623f62811
+  uuid: 8a8434fb-571a-3b42-9fad-44162a9ab120
