@@ -60,14 +60,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,24,30,32,33|香港3|@ripaojiedian
+  name: 10,30|美国 048
   network: ws
-  port: '10000'
+  port: 10000
   server: 38.207.174.231
   servername: cfhk.393930.xyz
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vmess
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
@@ -77,14 +75,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,30,32,33|香港2|@ripaojiedian
+  name: 10,30|↩️40@oneclickvpnkeys
   network: ws
   port: '2053'
   server: 47.242.155.183
   servername: cfhk.393930.xyz
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vmess
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
@@ -109,54 +105,25 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 23|香港 腾讯云
-  network: ws
-  port: '443'
-  server: 101.32.191.253
-  servername: hk.pdda.me
-  tls: true
-  type: vmess
-  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
-  ws-opts:
-    headers:
-      Host: hk.pdda.me
-    path: /pdd?ed=2048
-- alterId: 0
-  cipher: auto
   name: 24|香港 001
-  network: ws
-  port: 10020
-  server: 103.235.18.153
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
-  ws-opts:
-    headers:
-      Host: hk.pdda.me
-    path: /pdd?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '24,30|香港 002 #1'
-  network: ws
-  port: 57722
-  server: 45.39.199.113
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
-  ws-opts:
-    headers:
-      Host: hk.pdda.me
-    path: /pdd?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 24|香港 003
   network: ws
   port: 443
   server: 194.104.147.80
   skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
+  ws-opts:
+    headers:
+      Host: hk.pdda.me
+    path: /pdd?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|香港 002
+  network: ws
+  port: 57722
+  server: 45.39.199.113
+  servername: ''
   tls: true
   type: vmess
   uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
@@ -196,35 +163,72 @@ proxies:
   server: 8.218.196.35
   tfo: false
   type: ss
-- cipher: chacha20-ietf
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 32|🇭🇰 香港|@ripaojiedian
-  obfs: tls1.2_ticket_auth
-  obfs-param: 5db9910182.microsoft.com
-  password: Fhbe0z
-  port: 11810
-  protocol: auth_aes128_sha1
-  protocol-param: 10182:Ed7u0G
-  server: vip.basicnode.host
-  type: ssr
+  name: 32,33|香港3|@ripaojiedian
+  network: ws
+  port: '21032'
+  server: hk.lianjianode.cc
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2e009a5a-5329-46cc-a69e-097b94323328
+  ws-opts:
+    headers:
+      Host: hk1.luodi.xyz
+    path: /hongkong
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 32|🇭🇰 香港4|@ripaojiedian
   password: 66e030b0-e51c-11ee-b858-086e190000d9
-  port: 20001
-  server: hk1.mhw7e2.online
+  port: 20002
+  server: hk2.mhw7e2.online
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 32|🇭🇰 香港5|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: ac3669890.microsoft.com
+  password: Fhbe0z
+  port: 11845
+  protocol: auth_aes128_sha1
+  protocol-param: 9890:cqtnFi
+  server: 183.240.220.84
+  type: ssr
+- alterId: 64
+  cipher: auto
+  name: 33|香港|@ripaojiedian
+  network: tcp
+  port: '45020'
+  server: 183.236.51.62
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 33|香港2|@ripaojiedian
+  network: tcp
+  port: '54100'
+  server: 183.236.51.62
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 33|香港1|@ripaojiedian
   network: tcp
-  port: '35972'
-  server: 183.233.187.215
+  port: '42055'
+  server: 120.238.122.151
   servername: ''
   tls: false
   type: vmess
-  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
@@ -234,7 +238,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 067b8a92-2d11-30d8-878d-b28e0cb6dbaa
+  uuid: 44b9837f-1426-3faa-b673-03919560928b
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -244,7 +248,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 067b8a92-2d11-30d8-878d-b28e0cb6dbaa
+  uuid: 44b9837f-1426-3faa-b673-03919560928b
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -254,4 +258,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 067b8a92-2d11-30d8-878d-b28e0cb6dbaa
+  uuid: 44b9837f-1426-3faa-b673-03919560928b
