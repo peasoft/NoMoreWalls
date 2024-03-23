@@ -14,7 +14,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '2,6,15,23,38|🇨🇦_CA_加拿大->🇺🇸_US_美国 #3'
+  name: '2,6,15,23,38|🇨🇦_CA_加拿大->🇺🇸_US_美国 #2'
   network: ws
   port: 8080
   server: 23.227.38.22
@@ -59,7 +59,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '2,15,16,30|🇨🇦_CA_加拿大->🇺🇸_US_美国 #2'
+  name: '2,15,16|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -147,7 +147,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: d1f9bb81-39b6-46d6-a8e3-e62c8f7759d6
+  uuid: 7c316bab-b481-4334-ab45-95cad9f79f92
 - alterId: 0
   cipher: auto
   name: 24|加拿大 002
@@ -204,13 +204,11 @@ proxies:
     path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 006 #1'
+  name: 24|加拿大 006
   network: ws
   port: 80
   server: 172.67.170.75
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
   ws-opts:
@@ -219,11 +217,13 @@ proxies:
     path: /v149-dskds65
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 007
+  name: '24,30|加拿大 007 #1'
   network: ws
   port: 80
   server: 104.21.233.46
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -290,14 +290,13 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 24,30|🇦🇺澳大利亚 01
+  name: 24|加拿大 012
   network: ws
-  port: '2086'
+  port: 2086
   server: au01.appleid.bf
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: cdccacb4-8335-4824-8d60-005a755f798a
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
   ws-opts:
     headers:
       Host: au01.appleid.bf
@@ -1093,7 +1092,21 @@ proxies:
     path: ua1.v2rayserv.com/vmess
 - alterId: 0
   cipher: auto
-  name: 30|公益2-加拿大-负载均衡
+  name: 24|加拿大 073
+  network: ws
+  port: '2087'
+  server: 104.21.10.205
+  servername: api.cdn-tgju.org
+  tls: true
+  type: vmess
+  uuid: 13fc87d3-43c6-4cc1-9ab9-523d9707a113
+  ws-opts:
+    headers:
+      Host: api.cdn-tgju.org
+    path: /ows
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 074
   network: ws
   port: '443'
   server: gy2.us123.icu
@@ -1105,51 +1118,46 @@ proxies:
     headers:
       Host: jnd1.us123.icu
     path: /mmm
+- client-fingerprint: chrome
+  name: 24|加拿大 075
+  network: tcp
+  password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+  port: 443
+  server: 172.67.149.124
+  skip-cert-verify: false
+  sni: hdfyc1.achaemenidempireofpersia.uk
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 076
+  network: ws
+  port: 80
+  server: 104.21.233.49
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '80'
+  server: 104.21.224.101
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
   name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
-  network: ws
-  port: '443'
-  server: inna.cfd
-  servername: inna.cfd
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #2'
-  network: ws
-  port: '2096'
-  server: 104.21.69.44
-  servername: eu4.nlist.eu.org
-  tls: true
-  type: vmess
-  uuid: 98b879fc-ed38-4537-f02f-e88e4892d48c
-  ws-opts:
-    headers:
-      Host: eu4.nlist.eu.org
-    path: /liu
-- alterId: 0
-  cipher: auto
-  name: 30|公益1-加拿大-负载均衡
-  network: ws
-  port: '443'
-  server: gy1.us123.icu
-  servername: jnd1.us123.icu
-  tls: true
-  type: vmess
-  uuid: 6de7d79d-f473-48b8-808b-0f98d1a5ba95
-  ws-opts:
-    headers:
-      Host: jnd1.us123.icu
-    path: /mmm
-- alterId: 0
-  cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #3'
   network: ws
   port: '443'
   server: linde06.indiavideo.sbs
@@ -1163,16 +1171,6 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
-  network: tcp
-  port: '22324'
-  server: 198.57.27.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -1180,7 +1178,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 35791cd0-199b-49bd-ae5d-6d08642c56eb
+  uuid: 0a2b5503-e1f7-46f7-81f0-7d21427b78e5
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1190,4 +1188,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 34a854de-a9ea-378b-a865-806b75248891
+  uuid: 1564b00c-9603-383a-a8b9-85c285bc4010
