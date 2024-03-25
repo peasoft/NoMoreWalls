@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,15|🇨🇦_CA_加拿大 #6'
+  name: 2,15,23|美国 CloudFlare公司CDN节点(shopify)
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -58,7 +58,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '2,15,16|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
+  name: '2,15,16,23|美国 CloudFlare公司CDN节点(shopify) #2'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -125,14 +125,26 @@ proxies:
     headers:
       host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇦CA-104.234.69.243-0698 | 23....
+  network: ws
+  port: 53259
+  server: 104.234.69.243
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4dd6c192-8284-4504-9dee-5ca7da27069b
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0777 | 4....
+  name: 10|🇨🇦CA-134.195.196.178-0715 | 4....
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0778 | 2....
+  name: 10|🇨🇦CA-134.195.196.178-0721 | 4....
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
@@ -146,65 +158,10 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f49c77bb-e8f8-4868-af35-b4e3ca4efec9
-- alterId: 0
-  cipher: auto
-  name: 23,30|Sh
-  network: ws
-  port: 22751
-  server: 108.181.200.220
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 09fb03a6-5e49-4a59-e268-dbd1720f5eb1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 788f4dd1-016a-49aa-97fc-515ce0d65655
 - alterId: 0
   cipher: auto
   name: 24|加拿大 002
-  network: ws
-  port: 80
-  server: 4.namesilo123.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4d68da82-e8d0-4eaa-aec9-0df4a23e1a04
-  ws-opts:
-    headers:
-      Host: de.sanfen002.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: lRkGCkYS9X5GFzoZoavn2kmJ
-  name: 24|加拿大 003
-  network: grpc
-  port: 443
-  server: nodejs.org
-  servername: hdfy6c1.freeairlaines.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4804f14b-c1f8-452d-a6ec-eff1490aeac9
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 004
-  network: ws
-  port: 8080
-  server: cf.openxai.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
-  ws-opts:
-    headers:
-      host: eu1.openxai.link
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 005
   network: ws
   port: 2086
   server: 104.18.31.129
@@ -235,7 +192,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 008
+  name: 24|加拿大 005
   network: ws
   port: 443
   server: 172.67.132.209
@@ -253,7 +210,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 009
+  name: 24|加拿大 006
   network: ws
   port: 8080
   server: 108.162.192.100
@@ -270,7 +227,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: ''
-  name: 24|加拿大 010
+  name: 24|加拿大 007
   network: grpc
   port: '2087'
   server: elma.ns.cloudflare.com
@@ -279,7 +236,7 @@ proxies:
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
 - client-fingerprint: chrome
-  name: 24|加拿大 011
+  name: 24|加拿大 008
   network: tcp
   password: qG9K8AGnn9XH5jUqeFu96g
   port: 2083
@@ -290,24 +247,11 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 24,30|🇦🇺澳大利亚 01
-  network: ws
-  port: '2086'
-  server: au01.appleid.bf
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cdccacb4-8335-4824-8d60-005a755f798a
-  ws-opts:
-    headers:
-      Host: au01.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 013
+  name: '24,30|加拿大 013 #1'
   network: ws
   port: 80
   server: 104.21.236.82
+  servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -317,9 +261,9 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 014
+  name: '24,30|加拿大 014 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.52
   servername: ''
   tls: false
@@ -331,10 +275,11 @@ proxies:
     path: '/?ed=2048&amp;Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 015
+  name: '24,30|加拿大 015 #1'
   network: ws
   port: 80
   server: 104.21.224.1
+  servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -343,7 +288,7 @@ proxies:
       Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 24|加拿大 016
+  name: 24|加拿大 013
   network: tcp
   password: 5528de7e9efc37a45714fe24d7c2d7a5d19dc55a1ad162a7372d7595a14e998f
   port: 443
@@ -354,7 +299,7 @@ proxies:
   udp: false
 - alterId: '0'
   cipher: auto
-  name: 24|加拿大 017
+  name: 24|加拿大 014
   network: ws
   port: '443'
   server: 104.21.13.125
@@ -368,7 +313,7 @@ proxies:
     path: /vmess
 - alterId: 64
   cipher: auto
-  name: 24|加拿大 018
+  name: 24|加拿大 015
   network: ws
   port: 30000
   server: 66.103.205.14
@@ -382,7 +327,7 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 019
+  name: 24|加拿大 016
   network: ws
   port: 2086
   server: kr01.appleid.bf
@@ -395,20 +340,20 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇺🇸美国 02
+  name: 24|加拿大 017
   network: ws
   port: '2086'
   server: us01.appleid.bf
   tls: false
   type: vmess
-  uuid: cdccacb4-8335-4824-8d60-005a755f798a
+  uuid: a9e6d731-478b-4413-a17a-31e171de7505
   ws-opts:
     headers:
       Host: us01.appleid.bf
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 021
+  name: '24,30|加拿大 021 #1'
   network: ws
   port: 80
   server: 104.21.230.54
@@ -422,7 +367,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 022
+  name: 24|加拿大 019
   network: ws
   port: 2086
   server: ying.appleid.bf
@@ -435,7 +380,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 023
+  name: 24|加拿大 020
   network: ws
   port: 2086
   server: cf.iepl.live
@@ -448,7 +393,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 024
+  name: 24|加拿大 021
   network: ws
   port: 8080
   server: hytron.io
@@ -460,9 +405,35 @@ proxies:
     headers:
       Host: aktw.daozhang.love
     path: /
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 022
+  network: ws
+  port: '2086'
+  server: admin.arzonhost.ir
+  tls: false
+  type: vmess
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  ws-opts:
+    headers:
+      Host: admin.arzonhost.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 023
+  network: ws
+  port: '2086'
+  server: mizban.arzonhost.ir
+  tls: false
+  type: vmess
+  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
+  ws-opts:
+    headers:
+      Host: mizban.arzonhost.ir
+    path: /
 - alterId: '0'
   cipher: auto
-  name: 24|加拿大 027
+  name: 24|加拿大 024
   network: ws
   port: '2086'
   server: 104.19.129.103
@@ -476,7 +447,7 @@ proxies:
     path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 028
+  name: 24|加拿大 025
   network: ws
   port: 8880
   server: cfcdn1.sanfencdn9.com
@@ -490,7 +461,7 @@ proxies:
     path: /video/bYdJ7Vc2We
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 029
+  name: 24|加拿大 026
   network: ws
   port: 443
   server: 172.67.183.110
@@ -504,7 +475,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 030
+  name: 24|加拿大 027
   network: ws
   port: 443
   server: 172.67.201.14
@@ -518,7 +489,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 031
+  name: 24|加拿大 028
   network: ws
   port: 2082
   server: 172.67.207.209
@@ -531,7 +502,7 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 032
+  name: 24|加拿大 029
   network: ws
   port: 443
   server: 172.67.178.127
@@ -545,7 +516,7 @@ proxies:
     path: /123
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 033
+  name: 24|加拿大 030
   network: ws
   port: 443
   server: 172.67.77.95
@@ -559,7 +530,7 @@ proxies:
     path: /fthe4gsefgtdu
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 034
+  name: 24|加拿大 031
   network: ws
   port: 80
   server: www.kernels.bid
@@ -572,7 +543,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 035
+  name: 24|加拿大 032
   network: ws
   port: 80
   server: 104.16.120.85
@@ -585,7 +556,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 036
+  name: 24|加拿大 033
   network: grpc
   port: 2087
   server: 104.18.213.21
@@ -595,7 +566,7 @@ proxies:
   uuid: 08ec6a06-8c15-4069-a781-8c725a30b7e7
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 037
+  name: 24|加拿大 034
   network: ws
   port: 443
   server: 104.18.27.8
@@ -609,7 +580,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 038
+  name: 24|加拿大 035
   network: ws
   port: 443
   server: 172.67.26.173
@@ -623,7 +594,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 039
+  name: 24|加拿大 036
   network: ws
   port: 80
   server: 162.159.137.232
@@ -636,7 +607,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 040
+  name: 24|加拿大 037
   network: ws
   port: 443
   server: 23.227.39.166
@@ -650,7 +621,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 041
+  name: 24|加拿大 038
   network: ws
   port: 443
   server: 104.18.200.220
@@ -664,7 +635,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 042
+  name: 24|加拿大 039
   network: ws
   port: 443
   server: 104.16.219.230
@@ -678,7 +649,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 043
+  name: 24|加拿大 040
   network: ws
   port: 443
   server: 104.24.145.43
@@ -692,7 +663,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 044
+  name: 24|加拿大 041
   network: ws
   port: 443
   server: 104.17.177.224
@@ -706,7 +677,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 045
+  name: 24|加拿大 042
   network: ws
   port: 443
   server: 104.16.8.3
@@ -720,7 +691,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 046
+  name: 24|加拿大 043
   network: ws
   port: 443
   server: 104.24.177.7
@@ -734,7 +705,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 047
+  name: 24|加拿大 044
   network: ws
   port: 443
   server: 172.64.150.2
@@ -748,7 +719,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 048
+  name: 24|加拿大 045
   network: ws
   port: 443
   server: 104.25.105.122
@@ -762,7 +733,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 049
+  name: 24|加拿大 046
   network: ws
   port: 443
   server: 104.17.101.35
@@ -776,7 +747,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 050
+  name: 24|加拿大 047
   network: ws
   port: 8443
   server: 104.27.97.42
@@ -790,7 +761,7 @@ proxies:
     path: /cloudconebbb
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 051
+  name: 24|加拿大 048
   network: ws
   port: 8443
   server: 172.67.184.53
@@ -804,7 +775,7 @@ proxies:
     path: /cloudconebbb
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 052
+  name: 24|加拿大 049
   network: grpc
   port: 2087
   server: 104.17.27.43
@@ -814,7 +785,7 @@ proxies:
   uuid: 08ec6a06-8c15-4069-a781-8c725a30b7e7
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 053
+  name: 24|加拿大 050
   network: grpc
   port: 2087
   server: 104.18.219.67
@@ -824,7 +795,7 @@ proxies:
   uuid: 08ec6a06-8c15-4069-a781-8c725a30b7e7
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 054
+  name: 24|加拿大 051
   network: ws
   port: 443
   server: collinsdictionary.com
@@ -838,7 +809,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 055
+  name: 24|加拿大 052
   network: ws
   port: 443
   server: streamyard.com
@@ -852,7 +823,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 056
+  name: 24|加拿大 053
   network: ws
   port: 443
   server: codesandbox.io
@@ -866,7 +837,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 057
+  name: 24|加拿大 054
   network: ws
   port: 443
   server: linuxhint.com
@@ -880,7 +851,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 058
+  name: 24|加拿大 055
   network: ws
   port: 443
   server: 104.16.119.47
@@ -894,7 +865,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 059
+  name: 24|加拿大 056
   network: ws
   port: 443
   server: 104.17.229.103
@@ -908,7 +879,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 060
+  name: 24|加拿大 057
   network: ws
   port: 443
   server: 104.27.97.42
@@ -922,7 +893,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 061
+  name: 24|加拿大 058
   network: ws
   port: 443
   server: 104.24.176.7
@@ -936,7 +907,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 062
+  name: 24|加拿大 059
   network: ws
   port: 443
   server: 104.27.203.169
@@ -950,7 +921,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 063
+  name: 24|加拿大 060
   network: ws
   port: 443
   server: 104.27.97.174
@@ -964,7 +935,7 @@ proxies:
     path: /wss13480
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 064
+  name: 24|加拿大 061
   network: ws
   port: 443
   server: 104.25.99.169
@@ -981,7 +952,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 065
+  name: 24|加拿大 062
   network: ws
   port: 80
   server: 172.67.217.144
@@ -995,7 +966,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 066
+  name: 24|加拿大 063
   network: ws
   port: 443
   server: 172.67.178.55
@@ -1009,7 +980,7 @@ proxies:
     path: /live
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 067
+  name: 24|加拿大 064
   network: ws
   port: 443
   server: 172.67.72.172
@@ -1023,7 +994,7 @@ proxies:
     path: /fthe4gsefgtdu
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 068
+  name: 24|加拿大 065
   network: ws
   port: 443
   server: 172.67.79.117
@@ -1037,7 +1008,7 @@ proxies:
     path: /vbje5ytgwfgdrhe
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 069
+  name: 24|加拿大 066
   network: ws
   port: 443
   server: 172.64.147.71
@@ -1051,7 +1022,7 @@ proxies:
     path: /xxX2
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 070
+  name: 24|加拿大 067
   network: ws
   port: 80
   server: jd2.shabijichang.com
@@ -1064,7 +1035,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 071
+  name: 24|加拿大 068
   network: ws
   port: 443
   server: mci.bamarambash.monster
@@ -1078,7 +1049,7 @@ proxies:
     path: /b8767a6a-1c30-11ee-ba76-9ee097a90b8b
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 072
+  name: 24|加拿大 069
   network: ws
   port: 443
   server: ip.saintink.eu.org
@@ -1106,7 +1077,7 @@ proxies:
     path: /ows
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 074
+  name: 24|加拿大 071
   network: ws
   port: '443'
   server: gy2.us123.icu
@@ -1119,7 +1090,7 @@ proxies:
       Host: jnd1.us123.icu
     path: /mmm
 - client-fingerprint: chrome
-  name: 24|加拿大 075
+  name: 24|加拿大 072
   network: tcp
   password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
   port: 443
@@ -1130,24 +1101,27 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 076
-  network: ws
-  port: 80
-  server: 104.21.233.49
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: 24|加拿大 077
+  name: 24|加拿大 074
   network: ws
   port: 8080
   server: russia.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: bd8c41a8-7598-4c28-9965-522545e14892
+  ws-opts:
+    headers:
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|加拿大 075
+  network: ws
+  port: 8080
+  server: www.who.int
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -1162,55 +1136,7 @@ proxies:
   client-fingerprint: chrome
   name: 24|加拿大 078
   network: ws
-  port: 8080
-  server: www.who.int
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bd8c41a8-7598-4c28-9965-522545e14892
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|加拿大 079
-  network: ws
-  port: 80
-  server: russia.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bd8c41a8-7598-4c28-9965-522545e14892
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|加拿大 080
-  network: ws
-  port: 80
-  server: www.who.int
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bd8c41a8-7598-4c28-9965-522545e14892
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24,30|🇨🇦 加拿大 081
-  network: ws
-  port: '2053'
+  port: 2053
   server: m07.tk4433.com
   skip-cert-verify: false
   tfo: false
@@ -1223,7 +1149,7 @@ proxies:
     path: /m07.tk4433.com
 - alterId: 0
   cipher: auto
-  name: '24,30|美国 CloudFlare节点 #29'
+  name: '24,30|加拿大 082 #1'
   network: ws
   port: 80
   server: 104.21.237.32
@@ -1271,10 +1197,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 085
+  name: '24,30|加拿大 085 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.237.201
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -1286,10 +1213,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 086
+  name: '24,30|加拿大 086 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.186
+  servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1299,21 +1227,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 087
-  network: ws
-  port: '80'
-  server: 104.21.225.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 088
+  name: 24|加拿大 085
   network: ws
   port: 8080
   server: yh1.freeh1.xyz
@@ -1328,18 +1242,459 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  name: 24|加拿大 086
   network: ws
-  port: '443'
-  server: 172.67.166.31
-  servername: inna.cfd
-  tls: true
+  port: 80
+  server: 104.21.236.54
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 1973e770-e615-11ee-b238-205c6d5f5d78
   ws-opts:
     headers:
-      Host: inna.cfd
-    path: /linkvws
+      host: VKJi7.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 087
+  network: ws
+  port: 80
+  server: 104.21.235.229
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: m4p9q.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 088
+  network: ws
+  port: 80
+  server: 104.21.238.130
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 089
+  network: ws
+  port: 80
+  server: 104.21.238.2
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 090
+  network: ws
+  port: 80
+  server: 104.21.235.6
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: m4p9q.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 091
+  network: ws
+  port: 80
+  server: 104.21.238.159
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 092
+  network: ws
+  port: 80
+  server: 104.21.238.151
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '24,30|美国 CloudFlare节点 #65'
+  network: ws
+  port: 80
+  server: 104.21.237.136
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: hDIgP.cnbete.life
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 24|加拿大 094
+  network: tcp
+  password: ce8b8b30ebba45f2a38dd608b85e8628
+  port: 443
+  server: 104.16.159.9
+  skip-cert-verify: false
+  sni: bangladeshipatri.com
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 24|加拿大 095
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 104.16.192.1
+  skip-cert-verify: true
+  sni: sherasheba.com
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 096
+  network: ws
+  port: 80
+  server: 104.21.235.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: m4p9q.cnbete.life
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 24|加拿大 097
+  network: tcp
+  password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+  port: 443
+  server: 104.21.47.176
+  skip-cert-verify: false
+  sni: hdfyc1.achaemenidempireofpersia.uk
+  type: trojan
+  udp: false
+- alterId: '0'
+  cipher: auto
+  name: 24|加拿大 098
+  network: ws
+  port: '80'
+  server: 104.21.237.120
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: hDIgP.cnbete.life
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 24|加拿大 099
+  network: tcp
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  port: 443
+  server: 104.16.192.157
+  skip-cert-verify: true
+  sni: jobscareerfortoday.com
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|加拿大 104
+  network: ws
+  port: 80
+  server: 104.21.220.157
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&amp;Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 24,30|🇺🇸|US|美国|@wxgqlfx|76
+  network: ws
+  port: 80
+  server: 104.21.237.26
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: hDIgP.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24,30|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '80'
+  server: 104.21.226.32
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 24,30|美国 CloudFlare节点 19
+  network: ws
+  port: 80
+  server: 104.21.224.129
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '24,30|🇺🇸 美国 CloudFlare节点 #2'
+  network: ws
+  port: '80'
+  server: 104.21.237.212
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: hDIgP.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '24,30|【电报：@ccbaohe|免费机场节点 🇺🇸 美国 - 波特... #3'
+  network: ws
+  port: '80'
+  server: 104.21.224.2
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24,30|US_youtube@资源分享师_120
+  network: ws
+  port: 80
+  server: 104.21.235.178
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: m4p9q.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24,30|🇺🇸|US|美国|@wxgqlfx|42
+  network: ws
+  port: 80
+  server: 104.21.237.134
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: hDIgP.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24,30|US_youtube@资源分享师_12
+  network: ws
+  port: 80
+  server: 104.21.236.255
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1973e770-e615-11ee-b238-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: VKJi7.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '24,30|美国(yudou66.com 玉豆免费节点) #2'
+  network: ws
+  port: '80'
+  server: 104.21.236.227
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1973e770-e615-11ee-b238-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: VKJi7.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24,30|☸️30@oneclickvpnkeys
+  network: ws
+  port: '80'
+  server: 104.21.237.184
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: hDIgP.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '24,30|美国 CloudFlare节点 #58'
+  network: ws
+  port: '80'
+  server: 104.21.238.200
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24,30|美国 CloudFlare节点 9（ccbaohe.com）...
+  network: ws
+  port: 80
+  server: 104.21.224.101
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 24,30|美国【TG：@ccbaohe】定时更新节点订阅
+  network: ws
+  port: '80'
+  server: 104.21.221.9
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: '24,30|美国 CloudFlare节点 #64'
+  network: ws
+  port: 80
+  server: 104.21.237.91
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: hDIgP.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '24,30|美国 CloudFlare节点 #66'
+  network: ws
+  port: 80
+  server: 104.21.235.170
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: m4p9q.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 120
+  network: ws
+  port: 8880
+  server: 104.21.84.38
+  skip-cert-verify: true
+  type: vmess
+  uuid: f9c92e9c-5f92-4ff7-99a1-91a973b6ec57
+  ws-opts:
+    headers:
+      Host: us1.laobideng.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 121
+  network: ws
+  port: 2053
+  server: 104.21.80.53
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c
+  ws-opts:
+    headers:
+      Host: qin20.rong1104.uk
+    path: /qin20
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 122
+  network: ws
+  port: 2053
+  server: 104.21.67.246
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ffde13b1-e66e-4b2a-9392-4ed9a826aec6
+  ws-opts:
+    headers:
+      Host: mg013.tk4433.com
+    path: /mg013.tk4433.com
 - alterId: 0
   cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
@@ -1349,7 +1704,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b33440c2-9791-4656-ab50-62bac3b912dd
+  uuid: 19321cca-24e0-464d-a8f6-97385431fa1e
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1359,4 +1714,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: ba68b17a-e24b-3c23-9da2-3b8f3f8328aa
+  uuid: 7ba854a7-011a-3b71-bfab-20628cfd38d7
