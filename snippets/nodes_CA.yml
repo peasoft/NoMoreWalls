@@ -27,7 +27,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '2,15,30|🇨🇦_CA_加拿大 #12'
+  name: '2,15|🇨🇦_CA_加拿大 #8'
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -47,7 +47,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '2,3,6,7,15,16,24,38|🇨🇦_CA_加拿大 #13'
+  name: '2,3,6,7,15,16,24,38|🇨🇦_CA_加拿大 #12'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -127,7 +127,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-104.234.69.243-0749 | 18....
+  name: 10|🇨🇦CA-104.234.69.243-0604 | 21....
   network: ws
   port: 53259
   server: 104.234.69.243
@@ -137,16 +137,30 @@ proxies:
   uuid: 4dd6c192-8284-4504-9dee-5ca7da27069b
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇦CA-132.145.100.232-0152 | 37...
+  network: ws
+  port: 37302
+  server: 132.145.100.232
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 1a968778-72c9-4dce-be1b-65de17b05a6c
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0806 | 4....
+  name: 10|🇨🇦CA-134.195.196.178-0650 | 8....
   password: G!yBwPWH3Vao
-  port: 811
+  port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0813 | 4....
+  name: 10|🇨🇦CA-134.195.196.178-0651 | 8....
   password: G!yBwPWH3Vao
-  port: 804
+  port: 811
   server: 134.195.196.178
   type: ss
 - alterId: 0
@@ -158,12 +172,12 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 67f2d1eb-f6bf-47bd-826c-d52e0765ea6d
+  uuid: 3ddaa7ff-97b8-4c51-8033-5179babef566
 - alterId: 0
   cipher: auto
-  name: 23,24,30|🔒 VM-WS-NA 🇨🇦 CA-132.145.100.2...
+  name: 23,24|加拿大 020
   network: ws
-  port: '37302'
+  port: 37302
   server: 132.145.100.232
   servername: ''
   skip-cert-verify: true
@@ -274,20 +288,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 180
-  network: ws
-  port: '8080'
-  server: lanmaoyunvm.ksr.free.hr
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3b52fe01-aa51-49f7-b4e7-31b683ffb2a7
-  ws-opts:
-    headers:
-      Host: lanmaoyunvm.ksr.free.hr
-    path: /
-- alterId: 0
-  cipher: auto
   name: 24|加拿大 012
   network: ws
   port: 80
@@ -314,25 +314,12 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 210
-  network: ws
-  port: '8080'
-  server: lanmaoyun-fr.ksr.free.hr
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3b52fe01-aa51-49f7-b4e7-31b683ffb2a7
-  ws-opts:
-    headers:
-      Host: lanmaoyun-fr.ksr.free.hr
-    path: /
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: 24,32|🇭🇰 香港|@ripaojiedian
+  name: 24,30,32|🇭🇰 香港|@ripaojiedian
   network: ws
   port: 2095
   server: onea.flha.ru
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -345,10 +332,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24,32|🇯🇵 日本6|@ripaojiedian
+  name: 24,30,32|🇯🇵 日本6|@ripaojiedian
   network: ws
   port: 2095
   server: jpc.flha.ru
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -370,13 +358,11 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: '24,30|美国(yudou66.com 玉豆免费节点) #1'
+  name: 24|加拿大 018
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.235.206
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
   ws-opts:
@@ -385,58 +371,17 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '24,30|美国(yudou66.com 玉豆免费节点) #2'
+  name: 24|加拿大 019
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.235.227
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
   ws-opts:
     headers:
       Host: m4p9q.cnbete.life
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 202
-  network: ws
-  port: '80'
-  server: 104.21.222.111
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 167
-  network: ws
-  port: '443'
-  server: nina.bond
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nina.bond
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 加拿大 121
-  network: ws
-  port: '2053'
-  server: 104.21.80.53
-  tls: true
-  type: vmess
-  uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c
-  ws-opts:
-    headers:
-      Host: qin20.rong1104.uk
-    path: /qin20
 - alterId: 0
   cipher: auto
   name: 30|🇨🇦 加拿大 132
@@ -466,6 +411,32 @@ proxies:
     path: /v149-dskds65
 - alterId: 0
   cipher: auto
+  name: 30|🇨🇦 加拿大 167
+  network: ws
+  port: '443'
+  server: nina.bond
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nina.bond
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇦 加拿大 121
+  network: ws
+  port: '2053'
+  server: 104.21.80.53
+  tls: true
+  type: vmess
+  uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c
+  ws-opts:
+    headers:
+      Host: qin20.rong1104.uk
+    path: /qin20
+- alterId: 0
+  cipher: auto
   name: 30|🇨🇦 加拿大 070
   network: ws
   port: '2087'
@@ -486,7 +457,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: aa04d203-f221-433f-b283-cf3f755f76c3
+  uuid: 95c838fc-ecf8-4fad-8494-557b3f69cb4d
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -496,4 +467,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d98ecd55-4889-310d-93a0-a422060cac85
+  uuid: f303190d-b8e5-366a-a232-1a3509949141
