@@ -88,7 +88,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7f53783b-ec32-4b04-9129-5e1cff1bac0b
+  uuid: a2d6821a-7083-4119-b5e5-79aa3edcbc81
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡05
@@ -98,7 +98,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7f53783b-ec32-4b04-9129-5e1cff1bac0b
+  uuid: a2d6821a-7083-4119-b5e5-79aa3edcbc81
 - alterId: 0
   cipher: auto
   name: 22|🇸🇬新加坡06
@@ -108,7 +108,32 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7f53783b-ec32-4b04-9129-5e1cff1bac0b
+  uuid: a2d6821a-7083-4119-b5e5-79aa3edcbc81
+- alterId: 0
+  cipher: auto
+  name: 24,30|🇸🇬 新加坡 001
+  network: ws
+  port: '18275'
+  server: 45.32.99.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 386e5066-5078-4bef-96bf-4c25e422eabf
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-WS-NONE 🇸🇬 SG-45.32.99.83...
+  network: ws
+  port: 28051
+  server: 45.32.99.83
+  tls: false
+  type: vmess
+  uuid: bcf27281-d173-4404-a1ce-7513e4337622
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 30|新加坡【TG：@ccbaohe】定时更新节点订阅 20
@@ -125,17 +150,6 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-WS-NONE 🇸🇬 SG-45.32.99.83...
-  network: ws
-  port: 28051
-  server: 45.32.99.83
-  tls: false
-  type: vmess
-  uuid: bcf27281-d173-4404-a1ce-7513e4337622
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 31|【BGP】新加坡 04 | 1x SG
   network: tcp
   port: '31201'
@@ -143,7 +157,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 68f3db20-9c83-48a3-b019-e58ae8cff9ba
+  uuid: 1b96d5e2-9b0b-4c0a-bfe7-50a1529c2e24
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 05 | 1x SG
@@ -153,7 +167,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 68f3db20-9c83-48a3-b019-e58ae8cff9ba
+  uuid: 1b96d5e2-9b0b-4c0a-bfe7-50a1529c2e24
 - alterId: 0
   cipher: auto
   name: 31|【BGP】新加坡 06 | 1x SG
@@ -163,15 +177,39 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 68f3db20-9c83-48a3-b019-e58ae8cff9ba
-- cipher: chacha20-ietf-poly1305
+  uuid: 1b96d5e2-9b0b-4c0a-bfe7-50a1529c2e24
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 32|🇸🇬 新加坡|@ripaojiedian
-  password: f859f42a-d0fa-48e8-82a3-9ea77cf372c1
-  port: 20672
-  server: sg01.mofacloud.com
+  grpc-opts:
+    grpc-service-name: /
+  name: 32,33|新加坡|@ripaojiedian
+  network: grpc
+  port: '34237'
+  server: hk.yydsb.link
+  servername: nf.k8s.now.cc
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: 61f7a2a6-e699-40fd-bf63-5000aa4cbdeb
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 32,33|新加坡2|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 134.122.184.63
+  servername: www.36224588.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.36224588.xyz
+    path: /path/311227222808
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 32|🇸🇬 狮城特殊|@ripaojiedian
@@ -189,7 +227,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f9a66f72-b50e-3ccc-b9ce-f1c4d04cb285
+  uuid: 63a87cbe-de6d-3b73-a0d4-6c7ffbb852f8
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 102 | 流媒体优化 | 1x
@@ -199,7 +237,7 @@ proxies:
   servername: sg02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f9a66f72-b50e-3ccc-b9ce-f1c4d04cb285
+  uuid: 63a87cbe-de6d-3b73-a0d4-6c7ffbb852f8
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡 | 103 | 负载优化 | 1x
@@ -209,7 +247,7 @@ proxies:
   servername: sg03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f9a66f72-b50e-3ccc-b9ce-f1c4d04cb285
+  uuid: 63a87cbe-de6d-3b73-a0d4-6c7ffbb852f8
 - alterId: 0
   cipher: auto
   name: 34|🇸🇬新加坡[国外直连]
@@ -219,4 +257,4 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f9a66f72-b50e-3ccc-b9ce-f1c4d04cb285
+  uuid: 63a87cbe-de6d-3b73-a0d4-6c7ffbb852f8
