@@ -1,15 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-104.234.69.243-0146 | 30....
+  name: 10,30|🔒 VM-WS-NA 🇨🇦 CA-104.234.69.24...
   network: ws
   port: 53259
   server: 104.234.69.243
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 4dd6c192-8284-4504-9dee-5ca7da27069b
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇦CA-134.195.196.178-0614 | 6....
@@ -93,7 +96,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c8b19279-0ae1-4d06-b603-a5067d3165a5
+  uuid: 86c8f023-e535-4380-9f83-7652a371de4a
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -401,6 +404,84 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
+  name: 24|加拿大 022
+  network: ws
+  port: 80
+  server: 172.67.204.84
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c9e99213-170b-458a-b45b-79454ac7cf4b
+  ws-opts:
+    headers:
+      host: fi2-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 023
+  network: ws
+  port: 443
+  server: 104.19.189.194
+  servername: data-hk-3.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: data-hk-3.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 024
+  network: ws
+  port: 2053
+  server: 104.19.134.20
+  servername: cache-hk-2.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-hk-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 025
+  network: ws
+  port: 2053
+  server: 104.19.164.33
+  servername: cache-hk-1.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 026
+  network: ws
+  port: 443
+  server: 104.17.248.120
+  servername: data-hk-1.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: data-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -408,7 +489,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 13ffc487-0033-4bae-b89d-052766f9d7cb
+  uuid: b070bc0e-b2e7-4749-a7f6-42f2256bde73
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -418,4 +499,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b923edeb-2cdf-3a6e-8403-703bb427077b
+  uuid: 4bc51979-a860-303b-bbd3-7d36260a75c6
