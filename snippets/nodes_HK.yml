@@ -1,12 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '10,24,30|香港 001 #1'
+  name: '10,30|香港 001 #1'
   network: ws
   port: 8080
   server: 194.99.79.178
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
@@ -28,19 +28,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|香港 002
+  name: 24|香港 001
   network: ws
-  port: 443
-  server: wachk01.caliburnonline.work
+  port: 2052
+  server: hk.wish.ml
   skip-cert-verify: true
-  tls: true
   type: vmess
-  udp: true
-  uuid: 58816c8a-cebc-4c04-b30e-6829e84c4e33
+  uuid: d45da401-1357-4310-9561-99f46f4b27c3
   ws-opts:
     headers:
-      Host: wachk01.caliburnonline.work
-    path: /oscarspy
+      Host: sg1.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|香港 002
+  network: ws
+  port: 2052
+  server: hk.wuyiqi.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: d45da401-1357-4310-9561-99f46f4b27c3
+  ws-opts:
+    headers:
+      Host: br.wish.ml
+    path: /
 - alterId: 0
   cipher: auto
   name: 30|🔒 VM-WS-TLS 🇭🇰 HK-43.154.96.33...
@@ -87,14 +98,23 @@ proxies:
   server: 61.224.79.46
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 32|🇭🇰 香港|@ripaojiedian
-  password: Rad35baG
-  port: 10001
-  server: 121.43.117.216
+  name: 32,33|香港|@ripaojiedian
+  network: ws
+  port: '10163'
+  server: zf.lalayun.cyou
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+  ws-opts:
+    headers:
+      Host: hk.lalayunssl.xyz
+    path: /v2ray
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -112,34 +132,16 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 32|🇭🇰 香港6|@ripaojiedian
-  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
-  port: 10061
-  server: v3-js-hk.as9929.uk
-  tfo: false
-  type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 33|香港2|@ripaojiedian
   network: tcp
-  port: '54100'
-  server: 183.236.51.59
+  port: '80'
+  server: UNLIMITED.HUY.0.SRL
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 33|香港3|@ripaojiedian
-  network: tcp
-  port: '44827'
-  server: hkscdn02.dorabbb.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 86933ebf-fe3a-4c67-8eb6-25c82bf07e85
+  uuid: f0d23e27-d3cf-4476-b75b-87552f9eee1a
 - alterId: 64
   cipher: auto
   name: 33|香港7|@ripaojiedian
