@@ -19,15 +19,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇯🇵JP-183.181.36.194-0116 | 1.3...
+  name: 10,30|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
   network: ws
-  port: 41597
+  port: '41597'
   server: 183.181.36.194
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 10|🇯🇵JP-185.172.113.182-0703 | 1....
@@ -134,7 +137,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: cc3c3efd-eb71-42c9-869b-3267fb3f84dd
+  uuid: 41c51ac0-aacc-4eb4-beea-2a57f52876f0
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本05
@@ -144,7 +147,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: cc3c3efd-eb71-42c9-869b-3267fb3f84dd
+  uuid: 41c51ac0-aacc-4eb4-beea-2a57f52876f0
 - alterId: 0
   cipher: auto
   name: 22|🇯🇵日本06
@@ -154,7 +157,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: cc3c3efd-eb71-42c9-869b-3267fb3f84dd
+  uuid: 41c51ac0-aacc-4eb4-beea-2a57f52876f0
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -204,20 +207,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|CR_分享日记_1
+  name: 30|AU_分享日记_2
   network: ws
-  port: 443
-  server: 190.93.247.155
-  tls: true
+  port: 26639
+  server: 91.149.236.44
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
   ws-opts:
-    headers:
-      Host: marien.motorcycles
-    path: /linkvws
+    path: /cctv13/hd.m3u8/
 - alterId: 0
   cipher: auto
-  name: 30|JP_分享日记_16
+  name: 30|JP_分享日记_2
+  network: tcp
+  port: 14935
+  server: 167.179.111.237
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+- alterId: 0
+  cipher: auto
+  name: 30|PK_分享日记
+  network: tcp
+  port: 43834
+  server: 50.114.243.61
+  tls: false
+  type: vmess
+  uuid: b246e34d-bbd1-4016-8f74-ea461c37e411
+- alterId: 0
+  cipher: auto
+  name: 30|JP_分享日记_20
   network: ws
   port: 2052
   server: 47.74.34.38
@@ -239,47 +258,13 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 30|AU_分享日记_2
-  network: ws
-  port: 26639
-  server: 91.149.236.44
-  tls: false
-  type: vmess
-  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
-  ws-opts:
-    path: /cctv13/hd.m3u8/
-- alterId: 0
-  cipher: auto
-  name: 30|NL_分享日记_8
-  network: ws
-  port: 443
-  server: 188.114.97.3
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|KZ_分享日记_4
+  name: 30|KZ_分享日记_3
   network: tcp
   port: 16179
   server: 45.152.84.131
   tls: false
   type: vmess
   uuid: d95078fa-9968-49fb-f505-78ccd01faa92
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 04  | 1x JP
@@ -289,7 +274,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d801c704-e5d6-445e-bb8a-99d019409696
+  uuid: f7d1e455-92d0-45be-8530-be1fcb661736
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 05  | 1x JP
@@ -299,7 +284,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d801c704-e5d6-445e-bb8a-99d019409696
+  uuid: f7d1e455-92d0-45be-8530-be1fcb661736
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 06  | 1x JP
@@ -309,24 +294,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d801c704-e5d6-445e-bb8a-99d019409696
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 32,33|日本2|@ripaojiedian
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1b06158a-ea35-4e54-885d-d1eb61f34278
-  ws-opts:
-    headers:
-      Host: agzbjszujp4.yofnhkfc.xyz
-    path: /video/ibCT6z55
+  uuid: f7d1e455-92d0-45be-8530-be1fcb661736
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -361,7 +329,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8c048f61-9317-3c0b-8e6f-40b8c1049b88
+  uuid: eb2f29bf-4166-3b93-b55b-9e4077876241
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 102 | 流媒体优化 | 1x
@@ -371,7 +339,7 @@ proxies:
   servername: jp02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8c048f61-9317-3c0b-8e6f-40b8c1049b88
+  uuid: eb2f29bf-4166-3b93-b55b-9e4077876241
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 103 | 负载优化 | 1x
@@ -381,7 +349,7 @@ proxies:
   servername: jp03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8c048f61-9317-3c0b-8e6f-40b8c1049b88
+  uuid: eb2f29bf-4166-3b93-b55b-9e4077876241
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本[国外直连]
@@ -391,4 +359,4 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8c048f61-9317-3c0b-8e6f-40b8c1049b88
+  uuid: eb2f29bf-4166-3b93-b55b-9e4077876241
