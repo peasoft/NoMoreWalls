@@ -863,7 +863,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: da41708b-3837-4942-85b6-e2231f696324
+  uuid: fb682a3c-0342-49e5-9e39-f71ef7601c7e
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国05
@@ -873,7 +873,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: da41708b-3837-4942-85b6-e2231f696324
+  uuid: fb682a3c-0342-49e5-9e39-f71ef7601c7e
 - alterId: 0
   cipher: auto
   name: 22|🇺🇸美国06
@@ -883,7 +883,7 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: da41708b-3837-4942-85b6-e2231f696324
+  uuid: fb682a3c-0342-49e5-9e39-f71ef7601c7e
 - alterId: 0
   cipher: auto
   name: '23|美国 CloudFlare节点 #2'
@@ -1325,12 +1325,14 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '24,30|美国 019 #1'
+  client-fingerprint: chrome
+  name: 24,30,32,33|美国|@ripaojiedian
   network: ws
-  port: 8080
+  port: '8080'
   server: 104.21.234.161
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 272733cb-3310-4eba-bb9f-8a39982c554e
@@ -1808,7 +1810,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 83c65005-9b4a-42f1-bc00-8dedeea128da
+  uuid: 7cc0a878-5d16-484b-921c-228aefaf1126
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 05 | 1x US
@@ -1818,7 +1820,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 83c65005-9b4a-42f1-bc00-8dedeea128da
+  uuid: 7cc0a878-5d16-484b-921c-228aefaf1126
 - alterId: 0
   cipher: auto
   name: 31|【BGP】美国 06 | 1x US
@@ -1828,15 +1830,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 83c65005-9b4a-42f1-bc00-8dedeea128da
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 32|🇺🇸 美国|@ripaojiedian
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.114.114.208
-  tfo: false
-  type: ss
+  uuid: 7cc0a878-5d16-484b-921c-228aefaf1126
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1854,33 +1848,14 @@ proxies:
     headers:
       Host: us82pRzxDMb.fzbqfrse.xyz
     path: /video/qYZue4zaWS
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 32,33|美国3|@ripaojiedian
-  network: ws
-  port: '8080'
-  server: 23.227.38.86
-  servername: ''
-  skip-cert-verify: false
+  name: 32|🇺🇸 美国3|@ripaojiedian
+  password: 3ce72168-730e-4020-baf8-620ee14634ac
+  port: 10000
+  server: uhisfgy78eu.cfprefer1.xyz
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    headers:
-      Host: dongtaiwang13.dtku47.xyz
-    path: /1IKYjV0r/
-- alterId: 0
-  cipher: auto
-  name: 33|美国4|@ripaojiedian
-  network: tcp
-  port: '21945'
-  server: 172.98.22.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: be2691a5-180e-488b-835a-45e991299830
+  type: ss
 - alterId: 0
   cipher: auto
   name: 33|美国5|@ripaojiedian
@@ -1904,7 +1879,7 @@ proxies:
   servername: nl01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 52b6c247-4de0-3d63-aa1d-6b676c88b583
+  uuid: e8b84a30-4c08-3d64-a4cc-1b8d2401bc61
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国[国外直连]
@@ -1914,7 +1889,7 @@ proxies:
   servername: us01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 52b6c247-4de0-3d63-aa1d-6b676c88b583
+  uuid: e8b84a30-4c08-3d64-a4cc-1b8d2401bc61
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 102 | 负载优化 | 1x
@@ -1924,7 +1899,7 @@ proxies:
   servername: us02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 52b6c247-4de0-3d63-aa1d-6b676c88b583
+  uuid: e8b84a30-4c08-3d64-a4cc-1b8d2401bc61
 - alterId: 0
   cipher: auto
   name: 34|🇺🇸美国 | 103 | 负载优化 | 1x
@@ -1934,7 +1909,7 @@ proxies:
   servername: us03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 52b6c247-4de0-3d63-aa1d-6b676c88b583
+  uuid: e8b84a30-4c08-3d64-a4cc-1b8d2401bc61
 - alterId: 0
   cipher: auto
   name: '38|🇺🇸_US_美国 #31'
