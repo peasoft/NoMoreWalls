@@ -94,12 +94,12 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4e4efd59-616e-4df8-8af0-2c09bf1c0fc5
+  uuid: 6e96b75a-9f37-493b-9da1-f0be2ab1afd9
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 002
+  name: 24,30|🇨🇦 加拿大 002
   network: ws
-  port: 8880
+  port: '8880'
   server: speed.cloudflare.com
   tls: false
   type: vmess
@@ -110,7 +110,7 @@ proxies:
     path: /nina.bond/linkvws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 003
+  name: '24,30|加拿大 003 #1'
   network: ws
   port: 8880
   server: 104.16.60.8
@@ -272,10 +272,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 012
+  name: '24,30|加拿大 012 #1'
   network: ws
   port: 2052
   server: 104.18.25.92
+  servername: ''
   tls: false
   type: vmess
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
@@ -485,9 +486,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 027
+  name: 24|加拿大 027
   network: ws
-  port: '2053'
+  port: 2053
   server: 104.18.65.179
   servername: data-2.cn-db.top
   skip-cert-verify: true
@@ -501,7 +502,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 028 #1'
+  name: 24|加拿大 028
   network: ws
   port: 2053
   server: 104.17.174.231
@@ -517,7 +518,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 029 #1'
+  name: 24|加拿大 029
   network: ws
   port: 443
   server: 104.19.6.88
@@ -533,7 +534,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '24,30|加拿大 030 #1'
+  name: 24|加拿大 030
   network: ws
   port: 2083
   server: 104.17.100.64
@@ -615,9 +616,9 @@ proxies:
     path: /update.microsoft.com?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 036
+  name: 24|加拿大 036
   network: ws
-  port: '2083'
+  port: 2083
   server: 104.18.211.13
   servername: data-2.cn-db.top
   skip-cert-verify: true
@@ -647,9 +648,9 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 24,30|🇨🇦 加拿大 038
+  name: 24|加拿大 038
   network: ws
-  port: '2083'
+  port: 2083
   server: 104.18.215.164
   servername: data-1.cn-db.top
   skip-cert-verify: true
@@ -663,32 +664,214 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  name: 24|加拿大 039
   network: ws
-  port: '443'
-  server: 162.159.192.83
-  servername: nina.bond
+  port: 2095
+  server: 104.26.4.57
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  ws-opts:
+    headers:
+      host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 040
+  network: ws
+  port: 2083
+  server: 104.19.45.82
+  servername: data-2.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: data-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 041
+  network: ws
+  port: 2053
+  server: 104.19.220.14
+  servername: cache-2.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 042
+  network: ws
+  port: 443
+  server: 104.19.20.171
+  servername: cache-1.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 043
+  network: ws
+  port: 2083
+  server: 104.17.158.249
+  servername: data-1.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: data-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: '24,30|加拿大 044 #1'
+  network: ws
+  port: 443
+  server: zula.ir
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: nina.bond
+      Host: nelly.homes
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-WS-NA 🇨🇦 CA-104.234.69.24...
+  name: 24,30|🇨🇦 加拿大 045
   network: ws
-  port: 53259
-  server: 104.234.69.243
-  servername: ''
+  port: '8080'
+  server: 172.67.199.185
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 4dd6c192-8284-4504-9dee-5ca7da27069b
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
     headers:
-      Host: ''
+      Host: oiictw.yydsii.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 046
+  network: ws
+  port: 443
+  server: 104.24.233.251
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cae63f0a-8e68-409e-bf8a-3ffc7e46622a
+  ws-opts:
+    headers:
+      Host: fang1.wiseebook.workers.dev
+    path: /cae63f0a-8e68-409e-bf8a-3ffc7e46622a-vmess
+- alterId: 0
+  cipher: auto
+  name: 30|رایگان | VMESS | @DailyV2RY | ...
+  network: ws
+  port: 443
+  server: muriel.makeup
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: muriel.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|رایگان | VMESS | @eliya_chiter...
+  network: ws
+  port: 443
+  server: 172.67.71.160
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 30|رایگان | VMESS | @ROMAX_VPN | ...
+  network: ws
+  port: 443
+  server: iran-011-join.outline-vpn.cloud
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kittiy.sbs
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|رایگان | VMESS | @nofiltering2...
+  network: ws
+  port: 443
+  server: 104.21.15.212
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '30|رایگان | VMESS | @DeamNet_Prox... #2'
+  network: ws
+  port: 80
+  server: 193.203.203.63
+  tls: false
+  type: vmess
+  uuid: f61203bd-f386-4d12-9853-cc829d6b7c9d
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 30|رایگان | VMESS | @kingofilter ...
+  network: ws
+  port: 443
+  server: 172.67.179.151
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kittiy.sbs
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '443'
+  server: 172.67.196.112
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
@@ -705,6 +888,32 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: '30|رایگان | VMESS | @ROMAX_VPN | ... #1'
+  network: ws
+  port: 443
+  server: 198.41.202.5
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kittiy.sbs
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|رایگان | VMESS | @ShadowProxy6...
+  network: ws
+  port: 443
+  server: 104.21.4.6
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: glweidf.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -712,7 +921,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9b4b3325-0d30-4929-aaaa-34a86105c314
+  uuid: 3209df2a-bdcf-4631-91dd-6e0b22ce89ab
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -722,4 +931,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 84b3ebd8-db8a-32b6-a467-a93f9ffba755
+  uuid: b26f2999-9c7e-3221-82db-212a830eb282
