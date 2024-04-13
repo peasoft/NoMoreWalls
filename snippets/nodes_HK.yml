@@ -44,29 +44,36 @@ proxies:
     path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 32|🇭🇰 香港4|@ripaojiedian
+  name: 32|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
-  port: 81
-  server: 8.210.201.82
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: h2.dspp.store
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 172.67.168.123
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 32,33|香港5|@ripaojiedian
-  network: ws
-  port: '8080'
-  server: 91.199.84.136
-  servername: hk-3.trollfunny.net
-  skip-cert-verify: false
+  name: 32|🇭🇰 香港4|@ripaojiedian
+  password: a-wym4ovY4Yw
+  port: 80
+  server: 1.65.216.43
   tfo: false
-  tls: true
-  type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 32|🇭🇰 香港5|@ripaojiedian
+  password: 08cb0fe6-a853-45ec-810e-1c662d30af58
+  port: 33865
+  server: rk.izoizoizo.top
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -84,14 +91,6 @@ proxies:
     headers:
       Host: hk.lalayunssl.xyz
     path: /v2ray
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 32|🇭🇰 香港7|@ripaojiedian
-  password: a-wym4ovY4Yw
-  port: 80
-  server: 1.36.223.86
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
   name: 33|香港|@ripaojiedian
@@ -131,7 +130,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4c9894df-06b3-363b-81a2-747119e31799
+  uuid: 789f36de-9fcf-352e-b5e3-1a570415e7ec
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -141,7 +140,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4c9894df-06b3-363b-81a2-747119e31799
+  uuid: 789f36de-9fcf-352e-b5e3-1a570415e7ec
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -151,4 +150,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4c9894df-06b3-363b-81a2-747119e31799
+  uuid: 789f36de-9fcf-352e-b5e3-1a570415e7ec
