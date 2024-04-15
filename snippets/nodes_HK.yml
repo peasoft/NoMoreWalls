@@ -1,7 +1,7 @@
 proxies:
 - alterId: 32
   cipher: auto
-  name: 10|🇭🇰HK-182.16.1.194-8453 | 1.352...
+  name: 10|🇭🇰HK-182.16.1.194-8453 | 1.076...
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -15,21 +15,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,30|🔒 VM-WS-NA 🇭🇰 HK-47.76.35.246:...
+  name: 10|🇭🇰HK-47.76.35.246-0132 | 1.079...
   network: ws
-  port: '24101'
+  port: 24101
   server: 47.76.35.246
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - cipher: aes-128-gcm
-  name: 10|🇭🇰HK-8.210.201.82-0641 | 1.939...
+  name: 10|🇭🇰HK-8.210.201.82-0641 | 1.077...
   password: a-wym4ovY4Yw
   port: 81
   server: 8.210.201.82
@@ -52,6 +49,20 @@ proxies:
     headers:
       HOST: cfhk.393930.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44...
+  network: ws
+  port: 26639
+  server: 91.149.236.44
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+  ws-opts:
+    headers:
+      Host: ''
+    path: /cctv13/hd.m3u8/
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 32|🇭🇰 香港KT|@ripaojiedian
@@ -68,20 +79,37 @@ proxies:
   server: 172.67.198.153
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 32|🇭🇰 香港3|@ripaojiedian
-  password: cff22fc2-7b50-4353-a695-158ac3a2738d
-  port: 35021
-  server: hk.4.thap.xyz
+  name: 32,33|香港4|@ripaojiedian
+  network: ws
+  port: '28681'
+  server: 47.242.22.171
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: aes-256-gcm
+  tls: false
+  type: vmess
+  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 32|🇭🇰 香港5|@ripaojiedian
-  password: f04b7244-2d04-44ee-8f3b-cc2aebc0dbb9
-  port: 48001
-  server: k1.b99.buzz
+  password: SBM7R883jBmnqe6C
+  port: 9053
+  server: 103.172.116.79
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 32|🇭🇰 香港7|@ripaojiedian
+  password: 4feb33c2-cb06-4371-a572-243d47b789d9
+  port: 20001
+  server: ddns.olucloud.subapi.cc
   tfo: false
   type: ss
 - alterId: 64
@@ -96,10 +124,10 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 33|香港4|@ripaojiedian
+  name: 33|香港3|@ripaojiedian
   network: tcp
-  port: '30112'
-  server: 183.240.179.207
+  port: '30111'
+  server: 183.232.170.21
   servername: ''
   tls: false
   type: vmess
@@ -113,7 +141,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b8998d2e-3543-31a1-96ec-9a6561dc3b20
+  uuid: 84a92450-b713-3012-80de-df36d5b47bc5
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -123,7 +151,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b8998d2e-3543-31a1-96ec-9a6561dc3b20
+  uuid: 84a92450-b713-3012-80de-df36d5b47bc5
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -133,4 +161,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b8998d2e-3543-31a1-96ec-9a6561dc3b20
+  uuid: 84a92450-b713-3012-80de-df36d5b47bc5
