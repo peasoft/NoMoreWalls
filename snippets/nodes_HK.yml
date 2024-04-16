@@ -30,14 +30,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 10,30,32,33|香港4|@ripaojiedian
+  name: 10,30|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
   network: ws
-  port: '28681'
+  port: 28681
   server: 47.242.22.171
   servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
@@ -99,20 +97,31 @@ proxies:
   server: 172.67.198.153
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 32|🇭🇰 香港4|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: 6f41b24.microsoft.com
+  password: Fhbe0z
+  port: 11421
+  protocol: auth_aes128_sha1
+  protocol-param: 24:SpYUtPeJYhRk4FWC
+  server: 120.232.240.1
+  type: ssr
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 32|🇭🇰 香港5|@ripaojiedian
-  password: SBM7R883jBmnqe6C
-  port: 9053
-  server: 103.172.116.79
+  password: 3bbdad44-9575-4044-8717-98ede6309161
+  port: 24105
+  server: gz.quanstring.top
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 32|🇭🇰 香港7|@ripaojiedian
-  password: 4feb33c2-cb06-4371-a572-243d47b789d9
-  port: 20001
-  server: ddns.olucloud.subapi.cc
+  name: 32|🇭🇰 香港6|@ripaojiedian
+  password: 0qHaOWVm6FnY
+  port: 3360
+  server: 34.92.186.236
   tfo: false
   type: ss
 - alterId: 64
@@ -121,6 +130,16 @@ proxies:
   network: tcp
   port: '54437'
   server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 33|香港2|@ripaojiedian
+  network: tcp
+  port: '41242'
+  server: 183.237.20.158
   servername: ''
   tls: false
   type: vmess
@@ -137,6 +156,16 @@ proxies:
   uuid: e456d54e-fb49-42c2-ace7-0dd141fee5a6
 - alterId: 0
   cipher: auto
+  name: 33|香港7|@ripaojiedian
+  network: tcp
+  port: '35996'
+  server: 786huix-ee.dc-zix4ssc1-hk03.my777999.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f9d88b9b-baf4-48cd-b98f-c28912b96ce5
+- alterId: 0
+  cipher: auto
   name: 34|🇭🇰香港 | 101 | 负载优化 | 1x
   network: tcp
   port: '30701'
@@ -144,7 +173,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 83931770-3a94-3a17-a0e7-42cc44660587
+  uuid: 4ac3dd74-d4de-3217-b181-5a049bedf129
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -154,7 +183,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 83931770-3a94-3a17-a0e7-42cc44660587
+  uuid: 4ac3dd74-d4de-3217-b181-5a049bedf129
 - alterId: 0
   cipher: auto
   name: 34|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -164,4 +193,4 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 83931770-3a94-3a17-a0e7-42cc44660587
+  uuid: 4ac3dd74-d4de-3217-b181-5a049bedf129
