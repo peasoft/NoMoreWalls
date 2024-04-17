@@ -1,22 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0790 | 1....
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0794 | 2....
+  name: 10|🇨🇦CA-134.195.196.178-0783 | 16...
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇦CA-134.195.196.178-0791 | 17...
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 134.195.196.178
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-158.51.123.111-1172 | 36....
+  name: 10|🇨🇦CA-158.51.123.111-1231 | 34....
   network: ws
   port: 443
   server: 158.51.123.111
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇦CA-23.162.200.227-1232 | 64....
+  network: ws
+  port: 443
+  server: 23.162.200.227
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -93,10 +105,10 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e6a09120-da5a-44bd-8ba7-613144cfb6ca
+  uuid: f1a9a420-4590-4100-ae28-c957a8dfcc40
 - alterId: 0
   cipher: auto
-  name: 23,30|CA_speednode_0001
+  name: 23,30|🇨🇦 加拿大
   network: ws
   port: 443
   server: 158.51.123.111
@@ -110,32 +122,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '24,30|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
-  network: ws
-  port: 2086
-  server: 104.21.4.14
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
-  ws-opts:
-    headers:
-      Host: admin.arzonhost.ir
-    path: /
-- alterId: 0
-  cipher: auto
   country: 🇨🇦CA
   delay: 2438
   h2-opts: {}
   http-opts: {}
-  name: '24,30|加拿大 002 #1'
+  name: 24,30|CA_speednode_0002
   network: ws
   port: 443
   server: 158.51.121.36
-  servername: 158.51.121.36
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -144,6 +139,21 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '24,30|加拿大 003 #1'
+  network: ws
+  port: 8080
+  server: 172.67.199.185
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -185,11 +195,13 @@ proxies:
   delay: 1777
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 006
+  name: '24,30|加拿大 006 #1'
   network: ws
   port: 2095
   server: 104.16.67.38
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   udp: true
   uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
@@ -572,7 +584,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24,32,33|美国5|@ripaojiedian
+  name: 24,30,32,33|美国5|@ripaojiedian
   network: ws
   port: '80'
   server: vps789.com
@@ -1481,6 +1493,16 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
+  network: tcp
+  port: '22324'
+  server: 198.57.27.212
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
   name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
   network: ws
   port: '443'
@@ -1495,6 +1517,20 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦 #2'
+  network: ws
+  port: '443'
+  server: martina.quest
+  servername: martina.quest
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: martina.quest
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -1502,7 +1538,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: abf6208b-4e8f-48c8-b934-d4cb97e7e72f
+  uuid: e0789c2e-7750-4be4-9afa-ee4d1ad8bb17
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1512,4 +1548,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e1c0c1cd-9b90-382d-ae06-ed247236c9e9
+  uuid: 56efa36b-6984-34b8-911d-a6b155636570
