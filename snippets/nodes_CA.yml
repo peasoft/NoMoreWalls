@@ -1,22 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0646 | 5....
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0647 | 6....
+  name: 10|🇨🇦CA-134.195.196.178-0741 | 17...
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 10|🇨🇦CA-134.195.196.178-0745 | 17...
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 134.195.196.178
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-158.51.123.111-3333 | 50....
+  name: 10|🇨🇦CA-158.51.123.111-3456 | 19....
   network: ws
   port: 443
   server: 158.51.123.111
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|🇨🇦CA-23.162.200.227-1228 | 74....
+  network: ws
+  port: 443
+  server: 23.162.200.227
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -93,7 +105,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 47b2a006-568c-4742-8b27-2d2a1e03f18b
+  uuid: e70d3fa8-1e38-42f7-aefc-07a55434ae10
 - alterId: 0
   cipher: auto
   country: 🇨🇦CA
@@ -113,6 +125,19 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 003
+  network: ws
+  port: 8080
+  server: 172.67.199.185
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -603,6 +628,23 @@ proxies:
   ws-opts:
     headers:
       HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  delay: 2164
+  h2-opts: {}
+  http-opts: {}
+  name: 24|加拿大 034
+  network: ws
+  port: 8080
+  server: 172.67.169.90
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
     path: /
 - alterId: 0
   cipher: auto
@@ -1432,17 +1474,17 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 30|加拿大-1.94MB/s
+  name: 30|🇨🇦 加拿大
   network: ws
   port: 443
-  server: 23.162.200.227
+  server: 158.51.123.111
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 23.162.200.227
+      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -1460,20 +1502,6 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 30|加拿大-157.1KB/s
-  network: ws
-  port: 443
-  server: 158.51.123.111
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 158.51.123.111
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -1481,7 +1509,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 1d357c9f-66f5-4bfd-935b-933fbc8c6469
+  uuid: 8067f04e-8248-4601-ba8e-b2912f063624
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1491,4 +1519,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4b2dd8d2-5ad0-3125-a0b6-d63190b0f93b
+  uuid: cf561b67-4ff5-30b6-a9d3-9cadd908230c
