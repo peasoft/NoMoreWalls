@@ -1,19 +1,19 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0702 | 3....
+  name: 10|🇨🇦CA-134.195.196.178-0702 | 12...
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 10|🇨🇦CA-134.195.196.178-0710 | 2....
+  name: 10|🇨🇦CA-134.195.196.178-0710 | 11...
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-158.51.123.111-0953 | 2.0...
+  name: 10|🇨🇦CA-158.51.123.111-0953 | 67....
   network: ws
   port: 443
   server: 158.51.123.111
@@ -25,7 +25,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇨🇦CA-23.162.200.227-0952 | 1.5...
+  name: 10|🇨🇦CA-23.162.200.227-0952 | 83....
   network: ws
   port: 443
   server: 23.162.200.227
@@ -105,7 +105,24 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 591c6fdf-d7b3-437c-bdaa-a2d7285a3897
+  uuid: 6bc8fede-ad6c-4d83-b525-19615f3d468f
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|加拿大 001
+  network: ws
+  port: 2086
+  server: 104.21.4.14
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  ws-opts:
+    headers:
+      Host: admin.arzonhost.ir
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇨🇦CA
@@ -148,13 +165,11 @@ proxies:
   delay: 1777
   h2-opts: {}
   http-opts: {}
-  name: '24,30|加拿大 004 #1'
+  name: 24|加拿大 004
   network: ws
   port: 2095
   server: 104.16.67.38
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   udp: true
   uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
@@ -562,10 +577,11 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 24,30|US_分享日记_64
+  name: '24,30|加拿大 031 #1'
   network: ws
   port: 443
   server: hms04.xmivideo.cfd
+  servername: ''
   tls: true
   type: vmess
   uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
@@ -575,7 +591,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 24,30|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.246....
+  name: '24,30|🇺🇸 美国 CloudFlare节点 #3'
   network: ws
   port: '2052'
   server: 104.19.246.67
@@ -787,35 +803,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #1'
-  network: ws
-  port: '443'
-  server: upload.ir
-  servername: pl1-vmess.sshmax.xyz
-  tls: true
-  type: vmess
-  uuid: 33653184-91f3-4f3f-b707-2fc21e9adeb8
-  ws-opts:
-    headers:
-      Host: pl1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
   name: '30|Channel id: @ShadowProxy66 🇨🇦 #2'
-  network: ws
-  port: '443'
-  server: 104.21.44.106
-  servername: xmivideo.cfd
-  tls: true
-  type: vmess
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  ws-opts:
-    headers:
-      Host: xmivideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '30|Channel id: @ShadowProxy66 🇨🇦 #4'
   network: ws
   port: '443'
   server: 172.67.196.112
@@ -827,6 +815,20 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦 #3'
+  network: ws
+  port: '443'
+  server: upload.ir
+  servername: pl1-vmess.sshmax.xyz
+  tls: true
+  type: vmess
+  uuid: 33653184-91f3-4f3f-b707-2fc21e9adeb8
+  ws-opts:
+    headers:
+      Host: pl1-vmess.sshmax.xyz
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: 30|CA_speednode_0001
@@ -841,6 +843,20 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '30|Channel id: @ShadowProxy66 🇨🇦 #4'
+  network: ws
+  port: '443'
+  server: 104.21.44.106
+  servername: xmivideo.cfd
+  tls: true
+  type: vmess
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  ws-opts:
+    headers:
+      Host: xmivideo.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 30|CA_speednode_0002
@@ -864,7 +880,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: dd31a611-98ce-4062-a70d-510e9db43d84
+  uuid: c8d1cd9b-8c5c-4a47-9809-729e5d7fd257
 - alterId: 0
   cipher: auto
   name: 34|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -874,4 +890,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e3da85d1-b3d5-3f55-80d4-be9fd59069cb
+  uuid: 9d1bce63-5e2b-312f-97f7-7bfa79f9e315
