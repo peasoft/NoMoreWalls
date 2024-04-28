@@ -1,11 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10|🇭🇰HK-152.32.190.239-0121 | 20....
+  name: 10,30|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2...
   network: ws
-  port: 4431
+  port: '4431'
   server: 152.32.190.239
-  servername: 🇭🇰HK-152.32.190.239-0121 | 20.088MB
+  servername: cfhk.393930.xyz
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -30,15 +30,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,30|HK_分享日记_2
+  name: 10,30|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
   network: ws
   port: 28681
   server: 47.242.22.171
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -67,6 +70,20 @@ proxies:
     headers:
       Host: hk3.visaapp.top
     path: /
+- alterId: 0
+  cipher: auto
+  name: 30|[vmess]🇭🇰 HK | 香港 LB
+  network: ws
+  port: 443
+  server: hkcft01.xqc.best
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 32|🇭🇰 香港KT|@ripaojiedian
