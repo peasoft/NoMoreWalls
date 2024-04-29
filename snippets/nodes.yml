@@ -319,11 +319,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,23,24,30|US_分享日记_30
+  name: 10,23,30|US_分享日记_30
   network: ws
   port: 443
   server: 104.19.49.146
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
@@ -333,11 +333,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,23,24|加拿大 015
+  name: 10,23,30|🇨🇦 加拿大 015
   network: ws
-  port: 443
+  port: '443'
   server: 104.19.49.185
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
@@ -838,15 +838,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,30|ZA_分享日记_1
+  name: 10,30|🔒 VM-WS-NA 🇿🇦 ZA-129.151.164.1...
   network: ws
   port: 55600
   server: 129.151.164.152
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: e30f8588-2555-48b8-c354-c8e63f57232d
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 10|ZA-129.232.129.156-0652 | 5.31...
@@ -1065,11 +1068,11 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,30|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2...
+  name: 10|🇭🇰HK-152.32.190.239-0184 | 10....
   network: ws
-  port: '4431'
+  port: 4431
   server: 152.32.190.239
-  servername: cfhk.393930.xyz
+  servername: 🇭🇰HK-152.32.190.239-0184 | 10.48MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1255,7 +1258,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 10,30|US_分享日记_162
+  name: 10,30|US_分享日记_12
   network: ws
   port: 80
   server: 213.35.113.150
@@ -1350,7 +1353,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸US-155.138.242.207-0160 | 64...
+  name: 10,30|US_分享日记_115
   network: ws
   port: 54316
   server: 155.138.242.207
@@ -1374,7 +1377,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,30|US_分享日记_78
+  name: 10|🇺🇸US-155.138.242.207-0590 | 64...
   network: ws
   port: 54316
   server: 155.138.242.207
@@ -2122,7 +2125,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '16|🇺🇸_US_美国 #21'
+  name: 16,30|US_分享日记_22
   network: ws
   port: 443
   server: hms082.gwdef.sbs
@@ -2519,7 +2522,7 @@ proxies:
   servername: ru04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇲🇾马来西亚04
@@ -2529,7 +2532,7 @@ proxies:
   servername: my04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇹🇭泰国04
@@ -2539,7 +2542,7 @@ proxies:
   servername: th04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇵🇭菲律宾04
@@ -2549,7 +2552,7 @@ proxies:
   servername: ph04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇰🇷韩国04
@@ -2559,7 +2562,7 @@ proxies:
   servername: kr04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇮🇳印度04
@@ -2569,7 +2572,7 @@ proxies:
   servername: in04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇧🇷巴西04
@@ -2579,7 +2582,7 @@ proxies:
   servername: br04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇻🇳越南04
@@ -2589,7 +2592,7 @@ proxies:
   servername: vn04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇭🇺匈牙利04
@@ -2599,7 +2602,7 @@ proxies:
   servername: hu04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇦🇷阿根廷04
@@ -2609,7 +2612,7 @@ proxies:
   servername: ar04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇹🇷土耳其04
@@ -2619,7 +2622,7 @@ proxies:
   servername: tr04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇺🇦乌克兰04
@@ -2629,7 +2632,7 @@ proxies:
   servername: ua04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇦🇺澳大利亚04
@@ -2639,7 +2642,7 @@ proxies:
   servername: au04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇬🇧英国04
@@ -2649,7 +2652,7 @@ proxies:
   servername: uk04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇩🇪德国04
@@ -2659,7 +2662,7 @@ proxies:
   servername: de04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇨🇦加拿大04
@@ -2669,7 +2672,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
   name: 22|🇪🇸西班牙04
@@ -2679,14 +2682,13 @@ proxies:
   servername: es04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7b34ea75-f15d-4b8d-8528-b68745f2f7db
+  uuid: 75e756cf-0e8f-4e88-ae0e-c50fbce656ba
 - alterId: 0
   cipher: auto
-  name: 23,24|加拿大 016
+  name: '23|美国 CloudFlare节点 #1'
   network: ws
   port: 2082
   server: 104.19.172.55
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
@@ -2974,549 +2976,13 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  delay: 1784
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 002
-  network: ws
-  port: 2082
-  server: 104.16.60.8
-  servername: worker-noisy-paper-fa00.hetoj18200.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      HOST: worker-noisy-paper-fa00.hetoj18200.workers.dev
-    path: /afrhms16v.bestxray.buzz/linkws
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 1671
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 003
-  network: ws
-  port: 2053
-  server: 104.19.32.0
-  servername: qin12.rong1104.uk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e317a3a9-4e15-4792-d11d-b4b08df85803
-  ws-opts:
-    headers:
-      HOST: qin12.rong1104.uk
-    path: /qin12
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 1591
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 004
-  network: ws
-  port: 443
-  server: 104.16.61.8
-  servername: hdfy5d.foriran.nl
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 251780c1-1501-43b3-be2a-d144a20d479a
-  ws-opts:
-    headers:
-      HOST: hdfy5d.foriran.nl
-    path: /Nbs2DSTSkFW6MrrFQHeSDQ7
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 2832
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 005
-  network: ws
-  port: 443
-  server: cdn.twitter.now.cc
-  servername: us2.kunkunbuku.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b5f423ab-8e67-450a-8cd8-d2380be038a5
-  ws-opts:
-    headers:
-      HOST: us2.kunkunbuku.me
-    path: /ikun
-- alterId: 0
-  cipher: auto
-  name: 24|美国 001
-  network: ws
-  port: 8080
-  server: 104.16.71.75
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.71.db-link02.top
-    path: /dabai.in757116
-- client-fingerprint: chrome
-  name: 24|英国 001
+  name: 24|新加坡 001
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.20.223.153
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 006
-  network: ws
-  port: 2082
-  server: 104.20.13.235
-  servername: cache-us-1.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.13.cn-db.top
-    path: /dabai.in2351320
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 007
-  network: ws
-  port: 2082
-  server: 104.20.254.182
-  servername: data-us-3.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.254.db-link02.top
-    path: /dabai.in18225420
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 008
-  network: ws
-  port: 2052
-  server: 104.16.228.231
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.228.db-link02.top
-    path: /dabai.in23122816
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 009
-  network: ws
-  port: 8880
-  server: 104.18.196.115
-  servername: data-us-3.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.196.cn-db.top
-    path: /dabai.in11519618
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 010
-  network: ws
-  port: 80
-  server: 104.17.168.99
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.168.db-link02.top
-    path: /dabai.in9916817
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 011
-  network: ws
-  port: 8880
-  server: 104.20.189.124
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.189.db-link02.top
-    path: /dabai.in12418920
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 012
-  network: ws
-  port: 8880
-  server: 104.18.151.9
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.151.cn-db.top
-    path: /dabai.in915118
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 013
-  network: ws
-  port: 2052
-  server: 104.17.246.239
-  servername: data-us-2.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.246.db-link02.top
-    path: /dabai.in23924617
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 014
-  network: ws
-  port: 80
-  server: 104.19.8.79
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.8.db-link01.top
-    path: /dabai.in79819
-- alterId: 0
-  cipher: auto
-  name: 24|法国 001
-  network: ws
-  port: 80
-  server: 173.245.49.102
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d18c7f2d-f696-4961-a12c-111fb5808654
-  ws-opts:
-    headers:
-      host: blog.telefire.shop
-    path: /google
-- client-fingerprint: chrome
-  name: 24|法国 002
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 52.47.104.11
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 018
-  network: ws
-  port: 443
-  server: 104.16.147.69
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: dce29820-0a9b-416a-8d52-f671fff7a226
-  ws-opts:
-    headers:
-      Host: yzjd02.7595333.workers.dev
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 019
-  network: ws
-  port: 8880
-  server: 104.17.65.219
-  servername: cache-us-1.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.65.cn-db.top
-    path: /dabai.in2196517
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 020
-  network: ws
-  port: 2052
-  server: 104.17.205.68
-  servername: data-us-3.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.205.db-link02.top
-    path: /dabai.in6820517
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 021
-  network: ws
-  port: 8080
-  server: 104.19.133.239
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.133.db-link02.top
-    path: /dabai.in23913319
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 022
-  network: ws
-  port: 2095
-  server: 104.18.193.228
-  servername: data-us-3.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.193.cn-db.top
-    path: /dabai.in22819318
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 023
-  network: ws
-  port: 8880
-  server: 104.17.82.20
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.82.db-link02.top
-    path: /dabai.in208217
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 024
-  network: ws
-  port: 2052
-  server: 104.20.235.151
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.235.db-link02.top
-    path: /dabai.in15123520
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 025
-  network: ws
-  port: 8080
-  server: 104.18.241.146
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.241.cn-db.top
-    path: /dabai.in14624118
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 026
-  network: ws
-  port: 2095
-  server: 104.17.137.134
-  servername: data-us-2.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.137.db-link02.top
-    path: /dabai.in13413717
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 027
-  network: ws
-  port: 8080
-  server: 104.17.57.79
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.57.db-link01.top
-    path: /dabai.in795717
-- alterId: 0
-  cipher: auto
-  name: 24|美国 002
-  network: ws
-  port: 8880
-  server: 104.19.40.58
+  port: 54126
+  server: 54.251.155.202
   skip-cert-verify: true
   type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      Host: uk.moss.network
-    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 028
-  network: ws
-  port: 443
-  server: 104.17.197.31
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: quiet-moon-132a.xetag42714.workers.dev
-    path: /jahfkjha.cfd/linkws
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 029
-  network: ws
-  port: 8080
-  server: 104.17.196.251
-  skip-cert-verify: true
-  type: vmess
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.196.db-link01.top
-    path: /dabai.in25119617
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 030
-  network: ws
-  port: 2086
-  server: 104.18.234.31
-  skip-cert-verify: true
-  type: vmess
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.234.db-link02.top
-    path: /dabai.in3123418
-- alterId: 0
-  cipher: auto
-  name: 24|美国 003
-  network: ws
-  port: 80
-  server: 104.19.174.68
-  skip-cert-verify: true
-  type: vmess
-  uuid: 14f364ef-251b-449f-afc0-426ab19bf513
-  ws-opts:
-    headers:
-      Host: us3.visaapp.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 031
-  network: ws
-  port: 80
-  server: 104.17.48.131
-  skip-cert-verify: true
-  type: vmess
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.48.db-link02.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 032
-  network: ws
-  port: 2095
-  server: 104.16.60.8
-  skip-cert-verify: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: icy-tooth-3d05.plzthsmdnss-7d8ly.workers.dev
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 033
-  network: ws
-  port: 2086
-  server: 104.19.128.214
-  skip-cert-verify: true
-  type: vmess
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.128.cn-db.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 034
-  network: ws
-  port: 8080
-  server: 104.16.57.148
-  skip-cert-verify: true
-  type: vmess
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  ws-opts:
-    headers:
-      Host: 100.100.17.57.db-link02.top
-    path: /
+  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
 - alterId: 64
   cipher: auto
   name: 27|未命名
@@ -3571,975 +3037,7 @@ proxies:
     path: /h6jr23x9h3lqiitg
 - alterId: 0
   cipher: auto
-  name: 30|US_分享日记_3
-  network: tcp
-  port: 42598
-  server: 129.146.247.135
-  tls: false
-  type: vmess
-  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
-- alterId: 0
-  cipher: auto
-  name: 30|SG_203
-  network: ws
-  port: 2082
-  server: 104.19.42.203
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_47
-  network: ws
-  port: 443
-  server: 104.19.49.171
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|FR_分享日记_4
-  network: tcp
-  port: 12960
-  server: 146.59.17.58
-  tls: false
-  type: vmess
-  uuid: 48a86563-63c5-4218-e887-d752f801ae82
-- alterId: 0
-  cipher: auto
-  name: 30|美国 042
-  network: ws
-  port: 443
-  server: 69.50.93.90
-  servername: 69.50.93.90
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 30|CN_youtube@资源分享师_127
-  network: tcp
-  port: 35004
-  server: 183.240.188.59
-  tls: false
-  type: vmess
-  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_14
-  network: ws
-  port: '2082'
-  server: 104.19.48.14
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇳TW_106
-  network: ws
-  port: '80'
-  server: 104.19.43.106
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
-  ws-opts:
-    headers:
-      Host: tw1.renwox.xyz
-    path: /needay?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_109 2
-  network: ws
-  port: 2082
-  server: 104.16.40.109
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|FR_分享日记_1
-  network: ws
-  port: 443
-  server: fr-full.privateip.net
-  tls: true
-  type: vmess
-  uuid: 61c75239-c93a-4fae-baef-d2ede3fe6d98
-  ws-opts:
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_65
-  network: tcp
-  port: 44990
-  server: 66.135.3.168
-  tls: false
-  type: vmess
-  uuid: 88623615-0713-497a-9233-755a33cc7080
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_18
-  network: tcp
-  port: 52408
-  server: 129.146.46.181
-  tls: false
-  type: vmess
-  uuid: a797ff7b-8161-40a6-d577-1b2c213b3885
-- alterId: 0
-  cipher: auto
-  name: 30|SG_2 2
-  network: ws
-  port: 2082
-  server: 104.19.42.2
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|瑞典 002
-  network: ws
-  port: 443
-  server: 185.146.173.129
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: nt-haze-7dad.rogap16875.workers.dev
-    path: /afrhms16v.bestxray.buzz/linkws
-- alterId: 64
-  cipher: auto
-  name: 30|GB_分享日记_1
-  network: ws
-  port: 30000
-  server: 51.89.2.48
-  tls: true
-  type: vmess
-  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
-  ws-opts:
-    headers:
-      Host: www.25311731.xyz
-    path: /path/203113182529
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_164
-  network: ws
-  port: '2082'
-  server: 104.16.42.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '30|US-NEWYORK5 #1'
-  network: ws
-  port: '8880'
-  server: cdnikuancdnikuan.internetcdn.ggff.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3f5e4b61-9524-4660-a126-d2df07b055ad
-  ws-opts:
-    headers:
-      Host: losangeles.sanjose.xhzshop.link
-    path: /microsoft?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_79
-  network: tcp
-  port: 22324
-  server: 162.251.62.115
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇳TW_129
-  network: ws
-  port: '80'
-  server: 104.19.43.129
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
-  ws-opts:
-    headers:
-      Host: tw1.renwox.xyz
-    path: /needay?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_211
-  network: ws
-  port: '2082'
-  server: 104.19.42.211
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_163
-  network: ws
-  port: '2082'
-  server: 104.19.45.163
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_124
-  network: ws
-  port: '2082'
-  server: 104.19.48.124
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_34
-  network: ws
-  port: 2082
-  server: 104.19.45.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|@Hope_Net-join-us-on-Telegram
-  network: tcp
-  port: '48895'
-  server: 64.176.219.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1dd70a5f-fbbb-4e58-9d29-a40415853c80
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-45.77.146.58...
-  network: tcp
-  port: '22131'
-  server: 45.77.146.58
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ad42d586-dcd1-4629-d49b-a6f2d821ad39
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-174.136.205....
-  network: tcp
-  port: '39027'
-  server: 174.136.205.46
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_38
-  network: ws
-  port: 443
-  server: zula.ir
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: jahfkjha.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30,32,33|台湾|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-NONE 🇭🇰 HK-45.144.3.20...
-  network: ws
-  port: 16222
-  server: 45.144.3.204
-  tls: false
-  type: vmess
-  uuid: 37e2e6fa-c9a0-42f5-97d6-d6e7b29e4ab9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|NL_分享日记_4
-  network: ws
-  port: 443
-  server: 188.114.97.3
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇬🇧 GB-154.62.185.2...
-  network: ''
-  port: 18134
-  server: 154.62.185.2
-  tls: false
-  type: vmess
-  uuid: 0da00a40-7dc6-413f-f8dd-6ed42dd50c06
-- alterId: 0
-  cipher: auto
-  name: 30|SG_180 2
-  network: ws
-  port: 2082
-  server: 104.19.48.180
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_187
-  network: ws
-  port: 2082
-  server: 104.16.43.187
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_5
-  network: ws
-  port: 2082
-  server: 104.19.42.5
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_92
-  network: ws
-  port: '2082'
-  server: 104.19.45.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_2
-  network: ws
-  port: 2086
-  server: 172.67.229.25
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ca6.tehme100.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: '30|🇸🇬SG_164 #1'
-  network: ws
-  port: '2082'
-  server: 104.16.43.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_20
-  network: ws
-  port: 2082
-  server: 104.16.39.20
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-75.102.51.61...
-  network: tcp
-  port: '12732'
-  server: 75.102.51.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 191ba971-0f63-402e-bbc9-9e9eb2604b0c
-- alterId: 0
-  cipher: auto
-  name: 30|SG_208
-  network: ws
-  port: 2082
-  server: 104.16.40.208
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_32
-  network: ws
-  port: 2082
-  server: 104.19.42.32
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|ℹ️35@oneclickvpnkeys
-  network: ws
-  port: '80'
-  server: de1-vless.vpnhack.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 103e4ad8-472e-44c1-84da-ab4ef1ddc9d3
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 30|SG_198
-  network: ws
-  port: 2082
-  server: 104.19.48.198
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_12
-  network: ws
-  port: 2086
-  server: 172.67.229.37
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ca6.tehme100.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_249
-  network: ws
-  port: '2082'
-  server: 104.19.48.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇳TW_243
-  network: ws
-  port: '80'
-  server: 104.19.43.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
-  ws-opts:
-    headers:
-      Host: tw1.renwox.xyz
-    path: /needay?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_31
-  network: ws
-  port: '2082'
-  server: 104.19.48.31
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_79 2
-  network: ws
-  port: 2082
-  server: 104.19.45.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_240
-  network: ws
-  port: '2082'
-  server: 104.16.43.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_243
-  network: ws
-  port: '2082'
-  server: 104.19.42.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_244
-  network: ws
-  port: 2082
-  server: 104.19.45.244
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_219
-  network: ws
-  port: '2082'
-  server: 104.19.45.219
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_92
-  network: ws
-  port: 22210
-  server: 23.94.100.187
-  tls: false
-  type: vmess
-  uuid: 40441b4f-8e74-40d5-a8f0-8f1db05e7a51
-  ws-opts:
-    path: /dwax
-- alterId: 0
-  cipher: auto
-  name: 30|SG_106
-  network: ws
-  port: 2082
-  server: 104.16.40.106
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_61
-  network: ws
-  port: 443
-  server: 104.19.49.154
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|SG_162
-  network: ws
-  port: 2082
-  server: 104.16.40.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_216
-  network: ws
-  port: 443
-  server: 99.84.50.216
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_29
-  network: ws
-  port: 443
-  server: hms182.glweidf.sbs
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_23 2
-  network: ws
-  port: 2082
-  server: 104.19.48.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|DE_分享日记
-  network: ws
-  port: 443
-  server: de-full.privateip.net
-  tls: true
-  type: vmess
-  uuid: 3f599734-3f70-4b94-ae40-10abdd5a3954
-  ws-opts:
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_210
-  network: ws
-  port: '2082'
-  server: 104.16.43.210
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_58
-  network: ws
-  port: 443
-  server: 104.19.49.221
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|HK_77
-  network: ws
-  port: 443
-  server: 99.84.50.77
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_212
-  network: ws
-  port: '2082'
-  server: 104.16.43.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_195
-  network: ws
-  port: 443
-  server: 99.84.50.195
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
-  ws-opts:
-    headers:
-      Host: d2zpep5anc4l5k.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-149.28.49.17...
-  network: tcp
-  port: '24663'
-  server: 149.28.49.174
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04bf314e-e40a-4d05-9faa-0a6baded2a22
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-45.77.218.99...
-  network: tcp
-  port: '12810'
-  server: 45.77.218.99
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469daa04-235a-47be-fdf8-41a9a72f8be2
-- alterId: 0
-  cipher: auto
-  name: 30|US_youtube@资源分享师_142
-  network: ws
-  port: 2086
-  server: ip.sb
-  tls: false
-  type: vmess
-  uuid: 9d38f641-e4a7-4c01-919f-43dae64472a8
-  ws-opts:
-    headers:
-      Host: mcdonald-construction-sharon-ignored.trycloudflare.com
-    path: 9d38f641-e4a7-4c01-919f-43dae64472a8-vm
-- alterId: 0
-  cipher: auto
-  name: 30|FR_分享日记_3
-  network: tcp
-  port: 44513
-  server: 162.19.25.207
-  tls: false
-  type: vmess
-  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-NA 🇹🇼 TW-103.159.206.3...
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_86
-  network: ws
-  port: 443
-  server: 104.19.49.15
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|HK_169
-  network: ws
-  port: 443
-  server: 99.84.50.169
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_102
-  network: ws
-  port: '2082'
-  server: 104.19.42.102
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_82
-  network: ws
-  port: 2082
-  server: 104.16.40.82
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_56
-  network: ws
-  port: 2082
-  server: 104.16.43.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_41
+  name: 30|US_分享日记_37
   network: ws
   port: 443
   server: tr-full.privateip.net
@@ -4550,24 +3048,19 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 30|SG_40 2
-  network: ws
-  port: 2082
-  server: 104.19.42.40
-  servername: ''
+  name: 30|CA_分享日记_1
+  network: tcp
+  port: 22324
+  server: 198.57.27.212
   tls: false
   type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_1
+  name: 30|🇸🇬SG_99
   network: ws
   port: '2082'
-  server: 104.19.45.1
+  server: 104.16.39.99
   servername: ''
   tls: false
   type: vmess
@@ -4578,10 +3071,10 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_60 3
+  name: 30|SG_183
   network: ws
   port: 2082
-  server: 104.16.39.60
+  server: 104.19.45.183
   servername: ''
   tls: false
   type: vmess
@@ -4592,175 +3085,18 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|HK_102
+  name: 30|🔒 VM-WS-NA 🇺🇸 US-23.94.100.187...
   network: ws
-  port: 443
-  server: 99.84.50.102
+  port: 22210
+  server: 23.94.100.187
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|美国 043
-  network: ws
-  port: 443
-  server: 38.91.107.36
-  servername: maggiy.shop
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 40441b4f-8e74-40d5-a8f0-8f1db05e7a51
   ws-opts:
     headers:
       Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_177
-  network: ws
-  port: 2082
-  server: 104.19.48.177
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_14
-  network: ws
-  port: 2086
-  server: 172.67.229.33
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ca6.tehme100.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_74
-  network: tcp
-  port: 47918
-  server: 207.148.10.248
-  tls: false
-  type: vmess
-  uuid: 232aeb1e-7d67-4a91-9379-4da1f4917691
-- alterId: 0
-  cipher: auto
-  name: 30|SG_28
-  network: ws
-  port: 2082
-  server: 104.19.45.28
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_23
-  network: ws
-  port: '2082'
-  server: 104.19.42.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.60....
-  network: ws
-  port: '2053'
-  server: 104.16.60.8
-  servername: vpnsupportfast.vpnsuortfast.workers.dev
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: vpnsupportfast.vpnsuortfast.workers.dev
-    path: /ivideos.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_174 2
-  network: ws
-  port: 2082
-  server: 104.16.39.174
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_85
-  network: ws
-  port: '2082'
-  server: 104.19.42.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '30|US_分享日记_3 #1'
-  network: ws
-  port: 443
-  server: 104.26.0.95
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_6
-  network: ws
-  port: 2086
-  server: 172.67.229.35
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ca6.tehme100.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 30|JP_分享日记_4
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  tls: false
-  type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    path: /bb
+    path: /dwax
 - alterId: 0
   cipher: auto
   name: 30|SG_10
@@ -4777,33 +3113,24 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_183 2
+  name: 30|SG_72 2
   network: ws
   port: 2082
-  server: 104.19.42.183
+  server: 104.19.48.72
   servername: ''
   tls: false
   type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
   ws-opts:
     headers:
       Host: ying.iepl1.me
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|RU_分享日记_1
-  network: tcp
-  port: 47555
-  server: 46.29.166.237
-  tls: false
-  type: vmess
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_191
+  name: 30|🇸🇬SG_184
   network: ws
   port: '2082'
-  server: 104.19.45.191
+  server: 104.19.45.184
   servername: ''
   tls: false
   type: vmess
@@ -4814,227 +3141,48 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|HK_158
+  name: 30|🇸🇬SG_212
   network: ws
-  port: 443
-  server: 13.35.13.158
+  port: '2082'
+  server: 104.16.43.212
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
   ws-opts:
     headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_278
+  network: ws
+  port: 443
+  server: 99.84.50.198
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_225
+  name: 30|俄罗斯 莫斯科JustHost
   network: ws
-  port: '2082'
-  server: 104.19.45.225
-  servername: ''
+  port: 80
+  server: 45.144.2.113
   tls: false
   type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
   ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_40
-  network: ws
-  port: '2082'
-  server: 104.16.39.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_68
-  network: ws
-  port: 2082
-  server: 104.16.42.68
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_176 2
-  network: ws
-  port: 2082
-  server: 104.19.48.176
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_186 3
-  network: ws
-  port: 2082
-  server: 104.16.39.186
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|CA_分享日记_2
-  network: tcp
-  port: 22324
-  server: 198.57.27.212
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_6
-  network: ws
-  port: '2082'
-  server: 104.19.48.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_245
-  network: ws
-  port: 2082
-  server: 104.19.48.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_16
-  network: ws
-  port: '2082'
-  server: 104.19.42.16
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_99
-  network: ws
-  port: 443
-  server: 104.21.44.106
-  tls: true
-  type: vmess
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  ws-opts:
-    headers:
-      Host: xmivideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_58
-  network: ws
-  port: '2082'
-  server: 104.19.42.58
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_161
-  network: ws
-  port: 443
-  server: 99.84.50.161
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_24
-  network: ws
-  port: 2082
-  server: 104.19.48.24
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇭🇰HK_232
-  network: ws
-  port: '443'
-  server: 13.35.13.232
-  servername: d1nal26v8jyfe2.cloudfront.net
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_31
-  network: ws
-  port: 443
-  server: 104.19.49.3
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_138
+  name: 30|SG_171 2
   network: ws
-  port: '2082'
-  server: 104.16.40.138
+  port: 2082
+  server: 104.19.42.171
   servername: ''
   tls: false
   type: vmess
@@ -5045,10 +3193,10 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_158 2
+  name: 30|SG_78
   network: ws
   port: 2082
-  server: 104.16.40.158
+  server: 104.19.42.78
   servername: ''
   tls: false
   type: vmess
@@ -5059,284 +3207,20 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🇭🇰HK_155
-  network: ws
-  port: '443'
-  server: 13.35.13.155
-  servername: d1nal26v8jyfe2.cloudfront.net
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_97
-  network: ws
-  port: 2082
-  server: 104.19.45.97
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_232
-  network: ws
-  port: '2082'
-  server: 104.19.45.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_218
-  network: ws
-  port: 2082
-  server: 104.16.43.218
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|CA_08 |14.88Mb
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 158.51.121.36
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_190
-  network: ws
-  port: 2082
-  server: 104.19.48.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_55
-  network: ws
-  port: 2083
-  server: 104.16.60.8
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: worgold21yagranghadeyaakbarshokretbozorg.abza.workers.dev
-    path: /linde06.indiavideo.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-144.202.59.2...
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-38.75.137.27...
   network: tcp
-  port: '57061'
-  server: 144.202.59.26
+  port: '22324'
+  server: 38.75.137.27
   servername: ''
   tls: false
   type: vmess
-  uuid: e90a1709-fd94-44d3-f809-8849837cc2d3
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_20
-  network: ws
-  port: 2086
-  server: w.outline-vpn.cloud
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ca6.tehme100.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 30|SG_86
-  network: ws
-  port: 2082
-  server: 104.19.45.86
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-NA 🇺🇸 US-129.146.126.1...
-  network: ws
-  port: 46666
-  server: 129.146.126.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
-  ws-opts:
-    headers:
-      Host: us-phoenix-oracle-3e4543.ip1.shop
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_190 2
-  network: ws
-  port: 2082
-  server: 104.19.42.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 30|SG_196
   network: ws
   port: 2082
   server: 104.19.42.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_141
-  network: ws
-  port: 443
-  server: 99.84.50.141
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_174
-  network: ws
-  port: 2082
-  server: 104.19.42.174
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_238
-  network: ws
-  port: 2082
-  server: 104.19.45.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|TW_203
-  network: ws
-  port: 80
-  server: 104.19.43.203
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
-  ws-opts:
-    headers:
-      Host: tw1.renwox.xyz
-    path: /needay?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_22
-  network: ws
-  port: '2082'
-  server: 104.19.42.22
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_239
-  network: ws
-  port: 2082
-  server: 104.19.45.239
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|美国A-不限流
-  network: ws
-  port: 80
-  server: vps789.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: deda81bc-df18-4740-881b-f5ac39b45f1b
-  ws-opts:
-    headers:
-      Host: cc.nekoneko.buzz
-    path: /cctv13/hd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 30|SG_89
-  network: ws
-  port: 2082
-  server: 104.19.42.89
   servername: ''
   tls: false
   type: vmess
@@ -5364,20 +3248,10 @@ proxies:
     path: /video/VDXcaM7r
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-140.82.2.34:...
-  network: tcp
-  port: '23670'
-  server: 140.82.2.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 423f6443-f1e9-4e84-d895-a14badc59e88
-- alterId: 0
-  cipher: auto
-  name: 30|SG_168
+  name: 30|🇸🇬SG_110
   network: ws
-  port: 2082
-  server: 104.19.48.168
+  port: '2082'
+  server: 104.19.48.110
   servername: ''
   tls: false
   type: vmess
@@ -5388,156 +3262,65 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🇭🇰HK_236
+  name: 30|德国-110.7KB/s
   network: ws
-  port: '443'
-  server: 99.84.50.236
-  servername: d1nal26v8jyfe2.cloudfront.net
+  port: 443
+  server: 23.158.56.229
+  servername: ''
   tls: true
   type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
+      Host: 23.158.56.229
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-WS-NA 🇺🇸 US-129.146.126.1...
+  network: ws
+  port: 46666
+  server: 129.146.126.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
+  ws-opts:
+    headers:
+      Host: us-phoenix-oracle-3e4543.ip1.shop
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_102
+  network: ws
+  port: 2082
+  server: 104.19.45.102
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_121
+  network: ws
+  port: 443
+  server: 99.84.50.144
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 30|SG_35
-  network: ws
-  port: 2082
-  server: 104.19.42.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-149.28.226.2...
-  network: tcp
-  port: 37985
-  server: 149.28.226.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a36d5f0e-f529-4c83-9279-f4c4ce557031
-- alterId: 0
-  cipher: auto
-  name: 30|HK_50
-  network: ws
-  port: 443
-  server: 99.84.50.50
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_76
-  network: ws
-  port: 2082
-  server: 104.16.42.76
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_21
-  network: ws
-  port: 443
-  server: 104.19.49.204
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_83
-  network: ws
-  port: '2082'
-  server: 104.16.40.83
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_5
-  network: ws
-  port: 2095
-  server: onea.flha.ru
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '30|US_分享日记_55 #1'
-  network: tcp
-  port: 30587
-  server: 207.148.31.167
-  tls: false
-  type: vmess
-  uuid: 55219214-9f2d-4914-fbaf-b1b444c85b0e
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_81
-  network: ws
-  port: 48889
-  server: 23.94.100.187
-  tls: false
-  type: vmess
-  uuid: ae62156c-16fc-4992-e957-0b46796254cf
-  ws-opts:
-    path: /awd
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_64
-  network: tcp
-  port: 80
-  server: 152.42.216.240
-  tls: false
-  type: vmess
-  uuid: 714e44f9-ff62-4a4c-cb2e-3f2a7dbc444c
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_37
-  network: ws
-  port: 443
-  server: 104.19.49.16
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_4
+  name: 30|US_分享日记_20
   network: ws
   port: 2086
-  server: 172.67.229.39
+  server: w.outline-vpn.cloud
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -5547,117 +3330,10 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 30|SG_125
+  name: 30|SG_100
   network: ws
   port: 2082
-  server: 104.19.45.125
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-104.207.143....
-  network: tcp
-  port: '43938'
-  server: 104.207.143.93
-  tls: false
-  type: vmess
-  uuid: edfa4166-7eab-4fb8-b323-7882463e2ae0
-- alterId: 0
-  cipher: auto
-  name: 30|SG_0
-  network: ws
-  port: 2082
-  server: 104.16.39.0
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_202
-  network: ws
-  port: 2082
-  server: 104.16.39.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '30|🇸🇬SG_191 #1'
-  network: ws
-  port: '2082'
-  server: 104.16.42.191
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_173
-  network: ws
-  port: 443
-  server: 99.84.50.173
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_249 2
-  network: ws
-  port: 2082
-  server: 104.19.42.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_95
-  network: ws
-  port: 2082
-  server: 104.16.42.95
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_114
-  network: ws
-  port: 2082
-  server: 104.19.48.114
+  server: 104.19.48.100
   servername: ''
   tls: false
   type: vmess
@@ -5668,37 +3344,23 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|US_分享日记_116
+  name: 30|US_youtube@资源分享师_142
   network: ws
-  port: 443
-  server: 172.67.71.160
-  tls: true
+  port: 2086
+  server: ip.sb
+  tls: false
   type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  uuid: 9d38f641-e4a7-4c01-919f-43dae64472a8
   ws-opts:
     headers:
-      Host: obdii.cfd
-    path: /linkws
+      Host: mcdonald-construction-sharon-ignored.trycloudflare.com
+    path: 9d38f641-e4a7-4c01-919f-43dae64472a8-vm
 - alterId: 0
   cipher: auto
-  name: 30|HK_184
-  network: ws
-  port: 443
-  server: 99.84.50.184
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_246 2
+  name: 30|SG_220
   network: ws
   port: 2082
-  server: 104.19.45.246
+  server: 104.16.39.220
   servername: ''
   tls: false
   type: vmess
@@ -5709,66 +3371,24 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_160
+  name: 30|🇸🇬SG_189
   network: ws
   port: '2082'
-  server: 104.16.42.160
+  server: 104.19.45.189
   servername: ''
   tls: false
   type: vmess
-  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
   ws-opts:
     headers:
       Host: ying.iepl1.me
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|HK_197
+  name: 30|US_分享日记_40
   network: ws
   port: 443
-  server: 99.84.50.197
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_255
-  network: ws
-  port: 2082
-  server: 104.16.43.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_143
-  network: ws
-  port: '2082'
-  server: 104.19.42.143
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_39
-  network: ws
-  port: 443
-  server: 104.19.49.203
+  server: 104.19.49.47
   tls: true
   type: vmess
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
@@ -5776,6 +3396,57 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_34
+  network: ws
+  port: 443
+  server: it-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 200ae60c-8af8-46d7-89bc-97355273760d
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_247
+  network: ws
+  port: 443
+  server: 99.84.50.138
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_43
+  network: ws
+  port: 443
+  server: 104.19.49.30
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_243
+  network: ws
+  port: '2082'
+  server: 104.19.42.243
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
 - alterId: 0
   cipher: auto
   name: 30|SG_138 3
@@ -5792,332 +3463,10 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_150
-  network: ws
-  port: 2082
-  server: 104.19.45.150
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_120
+  name: 30|🇸🇬SG_225
   network: ws
   port: '2082'
-  server: 104.19.48.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|俄罗斯 莫斯科JustHost
-  network: ws
-  port: 80
-  server: 45.144.2.113
-  tls: false
-  type: vmess
-  uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-TLS 🇺🇸 US-172.67.175.5...
-  network: ws
-  port: '443'
-  server: 172.67.175.56
-  servername: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_10
-  network: ws
-  port: 2086
-  server: 172.67.229.13
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ca6.tehme100.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 30|SG_199
-  network: ws
-  port: 2082
-  server: 104.19.48.199
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_109
-  network: ws
-  port: '2082'
-  server: 104.19.42.109
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_186 4
-  network: ws
-  port: 2082
-  server: 104.19.42.186
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_110
-  network: ws
-  port: '2082'
-  server: 104.19.48.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.6.6...
-  network: ws
-  port: '443'
-  server: 104.26.6.65
-  servername: mikasa.yaemiko.cloudns.org
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: mikasa.yaemiko.cloudns.org
-    path: /ivideos.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_255 5
-  network: ws
-  port: 2082
-  server: 104.16.39.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_236
-  network: ws
-  port: '2082'
-  server: 104.19.48.236
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_48
-  network: ws
-  port: 2082
-  server: 104.19.45.48
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_112
-  network: ws
-  port: '2082'
-  server: 104.19.45.112
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|ℹ️13@oneclickvpnkeys
-  network: tcp
-  port: '35995'
-  server: 51.195.140.87
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 28f08493-de6d-486e-84f5-5abe092ff78b
-- alterId: 0
-  cipher: auto
-  name: 30|SG_202 2
-  network: ws
-  port: 2082
-  server: 104.19.48.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_186
-  network: ws
-  port: 443
-  server: 99.84.50.186
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_85
-  network: tcp
-  port: 25087
-  server: 140.82.8.218
-  tls: false
-  type: vmess
-  uuid: 3e3a4f91-160c-4967-c2d7-5aebf6faf0c9
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_101
-  network: ws
-  port: '2082'
-  server: 104.19.48.101
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_111
-  network: ws
-  port: 443
-  server: 172.67.207.26
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_46
-  network: ws
-  port: 2082
-  server: 104.19.45.46
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_79
-  network: ws
-  port: '2082'
-  server: 104.16.40.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_113
-  network: ws
-  port: 443
-  server: 99.84.50.113
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-TLS 🇺🇸 US-172.67.131.1...
-  network: ws
-  port: '443'
-  server: 172.67.131.108
-  servername: glweidf.cfd
-  tls: true
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: glweidf.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_3
-  network: ws
-  port: 2082
-  server: 104.19.45.3
+  server: 104.19.45.225
   servername: ''
   tls: false
   type: vmess
@@ -6142,6 +3491,223 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
+  name: 30|🇸🇬SG_8
+  network: ws
+  port: '2082'
+  server: 104.16.40.8
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_115
+  network: ws
+  port: 443
+  server: 99.84.50.26
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|NL_分享日记_4
+  network: ws
+  port: 443
+  server: 188.114.97.3
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-140.82.2.34:...
+  network: tcp
+  port: '23670'
+  server: 140.82.2.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 423f6443-f1e9-4e84-d895-a14badc59e88
+- alterId: 0
+  cipher: auto
+  name: 30|SG_59
+  network: ws
+  port: 2082
+  server: 104.19.42.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_14
+  network: ws
+  port: '2082'
+  server: 104.16.40.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇫🇷 FR-162.19.25.20...
+  network: tcp
+  port: '44513'
+  server: 162.19.25.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_40
+  network: ws
+  port: '2082'
+  server: 104.16.39.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-149.28.49.17...
+  network: tcp
+  port: '24663'
+  server: 149.28.49.174
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04bf314e-e40a-4d05-9faa-0a6baded2a22
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_55
+  network: ws
+  port: 2083
+  server: 104.16.60.8
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: worgold21yagranghadeyaakbarshokretbozorg.abza.workers.dev
+    path: /linde06.indiavideo.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: '30|US-NEWYORK5 #1'
+  network: ws
+  port: 8880
+  server: cdnikuancdnikuan.internetcdn.ggff.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c736ecf4-683f-4eca-91c0-09e21b92fbd1
+  ws-opts:
+    headers:
+      Host: losangeles.sanjose.xhzshop.link
+    path: /microsoft?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_109 2
+  network: ws
+  port: 2082
+  server: 104.16.40.109
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_215
+  network: ws
+  port: 443
+  server: 99.84.50.95
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_215
+  network: tcp
+  port: 80
+  server: 152.42.218.53
+  tls: false
+  type: vmess
+  uuid: 48a16dc9-40e7-4270-925e-b7fcef9bc4c6
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_86
+  network: ws
+  port: '2082'
+  server: 104.19.45.86
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_60 2
+  network: ws
+  port: 2082
+  server: 104.19.42.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_218
+  network: ws
+  port: 2082
+  server: 104.16.43.218
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
   name: 30|US_分享日记_36
   network: ws
   port: 443
@@ -6155,38 +3721,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_60
+  name: 30|US_分享日记_107
   network: ws
-  port: '2082'
-  server: 104.19.45.60
-  servername: ''
-  tls: false
+  port: 443
+  server: hms08.gwdef.sbs
+  tls: true
   type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
   ws-opts:
     headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
+      Host: gwdef.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
-  name: 30|SG_178
+  name: 30|SG_106
   network: ws
   port: 2082
-  server: 104.16.39.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_43
-  network: ws
-  port: 2082
-  server: 104.19.42.43
+  server: 104.16.40.106
   servername: ''
   tls: false
   type: vmess
@@ -6197,10 +3748,24 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_138
+  name: 30|SG_176 2
   network: ws
   port: 2082
-  server: 104.19.45.138
+  server: 104.19.48.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_182
+  network: ws
+  port: '2082'
+  server: 104.19.45.182
   servername: ''
   tls: false
   type: vmess
@@ -6211,10 +3776,1910 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_33
+  name: 30|SG_199
+  network: ws
+  port: 2082
+  server: 104.19.48.199
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_111
+  network: ws
+  port: 443
+  server: 172.67.207.26
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_79
   network: ws
   port: '2082'
-  server: 104.19.42.33
+  server: 104.16.40.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: 30|HK_分享日记_4
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 30|CN_youtube@资源分享师_138
+  network: tcp
+  port: 35044
+  server: 183.240.188.59
+  tls: false
+  type: vmess
+  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_19
+  network: tcp
+  port: 12732
+  server: 75.102.51.61
+  tls: false
+  type: vmess
+  uuid: 191ba971-0f63-402e-bbc9-9e9eb2604b0c
+- alterId: 0
+  cipher: auto
+  name: 30|SG_244 2
+  network: ws
+  port: 2082
+  server: 104.16.40.244
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_242
+  network: ws
+  port: 443
+  server: 99.84.50.147
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_8
+  network: tcp
+  port: 52408
+  server: 129.146.46.181
+  tls: false
+  type: vmess
+  uuid: a797ff7b-8161-40a6-d577-1b2c213b3885
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_17
+  network: tcp
+  port: 43938
+  server: 104.207.143.93
+  tls: false
+  type: vmess
+  uuid: edfa4166-7eab-4fb8-b323-7882463e2ae0
+- alterId: 0
+  cipher: auto
+  name: 30|SG_255
+  network: ws
+  port: 2082
+  server: 104.16.43.255
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|FR_分享日记_1
+  network: ws
+  port: 443
+  server: fr-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 61c75239-c93a-4fae-baef-d2ede3fe6d98
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  name: 30|FR_分享日记_4
+  network: tcp
+  port: 12960
+  server: 146.59.17.58
+  tls: false
+  type: vmess
+  uuid: 48a86563-63c5-4218-e887-d752f801ae82
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_79
+  network: tcp
+  port: 22324
+  server: 162.251.62.115
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 30|SG_154 2
+  network: ws
+  port: 2082
+  server: 104.16.39.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_114
+  network: ws
+  port: '2082'
+  server: 104.19.48.114
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_79 2
+  network: ws
+  port: 2082
+  server: 104.19.45.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_164
+  network: ws
+  port: '2082'
+  server: 104.16.43.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇭🇰HK_6
+  network: ws
+  port: '443'
+  server: 99.84.50.6
+  servername: d2zpep5anc4l5k.cloudfront.net
+  tls: true
+  type: vmess
+  uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_6
+  network: ws
+  port: 2086
+  server: 172.67.229.35
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_98
+  network: ws
+  port: 443
+  server: 104.19.49.171
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_5
+  network: ws
+  port: '2082'
+  server: 104.19.42.5
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-45.76.18.197...
+  network: tcp
+  port: '20703'
+  server: 45.76.18.197
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae710bf3-229a-4f31-d990-971b831c8985
+- alterId: 0
+  cipher: auto
+  name: 30|SG_168
+  network: ws
+  port: 2082
+  server: 104.19.48.168
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_72
+  network: tcp
+  port: 40118
+  server: 104.249.173.159
+  tls: false
+  type: vmess
+  uuid: b89f5af7-e478-4b45-f1d5-1a5481acc15b
+- alterId: 0
+  cipher: auto
+  name: 30|SG_198
+  network: ws
+  port: 2082
+  server: 104.19.48.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_217
+  network: ws
+  port: 443
+  server: 99.84.50.122
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_205
+  network: ws
+  port: 443
+  server: 99.84.50.2
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_57
+  network: tcp
+  port: 25087
+  server: 140.82.8.218
+  tls: false
+  type: vmess
+  uuid: 3e3a4f91-160c-4967-c2d7-5aebf6faf0c9
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_99
+  network: ws
+  port: 443
+  server: 104.21.44.106
+  tls: true
+  type: vmess
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  ws-opts:
+    headers:
+      Host: xmivideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_158
+  network: ws
+  port: 443
+  server: 99.84.50.141
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|SG_62
+  network: ws
+  port: 2082
+  server: 104.19.42.62
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_4
+  network: ws
+  port: 2086
+  server: 172.67.229.39
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|SG_245 2
+  network: ws
+  port: 2082
+  server: 104.16.43.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US-NEWYORK3
+  network: ws
+  port: '8880'
+  server: cdn3.internetcdn.ggff.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c736ecf4-683f-4eca-91c0-09e21b92fbd1
+  ws-opts:
+    headers:
+      Host: losangeles.sanjose.xhzshop.link
+    path: /microsoft?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_86
+  network: ws
+  port: 443
+  server: 104.19.49.15
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|SG_73
+  network: ws
+  port: 2082
+  server: 104.16.39.73
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
+  network: tcp
+  port: '42598'
+  server: 129.146.247.135
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
+- alterId: 0
+  cipher: auto
+  name: 30|SG_174
+  network: ws
+  port: 2082
+  server: 104.19.42.174
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_70 2
+  network: ws
+  port: 2082
+  server: 104.19.45.70
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_110 2
+  network: ws
+  port: 2082
+  server: 104.19.42.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_108
+  network: ws
+  port: 2082
+  server: 104.19.45.108
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_160
+  network: ws
+  port: '2082'
+  server: 104.16.42.160
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: 30|GB_分享日记_12
+  network: ws
+  port: 30000
+  server: 51.89.2.48
+  tls: true
+  type: vmess
+  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
+  ws-opts:
+    headers:
+      Host: www.25311731.xyz
+    path: /path/203113182529
+- alterId: 0
+  cipher: auto
+  name: 30|SG_27
+  network: ws
+  port: 2082
+  server: 104.19.48.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_177
+  network: ws
+  port: 2082
+  server: 104.19.48.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_23
+  network: ws
+  port: 2082
+  server: 104.16.39.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_225
+  network: ws
+  port: 443
+  server: 99.84.50.22
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|SG_178 2
+  network: ws
+  port: 2082
+  server: 104.19.42.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_154
+  network: ws
+  port: '2082'
+  server: 104.19.42.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_98
+  network: ws
+  port: 2082
+  server: 104.19.45.98
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_186 4
+  network: ws
+  port: 2082
+  server: 104.19.42.186
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_227
+  network: ws
+  port: 2082
+  server: 104.19.45.227
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_255 5
+  network: ws
+  port: 2082
+  server: 104.16.39.255
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_88
+  network: ws
+  port: '2082'
+  server: 104.19.45.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|TW_120
+  network: ws
+  port: 80
+  server: 104.19.43.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
+  ws-opts:
+    headers:
+      Host: tw1.renwox.xyz
+    path: /needay?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_286
+  network: ws
+  port: 443
+  server: 99.84.50.184
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_143
+  network: ws
+  port: '2082'
+  server: 104.19.42.143
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|DE_分享日记
+  network: ws
+  port: 443
+  server: de-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 3f599734-3f70-4b94-ae40-10abdd5a3954
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_88
+  network: tcp
+  port: 37985
+  server: 149.28.226.202
+  tls: false
+  type: vmess
+  uuid: a36d5f0e-f529-4c83-9279-f4c4ce557031
+- alterId: 0
+  cipher: auto
+  name: 30|US | FREE6U3 | FREENODE
+  network: ws
+  port: 8880
+  server: exclusively-foriran.internetcdn.ggff.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c736ecf4-683f-4eca-91c0-09e21b92fbd1
+  ws-opts:
+    headers:
+      Host: losangeles.us.pisces.eu.org
+    path: /microsoft?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_23
+  network: ws
+  port: 443
+  server: 104.19.49.3
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_16
+  network: ws
+  port: 443
+  server: 104.19.49.6
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇭🇰HK_146
+  network: ws
+  port: '443'
+  server: 99.84.50.146
+  servername: d2zpep5anc4l5k.cloudfront.net
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_224
+  network: ws
+  port: 443
+  server: 99.84.50.217
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_72
+  network: ws
+  port: '2082'
+  server: 104.19.42.72
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-45.77.146.58...
+  network: tcp
+  port: '22131'
+  server: 45.77.146.58
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ad42d586-dcd1-4629-d49b-a6f2d821ad39
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_232
+  network: ws
+  port: '2082'
+  server: 104.19.45.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_106
+  network: ws
+  port: '2082'
+  server: 104.19.42.106
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_39
+  network: ws
+  port: 443
+  server: 104.19.49.203
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_10
+  network: ws
+  port: 2086
+  server: 172.67.229.13
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_97
+  network: ws
+  port: 443
+  server: 104.19.49.13
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|SG_230
+  network: ws
+  port: 2082
+  server: 104.19.42.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_127
+  network: ws
+  port: 2082
+  server: 104.16.39.127
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_58
+  network: ws
+  port: 443
+  server: 104.19.49.221
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30|🇸🇬SG_14 #1'
+  network: ws
+  port: '2082'
+  server: 104.19.45.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_226
+  network: ws
+  port: 2082
+  server: 104.16.39.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_235
+  network: ws
+  port: 443
+  server: 99.84.50.55
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_215
+  network: ws
+  port: '2082'
+  server: 104.16.40.215
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_13 2
+  network: ws
+  port: 2082
+  server: 104.19.42.13
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_239 2
+  network: ws
+  port: 2082
+  server: 104.16.39.239
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_14
+  network: ws
+  port: 2086
+  server: 172.67.229.33
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|CA_08 |14.88Mb
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 158.51.121.36
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|SG_68
+  network: ws
+  port: 2082
+  server: 104.16.42.68
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.6.6...
+  network: ws
+  port: '443'
+  server: 104.26.6.65
+  servername: mikasa.yaemiko.cloudns.org
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 30|ℹ️36@oneclickvpnkeys
+  network: ws
+  port: '443'
+  server: 172.67.174.42
+  servername: gwdef.sbs
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      Host: gwdef.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 30|HK_13
+  network: ws
+  port: 443
+  server: 99.84.50.13
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_32
+  network: ws
+  port: '2082'
+  server: 104.16.40.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_74
+  network: tcp
+  port: 47918
+  server: 207.148.10.248
+  tls: false
+  type: vmess
+  uuid: 232aeb1e-7d67-4a91-9379-4da1f4917691
+- alterId: 0
+  cipher: auto
+  name: 30|SG_221
+  network: ws
+  port: 2082
+  server: 104.16.43.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|TW_248
+  network: ws
+  port: 80
+  server: 104.19.43.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
+  ws-opts:
+    headers:
+      Host: tw1.renwox.xyz
+    path: /needay?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_48
+  network: ws
+  port: 2086
+  server: 172.67.229.38
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|SG_239
+  network: ws
+  port: 2082
+  server: 104.19.45.239
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '30|🇸🇬SG_164 #1'
+  network: ws
+  port: '2082'
+  server: 104.16.42.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-205.234.232....
+  network: tcp
+  port: '50129'
+  server: 205.234.232.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d3d91368-c7bc-4f2f-890b-09710fb9f0ec
+- alterId: 0
+  cipher: auto
+  name: 30|美国A-不限流
+  network: ws
+  port: 80
+  server: vps789.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: deda81bc-df18-4740-881b-f5ac39b45f1b
+  ws-opts:
+    headers:
+      Host: cc.nekoneko.buzz
+    path: /cctv13/hd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_284
+  network: ws
+  port: 443
+  server: 99.84.50.72
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_107
+  network: ws
+  port: '2082'
+  server: 104.19.45.107
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_80
+  network: ws
+  port: 2082
+  server: 104.16.39.80
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-168.235.82.1...
+  network: tcp
+  port: '16123'
+  server: 168.235.82.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fa09f016-0460-4bcf-d209-197b7f3d270e
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_135
+  network: ws
+  port: 443
+  server: 99.84.50.32
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_114
+  network: ws
+  port: 443
+  server: 104.19.49.155
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_21
+  network: ws
+  port: 443
+  server: 104.19.49.204
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_61
+  network: ws
+  port: 443
+  server: 104.19.49.154
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|SG_46
+  network: ws
+  port: 2082
+  server: 104.19.45.46
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_279
+  network: ws
+  port: 443
+  server: 99.84.50.196
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|SG_225 2
+  network: ws
+  port: 2082
+  server: 104.19.42.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_236
+  network: ws
+  port: 2082
+  server: 104.19.48.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_54
+  network: ws
+  port: 443
+  server: 104.19.49.91
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|SG_180 2
+  network: ws
+  port: 2082
+  server: 104.19.48.180
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_273
+  network: ws
+  port: 443
+  server: 99.84.50.77
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_32
+  network: ws
+  port: 443
+  server: 104.19.49.226
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_145
+  network: ws
+  port: '2082'
+  server: 104.16.39.145
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|ℹ️32@oneclickvpnkeys
+  network: tcp
+  port: '80'
+  server: 168.119.160.232
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
+- alterId: 0
+  cipher: auto
+  name: 30|SG_208
+  network: ws
+  port: 2082
+  server: 104.16.40.208
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_190
+  network: ws
+  port: 2082
+  server: 104.19.48.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-149.28.228.2...
+  network: tcp
+  port: '22195'
+  server: 149.28.228.215
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f865bc43-b129-443e-d00a-7d303b25c4a2
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_24
+  network: tcp
+  port: 28953
+  server: 172.105.150.181
+  tls: false
+  type: vmess
+  uuid: d1f31766-564a-47ab-88cc-0721145b78b8
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-WS-NA 🇯🇵 JP-152.69.197.74...
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_83
+  network: ws
+  port: '2082'
+  server: 104.16.40.83
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_207
+  network: ws
+  port: 443
+  server: 99.84.50.225
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|SG_97
+  network: ws
+  port: 2082
+  server: 104.19.45.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SE_分享日记
+  network: ws
+  port: 443
+  server: 185.146.173.129
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: nt-haze-7dad.rogap16875.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 30|SG_56
+  network: ws
+  port: 2082
+  server: 104.16.43.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_92
+  network: ws
+  port: '2082'
+  server: 104.19.48.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_26
+  network: ws
+  port: 443
+  server: 104.19.49.237
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30|US_分享日记_22 #1'
+  network: ws
+  port: 443
+  server: 104.19.49.14
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-WS-NONE 🇭🇰 HK-45.144.3.20...
+  network: ws
+  port: 16222
+  server: 45.144.3.204
+  tls: false
+  type: vmess
+  uuid: 37e2e6fa-c9a0-42f5-97d6-d6e7b29e4ab9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|SG_150
+  network: ws
+  port: 2082
+  server: 104.19.45.150
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_181
+  network: ws
+  port: '2082'
+  server: 104.19.45.181
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_229
+  network: ws
+  port: 2082
+  server: 104.19.45.229
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_210
+  network: ws
+  port: '2082'
+  server: 104.16.43.210
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|TW_180
+  network: ws
+  port: 80
+  server: 104.19.43.180
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
+  ws-opts:
+    headers:
+      Host: tw1.renwox.xyz
+    path: /needay?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-144.202.59.2...
+  network: tcp
+  port: '57061'
+  server: 144.202.59.26
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e90a1709-fd94-44d3-f809-8849837cc2d3
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇬🇧 GB-154.62.185.2...
+  network: ''
+  port: 18134
+  server: 154.62.185.2
+  tls: false
+  type: vmess
+  uuid: 0da00a40-7dc6-413f-f8dd-6ed42dd50c06
+- alterId: 0
+  cipher: auto
+  name: 30|SG_238
+  network: ws
+  port: 2082
+  server: 104.19.45.238
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_123
+  network: tcp
+  port: 21636
+  server: 207.246.102.64
+  tls: false
+  type: vmess
+  uuid: 53d57cfb-189f-4a9f-b620-a3ca168b7ac1
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_2
+  network: ws
+  port: 2086
+  server: 172.67.229.25
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|美国 042
+  network: ws
+  port: 443
+  server: 69.50.93.90
+  servername: 69.50.93.90
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_91
+  network: ws
+  port: 443
+  server: 104.19.49.16
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-WS-NONE 🇸🇬 SG-146.190.84....
+  network: ws
+  port: 47390
+  server: 146.190.84.34
+  tls: false
+  type: vmess
+  uuid: 7c99b0a1-3fe6-40b6-95a6-40f33fe00bce
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 30|NO_分享日记_1
+  network: ws
+  port: 443
+  server: 46.29.219.42
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.19935376.xyz
+    path: /path/180401120101
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_120
+  network: ws
+  port: '2082'
+  server: 104.19.42.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|ℹ️35@oneclickvpnkeys
+  network: ws
+  port: '80'
+  server: de1-vless.vpnhack.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 103e4ad8-472e-44c1-84da-ab4ef1ddc9d3
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-207.148.31.1...
+  network: tcp
+  port: '30587'
+  server: 207.148.31.167
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 55219214-9f2d-4914-fbaf-b1b444c85b0e
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_65
+  network: tcp
+  port: 44990
+  server: 66.135.3.168
+  tls: false
+  type: vmess
+  uuid: 88623615-0713-497a-9233-755a33cc7080
+- alterId: 0
+  cipher: auto
+  name: 30|SG_82
+  network: ws
+  port: 2082
+  server: 104.16.40.82
   servername: ''
   tls: false
   type: vmess
@@ -6238,51 +5703,33 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 30|NL_分享日记_5
-  network: ws
-  port: 80
-  server: 188.114.99.77
-  tls: false
-  type: vmess
-  uuid: 2dd253e4-311f-4898-92f5-d4eb88ce27af
-  ws-opts:
-    headers:
-      Host: nl1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 30|SG_19
-  network: ws
-  port: 2082
-  server: 104.19.42.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_98
+  name: 30|US_youtube@资源分享师_223
   network: ws
   port: 443
-  server: 99.84.50.98
-  servername: ''
+  server: 99.84.50.142
   tls: true
   type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
   ws-opts:
     headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
+      Host: d2zpep5anc4l5k.cloudfront.net
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_179
+  name: 30|ℹ️13@oneclickvpnkeys
+  network: tcp
+  port: '35995'
+  server: 51.195.140.87
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 28f08493-de6d-486e-84f5-5abe092ff78b
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_249
   network: ws
   port: '2082'
-  server: 104.19.42.179
+  server: 104.19.42.249
   servername: ''
   tls: false
   type: vmess
@@ -6293,10 +5740,37 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_245 2
+  name: 30|SG_124
   network: ws
   port: 2082
-  server: 104.16.43.245
+  server: 104.16.39.124
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_258
+  network: ws
+  port: 443
+  server: 99.84.50.110
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_126
+  network: ws
+  port: '2082'
+  server: 104.19.48.126
   servername: ''
   tls: false
   type: vmess
@@ -6307,10 +5781,23 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_220
+  name: 30|US_分享日记_52
   network: ws
-  port: 2082
-  server: 104.16.39.220
+  port: 443
+  server: 104.19.49.9
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_252
+  network: ws
+  port: '2082'
+  server: 104.16.39.252
   servername: ''
   tls: false
   type: vmess
@@ -6321,38 +5808,10 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|US-NEWYORK3 2
-  network: ws
-  port: 8880
-  server: cdn3.internetcdn.ggff.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c736ecf4-683f-4eca-91c0-09e21b92fbd1
-  ws-opts:
-    headers:
-      Host: losangeles.sanjose.xhzshop.link
-    path: /microsoft?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_255 4
+  name: 30|SG_32
   network: ws
   port: 2082
-  server: 104.19.45.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_90
-  network: ws
-  port: 2082
-  server: 104.19.42.90
+  server: 104.19.42.32
   servername: ''
   tls: false
   type: vmess
@@ -6363,147 +5822,19 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '30|US_分享日记_41 #1'
-  network: ws
-  port: 443
-  server: 172.67.174.42
-  tls: true
-  type: vmess
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  ws-opts:
-    headers:
-      Host: gwdef.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|SG_255 2
-  network: ws
-  port: 2082
-  server: 104.19.48.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_26
-  network: ws
-  port: '2082'
-  server: 104.16.39.26
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|ℹ️32@oneclickvpnkeys
+  name: 30|CN_youtube@资源分享师_8
   network: tcp
-  port: '80'
-  server: 168.119.160.232
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_16
-  network: ws
-  port: 443
-  server: 104.19.49.6
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_54
-  network: ws
-  port: 443
-  server: 104.19.49.91
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|CN_youtube@资源分享师_15
-  network: tcp
-  port: 35030
+  port: 35045
   server: 183.240.188.58
   tls: false
   type: vmess
   uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
 - alterId: 0
   cipher: auto
-  name: 30|US_分享日记_103
-  network: tcp
-  port: 45617
-  server: 149.28.58.129
-  tls: false
-  type: vmess
-  uuid: 59c95ca3-babe-466a-9a5b-4761e575caf8
-- alterId: 0
-  cipher: auto
-  name: 30|SG_154 2
+  name: 30|SG_132 2
   network: ws
   port: 2082
-  server: 104.16.39.154
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_72 2
-  network: ws
-  port: 2082
-  server: 104.19.48.72
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|US | FREE6U3 | FREENODE
-  network: ws
-  port: 8880
-  server: exclusively-foriran.internetcdn.ggff.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c736ecf4-683f-4eca-91c0-09e21b92fbd1
-  ws-opts:
-    headers:
-      Host: losangeles.us.pisces.eu.org
-    path: /microsoft?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_154
-  network: ws
-  port: '2082'
-  server: 104.19.42.154
+  server: 104.16.40.132
   servername: ''
   tls: false
   type: vmess
@@ -6514,10 +5845,38 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_176 3
+  name: 30|SG_187
   network: ws
   port: 2082
-  server: 104.19.45.176
+  server: 104.16.43.187
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '30|🔒 VM-WS-NA 🇺🇸 US-23.94.100.187... #1'
+  network: ws
+  port: 48889
+  server: 23.94.100.187
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae62156c-16fc-4992-e957-0b46796254cf
+  ws-opts:
+    headers:
+      Host: ''
+    path: /awd
+- alterId: 0
+  cipher: auto
+  name: 30|SG_138
+  network: ws
+  port: 2082
+  server: 104.19.45.138
   servername: ''
   tls: false
   type: vmess
@@ -6528,28 +5887,149 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|US_分享日记_123
-  network: tcp
-  port: 21636
-  server: 207.246.102.64
+  name: 30|🇸🇬SG_31
+  network: ws
+  port: '2082'
+  server: 104.19.42.31
+  servername: ''
   tls: false
   type: vmess
-  uuid: 53d57cfb-189f-4a9f-b620-a3ca168b7ac1
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-172.105.150....
-  network: ''
-  port: 28953
-  server: 172.105.150.181
-  tls: false
-  type: vmess
-  uuid: d1f31766-564a-47ab-88cc-0721145b78b8
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_97
+  name: 30|US_youtube@资源分享师_141
   network: ws
   port: 443
-  server: 104.19.49.13
+  server: 99.84.50.207
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|SG_166
+  network: ws
+  port: 2082
+  server: 104.19.42.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 30,32,33|台湾|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_255
+  network: ws
+  port: 443
+  server: 99.84.50.195
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_231
+  network: ws
+  port: 443
+  server: 99.84.50.48
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 30|SG_202 2
+  network: ws
+  port: 2082
+  server: 104.19.48.202
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_16
+  network: ws
+  port: '2082'
+  server: 104.19.42.16
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_89
+  network: ws
+  port: 2082
+  server: 104.19.42.89
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|US_youtube@资源分享师_218
+  network: ws
+  port: 443
+  server: 99.84.50.96
+  tls: true
+  type: vmess
+  uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+  ws-opts:
+    headers:
+      Host: d2zpep5anc4l5k.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: '30|US_分享日记_48 #1'
+  network: ws
+  port: 443
+  server: 104.19.49.192
   tls: true
   type: vmess
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
@@ -6559,10 +6039,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_140
+  name: 30|SG_234
   network: ws
-  port: '2082'
-  server: 104.16.40.140
+  port: 2082
+  server: 104.19.42.234
   servername: ''
   tls: false
   type: vmess
@@ -6573,62 +6053,33 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG_181
-  network: ws
-  port: '2082'
-  server: 104.19.45.181
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|HK_7
-  network: ws
-  port: 443
-  server: 99.84.50.7
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: '30|@Hope_Net-join-us-on-Telegram #1'
+  name: 30|US_分享日记_73
   network: tcp
-  port: '22195'
-  server: 149.28.228.215
-  servername: ''
+  port: 48895
+  server: 64.176.219.193
   tls: false
   type: vmess
-  uuid: f865bc43-b129-443e-d00a-7d303b25c4a2
+  uuid: 1dd70a5f-fbbb-4e58-9d29-a40415853c80
 - alterId: 0
   cipher: auto
-  name: 30|SG_101
+  name: 30|🇸🇬SG_205
   network: ws
-  port: 2082
-  server: 104.19.45.101
+  port: '2082'
+  server: 104.16.42.205
   servername: ''
   tls: false
   type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
   ws-opts:
     headers:
       Host: ying.iepl1.me
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|SG_225 2
+  name: 30|SG_158 2
   network: ws
   port: 2082
-  server: 104.19.42.225
+  server: 104.16.40.158
   servername: ''
   tls: false
   type: vmess
@@ -6639,89 +6090,19 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|US_分享日记_215
+  name: 30|US_分享日记_64
   network: tcp
   port: 80
-  server: 152.42.218.53
+  server: 152.42.216.240
   tls: false
   type: vmess
-  uuid: 48a16dc9-40e7-4270-925e-b7fcef9bc4c6
+  uuid: 714e44f9-ff62-4a4c-cb2e-3f2a7dbc444c
 - alterId: 0
   cipher: auto
-  name: 30|🇭🇰HK_33
+  name: 30|🇸🇬SG_247
   network: ws
-  port: '443'
-  server: 99.84.50.33
-  servername: d1nal26v8jyfe2.cloudfront.net
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_117
-  network: ws
-  port: 2082
-  server: 104.16.43.117
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_80
-  network: ws
-  port: 2082
-  server: 104.16.39.80
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_170
-  network: ws
-  port: 2082
-  server: 104.19.48.170
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|🇭🇰HK_141
-  network: ws
-  port: '443'
-  server: 13.35.13.141
-  servername: d1nal26v8jyfe2.cloudfront.net
-  tls: true
-  type: vmess
-  uuid: 9b57caed-da32-45cd-9b61-34b22a663ef5
-  ws-opts:
-    headers:
-      Host: d1nal26v8jyfe2.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 30|SG_59
-  network: ws
-  port: 2082
-  server: 104.19.42.59
+  port: '2082'
+  server: 104.16.40.247
   servername: ''
   tls: false
   type: vmess
@@ -6732,61 +6113,52 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 30|德国-110.7KB/s
+  name: 30|SG_60 3
+  network: ws
+  port: 2082
+  server: 104.16.39.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG_233
+  network: ws
+  port: '2082'
+  server: 104.19.48.233
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|美国 043
   network: ws
   port: 443
-  server: 23.158.56.229
-  servername: ''
+  server: 38.91.107.36
+  servername: maggiy.shop
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 23.158.56.229
+      Host: ''
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-TCP-NA 🇺🇸 US-38.75.137.27...
-  network: tcp
-  port: '22324'
-  server: 38.75.137.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 30|US_分享日记_15
-  network: ws
-  port: 443
-  server: hms04.xmivideo.cfd
-  tls: true
-  type: vmess
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  ws-opts:
-    headers:
-      Host: xmivideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬SG_215
-  network: ws
-  port: '2082'
-  server: 104.16.40.215
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 30|SG_44
+  name: 30|SG_60
   network: ws
   port: 2082
-  server: 104.19.45.44
+  server: 104.19.45.60
   servername: ''
   tls: false
   type: vmess
@@ -6795,47 +6167,79 @@ proxies:
     headers:
       Host: ying.iepl1.me
     path: /ws?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 30|NO_分享日记_1
-  network: ws
-  port: 443
-  server: 46.29.219.42
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.19935376.xyz
-    path: /path/180401120101
 - alterId: 0
   cipher: auto
-  name: 30|SG_13 2
-  network: ws
-  port: 2082
-  server: 104.19.42.13
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  ws-opts:
-    headers:
-      Host: ying.iepl1.me
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '30|🇸🇬SG_120 #1'
+  name: '30|🇸🇬SG_92 #1'
   network: ws
   port: '2082'
-  server: 104.19.42.120
+  server: 104.19.45.92
   servername: ''
   tls: false
   type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
   ws-opts:
     headers:
       Host: ying.iepl1.me
     path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|SG_174 2
+  network: ws
+  port: 2082
+  server: 104.16.39.174
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    headers:
+      Host: ying.iepl1.me
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '30|US_分享日记_26 #1'
+  network: ws
+  port: 2086
+  server: 172.67.229.37
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|US_分享日记_95
+  network: ws
+  port: 443
+  server: 104.19.49.33
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|@Hope_Net-join-us-on-Telegram
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇺🇸 US-149.28.58.12...
+  network: ''
+  port: 45617
+  server: 149.28.58.129
+  tls: false
+  type: vmess
+  uuid: 59c95ca3-babe-466a-9a5b-4761e575caf8
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 04  | 1x JP
@@ -6845,7 +6249,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 05  | 1x JP
@@ -6855,7 +6259,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 06  | 1x JP
@@ -6865,7 +6269,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】韩国 02 | 1x KR
@@ -6875,7 +6279,7 @@ proxies:
   servername: kr04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】菲律宾 04 | 1x PH
@@ -6885,7 +6289,7 @@ proxies:
   servername: ph04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】俄罗斯 04 | 1x RU
@@ -6895,7 +6299,7 @@ proxies:
   servername: ru04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】马来西亚 04 | 1x MY
@@ -6905,7 +6309,7 @@ proxies:
   servername: my04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】泰国 04 | 1x TH
@@ -6915,7 +6319,7 @@ proxies:
   servername: th04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】阿根廷 04 | 1x AR
@@ -6925,7 +6329,7 @@ proxies:
   servername: ar04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】匈牙利 04 | 1x HU
@@ -6935,7 +6339,7 @@ proxies:
   servername: hu04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】土耳其 04 | 1x TR
@@ -6945,7 +6349,7 @@ proxies:
   servername: tr04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】乌克兰 04 | 1x UA
@@ -6955,7 +6359,7 @@ proxies:
   servername: ua04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】越南 04 | 1x VN
@@ -6965,7 +6369,7 @@ proxies:
   servername: vn04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】巴西 04 | 1x BR
@@ -6975,7 +6379,7 @@ proxies:
   servername: br04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】印度 04 | 1x IN
@@ -6985,7 +6389,7 @@ proxies:
   servername: in04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】澳大利亚 04 | 1x AU
@@ -6995,7 +6399,7 @@ proxies:
   servername: au04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】英国 04 | 1x UK
@@ -7005,7 +6409,7 @@ proxies:
   servername: uk04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】德国 04 | 1x AU
@@ -7015,7 +6419,7 @@ proxies:
   servername: de04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】加拿大 02 | 1x CA
@@ -7025,7 +6429,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - alterId: 0
   cipher: auto
   name: 31|【BGP】西班牙 02 | 1x ES
@@ -7035,7 +6439,7 @@ proxies:
   servername: es04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 929e2c7e-1d09-4fde-b62a-c15e31b4f5bb
+  uuid: 35f8f947-f298-4aee-a806-a43518d7f0f2
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 32|🇭🇰 香港KT|@ripaojiedian
