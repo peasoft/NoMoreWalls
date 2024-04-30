@@ -45,13 +45,28 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|日本 002
-  network: tcp
-  port: 23234
-  server: 13.231.195.211
+  name: 24,30|🇯🇵 日本 002
+  network: ws
+  port: '57557'
+  server: 132.145.120.75
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
+  ws-opts:
+    headers:
+      Host: jp-tokyo-oracle-5a26da.ip1.shop
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - alterId: 0
   cipher: auto
   name: 30|SE_分享日记
@@ -67,59 +82,14 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: 30|🔒 VM-WS-NA 🇯🇵 JP-152.69.197.74...
-  network: ws
-  port: 12345
-  server: 152.69.197.74
+  name: 30|RU_分享日记_1
+  network: tcp
+  port: 47555
+  server: 46.29.166.237
   servername: ''
   tls: false
   type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: 30|KR_分享日记_8
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 30|NO_分享日记
-  network: ws
-  port: 443
-  server: 46.29.219.42
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/180401120101
-- alterId: 0
-  cipher: auto
-  name: 30|NL_分享日记_4
-  network: ws
-  port: 443
-  server: 188.114.97.3
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 64
   cipher: auto
   name: 30|GB_分享日记_16
@@ -136,14 +106,69 @@ proxies:
     path: /path/203113182529
 - alterId: 0
   cipher: auto
-  name: 30|JP_分享日记_1
+  name: 30|KR_分享日记_7
   network: tcp
-  port: 14935
-  server: 167.179.111.237
+  port: 26022
+  server: 152.70.39.9
   servername: ''
   tls: false
   type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
+  uuid: e0254dda-dc8c-46b0-8df8-07c453aaafd7
+- alterId: 0
+  cipher: auto
+  name: 30|KR_分享日记_8
+  network: ws
+  port: 443
+  server: 152.67.218.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|NL_分享日记_4
+  network: ws
+  port: 443
+  server: 188.114.97.3
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 30|JP_分享日记_2
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 64
+  cipher: auto
+  name: 30|NO_分享日记
+  network: ws
+  port: 443
+  server: 46.29.219.42
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/180401120101
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 04  | 1x JP
@@ -153,7 +178,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: fc8ba0d4-3e5e-4e58-aa03-bb548fefd3dd
+  uuid: 12a0cfcd-68ee-45dd-a145-8637a94023ae
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 05  | 1x JP
@@ -163,7 +188,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: fc8ba0d4-3e5e-4e58-aa03-bb548fefd3dd
+  uuid: 12a0cfcd-68ee-45dd-a145-8637a94023ae
 - alterId: 0
   cipher: auto
   name: 31|【BGP】日本 06  | 1x JP
@@ -173,7 +198,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: fc8ba0d4-3e5e-4e58-aa03-bb548fefd3dd
+  uuid: 12a0cfcd-68ee-45dd-a145-8637a94023ae
 - client-fingerprint: chrome
   name: 32|🇯🇵 日本3|@ripaojiedian
   network: ws
@@ -204,7 +229,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b0267eaf-6676-487e-a31f-8ccd35c9da38
+  uuid: 38f125b7-b286-4ab6-bcb8-5f5f31b2625f
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 108 | 流媒体优化 | 1x
@@ -214,7 +239,7 @@ proxies:
   servername: jp08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b0267eaf-6676-487e-a31f-8ccd35c9da38
+  uuid: 38f125b7-b286-4ab6-bcb8-5f5f31b2625f
 - alterId: 0
   cipher: auto
   name: 34|🇯🇵日本 | 109 | 负载优化 | 1x
@@ -224,4 +249,4 @@ proxies:
   servername: jp09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b0267eaf-6676-487e-a31f-8ccd35c9da38
+  uuid: 38f125b7-b286-4ab6-bcb8-5f5f31b2625f
