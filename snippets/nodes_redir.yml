@@ -1,11 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,6,23|美国 CloudFlare节点 #6'
+  name: '2,6|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
   network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
+  port: 2052
+  server: 104.19.250.15
   tls: false
   type: vmess
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
@@ -15,59 +14,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,23|美国 CloudFlare节点 #5'
-  network: ws
-  port: 8080
-  server: yh4.dtku41.xyz
+  name: '2,3,6,7|_GB_->_US_ #1'
+  network: http
+  port: 443
+  server: 89.213.164.154
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      Host: dual-nothing-prep-exit.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alterId: 0
-  cipher: auto
-  name: '2,6,16,23,38|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,6|🇰🇷_KR_韩国->🇷🇺_RU_俄罗斯联邦 #1'
-  network: ws
-  port: 60999
-  server: 210.87.195.254
-  tls: false
-  type: vmess
-  uuid: e8c6eb94-0c48-49de-c3eb-e305a26d1074
-  ws-opts:
-    headers:
-      Host: tg.dns68.9669.link
-    path: /TG@dns68维护
+  uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
 - alterId: 0
   cipher: auto
   name: '2,6|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
-  network: ws
-  port: 2052
-  server: 104.18.19.191
-  tls: false
-  type: vmess
-  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
-  ws-opts:
-    headers:
-      Host: helanv6cf.inekokkk.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,6,23,30|🇺🇸_US_美国->🇩🇪_DE_德国 #6'
   network: ws
   port: 2052
   server: 104.18.36.119
@@ -80,23 +37,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,6,16,38|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
+  name: '2,6,23|美国 CloudFlare节点 #5'
   network: ws
-  port: 2082
-  server: 172.67.130.140
+  port: 2052
+  server: 104.18.19.191
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
-      Host: s1c.v2.v001sss.xyz
+      Host: helanv6cf.inekokkk.top
     path: /
 - alterId: 0
   cipher: auto
   name: '3,7|_US_->_DE__1 #1'
   network: ws
   port: 2052
-  server: cfcdn1.sanfencdn9.com
+  server: 104.19.250.15
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -105,54 +62,20 @@ proxies:
     headers:
       host: helanv6cf.inekokkk.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: '3,7|_US_->_CA_ #1'
-  network: ws
-  port: 8080
-  server: yh4.dtku41.xyz
+- name: '3,7|_CN_->_DE_ #1'
+  network: tcp
+  password: MyYoZhfX
+  port: 40316
+  server: 36.138.99.56
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alterId: 0
-  cipher: auto
-  name: '3,7|_US_->_FR__1 #1'
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3,7|_KR_->_RU_ #1'
-  network: ws
-  port: 60999
-  server: 210.87.195.254
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e8c6eb94-0c48-49de-c3eb-e305a26d1074
-  ws-opts:
-    headers:
-      host: tg.dns68.9669.link
-    path: /TG@dns68
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '3,7|_US_->_DE__2 #1'
   network: ws
   port: 2052
-  server: 104.18.19.191
+  server: 104.18.36.119
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -166,7 +89,7 @@ proxies:
   name: '3,7|_US_->_DE__3 #1'
   network: ws
   port: 2052
-  server: 104.18.36.119
+  server: 104.18.19.191
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -177,29 +100,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,7|_US_->_FR__2 #1'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- name: '3,7|_CN_->_DE_ #1'
-  network: tcp
-  password: MyYoZhfX
-  port: 40316
-  server: 36.138.99.56
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '15,38|🇺🇸_US_美国 #33'
+  name: '15,38|🇺🇸_US_美国 #40'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -212,7 +113,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '15,38|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
+  name: '15,38|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -238,7 +139,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,16,38|🇺🇸_US_美国 #32'
+  name: '15,16,38|🇺🇸_US_美国 #39'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -251,7 +152,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '15,16|🇺🇸_US_美国 #21'
+  name: '15,16|🇺🇸_US_美国 #29'
   network: ws
   port: 8080
   server: 162.159.5.6
@@ -264,17 +165,31 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: 30|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
+  name: '16,23,38|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
   network: ws
-  port: 80
-  server: upload.ir
+  port: 2082
+  server: 104.21.8.157
+  servername: ''
   tls: false
   type: vmess
-  uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      Host: is3-vmess.sshmax.xyz
-    path: /vmess
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '16,38|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 30|🇺🇸_US_美国->🇵🇱_PL_波兰
@@ -288,3 +203,16 @@ proxies:
     headers:
       Host: pl2-vmess.sshmax.xyz
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 30|🇿🇦_ZA_南非->🇩🇪_DE_德国
+  network: ws
+  port: 2052
+  server: 206.238.236.36
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: mysan2.jaquay22.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
