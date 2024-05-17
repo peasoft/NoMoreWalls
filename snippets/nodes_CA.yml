@@ -1,4 +1,31 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '2,6|🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: 25996
+  server: 15.156.226.178
+  tls: false
+  type: vmess
+  uuid: 786c0e71-c2d4-4bdc-913f-5c75dd54721f
+  ws-opts:
+    headers:
+      Host: m.linkedin.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,7|_CA_ #1'
+  network: ws
+  port: 25996
+  server: 15.156.226.178
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 786c0e71-c2d4-4bdc-913f-5c75dd54721f
+  ws-opts:
+    headers:
+      host: m.linkedin.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇦CA-134.195.196.178-0713 | 22...
   password: G!yBwPWH3Vao
@@ -73,7 +100,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 15|🇨🇦_CA_加拿大
+  name: '15|🇨🇦_CA_加拿大 #2'
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -99,7 +126,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: 15,24|加拿大 240
+  name: '15|🇨🇦_CA_加拿大 #4'
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -112,7 +139,7 @@ proxies:
     path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: '15,16,38|🇨🇦_CA_加拿大 #6'
+  name: '15,16,38|🇨🇦_CA_加拿大 #8'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -141,7 +168,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5a2cb20c-ee34-4623-b6ec-74d096dafad5
+  uuid: b724649c-3985-49ac-a148-aeb22659ed9e
 - alterId: 0
   cipher: auto
   name: 24|加拿大 001
@@ -408,22 +435,6 @@ proxies:
   cipher: auto
   name: 24|加拿大 020
   network: ws
-  port: 2082
-  server: s1c.v2.v001sss.xyz
-  servername: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 021
-  network: ws
   port: 8080
   server: 104.19.172.136
   skip-cert-verify: true
@@ -435,219 +446,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 022
-  network: ws
-  port: 2052
-  server: 104.20.155.181
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.155.cn-db.top
-    path: /dabai.in18115520
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 023
-  network: ws
-  port: 80
-  server: 104.17.226.111
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.226.db-link02.top
-    path: /dabai.in11122617
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 024
-  network: ws
-  port: 8080
-  server: 104.19.78.90
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.78.db-link01.top
-    path: /dabai.in907819
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 025
-  network: ws
-  port: 80
-  server: 104.20.182.27
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.182.db-link01.top
-    path: /dabai.in2718220
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 026
-  network: ws
-  port: 80
-  server: 104.17.21.121
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.21.db-link01.top
-    path: /dabai.in1212117
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 027
-  network: ws
-  port: 8080
-  server: 104.16.20.185
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.20.cn-db.top
-    path: /dabai.in1852016
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 028
-  network: ws
-  port: 8080
-  server: 104.20.99.6
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.99.cn-db.top
-    path: /dabai.in69920
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 029
-  network: ws
-  port: 2095
-  server: 104.19.248.137
-  servername: data-us-2.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.248.db-link01.top
-    path: /dabai.in13724819
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 030
-  network: ws
-  port: 8080
-  server: 104.19.83.225
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.83.cn-db.top
-    path: /dabai.in2258319
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 031
-  network: ws
-  port: 2052
-  server: 104.17.217.127
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.217.cn-db.top
-    path: /dabai.in12721717
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 032
-  network: ws
-  port: 2052
-  server: 104.17.142.173
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.142.cn-db.top
-    path: /dabai.in17314217
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 033
-  network: ws
-  port: 2095
-  server: 104.17.201.56
-  servername: data-us-2.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.201.cn-db.top
-    path: /dabai.in5620117
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 034
-  network: ws
-  port: 2086
-  server: 104.20.182.43
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.182.cn-db.top
-    path: /dabai.in4318220
-- alterId: 0
-  cipher: auto
   country: 🏁ZZ
   delay: 1238
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 035
+  name: 24|加拿大 021
   network: ws
   port: 443
   server: 104.21.25.68
@@ -662,263 +465,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 036
-  network: ws
-  port: 2086
-  server: 104.20.131.240
-  servername: data-us-3.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.131.cn-db.top
-    path: /dabai.in24013120
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 037
-  network: ws
-  port: 8880
-  server: 104.17.37.182
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.37.db-link01.top
-    path: /dabai.in1823717
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 038
-  network: ws
-  port: 2082
-  server: 104.16.181.218
-  servername: data-us-3.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.181.cn-db.top
-    path: /dabai.in21818116
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 039
-  network: ws
-  port: 8880
-  server: 104.18.216.123
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.216.db-link01.top
-    path: /dabai.in12321618
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 040
-  network: ws
-  port: 80
-  server: 104.18.179.96
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.179.db-link02.top
-    path: /dabai.in9617918
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 041
-  network: ws
-  port: 2086
-  server: 104.19.231.211
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.231.db-link02.top
-    path: /dabai.in21123119
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 042
-  network: ws
-  port: 80
-  server: 104.17.221.189
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.221.db-link01.top
-    path: /dabai.in18922117
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 043
-  network: ws
-  port: 2082
-  server: 104.19.12.33
-  servername: cache-us-1.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.12.cn-db.top
-    path: /dabai.in331219
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 044
-  network: ws
-  port: 80
-  server: 104.19.186.64
-  servername: data-us-3.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.186.cn-db.top
-    path: /dabai.in6418619
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 045
-  network: ws
-  port: 2082
-  server: 104.18.230.161
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.230.db-link01.top
-    path: /dabai.in16123018
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 046
-  network: ws
-  port: 2095
-  server: 104.17.77.152
-  servername: data-us-3.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.77.db-link01.top
-    path: /dabai.in1527717
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 047
-  network: ws
-  port: 2052
-  server: 104.19.73.138
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.73.db-link01.top
-    path: /dabai.in1387319
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 048
-  network: ws
-  port: 2082
-  server: 104.19.224.66
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.224.cn-db.top
-    path: /dabai.in6622419
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 049
-  network: ws
-  port: 8880
-  server: 104.17.12.36
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.12.db-link02.top
-    path: /dabai.in361217
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 050
-  network: ws
-  port: 8880
-  server: 104.20.171.95
-  servername: data-us-2.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.171.db-link02.top
-    path: /dabai.in9517120
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 051
-  network: ws
-  port: 2082
-  server: 104.18.113.240
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.113.db-link02.top
-    path: /dabai.in24011318
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 052
+  name: 24|加拿大 022
   network: ws
   port: 8080
   server: go.alipay.ovh
@@ -931,48 +478,11 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  delay: 2571
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 053
-  network: ws
-  port: 80
-  server: 172.67.171.89
-  servername: Dk2-vmess.sshmax.xyz.
-  skip-cert-verify: true
-  type: vmess
-  uuid: eeb5cc8b-19e8-4b33-9193-1c29cda6dd2c
-  ws-opts:
-    headers:
-      HOST: Dk2-vmess.sshmax.xyz.
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  delay: 1448
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 054
-  network: ws
-  port: 443
-  server: 172.67.171.44
-  servername: pl2-vmess.sshmax.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 56e76d5a-374d-46f8-9147-3a4de91f8de5
-  ws-opts:
-    headers:
-      HOST: pl2-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
   country: 🏁ZZ
   delay: 1519
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 055
+  name: 24|加拿大 023
   network: ws
   port: 8080
   server: 162.159.8.55
@@ -990,7 +500,7 @@ proxies:
   delay: 2864
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 056
+  name: 24|加拿大 024
   network: ws
   port: 2052
   server: 104.16.68.38
@@ -1008,7 +518,7 @@ proxies:
   delay: 1717
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 057
+  name: 24|加拿大 025
   network: ws
   port: 2086
   server: 104.16.60.8
@@ -1022,352 +532,23 @@ proxies:
     path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 058
+  client-fingerprint: chrome
+  name: 24|加拿大 026
   network: ws
   port: 2095
-  server: 104.19.122.108
-  servername: cache-us-1.cn-db.top
-  skip-cert-verify: true
+  server: russia.com
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96
   ws-opts:
     headers:
-      Host: 100.100.17.122.cn-db.top
-    path: /dabai.in10812219
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 059
-  network: ws
-  port: 8080
-  server: 104.16.113.48
-  servername: data-us-3.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.113.cn-db.top
-    path: /dabai.in4811316
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 060
-  network: ws
-  port: 8080
-  server: 104.20.38.245
-  servername: data-us-3.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.38.db-link01.top
-    path: /dabai.in2453820
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 061
-  network: ws
-  port: 2086
-  server: 104.19.72.209
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.72.db-link02.top
-    path: /dabai.in2097219
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 062
-  network: ws
-  port: 80
-  server: 104.17.66.143
-  servername: data-us-1.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.66.db-link01.top
-    path: /dabai.in1436617
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 063
-  network: ws
-  port: 2082
-  server: 104.19.104.152
-  servername: data-us-2.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.104.db-link01.top
-    path: /dabai.in15210419
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 064
-  network: ws
-  port: 2052
-  server: 104.19.84.4
-  servername: data-us-2.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.84.db-link02.top
-    path: /dabai.in48419
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 065
-  network: ws
-  port: 8880
-  server: 104.18.93.151
-  servername: data-us-1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.93.cn-db.top
-    path: /dabai.in1519318
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 066
-  network: ws
-  port: 2095
-  server: 104.20.163.59
-  servername: cache-us-4.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100.100.17.163.db-link01.top
-    path: /dabai.in5916320
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 069
-  network: ws
-  port: 2095
-  server: 172.64.36.208
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-170.db-link01.top
-    path: /dabai.in172.64.36.208
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 070
-  network: ws
-  port: 2083
-  server: 104.20.145.85
-  servername: 100-100-17-304.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-304.db-link01.top
-    path: /dabai.in104.20.145.85
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 071
-  network: ws
-  port: 2082
-  server: 172.67.127.99
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-437.cn-db.top
-    path: /dabai.in172.67.127.99
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 072
-  network: ws
-  port: 2087
-  server: 172.67.75.33
-  servername: 100-100-17-411.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-411.db-link02.top
-    path: /dabai.in172.67.75.33
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 073
-  network: ws
-  port: 2083
-  server: 104.20.193.234
-  servername: 100-100-17-241.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-241.db-link01.top
-    path: /dabai.in104.20.193.234
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 074
-  network: ws
-  port: 80
-  server: 172.67.82.121
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-475.cn-db.top
-    path: /dabai.in172.67.82.121
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 075
-  network: ws
-  port: 8880
-  server: 104.20.222.82
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-303.db-link02.top
-    path: /dabai.in104.20.222.82
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 076
-  network: ws
-  port: 2083
-  server: 104.24.216.194
-  servername: 100-100-17-441.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-441.cn-db.top
-    path: /dabai.in104.24.216.194
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 077
-  network: ws
-  port: 2053
-  server: 172.67.68.36
-  servername: 100-100-17-493.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-493.db-link02.top
-    path: /dabai.in172.67.68.36
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 078
-  network: ws
-  port: 2082
-  server: 104.17.54.249
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-110.cn-db.top
-    path: /dabai.in104.17.54.249
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 079
-  network: ws
-  port: 2083
-  server: 104.17.221.93
-  servername: 100-100-17-103.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-103.db-link02.top
-    path: /dabai.in104.17.221.93
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 080
-  network: ws
-  port: 2095
-  server: 104.20.163.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-273.cn-db.top
-    path: /dabai.in104.20.163.8
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 081
-  network: ws
-  port: 8880
-  server: 172.67.112.73
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-459.db-link01.top
-    path: /dabai.in172.67.112.73
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 082
+  name: 24|加拿大 027
   network: ws
   port: 8080
   server: 108.162.192.100
@@ -1384,7 +565,7 @@ proxies:
   delay: 1807
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 083
+  name: 24|加拿大 028
   network: ws
   port: 2052
   server: 104.16.67.38
@@ -1398,270 +579,7 @@ proxies:
     path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 084
-  network: ws
-  port: 80
-  server: 104.20.59.73
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-71.db-link01.top
-    path: /dabai.in104.20.59.73
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 085
-  network: ws
-  port: 80
-  server: 104.20.129.206
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-395.db-link02.top
-    path: /dabai.in104.20.129.206
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 086
-  network: ws
-  port: 2053
-  server: 172.67.125.67
-  servername: 100-100-17-107.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-107.db-link02.top
-    path: /dabai.in172.67.125.67
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 087
-  network: ws
-  port: 2083
-  server: 104.24.222.119
-  servername: 100-100-17-417.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-417.db-link02.top
-    path: /dabai.in104.24.222.119
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 088
-  network: ws
-  port: 2086
-  server: 104.17.237.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-410.cn-db.top
-    path: /dabai.in104.17.237.78
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 089
-  network: ws
-  port: 2096
-  server: 172.67.110.234
-  servername: 100-100-17-331.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-331.db-link01.top
-    path: /dabai.in172.67.110.234
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 090
-  network: ws
-  port: 2087
-  server: 104.24.165.5
-  servername: 100-100-17-334.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-334.db-link01.top
-    path: /dabai.in104.24.165.5
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 091
-  network: ws
-  port: 2053
-  server: 172.67.0.104
-  servername: 100-100-17-352.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-352.cn-db.top
-    path: /dabai.in172.67.0.104
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 092
-  network: ws
-  port: 80
-  server: 104.24.12.80
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-192.db-link01.top
-    path: /dabai.in104.24.12.80
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 093
-  network: ws
-  port: 2086
-  server: 104.25.178.136
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-327.db-link01.top
-    path: /dabai.in104.25.178.136
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 094
-  network: ws
-  port: 2086
-  server: 172.67.8.49
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-430.db-link02.top
-    path: /dabai.in172.67.8.49
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 095
-  network: ws
-  port: 8880
-  server: 104.20.225.107
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-246.db-link01.top
-    path: /dabai.in104.20.225.107
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 096
-  network: ws
-  port: 2087
-  server: 104.19.244.93
-  servername: 100-100-17-330.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-330.cn-db.top
-    path: /dabai.in104.19.244.93
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 097
-  network: ws
-  port: 8080
-  server: 104.19.232.39
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-248.db-link01.top
-    path: /dabai.in104.19.232.39
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 098
-  network: ws
-  port: 2095
-  server: 172.67.48.55
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-354.db-link02.top
-    path: /dabai.in172.67.48.55
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 099
-  network: ws
-  port: 2053
-  server: 172.64.49.222
-  servername: 100-100-17-288.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-288.db-link02.top
-    path: /dabai.in172.64.49.222
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 100
-  network: ws
-  port: 2087
-  server: 104.24.190.58
-  servername: 100-100-17-90.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-90.cn-db.top
-    path: /dabai.in104.24.190.58
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 101
+  name: 24|加拿大 029
   network: ws
   port: 8080
   server: 108.162.193.100
@@ -1672,181 +590,10 @@ proxies:
     headers:
       Host: do-au.alipay.ovh
     path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 102
-  network: ws
-  port: 2082
-  server: 172.67.31.207
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-392.cn-db.top
-    path: /dabai.in172.67.31.207
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 103
-  network: ws
-  port: 8880
-  server: 104.20.29.196
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-473.cn-db.top
-    path: /dabai.in104.20.29.196
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 104
-  network: ws
-  port: 2095
-  server: 104.24.27.225
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-19.cn-db.top
-    path: /dabai.in104.24.27.225
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 105
-  network: ws
-  port: 2096
-  server: 172.67.49.93
-  servername: 100-100-17-416.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-416.cn-db.top
-    path: /dabai.in172.67.49.93
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 106
-  network: ws
-  port: 80
-  server: 104.24.246.1
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-252.db-link01.top
-    path: /dabai.in104.24.246.1
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 107
-  network: ws
-  port: 2053
-  server: 104.25.217.113
-  servername: 100-100-17-424.db-link02.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-424.db-link02.top
-    path: /dabai.in104.25.217.113
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 108
-  network: ws
-  port: 2087
-  server: 104.17.93.93
-  servername: 100-100-17-464.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-464.db-link01.top
-    path: /dabai.in104.17.93.93
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 109
-  network: ws
-  port: 443
-  server: 104.25.129.206
-  servername: 100-100-17-428.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-428.db-link01.top
-    path: /dabai.in104.25.129.206
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 110
-  network: ws
-  port: 2052
-  server: 104.25.111.162
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-258.db-link01.top
-    path: /dabai.in104.25.111.162
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 111
-  network: ws
-  port: 443
-  server: 104.24.148.74
-  servername: 100-100-17-110.db-link01.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-110.db-link01.top
-    path: /dabai.in104.24.148.74
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 112
-  network: ws
-  port: 2083
-  server: 104.25.51.110
-  servername: 100-100-17-469.cn-db.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7648993c-806d-318b-b187-d80139f15fe0
-  ws-opts:
-    headers:
-      Host: 100-100-17-469.cn-db.top
-    path: /dabai.in104.25.51.110
 - country: 🇺🇸US
   delay: 1237
   fingerprint: chrome
-  name: 24|加拿大 113
+  name: 24|加拿大 030
   network: ws
   password: 7fc8e7f0-bf17-4ace-a9c2-153c5499ddb9
   port: 443
@@ -1860,36 +607,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 114
-  network: ws
-  port: 443
-  server: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      Host: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
-    path: /azumase.ren
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 115
-  network: ws
-  port: 443
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    path: /azumase.ren
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: 24|加拿大 116
+  name: 24|加拿大 031
   network: ws
   port: 2086
   server: vip1.hpyjc.top
@@ -1905,7 +624,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2205
-  name: 24|加拿大 117
+  name: 24|加拿大 032
   network: ws
   port: 2052
   server: 104.19.54.72
@@ -1920,7 +639,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1769
-  name: 24|加拿大 118
+  name: 24|加拿大 033
   network: ws
   port: 8880
   server: 104.19.55.79
@@ -1935,7 +654,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2162
-  name: 24|加拿大 119
+  name: 24|加拿大 034
   network: ws
   port: 2052
   server: 104.19.54.102
@@ -1950,7 +669,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2637
-  name: 24|加拿大 120
+  name: 24|加拿大 035
   network: ws
   port: 8880
   server: 104.19.55.175
@@ -1965,7 +684,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1517
-  name: 24|加拿大 121
+  name: 24|加拿大 036
   network: ws
   port: 8880
   server: 104.19.55.194
@@ -1980,7 +699,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1634
-  name: 24|加拿大 122
+  name: 24|加拿大 037
   network: ws
   port: 8880
   server: 104.19.55.169
@@ -1995,7 +714,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1777
-  name: 24|加拿大 123
+  name: 24|加拿大 038
   network: ws
   port: 8880
   server: 104.19.55.110
@@ -2010,7 +729,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2796
-  name: 24|加拿大 124
+  name: 24|加拿大 039
   network: ws
   port: 2052
   server: 104.19.54.188
@@ -2025,7 +744,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2302
-  name: 24|加拿大 125
+  name: 24|加拿大 040
   network: ws
   port: 8880
   server: 104.19.55.159
@@ -2043,7 +762,7 @@ proxies:
   delay: 2488
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 126
+  name: 24|加拿大 041
   network: ws
   port: 2052
   server: 104.19.54.224
@@ -2061,7 +780,7 @@ proxies:
   delay: 1349
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 127
+  name: 24|加拿大 042
   network: ws
   port: 8880
   server: 104.19.55.190
@@ -2079,7 +798,7 @@ proxies:
   delay: 1235
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 128
+  name: 24|加拿大 043
   network: ws
   port: 8880
   server: 104.19.55.145
@@ -2097,7 +816,7 @@ proxies:
   delay: 1577
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 129
+  name: 24|加拿大 044
   network: ws
   port: 2052
   server: 104.19.54.19
@@ -2112,7 +831,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1880
-  name: 24|加拿大 130
+  name: 24|加拿大 045
   network: ws
   port: 8880
   server: 104.19.55.165
@@ -2130,7 +849,7 @@ proxies:
   delay: 2032
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 131
+  name: 24|加拿大 046
   network: ws
   port: 2052
   server: 104.19.54.10
@@ -2148,7 +867,7 @@ proxies:
   delay: 2045
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 132
+  name: 24|加拿大 047
   network: ws
   port: 2052
   server: 104.19.54.16
@@ -2166,7 +885,7 @@ proxies:
   delay: 1361
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 133
+  name: 24|加拿大 048
   network: ws
   port: 8880
   server: 104.19.55.233
@@ -2184,7 +903,7 @@ proxies:
   delay: 1669
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 134
+  name: 24|加拿大 049
   network: ws
   port: 2052
   server: 104.19.54.20
@@ -2202,7 +921,7 @@ proxies:
   delay: 2677
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 135
+  name: 24|加拿大 050
   network: ws
   port: 2052
   server: 104.19.54.164
@@ -2217,7 +936,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1705
-  name: 24|加拿大 136
+  name: 24|加拿大 051
   network: ws
   port: 2052
   server: 104.19.54.3
@@ -2232,7 +951,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1234
-  name: 24|加拿大 137
+  name: 24|加拿大 052
   network: ws
   port: 2052
   server: 104.19.54.0
@@ -2247,7 +966,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1900
-  name: 24|加拿大 138
+  name: 24|加拿大 053
   network: ws
   port: 2052
   server: 104.19.54.31
@@ -2262,7 +981,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1663
-  name: 24|加拿大 139
+  name: 24|加拿大 054
   network: ws
   port: 8880
   server: 104.19.55.63
@@ -2277,7 +996,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1503
-  name: 24|加拿大 140
+  name: 24|加拿大 055
   network: ws
   port: 8880
   server: 104.19.55.40
@@ -2292,7 +1011,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1356
-  name: 24|加拿大 141
+  name: 24|加拿大 056
   network: ws
   port: 2052
   server: 104.19.54.4
@@ -2310,7 +1029,7 @@ proxies:
   delay: 1608
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 142
+  name: 24|加拿大 057
   network: ws
   port: 2052
   server: 104.19.54.35
@@ -2325,7 +1044,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1528
-  name: 24|加拿大 143
+  name: 24|加拿大 058
   network: ws
   port: 8880
   server: 104.19.55.59
@@ -2340,7 +1059,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1518
-  name: 24|加拿大 144
+  name: 24|加拿大 059
   network: ws
   port: 8880
   server: 104.19.55.46
@@ -2355,7 +1074,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2392
-  name: 24|加拿大 145
+  name: 24|加拿大 060
   network: ws
   port: 8880
   server: 104.19.55.158
@@ -2373,7 +1092,7 @@ proxies:
   delay: 2225
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 146
+  name: 24|加拿大 061
   network: ws
   port: 8880
   server: 104.19.55.54
@@ -2391,7 +1110,7 @@ proxies:
   delay: 2180
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 147
+  name: 24|加拿大 062
   network: ws
   port: 8880
   server: 104.19.55.76
@@ -2406,7 +1125,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2119
-  name: 24|加拿大 148
+  name: 24|加拿大 063
   network: ws
   port: 8880
   server: 104.19.55.71
@@ -2421,7 +1140,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1612
-  name: 24|加拿大 149
+  name: 24|加拿大 064
   network: ws
   port: 2052
   server: 104.19.54.61
@@ -2439,7 +1158,7 @@ proxies:
   delay: 1529
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 150
+  name: 24|加拿大 065
   network: ws
   port: 2052
   server: 104.19.54.90
@@ -2454,7 +1173,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1547
-  name: 24|加拿大 151
+  name: 24|加拿大 066
   network: ws
   port: 2052
   server: 104.19.54.82
@@ -2472,7 +1191,7 @@ proxies:
   delay: 1638
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 152
+  name: 24|加拿大 067
   network: ws
   port: 8880
   server: 104.19.55.50
@@ -2487,7 +1206,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1182
-  name: 24|加拿大 153
+  name: 24|加拿大 068
   network: ws
   port: 8880
   server: 104.19.55.187
@@ -2502,7 +1221,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2130
-  name: 24|加拿大 154
+  name: 24|加拿大 069
   network: ws
   port: 8880
   server: 104.19.55.49
@@ -2517,7 +1236,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2568
-  name: 24|加拿大 155
+  name: 24|加拿大 070
   network: ws
   port: 2052
   server: 104.19.54.65
@@ -2535,7 +1254,7 @@ proxies:
   delay: 1568
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 156
+  name: 24|加拿大 071
   network: ws
   port: 8880
   server: 104.19.55.43
@@ -2550,7 +1269,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1398
-  name: 24|加拿大 157
+  name: 24|加拿大 072
   network: ws
   port: 8880
   server: 104.19.55.37
@@ -2565,7 +1284,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2042
-  name: 24|加拿大 158
+  name: 24|加拿大 073
   network: ws
   port: 2052
   server: 104.19.54.113
@@ -2580,7 +1299,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1708
-  name: 24|加拿大 159
+  name: 24|加拿大 074
   network: ws
   port: 2052
   server: 104.19.54.120
@@ -2595,7 +1314,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2090
-  name: 24|加拿大 160
+  name: 24|加拿大 075
   network: ws
   port: 2052
   server: 104.19.54.91
@@ -2610,7 +1329,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2368
-  name: 24|加拿大 161
+  name: 24|加拿大 076
   network: ws
   port: 2052
   server: 104.19.54.193
@@ -2625,7 +1344,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1970
-  name: 24|加拿大 162
+  name: 24|加拿大 077
   network: ws
   port: 2052
   server: 104.19.54.234
@@ -2640,7 +1359,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1506
-  name: 24|加拿大 163
+  name: 24|加拿大 078
   network: ws
   port: 2052
   server: 104.19.54.168
@@ -2655,7 +1374,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1603
-  name: 24|加拿大 164
+  name: 24|加拿大 079
   network: ws
   port: 8880
   server: 104.19.55.149
@@ -2670,7 +1389,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1727
-  name: 24|加拿大 165
+  name: 24|加拿大 080
   network: ws
   port: 2052
   server: 104.19.54.187
@@ -2685,7 +1404,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1741
-  name: 24|加拿大 166
+  name: 24|加拿大 081
   network: ws
   port: 2052
   server: 104.19.54.98
@@ -2700,7 +1419,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2803
-  name: 24|加拿大 167
+  name: 24|加拿大 082
   network: ws
   port: 2052
   server: 104.19.54.70
@@ -2715,7 +1434,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2485
-  name: 24|加拿大 168
+  name: 24|加拿大 083
   network: ws
   port: 2052
   server: 104.19.54.163
@@ -2730,7 +1449,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1515
-  name: 24|加拿大 169
+  name: 24|加拿大 084
   network: ws
   port: 8880
   server: 104.19.55.170
@@ -2745,7 +1464,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2017
-  name: 24|加拿大 170
+  name: 24|加拿大 085
   network: ws
   port: 2052
   server: 104.19.54.27
@@ -2760,7 +1479,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1760
-  name: 24|加拿大 171
+  name: 24|加拿大 086
   network: ws
   port: 2052
   server: 104.19.54.131
@@ -2775,7 +1494,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1887
-  name: 24|加拿大 172
+  name: 24|加拿大 087
   network: ws
   port: 2052
   server: 104.19.54.140
@@ -2790,7 +1509,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2487
-  name: 24|加拿大 173
+  name: 24|加拿大 088
   network: ws
   port: 2052
   server: 104.19.54.73
@@ -2805,7 +1524,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2654
-  name: 24|加拿大 174
+  name: 24|加拿大 089
   network: ws
   port: 2052
   server: 104.19.54.251
@@ -2820,7 +1539,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2039
-  name: 24|加拿大 175
+  name: 24|加拿大 090
   network: ws
   port: 2052
   server: 104.19.54.191
@@ -2835,7 +1554,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1889
-  name: 24|加拿大 176
+  name: 24|加拿大 091
   network: ws
   port: 2052
   server: 104.19.54.204
@@ -2850,7 +1569,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2082
-  name: 24|加拿大 177
+  name: 24|加拿大 092
   network: ws
   port: 2052
   server: 104.19.54.176
@@ -2865,7 +1584,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1675
-  name: 24|加拿大 178
+  name: 24|加拿大 093
   network: ws
   port: 2052
   server: 104.19.54.77
@@ -2880,7 +1599,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1681
-  name: 24|加拿大 179
+  name: 24|加拿大 094
   network: ws
   port: 8880
   server: 104.19.55.89
@@ -2895,7 +1614,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2530
-  name: 24|加拿大 180
+  name: 24|加拿大 095
   network: ws
   port: 8880
   server: 104.19.55.97
@@ -2910,7 +1629,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2441
-  name: 24|加拿大 181
+  name: 24|加拿大 096
   network: ws
   port: 8880
   server: 104.19.55.197
@@ -2925,7 +1644,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2307
-  name: 24|加拿大 182
+  name: 24|加拿大 097
   network: ws
   port: 8880
   server: 104.19.55.90
@@ -2940,7 +1659,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2295
-  name: 24|加拿大 183
+  name: 24|加拿大 098
   network: ws
   port: 2052
   server: 104.19.54.100
@@ -2955,7 +1674,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1224
-  name: 24|加拿大 184
+  name: 24|加拿大 099
   network: ws
   port: 8880
   server: 104.19.55.95
@@ -2970,7 +1689,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1908
-  name: 24|加拿大 185
+  name: 24|加拿大 100
   network: ws
   port: 8880
   server: 104.19.55.68
@@ -2985,7 +1704,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2203
-  name: 24|加拿大 186
+  name: 24|加拿大 101
   network: ws
   port: 2086
   server: vip2.hpyjc.top
@@ -2999,7 +1718,7 @@ proxies:
       Host: de1.hpyjc.top
     path: /?ed=2048
 - delay: 2036
-  name: 24|加拿大 187
+  name: 24|加拿大 102
   network: ws
   password: 559c3b5f-3dd1-47e4-94ad-017cb392a7ba
   port: 443
@@ -3018,7 +1737,7 @@ proxies:
   delay: 754
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 188
+  name: 24|加拿大 103
   network: ws
   port: 80
   server: 162.159.129.138
@@ -3036,7 +1755,7 @@ proxies:
   delay: 1394
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 189
+  name: 24|加拿大 104
   network: ws
   port: 80
   server: 104.18.15.19
@@ -3050,7 +1769,7 @@ proxies:
     path: b64f510f
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 190
+  name: 24|加拿大 105
   network: ws
   port: 2082
   server: 172.64.35.230
@@ -3065,7 +1784,7 @@ proxies:
     path: /dabai.in172.64.35.230
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 191
+  name: 24|加拿大 106
   network: ws
   port: 80
   server: 104.24.231.69
@@ -3084,7 +1803,7 @@ proxies:
   delay: 2711
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 192
+  name: 24|加拿大 107
   network: ws
   port: 8880
   server: 104.19.55.238
@@ -3102,7 +1821,7 @@ proxies:
   delay: 1716
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 193
+  name: 24|加拿大 108
   network: ws
   port: 8880
   server: 104.19.55.192
@@ -3120,7 +1839,7 @@ proxies:
   delay: 1856
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 194
+  name: 24|加拿大 109
   network: ws
   port: 2052
   server: 104.19.54.5
@@ -3138,7 +1857,7 @@ proxies:
   delay: 1378
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 195
+  name: 24|加拿大 110
   network: ws
   port: 2052
   server: 104.19.54.227
@@ -3156,7 +1875,7 @@ proxies:
   delay: 1345
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 196
+  name: 24|加拿大 111
   network: ws
   port: 2052
   server: 104.19.54.195
@@ -3171,29 +1890,10 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 1765
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 197
-  network: ws
-  port: 443
-  server: 104.21.31.87
-  servername: ch1-vmess.sshmax.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e3872a5b-ee93-4a42-b85b-a785c31e5b80
-  ws-opts:
-    headers:
-      HOST: ch1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
   delay: 767
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 198
+  name: 24|加拿大 112
   network: ws
   port: 80
   server: 162.159.136.98
@@ -3211,7 +1911,7 @@ proxies:
   delay: 1292
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 199
+  name: 24|加拿大 113
   network: ws
   port: 2082
   server: achk.cloudflarest.link
@@ -3226,7 +1926,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|加拿大 200
+  name: 24|加拿大 114
   network: ws
   port: 2052
   server: achk.cloudflarest.link
@@ -3242,7 +1942,7 @@ proxies:
     path: /lemonnw?ed=2560
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 201
+  name: 24|加拿大 115
   network: ws
   port: 2082
   server: 172.67.54.53
@@ -3257,7 +1957,7 @@ proxies:
     path: /dabai.in172.67.54.53
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 202
+  name: 24|加拿大 116
   network: ws
   port: 2083
   server: 172.67.11.23
@@ -3273,7 +1973,7 @@ proxies:
     path: /dabai.in172.67.11.23
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 203
+  name: 24|加拿大 117
   network: ws
   port: 2082
   server: 104.20.251.125
@@ -3288,7 +1988,7 @@ proxies:
     path: /dabai.in104.20.251.125
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 204
+  name: 24|加拿大 118
   network: ws
   port: 2053
   server: 104.20.84.188
@@ -3304,7 +2004,7 @@ proxies:
     path: /dabai.in104.20.84.188
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 205
+  name: 24|加拿大 119
   network: ws
   port: 8880
   server: 104.24.187.149
@@ -3319,7 +2019,7 @@ proxies:
     path: /dabai.in104.24.187.149
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 206
+  name: 24|加拿大 120
   network: ws
   port: 443
   server: 172.67.31.136
@@ -3335,7 +2035,7 @@ proxies:
     path: /dabai.in172.67.31.136
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 207
+  name: 24|加拿大 121
   network: ws
   port: 2082
   server: 172.64.41.230
@@ -3350,7 +2050,7 @@ proxies:
     path: /dabai.in172.64.41.230
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 208
+  name: 24|加拿大 122
   network: ws
   port: 2095
   server: 104.25.112.243
@@ -3365,7 +2065,7 @@ proxies:
     path: /dabai.in104.25.112.243
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 209
+  name: 24|加拿大 123
   network: ws
   port: 2083
   server: 104.25.50.92
@@ -3381,7 +2081,7 @@ proxies:
     path: /dabai.in104.25.50.92
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 210
+  name: 24|加拿大 124
   network: ws
   port: 2086
   server: 172.67.104.169
@@ -3396,7 +2096,7 @@ proxies:
     path: /dabai.in172.67.104.169
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 211
+  name: 24|加拿大 125
   network: ws
   port: 443
   server: cf-dx-dns.sharecentre.online
@@ -3410,7 +2110,7 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 212
+  name: 24|加拿大 126
   network: ws
   port: 80
   server: sbl2.shabijichang.com
@@ -3423,20 +2123,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 213
-  network: ws
-  port: 80
-  server: asb2.shabijichang.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: asb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 214
+  name: 24|加拿大 127
   network: ws
   port: 2083
   server: 104.19.53.74
@@ -3452,7 +2139,7 @@ proxies:
     path: /dabai.in104.19.53.74
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 215
+  name: 24|加拿大 128
   network: ws
   port: 443
   server: 172.64.48.205
@@ -3468,7 +2155,7 @@ proxies:
     path: /dabai.in172.64.48.205
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 216
+  name: 24|加拿大 129
   network: ws
   port: 2096
   server: 104.16.140.157
@@ -3484,7 +2171,7 @@ proxies:
     path: /dabai.in104.16.140.157
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 217
+  name: 24|加拿大 130
   network: ws
   port: 443
   server: 104.20.42.163
@@ -3500,7 +2187,7 @@ proxies:
     path: /dabai.in104.20.42.163
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 218
+  name: 24|加拿大 131
   network: ws
   port: 2096
   server: 172.67.112.128
@@ -3516,21 +2203,7 @@ proxies:
     path: /dabai.in172.67.112.128
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 219
-  network: ws
-  port: 443
-  server: www.okcupid.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6c08df77-b99e-48e6-829d-2f4d423e7e60
-  ws-opts:
-    headers:
-      Host: njj.888553.xyz
-    path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
-  name: 24|加拿大 220
+  name: 24|加拿大 132
   network: ws
   port: 2053
   server: 104.24.40.185
@@ -3546,7 +2219,7 @@ proxies:
     path: /dabai.in104.24.40.185
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 221
+  name: 24|加拿大 133
   network: ws
   port: 2083
   server: 172.67.84.185
@@ -3562,7 +2235,7 @@ proxies:
     path: /dabai.in172.67.84.185
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 222
+  name: 24|加拿大 134
   network: ws
   port: 2087
   server: 172.67.76.190
@@ -3578,7 +2251,7 @@ proxies:
     path: /dabai.in172.67.76.190
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 223
+  name: 24|加拿大 135
   network: ws
   port: 2082
   server: 104.24.88.223
@@ -3593,7 +2266,7 @@ proxies:
     path: /dabai.in104.24.88.223
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 224
+  name: 24|加拿大 136
   network: ws
   port: 2053
   server: 104.25.222.73
@@ -3609,7 +2282,7 @@ proxies:
     path: /dabai.in104.25.222.73
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 225
+  name: 24|加拿大 137
   network: ws
   port: 80
   server: 104.25.249.128
@@ -3624,7 +2297,7 @@ proxies:
     path: /dabai.in104.25.249.128
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 226
+  name: 24|加拿大 138
   network: ws
   port: 443
   server: 172.67.63.119
@@ -3640,7 +2313,7 @@ proxies:
     path: /dabai.in172.67.63.119
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 227
+  name: 24|加拿大 139
   network: ws
   port: 2087
   server: 172.64.34.238
@@ -3656,7 +2329,7 @@ proxies:
     path: /dabai.in172.64.34.238
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 228
+  name: 24|加拿大 140
   network: ws
   port: 2095
   server: 172.67.27.200
@@ -3671,7 +2344,7 @@ proxies:
     path: /dabai.in172.67.27.200
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 229
+  name: 24|加拿大 141
   network: ws
   port: 2086
   server: 104.19.181.198
@@ -3686,7 +2359,7 @@ proxies:
     path: /dabai.in104.19.181.198
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 230
+  name: 24|加拿大 142
   network: ws
   port: 2082
   server: 104.20.73.204
@@ -3701,7 +2374,7 @@ proxies:
     path: /dabai.in104.20.73.204
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 231
+  name: 24|加拿大 143
   network: ws
   port: 2083
   server: 104.21.233.7
@@ -3717,7 +2390,7 @@ proxies:
     path: /dabai.in104.21.233.7
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 232
+  name: 24|加拿大 144
   network: ws
   port: 8080
   server: 104.20.74.31
@@ -3732,7 +2405,7 @@ proxies:
     path: /dabai.in104.20.74.31
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 233
+  name: 24|加拿大 145
   network: ws
   port: 2086
   server: 104.19.229.158
@@ -3747,7 +2420,7 @@ proxies:
     path: /dabai.in104.19.229.158
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 234
+  name: 24|加拿大 146
   network: ws
   port: 8080
   server: 104.16.98.8
@@ -3762,29 +2435,11 @@ proxies:
     path: /dabai.in104.16.98.8
 - alterId: 0
   cipher: auto
-  country: 🇨🇦CA
-  delay: 1261
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 235
-  network: ws
-  port: 25996
-  server: 15.156.226.178
-  servername: m.linkedin.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 786c0e71-c2d4-4bdc-913f-5c75dd54721f
-  ws-opts:
-    headers:
-      HOST: m.linkedin.com
-    path: /
-- alterId: 0
-  cipher: auto
   country: 🏁ZZ
   delay: 1370
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 236
+  name: 24|加拿大 147
   network: ws
   port: 80
   server: www.glassdoor.com
@@ -3799,7 +2454,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2484
-  name: 24|加拿大 237
+  name: 24|加拿大 148
   network: ws
   port: 2052
   server: 104.21.8.93
@@ -3812,7 +2467,7 @@ proxies:
     path: /video/QXjZG5u4F2
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 241
+  name: 24|加拿大 151
   network: ws
   port: 8880
   server: 172.64.35.209
@@ -3827,7 +2482,7 @@ proxies:
     path: /dabai.in172.64.35.209
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 242
+  name: 24|加拿大 152
   network: ws
   port: 80
   server: 104.24.17.234
@@ -3842,7 +2497,7 @@ proxies:
     path: /dabai.in104.24.17.234
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 243
+  name: 24|加拿大 153
   network: ws
   port: 2082
   server: 172.67.49.122
@@ -3857,7 +2512,7 @@ proxies:
     path: /dabai.in172.67.49.122
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 244
+  name: 24|加拿大 154
   network: ws
   port: 8880
   server: 104.24.52.174
@@ -3872,7 +2527,7 @@ proxies:
     path: /dabai.in104.24.52.174
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 245
+  name: 24|加拿大 155
   network: ws
   port: 2086
   server: 104.24.241.224
@@ -3887,7 +2542,7 @@ proxies:
     path: /dabai.in104.24.241.224
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 246
+  name: 24|加拿大 156
   network: ws
   port: 2082
   server: 104.20.2.6
@@ -3902,7 +2557,7 @@ proxies:
     path: /dabai.in104.20.2.6
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 247
+  name: 24|加拿大 157
   network: ws
   port: 2083
   server: 104.25.58.252
@@ -3918,7 +2573,7 @@ proxies:
     path: /dabai.in104.25.58.252
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 248
+  name: 24|加拿大 158
   network: ws
   port: 80
   server: series-v1.samanehha.co
@@ -3931,7 +2586,7 @@ proxies:
     path: /dT9s3HqgZeD3eApzDAfhOHq
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 249
+  name: 24|加拿大 159
   network: ws
   port: 8443
   server: cfzl1.freeapp.buzz
@@ -3943,6 +2598,127 @@ proxies:
     headers:
       Host: hk.bitsbear.com
     path: /fdsffgfdgdfgdf
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 160
+  network: ws
+  port: 80
+  server: 104.20.75.50
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-125.db-link01.top
+    path: /dabai.in104.20.75.50
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 161
+  network: ws
+  port: 2095
+  server: 104.25.118.35
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-58.db-link02.top
+    path: /dabai.in104.25.118.35
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 162
+  network: ws
+  port: 2082
+  server: 104.24.128.176
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-133.db-link02.top
+    path: /dabai.in104.24.128.176
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 163
+  network: ws
+  port: 2053
+  server: 104.19.134.217
+  servername: 100-100-17-298.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-298.db-link02.top
+    path: /dabai.in104.19.134.217
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 164
+  network: ws
+  port: 2082
+  server: 104.17.114.11
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-42.cn-db.top
+    path: /dabai.in104.17.114.11
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 165
+  network: ws
+  port: 80
+  server: 104.25.76.157
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-244.cn-db.top
+    path: /dabai.in104.25.76.157
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 166
+  network: ws
+  port: 2082
+  server: 104.18.224.35
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-162.db-link02.top
+    path: /dabai.in104.18.224.35
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 167
+  network: ws
+  port: 8880
+  server: 104.24.75.145
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6933218-ad65-3943-9afd-0d78638a61dd
+  ws-opts:
+    headers:
+      Host: 100-100-17-23.db-link01.top
+    path: /dabai.in104.24.75.145
 - alterId: 0
   cipher: auto
   name: 30|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9...
@@ -4164,7 +2940,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 72598813-1c6d-49d5-9e58-832dfada53f1
+  uuid: 796a2575-c029-467a-9e5b-3e798802be56
 - alterId: 0
   cipher: auto
   name: '34|🇨🇦加拿大 | 107 | 负载优化 | 1x '
@@ -4174,4 +2950,4 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: eb055e32-3172-42be-9038-47a8f5d46903
+  uuid: 30a8e01d-1b9b-48c7-89bd-b5863aa0e08f
