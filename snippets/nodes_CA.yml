@@ -1,25 +1,12 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 2,3,6,7,30|🇨🇦 加拿大
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- name: 3,7,24|加拿大 037
+- alpn:
+  - http/1.1
+  name: 3,7,24|加拿大 050
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 52.60.193.175
-  skip-cert-verify: false
+  server: 35.182.39.30
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -109,7 +96,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '15|🇨🇦_CA_加拿大 #2'
+  name: 15|🇨🇦_CA_加拿大
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -122,7 +109,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '15,38|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
+  name: '15,24,38|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
   network: ws
   port: 8080
   server: 23.227.38.22
@@ -135,7 +122,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '15|🇨🇦_CA_加拿大 #4'
+  name: '15|🇨🇦_CA_加拿大 #2'
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -148,7 +135,7 @@ proxies:
     path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: '15,16,38|🇨🇦_CA_加拿大 #8'
+  name: '15,16,38|🇨🇦_CA_加拿大 #6'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -157,7 +144,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: 15,16|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  name: 15,16,24|加拿大 048
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -177,7 +164,21 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e6de862f-229e-401b-b74f-8c171d1265ee
+  uuid: 785c75b2-16ea-4268-80cf-b340d68a031f
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇨🇦 加拿大
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - name: 24|加拿大 002
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
@@ -594,6 +595,27 @@ proxies:
     headers:
       HOST: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- name: 24|加拿大 037
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.60.193.175
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 24|加拿大 038
+  network: grpc
+  password: f85e2ad7-3e26-4589-b478-b0b15b9b5907
+  port: 2087
+  server: 104.21.20.148
+  skip-cert-verify: true
+  sni: us1.trojanvpn.de
+  tls: true
+  type: trojan
+  udp: true
 - name: 24|加拿大 040
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
@@ -689,6 +711,66 @@ proxies:
     headers:
       HOST: 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev
     path: /hms02.fxiaomi.sbs/link
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 051
+  network: ws
+  port: 80
+  server: 104.16.10.98
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ef6de0e7-9cc5-36a4-8574-b82f7aaa14e1
+  ws-opts:
+    headers:
+      Host: 100-100-17-198.cn-db.top
+    path: /dabai.in104.16.10.98
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 052
+  network: ws
+  port: 2052
+  server: 104.24.17.16
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ef6de0e7-9cc5-36a4-8574-b82f7aaa14e1
+  ws-opts:
+    headers:
+      Host: 100-100-17-434.db-link02.top
+    path: /dabai.in104.24.17.16
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 053
+  network: ws
+  port: 8880
+  server: 104.19.105.54
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ef6de0e7-9cc5-36a4-8574-b82f7aaa14e1
+  ws-opts:
+    headers:
+      Host: 100-100-17-288.db-link02.top
+    path: /dabai.in104.19.105.54
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 054
+  network: ws
+  port: 2082
+  server: 104.25.8.78
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ef6de0e7-9cc5-36a4-8574-b82f7aaa14e1
+  ws-opts:
+    headers:
+      Host: 100-100-17-490.db-link01.top
+    path: /dabai.in104.25.8.78
 - alterId: 0
   cipher: auto
   name: 30|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9...
@@ -896,7 +978,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5f49dd5f-a0f4-48ac-bd2d-b101b2fc7bff
+  uuid: 6281013b-cb2e-4e81-a407-8081344afe09
 - alterId: 0
   cipher: auto
   name: '34|🇨🇦加拿大 | 107 | 负载优化 | 1x '
@@ -906,4 +988,4 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 786e0d42-bebb-49d8-a523-9cf9a21ac2fb
+  uuid: 454754aa-7723-4856-ada3-0671a389df60

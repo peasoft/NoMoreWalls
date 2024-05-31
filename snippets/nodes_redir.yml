@@ -1,7 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,6|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  name: '2,3,6,7|_CN_->_US__1 #1'
+  network: tcp
+  port: 30013
+  server: 183.240.179.207
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- alterId: 0
+  cipher: auto
+  name: '2,6|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
   network: ws
   port: 2052
   server: 172.67.164.78
@@ -14,7 +24,37 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,7|_US_->_IN_ #1'
+  name: 2,6,10|RELAY-104.17.156.224-1356 | 6....
+  network: ws
+  port: 2052
+  server: 104.17.156.224
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
+- name: '3,7|_CN_->_US__2 #1'
+  network: tcp
+  password: TNDSJfNv
+  port: 4787
+  server: 36.151.195.48
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: '3,7|_CN_->_US__3 #1'
+  network: tcp
+  password: TNDSJfNv
+  port: 4603
+  server: 36.151.195.48
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '3,7|_US_->_IN__1 #1'
   network: ws
   port: 2052
   server: 172.67.164.78
@@ -26,25 +66,23 @@ proxies:
     headers:
       host: in3.wish.ml
     path: /
-- name: '3,7|_CN_->_US__1 #1'
-  network: tcp
-  password: TNDSJfNv
-  port: 4787
-  server: 36.151.195.48
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '3,7|_CN_->_US__2 #1'
-  network: tcp
-  password: TNDSJfNv
-  port: 4603
-  server: 36.151.195.48
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '15,38|🇺🇸_US_美国 #31'
+  name: '3,7|_US_->_IN__2 #1'
+  network: ws
+  port: 2052
+  server: 104.17.156.224
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      host: in4.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '15,38|🇺🇸_US_美国 #35'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -70,7 +108,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '15,16,38|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #2'
+  name: '15,16,24,38|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #2'
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -83,7 +121,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,16,38|🇺🇸_US_美国 #30'
+  name: '15,16,38|🇺🇸_US_美国 #34'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -96,7 +134,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '15,16|🇺🇸_US_美国 #19'
+  name: '15,16|🇺🇸_US_美国 #23'
   network: ws
   port: 8080
   server: 162.159.5.6
