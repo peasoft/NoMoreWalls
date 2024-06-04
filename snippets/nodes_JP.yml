@@ -1,13 +1,7 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 10|🇯🇵JP-13.231.229.48-0961 | 12.9...
-  password: amazonskr05
-  port: 443
-  server: 13.231.229.48
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 10|🇯🇵JP-152.69.197.74-2466 | 3.73...
+  name: 10|🇯🇵JP-152.69.197.74-2428 | 16.0...
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -18,28 +12,10 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-gcm
-  name: 10|🇯🇵JP-154.47.20.240-0923 | 12.7...
+  name: 10|🇯🇵JP-154.47.20.240-0852 | 25.8...
   password: shadowsocks
   port: 443
   server: 154.47.20.240
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 10|🇯🇵JP-183.181.36.194-0322 | 1.0...
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: 10|🇯🇵JP-54.95.163.121-2785 | 13.0...
-  password: amazonskr05
-  port: 443
-  server: 54.95.163.121
   type: ss
 - alterId: 0
   cipher: auto
@@ -54,18 +30,8 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 30|%F0%9F%87%AF%F0%9F%87%B5%20Jap...
-  network: tcp
-  port: '2083'
-  server: jp-v2ray.ipracevpn.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 3a0c6a81-236b-4e73-ac22-a580549edbf9
-- alterId: 0
-  cipher: auto
-  name: 30|🔒 VM-WS-NA 🇯🇵 JP-152.69.197.74...
   network: ws
-  port: '12345'
+  port: 12345
   server: 152.69.197.74
   servername: ''
   tls: false
@@ -77,21 +43,18 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  name: 30|🇯🇵日本-1
-  network: ws
-  port: '2086'
-  server: hsj108k.mm-cc.top
-  tls: false
+  name: '30|%F0%9F%87%AF%F0%9F%87%B5%20Jap... #1'
+  network: tcp
+  port: '2083'
+  server: jp-v2ray.ipracevpn.com
+  servername: ''
+  tls: true
   type: vmess
-  uuid: 958aff36-100b-4fa3-8a47-e8709a270f60
-  ws-opts:
-    headers:
-      Host: akjp1um.mmaccc.top
-    path: /?ed=2048
+  uuid: 3a0c6a81-236b-4e73-ac22-a580549edbf9
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 32,33|日本4|@ripaojiedian
+  name: 30,32,33|日本4|@ripaojiedian
   network: ws
   port: '80'
   server: jp5g.forlive.live
@@ -105,6 +68,29 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🔒 VM-TCP-NA 🇯🇵 JP-158.51.111.1...
+  network: tcp
+  port: '32365'
+  server: 158.51.111.114
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f956a5d9-1f30-4f89-adc8-4286f4a3eb16
+- alterId: 0
+  cipher: auto
+  name: 30|🇯🇵日本-1
+  network: ws
+  port: '2086'
+  server: hsj108k.mm-cc.top
+  tls: false
+  type: vmess
+  uuid: 958aff36-100b-4fa3-8a47-e8709a270f60
+  ws-opts:
+    headers:
+      Host: akjp1um.mmaccc.top
+    path: /?ed=2048
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 32|🇯🇵 日本特殊|@ripaojiedian
