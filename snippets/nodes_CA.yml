@@ -1,4 +1,26 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '2,3,6,7,30|🇨🇦_CA_加拿大 #10'
+  network: tcp
+  port: 443
+  server: ca-v2ray.ipracevpn.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e3ef2387-33aa-4c0f-86b5-008ee3bcb945
+- alterId: 0
+  cipher: auto
+  name: '2,3,6,7|_CA__2 #1'
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 10|🇨🇦CA-134.195.196.178-0924 | 1....
   password: G!yBwPWH3Vao
@@ -49,7 +71,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 15|🇨🇦_CA_加拿大
+  name: '15|🇨🇦_CA_加拿大 #4'
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -75,7 +97,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '15|🇨🇦_CA_加拿大 #2'
+  name: 15,23|加拿大 v2rayfree.eu.org
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -88,7 +110,7 @@ proxies:
     path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: '15,16,38|🇨🇦_CA_加拿大 #7'
+  name: '15,16,38|🇨🇦_CA_加拿大 #11'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -405,23 +427,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  delay: 1992
-  h2-opts: {}
-  http-opts: {}
-  name: 24|加拿大 027
-  network: ws
-  port: 8080
-  server: 104.16.67.38
-  servername: 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      HOST: 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev
-    path: /hms02.fxiaomi.sbs/link
-- alterId: 0
-  cipher: auto
   name: 24,30|🇨🇦 加拿大 028
   network: ws
   port: '80'
@@ -546,7 +551,7 @@ proxies:
   delay: 1607
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 037
+  name: 24|加拿大 036
   network: ws
   port: 2052
   server: 104.18.202.232
@@ -563,7 +568,7 @@ proxies:
   delay: 1452
   h2-opts: {}
   http-opts: {}
-  name: 24|加拿大 039
+  name: 24|加拿大 038
   network: ws
   port: 2052
   server: 104.16.60.8
@@ -578,7 +583,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|加拿大 059
+  name: 24|加拿大 058
   network: ws
   port: 80
   server: 172.67.71.160
@@ -592,7 +597,7 @@ proxies:
       Host: dl3.127.0.0.1.arsha疯狂麦克斯传奇.angels蓝色.bursting.suonycars.buzz.
     path: /vmess
 - client-fingerprint: chrome
-  name: 24|加拿大 060
+  name: 24|加拿大 059
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
@@ -607,7 +612,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
-  name: 24|加拿大 061
+  name: 24|加拿大 060
   network: grpc
   password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
   port: 443
@@ -618,7 +623,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 062
+  name: 24|加拿大 061
   network: ws
   port: 8080
   server: 104.18.202.232
@@ -630,7 +635,7 @@ proxies:
     headers:
       host: 2.irvn.debian.6.i.6.6.fxp.debian.org.speedtest.net.列列男事的事列上赛男.ghormehsabzi.cyou.
     path: /
-- name: 24|加拿大 067
+- name: 24|加拿大 065
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2053
@@ -645,7 +650,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 068
+  name: 24|加拿大 066
   network: ws
   port: 8080
   server: 104.19.47.226
@@ -658,9 +663,22 @@ proxies:
     headers:
       Host: oiictw.yydsii.com
     path: /?ed=2048
+- name: 24|加拿大 067
+  network: ws
+  password: 50e10abd-3920-42a6-ad0c-6ec731d8c826
+  port: 443
+  server: 104.20.19.168
+  skip-cert-verify: true
+  sni: golinkwuxian.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 555.golinkwuxian.top
+    path: /apple
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 070
+  name: 24|加拿大 068
   network: ws
   port: 80
   server: 104.18.14.19
@@ -690,7 +708,22 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|加拿大 073
+  name: 24|加拿大 070
+  network: ws
+  port: 2095
+  server: Tgju.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c8c1e652-fe34-4e04-879f-fea8940d7980
+  ws-opts:
+    headers:
+      Host: Asdfghjkl10.unique69.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|加拿大 071
   network: ws
   port: 8080
   server: 104.19.47.150
@@ -703,7 +736,7 @@ proxies:
     headers:
       Host: oiictw.yydsii.com
     path: /?ed=2048
-- name: 24|加拿大 079
+- name: 24|加拿大 077
   network: ws
   password: NISHIKUITAN222
   port: 443
@@ -715,7 +748,7 @@ proxies:
     headers:
       host: t030.ylks.link
     path: /
-- name: 24|加拿大 082
+- name: 24|加拿大 080
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2083
@@ -728,7 +761,7 @@ proxies:
     headers:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048
-- name: 24|加拿大 083
+- name: 24|加拿大 081
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 8443
@@ -741,7 +774,7 @@ proxies:
     headers:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048
-- name: 24|加拿大 084
+- name: 24|加拿大 082
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
@@ -754,6 +787,19 @@ proxies:
     headers:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048
+- name: 24|加拿大 085
+  network: ws
+  password: compassvpn-794T1C3EDa
+  port: 2083
+  server: 104.17.176.171
+  skip-cert-verify: true
+  sni: 147457129.19kala.co
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 147457129.19kala.co
+    path: /
 - alterId: 0
   cipher: auto
   name: 30|[🇨🇦]t.me/ConfigsHub
@@ -893,15 +939,6 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '30|🇨🇦_CA_加拿大 #6'
-  network: tcp
-  port: 443
-  server: ca-v2ray.ipracevpn.com
-  tls: true
-  type: vmess
-  uuid: e3ef2387-33aa-4c0f-86b5-008ee3bcb945
 - alterId: 0
   cipher: auto
   name: '30|%F0%9F%87%A8%F0%9F%87%A6%20Can... #3'
