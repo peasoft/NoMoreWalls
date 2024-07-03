@@ -2,6 +2,17 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  name: 5|🇺🇸 美国|@ripaojiedian
+  port: 41082
+  server: 103.136.185.136
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b907cfc5-71ae-4663-83da-51283565adbb
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: 5,6|美国2|@ripaojiedian
   network: ws
   port: '8080'
@@ -16,14 +27,17 @@ proxies:
     headers:
       Host: us5PhAx6xsj.fzbqfrse.xyz
     path: /video/f8ZKTGaGoC/
-- client-fingerprint: chrome
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
   name: 5|🇺🇸 美国3|@ripaojiedian
-  password: cf7d0dea-d2ac-4af2-b8ee-b42c6750503b
-  port: 45251
-  server: 183.240.235.184
-  skip-cert-verify: false
-  sni: us-tj-6211.fn999.vip
-  type: trojan
+  obfs: plain
+  obfs-param: 89c19109670.microsoft.com
+  password: jFa4F1
+  port: 7701
+  protocol: auth_aes128_sha1
+  protocol-param: 109670:yooRnr
+  server: cm01.newcome.xyz
+  type: ssr
 - client-fingerprint: chrome
   name: 5|🇺🇸 美国4|@ripaojiedian
   password: RmdXQRXg
@@ -31,6 +45,29 @@ proxies:
   server: 223.113.54.154
   skip-cert-verify: true
   type: trojan
+- client-fingerprint: chrome
+  name: 5|🇺🇸 美国5|@ripaojiedian
+  network: ws
+  password: moist
+  port: 443
+  server: 154.197.121.253
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 6|美国|@ripaojiedian
+  network: tcp
+  port: '41082'
+  server: 103.136.185.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b907cfc5-71ae-4663-83da-51283565adbb
 - alpn:
   - http/1.1
   client-fingerprint: random
