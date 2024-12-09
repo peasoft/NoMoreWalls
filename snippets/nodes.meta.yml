@@ -526,24 +526,25 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: aes-256-cfb
-  name: 6|-https://t.me/MrXbin-1
-  password: amazonskr05
-  port: 443
-  server: 54.185.18.43
-  type: ss
 - cipher: rc4-md5
-  name: 6|-https://t.me/MrXbin-2
+  name: 6|-https://t.me/MrXbin-1
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 138.199.42.68
   type: ss
 - cipher: aes-256-cfb
-  name: 6|-https://t.me/MrXbin-3
+  name: 6|-https://t.me/MrXbin-2
   password: amazonskr05
   port: 443
-  server: 54.200.220.184
+  server: 52.195.205.31
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 6|-https://t.me/MrXbin-3
+  password: X7eoEBrARWsBUiVfchVEdH
+  port: 443
+  server: 185.77.217.121
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 6,18|🇯🇵 日本特殊|@ripaojiedian
@@ -553,7 +554,14 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 6|-https://t.me/MrXbin-19
+  name: 6|-https://t.me/MrXbin-6
+  password: amazonskr05
+  port: 443
+  server: 18.141.184.102
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 6|-https://t.me/MrXbin-17
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -564,10 +572,10 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 6,14|0|--37
+  name: 6,14|0|--41
   network: ws
   port: 2082
-  server: 190.93.245.80
+  server: 190.93.245.103
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -579,18 +587,34 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 6|-https://t.me/MrXbin-80
+  name: 6,14|0|--44
   network: ws
-  port: 2095
-  server: 172.64.166.33
-  skip-cert-verify: true
+  port: 443
+  server: irvideo.cfd
+  tls: true
   type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
-      Host: ip12.6016725.xyz
-    path: /github.com/Alvin9999
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts:
+    headers:
+      Host:
+      - Telewebion.com
+    method: GET
+    path:
+    - /
+  name: 6|-https://t.me/MrXbin-91
+  network: http
+  port: 40804
+  server: 188.121.122.89
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6e61b771-f2c2-40e1-9725-6cad0065a264
 - alterId: 64
   cipher: auto
   name: 12|Github搜索TrojanLinks
@@ -1142,10 +1166,10 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 14|0|--41
+  name: 14|0|--37
   network: ws
   port: 2082
-  server: 190.93.245.103
+  server: 190.93.245.80
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1153,19 +1177,6 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 14|0|--44
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: 14|0|--77
