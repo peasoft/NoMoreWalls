@@ -1,34 +1,20 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: bb20cc43-905f-47cf-a820-88b22d836ede
+  password: 2045ad00-5f17-431a-9ccc-1c6ce2fbaeb8
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: bb20cc43-905f-47cf-a820-88b22d836ede
+  password: 2045ad00-5f17-431a-9ccc-1c6ce2fbaeb8
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: d93f59f8-5180-43b3-8a16-6074432d2b5b
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: d93f59f8-5180-43b3-8a16-6074432d2b5b
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 3|🇭🇰1 |  5.6MB/s|0%|Disney
+  name: 2|🇭🇰1 |  1.1MB/s|0%|Disney
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: '8313'
   server: 183.232.235.2
@@ -36,27 +22,49 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 3|🇭🇰2 |  6.1MB/s|0%|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: '8313'
-  server: dozo01.flztjc.top
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2,12|🇭🇰 香港4|@ripaojiedian
+  network: ws
+  port: 8080
+  server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
   skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+  xudp: true
 - client-fingerprint: chrome
-  name: 3|🇭🇰3 |  1.1MB/s|6%
+  name: 2|🇭🇰3 |  2.4MB/s|6%|Youtube
   password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 8443
-  server: hk02.sqx001.com
+  port: 443
+  server: hk05.sqx001.com
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
   username: dmpyoary@mayorlogistic.com
 - client-fingerprint: chrome
-  name: 13|🇭🇰 香港|@ripaojiedian
+  flow: xtls-rprx-vision
+  name: 2|🇭🇰4 |  2.0MB/s|16%|Netflix|Dis...
+  network: tcp
+  port: 20550
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
+- client-fingerprint: chrome
+  name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
   port: 40021
@@ -70,7 +78,7 @@ proxies:
     path: /dl_media
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港2|@ripaojiedian
+  name: 12|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -87,7 +95,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港3|@ripaojiedian
+  name: 12|🇭🇰 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -98,23 +106,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  network: ws
-  port: 8080
-  server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港5|@ripaojiedian
+  name: 12|🇭🇰 香港5|@ripaojiedian
   port: 59082
   server: 120.232.153.40
   skip-cert-verify: false
@@ -125,7 +117,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港6|@ripaojiedian
+  name: 12|🇭🇰 香港6|@ripaojiedian
   port: 36609
   server: 120.232.153.40
   skip-cert-verify: false
@@ -134,7 +126,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 13,14|香港7|@ripaojiedian
+  name: 12,13|香港7|@ripaojiedian
   network: tcp
   password: VMhGp5wEIyCDf90T
   port: 42303
@@ -142,7 +134,7 @@ proxies:
   skip-cert-verify: false
   sni: hk06.run.place
   type: trojan
-- name: 14|香港|@ripaojiedian
+- name: 13|香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
   port: 40021
@@ -155,7 +147,7 @@ proxies:
     path: '%2Fdl_media'
 - alterId: 64
   cipher: auto
-  name: 14|香港3|@ripaojiedian
+  name: 13|香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -163,7 +155,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 14|香港4|@ripaojiedian
+- name: 13|香港4|@ripaojiedian
   network: tcp
   password: d64c2ba8-0ae4-4299-8af7-8c5046e3c1c1
   port: 27102
@@ -172,7 +164,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 14|香港5|@ripaojiedian
+  name: 13|香港5|@ripaojiedian
   network: tcp
   port: '59082'
   server: 120.232.153.40
@@ -182,7 +174,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 14|香港6|@ripaojiedian
+  name: 13|香港6|@ripaojiedian
   network: tcp
   port: '36609'
   server: 120.232.153.40
@@ -190,3 +182,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇭🇰 香港 02 | 1x HK
+  password: 5ad9d9bb-214d-444d-ab1a-0812737dc1d7
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 5ad9d9bb-214d-444d-ab1a-0812737dc1d7
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
