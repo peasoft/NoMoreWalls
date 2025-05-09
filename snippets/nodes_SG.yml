@@ -1,22 +1,60 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 01 | 1x SG
-  password: 0bede196-95bd-4405-befa-269a9f159077
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: bb20cc43-905f-47cf-a820-88b22d836ede
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: bb20cc43-905f-47cf-a820-88b22d836ede
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: bb20cc43-905f-47cf-a820-88b22d836ede
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: d93f59f8-5180-43b3-8a16-6074432d2b5b
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 02 | 1x SG
-  password: 0bede196-95bd-4405-befa-269a9f159077
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: d93f59f8-5180-43b3-8a16-6074432d2b5b
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 3|🇸🇬3 |  1.7MB/s|0%|Netflix|Disn...
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: sg.singaporenodeserverone.co.ua
+  sni: 45.32.28.232
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 3|🇸🇬4 |  1.1MB/s|54%|Youtube|Ope...
+  obfs: tls1.2_ticket_auth
+  obfs-param: sg2-cdn-route.couldflare-cdn.com
+  password: uiACqrIr
+  port: 56138
+  protocol: origin
+  protocol-param: ''
+  server: cm2.xcone.xyz
+  type: ssr
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|新加坡|@ripaojiedian
+  name: 13,14|新加坡|@ripaojiedian
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -30,25 +68,28 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- client-fingerprint: chrome
-  name: 12,13|新加坡2|@ripaojiedian
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  password: awsps0501
+  port: 443
+  server: 52.27.142.2
+  tfo: false
+  type: ss
+- name: 14|新加坡2|@ripaojiedian
   network: tcp
   password: ce44b416-2d7e-49af-aa40-5a61d45f6fcc
   port: 27401
   server: 58.254.186.222
-  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 12,13|新加坡3|@ripaojiedian
+  name: 14|新加坡3|@ripaojiedian
   network: ws
   port: '35146'
   server: sg6.vip2.g2.moonbase.life
   servername: web.xcjs.info
-  skip-cert-verify: false
-  tfo: false
   tls: true
   type: vmess
   uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
@@ -56,32 +97,3 @@ proxies:
     headers:
       Host: web.xcjs.info
     path: /home
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 12|🇸🇬 狮城特殊|@ripaojiedian
-  password: awsps0501
-  port: 443
-  server: 18.183.184.244
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇸🇬新加坡 01 | 1x SG
-  password: f3f0d142-f2f8-4233-9ae6-6e140455446a
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇸🇬新加坡 02 | 1x SG
-  password: f3f0d142-f2f8-4233-9ae6-6e140455446a
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇸🇬新加坡 03 | 1x SG
-  password: f3f0d142-f2f8-4233-9ae6-6e140455446a
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
