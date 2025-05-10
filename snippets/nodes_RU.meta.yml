@@ -1,14 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇷🇺俄罗斯 01 | 1x RU
-  password: 84db7759-7489-4d53-a522-6dc8b9093e86
+  password: c24e93ed-ff58-4e0d-97e3-cf553ee9171e
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇷🇺 俄罗斯 01 | 1x RU
+  password: 2df38919-a2b3-45bd-b0b3-beb75b5c445a
+  port: 36511
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - down: ''
   fingerprint: ''
-  name: 2|🇷🇺1 |  1.5MB/s|0%
+  name: 3|🇷🇺1 |  5.6MB/s|0%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -18,26 +25,52 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- fast-open: true
-  name: 2|🇷🇺2 |  4.0MB/s|50%|Youtube
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - auth: dongtaiwang.com
-  name: 2|🇷🇺3 |  1.0MB/s|50%|Youtube
+  name: 3|🇷🇺2 |  2.2MB/s|50%|Youtube
   password: dongtaiwang.com
   port: 12904
   server: 46.17.41.5
   skip-cert-verify: true
   sni: apple.com
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇷🇺 俄罗斯 01 | 1x RU
-  password: c326ea12-16d8-46b4-a336-192252f2944a
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
+- down: ''
+  fingerprint: ''
+  name: 3|🇷🇺3 |  1.3MB/s|50%|Youtube
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: '10011'
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 3|🇷🇺4 |  3.8MB/s|50%|Netflix|Dis...
+  network: tcp
+  port: '2040'
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 147.45.221.3
+  servername: fr.ign.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+  xudp: true
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 3|🇷🇺5 |  1.1MB/s|50%
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps

@@ -1,29 +1,124 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 01 | 1x TW
-  password: 84db7759-7489-4d53-a522-6dc8b9093e86
+  password: c24e93ed-ff58-4e0d-97e3-cf553ee9171e
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 02 | 1x TW
-  password: 84db7759-7489-4d53-a522-6dc8b9093e86
+  password: c24e93ed-ff58-4e0d-97e3-cf553ee9171e
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 03 | 1x TW
-  password: 84db7759-7489-4d53-a522-6dc8b9093e86
+  password: c24e93ed-ff58-4e0d-97e3-cf553ee9171e
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 01 | 1x TW
+  password: 2df38919-a2b3-45bd-b0b3-beb75b5c445a
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 02 | 1x TW
+  password: 2df38919-a2b3-45bd-b0b3-beb75b5c445a
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 03 | 1x TW
+  password: 2df38919-a2b3-45bd-b0b3-beb75b5c445a
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 3|🇹🇼1 |  1.4MB/s|0%|Netflix|Disn...
+  network: ws
+  port: '443'
+  server: 172.64.35.82
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/44.0.2403.157 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼2 |  3.9MB/s|0%|Netflix|Disn...
+  network: ws
+  password: Aimer
+  port: '443'
+  server: 209.208.227.79
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  delay: 622
+  name: 3|🇹🇼3 |  1.3MB/s|0%|Disney|Opena...
+  network: ws
+  port: 443
+  server: 27.50.49.136
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
+  xudp: true
+- alpn:
+  - h3
+  client-fingerprint: random
+  delay: 586
+  name: 3|🇹🇼4 |  1.2MB/s|0%|Disney
+  network: ws
+  port: 8443
+  server: 192.200.160.19
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
+  xudp: true
 - alpn:
   - h3
   client-fingerprint: randomized
-  name: 2|🇹🇼1 |  6.1MB/s|0%|Disney|Opena...
+  name: 3|🇹🇼5 |  1.5MB/s|0%|Disney|Opena...
   network: ws
   password: Aimer
   port: '2096'
@@ -34,16 +129,14 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
     path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 2|🇹🇼2 |  1.2MB/s|0%|Disney|Opena...
+- client-fingerprint: chrome
+  name: 3|🇹🇼6 |  1.2MB/s|0%|Disney|Opena...
   network: ws
-  port: '2096'
-  server: 27.50.49.188
+  port: '443'
+  server: 172.67.145.119
   servername: edccj.ambercc.filegear-sg.me
   tls: true
   type: vless
@@ -52,33 +145,284 @@ proxies:
   ws-opts:
     headers:
       Host: edccj.ambercc.filegear-sg.me
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Slackware/Chrome/12.0.742.100 Safari/534.30
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼7 |  1.2MB/s|0%|Netflix|Disn...
+  network: ws
+  port: '443'
+  server: bestcf.030101.xyz
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼8 |  1.1MB/s|0%|Disney|Opena...
+  network: ws
+  port: '443'
+  server: 172.64.35.236
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.110 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼9 |  2.0MB/s|0%|Disney|Youtu...
+  network: ws
+  port: '443'
+  server: 104.26.9.183
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼10 |  1.5MB/s|0%|Disney
+  network: ws
+  port: '443'
+  server: 172.67.208.247
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼11 |  1.1MB/s|Disney|Openai
+  network: ws
+  port: '443'
+  server: pranab.ns.cloudflare.com
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: 3|🇹🇼12 |  3.2MB/s|0%|Disney|Open...
+  network: ws
+  port: '2052'
+  server: 172.67.17.5
+  type: vless
+  udp: true
+  uuid: 2737560d-1867-47fa-aa80-351c36d771c7
+  ws-opts:
+    headers:
+      Host: 0118.kznyoum2.workers.dev
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+    path: ''
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼13 |  1.3MB/s|0%|Disney|Open...
+  network: ws
+  port: '443'
+  server: 108.162.195.236
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/36.0.1985.125 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼14 |  1.9MB/s|0%|Disney|Open...
+  network: ws
+  port: '443'
+  server: sage.ns.cloudflare.com
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼15 |  1.0MB/s|0%|Disney|Open...
+  network: ws
+  port: '443'
+  server: 162.159.44.82
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼16 |  3.3MB/s|0%|Netflix|Dis...
+  network: ws
+  port: '443'
+  server: kip.ns.cloudflare.com
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.67 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼17 |  1.5MB/s|0%|Disney|Open...
+  network: ws
+  port: '443'
+  server: 108.162.193.128
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.101 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼18 |  1.1MB/s|0%|Openai
+  network: ws
+  port: '443'
+  server: 172.64.33.128
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇹🇼19 |  2.1MB/s|11%|Youtube|Op...
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: tw01.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
+- alpn:
+  - h3
+  client-fingerprint: random
+  delay: 848
+  name: 3|🇹🇼20 |  3.3MB/s|0%|Disney|Open...
+  network: ws
+  port: 443
+  server: lynn.ns.cloudflare.com
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
     path: /?ed=2560&proxyip=ts.hpc.tw
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇹🇼 台湾 01 | 1x TW
-  password: c326ea12-16d8-46b4-a336-192252f2944a
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
+- alpn:
+  - h3
+  client-fingerprint: random
+  delay: 634
+  name: 3|🇹🇼21 |  1.2MB/s|0%|Disney|Open...
+  network: ws
+  port: 443
+  server: duke.ns.cloudflare.com
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇹🇼 台湾 02 | 1x TW
-  password: c326ea12-16d8-46b4-a336-192252f2944a
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
+  xudp: true
+- alpn:
+  - h3
+  client-fingerprint: random
+  delay: 896
+  name: 3|🇹🇼22 |  2.1MB/s|0%|Netflix|Dis...
+  network: ws
+  port: 2083
+  server: 192.0.54.221
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇹🇼 台湾 03 | 1x TW
-  password: c326ea12-16d8-46b4-a336-192252f2944a
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
+  xudp: true
 - client-fingerprint: chrome
-  name: 13,15|CN_speednode_0004
+  name: 13,14,15|CN_speednode_0004
+  network: tcp
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a10.taipeicitygovernment.kyiv.ua
@@ -86,3 +430,12 @@ proxies:
   sni: 45.32.28.232
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 13,14|台湾2|@ripaojiedian
+  network: tcp
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: taifo01a.kbservice.club
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  type: trojan
