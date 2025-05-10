@@ -1,95 +1,45 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: c24e93ed-ff58-4e0d-97e3-cf553ee9171e
+  password: 5d2bc999-fa6e-4ae2-b760-70ac48588974
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: c24e93ed-ff58-4e0d-97e3-cf553ee9171e
+  password: 5d2bc999-fa6e-4ae2-b760-70ac48588974
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: 2df38919-a2b3-45bd-b0b3-beb75b5c445a
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 2df38919-a2b3-45bd-b0b3-beb75b5c445a
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 3|🇭🇰1 |  3.3MB/s|0%
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: '8313'
-  server: 183.232.235.2
-  skip-cert-verify: true
-  sni: hk-13-568.flztjc.net
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 3|🇭🇰2 |  6.4MB/s|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: '8313'
-  server: dozo01.flztjc.top
-  skip-cert-verify: true
-  sni: dozo01.flztjc.top
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 3|🇭🇰3 |  6.0MB/s|16%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: '11501'
-  server: cdn-p1-hk.weibo-dns.com
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 3|🇭🇰4 |  1.9MB/s|12%|Youtube
-  network: ws
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇭🇰1 |  1.2MB/s|60%|Youtube
+  network: tcp
   port: '443'
-  server: 13.75.34.176
-  servername: hkklo.azurewebsites.net
+  server: 103.253.43.210
+  servername: hon5.vpntype.dev
   tls: true
   type: vless
   udp: true
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      Host: hkklo.azurewebsites.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: ''
+  uuid: fbabc72e-6e88-4e74-976d-3b70071d13dc
   xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰2 |  1.7MB/s|0%|Netflix|Disn...
+  password: 887f01da-5b52-4dff-a80f-efe3380ac35f
+  port: 54016
+  server: chiyu.myfczy169.top
+  type: ss
 - client-fingerprint: chrome
-  name: 3|🇭🇰5 |  2.5MB/s|6%|Youtube
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: hk05.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
-- auth: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  name: 3|🇭🇰6 |  2.9MB/s|0%|Netflix|Disn...
-  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  port: 24591
-  server: hk1.shiyuandian.shop
-  skip-cert-verify: true
-  sni: hk1.shiyuandian.shop
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  name: 13|🇭🇰 香港|@ripaojiedian
+  name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
   port: 40021
@@ -103,7 +53,7 @@ proxies:
     path: /dl_media
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港2|@ripaojiedian
+  name: 12|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -120,7 +70,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港3|@ripaojiedian
+  name: 12|🇭🇰 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -130,7 +80,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港4|@ripaojiedian
+  name: 12|🇭🇰 香港4|@ripaojiedian
   password: asd123456
   port: 8388
   server: 103.149.182.191
@@ -139,7 +89,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港5|@ripaojiedian
+  name: 12|🇭🇰 香港5|@ripaojiedian
   port: 59082
   server: 120.232.153.40
   skip-cert-verify: false
@@ -150,7 +100,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇭🇰 香港6|@ripaojiedian
+  name: 12|🇭🇰 香港6|@ripaojiedian
   port: 36609
   server: 120.232.153.40
   skip-cert-verify: false
@@ -159,7 +109,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 13,14|香港7|@ripaojiedian
+  name: 12,13|香港7|@ripaojiedian
   network: tcp
   password: VMhGp5wEIyCDf90T
   port: 42303
@@ -167,7 +117,7 @@ proxies:
   skip-cert-verify: false
   sni: hk06.run.place
   type: trojan
-- name: 14|香港|@ripaojiedian
+- name: 13|香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
   port: 40021
@@ -180,7 +130,7 @@ proxies:
     path: '%2Fdl_media'
 - alterId: 64
   cipher: auto
-  name: 14|香港3|@ripaojiedian
+  name: 13|香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -190,7 +140,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 14|香港5|@ripaojiedian
+  name: 13|香港5|@ripaojiedian
   network: tcp
   port: '59082'
   server: 120.232.153.40
@@ -200,7 +150,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 14|香港6|@ripaojiedian
+  name: 13|香港6|@ripaojiedian
   network: tcp
   port: '36609'
   server: 120.232.153.40
@@ -208,7 +158,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|HK_speednode_0018
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|HK_speednode_0010
+  port: 20550
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
+- name: 14|HK_speednode_0011
   network: ws
   port: 26657
   server: 101.32.15.176
@@ -222,16 +185,17 @@ proxies:
     headers:
       Host: edccj.ambercc.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|HK_speednode_0019
-  port: 20550
-  reality-opts:
-    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
-  server: hkt-ty-line-1.sudatech.store
-  servername: www.paypal.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇭🇰 香港 02 | 1x HK
+  password: af9cd839-7324-4b68-8c17-277439745bd4
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇭🇰 香港住宅IP 03 | 1x HK
+  password: af9cd839-7324-4b68-8c17-277439745bd4
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
