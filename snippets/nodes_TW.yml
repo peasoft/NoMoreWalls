@@ -1,33 +1,44 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 01 | 1x TW
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
-  port: 31241
-  server: free.2apzhfa.xyz
+  name: 1|🇹🇼 台湾 01 | 1x TW
+  password: 265cee0f-a107-41e9-b3e7-a35fccb9020c
+  port: 36241
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 02 | 1x TW
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
-  port: 31243
-  server: free.2apzhfa.xyz
+  name: 1|🇹🇼 台湾 02 | 1x TW
+  password: 265cee0f-a107-41e9-b3e7-a35fccb9020c
+  port: 36243
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 03 | 1x TW
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
-  port: 31245
-  server: free.2apzhfa.xyz
+  name: 1|🇹🇼 台湾 03 | 1x TW
+  password: 265cee0f-a107-41e9-b3e7-a35fccb9020c
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼5 |  4.5MB/s|11%|Youtube|Ope...
-  password: 887f01da-5b52-4dff-a80f-efe3380ac35f
-  port: 50555
-  server: chiyu.myfczy169.top
-  type: ss
+- alpn:
+  - h3
+  client-fingerprint: randomized
+  name: 3|🇹🇼1 |  1.9MB/s|0%|Netflix|Disn...
+  network: ws
+  password: Aimer
+  port: '443'
+  server: 209.208.227.79
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
-  name: 12,13|台湾|@ripaojiedian
+  name: 13,14|台湾|@ripaojiedian
   network: tcp
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
@@ -36,7 +47,7 @@ proxies:
   sni: 45.32.28.232
   type: trojan
 - client-fingerprint: chrome
-  name: 12,13|台湾2|@ripaojiedian
+  name: 13,14|台湾2|@ripaojiedian
   network: tcp
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
@@ -44,24 +55,3 @@ proxies:
   skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇹🇼 台湾 01 | 1x TW
-  password: a1fa7402-f750-426a-852c-f2ceadae459d
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇹🇼 台湾 02 | 1x TW
-  password: a1fa7402-f750-426a-852c-f2ceadae459d
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇹🇼 台湾 03 | 1x TW
-  password: a1fa7402-f750-426a-852c-f2ceadae459d
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true

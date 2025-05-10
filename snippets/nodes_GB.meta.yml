@@ -1,23 +1,23 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
-  port: 31141
-  server: free.2apzhfa.xyz
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 265cee0f-a107-41e9-b3e7-a35fccb9020c
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 265cee0f-a107-41e9-b3e7-a35fccb9020c
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 2|🇬🇧1 |  1.8MB/s|46%|Openai
+  name: 3|🇬🇧1 |  2.0MB/s|Openai
   network: ws
   port: '2096'
   server: 45.131.208.65
@@ -36,7 +36,7 @@ proxies:
 - delay: 852
   down: ''
   fingerprint: ''
-  name: 2|🇬🇧2 |  2.8MB/s|32%|Youtube|Ope...
+  name: 3|🇬🇧2 |  2.8MB/s|32%|Youtube|Ope...
   obfs: ''
   obfs-password: ''
   password: 857612aa-9ca5-46df-b976-8b887fdf8625
@@ -46,18 +46,11 @@ proxies:
   sni: gbr1.587458.xyz
   type: hysteria2
   up: ''
-- cipher: aes-256-cfb
-  name: 2|🇬🇧3 |  4.5MB/s|0%|Youtube|Open...
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 62.100.205.48
-  type: ss
-  udp: true
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 2|🇬🇧4 |  5.8MB/s|46%|Openai
+  name: 3|🇬🇧3 |  3.1MB/s|46%
   network: ws
   port: '2096'
   server: 45.131.4.98
@@ -74,7 +67,7 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 2|🇬🇧5 |  5.6MB/s|46%|Openai
+  name: 3|🇬🇧4 |  1.5MB/s|46%|Openai
   network: ws
   port: '443'
   server: 45.142.120.97
@@ -91,7 +84,7 @@ proxies:
     path: /
   xudp: true
 - auth: nfsn666
-  name: 2|🇬🇧6 |  4.1MB/s|62%|Netflix|You...
+  name: 3|🇬🇧5 |  2.5MB/s|62%|Disney|Yout...
   password: nfsn666
   port: 8888
   server: ld-arm.nfsn666.gq
@@ -99,7 +92,95 @@ proxies:
   sni: ld-arm.nfsn666.gq
   type: hysteria2
   udp: true
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+- client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 3|🇬🇧6 |  5.9MB/s|33%|Youtube|Ope...
+  network: tcp
+  port: '2040'
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 109.172.94.249
+  servername: fr.ign.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 3|🇬🇧7 |  5.8MB/s|46%|Openai
+  network: ws
+  port: '2096'
+  server: 45.8.211.26
+  servername: UoIrHqRs.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: UoIrHqRs.cAfUnEaR.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: ''
+  xudp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: telegram--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpntelegram--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn--netpalvpn
+  name: 3|🇬🇧8 |  4.7MB/s|0%|Netflix|Disn...
+  network: grpc
+  port: '1220'
+  reality-opts:
+    public-key: XaQOFYPpLEKwWLURvn0PFhCzYVP6mQtuQCUb7VbZ5gQ
+    short-id: 8df38702ef748a4f
+  server: dl3.arashiphone.com
+  servername: ubuntu.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 89c7e32a-5671-43e4-843e-dedda035912e
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇬🇧9 |  5.9MB/s|46%|Openai
+  network: ws
+  port: '443'
+  server: 45.8.211.230
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: ''
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|🇬🇧10 |  5.8MB/s|46%|Openai
+  network: ws
+  port: '443'
+  server: 45.131.6.160
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.101 Safari/537.36
+    path: /
+  xudp: true
+- name: 12|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -107,10 +188,3 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇬🇧 英国住宅IP 01 | 1x UK
-  password: a1fa7402-f750-426a-852c-f2ceadae459d
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
