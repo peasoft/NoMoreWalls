@@ -1,34 +1,20 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 265cee0f-a107-41e9-b3e7-a35fccb9020c
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: 8d6a72f7-2b38-464f-a89c-dc6795c12d98
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 265cee0f-a107-41e9-b3e7-a35fccb9020c
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: 8d6a72f7-2b38-464f-a89c-dc6795c12d98
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 3|🇸🇬1 |  5.6MB/s|Youtube|Openai
-  network: ws
-  port: '80'
-  server: 141.193.213.21
-  type: vless
-  udp: true
-  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
-  ws-opts:
-    headers:
-      Host: lk.sahanwickramasinghe.shop
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /
-  xudp: true
 - cipher: aes-256-cfb
-  name: 3|🇸🇬2 |  5.8MB/s|54%|Youtube|Ope...
+  name: 2|🇸🇬1 |  2.0MB/s|54%|Youtube|Ope...
   obfs: tls1.2_ticket_auth
   obfs-param: sg2-cdn-route.couldflare-cdn.com
   password: uiACqrIr
@@ -37,6 +23,59 @@ proxies:
   protocol-param: ''
   server: cm2.xcone.xyz
   type: ssr
+  udp: true
+- name: 2|🇸🇬2 |  3.8MB/s|Youtube|Openai
+  network: ws
+  port: '80'
+  server: 141.193.213.20
+  type: vless
+  udp: true
+  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  flow: none
+  name: 2|🇸🇬3 |  5.2MB/s|Youtube|Openai
+  network: ws
+  port: '2096'
+  server: 141.193.213.21
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: 93be59b7-ebce-4aec-8e66-4470e06e58ae
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
+    path: '%2F'
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇸🇬新加坡 01 | 1x SG
+  password: be09e79a-1538-4661-939b-41b36022a58f
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇸🇬新加坡 02 | 1x SG
+  password: be09e79a-1538-4661-939b-41b36022a58f
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇸🇬新加坡 03 | 1x SG
+  password: be09e79a-1538-4661-939b-41b36022a58f
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
 - name: 12|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
