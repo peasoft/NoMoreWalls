@@ -1,42 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 2d55df49-c1cc-4458-b28d-b5266b080ac7
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: 180aeb20-3ef2-41ab-8909-eba54ec35198
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: 180aeb20-3ef2-41ab-8909-eba54ec35198
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 33865762-9ef6-407c-9d4e-0693faec127e
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 2d55df49-c1cc-4458-b28d-b5266b080ac7
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 33865762-9ef6-407c-9d4e-0693faec127e
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 2d55df49-c1cc-4458-b28d-b5266b080ac7
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 33865762-9ef6-407c-9d4e-0693faec127e
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇸🇬1 |  4.8MB/s|0%|Netflix|Disn...
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: sg01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
-  type: trojan
-- name: 2|🇸🇬2 |  3.1MB/s|0%|Netflix|Disn...
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: sg02.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg02.trojanyyds.xyz
-  type: trojan
 - client-fingerprint: chrome
   flow: none
-  name: 2|🇸🇬3 |  3.9MB/s|Youtube|Openai
+  name: 3|🇸🇬1 |  2.1MB/s|Openai
   network: ws
   port: '2096'
   server: 141.193.213.20
@@ -52,7 +52,31 @@ proxies:
         (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
     path: '%2F'
   xudp: true
-- name: 11|Hysteria 🇸🇬 @v2meowcf
+- alterId: 64
+  cipher: auto
+  name: 3|🇸🇬2 |  1.1MB/s|0%|Netflix|Open...
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 3|🇸🇬3 |  5.4MB/s|34%|Netflix|Dis...
+  network: ws
+  port: '80'
+  server: 34.160.118.77
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: Telegram🇨🇳
+  xudp: true
+- name: 12|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -60,7 +84,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 11|新加坡
+- name: 12|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
   server: sg3.eyucdn.xyz
@@ -68,7 +92,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '11|Hysteria 🇸🇬 @v2meowcf #1'
+- name: '12|Hysteria 🇸🇬 @v2meowcf #1'
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -79,7 +103,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|新加坡|@ripaojiedian
+  name: 13,14|新加坡|@ripaojiedian
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -95,7 +119,7 @@ proxies:
     path: /oooo
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇸🇬 狮城特殊|@ripaojiedian
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
   password: awsps0501
   port: 443
   server: 3.112.193.115
@@ -103,7 +127,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|SG_speednode_0069
+  name: 15|SG_speednode_0069
   port: 443
   reality-opts:
     public-key: IPno1w9GUxhRN2JY_yIka2DNlnuJHQeb3_0yOCM4pQg
@@ -117,7 +141,7 @@ proxies:
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 14|SG_speednode_0070
+  name: 15|SG_speednode_0070
   port: 443
   reality-opts:
     public-key: kR-_5J2EPiB9nrdgyXjgzfJQnxQodkGeV_jgKOEnlEM
@@ -131,7 +155,7 @@ proxies:
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|SG_speednode_0071
+  name: 15|SG_speednode_0071
   port: 443
   reality-opts:
     public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
@@ -145,7 +169,7 @@ proxies:
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|SG_speednode_0072
+  name: 15|SG_speednode_0072
   port: 443
   reality-opts:
     public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
@@ -157,17 +181,3 @@ proxies:
   type: vless
   udp: true
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇸🇬 新加坡 01 | 1x SG
-  password: bf42cb78-125f-4312-b251-43da88d1d034
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇸🇬 新加坡 02 | 1x SG
-  password: bf42cb78-125f-4312-b251-43da88d1d034
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true

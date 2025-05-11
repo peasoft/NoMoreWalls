@@ -1,13 +1,20 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 2d55df49-c1cc-4458-b28d-b5266b080ac7
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 180aeb20-3ef2-41ab-8909-eba54ec35198
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 33865762-9ef6-407c-9d4e-0693faec127e
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 2|🇨🇦1 |  1.7MB/s|64%|Youtube|Ope...
+  name: 3|🇨🇦1 |  1.8MB/s|64%|Netflix|Dis...
   password: cacb4d4fa26f4eed25e4d17a6370083c
   port: 443
   server: toronto1.sqx001.com
@@ -16,10 +23,44 @@ proxies:
   type: http
   udp: true
   username: dmpyoary@mayorlogistic.com
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇨🇦 加拿大 01 | 1x CA
-  password: bf42cb78-125f-4312-b251-43da88d1d034
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 3|🇨🇦2 |  1.0MB/s|29%|Youtube|Ope...
+  network: ws
+  port: 2083
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 698d9a5b-59dc-4ea6-b404-cd9e967fc54c
+  ws-opts:
+    headers:
+      Host: CanaDa-138.blAzecAnAdA.SITe
+    path: /linkvkws
+- alterId: '0'
+  cipher: auto
+  name: 3|🇨🇦3 |  5.8MB/s|29%|Youtube|Ope...
+  network: ws
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b87cea1d-d14c-45c3-af40-7af5d3be88da
+  ws-opts:
+    headers:
+      Host: CANADa-199.BLaZecANADA.sIte
+    path: /linkvkvws
+  xudp: true
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 3|🇨🇦4 |  1.8MB/s|23%|Netflix|Dis...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.80.61
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
