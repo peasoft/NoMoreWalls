@@ -1,60 +1,126 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 1|🇯🇵1 |  1.1MB/s|64%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: '11506'
-  server: cdn-p1-jp.weibo-dns.com
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵 日本 01 | 1x JP
+  password: 4ec1835f-520a-4f67-8a09-34dc968842e9
+  port: 36111
+  server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|🇯🇵2 |  5.6MB/s|10%|Netflix|Dis...
-  port: 4151
-  server: 87b6c700-sukw00-sw1e10-7yd9.c.volczijie.com
-  tls: false
-  type: vmess
-  uuid: 7f84fa90-9f44-11ef-ae1e-f23c93141fad
-- alterId: 64
-  cipher: auto
-  name: 1|🇯🇵3 |  1.8MB/s|51%|Youtube|Ope...
-  network: ws
-  port: 1443
-  server: sslvpn.51job.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵 日本 02 | 1x JP
+  password: 4ec1835f-520a-4f67-8a09-34dc968842e9
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵 日本 03 | 1x JP
+  password: 4ec1835f-520a-4f67-8a09-34dc968842e9
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2,15|US_speednode_0107
+  network: ws
+  port: 80
+  server: 45.159.217.86
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: centos7
-    path: /634c5c4f9782
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+- name: 2,15|JP_speednode_0044
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: tky03.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
+- name: 2,15|KR_speednode_0047
+  network: ws
+  port: 11223
+  server: 218.38.33.77
+  servername: mikuyo.bpd67081tsq.ddns-ip.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+  ws-opts:
+    headers:
+      Host: mikuyo.bpd67081tsq.ddns-ip.net
+    path: /
 - alterId: 0
   cipher: auto
-  country: 🇨🇳CN
-  delay: 1147
+  delay: 1856
   h2-opts: {}
   http-opts: {}
-  name: 1|🇯🇵4 |  6.0MB/s|10%|Disney|Yout...
+  name: 2|🇯🇵4 |  5.6MB/s|10%|Disney|Yout...
   network: tcp
   port: 17233
-  server: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
-  servername: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
+  server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
   skip-cert-verify: true
   type: vmess
   uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 1|🇯🇵5 |  1.1MB/s|20%|Youtube|Ope...
-  password: FaCEZEZq36XlIBaRly2O53S8zwaxeeKDNRxnDYlRexDOS3904YOFRz830xZ439N2TSCyj
-  port: '28331'
-  server: 52.69.249.182
+  name: 2|🇯🇵5 |  2.4MB/s|0%|Netflix|Disn...
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: tky02.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
+- client-fingerprint: chrome
+  name: 2|🇯🇵6 |  1.8MB/s|0%|Disney|Youtu...
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: tky01.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
+- client-fingerprint: chrome
+  name: 2|🇯🇵7 |  5.8MB/s|34%|Youtube|Ope...
+  password: p0gcYaXnnqIyx6ajxFRClBeaeeCTOY8AY3ONCD9FyDapS33xAEacEwDxFjXp0a4ZgRSR3
+  port: '443'
+  server: 43.206.220.255
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇯🇵日本 01 | 1x JP
+  password: 8c453846-9419-41ec-b5b2-d72e3d10f332
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇯🇵日本 02 | 1x JP
+  password: 8c453846-9419-41ec-b5b2-d72e3d10f332
+  port: 31113
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇯🇵日本 03 | 1x JP
+  password: 8c453846-9419-41ec-b5b2-d72e3d10f332
+  port: 31115
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇯🇵 日本|@ripaojiedian
+  name: 13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -66,7 +132,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 11|🇯🇵 日本2|@ripaojiedian
+  name: 13|🇯🇵 日本2|@ripaojiedian
   password: e03b35b40a25
   plugin: v2ray-plugin
   plugin-opts:
@@ -83,7 +149,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇯🇵 日本3|@ripaojiedian
+  name: 13|🇯🇵 日本3|@ripaojiedian
   port: 55002
   server: 183.237.84.53
   skip-cert-verify: false
@@ -94,7 +160,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,12|日本4|@ripaojiedian
+  name: 13,14|日本4|@ripaojiedian
   network: ws
   port: '8004'
   server: 59.42.247.189
@@ -110,7 +176,7 @@ proxies:
     path: /nmkj
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|🇯🇵 日本特殊|@ripaojiedian
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: awsps0501
   port: 443
   server: 47.129.171.73
@@ -118,7 +184,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 12|日本3|@ripaojiedian
+  name: 14|日本3|@ripaojiedian
   network: tcp
   port: '55002'
   server: 183.237.84.53
@@ -128,7 +194,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|日本5|@ripaojiedian
+  name: 14|日本5|@ripaojiedian
   network: kcp
   port: '53893'
   server: 47.74.41.147
@@ -138,7 +204,7 @@ proxies:
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|JP_speednode_0043
+  name: 15|JP_speednode_0043
   port: 443
   reality-opts:
     public-key: IHJ7w7m13QsYPFq8eppdqyTyeLmXzTtOG9EGu_-ep2c
@@ -150,54 +216,3 @@ proxies:
   type: vless
   udp: true
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
-- name: 13|JP_speednode_0044
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: tky03.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇯🇵日本 01 | 1x JP
-  password: b681fd60-83ec-4208-8e16-192d46210d51
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇯🇵日本 02 | 1x JP
-  password: b681fd60-83ec-4208-8e16-192d46210d51
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇯🇵日本 03 | 1x JP
-  password: b681fd60-83ec-4208-8e16-192d46210d51
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇯🇵 日本 01 | 1x JP
-  password: 4749fd87-a7fa-476c-b971-e8e0ebd34b2e
-  port: 36111
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇯🇵 日本 02 | 1x JP
-  password: 4749fd87-a7fa-476c-b971-e8e0ebd34b2e
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇯🇵 日本 03 | 1x JP
-  password: 4749fd87-a7fa-476c-b971-e8e0ebd34b2e
-  port: 36115
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
