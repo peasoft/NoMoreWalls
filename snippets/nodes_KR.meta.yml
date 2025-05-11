@@ -1,40 +1,81 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 9bc12592-5b68-4913-a85a-b2c0c33829a7
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: a5350a24-c867-4655-a25d-567199d5a27e
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: e920bee2-522b-449a-aa88-d880de9b5502
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: a5350a24-c867-4655-a25d-567199d5a27e
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: e920bee2-522b-449a-aa88-d880de9b5502
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 3|🇰🇷1 |  2.1MB/s|62%|Disney|Open...
+  network: ws
+  port: '80'
+  server: 44.31.62.3
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
+  xudp: true
+- cipher: aes-256-cfb
+  name: 3|🇰🇷2 |  5.8MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '15098'
+  server: 125.141.31.72
+  type: ss
+  udp: true
+- name: 3,15|US_speednode_0077
+  network: ws
+  port: 8880
+  server: 135.84.76.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+  xudp: true
+- cipher: aes-256-cfb
+  name: 3|🇰🇷4 |  4.9MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '15098'
+  server: p222.panda001.net
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  country: 🇨🇳CN
-  delay: 1269
-  h2-opts: {}
-  http-opts: {}
-  name: 3|🇰🇷1 |  5.9MB/s|49%|Youtube
+  name: 3|🇰🇷5 |  5.8MB/s|49%|Youtube|Ope...
   network: tcp
   port: 17232
   server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
+  udp: true
   uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
-- client-fingerprint: chrome
-  name: 3|🇰🇷2 |  1.2MB/s|0%|Youtube|Open...
+  xudp: true
+- name: 3,15|KR_speednode_0048
   password: cacb4d4fa26f4eed25e4d17a6370083c
   port: 443
   server: kr01.sqx001.com
@@ -43,55 +84,6 @@ proxies:
   type: http
   udp: true
   username: dmpyoary@mayorlogistic.com
-- cipher: aes-256-cfb
-  name: 3|🇰🇷3 |  5.8MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: '4857'
-  server: 125.141.26.12
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|🇰🇷4 |  4.7MB/s|44%|Disney|Open...
-  password: qwerREWQ@@
-  port: '15098'
-  server: 125.141.31.72
-  type: ss
-  udp: true
-- name: 3|🇰🇷5 |  1.3MB/s|62%|Disney
-  network: ws
-  port: '80'
-  server: 45.131.6.99
-  servername: 901.dbodanwi.workers.dev
-  type: vless
-  udp: true
-  uuid: 6f183280-b258-437a-a216-e83f7dece776
-  ws-opts:
-    headers:
-      Host: 901.dbodanwi.workers.dev
-      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
-        Slackware/Chrome/12.0.742.100 Safari/534.30
-    path: Telegram@WangCai2
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 3|🇰🇷6 |  5.7MB/s|Disney
-  network: ws
-  port: '443'
-  server: 104.18.181.3
-  servername: ZyZZZOAO.PutaTa.EU.oRG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 103104c5-a3f5-4c48-8d8f-a72a56959799
-  ws-opts:
-    headers:
-      Host: zyzzzoao.putata.eu.org
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/47.0.2526.106 Safari/537.36
-    path: /rcSLZKdweUgLgufD?ed=2560
-  xudp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇰🇷 韩国|@ripaojiedian
@@ -116,7 +108,47 @@ proxies:
   server: 35.89.83.1
   tfo: false
   type: ss
-- name: 15|KR_speednode_0013
+- name: 15|KR_speednode_0045
+  network: ws
+  password: '!!str 0588'
+  port: 50000
+  server: 175.203.30.93
+  skip-cert-verify: true
+  sni: 888.uskm.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 888.uskm.dpdns.org
+    path: /?ed=2560
+- name: 15|KR_speednode_0046
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 211.251.7.76
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 15|KR_speednode_0047
+  network: ws
+  port: 11223
+  server: 218.38.33.77
+  servername: mikuyo.bpd67081tsq.ddns-ip.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+  ws-opts:
+    headers:
+      Host: mikuyo.bpd67081tsq.ddns-ip.net
+    path: /
+- name: 15|KR_speednode_0049
   network: ws
   port: 50000
   server: 112.164.234.135
@@ -130,47 +162,17 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /?ed=2560
-- name: 15|KR_speednode_0014
-  network: ws
-  port: 12297
-  server: 220.73.70.34
-  servername: edccj.ambercc.filegear-sg.me
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15|KR_speednode_0050
+  port: 443
+  reality-opts:
+    public-key: P--AseuV7sGvgy7YJ8iX58GxeP5-M2oq0Mq2YxPAXRs
+    short-id: f00d40f38482
+  server: 131.186.22.238
+  servername: buylite.music.apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 15|KR_speednode_0015
-  network: ws
-  port: 10187
-  server: 121.189.106.45
-  servername: mot.luyuju.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8e0a197-2d5c-441e-a724-525379e4db3a
-  ws-opts:
-    headers:
-      Host: mot.luyuju.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 15|KR_speednode_0016
-  network: ws
-  port: 18796
-  server: 61.74.213.66
-  servername: mot.luyuju.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8e0a197-2d5c-441e-a724-525379e4db3a
-  ws-opts:
-    headers:
-      Host: mot.luyuju.dpdns.org
-    path: /?ed=2560
+  uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
