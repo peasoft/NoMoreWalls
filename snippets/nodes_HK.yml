@@ -1,33 +1,19 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: b9ce1486-4a67-4373-9f5b-988d28bdad38
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: b9ce1486-4a67-4373-9f5b-988d28bdad38
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: 10dd9a3b-0237-403b-8ede-854c57dda1f7
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 7073a02a-8cd0-418d-909b-d639b1f736a1
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 10dd9a3b-0237-403b-8ede-854c57dda1f7
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 7073a02a-8cd0-418d-909b-d639b1f736a1
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 3|🇭🇰1 |  1.2MB/s|0%|Netflix|Disn...
+- name: 2|🇭🇰1 |  4.0MB/s|0%|Disney
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
   server: dozo01.flztjc.top
@@ -35,12 +21,56 @@ proxies:
   sni: dozo01.flztjc.top
   type: trojan
   udp: true
-- name: 3|🇭🇰2 |  1.3MB/s|0%|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
+- cipher: aes-256-gcm
+  name: 2|🇭🇰2 |  3.4MB/s|16%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11501'
+  server: cdn-p1-hk.weibo-dns.com
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰4 |  3.0MB/s|16%|Disney|Yout...
+  network: ws
+  port: 80
+  server: 71735d9f-sv2sg0-t71mow-4cl7.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7c129766-8656-11ea-8fc9-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 71735d9f-sv2sg0-t71mow-4cl7.hk.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰5 |  2.2MB/s|0%
+  network: ws
+  port: 1081
+  server: hk-cn-01.yumeifang.cn
+  servername: hk-cn-01.yumeifang.cn
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: df9b788f-929a-4349-970a-8cbbe12d6ae8
+  ws-opts:
+    headers:
+      Host: wamxoa.com
+    path: /asdd
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰香港 02 | 1x HK
+  password: 44c77059-796a-4d31-b2db-b1b8acbf3326
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰香港家宽 03 | 1x HK
+  password: 44c77059-796a-4d31-b2db-b1b8acbf3326
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
 - client-fingerprint: chrome
   name: 13|🇭🇰 香港|@ripaojiedian
@@ -67,7 +97,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 54259
+  port: 52013
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -82,14 +112,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
