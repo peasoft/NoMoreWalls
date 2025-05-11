@@ -1,45 +1,41 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 180aeb20-3ef2-41ab-8909-eba54ec35198
-  port: 36171
-  server: free.2weradf.xyz
+- cipher: aes-256-gcm
+  name: 1|🇸🇬1 |  1.2MB/s|13%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11508'
+  server: cdn-p1-sg.weibo-dns.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 180aeb20-3ef2-41ab-8909-eba54ec35198
-  port: 36173
-  server: free.2weradf.xyz
+- cipher: aes-256-gcm
+  name: 1|🇸🇬2 |  2.8MB/s|13%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11536'
+  server: ieplqz.youku-dns.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: 33865762-9ef6-407c-9d4e-0693faec127e
-  port: 31171
-  server: free.2apzhfa.xyz
+- cipher: aes-256-gcm
+  name: 1|🇸🇬3 |  1.2MB/s|13%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11530'
+  server: cdn-p1-sg.weibo-dns.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: 33865762-9ef6-407c-9d4e-0693faec127e
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
+- alterId: 64
+  cipher: auto
+  name: 1|🇸🇬4 |  1.5MB/s|0%|Netflix|Open...
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: 33865762-9ef6-407c-9d4e-0693faec127e
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   flow: none
-  name: 3|🇸🇬1 |  2.1MB/s|Openai
+  name: 1|🇸🇬5 |  5.7MB/s|Youtube|Openai|...
   network: ws
   port: '2096'
-  server: 141.193.213.20
+  server: 141.193.213.21
   servername: premium.vkehi.shop
   tls: true
   type: vless
@@ -48,35 +44,11 @@ proxies:
   ws-opts:
     headers:
       Host: premium.vkehi.shop
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
     path: '%2F'
   xudp: true
-- alterId: 64
-  cipher: auto
-  name: 3|🇸🇬2 |  1.1MB/s|0%|Netflix|Open...
-  port: 43302
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 3|🇸🇬3 |  5.4MB/s|34%|Netflix|Dis...
-  network: ws
-  port: '80'
-  server: 34.160.118.77
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: Telegram🇨🇳
-  xudp: true
-- name: 12|Hysteria 🇸🇬 @v2meowcf
+- name: 10|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -84,7 +56,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 12|新加坡
+- name: 10|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
   server: sg3.eyucdn.xyz
@@ -92,7 +64,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '12|Hysteria 🇸🇬 @v2meowcf #1'
+- name: '10|Hysteria 🇸🇬 @v2meowcf #1'
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -103,7 +75,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 13,14|新加坡|@ripaojiedian
+  name: 11,12|新加坡|@ripaojiedian
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -119,7 +91,7 @@ proxies:
     path: /oooo
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  name: 11|🇸🇬 狮城特殊|@ripaojiedian
   password: awsps0501
   port: 443
   server: 3.112.193.115
@@ -127,7 +99,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15|SG_speednode_0069
+  name: 13|SG_speednode_0069
   port: 443
   reality-opts:
     public-key: IPno1w9GUxhRN2JY_yIka2DNlnuJHQeb3_0yOCM4pQg
@@ -141,7 +113,7 @@ proxies:
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 15|SG_speednode_0070
+  name: 13|SG_speednode_0070
   port: 443
   reality-opts:
     public-key: kR-_5J2EPiB9nrdgyXjgzfJQnxQodkGeV_jgKOEnlEM
@@ -155,7 +127,7 @@ proxies:
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15|SG_speednode_0071
+  name: 13|SG_speednode_0071
   port: 443
   reality-opts:
     public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
@@ -169,7 +141,7 @@ proxies:
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15|SG_speednode_0072
+  name: 13|SG_speednode_0072
   port: 443
   reality-opts:
     public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
@@ -181,3 +153,38 @@ proxies:
   type: vless
   udp: true
   uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬新加坡 01 | 1x SG
+  password: b681fd60-83ec-4208-8e16-192d46210d51
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬新加坡 02 | 1x SG
+  password: b681fd60-83ec-4208-8e16-192d46210d51
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬新加坡 03 | 1x SG
+  password: b681fd60-83ec-4208-8e16-192d46210d51
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇸🇬 新加坡 01 | 1x SG
+  password: 4749fd87-a7fa-476c-b971-e8e0ebd34b2e
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇸🇬 新加坡 02 | 1x SG
+  password: 4749fd87-a7fa-476c-b971-e8e0ebd34b2e
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
