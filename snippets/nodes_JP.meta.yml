@@ -1,61 +1,37 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵日本 01 | 1x JP
-  password: c16fd384-83ce-408e-85c9-13db91baeff7
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵日本 02 | 1x JP
-  password: c16fd384-83ce-408e-85c9-13db91baeff7
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵日本 03 | 1x JP
-  password: c16fd384-83ce-408e-85c9-13db91baeff7
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 01 | 1x JP
-  password: 6b279f9f-cf8c-4d78-8cfc-a078f749cbde
+  name: 0|🇯🇵 日本 01 | 1x JP
+  password: 3076db8f-b0b2-4c26-9f9e-99e46fb7dfe2
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 02 | 1x JP
-  password: 6b279f9f-cf8c-4d78-8cfc-a078f749cbde
+  name: 0|🇯🇵 日本 02 | 1x JP
+  password: 3076db8f-b0b2-4c26-9f9e-99e46fb7dfe2
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 03 | 1x JP
-  password: 6b279f9f-cf8c-4d78-8cfc-a078f749cbde
+  name: 0|🇯🇵 日本 03 | 1x JP
+  password: 3076db8f-b0b2-4c26-9f9e-99e46fb7dfe2
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  delay: 1856
-  h2-opts: {}
-  http-opts: {}
-  name: 3|🇯🇵1 |  5.5MB/s|10%|Youtube|Ope...
-  network: tcp
-  port: 17233
-  server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
+- delay: 653
+  name: 2|🇯🇵1 |  2.4MB/s|51%|Youtube|Ope...
+  password: RlzoEILU
+  port: 49893
+  server: 36.151.251.57
   skip-cert-verify: true
-  type: vmess
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 3|🇯🇵2 |  3.5MB/s|10%|Disney|Yout...
+  client-fingerprint: chrome
+  name: 2|🇯🇵2 |  5.8MB/s|10%|Disney|Yout...
   network: tcp
   port: 17233
   server: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
@@ -66,84 +42,28 @@ proxies:
   udp: true
   uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
   xudp: true
-- name: 3|🇯🇵3 |  1.9MB/s|Youtube|Openai|...
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: tky03.sqx001.com
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  delay: 1856
+  h2-opts: {}
+  http-opts: {}
+  name: 2|🇯🇵3 |  3.7MB/s|10%|Disney|Yout...
+  network: tcp
+  port: 17233
+  server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
+  type: vmess
+  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
 - cipher: aes-256-gcm
-  name: 3|🇯🇵4 |  1.6MB/s|64%|Netflix|Dis...
+  name: 2|🇯🇵4 |  2.0MB/s|64%|Netflix|Dis...
   password: 423cf642-6528-410c-b542-2aae04113d33
-  port: '11506'
+  port: 11505
   server: cdn-p1-jp.weibo-dns.com
   type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 3|🇯🇵5 |  2.2MB/s|64%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11504
-  server: cdn-p1-jp.weibo-dns.com
-  type: ss
-- client-fingerprint: chrome
-  name: 3|🇯🇵6 |  5.4MB/s|12%|Youtube|Ope...
-  network: ws
-  port: '443'
-  server: 104.215.58.230
-  servername: gkkui8.azurewebsites.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      Host: gkkui8.azurewebsites.net
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
-    path: ''
-  xudp: true
-- client-fingerprint: chrome
-  name: 3|🇯🇵7 |  2.7MB/s|8%|Netflix|Disn...
-  network: ws
-  port: '10187'
-  server: 121.189.106.45
-  servername: mot.luyuju.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8e0a197-2d5c-441e-a724-525379e4db3a
-  ws-opts:
-    headers:
-      Host: mot.luyuju.dpdns.org
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: ''
-  xudp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 3|🇯🇵8 |  1.2MB/s|8%|Disney|Youtu...
-  network: ws
-  port: '443'
-  server: 54.169.229.188
-  servername: mot.majusti.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c87a3a5-d2c4-4cd9-878e-07e307b386d6
-  ws-opts:
-    headers:
-      Host: mot.majusti.dpdns.org
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
-    path: /?ed=2560
-  xudp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本|@ripaojiedian
+  name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -155,7 +75,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本2|@ripaojiedian
+  name: 12|🇯🇵 日本2|@ripaojiedian
   password: e03b35b40a25
   plugin: v2ray-plugin
   plugin-opts:
@@ -172,7 +92,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本3|@ripaojiedian
+  name: 12|🇯🇵 日本3|@ripaojiedian
   port: 55002
   server: 183.237.84.53
   skip-cert-verify: false
@@ -181,7 +101,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 13,14|日本4|@ripaojiedian
+  name: 12,13|日本4|@ripaojiedian
   network: tcp
   password: 8e3DxOzEI3YXc3aZRAzRg3lRlcZYS7Kp93juOwOnR8qaxSByD0OyaFep8F0p3864SCyAC
   port: 443
@@ -191,7 +111,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  name: 12|🇯🇵 日本特殊|@ripaojiedian
   password: awsps0501
   port: 443
   server: 43.203.199.63
@@ -199,7 +119,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 14|日本3|@ripaojiedian
+  name: 13|日本3|@ripaojiedian
   network: tcp
   port: '55002'
   server: 183.237.84.53
@@ -209,7 +129,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 14|日本5|@ripaojiedian
+  name: 13|日本5|@ripaojiedian
   network: kcp
   port: '53893'
   server: 47.74.41.147
@@ -217,3 +137,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇯🇵日本 01 | 1x JP
+  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇯🇵日本 02 | 1x JP
+  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  port: 31113
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇯🇵日本 03 | 1x JP
+  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  port: 31115
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
