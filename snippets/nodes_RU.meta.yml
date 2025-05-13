@@ -1,18 +1,9 @@
 proxies:
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 1|[hysteria2]RU1 |  1.2MB/s|50%|...
-  password: dongtaiwang.com
-  port: 10011
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - alpn:
   - h3
   client-fingerprint: chrome
   disable-sni: false
-  name: 1|[tuic]RU2 |  4.6MB/s|50%
+  name: 1|[tuic]RU1 |  2.0MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -24,19 +15,47 @@ proxies:
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
   version: 5
-- cipher: chacha20-ietf-poly1305
-  name: 2|[ss]RU 俄罗斯 01 | 1x RU
-  password: 947eaa09-0f98-4a9b-ba7f-324729c67609
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 14|[vless]RU_speednode_0166
+- down: ''
+  fingerprint: ''
+  name: 1|[hysteria2]RU2 |  2.6MB/s|0%
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: '10011'
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 1|[hysteria2]RU3 |  1.3MB/s|0%
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: '10011'
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|[hysteria]RU4 |  1.1MB/s|50%
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- name: 13|[vless]RU_speednode_0165
   network: ws
   port: 80
-  server: 45.8.211.61
+  server: 185.174.138.206
   servername: ipsycho.suex12.ir
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: true
@@ -46,7 +65,7 @@ proxies:
       Host: ipsycho.suex12.ir
     path: /re5IzbZ9IZZMddtw?ed=2560
 - client-fingerprint: random
-  name: 14|[vless]RU_speednode_0167
+  name: 13|[vless]RU_speednode_0167
   network: ws
   port: 443
   server: 45.67.215.168
@@ -61,9 +80,16 @@ proxies:
       Host: 0229.patterdeng.pp.ua
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 15|[ss]RU俄罗斯 01 | 1x RU
-  password: 264e7c2d-fdda-42b7-9018-d1ea6b3d628a
+  name: 14|[ss]RU俄罗斯 01 | 1x RU
+  password: 43bac27a-26de-464e-b8eb-c3c622f04f80
   port: 31511
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]RU 俄罗斯 01 | 1x RU
+  password: 7ae34e2f-d8ab-4903-bdfd-61f0f35fe711
+  port: 36511
+  server: free.2weradf.xyz
   type: ss
   udp: true
