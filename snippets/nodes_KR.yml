@@ -1,47 +1,56 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|[ss]KR韩国 01 | 1x KR
+  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|[ss]KR韩国 02 | 1x KR
+  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 1|[ss]KR4 |  6.1MB/s|44%|Disney|...
+  name: 2|[ss]KR2 |  3.9MB/s|44%|Netflix...
   password: qwerREWQ@@
   port: 15098
   server: p222.panda001.net
   type: ss
-- name: 1|[trojan]KR5 |  5.4MB/s|Disney|...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: sg.madison.eu.org
-  skip-cert-verify: false
-  sni: skwygx.top
-  type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
 - cipher: aes-256-cfb
-  name: 1|[ss]KR7 |  4.7MB/s|44%|Netflix...
+  name: 2|[ss]KR4 |  5.9MB/s|75%|Netflix...
   password: qwerREWQ@@
-  port: '15098'
-  server: 125.141.31.72
+  port: '11389'
+  server: 221.150.109.89
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 1|[ss]KR8 |  2.4MB/s|39%|Netflix...
+  name: 2|[ss]KR5 |  2.4MB/s|75%|Netflix...
   password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
+  port: 11389
+  server: p231.panda004.net
   tfo: true
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|[ss]KR 韩国 01 | 1x KR
+  password: 082f2ecb-56fe-498c-b23c-c23d37ebb5b7
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|[ss]KR 韩国特殊|@ripaojiedian
+  name: 13|[ss]KR 韩国特殊|@ripaojiedian
   password: yijian0503
   port: 443
   server: 43.203.199.63
   tfo: false
   type: ss
-- name: 13|[trojan]KR_speednode_0163
+- name: 15|[trojan]KR_speednode_0163
   network: ws
   password: bpb-trojan
   port: 443
@@ -54,24 +63,3 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 14|[ss]KR韩国 01 | 1x KR
-  password: 43bac27a-26de-464e-b8eb-c3c622f04f80
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|[ss]KR韩国 02 | 1x KR
-  password: 43bac27a-26de-464e-b8eb-c3c622f04f80
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|[ss]KR 韩国 01 | 1x KR
-  password: 7ae34e2f-d8ab-4903-bdfd-61f0f35fe711
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true

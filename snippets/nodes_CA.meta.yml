@@ -1,47 +1,30 @@
 proxies:
-- name: 1|[vless]CA1 |  2.0MB/s|62%|Netf...
-  network: ws
-  port: 443
-  server: 103.44.255.81
-  servername: vx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 0|[ss]CA加拿大 01 | 1x CA
+  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 1|[vless]CA2 |  2.8MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: time.is
-  servername: vx.ylks0033.dpdns.org
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 2|[hysteria2]CA1 |  1.0MB/s|20%|...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.80.61
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 1|[vless]CA3 |  2.9MB/s|Disney|Y...
-  network: ws
-  port: 10099
-  server: 146.56.136.39
-  servername: vx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 3|[ss]CA 加拿大 01 | 1x CA
+  password: 082f2ecb-56fe-498c-b23c-c23d37ebb5b7
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 13|[vless]CA_speednode_0007
+- name: 15|[vless]CA_speednode_0007
   network: ws
   port: 80
   server: 44.31.62.3
@@ -55,7 +38,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 13|[vless]CA_speednode_0008
+- name: 15|[vless]CA_speednode_0008
   network: ws
   port: 80
   server: 44.31.62.3
@@ -69,17 +52,3 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 14|[ss]CA加拿大 01 | 1x CA
-  password: 43bac27a-26de-464e-b8eb-c3c622f04f80
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|[ss]CA 加拿大 01 | 1x CA
-  password: 7ae34e2f-d8ab-4903-bdfd-61f0f35fe711
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
