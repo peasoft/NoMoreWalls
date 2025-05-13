@@ -1,46 +1,45 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 1|🇰🇷6 |  1.4MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|🇰🇷7 |  4.1MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: 1|🇰🇷8 |  1.6MB/s|61%|Disney|Open...
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: '8443'
+  server: 172.66.44.230
+  skip-cert-verify: false
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /tro8sFW1S91B6sZrM1?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 2|🇰🇷韩国 01 | 1x KR
-  password: f8be5f0d-e58c-4de8-90d8-97edd2bdff94
+  password: f4032a0d-04ba-4886-9c0f-603075e08e74
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇰🇷韩国 02 | 1x KR
-  password: f8be5f0d-e58c-4de8-90d8-97edd2bdff94
+  password: f4032a0d-04ba-4886-9c0f-603075e08e74
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇰🇷 韩国 01 | 1x KR
-  password: defa1a25-452f-40ff-bab5-e4b85d93297e
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 13|🇰🇷 韩国特殊|@ripaojiedian
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: yijian0503
   port: 443
   server: 43.203.199.63
   tfo: false
   type: ss
-- name: 15|KR_speednode_0025
+- name: 14|KR_speednode_0025
   network: ws
   password: Aimer
   port: 50000
@@ -53,3 +52,23 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
+- name: 14|KR_speednode_0026
+  network: ws
+  password: '!!str 0588'
+  port: 50000
+  server: 175.203.30.93
+  skip-cert-verify: true
+  sni: 888.uskm.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 888.uskm.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇰🇷 韩国 01 | 1x KR
+  password: 5c3f2de3-4ba3-4618-90df-4e36e5695328
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
