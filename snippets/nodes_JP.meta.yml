@@ -1,25 +1,69 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]JP日本 01 | 1x JP
-  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
+  password: f900c828-ef12-4b21-8339-f51010da0bc8
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]JP日本 02 | 1x JP
-  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
+  password: f900c828-ef12-4b21-8339-f51010da0bc8
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]JP日本 03 | 1x JP
-  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
+  password: f900c828-ef12-4b21-8339-f51010da0bc8
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 2|[vmess]JP2 |  2.1MB/s|54%|Yout...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  servername: centos7
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 2|[vmess]JP3 |  5.9MB/s|0%|Netfl...
+  network: http
+  port: 13883
+  server: 45.159.50.57
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6d8237f-4bbf-4a62-af4f-b0844120e0b4
+- down: ''
+  fingerprint: ''
+  name: 2|[hysteria2]JP4 |  1.1MB/s|0%|D...
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 3ed64477-9d5c-49ca-b536-2dae51c987d2
+  port: '13301'
+  server: baipiaoyun-japan.baipiaoyun.site
+  skip-cert-verify: true
+  sni: s0.awsstatic.com
+  type: hysteria2
+  up: ''
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|[ss]JP 日本|@ripaojiedian
@@ -125,3 +169,52 @@ proxies:
   tls: false
   type: vmess
   uuid: e6d8237f-4bbf-4a62-af4f-b0844120e0b4
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|[vless]JP_speednode_0064
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: jp3.interld123456789.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c8a1f63-8658-4458-b997-17ad1dea1054
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|[vless]JP_speednode_0065
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: jp1.interld123456789.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b1676447-0825-4b60-be37-735c9586735e
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]JP 日本 01 | 1x JP
+  password: 74edcb90-19dc-4437-9c5a-f238963be393
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]JP 日本 02 | 1x JP
+  password: 74edcb90-19dc-4437-9c5a-f238963be393
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]JP 日本 03 | 1x JP
+  password: 74edcb90-19dc-4437-9c5a-f238963be393
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
