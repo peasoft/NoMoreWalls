@@ -1,38 +1,33 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 01 | 1x KR
-  password: bb144cb0-9dc7-4883-acbd-0295532e420c
+  password: f2e3ed9f-ba50-4596-af64-b1544c3d1f82
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 02 | 1x KR
-  password: bb144cb0-9dc7-4883-acbd-0295532e420c
+  password: f2e3ed9f-ba50-4596-af64-b1544c3d1f82
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 2|[ss]KR1 |  5.5MB/s|44%|Netflix...
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|[ss]KR3 |  4.6MB/s|44%|Netflix...
-  password: qwerREWQ@@
-  port: '4857'
-  server: 125.141.26.12
-  type: ss
+- client-fingerprint: chrome
+  name: 2|[trojan]KR1 |  4.9MB/s|61%|Dis...
+  network: ws
+  password: bpb-trojan
+  port: '443'
+  server: bg.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 2|[ss]KR4 |  5.0MB/s|44%|Netflix...
-  password: qwerREWQ@@
-  port: '15098'
-  server: 125.141.31.72
-  type: ss
-  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /tr?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|[ss]KR 韩国|@ripaojiedian
@@ -49,22 +44,9 @@ proxies:
   server: 13.250.27.89
   tfo: false
   type: ss
-- name: 14|[trojan]KR_speednode_0163
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: hr.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 15|[ss]KR 韩国 01 | 1x KR
-  password: 81f89052-a488-45e2-bab5-653d3b39f386
+  password: 2babb856-4375-4930-b6c3-4cc955ebcf71
   port: 36311
   server: free.2weradf.xyz
   type: ss
