@@ -1,41 +1,19 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]DE德国 01 | 1x DE
-  password: 49656a49-5c70-423b-8918-6e1258fcccd4
+  password: 1ac5b070-137c-4fe3-b650-8687487a6331
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 2,15|[trojan]HK_speednode_0063
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]DE 德国 01 | 1x DE
-  password: 0ca138e3-82be-4314-86d0-7ae81065c563
+  name: 1|[ss]DE 德国 01 | 1x DE
+  password: d2ef927f-9256-4501-ae43-681dff84d701
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 15|[trojan]DE_speednode_0036
-  password: '!!str 74260665780162200'
-  port: 443
-  server: ultimate-lemming.shiner427.skin
-  skip-cert-verify: false
-  sni: ultimate-lemming.shiner427.skin
-  type: trojan
-  udp: true
-- name: 15|[trojan]DE_speednode_0037
+- name: 3,15|[trojan]DE_speednode_0019
   password: '!!str 74260665780162200'
   port: 443
   server: cuddly-finch.shiner427.skin
@@ -43,3 +21,45 @@ proxies:
   sni: cuddly-finch.shiner427.skin
   type: trojan
   udp: true
+- name: 3,15|[trojan]DE_speednode_0018
+  password: '!!str 74260665780162200'
+  port: 443
+  server: ultimate-lemming.shiner427.skin
+  skip-cert-verify: false
+  sni: ultimate-lemming.shiner427.skin
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - parsabr.com
+    path:
+    - /
+  name: 3|[vmess]DE7 |  5.0MB/s|Youtube|...
+  network: http
+  port: '443'
+  server: 167.172.180.77
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 76f413b9-48a2-43be-933d-df686cb958a9
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 3|[vmess]DE9 |  5.7MB/s|20%|Yout...
+  network: tcp
+  port: '45541'
+  server: 142.132.185.156
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d79bcd65-10ed-4cc2-b5fa-3680f6092951
+  xudp: true
