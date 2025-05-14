@@ -1,70 +1,94 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 01 | 1x KR
-  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  password: bb144cb0-9dc7-4883-acbd-0295532e420c
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 02 | 1x KR
-  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  password: bb144cb0-9dc7-4883-acbd-0295532e420c
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|[vless]KR1 |  5.1MB/s|Netflix|...
-  network: ws
-  port: 443
-  server: 160.79.105.233
-  servername: vx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vx.ylks0033.dpdns.org
-    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 2|[ss]KR2 |  3.9MB/s|44%|Netflix...
+  name: 2|[ss]KR1 |  5.5MB/s|44%|Netflix...
   password: qwerREWQ@@
   port: 15098
   server: p222.panda001.net
   type: ss
+- name: 2,14|[vless]US_speednode_0176
+  network: ws
+  port: 80
+  server: 185.148.106.32
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+  xudp: true
 - cipher: aes-256-cfb
-  name: 2|[ss]KR4 |  5.9MB/s|75%|Netflix...
+  name: 2|[ss]KR3 |  4.6MB/s|44%|Netflix...
   password: qwerREWQ@@
-  port: '11389'
-  server: 221.150.109.89
+  port: '4857'
+  server: 125.141.26.12
   type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|[ss]KR4 |  5.0MB/s|44%|Netflix...
+  password: qwerREWQ@@
+  port: '15098'
+  server: 125.141.31.72
+  type: ss
+  udp: true
+- name: 2,14|[vless]GB_speednode_0158
+  network: ws
+  port: 80
+  server: 194.36.55.181
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+- auth: d711d15c-adf6-4d98-991e-93172cc5eff0
+  client-fingerprint: chrome
+  name: 2|[hysteria2]KR6 |  3.4MB/s|62%|...
+  password: d711d15c-adf6-4d98-991e-93172cc5eff0
+  port: 30003
+  server: qyhg.qy1357.top
+  skip-cert-verify: true
+  sni: qyhg.qy1357.top
+  type: hysteria2
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 2|[ss]KR5 |  2.4MB/s|75%|Netflix...
+  name: 12|[ss]KR 韩国|@ripaojiedian
   password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]KR 韩国 01 | 1x KR
-  password: 082f2ecb-56fe-498c-b23c-c23d37ebb5b7
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 13|[ss]KR 韩国特殊|@ripaojiedian
-  password: yijian0503
-  port: 443
-  server: 43.203.199.63
+  port: 36379
+  server: p080.panda001.net
   tfo: false
   type: ss
-- name: 15|[trojan]KR_speednode_0163
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|[ss]KR 韩国特殊|@ripaojiedian
+  password: yijian0503
+  port: 443
+  server: 13.250.27.89
+  tfo: false
+  type: ss
+- name: 14|[trojan]KR_speednode_0163
   network: ws
   password: bpb-trojan
   port: 443
@@ -77,3 +101,10 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]KR 韩国 01 | 1x KR
+  password: 81f89052-a488-45e2-bab5-653d3b39f386
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true

@@ -1,61 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 01 | 1x SG
-  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  password: bb144cb0-9dc7-4883-acbd-0295532e420c
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 02 | 1x SG
-  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  password: bb144cb0-9dc7-4883-acbd-0295532e420c
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 03 | 1x SG
-  password: da4f74b4-2a27-408f-b3ac-7aa540eb174f
+  password: bb144cb0-9dc7-4883-acbd-0295532e420c
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 2|[vmess]SG1 |  2.6MB/s|0%|Opena...
-  port: 41554
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 2,15|[trojan]CN_speednode_0074
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  skip-cert-verify: true
-  sni: cgsg2.hysality.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]SG 新加坡 01 | 1x SG
-  password: 082f2ecb-56fe-498c-b23c-c23d37ebb5b7
-  port: 36171
-  server: free.2weradf.xyz
+- cipher: chacha20-ietf
+  name: 2|[ss]SG1 |  5.1MB/s|0%|Netflix|...
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]SG 新加坡 02 | 1x SG
-  password: 082f2ecb-56fe-498c-b23c-c23d37ebb5b7
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 13,14|[vmess]新加坡|@ripaojiedian
+  name: 12,13|[vmess]新加坡|@ripaojiedian
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -69,11 +43,42 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12,13|[vmess]新加坡2|@ripaojiedian
+  network: ws
+  port: '46019'
+  server: 112.29.213.228
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 13|[ss]SG 狮城特殊|@ripaojiedian
+  name: 12|[ss]SG 狮城特殊|@ripaojiedian
   password: yijian0503
   port: 443
-  server: 3.36.122.17
+  server: 47.128.78.62
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]SG 新加坡 01 | 1x SG
+  password: 81f89052-a488-45e2-bab5-653d3b39f386
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]SG 新加坡 02 | 1x SG
+  password: 81f89052-a488-45e2-bab5-653d3b39f386
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
