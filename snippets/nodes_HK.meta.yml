@@ -1,68 +1,63 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港 02 | 1x HK
-  password: f2e3ed9f-ba50-4596-af64-b1544c3d1f82
+  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港家宽 03 | 1x HK
-  password: f2e3ed9f-ba50-4596-af64-b1544c3d1f82
+  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|[trojan]HK1 |  5.9MB/s|0%|Netf...
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 2|[vless]HK2 |  3.1MB/s|0%|Disne...
-  network: ws
-  port: '443'
-  server: 172.66.45.9
-  servername: MiSTliNK-CL9.pAgEs.Dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
-  ws-opts:
-    headers:
-      Host: mistlink-cl9.pages.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
-    path: /ERlnnsHzyLczPW3c?ed=2560
-  xudp: true
-- name: 2,14|[vless]US_speednode_0028
-  network: ws
-  port: 80
-  server: 45.159.217.86
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw
-  xudp: true
 - alterId: 0
   cipher: auto
-  name: 2|[vmess]HK4 |  5.3MB/s|15%|Netf...
+  name: 2|[vmess]HK1 |  2.7MB/s|15%|Netf...
   port: 4138
   server: 64523f3e-sukw00-svxrt2-63bp.c.volczijie.com
   tls: false
   type: vmess
   uuid: 92b2a3d4-f353-11ef-b714-f23c93136cb3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|[vless]HK_speednode_0017
+  port: 20550
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
+- client-fingerprint: chrome
+  name: 2|[http]HK3 |  2.3MB/s|Youtube
+  password: 25d55ad283aa400af464c76d713c07ad
+  port: 8443
+  server: hk04.sqx001.com
+  skip-cert-verify: true
+  sni: hk04.sqx001.com
+  tls: true
+  type: http
+  udp: true
+  username: podbbylf@mayorlogistic.com
+- alterId: 2
+  cipher: auto
+  name: 2|[vmess]HK4 |  2.6MB/s|15%|Netf...
+  network: ws
+  port: 80
+  server: f49bcb46-sv2sg0-sw1w5j-1a3sy.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: b93c66cc-00ed-11ec-8673-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -180,30 +175,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 14|[vless]HK_speednode_0017
-  port: 20550
-  reality-opts:
-    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
-  server: hkt-ty-line-1.sudatech.store
-  servername: www.paypal.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
-- cipher: chacha20-ietf-poly1305
-  name: 15|[ss]HK 香港 02 | 1x HK
-  password: 2babb856-4375-4930-b6c3-4cc955ebcf71
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|[ss]HK 香港住宅IP 03 | 1x HK
-  password: 2babb856-4375-4930-b6c3-4cc955ebcf71
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
