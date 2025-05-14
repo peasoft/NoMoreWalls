@@ -1,25 +1,60 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]CA加拿大 01 | 1x CA
-  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
+  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]CA 加拿大 01 | 1x CA
+  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - delay: 2286
-  name: 2|[trojan]CA1 |  1.7MB/s|0%|Yout...
+  name: 3|[trojan]CA1 |  3.5MB/s|0%|Yout...
   password: '!!str 74260665780162200'
   port: 443
   server: allowing-owl.shiner427.skin
   sni: allowing-owl.shiner427.skin
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]CA 加拿大 01 | 1x CA
-  password: d6a01048-5e94-4c44-819a-a1e1a6a20663
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 3|[vless]CA2 |  4.6MB/s|20%|Netf...
+  network: tcp
+  port: '26113'
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 40.233.80.61
+  servername: www.yahoo.com
+  tls: true
+  type: vless
   udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  xudp: true
+- client-fingerprint: chrome
+  delay: 1887
+  flow: xtls-rprx-vision
+  name: 3|[vless]CA3 |  5.5MB/s|2%|Netfl...
+  network: tcp
+  port: 56565
+  reality-opts:
+    public-key: 59iI-5g0yQ3r6ZaoBOQSWOCnMw6_t_q0oS4gXngXhW0
+    short-id: 2e3b0488
+  server: www.vanboss.work
+  servername: www.samsung.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
 - name: 15|[trojan]CA_speednode_0009
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6

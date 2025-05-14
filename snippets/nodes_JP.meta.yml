@@ -1,98 +1,68 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]JP日本 01 | 1x JP
-  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
+  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]JP日本 02 | 1x JP
-  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
+  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]JP日本 03 | 1x JP
-  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
+  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 64
-  cipher: auto
-  name: 2|[vmess]JP4 |  2.3MB/s|54%|Yout...
-  network: ws
-  port: 1443
-  server: sslvpn.51job.com
-  servername: centos7
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
-  ws-opts:
-    headers:
-      Host: centos7
-    path: /634c5c4f9782
-- alterId: 0
-  cipher: auto
-  name: 2|[vmess]JP2 |  5.5MB/s|11%|Disn...
-  network: tcp
-  port: 17233
-  server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-  xudp: true
-- auth: 4ab4694d-72df-4438-b087-66a0892b7904
-  delay: 1538
-  name: 2|[hysteria2]JP3 |  4.4MB/s|0%|N...
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 4ab4694d-72df-4438-b087-66a0892b7904
-  port: 13301
-  server: baipiaoyun-japan-v1.baipiaoyun.site
-  skip-cert-verify: true
-  sni: s0.awsstatic.com
-  type: hysteria2
-  udp: true
-- auth: 3ed64477-9d5c-49ca-b536-2dae51c987d2
-  name: 2|[hysteria2]JP5 |  1.7MB/s|0%|D...
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 3ed64477-9d5c-49ca-b536-2dae51c987d2
-  port: 13301
-  server: baipiaoyun-japan.baipiaoyun.site
-  skip-cert-verify: true
-  sni: s0.awsstatic.com
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]JP 日本 01 | 1x JP
-  password: d6a01048-5e94-4c44-819a-a1e1a6a20663
+  name: 1|[ss]JP 日本 01 | 1x JP
+  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]JP 日本 02 | 1x JP
-  password: d6a01048-5e94-4c44-819a-a1e1a6a20663
+  name: 1|[ss]JP 日本 02 | 1x JP
+  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]JP 日本 03 | 1x JP
-  password: d6a01048-5e94-4c44-819a-a1e1a6a20663
+  name: 1|[ss]JP 日本 03 | 1x JP
+  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 3|[vless]JP1 |  3.2MB/s|7%|Disne...
+  network: ws
+  port: 14220
+  server: 218.51.125.182
+  servername: mikuyo.bpd67081tsq.ddns-ip.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+  ws-opts:
+    headers:
+      host: mikuyo.bpd67081tsq.ddns-ip.net
+    path: /?ed=2560
+- delay: 478
+  name: 3|[trojan]JP2 |  5.6MB/s|0%|Netf...
+  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
+  port: 28507
+  server: green.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green.cdntencentmusic.com
+  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 13|[ss]JP 日本|@ripaojiedian

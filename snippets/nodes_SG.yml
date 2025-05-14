@@ -1,55 +1,56 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 01 | 1x SG
-  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
+  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 02 | 1x SG
-  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
+  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 03 | 1x SG
-  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
+  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 2|[vmess]SG2 |  5.4MB/s|38%|Disn...
-  network: ws
-  port: 443
-  server: sgfqkqmltcy.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: sgfqkqmltcy.site
-    path: /rbqqvws
-  xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]SG 新加坡 01 | 1x SG
-  password: d6a01048-5e94-4c44-819a-a1e1a6a20663
+  name: 1|[ss]SG 新加坡 01 | 1x SG
+  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]SG 新加坡 02 | 1x SG
-  password: d6a01048-5e94-4c44-819a-a1e1a6a20663
+  name: 1|[ss]SG 新加坡 02 | 1x SG
+  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 3|[vmess]SG1 |  1.1MB/s|0%|Netfl...
+  port: 46121
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 3|[trojan]SG2 |  1.4MB/s|34%|Net...
+  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+  port: 35000
+  server: gzyd.cg.xxality.cn
+  skip-cert-verify: false
+  sni: cgsg2.hysality.com
+  type: trojan
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
