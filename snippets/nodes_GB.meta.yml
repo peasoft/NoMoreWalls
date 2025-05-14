@@ -1,36 +1,41 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港 01 | 1x HK
-  password: 1ac5b070-137c-4fe3-b650-8687487a6331
+  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]GB英国家宽 01 | 1x UK
-  password: 1ac5b070-137c-4fe3-b650-8687487a6331
+  password: 0a1b5292-021d-49e2-a01d-5617b2e446f5
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]HK 香港 01 | 1x HK
-  password: d2ef927f-9256-4501-ae43-681dff84d701
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
+- alpn:
+  - h2http/1.1
+  client-fingerprint: chrome
+  name: 2|[vless]GB1 |  4.5MB/s|44%|Open...
+  network: ws
+  port: '443'
+  server: www.speedtest.net
+  servername: SlZcZmPl2.ZuKaRiO.InFo
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]GB 英国住宅IP 01 | 1x UK
-  password: d2ef927f-9256-4501-ae43-681dff84d701
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: SlZcZmPl2.ZuKaRiO.InFo
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /
+  xudp: true
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-  name: 3|[vless]GB1 |  4.8MB/s|0%|Netfl...
+  name: 2|[vless]GB2 |  4.2MB/s|0%|Netfl...
   network: grpc
   port: '2030'
   reality-opts:
@@ -41,50 +46,15 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 98e5553e-abcc-4c9a-941a-8f0e9741d541
+  uuid: ad5e479a-d0f6-4809-902c-e74f5404336c
   xudp: true
-- name: 3|[vless]GB2 |  5.8MB/s|0%|Disne...
-  network: ws
-  port: '80'
-  server: 104.17.147.22
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 3|[ss]GB 英国住宅IP 01 | 1x UK
+  password: d6a01048-5e94-4c44-819a-a1e1a6a20663
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: 42da9e63-69da-408c-92fb-f4e3c61abd3e
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.lop.isvpython.online.
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn?ed=2048
-  xudp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
-  name: 3|[vless]GB3 |  4.2MB/s|33%|Open...
-  network: grpc
-  port: '2083'
-  reality-opts:
-    public-key: _Mo8etwPEDo42B4BnrkX3FOaPsOv2thyIlrzg3hhDBk
-    short-id: e09b0ba7d2
-  server: 77.110.100.177
-  servername: speedtest.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 108d0bd4-ed8a-4186-995f-8f49e3127699
-  xudp: true
-- down: ''
-  fingerprint: ''
-  name: 3|[hysteria2]GB4 |  4.0MB/s|61%|...
-  obfs: ''
-  obfs-password: ''
-  password: nfsn666
-  port: '8888'
-  server: ld-arm.nfsn666.gq
-  skip-cert-verify: true
-  sni: ld-arm.nfsn666.gq
-  type: hysteria2
-  up: ''
 - name: 12|[hysteria2]Hysteria 🇬🇧 @v2meow...
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
@@ -93,6 +63,34 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: 15|[vless]GB_speednode_0022
+  network: ws
+  port: 80
+  server: 94.247.142.38
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+- name: 15|[vless]GB_speednode_0023
+  network: ws
+  port: 80
+  server: 94.247.142.49
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - name: 15|[vless]GB_speednode_0024
   network: ws
   port: 80
