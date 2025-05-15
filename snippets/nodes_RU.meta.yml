@@ -1,22 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]RU俄罗斯 01 | 1x RU
-  password: 5f2a076d-5242-4f09-85af-dab382661c14
+  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
   port: 31511
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]RU 俄罗斯 01 | 1x RU
-  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
-  port: 36511
-  server: free.2weradf.xyz
   type: ss
   udp: true
 - alpn:
   - h3
   disable-sni: false
-  name: 3|[tuic]RU1 |  2.5MB/s|50%
+  name: 2|[tuic]RU1 |  4.1MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -27,7 +20,25 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-- name: 15|[trojan]RU_speednode_0175
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 2|[hysteria2]RU2 |  4.4MB/s|0%
+  password: dongtaiwang.com
+  port: 10011
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 2|[hysteria2]RU3 |  1.4MB/s|50%
+  password: dongtaiwang.com
+  port: 10011
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 14|[trojan]RU_speednode_0175
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -40,7 +51,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.153:443&proxyIP=null
-- name: 15|[trojan]RU_speednode_0176
+- name: 14|[trojan]RU_speednode_0176
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -54,7 +65,7 @@ proxies:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.153:443
 - client-fingerprint: random
-  name: 15|[vless]RU_speednode_0177
+  name: 14|[vless]RU_speednode_0177
   network: ws
   port: 443
   server: 45.67.215.168
@@ -68,7 +79,7 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /?ed=2560
-- name: 15|[trojan]RU_speednode_0178
+- name: 14|[trojan]RU_speednode_0178
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -81,7 +92,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.234:443
-- name: 15|[trojan]RU_speednode_0179
+- name: 14|[trojan]RU_speednode_0179
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443

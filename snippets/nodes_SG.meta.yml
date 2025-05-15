@@ -1,40 +1,63 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 01 | 1x SG
-  password: 5f2a076d-5242-4f09-85af-dab382661c14
+  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 02 | 1x SG
-  password: 5f2a076d-5242-4f09-85af-dab382661c14
+  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 03 | 1x SG
-  password: 5f2a076d-5242-4f09-85af-dab382661c14
+  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]SG 新加坡 01 | 1x SG
-  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
+- name: 2,14|[vless]US_speednode_0186
+  network: ws
+  port: 8080
+  server: 170.114.46.6
+  servername: xrr.rtxconfigz.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]SG 新加坡 02 | 1x SG
-  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+    path: /
+- auth: ethj7UIa34
+  client-fingerprint: chrome
+  name: 2|[hysteria2]SG2 |  5.0MB/s|0%|N...
+  password: ethj7UIa34
+  port: 35993
+  server: uba.aelen.ggff.net
+  skip-cert-verify: true
+  sni: uba.aelen.ggff.net
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: none
+  name: 2|[vless]SG3 |  3.8MB/s|Youtube|...
+  network: ws
+  port: 8080
+  server: support.zoom.us
+  tls: false
+  type: vless
   udp: true
-- name: 12|[hysteria2]Hysteria 🇸🇬 @v2meow...
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+    path: /
+- name: 11|[hysteria2]Hysteria 🇸🇬 @v2meow...
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -42,7 +65,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 12|[hysteria2]新加坡
+- name: 11|[hysteria2]新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
   server: sg3.eyucdn.xyz
@@ -50,7 +73,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '12|[hysteria2]Hysteria 🇸🇬 @v2meow... #1'
+- name: '11|[hysteria2]Hysteria 🇸🇬 @v2meow... #1'
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -61,7 +84,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 13,14|[vmess]新加坡|@ripaojiedian
+  name: 12,13|[vmess]新加坡|@ripaojiedian
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -78,7 +101,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13,14|[vmess]新加坡2|@ripaojiedian
+  name: 12,13|[vmess]新加坡2|@ripaojiedian
   network: ws
   port: '46019'
   server: 112.29.213.228
@@ -92,21 +115,29 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- client-fingerprint: chrome
+  name: 12|[trojan]SG 新加坡3|@ripaojiedian
+  password: 4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN
+  port: 8123
+  server: mortify.koreanbbq.link
+  skip-cert-verify: false
+  sni: mortify.koreanbbq.link
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 13|[ss]SG 狮城特殊|@ripaojiedian
+  name: 12|[ss]SG 狮城特殊|@ripaojiedian
   password: yijian0503
   port: 443
   server: 54.251.26.168
   tfo: false
   type: ss
-- name: 14|[trojan]新加坡3|@ripaojiedian
+- name: 13|[trojan]新加坡3|@ripaojiedian
   network: tcp
   password: 4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN
   port: 8123
   server: mortify.koreanbbq.link
   type: trojan
-- name: 15|[trojan]SG_speednode_0180
+- name: 14|[trojan]SG_speednode_0180
   password: 9de6d20c-d133-4261-8dd2-88684d619f7e
   port: 43456
   server: 43.163.126.61
