@@ -1,11 +1,19 @@
 proxies:
+- client-fingerprint: chrome
+  name: 2|[hysteria2]FR1 |  5.6MB/s|15%|...
+  password: dongtaiwang.com
+  port: 4489
+  server: hy2-1.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   delay: 1608
   down: 100
-  name: 2|[hysteria]FR1 |  5.6MB/s|15%|O...
+  name: 2|[hysteria]FR2 |  5.5MB/s|15%|O...
   port: 14241
   protocol: udp
   server: 51.159.226.1
@@ -14,34 +22,60 @@ proxies:
   type: hysteria
   udp: true
   up: 100
-- client-fingerprint: chrome
-  name: 2|[hysteria2]FR2 |  3.7MB/s|15%|...
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 2|[hysteria2]FR3 |  3.9MB/s|15%|...
   password: dongtaiwang.com
   port: 4489
-  server: hy2-1.694463.xyz
+  server: 51.158.205.126
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- delay: 1122
-  name: 2|[trojan]FR7 |  2.2MB/s|30%|You...
-  password: '!!str 74260665780162200'
-  port: 443
-  server: noble-minnow.shiner427.skin
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  delay: 1086
+  down: '100'
+  name: 2|[hysteria]FR4 |  2.1MB/s|25%|Y...
+  obfs: ''
+  port: 15010
+  protocol: ''
+  server: 195.154.200.40
   skip-cert-verify: true
-  sni: noble-minnow.shiner427.skin
-  type: trojan
-- name: 2|[trojan]FR4 |  5.1MB/s|30%|You...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.188.113.51
+  sni: apple.com
+  type: hysteria
+  up: '100'
+- client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|[vless]FR5 |  4.6MB/s|Openai
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: oNmm3eVPXYI5qpcgH419nwYyLeFkYxxEwiPRgod23T4
+    short-id: 8e
+  server: 91.108.249.233
+  servername: snappfood.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26211e12-6c96-483d-980d-757fe5fe6cc8
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|[trojan]FR6 |  3.1MB/s|42%
+  network: ws
+  password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
+  port: '443'
+  server: 104.26.13.31
   skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
+  sni: fwd-refuse-senators-brought.trycloudflare.com
   type: trojan
-- delay: 958
-  name: 2|[trojan]FR6 |  3.2MB/s|30%|You...
-  password: '!!str 74260665780162200'
-  port: 443
-  server: grown-mackerel.shiner427.skin
-  skip-cert-verify: true
-  sni: grown-mackerel.shiner427.skin
-  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /trojan-argo?ed=2560

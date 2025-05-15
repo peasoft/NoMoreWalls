@@ -1,15 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|[ss]RU俄罗斯 01 | 1x RU
-  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
-  port: 31511
-  server: free.2apzhfa.xyz
+  name: 0|[ss]RU 俄罗斯 01 | 1x RU
+  password: 372e92f8-d703-41c0-a974-c156ffab49b0
+  port: 36511
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alpn:
   - h3
   disable-sni: false
-  name: 2|[tuic]RU1 |  4.1MB/s|50%
+  name: 2|[tuic]RU1 |  3.1MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -20,21 +20,25 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 2|[hysteria2]RU2 |  4.4MB/s|0%
+- alterId: 0
+  cipher: auto
+  name: 2|[vmess]RU2 |  5.4MB/s|0%|Youtu...
+  network: ws
+  port: 20022
+  server: 2fea6447-81c4-2d7d-d592-a4f729209777.7head.icu
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- fast-open: true
+  name: 2|[hysteria2]RU3 |  4.1MB/s|50%
   password: dongtaiwang.com
   port: 10011
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 2|[hysteria2]RU3 |  1.4MB/s|50%
-  password: dongtaiwang.com
-  port: 10011
-  server: 46.17.41.217
+  server: hy2.694463.xyz
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
@@ -105,3 +109,10 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.5:443&proxyIP=null
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]RU俄罗斯 01 | 1x RU
+  password: 169225e9-860e-4147-9647-b0d763e5d58e
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
