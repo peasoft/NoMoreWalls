@@ -1,42 +1,97 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港 02 | 1x HK
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 5f2a076d-5242-4f09-85af-dab382661c14
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港家宽 03 | 1x HK
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 5f2a076d-5242-4f09-85af-dab382661c14
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|[trojan]HK1 |  2.5MB/s|0%|Netf...
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]HK 香港 02 | 1x HK
+  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]HK 香港住宅IP 03 | 1x HK
+  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 3,13,14|[trojan]香港7|@ripaojiedian
+  network: tcp
+  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
+  port: 28505
+  server: green.cdntencentmusic.com
   skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
+  sni: green.cdntencentmusic.com
   type: trojan
-- alterId: '0'
+- client-fingerprint: chrome
+  name: 3|[trojan]HK2 |  2.3MB/s|12%|Net...
+  password: 482194f6-8ca3-4c53-b43e-150f51efda7f
+  port: 27101
+  server: 219.135.197.214
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  delay: 763
+  name: 3|[ssr]HK3 |  4.3MB/s|16%|Netfli...
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: csilicovolcanoconiosis.godeove.xyz
+  type: ssr
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇨🇳CN
+  delay: 175
+  name: 3|[ss]HK4 |  2.4MB/s|100%|Netfli...
+  password: QZ4L8ZDG75OFMFRU
+  port: 15012
+  server: 183.2.157.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 3|[ss]HK5 |  5.3MB/s|100%|Disney...
+  password: V98N1K9OBXGHKC3X
+  port: 15005
+  server: 183.2.157.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 3|[ss]HK6 |  3.8MB/s|100%|Netfli...
+  password: FB83ULXQR5LHF82K
+  port: 15010
+  server: 183.2.157.135
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 2|[vmess]HK2 |  4.0MB/s|15%|Disn...
+  name: 3|[vmess]HK7 |  4.3MB/s|15%|Netf...
   network: ws
   port: 8080
-  server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
-  skip-cert-verify: false
+  server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
   tls: false
   type: vmess
-  udp: true
-  uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b
+  uuid: 94614d84-9986-11ee-be7f-f23c9164ca5d
   ws-opts:
-    headers: {}
+    headers:
+      Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
     path: /
-  xudp: true
 - client-fingerprint: chrome
-  name: 2,13,14|[trojan]香港|@ripaojiedian
+  name: 13,14|[trojan]香港|@ripaojiedian
   network: tcp
   password: ac1ba86a-eafd-4457-b8ec-3551bbc54ca9
   port: 12221
@@ -44,20 +99,6 @@ proxies:
   skip-cert-verify: false
   sni: mmbiz.redapricotcloud.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]HK 香港 02 | 1x HK
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]HK 香港住宅IP 03 | 1x HK
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|[ss]HK 香港2|@ripaojiedian
@@ -121,15 +162,6 @@ proxies:
   server: 103.149.183.61
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 13,14|[trojan]香港7|@ripaojiedian
-  network: tcp
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
-  server: green.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green.cdntencentmusic.com
-  type: trojan
 - alterId: 64
   cipher: auto
   name: 14|[vmess]香港3|@ripaojiedian
@@ -150,16 +182,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|[trojan]HK_speednode_0139
-  network: ws
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: /

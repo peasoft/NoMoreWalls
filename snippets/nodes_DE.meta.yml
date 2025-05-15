@@ -1,9 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]DE德国 01 | 1x DE
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 5f2a076d-5242-4f09-85af-dab382661c14
   port: 31471
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]DE 德国 01 | 1x DE
+  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -11,7 +18,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 2|[vless]DE1 |  4.1MB/s|22%|Open...
+  name: 3|[vless]DE1 |  6.3MB/s|20%|Open...
   network: tcp
   port: '7022'
   reality-opts:
@@ -24,84 +31,10 @@ proxies:
   udp: true
   uuid: ce462cc3-9983-45da-b030-728fb7b5684e
   xudp: true
-- alpn:
-  - h3h2
-  client-fingerprint: chrome
-  name: 2|[vless]DE2 |  5.6MB/s|Openai
-  network: ws
-  port: '443'
-  server: www.speedtest.net
-  servername: LmYgYfHo22.vElTrIxS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      Host: LmYgYfHo22.vElTrIxS.OrG
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
-        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-    path: /
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 2|[vless]DE3 |  1.3MB/s|Netflix|...
-  network: ws
-  port: '443'
-  server: 172.66.44.68
-  servername: 37c60f8d.ALBAnGURaKUqi.paGEs.dEv
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87ced8c4-b4d4-4c7b-ba67-11b78833a1b6
-  ws-opts:
-    headers:
-      Host: 37c60f8d.albangurakuqi.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.110 Safari/537.36
-    path: /telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420?ed=2560
-  xudp: true
-- client-fingerprint: chrome
-  name: 2|[trojan]DE4 |  3.4MB/s|20%|Net...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]DE 德国 01 | 1x DE
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 15|[trojan]DE_speednode_0129
+- name: 3|[trojan]DE2 |  5.4MB/s|30%|You...
   password: telegram-id-privatevpns
   port: 22222
-  server: 63.176.33.105
-  skip-cert-verify: false
+  server: 18.157.248.200
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
-  udp: true
-- name: 15|[trojan]DE_speednode_0130
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 8443
-  server: 130.61.51.100
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=130.61.51.100:8443&proxyIP=null

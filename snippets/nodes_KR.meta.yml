@@ -1,24 +1,89 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 01 | 1x KR
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 5f2a076d-5242-4f09-85af-dab382661c14
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 02 | 1x KR
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 5f2a076d-5242-4f09-85af-dab382661c14
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]KR 韩国 01 | 1x KR
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
+  name: 1|[ss]KR 韩国 01 | 1x KR
+  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
   port: 36311
   server: free.2weradf.xyz
   type: ss
+  udp: true
+- name: 3|[vless]KR1 |  3.9MB/s|61%|Disn...
+  network: ws
+  port: 443
+  server: 160.79.104.240
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sl.ylka.dpdns.org
+    path: /?ed=2560
+- name: 3|[vless]KR2 |  5.2MB/s|61%|Disn...
+  network: ws
+  port: 443
+  server: www.hugedomains.com
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sl.ylka.dpdns.org
+    path: /?ed=2560
+- name: 3|[vless]KR3 |  1.6MB/s|Disney|O...
+  network: ws
+  port: 443
+  server: 192.0.54.74
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sl.ylka.dpdns.org
+    path: /?ed=2560
+- name: 3|[vless]KR4 |  1.8MB/s|Disney
+  network: ws
+  port: 443
+  server: 160.123.255.58
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sl.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 3,15|[trojan]CN_speednode_0076
+  password: 482194f6-8ca3-4c53-b43e-150f51efda7f
+  port: 46668
+  server: 58.254.186.233
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
@@ -36,32 +101,3 @@ proxies:
   server: 13.229.110.124
   tfo: false
   type: ss
-- name: 15|[vless]KR_speednode_0140
-  network: ws
-  port: 18888
-  server: 183.106.162.127
-  servername: cc.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: cc.bgm2024.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 15|[vless]KR_speednode_0141
-  network: ws
-  port: 443
-  server: 152.70.90.168
-  servername: abdoo.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6e6ce26-6ab2-4e6d-9221-76e49a916553
-  ws-opts:
-    headers:
-      Host: abdoo.pages.dev
-    path: /?ed=2560
