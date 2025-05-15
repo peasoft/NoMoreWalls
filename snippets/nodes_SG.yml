@@ -1,56 +1,39 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 01 | 1x SG
-  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
+  password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 02 | 1x SG
-  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
+  password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG新加坡 03 | 1x SG
-  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
+  password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|[ss]SG 新加坡 01 | 1x SG
-  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
+  name: 3|[ss]SG 新加坡 01 | 1x SG
+  password: 32eea121-8521-4c28-8256-ce280951feaf
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|[ss]SG 新加坡 02 | 1x SG
-  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
+  name: 3|[ss]SG 新加坡 02 | 1x SG
+  password: 32eea121-8521-4c28-8256-ce280951feaf
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 3|[vmess]SG1 |  1.1MB/s|0%|Netfl...
-  port: 46121
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 3|[trojan]SG2 |  1.4MB/s|34%|Net...
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  skip-cert-verify: false
-  sni: cgsg2.hysality.com
-  type: trojan
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -85,14 +68,28 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- client-fingerprint: chrome
+  name: 13|[trojan]SG 新加坡3|@ripaojiedian
+  password: 4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN
+  port: 8123
+  server: mortify.koreanbbq.link
+  skip-cert-verify: false
+  sni: mortify.koreanbbq.link
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|[ss]SG 狮城特殊|@ripaojiedian
   password: yijian0503
   port: 443
-  server: 47.128.78.62
+  server: 54.251.26.168
   tfo: false
   type: ss
+- name: 14|[trojan]新加坡3|@ripaojiedian
+  network: tcp
+  password: 4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN
+  port: 8123
+  server: mortify.koreanbbq.link
+  type: trojan
 - name: 15|[trojan]SG_speednode_0048
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6

@@ -1,36 +1,57 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港 01 | 1x HK
-  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
+  password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]GB英国家宽 01 | 1x UK
-  password: 372e9044-8c31-4263-92ad-2d9c04dc264e
+  password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]HK 香港 01 | 1x HK
-  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+  name: 2|[vless]GB1 |  3.6MB/s|0%|Netfl...
+  network: grpc
+  port: '2030'
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 74.220.23.227
+  servername: refersion.com
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]GB 英国住宅IP 01 | 1x UK
-  password: e50ae8ff-4c76-49f7-bc87-ba2c9f7adfec
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
+  uuid: 98e5553e-abcc-4c9a-941a-8f0e9741d541
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: 2|[vless]GB2 |  2.1MB/s|0%|Disne...
+  network: ws
+  port: '2096'
+  server: 104.18.6.190
+  servername: verina.cantarella.dns-dynamic.net
+  tls: true
+  type: vless
   udp: true
+  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+  ws-opts:
+    headers:
+      Host: verina.cantarella.dns-dynamic.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /proxyip=robin.yaemiko.ggff.net
+  xudp: true
 - alpn:
   - h2http/1.1
   client-fingerprint: chrome
-  name: 3|[vless]GB1 |  5.3MB/s|44%|Open...
+  name: 2|[vless]GB3 |  6.0MB/s|Openai
   network: ws
   port: '443'
   server: www.speedtest.net
@@ -42,10 +63,33 @@ proxies:
   ws-opts:
     headers:
       Host: BmUcKcNq2.ZuKaRiO.InFo
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
     path: /
   xudp: true
+- auth: nfsn666
+  name: 2|[hysteria2]GB4 |  4.8MB/s|61%|...
+  password: nfsn666
+  port: 8888
+  server: ld-arm.nfsn666.gq
+  skip-cert-verify: true
+  sni: ld-arm.nfsn666.gq
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|[ss]HK 香港 01 | 1x HK
+  password: 32eea121-8521-4c28-8256-ce280951feaf
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|[ss]GB 英国住宅IP 01 | 1x UK
+  password: 32eea121-8521-4c28-8256-ce280951feaf
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 12|[hysteria2]Hysteria 🇬🇧 @v2meow...
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
