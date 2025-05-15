@@ -1,22 +1,37 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 01 | 1x KR
-  password: 70ca08b9-d454-4bd5-86cf-2ed3a8bb6148
+  password: 37e9a936-e160-4986-a8e2-0ca46bf9d184
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]KR韩国 02 | 1x KR
-  password: 70ca08b9-d454-4bd5-86cf-2ed3a8bb6148
+  password: 37e9a936-e160-4986-a8e2-0ca46bf9d184
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|[vless]KR1 |  5.9MB/s|61%|Disn...
+- client-fingerprint: chrome
+  name: 2,15|[vless]US_speednode_0062
+  network: ws
+  port: 2083
+  server: 172.66.40.87
+  servername: e.exedu.ip-ddns.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f320d6a-9953-4065-b61c-d62f89a6767f
+  ws-opts:
+    headers:
+      Host: e.exedu.ip-ddns.com
+    path: /?ed=2048
+- name: 2|[vless]KR2 |  1.3MB/s|61%|Disn...
   network: ws
   port: 443
-  server: 160.79.105.109
+  server: 198.62.62.156
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -27,10 +42,10 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|[vless]KR2 |  2.6MB/s|61%|Disn...
+- name: 2|[vless]KR3 |  5.2MB/s|Disney|O...
   network: ws
   port: 443
-  server: 160.123.255.162
+  server: 185.133.35.67
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -41,10 +56,10 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|[vless]KR3 |  5.5MB/s|Disney
+- name: 2|[vless]KR4 |  1.0MB/s|61%|Disn...
   network: ws
   port: 443
-  server: benedict.ns.cloudflare.com
+  server: 160.79.104.195
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -55,10 +70,10 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|[vless]KR4 |  2.7MB/s|61%|Disn...
+- name: 2|[vless]KR5 |  2.0MB/s|Disney
   network: ws
   port: 443
-  server: 192.0.54.111
+  server: 216.24.57.118
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -69,10 +84,10 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|[vless]KR5 |  5.5MB/s|Disney
+- name: 2|[vless]KR6 |  1.8MB/s|61%|Disn...
   network: ws
   port: 443
-  server: 185.133.35.160
+  server: bowen.ns.cloudflare.com
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -83,10 +98,24 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|[vless]KR6 |  4.9MB/s|61%|Disn...
+- name: 2|[vless]KR7 |  3.6MB/s|61%|Disn...
   network: ws
   port: 443
-  server: 198.62.62.4
+  server: sullivan.ns.cloudflare.com
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sl.ylka.dpdns.org
+    path: /?ed=2560
+- name: 2|[vless]KR8 |  2.6MB/s|61%|Disn...
+  network: ws
+  port: 443
+  server: 160.123.255.180
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -99,15 +128,27 @@ proxies:
     path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  delay: 772
-  name: 2|[ss]KR7 |  1.4MB/s|Netflix|Dis...
+  name: 2|[ss]KR9 |  5.3MB/s|75%|Netflix...
   password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
+  port: 11389
+  server: 221.150.109.89
+  type: ss
+- cipher: aes-256-cfb
+  delay: 304
+  name: 2|[ss]KR10 |  5.4MB/s|44%|Netfli...
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 2|[ss]KR11 |  6.2MB/s|44%|Netfli...
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]KR 韩国 01 | 1x KR
-  password: a15c730b-a2a1-4ef2-a99a-e31266ed444b
+  password: ba61b6bf-1e45-4af7-9868-6cbd094af55a
   port: 36311
   server: free.2weradf.xyz
   type: ss
