@@ -1,16 +1,17 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]DE德国 01 | 1x DE
-  password: 58b53439-aaf4-4a4e-a62f-1319782c47c2
+  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2,15|[trojan]BG_speednode_0005
+- client-fingerprint: chrome
+  name: 2|[trojan]DE4 |  3.4MB/s|20%|Net...
   network: ws
   password: bpb-trojan
   port: 443
-  server: bg.madison.eu.org
+  server: us.madison.eu.org
   skip-cert-verify: true
   sni: skwygx.top
   type: trojan
@@ -21,24 +22,29 @@ proxies:
     path: /tr?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]DE 德国 01 | 1x DE
-  password: 32eea121-8521-4c28-8256-ce280951feaf
+  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 15|[trojan]DE_speednode_0018
-  password: '!!str 74260665780162200'
-  port: 443
-  server: ultimate-lemming.shiner427.skin
+- name: 15|[trojan]DE_speednode_0129
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.176.33.105
   skip-cert-verify: false
-  sni: ultimate-lemming.shiner427.skin
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 15|[trojan]DE_speednode_0019
-  password: '!!str 74260665780162200'
-  port: 443
-  server: cuddly-finch.shiner427.skin
-  skip-cert-verify: false
-  sni: cuddly-finch.shiner427.skin
+- name: 15|[trojan]DE_speednode_0130
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 8443
+  server: 130.61.51.100
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=130.61.51.100:8443&proxyIP=null
