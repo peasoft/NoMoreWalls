@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|[vless]CA1 |  3.5MB/s|2%|Netfl...
+  name: 1,15|[vless]CA_speednode_0022
   network: tcp
   port: 56565
   reality-opts:
@@ -9,135 +9,36 @@ proxies:
     short-id: 2e3b0488
   server: www.vanboss.work
   servername: www.samsung.com
+  skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
-- name: 2|[vless]CA2 |  1.4MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: 216.24.57.36
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 2|[ss]CA 加拿大 01 | 1x CA
+  password: 827aa6ac-42c3-4f58-86ff-8ddb043c6d2f
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|[vless]CA3 |  1.1MB/s|62%|Open...
-  network: ws
-  port: 443
-  server: 160.79.104.55
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|[vless]CA4 |  1.2MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: dylan.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|[vless]CA5 |  4.2MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: 192.9.139.160
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|[vless]CA6 |  2.1MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: www.hugedomains.com
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|[vless]CA7 |  1.2MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: 192.0.63.29
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|[vless]CA8 |  1.9MB/s|Disney
-  network: ws
-  port: 443
-  server: uriah.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|[hysteria2]CA9 |  1.7MB/s|20%|...
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 155.248.216.247
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]CA加拿大 01 | 1x CA
-  password: 49b43e88-8b20-4c46-ab8f-af384223b1e0
+  password: b56d3624-35ef-4ca7-b1a7-7e0928aae4a7
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 15|[trojan]CA_speednode_0016
-  password: '!!str 74260665780162200'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15|[vless]CA_speednode_0023
   port: 443
-  server: allowing-owl.shiner427.skin
+  reality-opts:
+    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+    short-id: 7a2b
+  server: 3.96.179.112
+  servername: zula.ir
   skip-cert-verify: false
-  sni: allowing-owl.shiner427.skin
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-- name: 15|[trojan]CA_speednode_0017
-  password: '!!str 74260665780162200'
-  port: 443
-  server: 52.60.142.77
-  skip-cert-verify: true
-  sni: allowing-owl.shiner427.skin
-  type: trojan
-  udp: true
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db

@@ -1,21 +1,63 @@
 proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 1,13|[ss]SG 新加坡2|@ripaojiedian
+  password: UAO72K511KYT7NM7
+  port: 16003
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|[vmess]SG5 |  1.7MB/s|Youtube|...
+  port: 30028
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 61b159b3-860b-460b-a2e2-3c4ad3a42a23
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|[vmess]SG6 |  2.5MB/s|Netflix|...
+  port: 20015
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 61b159b3-860b-460b-a2e2-3c4ad3a42a23
+- cipher: chacha20-ietf-poly1305
+  name: 2|[ss]SG 新加坡 01 | 1x SG
+  password: 827aa6ac-42c3-4f58-86ff-8ddb043c6d2f
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|[ss]SG 新加坡 02 | 1x SG
+  password: 827aa6ac-42c3-4f58-86ff-8ddb043c6d2f
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]SG新加坡 01 | 1x SG
-  password: 49b43e88-8b20-4c46-ab8f-af384223b1e0
+  password: b56d3624-35ef-4ca7-b1a7-7e0928aae4a7
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]SG新加坡 02 | 1x SG
-  password: 49b43e88-8b20-4c46-ab8f-af384223b1e0
+  password: b56d3624-35ef-4ca7-b1a7-7e0928aae4a7
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]SG新加坡 03 | 1x SG
-  password: 49b43e88-8b20-4c46-ab8f-af384223b1e0
+  password: b56d3624-35ef-4ca7-b1a7-7e0928aae4a7
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
@@ -37,24 +79,3 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|[ss]SG 新加坡2|@ripaojiedian
-  password: UAO72K511KYT7NM7
-  port: 16003
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- name: 15|[trojan]SG_speednode_0056
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 138.2.107.107
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=138.2.107.107:443&proxyIP=null
