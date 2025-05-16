@@ -1,68 +1,48 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]US美国 01 | 1x US Los Angele...
-  password: feeef7f0-336c-4b07-892a-78ff86dcf020
+  password: 7e326876-176f-474d-b35b-e95eedd52451
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]US美国家宽 02 | 1x US Los Ange...
-  password: feeef7f0-336c-4b07-892a-78ff86dcf020
+  password: 7e326876-176f-474d-b35b-e95eedd52451
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]US美国 03 | 1x US Washington
-  password: feeef7f0-336c-4b07-892a-78ff86dcf020
+  password: 7e326876-176f-474d-b35b-e95eedd52451
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]US 美国 01 | 1x US Los Angel...
-  password: 6740dcc9-bc73-4334-9569-b685c600436d
+  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]US 美国住宅IP 02 | 1x US Los A...
-  password: 6740dcc9-bc73-4334-9569-b685c600436d
+  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]US 美国 03 | 1x US Washingto...
-  password: 6740dcc9-bc73-4334-9569-b685c600436d
+  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 3|[trojan]US50 |  2.8MB/s|46%|Op...
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  sni: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
-  type: trojan
-- name: 3|[trojan]US51 |  1.9MB/s|46%|Op...
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- name: 3|[trojan]US52 |  1.7MB/s|46%|Op...
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: false
-  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-  type: trojan
 - client-fingerprint: chrome
-  name: 3|[trojan]US55 |  2.0MB/s|46%|Op...
+  name: 3|[trojan]US26 |  2.4MB/s|46%|Op...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: '15229'
   server: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
@@ -70,23 +50,253 @@ proxies:
   sni: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 3|[trojan]US59 |  2.8MB/s|46%|Op...
-  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
-  port: '15229'
-  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+- cipher: aes-128-cfb
+  name: 3|[ss]US70 |  5.3MB/s|34%|Openai
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- alpn:
+  - http/1.1
+  name: 3|[trojan]US71 |  5.5MB/s|32%|Op...
+  network: ws
+  password: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
+  port: 443
+  server: 104.21.84.58
   skip-cert-verify: false
-  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  sni: XXXcddDe.IRaN2035.dpdNs.orG
   type: trojan
   udp: true
-- alterId: 0
+  ws-opts:
+    path: /bdtuD5eD7Q29WxRG8DqNAB
+- alpn:
+  - http/1.1
+  name: 3|[trojan]US72 |  4.9MB/s|50%
+  network: ws
+  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  port: 443
+  server: 172.67.144.126
+  skip-cert-verify: false
+  sni: CFR56ty7890.288288.sHOP
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /By7cEmOrNRS58yeduy9AOG
+- ip-version: dual
+  name: 3|[trojan]US73 |  5.6MB/s|46%|Op...
+  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
+  port: 15229
+  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
+  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
+  type: trojan
+  udp: true
+- alterId: 2
   cipher: auto
-  name: 3|[vmess]US83 |  2.2MB/s|25%|Ope...
-  port: 49930
-  server: 65.75.194.28
+  name: 3|[vmess]US74 |  1.1MB/s|63%|Ope...
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-headers:
+    Host: zxjp-b.tkong.cc
+  ws-path: /
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 3|[vmess]US80 |  5.8MB/s|51%|Ope...
+  network: ws
+  port: '2082'
+  server: 172.67.214.33
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 75191b1e-74a5-4f54-ad94-3bc09ff61322
+  udp: true
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      Host: cs.flha.ru
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 3|[vmess]US82 |  5.9MB/s|32%|Ope...
+  network: ws
+  port: 443
+  server: 9x.938.pp.ua
+  servername: 9x.938.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+  ws-opts:
+    headers:
+      Host: 9x.938.pp.ua
+    path: /DAxJddOdTd5pVam9w
+  xudp: true
+- client-fingerprint: chrome
+  name: 3|[trojan]US86 |  5.7MB/s|50%|Op...
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: '443'
+  server: 104.21.23.162
+  skip-cert-verify: true
+  sni: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/36.0.1985.125 Safari/537.36
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- client-fingerprint: chrome
+  name: 3|[trojan]US87 |  5.8MB/s|29%|Op...
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: '443'
+  server: 172.67.181.193
+  skip-cert-verify: true
+  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /ptGwaGzcA4KNAXX
+- alterId: 2
+  cipher: auto
+  name: 3|[vmess]US90 |  2.4MB/s|29%|Ope...
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 3|[trojan]US98 |  6.3MB/s|50%|Op...
+  network: ws
+  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  port: '443'
+  server: 104.21.71.112
+  skip-cert-verify: false
+  sni: CFR56ty7890.288288.sHOP
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /By7cEmOrNRS58yeduy9AOG
+- alterId: 2
+  cipher: auto
+  name: 3|[vmess]US102 |  4.1MB/s|29%|Op...
+  network: ws
+  port: 22641
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-a.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+- alterId: 2
+  cipher: auto
+  name: 3|[vmess]US103 |  1.2MB/s|29%|Op...
+  network: ws
+  port: 22643
+  server: 54.223.46.105
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+- alterId: 2
+  cipher: auto
+  name: 3|[vmess]US104 |  1.5MB/s|29%|Op...
+  network: ws
+  port: 22643
+  server: 54.223.154.91
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 3|[vmess]US136 |  3.1MB/s|29%|Op...
+  network: ws
+  port: 22643
+  server: 54.223.46.105
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 3|[vmess]US165 |  6.0MB/s|29%|Op...
+  network: ws
+  port: 20030
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2e73e0a6-3b44-4327-a3f6-66802dcaa094
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 3|[vmess]US167 |  5.9MB/s|29%|Op...
+  network: ws
+  port: 20030
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9290d79d-a1c8-4cb8-80c4-fba5427471db
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 3|[vmess]US168 |  2.4MB/s|Openai
+  network: ws
+  port: 20030
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d472690-b667-499f-a601-156d8a8f151e
+  ws-opts:
+    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
