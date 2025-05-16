@@ -1,7 +1,21 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|[ss]HK 香港 01 | 1x HK
+  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|[ss]GB 英国住宅IP 01 | 1x UK
+  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - down: ''
   fingerprint: ''
-  name: 1|[hysteria2]GB1 |  5.1MB/s|Netf...
+  name: 2|[hysteria2]GB1 |  4.9MB/s|Yout...
   obfs: ''
   obfs-password: ''
   password: nfsn666
@@ -11,63 +25,67 @@ proxies:
   sni: ld-arm.nfsn666.gq
   type: hysteria2
   up: ''
-- name: 1|[vless]GB2 |  5.0MB/s|100%|Ope...
-  network: ws
-  port: '8880'
-  server: 104.19.54.50
-  type: vless
-  udp: true
-  uuid: 3de43906-5511-4257-852f-ecb16c8324cb
-  ws-opts:
-    headers:
-      Host: V2rayArgoN.elmahstyle.xyz.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
-    path: /@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048
-  xudp: true
-- alpn:
-  - h2http/1.1
-  client-fingerprint: chrome
-  name: 1|[vless]GB3 |  1.4MB/s|44%|Open...
-  network: ws
-  port: '443'
-  server: www.speedtest.net
-  servername: BmUcKcNq2.ZuKaRiO.InFo
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
+  name: 2|[vless]GB2 |  1.4MB/s|33%|Open...
+  network: grpc
+  port: '2083'
+  reality-opts:
+    public-key: _Mo8etwPEDo42B4BnrkX3FOaPsOv2thyIlrzg3hhDBk
+    short-id: e09b0ba7d2
+  server: 77.110.100.177
+  servername: speedtest.net
   tls: true
   type: vless
   udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  uuid: 108d0bd4-ed8a-4186-995f-8f49e3127699
+  xudp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+  name: 2|[vless]GB3 |  4.4MB/s|0%|Netfl...
+  network: grpc
+  port: '2030'
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: ns7.esfahansiman.com
+  servername: refersion.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e66070a9-049f-42ce-9e14-9752141c3be4
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: 2|[vless]GB4 |  5.1MB/s|0%|Opena...
+  network: ws
+  port: '2096'
+  server: 104.18.6.190
+  servername: verina.cantarella.dns-dynamic.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
   ws-opts:
     headers:
-      Host: BmUcKcNq2.ZuKaRiO.InFo
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /
+      Host: verina.cantarella.dns-dynamic.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/41.0.2272.101 Safari/537.36
+    path: /proxyip=robin.yaemiko.ggff.net
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|[ss]HK 香港 01 | 1x HK
-  password: 827aa6ac-42c3-4f58-86ff-8ddb043c6d2f
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|[ss]GB 英国住宅IP 01 | 1x UK
-  password: 827aa6ac-42c3-4f58-86ff-8ddb043c6d2f
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 3|[ss]HK香港 01 | 1x HK
-  password: b56d3624-35ef-4ca7-b1a7-7e0928aae4a7
+  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]GB英国家宽 01 | 1x UK
-  password: b56d3624-35ef-4ca7-b1a7-7e0928aae4a7
+  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -80,10 +98,10 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 15|[vless]GB_speednode_0041
+- name: 15|[vless]GB_speednode_0038
   network: ws
   port: 8880
-  server: 91.193.58.83
+  server: 91.193.58.214
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -94,35 +112,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[vless]GB_speednode_0042
-  network: ws
-  port: 8880
-  server: 91.193.58.58
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[vless]GB_speednode_0043
-  network: ws
-  port: 8880
-  server: 91.193.58.213
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[vless]GB_speednode_0044
+- name: 15|[vless]GB_speednode_0039
   network: ws
   port: 8880
   server: 91.193.58.156
@@ -136,10 +126,66 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[vless]GB_speednode_0045
+- name: 15|[vless]GB_speednode_0040
   network: ws
   port: 8880
-  server: 91.193.58.198
+  server: 91.193.58.170
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- name: 15|[vless]GB_speednode_0041
+  network: ws
+  port: 8880
+  server: 91.193.58.84
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- name: 15|[vless]GB_speednode_0042
+  network: ws
+  port: 8880
+  server: 91.193.58.215
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- name: 15|[vless]GB_speednode_0043
+  network: ws
+  port: 8880
+  server: 91.193.58.58
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- name: 15|[vless]GB_speednode_0044
+  network: ws
+  port: 8880
+  server: 91.193.58.59
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -167,7 +213,7 @@ proxies:
 - name: 15|[vless]GB_speednode_0047
   network: ws
   port: 8880
-  server: 91.193.58.170
+  server: 91.193.58.213
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -181,7 +227,7 @@ proxies:
 - name: 15|[vless]GB_speednode_0048
   network: ws
   port: 8880
-  server: 91.193.58.59
+  server: 91.193.58.83
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -195,7 +241,7 @@ proxies:
 - name: 15|[vless]GB_speednode_0049
   network: ws
   port: 8880
-  server: 91.193.58.84
+  server: 91.193.58.198
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -206,53 +252,11 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[vless]GB_speednode_0050
-  network: ws
-  port: 8880
-  server: 91.193.58.205
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[vless]GB_speednode_0051
-  network: ws
-  port: 8880
-  server: 91.193.58.215
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[vless]GB_speednode_0052
-  network: ws
-  port: 8880
-  server: 91.193.58.214
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 15|[trojan]GB_speednode_0053
+- name: 15|[trojan]GB_speednode_0050
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 217.163.76.237
+  server: 217.163.76.227
   skip-cert-verify: true
   sni: icecream.955850.xyz
   type: trojan
@@ -260,8 +264,60 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.237:443&proxyIP=null
+    path: /proxyip=217.163.76.227:443&proxyIP=null
+- name: 15|[trojan]GB_speednode_0051
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.89
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.89:443
+- name: 15|[trojan]GB_speednode_0052
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.51
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.51:443
+- name: 15|[trojan]GB_speednode_0053
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.227
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.227:443
 - name: 15|[trojan]GB_speednode_0054
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.51
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=217.163.76.51:443&proxyIP=null
+- name: 15|[trojan]GB_speednode_0055
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -278,20 +334,7 @@ proxies:
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 217.163.76.254
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.254:443
-- name: 15|[trojan]GB_speednode_0057
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.227
+  server: 217.163.76.237
   skip-cert-verify: true
   sni: icecream.955850.xyz
   type: trojan
@@ -299,8 +342,8 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.227:443&proxyIP=null
-- name: 15|[trojan]GB_speednode_0058
+    path: /proxyip=217.163.76.237:443&proxyIP=null
+- name: 15|[trojan]GB_speednode_0057
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -313,11 +356,11 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=217.163.76.221:443&proxyIP=null
-- name: 15|[trojan]GB_speednode_0059
+- name: 15|[trojan]GB_speednode_0058
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 217.163.76.89
+  server: 217.163.76.254
   skip-cert-verify: false
   sni: icecream.955850.xyz
   type: trojan
@@ -325,43 +368,4 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.89:443
-- name: 15|[trojan]GB_speednode_0060
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.227
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.227:443
-- name: 15|[trojan]GB_speednode_0061
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.51
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.51:443&proxyIP=null
-- name: 15|[trojan]GB_speednode_0062
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.51
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=217.163.76.51:443
+    path: /proxyip=217.163.76.254:443

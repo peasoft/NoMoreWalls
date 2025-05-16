@@ -1,37 +1,15 @@
 proxies:
-- name: 1,15|[trojan]HK_speednode_0064
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 0|[ss]DE 德国 01 | 1x DE
+  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: chessgame
-  name: 1|[vless]DE2 |  2.6MB/s|22%|Yout...
-  network: grpc
-  port: '2172'
-  reality-opts:
-    public-key: hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I
-    short-id: ''
-  server: 157.180.41.190
-  servername: www.chess.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b12624a6-25d0-484d-8725-3eca4544d522
-  xudp: true
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 1|[vless]DE3 |  6.2MB/s|39%|Open...
+  name: 2|[vless]DE1 |  1.9MB/s|Openai
   network: ws
   port: '8443'
   server: 104.17.148.22
@@ -47,132 +25,7 @@ proxies:
         Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /
   xudp: true
-- client-fingerprint: safari
-  delay: 926
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1,15|[vless]DE_speednode_0036
-  network: tcp
-  port: 443
-  server: 204.10.194.78
-  servername: yfnl1.xn--4gq62f52gppi29k.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1|[vless]DE5 |  1.4MB/s|Openai
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: Rcapy_5gvuL9LOr1Bqz-Y84P69L3wUQjG48xpB4fLTA
-    short-id: 1d13151ce1
-  server: 91.107.219.8
-  servername: direct.pdownloaddigikala.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
-  xudp: true
-- client-fingerprint: chrome
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1|[vless]DE6 |  1.3MB/s|22%|Open...
-  network: tcp
-  port: '1615'
-  reality-opts:
-    public-key: hGWQLRX3fXhy649AM9QbmRBlDs4DU-trXDal_F5pCjI
-    short-id: f387eb8185414508
-  server: 167.235.230.165
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b26f5834-a6c7-44c7-84eb-94a68e2ceb8e
-  xudp: true
-- alpn:
-  - h3h2
-  client-fingerprint: chrome
-  name: 1|[vless]DE7 |  5.1MB/s|22%
-  network: ws
-  port: '443'
-  server: www.speedtest.net
-  servername: LmYgYfHo22.vElTrIxS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      Host: LmYgYfHo22.vElTrIxS.OrG
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|[vless]DE8 |  3.1MB/s|44%
-  network: ws
-  port: '8443'
-  server: 104.17.147.22
-  servername: CiR346yL3b.DeRaKhT.iNfO
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  ws-opts:
-    headers:
-      Host: CiR346yL3b.DeRaKhT.iNfO
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1713 Build/MRA58K) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /#Telegram@V2ray_Alpha
-  xudp: true
-- name: 1|[vless]DE9 |  1.4MB/s|43%|Open...
-  network: ws
-  port: '8880'
-  server: 172.67.204.84
-  type: vless
-  udp: true
-  uuid: 81df6b13-2f70-4eee-ab73-48932012c433
-  ws-opts:
-    headers:
-      Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
-        Safari/537.36
-    path: /?ed=2048
-  xudp: true
-- alpn:
-  - h2http/1.1
-  client-fingerprint: chrome
-  name: 1|[vless]DE10 |  1.3MB/s|22%|Ope...
-  network: ws
-  port: '2087'
-  server: scorpion1.info
-  servername: Tp418Gi9H1.mOlAnAmAmAlI1.iNfO
-  tls: true
-  type: vless
-  udp: true
-  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
-  ws-opts:
-    headers:
-      Host: Tp418Gi9H1.mOlAnAmAmAlI1.iNfO
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /
-  xudp: true
-- name: 1|[vless]DE11 |  6.5MB/s|44%|You...
+- name: 2|[vless]DE2 |  2.6MB/s|Openai
   network: ws
   port: 8443
   server: 205.233.181.186
@@ -188,38 +41,53 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 1|[vmess]DE12 |  5.7MB/s|59%|You...
-  port: 52100
-  server: sd.needss.top
-  tls: false
+  name: 2|[vmess]DE4 |  2.6MB/s|22%|Yout...
+  network: ws
+  port: 443
+  server: www.visa.com.sg
+  servername: radiation-browse-dallas-slight.trycloudflare.com
+  skip-cert-verify: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 61b159b3-860b-460b-a2e2-3c4ad3a42a23
-- cipher: chacha20-ietf-poly1305
-  name: 2|[ss]DE 德国 01 | 1x DE
-  password: 827aa6ac-42c3-4f58-86ff-8ddb043c6d2f
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
+  uuid: 38d1a891-f3f9-ef39-6a95-c106e2a386eb
+  ws-opts:
+    headers:
+      Host: radiation-browse-dallas-slight.trycloudflare.com
+    path: /vmess-argo?ed=2048
+- grpc-opts:
+    grpc-service-name: vless
+  name: 2|[vless]DE5 |  1.8MB/s|22%|Yout...
+  network: grpc
+  port: '2025'
+  server: 91.107.181.155
+  type: vless
   udp: true
+  uuid: 9bf09a16-c5f1-4c9f-889d-25b9889df1b0
+  xudp: true
+- alpn:
+  - h3h2
+  client-fingerprint: chrome
+  name: 2|[vless]DE6 |  5.4MB/s|24%|Open...
+  network: ws
+  port: '8443'
+  server: www.speedtest.net
+  servername: KeMn02UcWh.AaAzZzAaA-8129.cOm
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+  ws-opts:
+    headers:
+      Host: KeMn02UcWh.AaAzZzAaA-8129.cOm
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /
+  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|[ss]DE德国 01 | 1x DE
-  password: b56d3624-35ef-4ca7-b1a7-7e0928aae4a7
+  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 15|[trojan]DE_speednode_0037
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 8443
-  server: 130.61.51.100
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=130.61.51.100:8443&proxyIP=null
