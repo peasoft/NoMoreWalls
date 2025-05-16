@@ -1,15 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]RU 俄罗斯 01 | 1x RU
-  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  password: a6868522-1eb8-4f60-a0ee-d402ec574b5c
   port: 36511
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]RU俄罗斯 01 | 1x RU
+  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  port: 31511
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alpn:
   - h3
   disable-sni: false
-  name: 2|[tuic]RU1 |  4.5MB/s|50%
+  name: 3|[tuic]RU1 |  5.3MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -20,49 +27,41 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 2|[hysteria2]RU2 |  2.0MB/s|0%
-  password: dongtaiwang.com
-  port: 10011
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - client-fingerprint: chrome
   fast-open: true
-  name: 2|[hysteria2]RU3 |  1.2MB/s|0%
+  name: 3|[hysteria2]RU2 |  4.0MB/s|0%
   password: dongtaiwang.com
   port: 10011
   server: hy2.694463.xyz
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 2|[vless]RU4 |  1.1MB/s|0%|Gemin...
+- down: ''
+  fingerprint: ''
+  name: 3|[hysteria2]RU3 |  5.5MB/s|50%
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: '10011'
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- name: 15|[vless]RU_speednode_0074
   network: ws
   port: 443
-  server: 46.29.239.149
-  servername: unixkey.nobatow.site
+  server: 45.67.215.168
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: d2947a55-5fa6-4d21-93c6-b558c662ec8d
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
   ws-opts:
     headers:
-      Host: unixkey.nobatow.site
-    path: /nobatow
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]RU俄罗斯 01 | 1x RU
-  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
 - name: 15|[trojan]RU_speednode_0075
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6

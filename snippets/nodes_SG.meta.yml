@@ -1,68 +1,91 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG 新加坡 01 | 1x SG
-  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  password: a6868522-1eb8-4f60-a0ee-d402ec574b5c
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]SG 新加坡 02 | 1x SG
-  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  password: a6868522-1eb8-4f60-a0ee-d402ec574b5c
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 2,13|[ss]SG 新加坡2|@ripaojiedian
-  password: UAO72K511KYT7NM7
-  port: 16003
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]SG新加坡 01 | 1x SG
+  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  port: 31171
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 2|[http]SG2 |  1.3MB/s|61%|Youtu...
-  password: 25d55ad283aa400af464c76d713c07ad
-  port: 8444
-  server: singapore02.sqx001.com
-  skip-cert-verify: true
-  sni: singapore02.sqx001.com
-  tls: true
-  type: http
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]SG新加坡 02 | 1x SG
+  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  username: podbbylf@mayorlogistic.com
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]SG新加坡 03 | 1x SG
+  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - auth: ethj7UIa34
   client-fingerprint: chrome
-  name: 2|[hysteria2]SG3 |  2.3MB/s|0%|D...
+  name: 3|[hysteria2]SG1 |  1.9MB/s|0%|D...
   password: ethj7UIa34
   port: 35993
   server: uba.aelen.ggff.net
   skip-cert-verify: true
   sni: uba.aelen.ggff.net
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]SG新加坡 01 | 1x SG
-  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
+- name: 3,15|[vless]US_speednode_0126
+  network: ws
+  port: 8080
+  server: support.zoom.us
+  servername: xrr.rtxconfigz.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]SG新加坡 02 | 1x SG
-  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+    path: /
+- name: 3|[vless]SG3 |  5.7MB/s|Youtube|...
+  network: ws
+  port: '8080'
+  server: 170.114.45.6
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]SG新加坡 03 | 1x SG
-  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /
+  xudp: true
+- name: 3|[vless]SG4 |  5.7MB/s|Youtube|...
+  network: ws
+  port: '8080'
+  server: 170.114.45.6
+  servername: xrr.rtxconfigz.xyz
+  type: vless
   udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: ''
+  xudp: true
 - name: 12|[hysteria2]Hysteria 🇸🇬 @v2meow...
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -104,6 +127,14 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|[ss]SG 新加坡2|@ripaojiedian
+  password: UAO72K511KYT7NM7
+  port: 16003
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - name: 15|[vless]SG_speednode_0082
   network: ws
   port: 8880

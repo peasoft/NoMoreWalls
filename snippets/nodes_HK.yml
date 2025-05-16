@@ -1,28 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK 香港 02 | 1x HK
-  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  password: a6868522-1eb8-4f60-a0ee-d402ec574b5c
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK 香港住宅IP 03 | 1x HK
-  password: f5c178ef-cfcb-4af2-a43f-de4b4f519bed
+  password: a6868522-1eb8-4f60-a0ee-d402ec574b5c
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  name: 2|[ss]HK1 |  1.0MB/s|0%|Netflix|...
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]HK香港 02 | 1x HK
+  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  port: 31143
+  server: free.2apzhfa.xyz
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]HK香港家宽 03 | 1x HK
+  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 2,13,14|[vmess]香港8|@ripaojiedian
+  name: 3,13,14|[vmess]香港8|@ripaojiedian
   network: ws
   port: '8080'
   server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
@@ -37,40 +45,28 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: aes-256-gcm
-  delay: 244
-  name: 2|[ss]HK3 |  4.5MB/s|21%|Netflix...
-  password: 93f122df-87be-4554-b6cd-4f55da7f619a
-  port: 39102
-  server: 183.236.51.26
+  client-fingerprint: chrome
+  name: 3,13|[ss]HK 香港6|@ripaojiedian
+  password: NPOA4WYID2WF8N4E
+  port: 15016
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
-  udp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 2|[vmess]HK4 |  2.9MB/s|25%
+  name: 3|[vmess]HK4 |  3.0MB/s|16%|Disn...
   network: ws
-  port: 80
-  server: 3fbc10.2ca52629-3a60.shop
+  port: 8080
+  server: e6eb5fca-swexs0-sycpj3-18jxd.hgc1.tcpbbr.net
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d
+  udp: true
+  uuid: fcf7573c-faa4-11ef-8a67-f23c913c8d2b
   ws-opts:
-    headers:
-      Host: hk02s.2ca52629-3a60.shop
+    headers: {}
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]HK香港 02 | 1x HK
-  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|[ss]HK香港家宽 03 | 1x HK
-  password: c7b29b7f-67d0-42e4-89ba-fd57905a34e6
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  xudp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -129,14 +125,6 @@ proxies:
   skip-cert-verify: false
   sni: hk-13-568.flztjc.net
   type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|[ss]HK 香港6|@ripaojiedian
-  password: NPOA4WYID2WF8N4E
-  port: 15016
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -188,19 +176,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|[trojan]HK_speednode_0060
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
 - name: 15|[trojan]HK_speednode_0061
   network: ws
   password: bpb-trojan
