@@ -1,36 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|[ss]CA 加拿大 01 | 1x CA
-  password: a6868522-1eb8-4f60-a0ee-d402ec574b5c
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]CA加拿大 01 | 1x CA
-  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  name: 0|[ss]CA加拿大 01 | 1x CA
+  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 3|[vmess]CA1 |  3.7MB/s|Youtube|...
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- name: 3|[vless]CA2 |  2.1MB/s|62%|Disn...
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]CA 加拿大 01 | 1x CA
+  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 3|[vless]CA1 |  2.8MB/s|62%|Disn...
   network: ws
   port: 443
-  server: 192.0.63.116
+  server: dnschecker.org
   servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -39,40 +25,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: zx.ylks0033.dpdns.org
+      Host: zx.ylks0033.dpdns.org
     path: /?ed=2560
-- name: 3|[vless]CA3 |  4.6MB/s|62%|Disn...
+- name: 3|[vless]CA2 |  4.4MB/s|62%|Disn...
   network: ws
   port: 443
-  server: 160.79.104.75
-  servername: zx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 3|[vless]CA4 |  3.8MB/s|Disney|G...
-  network: ws
-  port: 443
-  server: lewis.ns.cloudflare.com
-  servername: zx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 3|[vless]CA5 |  3.0MB/s|Netflix|...
-  network: ws
-  port: 443
-  server: 198.62.62.4
+  server: 160.123.255.38
   servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -86,7 +44,7 @@ proxies:
 - alpn:
   - h3
   auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 3|[hysteria2]CA6 |  1.9MB/s|20%|...
+  name: 3|[hysteria2]CA3 |  1.3MB/s|20%|...
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 40.233.80.61
@@ -96,21 +54,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15|[vless]CA_speednode_0022
-  port: 56565
-  reality-opts:
-    public-key: 59iI-5g0yQ3r6ZaoBOQSWOCnMw6_t_q0oS4gXngXhW0
-    short-id: 2e3b0488
-  server: www.vanboss.work
-  servername: www.samsung.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|[vless]CA_speednode_0023
+  name: 3,15|[vless]CA_speednode_0023
   port: 443
   reality-opts:
     public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
@@ -122,3 +66,17 @@ proxies:
   type: vless
   udp: true
   uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 3,15|[vless]CA_speednode_0022
+  port: 56565
+  reality-opts:
+    public-key: 59iI-5g0yQ3r6ZaoBOQSWOCnMw6_t_q0oS4gXngXhW0
+    short-id: 2e3b0488
+  server: www.vanboss.work
+  servername: www.samsung.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b1867b10-e968-44d1-9182-a674ef81ecb7

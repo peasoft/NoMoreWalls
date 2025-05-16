@@ -1,22 +1,31 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|[ss]RU 俄罗斯 01 | 1x RU
-  password: a6868522-1eb8-4f60-a0ee-d402ec574b5c
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]RU俄罗斯 01 | 1x RU
-  password: d9ed5e9b-f562-4746-a198-2dbbff39d4b1
+  name: 0|[ss]RU俄罗斯 01 | 1x RU
+  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]RU 俄罗斯 01 | 1x RU
+  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  port: 36511
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  fast-open: true
+  name: 3|[hysteria2]RU1 |  1.7MB/s|50%
+  password: dongtaiwang.com
+  port: 10011
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - alpn:
   - h3
   disable-sni: false
-  name: 3|[tuic]RU1 |  5.3MB/s|50%
+  name: 3|[tuic]RU2 |  2.9MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -27,27 +36,15 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-- client-fingerprint: chrome
-  fast-open: true
-  name: 3|[hysteria2]RU2 |  4.0MB/s|0%
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 3|[hysteria2]RU3 |  5.4MB/s|0%
   password: dongtaiwang.com
   port: 10011
-  server: hy2.694463.xyz
+  server: 46.29.163.171
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 3|[hysteria2]RU3 |  5.5MB/s|50%
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: '10011'
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
 - name: 15|[vless]RU_speednode_0074
   network: ws
   port: 443
