@@ -1,31 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]RU俄罗斯 01 | 1x RU
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]RU 俄罗斯 01 | 1x RU
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36511
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  fast-open: true
-  name: 3|[hysteria2]RU1 |  1.7MB/s|50%
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - alpn:
   - h3
   disable-sni: false
-  name: 3|[tuic]RU2 |  2.9MB/s|50%
+  name: 3|[tuic]RU1 |  5.4MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -36,29 +27,32 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
+- client-fingerprint: chrome
+  fast-open: true
+  name: 3|[hysteria2]RU2 |  1.6MB/s|0%
+  password: dongtaiwang.com
+  port: 10011
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - auth: dongtaiwang.com
   client-fingerprint: chrome
-  name: 3|[hysteria2]RU3 |  5.4MB/s|0%
+  name: 3|[hysteria2]RU3 |  2.1MB/s|50%
+  password: dongtaiwang.com
+  port: 10011
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- auth: dongtaiwang.com
+  name: 3|[hysteria2]RU4 |  1.8MB/s|0%
   password: dongtaiwang.com
   port: 10011
   server: 46.29.163.171
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 15|[vless]RU_speednode_0074
-  network: ws
-  port: 443
-  server: 45.67.215.168
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
 - name: 15|[trojan]RU_speednode_0075
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6

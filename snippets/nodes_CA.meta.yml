@@ -1,71 +1,18 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]CA加拿大 01 | 1x CA
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]CA 加拿大 01 | 1x CA
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 3|[vless]CA1 |  2.8MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: dnschecker.org
-  servername: zx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: zx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 3|[vless]CA2 |  4.4MB/s|62%|Disn...
-  network: ws
-  port: 443
-  server: 160.123.255.38
-  servername: zx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 3|[hysteria2]CA3 |  1.3MB/s|20%|...
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.80.61
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 3,15|[vless]CA_speednode_0023
-  port: 443
-  reality-opts:
-    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
-    short-id: 7a2b
-  server: 3.96.179.112
-  servername: zula.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 3,15|[vless]CA_speednode_0022
@@ -80,3 +27,31 @@ proxies:
   type: vless
   udp: true
   uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
+- alterId: 2
+  cipher: auto
+  name: 3|[vmess]CA2 |  5.5MB/s|Youtube|...
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15|[vless]CA_speednode_0023
+  port: 443
+  reality-opts:
+    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+    short-id: 7a2b
+  server: 3.96.179.112
+  servername: zula.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db

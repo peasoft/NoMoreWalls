@@ -1,47 +1,92 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港 02 | 1x HK
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]HK香港家宽 03 | 1x HK
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]HK 香港 02 | 1x HK
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]HK 香港住宅IP 03 | 1x HK
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 3|[vmess]HK1 |  1.7MB/s|16%|Yout...
+  client-fingerprint: chrome
+  name: 3,13,14|[vmess]香港8|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 3|[vmess]HK2 |  1.0MB/s|16%|Disn...
   network: ws
   port: 8080
   server: e6eb5fca-swexs0-sycpj3-18jxd.hgc1.tcpbbr.net
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: fcf7573c-faa4-11ef-8a67-f23c913c8d2b
   ws-opts:
-    headers: {}
+    headers:
+      Host: e6eb5fca-swexs0-sycpj3-18jxd.hgc1.tcpbbr.net
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 3|[vless]HK3 |  5.2MB/s|15%|Disn...
+  network: tcp
+  port: '20550'
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+    short-id: ''
+  server: 42.2.55.150
+  servername: www.paypal.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
   xudp: true
+- client-fingerprint: chrome
+  name: 3|[http]HK4 |  2.6MB/s|6%|Youtub...
+  password: 25d55ad283aa400af464c76d713c07ad
+  port: 8443
+  server: hk04.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: podbbylf@mayorlogistic.com
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -119,23 +164,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,14|[vmess]香港8|@ripaojiedian
-  network: ws
-  port: '8080'
-  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 14|[vmess]香港|@ripaojiedian

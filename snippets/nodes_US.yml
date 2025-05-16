@@ -1,89 +1,92 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]US美国 01 | 1x US Los Angele...
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]US美国家宽 02 | 1x US Los Ange...
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|[ss]US美国 03 | 1x US Washington
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]US 美国 01 | 1x US Los Angel...
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]US 美国住宅IP 02 | 1x US Los A...
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|[ss]US 美国 03 | 1x US Washingto...
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 3|[ssr]US62 |  4.7MB/s|30%|Opena...
-  obfs: plain
-  password: awsps0501
-  port: 443
-  protocol: origin
-  server: 35.90.251.87
-  type: ssr
-- name: 3|[trojan]US63 |  2.4MB/s|46%|Op...
+- name: 3|[trojan]US50 |  2.8MB/s|46%|Op...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: false
+  sni: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
   type: trojan
-- name: 3|[trojan]US64 |  2.3MB/s|46%|Op...
+- name: 3|[trojan]US51 |  1.9MB/s|46%|Op...
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 3|[trojan]US52 |  1.7MB/s|46%|Op...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 3|[vmess]US65 |  5.7MB/s|56%|Net...
-  network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ad2bca4d-be9e-4ac2-b2ed-4c81abb4242f
-  ws-opts:
-    headers:
-      Host: mAxNEtVip-uSA-Vp4.nETKh3.sItE
-    path: /linkws
-- name: 3|[trojan]US66 |  1.4MB/s|46%|Op...
+- client-fingerprint: chrome
+  name: 3|[trojan]US55 |  2.0MB/s|46%|Op...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
+  port: '15229'
   server: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: true
   sni: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 3|[trojan]US59 |  2.8MB/s|46%|Op...
+  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
+  port: '15229'
+  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  skip-cert-verify: false
+  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 3|[vmess]US83 |  2.2MB/s|25%|Ope...
+  port: 49930
+  server: 65.75.194.28
+  tls: false
+  type: vmess
+  uuid: 75191b1e-74a5-4f54-ad94-3bc09ff61322
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
