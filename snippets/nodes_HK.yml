@@ -1,56 +1,60 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|[ss]HK香港 02 | 1x HK
-  password: 3dc24be1-908a-44d4-88d0-efd560609f7f
+  name: 1|[ss]HK1 |  3.7MB/s|12%|Youtube
+  password: d72162d1-9bce-460e-99ed-bc3c92cfbe11
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|[ss]HK香港家宽 03 | 1x HK
-  password: 3dc24be1-908a-44d4-88d0-efd560609f7f
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 2|[trojan]HK1 |  5.0MB/s|0%|Netf...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
+- client-fingerprint: chrome
+  name: 1,12,13|[trojan]香港5|@ripaojiedian
+  network: tcp
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
   skip-cert-verify: false
-  sni: skwygx.top
+  sni: hk-13-568.flztjc.net
   type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
+- cipher: chacha20-ietf
+  delay: 763
+  name: 1|[ssr]HK4 |  1.9MB/s|16%|Disney
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: csilicovolcanoconiosis.godeove.xyz
+  type: ssr
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]HK 香港 02 | 1x HK
-  password: 307da742-f393-4f36-93cc-47471cd42a9b
+  name: 2|[ss]HK 香港 02 | 1x HK
+  password: 13d06f85-884f-4e11-a1b4-6b4272a094ec
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|[ss]HK 香港住宅IP 03 | 1x HK
-  password: 307da742-f393-4f36-93cc-47471cd42a9b
+  name: 2|[ss]HK 香港住宅IP 03 | 1x HK
+  password: 13d06f85-884f-4e11-a1b4-6b4272a094ec
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 13,14|[trojan]香港|@ripaojiedian
-  network: tcp
-  password: ac1ba86a-eafd-4457-b8ec-3551bbc54ca9
-  port: 12221
-  server: wb.kaiqsz.com
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|[vmess]HK 香港|@ripaojiedian
+  port: 25635
+  server: 103.224.80.89
   skip-cert-verify: false
-  sni: mmbiz.redapricotcloud.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13|[ss]HK 香港2|@ripaojiedian
+  name: 12|[ss]HK 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -60,14 +64,14 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 31785
+  port: 15985
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 13|[vmess]HK 香港3|@ripaojiedian
+  name: 12|[vmess]HK 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -78,7 +82,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 13|[vmess]HK 香港4|@ripaojiedian
+  name: 12|[vmess]HK 香港4|@ripaojiedian
   port: 43302
   server: 183.236.51.38
   skip-cert-verify: false
@@ -86,43 +90,55 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 13,14|[vmess]香港5|@ripaojiedian
-  network: ws
-  port: '22642'
-  server: 52.80.232.93
-  servername: zxjp-b.tkong.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 13|[ss]HK 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
+  name: 12|[ss]HK 香港6|@ripaojiedian
+  password: NPOA4WYID2WF8N4E
+  port: 15016
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 13,14|[trojan]香港7|@ripaojiedian
-  network: tcp
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
-  server: green.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green.cdntencentmusic.com
-  type: trojan
 - alterId: 64
   cipher: auto
-  name: 14|[vmess]香港3|@ripaojiedian
+  client-fingerprint: chrome
+  name: 12|[vmess]HK 香港7|@ripaojiedian
+  port: 41554
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12,13|[vmess]香港8|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|[vmess]香港|@ripaojiedian
+  network: tcp
+  port: '25635'
+  server: 103.224.80.89
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
+- alterId: 64
+  cipher: auto
+  name: 13|[vmess]香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -132,7 +148,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 14|[vmess]香港4|@ripaojiedian
+  name: 13|[vmess]香港4|@ripaojiedian
   network: tcp
   port: '43302'
   server: 183.236.51.38
@@ -140,3 +156,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 13|[vmess]香港7|@ripaojiedian
+  network: tcp
+  port: '41554'
+  server: 183.236.51.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]HK香港 02 | 1x HK
+  password: 203fb8c5-458e-45d3-91bd-6e72442ed898
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|[ss]HK香港家宽 03 | 1x HK
+  password: 203fb8c5-458e-45d3-91bd-6e72442ed898
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
