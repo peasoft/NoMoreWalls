@@ -1,56 +1,43 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 1|[ss]KR1 |  4.4MB/s|44%|Netflix...
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1,12|[ss]KR 韩国|@ripaojiedian
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|[ss]KR3 |  5.9MB/s|75%|Netflix...
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|[ss]KR6 |  5.9MB/s|Openai
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
+- name: 2|[trojan]KR1 |  1.2MB/s|61%|Net...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: false
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 2|[ss]KR 韩国 01 | 1x KR
-  password: 13d06f85-884f-4e11-a1b4-6b4272a094ec
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 12|[ss]KR 韩国2|@ripaojiedian
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6666
-  server: 13.209.10.213
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 15|[ss]KR韩国 01 | 1x KR
-  password: 203fb8c5-458e-45d3-91bd-6e72442ed898
+  name: 3|[ss]KR韩国 01 | 1x KR
+  password: 49b43e88-8b20-4c46-ab8f-af384223b1e0
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 15|[ss]KR韩国 02 | 1x KR
-  password: 203fb8c5-458e-45d3-91bd-6e72442ed898
+  name: 3|[ss]KR韩国 02 | 1x KR
+  password: 49b43e88-8b20-4c46-ab8f-af384223b1e0
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|[ss]KR 韩国|@ripaojiedian
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|[ss]KR 韩国2|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6666
+  server: 13.209.10.213
+  tfo: false
+  type: ss
