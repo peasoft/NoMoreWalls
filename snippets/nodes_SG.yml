@@ -1,46 +1,71 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|[ss]SG新加坡 01 | 1x SG
-  password: 7e326876-176f-474d-b35b-e95eedd52451
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|[ss]SG新加坡 02 | 1x SG
-  password: 7e326876-176f-474d-b35b-e95eedd52451
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|[ss]SG新加坡 03 | 1x SG
-  password: 7e326876-176f-474d-b35b-e95eedd52451
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]SG 新加坡 01 | 1x SG
-  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
+  name: 0|[ss]SG 新加坡 01 | 1x SG
+  password: 01fb71a6-7155-4335-844d-08ac7baba95b
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|[ss]SG 新加坡 02 | 1x SG
-  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
+  name: 0|[ss]SG 新加坡 02 | 1x SG
+  password: 01fb71a6-7155-4335-844d-08ac7baba95b
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 3|[trojan]SG2 |  6.3MB/s|34%|Net...
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]SG新加坡 01 | 1x SG
+  password: f92d6436-e116-451b-b6aa-d9bb5699ba91
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]SG新加坡 02 | 1x SG
+  password: f92d6436-e116-451b-b6aa-d9bb5699ba91
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|[ss]SG新加坡 03 | 1x SG
+  password: f92d6436-e116-451b-b6aa-d9bb5699ba91
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 3|[vmess]SG1 |  3.6MB/s|Disney|Y...
+  network: ws
+  port: 443
+  server: 104.21.42.243
   skip-cert-verify: false
-  sni: cgsg2.hysality.com
-  type: trojan
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: sgfqkqmltcy.site
+    path: /rbqqvws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 3|[vmess]SG2 |  3.7MB/s|Disney|Y...
+  network: ws
+  port: 443
+  server: 172.67.213.110
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: sgfqkqmltcy.site
+    path: /rbqqvws
+  xudp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -58,11 +83,24 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 13|[ss]SG 新加坡2|@ripaojiedian
-  password: UAO72K511KYT7NM7
-  port: 16003
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  name: 13|[vmess]SG 新加坡2|@ripaojiedian
+  port: 54652
+  server: 183.236.51.38
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|[vmess]新加坡2|@ripaojiedian
+  network: tcp
+  port: '54652'
+  server: 183.236.51.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
