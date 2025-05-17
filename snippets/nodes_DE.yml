@@ -1,14 +1,44 @@
 proxies:
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  name: 1|[vmess]DE8 |  3.2MB/s|0%|Youtu...
+  network: grpc
+  port: '443'
+  server: de.vmess.comnpmjs.com
+  servername: de.vmess.comnpmjs.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+  xudp: true
+- name: 1|[trojan]DE16 |  5.0MB/s|20%|Ne...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: sg.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 0|[ss]DE 德国 01 | 1x DE
-  password: 01fb71a6-7155-4335-844d-08ac7baba95b
+  name: 2|[ss]DE 德国 01 | 1x DE
+  password: 328c910d-c035-47e3-acdf-780d1a77aad7
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|[ss]DE德国 01 | 1x DE
-  password: f92d6436-e116-451b-b6aa-d9bb5699ba91
+  name: 15|[ss]DE德国 01 | 1x DE
+  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
