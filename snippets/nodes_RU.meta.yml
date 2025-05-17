@@ -1,14 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|[ss]RU俄罗斯 01 | 1x RU
-  password: c3c06f06-dd80-4868-8f63-20355973c7c7
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|[ss]RU 俄罗斯 01 | 1x RU
-  password: 673a007e-4182-4d22-a1c1-1e244edb5537
+  name: 0|[ss]RU 俄罗斯 01 | 1x RU
+  password: 2ea2727d-d604-4c7d-9823-5f31c29e81fa
   port: 36511
   server: free.2weradf.xyz
   type: ss
@@ -16,7 +9,7 @@ proxies:
 - alpn:
   - h3
   disable-sni: false
-  name: 3|[tuic]RU1 |  5.7MB/s|50%
+  name: 2|[tuic]RU1 |  2.8MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -27,33 +20,45 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-- down: ''
-  fingerprint: ''
-  name: 3|[hysteria2]RU2 |  1.7MB/s|0%
-  obfs: ''
-  obfs-password: ''
+- client-fingerprint: chrome
+  fast-open: true
+  name: 2|[hysteria2]RU2 |  5.7MB/s|0%
   password: dongtaiwang.com
-  port: '10011'
-  server: 46.29.163.171
+  port: 10011
+  server: hy2.694463.xyz
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-  up: ''
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  delay: 1480
-  down: '1000'
-  name: 3|[hysteria]RU3 |  1.0MB/s|50%
-  obfs: ''
-  port: 10803
-  protocol: ''
-  server: 185.22.155.71
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 2|[hysteria2]RU3 |  3.9MB/s|50%
+  password: dongtaiwang.com
+  port: 10011
+  server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
-  type: hysteria
-  up: '1000'
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 3|[ss]RU俄罗斯 01 | 1x RU
+  password: a074fe12-9ef4-4b88-8568-3a9395e68987
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 15|[vless]RU_speednode_0074
+  network: ws
+  port: 443
+  server: 45.67.215.168
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
 - name: 15|[trojan]RU_speednode_0075
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
