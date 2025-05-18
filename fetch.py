@@ -407,7 +407,15 @@ class Node:
         else: raise UnsupportedType(self.type)
 
     def format_name(self, max_len=30) -> None:
-        self.data['name'] = self.name
+        # 处理旗帜表情符号 🇭🇰 -> HK
+        if '🇦' <= self.name[0] <= '🇿':  # 检测是否是地区旗帜符号
+            flag_code = self.name[:2]  # 获取旗帜符号(2个字符)
+            # 将旗帜符号转换为对应的地区代码
+            region_code = ''.join([chr(ord(c) - ord('🇦') + ord('A')) for c in flag_code])
+            # 添加节点类型前缀
+            self.data['name'] = "["+self.type+"]"+region_code + self.name[2:]
+        else:
+            self.data['name'] = "["+self.type+"]"+self.name
         for word in BANNED_WORDS:
             self.data['name'] = self.data['name'].replace(word, '*'*len(word))
         if len(self.data['name']) > max_len:
