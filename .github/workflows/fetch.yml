@@ -29,8 +29,7 @@ jobs:
     - name: 安装依赖
       run: pip install -r requirements.txt
     - name: 执行任务
-      run: python ./fetch.py
-      run: python ./short-id-filter.py
+      run: python ./fetch.py && python ./short-id-filter.py
     - name: 提交更改
       run: |
 
