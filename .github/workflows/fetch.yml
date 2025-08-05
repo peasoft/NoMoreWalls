@@ -30,9 +30,9 @@ jobs:
       run: pip install -r requirements.txt
     - name: 执行任务
       run: python ./fetch.py
-      
+      run: python ./short-id-filter.py
     - name: 提交更改
-      run: |                 
+      run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
