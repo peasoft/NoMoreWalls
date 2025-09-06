@@ -7,12 +7,11 @@
 ## 一些题外话：国家危难的时刻已经到来
 
 - **[什么才是真正的性别平等？](https://www.bilibili.com/video/BV16Mtnz1Exo/)我们要真正的平权而不是所谓的“女权”！“公平”不应成为特权的借口！**
-- **[NGO 的影子借“公益”之名渗透名校！](https://www.bilibili.com/video/BV15JtnzMExo/)防范身边的境外势力渗透！**
-- **[油罐车事件是最好的照妖镜，上赶着带节奏都是谁请大家记下来。](https://www.bilibili.com/video/BV1p1421b7Ki)私有化愈发严重影响的是所有中国人的切身利益，必须用公有平衡私有我们才有发展的前途。**
+
 
 ## 公告
 
-**我们拒绝为任何“女权组织”提供任何服务！我们拒绝为任何企图分裂国家的 NGO 组织提供任何服务！**
+**我们拒绝为任何“女权组织”提供任何服务！**
 
 本项目拒绝为**流氓资本家**提供任何服务！特别的，项目的许可证**严格禁止**实行 996 工作制的公司使用本项目！
 
@@ -43,33 +42,33 @@
 ## 使用方法
 
 添加 Base64 订阅：
-- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
-- [GhProxy.cfd](https://ghproxy.cfd/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
+- [原始链接](https://raw.githubusercontent.com/cute-omega/NoMoreWalls/master/list.txt)
+- [GhProxy.cfd](https://ghproxy.cfd/https://raw.githubusercontent.com/cute-omega/NoMoreWalls/master/list.txt)
 - 此处不公开部分私有镜像站
 
 以下链接可能不是最新，但绝对不会被封：
-- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
+- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.txt)
+- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.txt)
+- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.txt)
+- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.txt)
 
 或添加 Clash Meta 订阅：（如果使用的是原版 Clash，请将链接最后的 `.meta.yml` 替换成 `.yml`。我们始终建议您使用 Clash Meta 而不是已被废弃的 Clash。**提醒：Clash Meta (mihomo) 是有手机版的！还在用 Clash For Android 的用户请尽快迁移至 [Clash Meta For Android](https://github.com/MetaCubeX/ClashMetaForAndroid)！**）
-- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
-- [GhProxy.cfd](https://ghproxy.cfd/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
+- [原始链接](https://raw.githubusercontent.com/cute-omega/NoMoreWalls/master/list.meta.yml)
+- [GhProxy.cfd](https://ghproxy.cfd/https://raw.githubusercontent.com/cute-omega/NoMoreWalls/master/list.meta.yml)
 - 此处不公开部分私有镜像站
 
 以下链接可能不是最新，但绝对不会被封：
-- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
-- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
-- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
-- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
+- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.meta.yml)
+- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.meta.yml)
+- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.meta.yml)
+- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/cute-omega/NoMoreWalls@master/list.meta.yml)
 
 或添加 Sing-Box 订阅：（第三方提供转换，不支持本项目的节点选择和分流规则，该链接本身需要过代理。建议在本地搭建转换服务。）
-- [转换链接（第三方）](https://subapi.fxxk.dedyn.io/sub?target=singbox&url=https%3A%2F%2Fraw.githubusercontent.com%2Fpeasoft%2FNoMoreWalls%2Fmaster%2Fsnippets%2Fnodes.meta.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&tls13=true&emoji=true&list=false&xudp=true&udp=true&tfo=false&expand=true&scv=false&fdn=false&singbox.ipv6=1)
+- [转换链接（第三方）](https://subapi.fxxk.dedyn.io/sub?target=singbox&url=https%3A%2F%2Fraw.githubusercontent.com%2Fcute-omega%2FNoMoreWalls%2Fmaster%2Fsnippets%2Fnodes.meta.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&tls13=true&emoji=true&list=false&xudp=true&udp=true&tfo=false&expand=true&scv=false&fdn=false&singbox.ipv6=1)
 
 ## 免责声明
 
-订阅节点仅作学习交流使用，用于查找资料，学习知识，不做任何违法行为。所有资源均来自互联网，仅供大家交流学习使用，出现违法问题概不负责。**做出违法行为需要承担法律责任，侥幸逃脱是不可能的**！~~为阻止违法行为，本项目随时可以停止运行~~ 本项目可以采取各种技术手段来尽力阻止违法行为。
+订阅节点仅作学习交流使用，用于查找资料，学习知识。所有资源均来自互联网，仅供大家交流学习使用。
 
 ## 关于 Fork 和在线部署
 
@@ -81,9 +80,9 @@
 
 1. 使用 Git 克隆本仓库，由于本仓库的完整 Commit 历史极大，请务必指定 `--depth=1`：
     ```bash
-    git clone https://github.com/peasoft/NoMoreWalls.git --depth=1
+    git clone https://github.com/cute-omega/NoMoreWalls.git --depth=1
     ```
-    或者 [下载项目文件](https://github.com/peasoft/NoMoreWalls/archive/refs/heads/master.zip) 并解压。
+    或者 [下载项目文件](https://github.com/cute-omega/NoMoreWalls/archive/refs/heads/master.zip) 并解压。
 2. 安装依赖库
     ```bash
     pip install -r requirements.txt
@@ -116,13 +115,3 @@
 <!-- - **[「 深蓝洞察 」2022 年度最“不可赦”漏洞](https://mp.weixin.qq.com/s/P_EYQxOEupqdU0BJMRqWsw)：知名互联网厂商(TMD并夕夕)持续挖掘新的安卓 OEM 相关漏洞，在其公开发布的 App 中实现对目前市场主流手机系统的漏洞攻击**（[具体分析](https://mp.weixin.qq.com/s/kiLvnJSDZpYRHI_XiUx9gg)）~~现已被工信部提名~~ -->
 <!-- - **[暑假学校敢补课？举报！](https://www.bilibili.com/video/BV1Vk4y1K79B)** -->
 <!-- - **[一学校扔掉学生百余份外卖](https://www.bilibili.com/video/BV1a14y1S7n6)：涉嫌违法！** -->
-
-## Star History
-
-<a href="https://star-history.com/#peasoft/NoMoreWalls">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls" />
-  </picture>
-</a>
