@@ -1,8 +1,8 @@
 # NoMoreWalls
 
-[![Fetch Status](https://github.com/peasoft/NoMoreWalls/actions/workflows/fetch.yml/badge.svg)](https://github.com/peasoft/NoMoreWalls/actions/workflows/fetch.yml) [![Stars](https://img.shields.io/github/stars/peasoft/NoMoreWalls?style=flat)](https://github.com/peasoft/NoMoreWalls/stargazers) [![Watchers](https://img.shields.io/github/watchers/peasoft/NoMoreWalls?style=flat)](https://github.com/peasoft/NoMoreWalls/watchers) [![Forks](https://img.shields.io/github/forks/peasoft/NoMoreWalls?style=flat)](https://github.com/peasoft/NoMoreWalls/forks) [![Repo size](https://img.shields.io/github/repo-size/peasoft/NoMoreWalls)](https://github.com/peasoft/NoMoreWalls/commits) [![jsDelivr stats](https://data.jsdelivr.com/v1/package/gh/peasoft/NoMoreWalls/badge?style=rounded)](https://www.jsdelivr.com/package/gh/peasoft/NoMoreWalls) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=peasoft.NoMoreWalls) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/peasoft/NoMoreWalls/blob/master/LICENSE.md)
+[![Repo size](https://img.shields.io/github/repo-size/cute-omega/NoMoreWalls)](https://github.com/cute-omega/NoMoreWalls/commits) [![jsDelivr stats](https://data.jsdelivr.com/v1/package/gh/cute-omega/NoMoreWalls/badge?style=rounded)](https://www.jsdelivr.com/package/gh/cute-omega/NoMoreWalls)
 
-自动抓取合并互联网上的公开节点。
+自动抓取合并互联网上的公开节点，当前每3小时运行一次。
 
 ## 一些题外话：国家危难的时刻已经到来
 
