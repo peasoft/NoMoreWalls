@@ -532,8 +532,28 @@ proxies:
   tls: false
   type: vmess
   uuid: c53d41d1-7d56-43ce-9994-408780c6476a
+- name: DE_speednode_0004
+  port: 6666
+  reality-opts:
+    public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
+    short-id: 'b525ecd2fc'
+  server: 188.68.53.100
+  servername: Tgju.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- name: FR_speednode_0005
+  password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+  port: 443
+  server: fr.viefast.net
+  skip-cert-verify: true
+  sni: csapp.catch.net.tw
+  type: trojan
+  udp: true
 - flow: xtls-rprx-vision
-  name: GR_speednode_0002
+  name: GR_speednode_0006
   port: 443
   reality-opts:
     public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
@@ -546,7 +566,7 @@ proxies:
   udp: true
   uuid: 6035325d-399a-5148-9126-29cedfd5966a
 - flow: xtls-rprx-vision
-  name: NL_speednode_0010
+  name: NL_speednode_0009
   port: 443
   reality-opts:
     public-key: eJeVlxdi2YBV1YpPVCcCgTez80y8ny27SQoZZVBFGyc
@@ -558,7 +578,7 @@ proxies:
   udp: true
   uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
 - flow: xtls-rprx-vision
-  name: NL_speednode_0011
+  name: NL_speednode_0010
   port: 1443
   reality-opts:
     public-key: eJeVlxdi2YBV1YpPVCcCgTez80y8ny27SQoZZVBFGyc
@@ -569,25 +589,38 @@ proxies:
   type: vless
   udp: true
   uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
-- name: SG_speednode_0016
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  type: trojan
+- flow: xtls-rprx-vision
+  name: PL_speednode_0011
+  port: 443
+  reality-opts:
+    public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
+    short-id: '2a22'
+  server: poland20.clearorbitllc.com
+  servername: poland20.clearorbitllc.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
-- name: US_speednode_0024
+  uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
+- flow: xtls-rprx-vision
+  name: TW_speednode_0016
+  port: 29889
+  reality-opts:
+    public-key: BhQUa3vDvGf4z4_nPrWBGfluHxed0I0UQ-_BcsoYQw8
+    short-id: '41a85e56b440f2'
+  server: tw131.taichu.icu
+  servername: www.bing.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 03d6e092-dd9b-45dc-ae8e-bf312ef95371
+- name: US_speednode_0018
   network: ws
   port: 2053
   server: 141.101.120.100
   servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -596,57 +629,83 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /telegram@V2ray_Alpha/?ed=2048
+- flow: xtls-rprx-vision
+  name: US_speednode_0019
+  port: 8880
+  reality-opts:
+    public-key: zQw1fAQByQ8nSFvliZS4NsIWdhfzMnRMnK_xCFRwFQQ
+  server: 155.117.19.221
+  servername: aws.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f2f00a89-cc9d-450f-b8bb-0d5b2d4c5a65
+- flow: xtls-rprx-vision
+  name: US_speednode_0020
+  port: 10001
+  reality-opts:
+    public-key: T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4
+  server: 1002.952326.xyz
+  servername: www.python.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5fdf52f-fc09-4196-a588-008926767195
+- name: US_speednode_0024
+  network: ws
+  port: 80
+  server: crazy-identity.oneeat.co
+  servername: crazy-identity.oneeat.co
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
+  ws-opts:
+    headers:
+      Host: crazy-identity.oneeat.co
+    path: /
 - name: US_speednode_0025
   network: ws
-  port: 2096
-  server: 104.18.14.201
-  servername: iamdt.pages.dev
+  port: 8880
+  server: www.visa.com.sg
+  servername: odd-sun-be36.linqiang-d8e.workers.dev
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
+  uuid: ce3fd4b2-2300-45ac-bf90-7082ff95abfe
   ws-opts:
     headers:
-      Host: iamdt.pages.dev
+      Host: odd-sun-be36.linqiang-d8e.workers.dev
     path: /
-- name: US_speednode_0026
+- client-fingerprint: random
+  name: US_speednode_0026
   network: ws
-  port: 2053
-  server: 141.101.120.100
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+  port: 443
+  server: freev2.cloudflare.182682.xyz
+  servername: do-sgp1.008883.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: aac03257-ebba-494a-a2a2-dc529a7d4395
   ws-opts:
     headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /telegram@V2ray_Alpha
-- name: US_speednode_0027
-  network: ws
-  port: 2096
-  server: 104.18.15.201
-  servername: iamdt.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
-  ws-opts:
-    headers:
-      Host: iamdt.pages.dev
-    path: /
-- flow: xtls-rprx-vision
-  name: US_speednode_0028
-  port: 8443
+      Host: do-sgp1.008883.xyz
+    path: /freev2.net
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: US_speednode_0027
+  port: 10001
   reality-opts:
-    public-key: XgQPLMVHvbUKTzcAZPBDGZ_mDhaZRiAJEk7c4-7UzR4
-  server: 172.245.251.10
-  servername: www.ieee.org
+    public-key: T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4
+  server: 1002.952326.xyz
+  servername: www.python.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 9b3d65ab-576c-4750-9cb3-bb41c12c085e
+  uuid: 0a9bc681-342e-4af7-a06b-1bf4e637288b
