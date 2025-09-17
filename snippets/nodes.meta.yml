@@ -339,31 +339,27 @@ proxies:
   name: 🇭🇰 香港5|@ripaojiedian
   password: amazongreatvpn
   port: 16888
-  server: 43.199.87.121
+  server: 54.46.92.199
   tfo: false
   type: ss
 - name: 香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 203.218.158.70
+  port: 4451
+  server: 36.150.215.200
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: www.baidu.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾|@ripaojiedian
-  password: 4d296e8d-366b-4353-9e8b-513d83f36765
-  port: 10017
-  server: 118.170.223.243
+- alterId: 64
+  cipher: auto
+  name: 🇭🇰 香港7|@ripaojiedian
+  port: 52512
+  server: 183.240.180.47
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾2|@ripaojiedian
-  password: d51c1aa9-1c96-44a4-b54c-46d0dec0578f
-  port: 10078
-  server: 36.234.94.86
-  tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: 🇯🇵 日本|@ripaojiedian
   password: efanccyun
@@ -393,8 +389,8 @@ proxies:
 - name: 日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 133
-  server: xingxing.jiasu123.org
+  port: 3160
+  server: 153.121.76.9
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
@@ -410,7 +406,7 @@ proxies:
   name: 🇯🇵 日本5|@ripaojiedian
   password: amazongreatvpn
   port: 16888
-  server: 57.183.17.7
+  server: 18.178.135.125
   tfo: false
   type: ss
 - name: 新加坡|@ripaojiedian
@@ -445,16 +441,14 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国|@ripaojiedian
-  port: 6506
-  server: 193.124.24.247
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: c53d41d1-7d56-43ce-9994-408780c6476a
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 13855
+  server: 36.150.215.200
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
 - cipher: rc4-md5
   name: 🇺🇸 美国2|@ripaojiedian
   password: efanccyun
@@ -466,14 +460,16 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 13855
-  server: 36.150.215.200
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国|@ripaojiedian
+  port: 6506
+  server: 193.124.24.247
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c53d41d1-7d56-43ce-9994-408780c6476a
 - name: 美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -482,6 +478,13 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+- cipher: aes-256-cfb
+  name: 🇻🇳 越南|@ripaojiedian
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.116
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 香港3|@ripaojiedian
@@ -492,6 +495,16 @@ proxies:
   tls: false
   type: vmess
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
+- alterId: 64
+  cipher: auto
+  name: 香港7|@ripaojiedian
+  network: tcp
+  port: '52512'
+  server: 183.240.180.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 香港v2|@ripaojiedian
@@ -506,12 +519,12 @@ proxies:
   cipher: auto
   name: 日本v2|@ripaojiedian
   network: kcp
-  port: '34933'
-  server: 8.209.211.236
+  port: '40354'
+  server: 47.74.42.174
   servername: ''
   tls: false
   type: vmess
-  uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
+  uuid: 79f0cb97-d631-493e-84a1-82a0576fa952
 - alterId: 0
   cipher: auto
   name: 美国|@ripaojiedian
