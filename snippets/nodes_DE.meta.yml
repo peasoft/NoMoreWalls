@@ -50,15 +50,91 @@ proxies:
   sni: www.oracle.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc-api
+  name: 🇩🇪DE_1|2.8MB/s
+  network: grpc
+  port: '443'
+  server: gbos2.osvp.online
+  servername: gbos2.osvp.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 367ff772-a8f4-4895-8e99-3702a868f0c6
+  xudp: true
+- name: 🇩🇪DE_2|2.5MB/s
+  network: ws
+  port: 8880
+  server: 193.176.240.129
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
+  ws-opts:
+    headers:
+      Host: azsv2.ir5ive.ir
+    path: /
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_3|3.1MB/s
+  network: tcp
+  packet-encoding: xudp
+  port: 8443
+  reality-opts:
+    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+    short-id: '!!str 8d3293f0066e129a'
+  server: 154.222.9.176
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: aa5b231c-4e18-4ae6-b83c-a293f51c0dfa
+- client-fingerprint: chrome
+  name: 🇩🇪DE_4|2.8MB/s
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  server: 47.254.156.143
+  servername: api.company-target.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_5|2.1MB/s
+  network: tcp
+  packet-encoding: xudp
+  port: 2053
+  reality-opts:
+    _spider-x: /
+    public-key: Bx_BGjf9VHtS97W9ueLS_pjNsyOhzBA-S42d9a7fKmY
+    short-id: '!!str a84d'
+  server: 94.156.232.72
+  servername: teamdocs.su
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a37ff029-d240-40b4-8af4-7ae0e34b2567
 - alpn:
   - http/1.1
   - h2
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪DE_1|1.6MB/s
+  name: 🇩🇪DE_6|2.6MB/s
   network: xhttp
   port: '443'
-  server: 45.130.125.172
+  server: 8.6.112.209
   servername: germany4.alibaba1405.org
   tls: true
   type: vless
@@ -69,64 +145,19 @@ proxies:
     mode: auto
     path: /v2raylink
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_2|2.1MB/s
-  network: tcp
-  packet-encoding: xudp
-  port: 8443
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: web-grpc
+  name: 🇩🇪DE_7|2.6MB/s
+  network: grpc
+  port: '443'
   reality-opts:
-    _spider-x: /
-    public-key: szNyp0kNUPRKF4gJmAHY1h42Kh5m2_55cTmPj7be-Wc
-    short-id: '!!str 34c2f5e6883680'
-  server: 94.156.232.72
-  servername: teamdocs.su
-  skip-cert-verify: true
+    public-key: epKxGHvul2A8tNMFsEDFN2P71B-WbEEwbqbPLyNlYFg
+    short-id: '!!str e549af0908'
+  server: 45.155.102.46
+  servername: dzen.ru
   tls: true
   type: vless
   udp: true
-  uuid: d604d0be-e942-46c8-82c2-0e49d506b0cf
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_3|2.0MB/s
-  network: ws
-  port: '2087'
-  server: hikvision-plus.com
-  servername: sg.blueknightnety.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85c40985-f109-410c-9657-4a2f52140bf0
-  ws-opts:
-    headers:
-      Host: sg.blueknightnety.qzz.io
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /BlueKnight_Net
-  xudp: true
-- encryption: none
-  name: 🇩🇪DE_4|2.0MB/s
-  network: tcp
-  port: '56021'
-  server: 209.250.235.53
-  type: vless
-  udp: true
-  uuid: e9ab53ab-5607-4ec2-8e01-e6e76ce9443d
-  xudp: true
-- name: 🇩🇪DE_5|4.2MB/s
-  network: ws
-  port: '8880'
-  server: 162.159.140.78
-  type: vless
-  udp: true
-  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
-  ws-opts:
-    headers:
-      Host: sweet-truth-ccdb.134-7e9.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+  uuid: c63c03b0-2cc1-4063-b8c1-2eb64138f72f
   xudp: true
