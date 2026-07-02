@@ -1,17 +1,27 @@
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_1|2.5MB/s
-  network: tcp
+  name: 🇷🇺RU_1|1.6MB/s
+  network: xhttp
   port: '443'
   reality-opts:
-    public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
-    short-id: '!!str a1b2c3d4e5f6'
-  server: 147.45.39.93
-  servername: cloudflare.com
+    public-key: HsD5EYwv9fjFST2_167HsoaeDAnHlJpdj39jNcgUwjQ
+    short-id: '!!str 5f64'
+  server: 95.182.80.93
+  servername: https://sports.yahoo.com/
   tls: true
   type: vless
   udp: true
-  uuid: 3ef170be-05d0-479c-9753-aa2f860964ea
+  uuid: e5a5aa32-2f58-409f-93a9-abe1800b01d6
+  xhttp-opts:
+    host: www.yahoo.com
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-connections: '6'
+    x-padding-bytes: 100-1000
   xudp: true
