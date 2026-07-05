@@ -2,7 +2,23 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇷FR_1|2.0MB/s
+  name: 🇫🇷FR_1|2.2MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: '!!str 3c9c5d01c6f824dd'
+  server: 149.88.28.129
+  servername: cdn6-49.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷FR_2|2.1MB/s
   network: tcp
   port: '443'
   reality-opts:
@@ -17,83 +33,20 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_2|3.3MB/s
-  network: tcp
-  port: '443'
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇫🇷FR_3|2.5MB/s
+  network: grpc
+  port: '7443'
   reality-opts:
-    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-    short-id: '!!str 3c9c5d01c6f824dd'
-  server: 149.88.28.131
-  servername: cdn6-49.yahoo.com
+    public-key: L82J-1ku9yAEYvUmr7xVGnROijbyeEI1LSryHx464i4
+    short-id: '!!str '
+  server: 193.233.91.118
+  servername: 5post-gate.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_3|3.1MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-    short-id: '!!str 3c9c5d01c6f824dd'
-  server: 149.88.28.133
-  servername: cdn6-49.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_4|2.6MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-    short-id: '!!str 3c9c5d01c6f824dd'
-  server: 155.117.137.53
-  servername: cdn6-49.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
-  xudp: true
-- alpn:
-  - h3
-  disable-sni: false
-  name: 🇫🇷FR_5|2.7MB/s
-  password: dongtaiwang.com
-  port: 33888
-  server: 62.210.24.143
-  skip-cert-verify: true
-  sni: bing.com
-  type: tuic
-  udp: true
-  udp-relay-mode: native
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇷FR_6|1.5MB/s
-  network: xhttp
-  port: '443'
-  reality-opts:
-    public-key: U0tKM7B_2ec1YPaQOaBq1J-WRoJY7qNr3QNJ0VamRAQ
-    short-id: '!!str 882655'
-  server: 185.156.72.59
-  servername: amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  xhttp-opts:
-    host: amazon.com
-    mode: auto
-    path: /biQ-5UZ0Xd7lO5JpP
+  uuid: 5887cc43-9f86-4d93-9903-02437398ac6c
   xudp: true
 - name: FR_speednode_0004
   password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
