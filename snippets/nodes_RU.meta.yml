@@ -1,39 +1,25 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 🇷🇺RU_1|1.7MB/s
-  password: 1a87017d0bf57f34
-  port: '32432'
-  server: 176.32.39.106
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_2|2.1MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-    short-id: '!!str '
-  server: 176.109.92.139
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10e1b54e-9bd1-4181-b337-3e464f8051ec
-  xudp: true
-- client-fingerprint: qq
+- client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_3|2.0MB/s
-  network: tcp
+  name: 🇷🇺RU_1|1.5MB/s
+  network: xhttp
   port: '443'
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-    short-id: '!!str '
-  server: pro-ru-m.emrata.top
-  servername: ads.x5.ru
+    public-key: YHPoUNxsml4z6pYt-7djOb1lqnBjxCk4-2mk84pveyc
+    short-id: '!!str 3b5b38669a1a51c0'
+  server: 95.143.188.10
+  servername: git.medrocket.ru
   tls: true
   type: vless
   udp: true
-  uuid: 10e1b54e-9bd1-4181-b337-3e464f8051ec
+  uuid: 4e6e6bb2-4614-0022-b3c4-f4666c85290f
+  xhttp-opts:
+    mode: packet-up
+    path: /repository
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-connections: '2'
   xudp: true
