@@ -69,7 +69,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 🇩🇪DE_1|2.2MB/s
+  name: 🇩🇪DE_1|4.1MB/s
   network: ws
   port: 8443
   server: 104.20.2.221
@@ -86,15 +86,125 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_2|2.0MB/s
-  network: tcp
-  port: '443'
-  server: fast2.screw.page
-  servername: fast2.screw.page
+  grpc-opts:
+    grpc-service-name: UpdateService
+  name: 🇩🇪DE_2|2.2MB/s
+  network: grpc
+  port: '7443'
+  reality-opts:
+    public-key: Lx1YBbujnXe-LDlQ8akv8omp8HAgx1R9u2vphygBbH0
+    short-id: '!!str 79ec03329055110b'
+  server: 46.8.209.71
+  servername: api-maps.yandex.ru
   tls: true
   type: vless
   udp: true
-  uuid: 8e62a80b-83ee-4eb8-9852-e8f8c7a6c4fa
+  uuid: 1aeba778-61b6-423c-a2e4-651c52030671
+  xudp: true
+- name: 🇩🇪DE_3|1.5MB/s
+  network: ws
+  port: '8880'
+  server: 172.66.170.53
+  type: vless
+  udp: true
+  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
+  ws-opts:
+    headers:
+      Host: summer-hat-ba5c.430.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  xudp: true
+- encryption: none
+  name: 🇩🇪DE_4|2.1MB/s
+  network: ws
+  port: '80'
+  server: 104.24.211.86
+  servername: zeus-panel-tetw6b.zeus-lo3dz7.workers.dev
+  type: vless
+  udp: true
+  uuid: 3bcf31de-673c-404d-8417-75bd2bc171cf
+  ws-opts:
+    headers:
+      Host: zeus-panel-tetw6b.zeus-lo3dz7.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+  xudp: true
+- encryption: none
+  name: 🇩🇪DE_5|2.0MB/s
+  network: ws
+  port: '8080'
+  server: 104.25.156.44
+  servername: zeus-panel-tetw6b.zeus-lo3dz7.workers.dev
+  type: vless
+  udp: true
+  uuid: 3bcf31de-673c-404d-8417-75bd2bc171cf
+  ws-opts:
+    headers:
+      Host: zeus-panel-tetw6b.zeus-lo3dz7.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+  xudp: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇩🇪DE_6|3.2MB/s
+  network: http
+  port: '8882'
+  server: 95.182.96.250
+  type: vless
+  udp: true
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  xudp: true
+- name: 🇩🇪DE_7|2.1MB/s
+  network: ws
+  port: '8880'
+  server: 162.159.156.214
+  type: vless
+  udp: true
+  uuid: ad85a1ce-3519-4634-9ea1-66c60d3694ba
+  ws-opts:
+    headers:
+      Host: little-pond-8731.81-68e.workers.dev
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+  xudp: true
+- name: 🇩🇪DE_8|2.5MB/s
+  network: ws
+  port: '8880'
+  server: 172.66.170.53
+  type: vless
+  udp: true
+  uuid: 6b6733fb-580b-411b-8bf8-51137c2aa037
+  ws-opts:
+    headers:
+      Host: restless-sky-eb31.438-aa8.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_9|1.6MB/s
+  network: ws
+  port: '443'
+  server: 195.208.65.150
+  servername: s46270.cdn.ngenix.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 34faad28-807b-4e2e-b47f-013eeb7cdebe
+  ws-opts:
+    headers:
+      Host: s46270.cdn.ngenix.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /v1/data/sync/
   xudp: true
