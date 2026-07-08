@@ -18,8 +18,8 @@ proxies:
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: d6788cf74e6844c45538204efd24b00f
-  port: 6357
-  server: 18.162.58.236
+  port: 29642
+  server: 95.40.1.25
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -34,18 +34,24 @@ proxies:
 - name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 9149
-  server: 18.166.66.1
+  port: 22459
+  server: 16.163.145.82
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - client-fingerprint: chrome
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
   encryption: none
-  name: 🇸🇬SG_1|2.7MB/s
+  name: 🇸🇬SG_1|2.5MB/s
   network: ws
-  port: '443'
-  server: 173.245.58.87
+  packet-encoding: xudp
+  port: 8443
+  server: 207.148.119.176
   servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -53,21 +59,17 @@ proxies:
   ws-opts:
     headers:
       Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /fp=chrome
-  xudp: true
-- name: 🇸🇬SG_2|2.9MB/s
-  network: ws
-  port: '8880'
-  server: themeforest.net
+    path: /
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇸🇬SG_2|2.0MB/s
+  network: http
+  port: '3536'
+  server: sd1.arshianetplus.site
   type: vless
   udp: true
-  uuid: f22856f8-66f0-4655-ba86-5385971e1302
-  ws-opts:
-    headers:
-      Host: throbbing-mountain-45e9.314-df3.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /pyip=ProxyIP.US.CMLiussss.net
+  uuid: 525d1d5d-b333-4e7a-824f-c5f08268d15e
   xudp: true
