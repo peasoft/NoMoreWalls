@@ -57,16 +57,6 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- name: 🎖️V2rayyNGvpn
-  obfs: salamander
-  obfs-password: t-me-V2RayyNGvpn
-  password: w1BoB6s3L3
-  port: 40460
-  server: 91.107.152.188
-  skip-cert-verify: true
-  sni: www.amd.com
-  tls: false
-  type: hysteria2
 - name: 🇩🇪@V2raybazi
   password: zhangyang
   port: 6443
@@ -76,13 +66,60 @@ proxies:
   tls: false
   type: hysteria2
 - alpn:
+  - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪DE_1|1.9MB/s
+  name: 🇩🇪DE_2|2.0MB/s
+  network: xhttp
+  port: '8443'
+  server: securitytrails.com
+  servername: api.somethingelse.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3a5fd8d7-4182-4f65-a005-ee8d39fe96b9
+  xhttp-opts:
+    host: api.somethingelse.dpdns.org
+    mode: auto
+    path: /forall
+  xudp: true
+- name: 🇩🇪DE_3|2.5MB/s
+  network: ws
+  port: '8880'
+  server: 162.159.156.214
+  type: vless
+  udp: true
+  uuid: 8dd8af16-cae0-4431-b04c-a637b4d7645b
+  ws-opts:
+    headers:
+      Host: wild-frog-c709.403-6ff.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /pyip=ProxyIP.US.CMLiussss.net
+  xudp: true
+- name: 🇩🇪DE_4|2.5MB/s
+  network: ws
+  port: '8880'
+  server: 104.26.13.40
+  type: vless
+  udp: true
+  uuid: b9ea760d-3200-4d6d-8000-30514ebbce5a
+  ws-opts:
+    headers:
+      Host: aged-pine-d8c4.379.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_5|2.2MB/s
   network: ws
   port: '443'
-  server: hikvision-plus.com
+  server: nebulonix.online
   servername: satl.satl.dpdns.org
   tls: true
   type: vless
@@ -92,141 +129,33 @@ proxies:
     headers:
       Host: satl.satl.dpdns.org
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /api-ip
   xudp: true
-- name: 🇩🇪DE_2|2.6MB/s
-  password: ''
-  port: '5555'
-  server: 157.90.183.51
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|2.4MB/s
-  network: tcp
-  packet-encoding: xudp
-  port: 8443
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: '!!str 8d3293f0066e129a'
-  server: 154.222.9.19
-  servername: storage.yandex.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: aa5b231c-4e18-4ae6-b83c-a293f51c0dfa
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.5MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: '!!str e1f8a3b6'
-  server: 5.253.66.31
-  servername: www.amd.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b97e287f-a24e-4028-a103-7e7ecef83139
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇩🇪DE_5|2.9MB/s
-  network: ws
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: '443'
-  server: 104.26.4.60
-  skip-cert-verify: false
-  sni: hhcm.hhxaf.cc.cd
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc-api
-  name: 🇩🇪DE_6|3.1MB/s
-  network: grpc
-  port: '443'
-  server: 45.86.159.164
-  servername: gbos2.osvp.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: 367ff772-a8f4-4895-8e99-3702a868f0c6
-  xudp: true
-- name: 🇩🇪DE_7|3.3MB/s
+- name: 🇩🇪DE_6|2.5MB/s
   network: ws
   port: '8880'
-  server: 172.66.132.196
+  server: www.whatismyip.com
   type: vless
   udp: true
-  uuid: 5a4d9f40-56db-402a-9fbc-31c9229bdcf6
+  uuid: d33cc776-9c57-4ea3-8c5a-6d85043029d7
   ws-opts:
     headers:
-      Host: floral-resonance-4baf.468.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
-        Gecko) Chrome/26.0.1410.64 Safari/537.31
-    path: /pyip=ProxyIP.US.CMLiussss.net
+      Host: shiny-flower-c72d.105-161.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🇩🇪DE_8|3.5MB/s
-  network: grpc
-  port: '2096'
-  reality-opts:
-    public-key: HdIk7jX58DtK-PGVKoU587O4w1KrDiej1qz8J2SmRA8
-    short-id: '!!str a7bf40db1b0e566a'
-  server: 144.31.87.16
-  servername: www.ya.ru
-  tls: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇩🇪DE_7|1.5MB/s
+  network: http
+  port: '8882'
+  server: 95.182.98.134
   type: vless
   udp: true
-  uuid: c40f773e-3b96-417e-b22c-e48cb63ca7d9
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_9|3.2MB/s
-  network: raw
-  port: '2053'
-  reality-opts:
-    public-key: Fg8dfF_e8zjy830DZ3-iQh27U-xURRXYmjDwxWDFgFs
-    short-id: '!!str 42e3c14d7c'
-  server: 52.59.200.46
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d4089cdb-48b6-46e7-b458-9c4c1b9fad56
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇩🇪DE_10|3.3MB/s
-  network: tcp
-  port: '330'
-  reality-opts:
-    public-key: x8U_rnyU2FP0EmB7YJ7tbpJOT5JF1f0L6pPUbTnFljg
-    short-id: '!!str 9123'
-  server: moji.daltoonserver.ir
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: db38a70a-2933-467d-ab75-ccbadc03ecaa
-  xudp: true
-- name: 🇩🇪DE_11|3.0MB/s
-  password: ''
-  port: '1080'
-  server: 185.207.104.161
-  skip-cert-verify: true
-  type: socks5
-  username: ''
