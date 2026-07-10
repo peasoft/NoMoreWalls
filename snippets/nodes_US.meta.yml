@@ -9,17 +9,17 @@ proxies:
   type: hysteria2
 - name: 美国|@ripaojiedian
   network: tcp
-  password: d6788cf74e6844c45538204efd24b00f
-  port: 49277
-  server: 95.40.124.185
+  password: bb839d14960b7a4fb1e95a3aef990528
+  port: 17005
+  server: 95.40.99.31
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2|@ripaojiedian
   network: tcp
-  password: d6788cf74e6844c45538204efd24b00f
-  port: 49277
-  server: 16.163.41.98
+  password: bb839d14960b7a4fb1e95a3aef990528
+  port: 17005
+  server: 43.199.215.77
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -27,56 +27,119 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 34638
-  server: 95.40.22.244
+  server: 18.162.154.153
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- encryption: none
-  name: 🇺🇸US_1|2.7MB/s
-  network: ws
-  port: '2095'
-  server: 104.18.42.163
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: download.pusytroller.gq
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /
-  xudp: true
-- multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸US_2|3.2MB/s
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- client-fingerprint: firefox
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_3|2.6MB/s
-  network: tcp
-  port: '33501'
-  reality-opts:
-    public-key: 9JCD4jcSfxqdtlXZdUYv7flD4np7p3DTkCMNglOMkwg
-    short-id: '!!str b24c0d37c8c01060'
-  server: 64.188.98.165
-  servername: www.samsung.com
+  name: 🇺🇸US_1|1.8MB/s
+  network: ws
+  port: '443'
+  server: ansooyefilter-production-abf6.up.railway.app
+  servername: ansooyefilter-production-abf6.up.railway.app
   tls: true
   type: vless
   udp: true
-  uuid: 8ecfd453-7675-426e-8637-6e7ea34c9697
+  uuid: 08183979-836e-ac85-15db-8a5a48eae531
+  ws-opts:
+    headers:
+      Host: ansooyefilter-production-abf6.up.railway.app
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Chrome/12.0.742.100 Safari/534.30
+    path: /ws/08183979-836e-ac85-15db-8a5a48eae531
   xudp: true
+- name: 🇺🇸US_2|1.7MB/s
+  password: ''
+  port: '1088'
+  server: 204.48.29.137
+  skip-cert-verify: true
+  type: socks5
+  username: ''
 - cipher: aes-256-cfb
-  name: 🇺🇸US_4|3.6MB/s
+  name: 🇺🇸US_3|3.3MB/s
   password: amazonskr05
   port: '443'
   server: 3.142.134.224
   type: ss
   udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_4|2.5MB/s
+  network: ws
+  port: '443'
+  server: ansooyefilter-production-4623.up.railway.app
+  servername: ansooyefilter-production-4623.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: a75f5c82-d667-0ce8-d297-30286b054691
+  ws-opts:
+    headers:
+      Host: ansooyefilter-production-4623.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /ws/a75f5c82-d667-0ce8-d297-30286b054691
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_5|2.4MB/s
+  network: ws
+  port: '443'
+  server: 08183979-836e-ac85-15db-8a5a48eae531-production-abf6.up.railway.app
+  servername: ansooyefilter-production-abf6.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: ansooyefilter-production-abf6.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /ws/08183979-836e-ac85-15db-8a5a48eae531
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_6|2.5MB/s
+  network: ws
+  port: '443'
+  server: 69.46.46.86
+  servername: ansooyefilter-production-abf6.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 08183979-836e-ac85-15db-8a5a48eae531
+  ws-opts:
+    headers:
+      Host: ansooyefilter-production-abf6.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /ws/08183979-836e-ac85-15db-8a5a48eae531
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇺🇸US_7|2.7MB/s
+  password: amazonskr05
+  port: '443'
+  server: 3.14.249.239
+  type: ss
+  udp: true
+- name: 🇺🇸US_8|2.6MB/s
+  password: ''
+  port: '9002'
+  server: 156.146.59.45
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: US_speednode_0055
