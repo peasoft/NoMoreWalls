@@ -1,19 +1,40 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 🇫🇷FR_1|2.7MB/s
+  name: 🇫🇷FR_1|3.3MB/s
   password: amazonskr05
   port: 443
-  server: 15.237.218.22
+  server: 35.180.122.124
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 🇫🇷FR_2|2.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.38.46.189
-  skip-cert-verify: true
-  type: ss
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇷FR_2|2.7MB/s
+  network: xhttp
+  port: '443'
+  server: 151.101.117.177
+  servername: manage.fastly.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 2fb948c4-3120-415a-bf4f-be18c74cd466
+  xhttp-opts:
+    host: ovd7.global.ssl.fastly.net
+    mode: packet-up
+    path: /
+    sc-min-posts-interval-ms: 30
+    x-padding-bytes: 100-1000
+  xudp: true
+- encryption: none
+  name: 🇫🇷FR_3|4.0MB/s
+  network: tcp
+  port: '22223'
+  server: 13.36.204.235
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
 - name: FR_speednode_0004
   password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
   port: 443
