@@ -120,10 +120,10 @@ git reset --hard origin/master
 
 ## Star History
 
-<a href="https://star-history.com/#peasoft/NoMoreWalls">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls" />
-  </picture>
+<a href="https://www.star-history.com/?repos=peasoft%2FNoMoreWalls&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=peasoft/NoMoreWalls&type=date&theme=dark&legend=top-left&sealed_token=8UVynllUplJa4vHl5DyiCpLI2RXSk29T0lsBrpwrzwLAbSJZj26QdM8Ci747u68K-UUMdH5GiH86o4tNu0hVYpj6AbR97k5HH730KfsO1wMCMWPsWiqu08zWfVjPUvj6qCu70vTw7w2ukyOzCl8Fzp_6-12EqObw3tw7JorvJ0nCXUB59L42IFPFYb_q" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=peasoft/NoMoreWalls&type=date&legend=top-left&sealed_token=8UVynllUplJa4vHl5DyiCpLI2RXSk29T0lsBrpwrzwLAbSJZj26QdM8Ci747u68K-UUMdH5GiH86o4tNu0hVYpj6AbR97k5HH730KfsO1wMCMWPsWiqu08zWfVjPUvj6qCu70vTw7w2ukyOzCl8Fzp_6-12EqObw3tw7JorvJ0nCXUB59L42IFPFYb_q" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=peasoft/NoMoreWalls&type=date&legend=top-left&sealed_token=8UVynllUplJa4vHl5DyiCpLI2RXSk29T0lsBrpwrzwLAbSJZj26QdM8Ci747u68K-UUMdH5GiH86o4tNu0hVYpj6AbR97k5HH730KfsO1wMCMWPsWiqu08zWfVjPUvj6qCu70vTw7w2ukyOzCl8Fzp_6-12EqObw3tw7JorvJ0nCXUB59L42IFPFYb_q" />
+ </picture>
 </a>
