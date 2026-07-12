@@ -1,4 +1,76 @@
 proxies:
+- encryption: none
+  name: 'A - 🇩🇪 DE 01 TG: @nodpai'
+  network: tcp
+  port: 10443
+  server: 136.244.94.171
+  type: vless
+  uuid: a01e27df-a1f1-4b7f-a65b-50dd4b6ac10a
+- encryption: none
+  name: 'A - 🇩🇪 DE 02 TG: @nodpai'
+  network: tcp
+  port: 443
+  server: 136.244.94.171
+  type: vless
+  uuid: 52516534-4986-4959-b30b-a89463eed9af
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GrpcFuckRKN
+  name: 'A - 🇩🇪 DE 04 TG: @nodpai'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: cjCwI7alv-GUgef0TW7i-S7jNgnIoZ6aooGYH7Nopxs
+    short-id: '!!str deadbeef'
+  security: reality
+  server: 194.58.41.65
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: GrpcFuckRKN
+  name: 'A - 🇩🇪 DE 05 TG: @nodpai'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: cjCwI7alv-GUgef0TW7i-S7jNgnIoZ6aooGYH7Nopxs
+    short-id: '!!str deadbeef'
+  security: reality
+  server: 194.58.41.65-uhe66vr6.nike77prime.ru
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
+- name: 'A - 🇩🇪 DE 06 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.80.111.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime52.workers.dev
+    path: /
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 'B - 🇩🇪 DE 07 TG: @nodpai'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
+    short-id: '!!str a1b2c3d4e5f6'
+  security: reality
+  server: 84.21.189.197
+  servername: queuev4.vk.com
+  tls: true
+  type: vless
+  uuid: 3ea2d8f2-12c1-4189-8cc5-91d0ee9f5ca0
 - name: DE
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
@@ -15,14 +87,6 @@ proxies:
   server: 181.214.99.162
   skip-cert-verify: true
   sni: api.kermanshahi.org
-  tls: false
-  type: hysteria2
-- name: 🪯32@oneclickvpnkeys
-  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-  port: 4433
-  server: 202.61.205.86
-  skip-cert-verify: true
-  sni: de1.xiaoliyu.cyou
   tls: false
   type: hysteria2
 - name: 🇩🇪 t-me-V2RayyNGvpn 🇩🇪
@@ -75,19 +139,6 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪DE_7|3.6MB/s
-  obfs: salamander
-  obfs-password: pqvmx29fokvh8ubb
-  password: TELEgRAM-ID-conf0088
-  port: '2053'
-  server: cuetara.name.cuetara.name
-  skip-cert-verify: false
-  sni: ''
-  tls: false
-  type: hysteria2
-  up: ''
 - name: 🇩🇪@V2RayyNGvpn🇩🇪hy
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
@@ -103,21 +154,7 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 1000
-  name: 🇩🇪DE_1|1.5MB/s
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 500
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 🇩🇪DE_2|2.1MB/s
+  name: 🇩🇪DE_1|2.1MB/s
   port: 54177
   protocol: udp
   server: 5.83.129.90
@@ -126,68 +163,51 @@ proxies:
   type: hysteria
   udp: true
   up: 500
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - biscotti.yektanet.com
-    path:
-    - /
-  name: 🇩🇪DE_3|3.3MB/s
-  network: http
-  port: '12767'
-  server: 91.99.173.29
-  type: vless
-  udp: true
-  uuid: 7ff3f986-f72c-4ebd-9eaa-bba121399cd2
-  xudp: true
-- encryption: none
-  name: 🇩🇪DE_4|3.4MB/s
-  network: tcp
-  port: '22224'
-  server: 3.74.240.8
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- encryption: none
-  name: 🇩🇪DE_5|3.8MB/s
-  network: tcp
-  port: '22222'
-  server: 3.74.240.8
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
 - client-fingerprint: chrome
-  name: 🇩🇪DE_6|3.1MB/s
-  network: ws
-  port: 8443
-  server: 104.20.2.221
-  servername: bycf.lzjnb.shop
-  skip-cert-verify: true
-  tfo: false
+  encryption: none
+  name: 🇩🇪DE_2|3.3MB/s
+  network: tcp
+  port: '44444'
+  reality-opts:
+    public-key: 79ji8OAmCVQTKcJmvf-iqZypOSKwuTD_sbatB4RHXXM
+    short-id: '!!str f37329647c9a1886'
+  server: Melinet1.temas-arvhA.iR
+  servername: yahoo.com.
   tls: true
   type: vless
-  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: bycf.lzjnb.shop
-    max-early-data: 2560
-    path: /
-- encryption: none
-  name: 🇩🇪DE_8|3.3MB/s
+  udp: true
+  uuid: e044297a-304f-40a9-a9fb-d17b744fa781
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_3|2.4MB/s
   network: ws
-  port: '8880'
-  server: 162.159.140.78
+  port: '443'
+  server: s97944.cdn.ngenix.net
+  tls: true
   type: vless
   udp: true
-  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
+  uuid: ab6a5359-0edf-41c3-8dfd-e4b005e80820
   ws-opts:
     headers:
-      Host: long-boat-7113.303-08c.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /v1/data/sync/
   xudp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪DE_4|1.8MB/s
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
