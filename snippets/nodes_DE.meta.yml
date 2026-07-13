@@ -97,37 +97,26 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|2.6MB/s
-  network: ws
-  packet-encoding: xudp
-  port: 8880
-  server: cd3.postshup.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: 973b0f5b-602b-4ab5-8411-ac7879b0e9d3
-  ws-opts:
-    headers:
-      Host: nnnnnnnn.postshup.ir
-    path: /?ed
-    v2ray-http-upgrade: true
-- name: 🇩🇪DE_2|2.9MB/s
-  network: ws
-  packet-encoding: xudp
-  port: 8880
-  server: forallpanel.srtongston.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: 973b0f5b-602b-4ab5-8411-ac7879b0e9d3
-  ws-opts:
-    headers:
-      Host: aaaaaaaaaaab.postshup.ir
-    path: /?ed
-    v2ray-http-upgrade: true
 - client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
-  name: 🇩🇪DE_3|2.1MB/s
+  name: 🇩🇪DE_1|3.3MB/s
+  network: xhttp
+  port: '2087'
+  server: 172.67.69.211
+  servername: somthingspecial.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7ddc55f-c7a5-4161-abf0-71832121cbe4
+  xhttp-opts:
+    host: somthingspecial.dpdns.org
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  name: 🇩🇪DE_2|4.0MB/s
   network: xhttp
   port: '2087'
   server: 172.67.69.212
@@ -142,51 +131,50 @@ proxies:
     path: /
     x-padding-bytes: 100-1000
   xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  grpc-opts:
-    grpc-service-name: api.v1.telemetry.EventStream
-  name: 🇩🇪DE_5|2.1MB/s
-  network: grpc
-  port: '8443'
-  reality-opts:
-    public-key: 56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk
-    short-id: '!!str 530db35e324c3aa5'
-  server: 152.236.3.13
-  servername: addons.mozilla.org
-  tls: true
+- encryption: none
+  name: 🇩🇪DE_3|2.1MB/s
+  network: ws
+  port: '80'
+  server: sadaf.vlessvx.ir
   type: vless
   udp: true
-  uuid: 16a44e56-cef4-4c50-8399-11de9803aa7b
+  uuid: 59e48e66-89c0-4139-ab2b-f808ec1ef825
+  ws-opts:
+    headers:
+      Host: AVIPQN.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /wp-admin.php?ed=2048
   xudp: true
-- client-fingerprint: firefox
+- client-fingerprint: randomized
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_6|1.5MB/s
+  name: 🇩🇪DE_4|2.6MB/s
   network: tcp
   port: '443'
   reality-opts:
-    public-key: qm-zp2dNT8dDO9KWbfQrxN3IKT0JlNZkWT53aaCKfxM
-    short-id: '!!str 4a'
-  server: 31.25.11.130
-  servername: zaplio-gook.ru
+    public-key: Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw
+    short-id: '!!str 4326'
+  server: m12r.speedtestmark.com
+  servername: m12r.speedtestmark.com
   tls: true
   type: vless
   udp: true
-  uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
+  uuid: 9de60b66-8b6a-4f50-b1e1-854ceb214eb1
   xudp: true
-- encryption: none
-  name: 🇩🇪DE_7|3.2MB/s
-  network: ws
-  port: '2053'
-  server: 169.40.32.218
+- client-fingerprint: randomized
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_5|2.5MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw
+    short-id: '!!str 4326'
+  server: m9r.speedtestmark.com
+  servername: m9r.speedtestmark.com
+  tls: true
   type: vless
   udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: 169.40.32.218
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
-    path: /TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----TEL--Badangellll----
+  uuid: 9de60b66-8b6a-4f50-b1e1-854ceb214eb1
   xudp: true
