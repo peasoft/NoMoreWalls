@@ -102,23 +102,6 @@ proxies:
   name: 🇩🇪DE_1|3.3MB/s
   network: xhttp
   port: '2087'
-  server: 172.67.69.211
-  servername: somthingspecial.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d7ddc55f-c7a5-4161-abf0-71832121cbe4
-  xhttp-opts:
-    host: somthingspecial.dpdns.org
-    mode: auto
-    path: /
-    x-padding-bytes: 100-1000
-  xudp: true
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
-  name: 🇩🇪DE_2|4.0MB/s
-  network: xhttp
-  port: '2087'
   server: 172.67.69.212
   servername: somthingspecial.dpdns.org
   tls: true
@@ -131,50 +114,27 @@ proxies:
     path: /
     x-padding-bytes: 100-1000
   xudp: true
-- encryption: none
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
+  encryption: none
+  name: 🇩🇪DE_2|1.8MB/s
+  network: tcp
+  port: '443'
+  server: de1.linkto.sbs
+  servername: de1.linkto.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: dabe4e44-39e1-4464-9491-521993f207d8
+  xudp: true
+- encryption: mlkem768x25519plus.native.0rtt.sGrv3mIk61axsKIAJkxsh-2TAnalzVWQw70HsKAlQSU
   name: 🇩🇪DE_3|2.1MB/s
-  network: ws
-  port: '80'
-  server: sadaf.vlessvx.ir
-  type: vless
-  udp: true
-  uuid: 59e48e66-89c0-4139-ab2b-f808ec1ef825
-  ws-opts:
-    headers:
-      Host: AVIPQN.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /wp-admin.php?ed=2048
-  xudp: true
-- client-fingerprint: randomized
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.6MB/s
   network: tcp
-  port: '443'
-  reality-opts:
-    public-key: Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw
-    short-id: '!!str 4326'
-  server: m12r.speedtestmark.com
-  servername: m12r.speedtestmark.com
-  tls: true
+  port: '37825'
+  server: 31.56.89.31
   type: vless
   udp: true
-  uuid: 9de60b66-8b6a-4f50-b1e1-854ceb214eb1
-  xudp: true
-- client-fingerprint: randomized
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_5|2.5MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw
-    short-id: '!!str 4326'
-  server: m9r.speedtestmark.com
-  servername: m9r.speedtestmark.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9de60b66-8b6a-4f50-b1e1-854ceb214eb1
+  uuid: dc9b85ff-a632-4349-974a-6548e3f0beed
   xudp: true

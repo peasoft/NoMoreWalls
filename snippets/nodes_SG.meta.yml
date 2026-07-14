@@ -19,15 +19,15 @@ proxies:
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 48738
-  server: 18.163.103.6
+  server: 18.163.121.106
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 48738
-  server: 54.46.117.9
+  port: 6357
+  server: 16.163.41.104
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -35,12 +35,12 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 32434
-  server: 95.40.33.19
+  server: 18.166.58.225
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - client-fingerprint: chrome
-  name: 🇸🇬SG_1|4.5MB/s
+  name: 🇸🇬SG_1|4.9MB/s
   network: ws
   port: 443
   server: www.leics.police.uk
@@ -54,16 +54,44 @@ proxies:
       Host: vp1.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: 🇸🇬SG_2|3.8MB/s
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  encryption: none
+  name: 🇸🇬SG_2|3.4MB/s
   network: ws
-  port: 443
-  server: coke.cf.3666888.xyz
-  servername: vp1.cc.cd
+  packet-encoding: xudp
+  port: 8443
+  server: 172.64.35.37
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   ws-opts:
     headers:
-      Host: vp1.cc.cd
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+- client-fingerprint: chrome
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  encryption: none
+  name: 🇸🇬SG_3|3.2MB/s
+  network: ws
+  packet-encoding: xudp
+  port: 443
+  server: 172.64.42.44
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
     path: /
