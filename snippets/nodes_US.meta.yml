@@ -1,13 +1,5 @@
 proxies:
-- name: 美国2
-  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  port: 2056
-  server: mg2.mangshe.xyz
-  skip-cert-verify: true
-  sni: mg2.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: 🇺🇸US_3|2.7MB/s
+- name: 美国|@ripaojiedian
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
@@ -31,114 +23,44 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇺🇸US_1|1.5MB/s
-  password: Hy2@SiLiCon2026!
-  port: 8443
-  server: 43.130.7.3
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
 - alpn:
   - h3
-  name: 🇺🇸US_2|3.5MB/s
-  password: hy2_zxlA_gZ5N1KzZlsyBKW-3sfR
-  port: 55020
+  congestion-controller: bbr
+  disable-sni: false
+  name: 🇺🇸US_1|3.1MB/s
+  password: RBK3FbuEqeWNvM5JxAtKV0bI
+  port: 443
   server: 147.224.251.52
   skip-cert-verify: true
   sni: 129.146.243.146.sslip.io
-  type: hysteria2
+  type: tuic
   udp: true
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸US_4|3.4MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 0c62d145-d288-4b2c-9df3-8a76e6489d25
-  port: '14656'
-  server: 172.245.189.138
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: D2:0B:C6:72:35:F3:99:35:1B:4E:81:EE:4C:16:12:51:0E:52:AE:9E:FE:2C:84:65:76:62:10:DD:F2:1C:2C:3C
-  name: 🇺🇸US_5|3.7MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 7466549e-812f-4b33-b09b-c3e132e6e51b
-  port: '443'
-  server: 159.65.79.184
-  skip-cert-verify: false
-  sni: addons.mozilla.org
-  type: hysteria2
-  up: ''
-- client-fingerprint: safari
-  name: 🇺🇸US_6|2.7MB/s
-  network: ws
-  password: 2c366360-0333-4738-9423-6d5b378e3594
-  port: '443'
-  server: 5344gt5.cloudflare.182682.xyz
-  skip-cert-verify: false
-  sni: ttt1.ttttlefjljl.xyz
-  type: trojan
+  udp-relay-mode: native
+  uuid: 25a54c97-c3c3-4505-8d11-93d742eff8fb
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸US_2|2.0MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US_3|2.0MB/s
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @WangCai2)f6e348d:70852
+    mode: tls
+  port: '2377'
+  server: 88.210.36.106
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /images
-- client-fingerprint: safari
-  name: 🇺🇸US_7|2.6MB/s
-  network: ws
-  password: 2c366360-0333-4738-9423-6d5b378e3594
-  port: '443'
-  server: cdn2.bpcdn.cc
-  skip-cert-verify: false
-  sni: ehofhoe.bpuk2026.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
-    path: /images
-- client-fingerprint: chrome
-  name: 🇺🇸US_8|2.6MB/s
-  network: ws
-  password: 2c366360-0333-4738-9423-6d5b378e3594
-  port: '443'
-  server: uubest.cloudflare.182682.xyz
-  skip-cert-verify: false
-  sni: px8r9i1b4k.bpusfaster2.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
-        wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84
-        Mobile Safari/537.36
-    path: /images
-- client-fingerprint: safari
-  name: 🇺🇸US_9|1.9MB/s
-  network: ws
-  password: 2c366360-0333-4738-9423-6d5b378e3594
-  port: '443'
-  server: uugt5.cloudflare.182682.xyz
-  skip-cert-verify: false
-  sni: ttt1.ttttlefjljl.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /images
 - client-fingerprint: chrome
   encryption: none
   grpc-opts:
     grpc-service-name: web.max.ru
-  name: 🇺🇸US_10|1.9MB/s
+  name: 🇺🇸US_4|2.2MB/s
   network: grpc
   port: '444'
   reality-opts:
@@ -152,7 +74,7 @@ proxies:
   uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
   xudp: true
 - client-fingerprint: chrome
-  name: 🇺🇸US_11|2.6MB/s
+  name: 🇺🇸US_5|1.5MB/s
   network: tcp
   port: '8445'
   reality-opts:
@@ -165,19 +87,21 @@ proxies:
   udp: true
   uuid: 32f0f704-74c7-49fb-b01e-6a2026e54413
   xudp: true
-- name: 🇺🇸US_12|2.2MB/s
-  network: ws
-  port: '8080'
-  server: premium-us-az-01-hostinger.efgwf.online
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_6|1.6MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: vJBCJXM6AYo1zobLsW7-UzJsznfiqzVpz7OphyAbGX0
+    short-id: '!!str 7b661daae97b9789'
+  server: 167.88.167.57
+  servername: site.rumedia-cdn.com
+  tls: true
   type: vless
   udp: true
-  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
-  ws-opts:
-    headers:
-      Host: premium-us-az-01-hostinger.efgwf.online
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
-    path: /ws-hTopcF3L
+  uuid: 41cbcc75-759f-4707-984e-aea715046830
   xudp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
