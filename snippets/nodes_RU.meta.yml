@@ -1,56 +1,69 @@
 proxies:
+- name: 'A - 🇷🇺 RU 01 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.67.215.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime48.workers.dev
+    path: /
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺RU_1|2.5MB/s
+  network: raw
+  port: '36104'
+  reality-opts:
+    public-key: 2Px6fKzdJdvV0AdnvNHY_UkWSiL0nOfPU_4A8nkFwhc
+    short-id: '!!str 1ace278dcb0b5082'
+  server: 158.160.241.25
+  servername: vk.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3a27b278-b999-42f0-853d-61ae810ec719
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: qq
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇷🇺RU_2|2.5MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: 8NnEa_OhXRMmdnQrfyr2SLFjl4JXUYb9oy6acyomZAw
+    short-id: '!!str '
+  server: 51.250.29.180
+  servername: 5post-gate.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 91d85eaf-f805-433f-8906-53408459ec93
+  xudp: true
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇷🇺RU_1|3.3MB/s
+  name: 🇷🇺RU_3|2.1MB/s
   network: raw
   port: '443'
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: '!!str '
-  server: 95.163.211.150
+  server: 161.104.107.86
   servername: sellflow.org
   tls: true
   type: vless
   udp: true
-  uuid: 0f8923d5-77b8-4046-9899-6892dde4ef32
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_2|2.6MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str '
-  server: 95.163.211.165
-  servername: sellflow.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44e084a7-4928-4492-b646-7dc417066576
+  uuid: b7675c4a-b148-4b02-9cfe-3275e4fee305
   xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇷🇺RU_3|2.4MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q
-    short-id: '!!str 305570274c0c72cc'
-  server: 213.189.217.79
-  servername: ru.hagrid-connected.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_4|1.8MB/s
+  name: 🇷🇺RU_4|2.5MB/s
   network: raw
   port: '443'
   reality-opts:
@@ -63,49 +76,3 @@ proxies:
   udp: true
   uuid: d9f0d148-991d-0064-a388-c3b69a0534df
   xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_5|2.2MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str '
-  server: 213.171.28.202
-  servername: sellflow.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f8923d5-77b8-4046-9899-6892dde4ef32
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_6|2.4MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str '
-  server: 87.242.86.56
-  servername: sellflow.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f8923d5-77b8-4046-9899-6892dde4ef32
-  xudp: true
-- alpn:
-  - h3
-  down: ''
-  fingerprint: ''
-  name: 🇷🇺RU_7|2.4MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 356c6c63-0ef7-4c45-a092-742d09b925c3
-  port: '4443'
-  server: 135.106.156.10
-  skip-cert-verify: true
-  sni: ru.24rostelekom.ru
-  type: hysteria2
-  up: ''

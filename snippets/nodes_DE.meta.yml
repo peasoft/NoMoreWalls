@@ -1,4 +1,76 @@
 proxies:
+- encryption: none
+  name: 'A - 🇩🇪 DE 01 TG: @nodpai'
+  network: tcp
+  port: 10443
+  server: 136.244.94.171
+  type: vless
+  uuid: a01e27df-a1f1-4b7f-a65b-50dd4b6ac10a
+- encryption: none
+  name: 'A - 🇩🇪 DE 02 TG: @nodpai'
+  network: tcp
+  port: 443
+  server: 136.244.94.171
+  type: vless
+  uuid: 52516534-4986-4959-b30b-a89463eed9af
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GrpcFuckRKN
+  name: 'A - 🇩🇪 DE 04 TG: @nodpai'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: cjCwI7alv-GUgef0TW7i-S7jNgnIoZ6aooGYH7Nopxs
+    short-id: '!!str deadbeef'
+  security: reality
+  server: 194.58.41.65
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: GrpcFuckRKN
+  name: 'A - 🇩🇪 DE 05 TG: @nodpai'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: cjCwI7alv-GUgef0TW7i-S7jNgnIoZ6aooGYH7Nopxs
+    short-id: '!!str deadbeef'
+  security: reality
+  server: 194.58.41.65-uhe66vr6.nike77prime.ru
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
+- name: 'A - 🇩🇪 DE 06 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.80.111.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime52.workers.dev
+    path: /
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 'B - 🇩🇪 DE 07 TG: @nodpai'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
+    short-id: '!!str a1b2c3d4e5f6'
+  security: reality
+  server: 84.21.189.197
+  servername: queuev4.vk.com
+  tls: true
+  type: vless
+  uuid: 3ea2d8f2-12c1-4189-8cc5-91d0ee9f5ca0
 - name: DE
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
@@ -27,26 +99,38 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_6|2.0MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: 3BbMRgbSVAi881UEncK5aHJiicG27Fvx7Vr9xmnc-14
-    short-id: '!!str 4b2519a45b0f35c4'
-  server: 45.131.182.141
-  servername: site.rumedia-cdn.com
+- name: 🇩🇪DE_1|2.7MB/s
+  network: ws
+  port: '8880'
+  server: 172.66.170.53
+  type: vless
+  udp: true
+  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+  ws-opts:
+    headers:
+      Host: polished-meadow-2ac5.228-76d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+  xudp: true
+- name: 🇩🇪DE_2|2.7MB/s
+  network: ws
+  port: 443
+  server: 140.248.180.30
+  servername: hamshahriesfahan.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 3be4a124-a437-4eef-8d14-00175978a826
-  xudp: true
+  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
+  ws-opts:
+    headers:
+      Host: hamshahriesfahan.com
+    path: /vip1
 - client-fingerprint: qq
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_2|3.3MB/s
+  name: 🇩🇪DE_3|3.3MB/s
   network: tcp
   port: '443'
   reality-opts:
@@ -59,27 +143,10 @@ proxies:
   udp: true
   uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
   xudp: true
-- client-fingerprint: qq
-  encryption: none
-  grpc-opts:
-    grpc-service-name: us-br-yandex
-  name: 🇩🇪DE_3|1.7MB/s
-  network: grpc
-  port: '443'
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: '!!str 10ffb85da1c2d986'
-  server: 164.138.100.203
-  servername: api-maps.yandex.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bcde9ba-4517-4e6a-b5f8-b19e0fcb23fc
-  xudp: true
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.1MB/s
+  name: 🇩🇪DE_4|2.2MB/s
   network: raw
   port: '443'
   reality-opts:
@@ -92,86 +159,79 @@ proxies:
   udp: true
   uuid: 0f8923d5-77b8-4046-9899-6892dde4ef32
   xudp: true
+- name: 🇩🇪DE_5|3.1MB/s
+  network: ws
+  port: '8880'
+  server: www.zsu.gov.ua
+  type: vless
+  udp: true
+  uuid: 2756d45c-2d91-4783-8114-ad1e128799ba
+  ws-opts:
+    headers:
+      Host: blue-breeze-e33c.261.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile
+        Safari/537.36
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+  xudp: true
+- name: 🇩🇪DE_6|2.6MB/s
+  network: ws
+  port: '8880'
+  server: www.iplocation.net
+  type: vless
+  udp: true
+  uuid: 4bf6fee9-d3c4-4a98-b83b-170bf37c669c
+  ws-opts:
+    headers:
+      Host: cold-water-945c.43-bc5.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+  xudp: true
 - client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: cloud
+  name: 🇩🇪DE_7|3.4MB/s
+  network: grpc
+  port: '47884'
+  reality-opts:
+    public-key: 4kfgvWhvI42Kjaf9y8Pw006LCSUQyeiosQSNa2RrK14
+    short-id: '!!str 847a06884457c506'
+  server: 81.163.22.231
+  servername: kinopoisk.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8b5f6c9-83ff-4ca1-be9c-f997a5b2f692
+  xudp: true
+- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_5|2.4MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str '
-  server: 91.194.213.179
-  servername: ai.sellflow.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f8923d5-77b8-4046-9899-6892dde4ef32
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  grpc-opts:
-    grpc-service-name: neurex
-  name: 🇩🇪DE_7|3.1MB/s
-  network: grpc
-  port: '16923'
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: '!!str 10ffb85da1c2d986'
-  server: 89.222.123.211
-  servername: api-maps.yandex.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 83f76cc0-ebcd-4805-a408-f6c8e30ff3ee
-  xudp: true
-- client-fingerprint: qq
-  encryption: none
-  grpc-opts:
-    grpc-service-name: us-br-yandex
-  name: 🇩🇪DE_8|2.5MB/s
-  network: grpc
-  port: '443'
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: '!!str 10ffb85da1c2d986'
-  server: 164.138.100.203
-  servername: api-maps.yandex.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8d58c46-bba5-4669-a8e0-234e6ef5be49
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  grpc-opts:
-    grpc-service-name: neurex
-  name: 🇩🇪DE_9|2.5MB/s
-  network: grpc
-  port: '16923'
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: '!!str 10ffb85da1c2d986'
-  server: 89.222.123.211
-  servername: api-maps.yandex.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8d58c46-bba5-4669-a8e0-234e6ef5be49
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_10|3.2MB/s
+  name: 🇩🇪DE_8|2.7MB/s
   network: tcp
   port: '443'
   reality-opts:
-    public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
-    short-id: '!!str 76132b3b39704c44'
-  server: 77.91.66.178
-  servername: ger.hatvpn.org
+    public-key: FOVEr4SzLDQGUn1yY8-Y_C5mIV6WBJL2sTZKQvK83z4
+    short-id: '!!str '
+  server: 37.139.34.124
+  servername: ads.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: 109c13c0-5ef7-47a3-b278-3d47a35136e5
+  uuid: d407defe-cd4f-4d32-a3b1-47c2c813c50d
+  xudp: true
+- name: 🇩🇪DE_9|2.6MB/s
+  network: ws
+  port: '8880'
+  server: 104.27.82.154
+  type: vless
+  udp: true
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  ws-opts:
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
+    path: /pyip=ProxyIP.SG.CMLiussss.net
   xudp: true
