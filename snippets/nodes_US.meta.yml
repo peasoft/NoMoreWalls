@@ -1,4 +1,12 @@
 proxies:
+- name: 美国2
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
 - name: 美国|@ripaojiedian
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
@@ -23,34 +31,90 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_1|4.1MB/s
-  network: tcp
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_1|2.1MB/s
+  network: ws
   port: '443'
-  server: wo.ilovezhenjiu.top
-  servername: wo.ilovezhenjiu.top
+  server: marzban-node-production-baeb.up.railway.app
+  servername: marzban-node-production-baeb.up.railway.app
   tls: true
   type: vless
   udp: true
-  uuid: 170b57b2-454f-496d-a0e3-c1571b57d931
+  uuid: 7be7ebba-d15d-4b90-bdc1-54183998d0d3
+  ws-opts:
+    headers:
+      Host: marzban-node-production-baeb.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /vless
   xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸US_2|3.6MB/s
-  network: tcp
-  port: '40082'
+  name: 🇺🇸US_2|2.5MB/s
+  port: 18662
   reality-opts:
-    public-key: GBCcf9j7irjlYN4Z5SW5ssP9ACHCnTvHk8PI9LHkqmI
-    short-id: '!!str d32620c540976780'
-  server: 159.75.20.13
-  servername: www.cloudflare.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: '!!str 48050fab'
+  server: 67.220.73.204
+  servername: www.apple.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 26bb3a99-4583-4744-bb8e-a5c823ad29e9
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_3|2.5MB/s
+  network: ws
+  port: '443'
+  server: f35-ansooyee.up.railway.app
+  servername: f35-ansooyee.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69209652-ebd8-6e2c-93c8-cbc7009824c9
+  ws-opts:
+    headers:
+      Host: f35-ansooyee.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /ws/69209652-ebd8-6e2c-93c8-cbc7009824c9
   xudp: true
-- name: 🇺🇸US_3|1.7MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US_4|4.8MB/s
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)6db9d46:44797
+    mode: tls
+  port: '2377'
+  server: 88.210.36.109
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_5|2.0MB/s
+  network: ws
+  port: '443'
+  server: x4g-production-ed65.up.railway.app
+  servername: x4g-production-ed65.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 13998a36-160f-f413-d3e9-94686ae2cbcf
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /ws/13998a36-160f-f413-d3e9-94686ae2cbcf
+  xudp: true
+- name: 🇺🇸US_6|2.1MB/s
   network: ws
   port: '8080'
   server: premium-us-ca-01-gthost.efgwf.online
@@ -60,25 +124,36 @@ proxies:
   ws-opts:
     headers:
       Host: premium-us-ca-01-gthost.efgwf.online
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /ws-6Tta3kYF
   xudp: true
-- alterId: 0
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇺🇸US_7|2.6MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+    short-id: '!!str '
+  server: pro-se.emrata.top
+  servername: pro-se.emrata.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 522e84a6-2f0b-0028-901d-dbf05b60ce59
+  xudp: true
+- alterId: 2
   cipher: auto
-  name: 🇺🇸US_4|2.3MB/s
-  network: ws
-  port: 16626
-  server: planb.mojcn.com
+  name: 🇺🇸US_8|1.6MB/s
+  network: tcp
+  port: 30808
+  server: v8.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 45efc1d9-29c2-46ce-a32a-93863e7d84ae
-  ws-opts:
-    headers:
-      Host: 2310fae741725b270145f3c336f651b5.mobgslb.tbcache.com
-    path: /
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   xudp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
