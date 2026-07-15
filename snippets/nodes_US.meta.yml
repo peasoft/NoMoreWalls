@@ -23,85 +23,62 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alpn:
-  - h3
-  congestion-controller: bbr
-  disable-sni: false
-  name: 🇺🇸US_1|3.1MB/s
-  password: RBK3FbuEqeWNvM5JxAtKV0bI
-  port: 443
-  server: 147.224.251.52
-  skip-cert-verify: true
-  sni: 129.146.243.146.sslip.io
-  type: tuic
-  udp: true
-  udp-relay-mode: native
-  uuid: 25a54c97-c3c3-4505-8d11-93d742eff8fb
-- multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸US_2|2.0MB/s
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_3|2.0MB/s
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (Telegram🇨🇳 @WangCai2)f6e348d:70852
-    mode: tls
-  port: '2377'
-  server: 88.210.36.106
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: web.max.ru
-  name: 🇺🇸US_4|2.2MB/s
-  network: grpc
-  port: '444'
-  reality-opts:
-    public-key: MF_E-_CYAXdWxC1N_wTkdFyk3K7_1cNqNDPb0vnwl20
-    short-id: '!!str 8311761729abcdef'
-  server: usa.vrsvpn.com
-  servername: web.max.ru
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_1|4.1MB/s
+  network: tcp
+  port: '443'
+  server: wo.ilovezhenjiu.top
+  servername: wo.ilovezhenjiu.top
   tls: true
   type: vless
   udp: true
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  uuid: 170b57b2-454f-496d-a0e3-c1571b57d931
   xudp: true
 - client-fingerprint: chrome
-  name: 🇺🇸US_5|1.5MB/s
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_2|3.6MB/s
   network: tcp
-  port: '8445'
+  port: '40082'
   reality-opts:
-    public-key: jihjAdtP4PXFMpD_92y5Q7PixlNLFgsxL1zyaqU0Pk4
-    short-id: '!!str 1a2b3c4d'
-  server: proxy.jitttt.com
+    public-key: GBCcf9j7irjlYN4Z5SW5ssP9ACHCnTvHk8PI9LHkqmI
+    short-id: '!!str d32620c540976780'
+  server: 159.75.20.13
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 32f0f704-74c7-49fb-b01e-6a2026e54413
+  uuid: 26bb3a99-4583-4744-bb8e-a5c823ad29e9
   xudp: true
-- client-fingerprint: qq
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_6|1.6MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: vJBCJXM6AYo1zobLsW7-UzJsznfiqzVpz7OphyAbGX0
-    short-id: '!!str 7b661daae97b9789'
-  server: 167.88.167.57
-  servername: site.rumedia-cdn.com
-  tls: true
+- name: 🇺🇸US_3|1.7MB/s
+  network: ws
+  port: '8080'
+  server: premium-us-ca-01-gthost.efgwf.online
   type: vless
   udp: true
-  uuid: 41cbcc75-759f-4707-984e-aea715046830
+  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+  ws-opts:
+    headers:
+      Host: premium-us-ca-01-gthost.efgwf.online
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/56.0.2924.87 Safari/537.36
+    path: /ws-6Tta3kYF
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_4|2.3MB/s
+  network: ws
+  port: 16626
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 45efc1d9-29c2-46ce-a32a-93863e7d84ae
+  ws-opts:
+    headers:
+      Host: 2310fae741725b270145f3c336f651b5.mobgslb.tbcache.com
+    path: /
   xudp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
