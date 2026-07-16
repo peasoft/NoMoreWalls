@@ -1,59 +1,25 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: wlgrpc
+- alpn:
+  - h3
+  congestion-controller: cubic
+  disable-sni: false
   name: 🇫🇷FR_1|1.8MB/s
-  network: grpc
-  port: '443'
-  reality-opts:
-    public-key: Uwj82vGl-jAhU3VflWnTy7rISYi03slggjS32Zx8pkk
-    short-id: '!!str 6ba85179e30d4fc2'
-  server: 77.221.152.151
-  servername: www.lefigaro.fr
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2e3768f-cb23-4cfc-a884-dbd6813cb70b
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_2|2.5MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: olcTApVIdrdt_bsMJaLsZ-8bYR73oMNzgCZJuR_4sFA
-    short-id: '!!str 7c83683ed7507a69'
-  server: 80.249.150.24
-  servername: dzen.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1281ef13-f1cd-493b-903e-4c2f4ffe1eba
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_3|2.1MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
-    short-id: '!!str 364994a6f61fc955'
-  server: 45.192.2.173
-  servername: yandex.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1478d83f-3e0b-4d96-99cc-b514495e53c6
-  xudp: true
+  password: dongtaiwang.com
+  port: 33888
+  reduce-rtt: false
+  request-timeout: 0
+  server: 62.210.24.143
+  skip-cert-verify: true
+  sni: bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
 - client-fingerprint: ios
   encryption: none
-  name: 🇫🇷FR_4|2.1MB/s
+  name: 🇫🇷FR_2|2.3MB/s
   network: xhttp
   port: '8443'
-  server: xh.hrmp.kdns.fr
+  server: 104.21.19.240
   servername: xh.hrmp.kdns.fr
   tls: true
   type: vless
@@ -63,22 +29,6 @@ proxies:
     host: xh.hrmp.kdns.fr
     mode: auto
     path: /tirexxhttp
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_5|2.8MB/s
-  network: raw
-  port: '8443'
-  reality-opts:
-    public-key: XvqUR-fhL0E9z9b_8q_uEvyE-lpC-l1D4CivPKSthh4
-    short-id: '!!str cbb840f5'
-  server: 51.195.94.187
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c221de4-590b-41b8-8a3d-4c7dd6d0948f
   xudp: true
 - name: FR_speednode_0004
   password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
