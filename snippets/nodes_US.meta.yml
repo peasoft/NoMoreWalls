@@ -1,4 +1,12 @@
 proxies:
+- name: 美国2
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
 - name: 美国|@ripaojiedian
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
@@ -15,7 +23,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸US_4|2.7MB/s
+- name: 🇺🇸US_10|2.7MB/s
   network: tcp
   password: BxceQaOe
   port: 35966
@@ -28,21 +36,57 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: media.v1.ObjectService
-  name: 🇺🇸US_1|2.6MB/s
+    grpc-service-name: sync.v2.FeedService
+  name: 🇺🇸US_1|1.7MB/s
   network: grpc
   port: 443
   reality-opts:
-    public-key: 8QJSXd0F3JScfRiyQFh_IXYq8Liwpa9EzhbC1MDRrnc
-    short-id: '!!str 8e4d75390b1e0547'
-  server: us.onetimeok.com
-  servername: us.onetimeok.com
+    public-key: lOONDaJA7m6EtXSWb0DdUIAfOEO2_hqLsqn6ifA4gXE
+    short-id: '!!str 018f65354c647e46'
+  server: video.reasonok.com
+  servername: video.reasonok.com
   tls: true
   type: vless
   udp: true
   uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_2|2.6MB/s
+  network: tcp
+  port: 30808
+  server: v8.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇺🇸US_3|2.3MB/s
+  password: amazonskr05
+  port: '443'
+  server: 18.190.176.112
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 🇺🇸US_8|2.1MB/s
+  encryption: none
+  grpc-opts:
+    grpc-service-name: home.v1.ApiService
+  name: 🇺🇸US_4|1.5MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: 0ffnN7CdnOgEEFJ3AY1lnuTtsOPDL059UaTTxGxDjTA
+    short-id: '!!str 66ffd800ba2ec7c3'
+  server: eu.oneokgames.com
+  servername: eu.oneokgames.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇺🇸US_16|2.8MB/s
   network: tcp
   password: BxceQaOe
   port: '35966'
@@ -51,25 +95,52 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
-- encryption: none
-  name: 🇺🇸US_3|2.6MB/s
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇺🇸US_6|1.7MB/s
+  network: tcp
+  port: '16025'
+  server: c722s801.portablesubmarines.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇺🇸US_8|2.3MB/s
   network: ws
-  port: '8080'
-  server: e2lsnrlu.cf.3666888.xyz
+  port: 2096
+  server: 198.41.209.7
+  servername: vp33.cc.cd
+  tls: true
   type: vless
   udp: true
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   ws-opts:
     headers:
-      Host: v83wyiv0.cnm.qzz.io
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /sub
-  xudp: true
-- name: 🇺🇸US_5|2.2MB/s
+      Host: vp33.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: 🇺🇸US_9|2.2MB/s
+  network: ws
+  port: 2083
+  server: 104.19.48.233
+  servername: vp34.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  ws-opts:
+    headers:
+      Host: vp34.cc.cd
+    path: /
+- name: 🇺🇸US_11|2.4MB/s
   network: ws
   port: 443
-  server: 104.25.252.207
+  server: 162.159.39.151
   servername: 40t1.wxgqlfx.vip
   skip-cert-verify: true
   tls: true
@@ -80,7 +151,21 @@ proxies:
     headers:
       Host: 40t1.wxgqlfx.vip
     path: /TG@wxgqlfx
-- name: 🇺🇸US_6|2.8MB/s
+- name: 🇺🇸US_12|2.6MB/s
+  network: ws
+  port: 443
+  server: 108.162.198.108
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  ws-opts:
+    headers:
+      Host: 40t1.wxgqlfx.vip
+    path: /TG@wxgqlfx
+- name: 🇺🇸US_13|2.2MB/s
   network: ws
   port: 443
   server: 172.64.229.110
@@ -94,10 +179,10 @@ proxies:
     headers:
       Host: 40t1.wxgqlfx.vip
     path: /TG@wxgqlfx
-- name: 🇺🇸US_7|2.6MB/s
+- name: 🇺🇸US_14|1.8MB/s
   network: ws
   port: 443
-  server: 172.64.53.253
+  server: 162.159.24.217
   servername: 40t1.wxgqlfx.vip
   skip-cert-verify: true
   tls: true
@@ -108,18 +193,110 @@ proxies:
     headers:
       Host: 40t1.wxgqlfx.vip
     path: /TG@wxgqlfx
+- name: 🇺🇸US_15|2.2MB/s
+  network: ws
+  port: 443
+  server: 104.17.208.223
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  ws-opts:
+    headers:
+      Host: 40t1.wxgqlfx.vip
+    path: /TG@wxgqlfx
+- client-fingerprint: chrome
+  name: 🇺🇸US_17|2.1MB/s
+  network: tcp
+  password: CF68213490
+  port: '443'
+  server: alert-monster.rooster465.autos
+  skip-cert-verify: false
+  sni: alert-monster.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: media.v1.SyncService
+  name: 🇺🇸US_18|1.5MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY
+    short-id: '!!str ad613873130544ab'
+  server: 89.105.220.231
+  servername: link.oneokgames.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  xudp: true
 - client-fingerprint: firefox
   encryption: none
   grpc-opts:
     grpc-service-name: gw.v1.MetricsService
-  name: 🇺🇸US_9|2.0MB/s
+  name: 🇺🇸US_19|2.0MB/s
   network: grpc
   port: '443'
   reality-opts:
     public-key: 28oR3ji9c2CneMNkbvcDL8WfvNWHS3GfA3RdtaF-pSg
     short-id: '!!str 89e97b6542785ca6'
-  server: grid.onetimeok.com
-  servername: grid.onetimeok.com
+  server: assets.onetimeok.com
+  servername: assets.onetimeok.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: media.v1.SyncService
+  name: 🇺🇸US_20|1.5MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY
+    short-id: '!!str ad613873130544ab'
+  server: images.oneokgames.com
+  servername: images.oneokgames.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: node.v2.StreamService
+  name: 🇺🇸US_21|1.6MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: zGzQklZzWAfmwvLGgQtj-cgfWoUHbUelb4j1qYz5A3w
+    short-id: '!!str c24b10219813df29'
+  server: img.reasonok.com
+  servername: img.reasonok.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: node.v2.RelayService
+  name: 🇺🇸US_22|2.0MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: WDHKYZHG7i-daQ2JC5IXnQrVoYKuJSy_6IqQf41mTE8
+    short-id: '!!str 83a2eadab79b2a8a'
+  server: origin.reasonok.com
+  servername: origin.reasonok.com
   tls: true
   type: vless
   udp: true
@@ -129,7 +306,7 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: sync.v2.FeedService
-  name: 🇺🇸US_10|1.7MB/s
+  name: 🇺🇸US_23|1.5MB/s
   network: grpc
   port: '443'
   reality-opts:
@@ -142,13 +319,71 @@ proxies:
   udp: true
   uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_11|1.7MB/s
-  password: amazonskr05
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: edge.v2.RelayService
+  name: 🇺🇸US_24|1.5MB/s
+  network: grpc
   port: '443'
-  server: 3.145.162.175
-  type: ss
+  reality-opts:
+    public-key: TLAYLGGk8xnADNCg4_7-E3YqlC8L4lVo4m7aauBL7kU
+    short-id: '!!str ce7d5b58da528cf1'
+  server: static.onetimeok.com
+  servername: static.onetimeok.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: api.v2.ObjectService
+  name: 🇺🇸US_25|2.4MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38
+    short-id: '!!str dbdbeaf4aa6e1a5c'
+  server: sync.oneokgames.com
+  servername: sync.oneokgames.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  xudp: true
+- name: 🇺🇸US_26|1.6MB/s
+  network: ws
+  port: '8880'
+  server: www.visa.com.sg
+  type: vless
+  udp: true
+  uuid: d7ec3e31-a9c4-4bdf-a2d8-7f75a8381035
+  ws-opts:
+    headers:
+      Host: weathered-lake-e883.35-bc4.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇺🇸US_27|3.4MB/s
+  network: ws
+  port: '8443'
+  server: 64.186.240.9
+  servername: s5gydl.936.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  ws-opts:
+    headers:
+      Host: s5gydl.936.us.ci
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  xudp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: US_speednode_0055
