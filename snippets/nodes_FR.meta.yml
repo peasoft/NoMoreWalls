@@ -1,35 +1,99 @@
 proxies:
-- client-fingerprint: firefox
+- alpn:
+  - h3
+  congestion-controller: cubic
+  disable-sni: false
+  name: 🇫🇷FR_1|2.6MB/s
+  password: dongtaiwang.com
+  port: 33888
+  reduce-rtt: false
+  request-timeout: 0
+  server: 62.210.24.143
+  skip-cert-verify: true
+  sni: bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+- client-fingerprint: qq
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_1|2.1MB/s
-  network: raw
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇫🇷FR_2|3.1MB/s
+  network: grpc
   port: '443'
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str '
-  server: 87.242.86.156
-  servername: gb.sellflow.org
+    public-key: SK0KGyJuRjuijxlXfFIQ16DBIVRIMwYWUvYyS_CrWhA
+    short-id: '!!str ec092e19'
+  server: 45.12.114.157
+  servername: www.samsung.com
   tls: true
   type: vless
   udp: true
-  uuid: 29fc5b31-d2f1-4528-9296-07f3ee148d9c
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷FR_3|2.1MB/s
+  network: raw
+  port: '447'
+  reality-opts:
+    public-key: fJd4UrCVRV4Al_Q5RdSavkgEseYBk2Ojly4lC7ZYK3I
+    short-id: '!!str c226283c4de5b1ad'
+  server: 138.16.162.154
+  servername: ads.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5ca41e39-0c15-45c4-9cba-5aa41039c6b3
   xudp: true
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇷FR_2|2.5MB/s
-  network: raw
-  port: '443'
+  name: 🇫🇷FR_4|2.4MB/s
+  network: tcp
+  port: '444'
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str '
-  server: 87.242.86.80
-  servername: gb.sellflow.org
+    public-key: n9tFDSBvLVWje_hxPG5QqEZIf-ZhqbNH-i1PfmAHYkQ
+    short-id: '!!str c226283c4de5b1ad'
+  server: 138.16.184.123
+  servername: ads.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: 29fc5b31-d2f1-4528-9296-07f3ee148d9c
+  uuid: 81ef8e1d-4d31-4c1b-92e8-d2e65e7ffaf4
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷FR_5|1.7MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: ppvT23Dpmf4G9dZLVQJq3Ev9ckq4REa1jJ9gkXqp1zQ
+    short-id: '!!str '
+  server: 37.49.230.101
+  servername: fastsync.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d407defe-cd4f-4d32-a3b1-47c2c813c50d
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷FR_6|2.7MB/s
+  network: ws
+  port: 16645
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 45efc1d9-29c2-46ce-a32a-93863e7d84ae
+  ws-opts:
+    headers:
+      Host: 2310fae741725b270145f3c336f651b5.mobgslb.tbcache.com
+    path: /
   xudp: true
 - name: FR_speednode_0004
   password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
