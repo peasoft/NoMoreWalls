@@ -1,17 +1,22 @@
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇭CH_1|3.1MB/s
-  network: tcp
-  port: 443
+  http-opts:
+    headers:
+      Host:
+      - yahoo.com
+    path:
+    - /
+  name: 🇨🇭CH_1|3.2MB/s
+  network: http
+  port: '40084'
   reality-opts:
-    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
-    short-id: '!!str 8f9d033ad6d2cebf'
-  server: fi2.cyphervpn.pro
-  servername: fi2.cyphervpn.pro
+    public-key: 9kgnhNCzQsfomFrK3nKlOCbmUyS2oPltp2gOnuFv7nY
+    short-id: '!!str '
+  server: 179.237.75.28
+  servername: yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
   xudp: true
