@@ -1,30 +1,29 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇪SE_1|2.5MB/s
-  network: tcp
-  port: '443'
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.StreamService
+  name: 🇸🇪SE_1|1.8MB/s
+  network: grpc
+  port: 443
   reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: '!!str 43dcff53849b81e6'
-  server: 185.231.101.89
-  servername: se.quattro-tech.ru
+    public-key: uYXyM2Nwmqw3bSDSV95XmpbOaAYBmBTh619Vl8lFJRs
+    short-id: '!!str 60cde13ab21686e9'
+  server: stats.oneoker.com
+  servername: stats.oneoker.com
   tls: true
   type: vless
   udp: true
-  uuid: ecad47b0-249e-4f6f-adff-e3c8f02b1897
-  xudp: true
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇸🇪SE_2|2.3MB/s
+  name: 🇸🇪SE_2|2.7MB/s
+  network: tcp
   port: 443
   reality-opts:
     public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
   server: meow-warsaw.nethcloud.top
   servername: www.wikihow.com
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
