@@ -31,7 +31,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬SG_3|3.4MB/s
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 41421
@@ -39,8 +39,40 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇸🇬SG_1|1.8MB/s
+  network: xhttp
+  packet-encoding: xudp
+  port: 443
+  server: cdd.themesh.site
+  servername: cdd.themesh.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6fa9f6ae-877b-4858-b128-a8377fd9038b
+  xhttp-opts:
+    host: cdd.themesh.site
+    mode: packet-up
+    path: /api/v3/content/
+    sc-max-each-post-bytes: 1500000
+    sc-min-posts-interval-ms: 50-100
+    seq-key: x_seq
+    seq-placement: query
+    session-key: x_session
+    session-placement: query
+    uplink-chunk-size: 4096-8192
+    uplink-data-key: X-Data
+    uplink-data-placement: header
+    uplink-http-method: GET
+    x-padding-header: Referer
+    x-padding-key: utm_source
+    x-padding-method: tokenish
+    x-padding-placement: queryInHeader
 - client-fingerprint: chrome
-  name: 🇸🇬SG_1|3.0MB/s
+  name: 🇸🇬SG_2|4.0MB/s
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: '443'
@@ -51,33 +83,57 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /in-pdr
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇸🇬SG_2|2.6MB/s
+- client-fingerprint: random
+  name: 🇸🇬SG_3|4.6MB/s
   network: ws
-  port: '443'
-  server: 162.159.10.87
-  servername: t1s1.rittbo.kdns.fr
+  port: '8443'
+  server: 162.159.34.128
+  servername: image.evan00.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
   ws-opts:
     headers:
-      Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.110 Safari/537.36
-    path: /
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
   xudp: true
 - client-fingerprint: chrome
-  name: 🇸🇬SG_4|3.6MB/s
-  password: BxceQaOe
-  port: '41421'
-  server: 43.198.13.164
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  name: 🇸🇬SG_4|3.4MB/s
+  network: ws
+  port: '2096'
+  server: 172.64.145.94
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇸🇬SG_5|4.9MB/s
+  network: ws
+  port: '2096'
+  server: fw8je9.cf.3666888.xyz
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true

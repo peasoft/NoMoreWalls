@@ -464,7 +464,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬SG_3|3.4MB/s
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 41421
@@ -506,8 +506,70 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇵🇱PL_1|2.5MB/s
+  network: tcp
+  port: 1443
+  reality-opts:
+    public-key: jtEyL2mfSJ5rlvpMfYgkY6HaleCFRif0DnOOOXNHhxg
+    short-id: '0441f3e34348cb45'
+  server: 193.111.117.8
+  servername: pls.snowfall.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 594b601b-b807-4998-a44e-9466f92ee4fa
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇸🇬SG_1|1.8MB/s
+  network: xhttp
+  packet-encoding: xudp
+  port: 443
+  server: cdd.themesh.site
+  servername: cdd.themesh.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6fa9f6ae-877b-4858-b128-a8377fd9038b
+  xhttp-opts:
+    host: cdd.themesh.site
+    mode: packet-up
+    path: /api/v3/content/
+    sc-max-each-post-bytes: 1500000
+    sc-min-posts-interval-ms: 50-100
+    seq-key: x_seq
+    seq-placement: query
+    session-key: x_session
+    session-placement: query
+    uplink-chunk-size: 4096-8192
+    uplink-data-key: X-Data
+    uplink-data-placement: header
+    uplink-http-method: GET
+    x-padding-header: Referer
+    x-padding-key: utm_source
+    x-padding-method: tokenish
+    x-padding-placement: queryInHeader
 - client-fingerprint: chrome
-  name: 🇸🇬SG_1|3.0MB/s
+  name: 🇱🇻LV_1|2.3MB/s
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE
+    short-id: '8ba6e72ee60667f6'
+  server: 185.137.232.194
+  servername: aispir.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 39b25b94-3b44-0037-94bf-98456f1b38a3
+  xhttp-opts:
+    host: aispir.ru
+    path: /assets
+- client-fingerprint: chrome
+  name: 🇸🇬SG_2|4.0MB/s
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: '443'
@@ -518,15 +580,86 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /in-pdr
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL_1|2.6MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: '8080'
+  server: 82.38.31.174
+  type: ss
+  udp: true
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸US_1|2.5MB/s
+  obfs: ''
+  obfs-password: ''
+  password: e3a5bb40be52de65
+  port: '2328'
+  server: q.baoge.me
+  skip-cert-verify: true
+  sni: q.baoge.me
+  type: hysteria2
+  up: ''
+- client-fingerprint: chrome
+  name: 🇩🇪DE_1|2.1MB/s
+  network: ws
+  port: '8443'
+  server: 104.26.8.249
+  servername: vp41.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  ws-opts:
+    headers:
+      Host: vp41.cc.cd
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸US_2|3.1MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- cipher: aes-256-gcm
+  name: 🇭🇰HK_1|5.1MB/s
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: '1416'
+  server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇦🇷AR_1|2.0MB/s
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: '20028'
+  server: s.n.y.5.8.z.4.e.d.ar01-ae5.entry.v51124-5.qpon
+  type: ss
+  udp: true
+- name: 🇳🇱NL_2|1.8MB/s
+  network: ws
+  port: '8880'
+  server: www.gov.ua
+  type: vless
+  udp: true
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  ws-opts:
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+  xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇸🇬SG_2|2.6MB/s
+  name: ❓Other_1|3.9MB/s
   network: ws
   port: '443'
-  server: 162.159.10.87
+  server: 162.159.26.86
   servername: t1s1.rittbo.kdns.fr
   tls: true
   type: vless
@@ -535,41 +668,160 @@ proxies:
   ws-opts:
     headers:
       Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
     path: /
   xudp: true
-- multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸US_1|1.6MB/s
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- client-fingerprint: chrome
-  name: 🇸🇬SG_4|3.6MB/s
-  password: BxceQaOe
-  port: '41421'
-  server: 43.198.13.164
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 🇻🇳VN_1|2.0MB/s
+  name: 🇭🇰HK_2|2.5MB/s
   network: tcp
-  port: '63090'
+  port: '34757'
   reality-opts:
-    public-key: dyEHdjgb6uB286_LVJdXIACwS50gdCr3fbhkAtC4_DY
-    short-id: 'f34493016ca111db'
+    public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
+    short-id: '551a216445'
   server: ipl2.lliinn.com
-  servername: bilibili-vn.biliimg.com
+  servername: www.lamer.com.hk
   tls: true
   type: vless
   udp: true
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  xudp: true
+- client-fingerprint: random
+  name: 🇺🇸US_3|2.3MB/s
+  network: ws
+  port: '443'
+  server: 104.19.85.38
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: random
+  name: 🇸🇬SG_3|4.6MB/s
+  network: ws
+  port: '8443'
+  server: 162.159.34.128
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇸🇬SG_4|3.4MB/s
+  network: ws
+  port: '2096'
+  server: 172.64.145.94
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: random
+  name: 🇯🇵JP_1|3.9MB/s
+  network: ws
+  port: '443'
+  server: 172.64.52.210
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: random
+  name: ❓Other_2|4.0MB/s
+  network: ws
+  port: '443'
+  server: 162.159.24.144
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇸🇬SG_5|4.9MB/s
+  network: ws
+  port: '2096'
+  server: fw8je9.cf.3666888.xyz
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: random
+  name: 🇯🇵JP_2|3.6MB/s
+  network: ws
+  port: '8443'
+  server: 172.64.53.96
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
+  xudp: true
+- client-fingerprint: random
+  name: 🇩🇪DE_2|1.6MB/s
+  network: ws
+  port: '443'
+  server: icook.tw
+  servername: image.evan00.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b961a840-e716-4466-84e3-b701d10adec0
+  ws-opts:
+    headers:
+      Host: image.evan00.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /proxyip=ProxyIP.US.cmliussss.net
   xudp: true
 - name: AE_speednode_0001
   network: ws
