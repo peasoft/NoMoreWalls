@@ -17,6 +17,16 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
+- name: 🇩🇪@V2RayyNGvpn کانال ما ❗
+  obfs: salamander
+  obfs-password: t-me-V2RayyNGvpn
+  password: 73x493S1pE
+  port: 31999
+  server: 91.107.152.188
+  skip-cert-verify: true
+  sni: www.amd.com
+  tls: false
+  type: hysteria2
 - name: 🇩🇪 کانال ما @V2RayyNGvpn🇩🇪
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
@@ -67,36 +77,23 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: 🇩🇪DE_1|2.1MB/s
-  network: ws
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  name: 🇩🇪DE_1|2.5MB/s
+  network: xhttp
   port: '8443'
-  server: 104.26.8.249
-  servername: vp41.cc.cd
+  server: 162.159.38.119
+  servername: o.vamosargentina.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  ws-opts:
-    headers:
-      Host: vp41.cc.cd
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+  uuid: 88888888-8888-8888-8888-888888888888
+  xhttp-opts:
+    host: o.vamosargentina.dpdns.org
+    mode: auto
     path: /
-- client-fingerprint: random
-  name: 🇩🇪DE_2|1.6MB/s
-  network: ws
-  port: '443'
-  server: icook.tw
-  servername: image.evan00.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b961a840-e716-4466-84e3-b701d10adec0
-  ws-opts:
-    headers:
-      Host: image.evan00.dpdns.org
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /proxyip=ProxyIP.US.cmliussss.net
+    x-padding-bytes: 100-1000
   xudp: true
