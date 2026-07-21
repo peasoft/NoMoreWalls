@@ -67,51 +67,69 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|3.8MB/s
-  password: IQ68037294
-  port: 443
-  server: aware-pika.rooster465.autos
-  skip-cert-verify: true
-  sni: aware-pika.rooster465.autos
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_2|5.0MB/s
-  password: amazonskr05
-  port: '443'
-  server: 63.176.169.206
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.4MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: XSerkZgTPWKCzSgKTbfx3xgTp3asGddifSFtvp0bJyw
-    short-id: '!!str 89b8ef1537c69f72'
-  server: 83.243.86.45
-  servername: download.amd.com
-  tls: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+    path:
+    - /
+  name: 🇩🇪DE_1|2.4MB/s
+  network: http
+  port: '8882'
+  server: gr1.fifapes.monster
   type: vless
   udp: true
-  uuid: 00a84cc6-073c-454b-9487-f0b7238e715f
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🇩🇪DE_5|1.9MB/s
-  network: grpc
-  port: '443'
-  reality-opts:
-    public-key: 3yWaaf1TBj82g8QIzmvegzMto2XFcsK6MHdeddBrE0Q
-    short-id: '!!str 55763d54'
-  server: 194.55.239.250
-  servername: yastatic.ru
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  name: 🇩🇪DE_2|2.5MB/s
+  network: xhttp
+  port: '8443'
+  server: 162.159.38.119
+  servername: o.vamosargentina.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: 8947f307-311a-461e-ab1c-f02b599d6baa
+  uuid: 88888888-8888-8888-8888-888888888888
+  xhttp-opts:
+    host: o.vamosargentina.dpdns.org
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇩🇪DE_4|2.5MB/s
+  network: http
+  port: '8882'
+  server: 31.56.206.222
+  type: vless
+  udp: true
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  xudp: true
+- client-fingerprint: random
+  encryption: none
+  name: 🇩🇪DE_5|3.4MB/s
+  network: ws
+  port: '8083'
+  server: hossein1.roozaraa.ir
+  servername: hossein1.roozaraa.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8899e3b-38f7-43d0-8bf5-3e46bef9f798
+  ws-opts:
+    headers:
+      Host: hossein1.roozaraa.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /
   xudp: true

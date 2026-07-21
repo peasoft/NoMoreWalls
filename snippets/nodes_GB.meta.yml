@@ -2,8 +2,8 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧GB_1|2.1MB/s
-  network: tcp
+  name: 🇬🇧GB_1|2.4MB/s
+  network: raw
   port: '443'
   reality-opts:
     public-key: yLDI5Qjzn4AHlXVDEXNVcLKAdr_dFeJ3p4eAScGkQjA
@@ -14,6 +14,23 @@ proxies:
   type: vless
   udp: true
   uuid: 16ad976d-b5df-4b4e-87b6-87cc64ac0a8b
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇬🇧GB_2|2.7MB/s
+  network: ws
+  port: '8443'
+  server: ad-020.cloud25075.info
+  servername: ad-020.cloud25075.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  ws-opts:
+    headers:
+      Host: ad-020.cloud25075.info
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /
   xudp: true
 - name: GB_speednode_0005
   network: ws
