@@ -31,76 +31,49 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: chrome
-  name: 🇺🇸US_1|2.5MB/s
-  password: IQ68037294
-  port: '443'
-  server: optimal-dane.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸US_1|2.1MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
 - client-fingerprint: chrome
   encryption: none
-  name: 🇺🇸US_2|2.7MB/s
+  grpc-opts:
+    grpc-service-name: grpc-api-v2
+  name: 🇺🇸US_2|2.0MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
+    short-id: '!!str 635a76c25a4b1820'
+  server: 2.26.254.62
+  servername: www.amd.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8fef09bc-a48a-44ae-95cd-118e58ab796a
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_3|2.1MB/s
   network: ws
-  port: '443'
-  server: 60.205.5.16
-  servername: vp58.cc.cd
+  port: '2096'
+  server: mktossl.com
+  servername: free.sahanwickramasinghevip.shop
   tls: true
   type: vless
   udp: true
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  uuid: ef4911ad-e3fb-4fad-9e20-f25d30fad7b7
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: vp58.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    max-early-data: 2560
-    path: Telegram🇨🇳 @VPNine1
+      Host: free.sahanwickramasinghevip.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.101 Safari/537.36
+    path: /
   xudp: true
-- client-fingerprint: qq
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_3|2.6MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: RBLUab6xZY89_lavlyhc6Wbh6bZCPB1D6UpmBn5UKFw
-    short-id: '!!str a379aacd5815cb32'
-  server: us-1.124515.xyz
-  servername: us-1.124515.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b812e4-2d96-4ce5-b365-6c801663a37a
-  xudp: true
-- client-fingerprint: qq
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_4|2.5MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: dQ1UuZtHmkxbOa0CuhzD8xx5l2oX3PTYvEWWE7C2Djk
-    short-id: '!!str '
-  server: usa.izzzyvpn.ru
-  servername: ads.x5.ru:443
-  tls: true
-  type: vless
-  udp: true
-  uuid: aea30a00-4cbb-4acc-b1c2-cb53a7522d09
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇺🇸US_5|2.6MB/s
-  network: tcp
-  password: IQ68037294
-  port: '443'
-  server: integral-elf.rooster465.autos
-  skip-cert-verify: false
-  sni: integral-elf.rooster465.autos
-  type: trojan
-  udp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: US_speednode_0055
