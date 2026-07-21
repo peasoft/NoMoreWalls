@@ -18,28 +18,36 @@ proxies:
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 48738
-  server: 18.166.58.27
+  port: 6357
+  server: 95.40.51.248
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 48738
-  server: 18.162.155.166
+  port: 6357
+  server: 18.162.245.180
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 41421
-  server: 43.198.13.164
+  port: 9149
+  server: 43.199.146.29
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇸🇬SG_1|3.1MB/s
+- name: 🇸🇬SG_1|2.6MB/s
+  password: IQ68037294
+  port: 443
+  server: prepared-turkey.rooster465.autos
+  skip-cert-verify: true
+  sni: prepared-turkey.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🇸🇬SG_2|2.4MB/s
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
@@ -51,33 +59,49 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
-- name: 🇸🇬SG_2|2.5MB/s
+- name: 🇸🇬SG_3|3.0MB/s
   password: IQ68037294
   port: 443
-  server: still-mastodon.rooster465.autos
+  server: endless-kiwi.rooster465.autos
   skip-cert-verify: true
-  sni: still-mastodon.rooster465.autos
   type: trojan
   udp: true
-- name: 🇸🇬SG_3|4.7MB/s
-  network: ws
-  port: 2087
-  server: 198.41.223.87
-  servername: 3da0360c.myblog-2hd.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
-  ws-opts:
-    headers:
-      Host: 3da0360c.myblog-2hd.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 🇸🇬SG_4|3.0MB/s
+- name: 🇸🇬SG_4|2.9MB/s
   network: tcp
   password: IQ68037294
   port: '443'
   server: glowing-deer.rooster465.autos
   skip-cert-verify: false
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬SG_5|2.1MB/s
+  network: ws
+  port: '443'
+  server: 66.33.23.152
+  servername: rr-production-4e3f.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 237ac65e-da33-93c3-7e70-a2dd60d54f4a
+  ws-opts:
+    headers:
+      Host: rr-production-4e3f.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /ws/237ac65e-da33-93c3-7e70-a2dd60d54f4a
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇸🇬SG_6|2.1MB/s
+  network: tcp
+  password: IQ68037294
+  port: '443'
+  server: pleased-sawfly.rooster465.autos
+  skip-cert-verify: true
+  sni: pleased-sawfly.rooster465.autos
   type: trojan
   udp: true
