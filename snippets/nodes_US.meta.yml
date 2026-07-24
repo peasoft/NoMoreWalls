@@ -7,6 +7,16 @@ proxies:
   sni: mg2.mangshe.xyz
   tls: false
   type: hysteria2
+- name: 'mtmvpn : telegram 5'
+  obfs: salamander
+  obfs-password: lvy1Hw_j4Hwx8oIL2tEa315Sb4t7QrjF
+  password: hy2_czaawdhc
+  port: 443
+  server: 2.26.92.136
+  skip-cert-verify: false
+  sni: nl2.cleanersaz.help
+  tls: false
+  type: hysteria2
 - name: 美国|@ripaojiedian
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
@@ -31,57 +41,45 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-128-gcm
-  name: 🇺🇸US_1|1.5MB/s
-  password: ba2a429e-dcaa-4d94-a651-99b0a920ee38
-  port: '40031'
-  server: permission_level_01.unclemanco.com
-  type: ss
-  udp: true
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸US_2|2.5MB/s
-  obfs: ''
-  obfs-password: ''
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: '443'
-  server: vpn-us-002.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-us-002.fastervpn.world
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸US_3|2.5MB/s
+- auth: nNS3WyiBOL
+  name: 🇺🇸US_1|3.2MB/s
   obfs: salamander
-  obfs-password: lvy1Hw_j4Hwx8oIL2tEa315Sb4t7QrjF
-  password: hy2_czaawdhc:VwWo0eBZC9jU3xCE0FuTmbX6xmnj33Iq
-  port: '443'
-  server: 2.26.92.136
-  skip-cert-verify: false
-  sni: nl2.cleanersaz.help
+  obfs-password: vwrgaergG
+  password: nNS3WyiBOL
+  port: 19108
+  server: 178.128.65.195
+  skip-cert-verify: true
+  sni: aws.amazon.com
   type: hysteria2
-  up: ''
 - alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_4|1.5MB/s
-  network: ws
-  port: '443'
-  server: subgift1.up.railway.app
-  servername: subgift1.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8835e572-b17b-e7c8-d56e-0e441e3d15c5
-  ws-opts:
-    headers:
-      Host: subgift1.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /ws/8835e572-b17b-e7c8-d56e-0e441e3d15c5
-  xudp: true
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
+  name: 🇺🇸US_2|3.4MB/s
+  password: 56d8a8fd-68b8-47f8-8c7f-98cc675902db
+  port: 8443
+  reduce-rtt: false
+  request-timeout: 0
+  server: us02.uzifan.monster
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: 56d8a8fd-68b8-47f8-8c7f-98cc675902db
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸US_3|2.0MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- cipher: aes-256-cfb
+  name: 🇺🇸US_4|2.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.167.54.100
+  type: ss
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: US_speednode_0055
