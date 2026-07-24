@@ -47,28 +47,81 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  name: 🇩🇪DE_1|1.6MB/s
-  network: grpc
-  port: 2085
-  server: 81.31.211.172
-  tls: false
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_1|2.7MB/s
+  network: xhttp
+  port: '2083'
+  server: securitytrails.com
+  servername: cpn.moniablue.dpdns.org
+  tls: true
   type: vless
   udp: true
-  uuid: 31a62aa2-c465-4c1f-b636-f90578922b5f
+  uuid: 957360f2-2ec4-4638-8cf3-fffc6cc57aa1
+  xhttp-opts:
+    host: cpn.moniablue.dpdns.org
+    mode: auto
+    path: /forall
+    x-padding-bytes: 100-1000
+  xudp: true
+- name: 🇩🇪DE_2|2.7MB/s
+  network: ws
+  port: '80'
+  server: 151.101.56.7
+  type: vless
+  udp: true
+  uuid: ed984f53-b003-4940-b6b2-db22362801e7
+  ws-opts:
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: ''
+  xudp: true
+- encryption: none
+  name: 🇩🇪DE_3|1.7MB/s
+  network: ws
+  port: '80'
+  server: 151.101.193.54
+  type: vless
+  udp: true
+  uuid: de5dcb9e-6a72-45a2-8d3d-de00e5431426
+  ws-opts:
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: ''
+  xudp: true
 - alpn:
   - h3
-  congestion-controller: bbr
-  disable-sni: false
-  name: 🇩🇪DE_2|2.1MB/s
-  password: 3ebac90b-6977-47c0-bef5-b2e37554432c
-  port: 17306
-  server: 89.144.35.232
+  auth_str: dongtaiwang.com
+  down: '55'
+  name: 🇩🇪DE_4|1.8MB/s
+  port: 54177
+  server: 5.83.129.90
   skip-cert-verify: true
-  sni: www.microsoft.com
-  type: tuic
+  sni: bing.com
+  type: hysteria
   udp: true
-  udp-relay-mode: native
-  uuid: 3ebac90b-6977-47c0-bef5-b2e37554432c
+  up: '11'
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇩🇪DE_5|2.1MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: '!!str 3303c7a5'
+  server: 194.93.0.28
+  servername: media2.tcpdoor.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  xudp: true
