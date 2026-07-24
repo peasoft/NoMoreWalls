@@ -27,30 +27,10 @@ proxies:
   sni: www.oracle.com
   tls: false
   type: hysteria2
-- name: 🇩🇪@V2RayyNGvpn کانال ما ❗
-  obfs: salamander
-  obfs-password: t-me-V2RayyNGvpn
-  password: 73x493S1pE
-  port: 31999
-  server: 91.107.152.188
-  skip-cert-verify: true
-  sni: www.amd.com
-  tls: false
-  type: hysteria2
 - name: 🇩🇪 کانال ما @V2RayyNGvpn🇩🇪
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
   password: RSGabzHJGl
-  port: 31999
-  server: 91.107.152.188
-  skip-cert-verify: true
-  sni: www.amd.com
-  tls: false
-  type: hysteria2
-- name: '🇩🇪 کانال ما @V2RayyNGvpn🇩🇪 #1'
-  obfs: salamander
-  obfs-password: t-me-V2RayyNGvpn
-  password: ZkWtnfGK6h
   port: 31999
   server: 91.107.152.188
   skip-cert-verify: true
@@ -67,18 +47,28 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- encryption: none
-  name: 🇩🇪DE_1|1.9MB/s
-  network: ws
-  port: '8880'
-  server: cdn-cloudflare91.korvexe.ir
+- grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  name: 🇩🇪DE_1|1.6MB/s
+  network: grpc
+  port: 2085
+  server: 81.31.211.172
+  tls: false
   type: vless
   udp: true
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
-  ws-opts:
-    headers:
-      Host: cdn-cloudflare91.korvexe.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /shop
-  xudp: true
+  uuid: 31a62aa2-c465-4c1f-b636-f90578922b5f
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
+  name: 🇩🇪DE_2|2.1MB/s
+  password: 3ebac90b-6977-47c0-bef5-b2e37554432c
+  port: 17306
+  server: 89.144.35.232
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: 3ebac90b-6977-47c0-bef5-b2e37554432c
