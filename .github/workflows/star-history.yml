@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 */6 * * *'   # every 6 hours; see interval table below
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/star-history.yml'
 
 permissions:
   contents: write
@@ -28,3 +31,7 @@ jobs:
         git pull origin master
         git add .
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新 Star History"
+    - name: 推送更改
+      uses: ad-m/github-push-action@master
+      with:
+        branch: master
