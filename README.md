@@ -24,6 +24,8 @@
 
 我们新增了 [`snippets` 目录](./snippets/) 来存放从 `list.meta.yml` 中拆分出的配置片段，用于将本项目提供的一些配置整合到你自己的配置中。此目录中还有本项目的独立规则集覆写文件。
 
+免费节点的安全无法保障，不建议通过节点访问明文网站，也 [不要用免费节点挖矿](https://www.youtube.com/watch?v=5Uq8uNVy0DE)！（挖矿协议是明文的，恶意节点可以修改目标钱包）
+
 ### 为什么 *不要* 使用付费节点？
 
 1. 付费节点存在付完费厂商立即跑路的**诈骗风险**，且一旦被骗钱款**无法追回**！
@@ -33,12 +35,12 @@
 
 ## 使用方法
 
+注意：下列 JsDelivr 链接有长时间缓存，得到的订阅可能存在 1 小时 ～ 7 天 不等的延迟。更新订阅时优先使用非 JsDelivr 订阅；如无法更新再使用 JsDelivr 订阅，然后在开启代理的情况下从“原始链接”更新。
+
 添加 Base64 订阅：
 - [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
 - [GhProxy.net](https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
 - 此处不公开部分私有镜像站
-
-以下链接可能不是最新，但绝对不会被封：
 - [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 - [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 - [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
@@ -48,12 +50,20 @@
 - [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
 - [GhProxy.net](https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
 - 此处不公开部分私有镜像站
-
-以下链接可能不是最新，但绝对不会被封：
 - [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
 - [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
 - [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
 - [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
+
+或添加自更新的 Clash Meta 订阅：（适用于不支持自动更新订阅的客户端，或是直接使用内核。尽管该文件很少变更，我们仍然建议您定期手动更新本地配置。更多详情请见 [配置片段说明](./snippets/README.md)）
+
+- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/example.yml)
+- [GhProxy.net](https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/example.yml)
+- 此处不公开部分私有镜像站
+- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/example.yml)
+- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/example.yml)
+- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/example.yml)
+- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/example.yml)
 
 或添加 Sing-Box 订阅：（第三方提供转换，不支持本项目的节点选择和分流规则。建议在本地搭建转换服务。）
 - [转换链接（第三方）](https://subwork.top/singbox?config=https%3A%2F%2Fraw.githubusercontent.com%2Fpeasoft%2FNoMoreWalls%2Fmaster%2Fsnippets%2Fnodes.meta.yml&ua=&selectedRules=%5B%22Location%3ACN%22%2C%22Private%22%2C%22Non-China%22%2C%22Github%22%2C%22Google%22%2C%22Youtube%22%2C%22AI+Services%22%2C%22Telegram%22%5D&customRules=%5B%5D&enable_clash_ui=true)
@@ -120,10 +130,16 @@ git reset --hard origin/master
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=peasoft%2FNoMoreWalls&type=date&legend=top-left">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/star-history/star-history-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/star-history/star-history-light.svg" />
+  <img alt="Star History Chart" src="assets/star-history/star-history.png" />
+</picture>
+
+<!-- <a href="https://www.star-history.com/?repos=peasoft%2FNoMoreWalls&type=date&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=peasoft/NoMoreWalls&type=date&theme=dark&legend=top-left&sealed_token=8UVynllUplJa4vHl5DyiCpLI2RXSk29T0lsBrpwrzwLAbSJZj26QdM8Ci747u68K-UUMdH5GiH86o4tNu0hVYpj6AbR97k5HH730KfsO1wMCMWPsWiqu08zWfVjPUvj6qCu70vTw7w2ukyOzCl8Fzp_6-12EqObw3tw7JorvJ0nCXUB59L42IFPFYb_q" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=peasoft/NoMoreWalls&type=date&legend=top-left&sealed_token=8UVynllUplJa4vHl5DyiCpLI2RXSk29T0lsBrpwrzwLAbSJZj26QdM8Ci747u68K-UUMdH5GiH86o4tNu0hVYpj6AbR97k5HH730KfsO1wMCMWPsWiqu08zWfVjPUvj6qCu70vTw7w2ukyOzCl8Fzp_6-12EqObw3tw7JorvJ0nCXUB59L42IFPFYb_q" />
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=peasoft/NoMoreWalls&type=date&legend=top-left&sealed_token=8UVynllUplJa4vHl5DyiCpLI2RXSk29T0lsBrpwrzwLAbSJZj26QdM8Ci747u68K-UUMdH5GiH86o4tNu0hVYpj6AbR97k5HH730KfsO1wMCMWPsWiqu08zWfVjPUvj6qCu70vTw7w2ukyOzCl8Fzp_6-12EqObw3tw7JorvJ0nCXUB59L42IFPFYb_q" />
  </picture>
-</a>
+</a> -->

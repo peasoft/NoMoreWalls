@@ -2,6 +2,12 @@
 
 这里存放了一些从 `list.meta.yml` 中拆分出的配置片段，用于将本项目提供的一些配置整合到其它配置中。
 
+# 配置示例
+
+见 [example.yml](./example.yml)。
+
+你也可以在不支持自动更新订阅的客户端中直接使用该配置文件，或是直接将其作为内核配置而不使用客户端。尽管该文件很少变更，我们仍然建议您定期手动更新本地配置。该配置未启用局域网访问，包括代理和控制 API。
+
 # 文件说明
 
 ## 覆写规则集
@@ -34,17 +40,13 @@ mihomo-overwrite-url: "https://ghproxy.net/https://raw.githubusercontent.com/pea
 
 注意：广告拦截列表中的域名不会出现在需要走代理的域名列表中，因此即使您没有使用广告屏蔽规则，仍有一些广告会无法加载。
 
-# 配置示例
-
-见 [example.yml](./example.yml)。
-
 # 加速链接（以 Meta 节点列表为例）
+
+注意：下列 JsDelivr 链接有长时间缓存，得到的订阅可能存在 1 小时 ～ 7 天 不等的延迟。更新订阅时优先使用非 JsDelivr 订阅；如无法更新再使用 JsDelivr 订阅，然后在开启代理的情况下从“原始链接”更新。
 
 - 原始链接: `https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/nodes.meta.yml`
 - GhProxy.net: `https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/nodes.meta.yml`
 - 此处不公开部分私有镜像站
-
-以下链接可能不是最新，但绝对不会被封：
 - JsDelivr 默认 (当前 Fastly)：`https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/nodes.meta.yml`
 - JsDelivr Fastly CDN: `https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/nodes.meta.yml`
 - JsDelivr Cloudflare CDN: `https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/nodes.meta.yml`

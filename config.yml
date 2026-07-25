@@ -96,7 +96,8 @@ dns:
   ipv6: true
   enhanced-mode: redir-host
   nameserver:
-    - 223.5.5.5
+    - 223.5.5.5 # AliDNS
+    - 119.29.29.29 # DNSPod
     - 114.114.114.114
   fallback:
     - 8.8.8.8
@@ -210,8 +211,7 @@ rules:
   - DOMAIN-KEYWORD,ghproxy,DIRECT
   - DOMAIN-KEYWORD,gh-proxy,DIRECT
   # - DOMAIN-SUFFIX,zzko.cn,DIRECT
-  - DOMAIN-SUFFIX,jsdelivr.us,REJECT # 已经无了
-  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+  # - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
   # - DOMAIN-SUFFIX,statically.io,🚀 选择代理
   # - DOMAIN-KEYWORD,clash,🚀 选择代理
   # - DOMAIN-KEYWORD,v2ray,🚀 选择代理
@@ -224,13 +224,11 @@ rules:
   - DOMAIN-KEYWORD,gfw,🚀 选择代理
   - DOMAIN-KEYWORD,sagernet,🚀 选择代理
   - DOMAIN-SUFFIX,trafficmanager.net,DIRECT
-  # - DOMAIN-SUFFIX,star-history.com,🚀 选择代理
   - DOMAIN-SUFFIX,ivonblog.com,🚀 选择代理 # 视情况而定
   - DOMAIN-KEYWORD,telegram,🚀 选择代理
   - DOMAIN-KEYWORD,discord,🚀 选择代理
   - DOMAIN-SUFFIX,v1.mk,🚀 选择代理
   - DOMAIN-SUFFIX,outlook.com,DIRECT
-  # - DOMAIN-SUFFIX,lsposed.org,🚀 选择代理
   
   # - DOMAIN-SUFFIX,googleapis.cn,DIRECT
   - DOMAIN,connectivitycheck.gstatic.com,🚀 选择代理 # See #57
@@ -280,8 +278,8 @@ rules:
   - DOMAIN-SUFFIX,douban.com,⛔ 广告拦截
   - DOMAIN-SUFFIX,doubanio.com,⛔ 广告拦截
   - DOMAIN-SUFFIX,luogu.com,🚀 选择代理
-  - DOMAIN-SUFFIX,download.microsoft.com,🐟 漏网之鱼
-  - DOMAIN-SUFFIX,blob.core.windows.net,🐟 漏网之鱼
+  # - DOMAIN-SUFFIX,download.microsoft.com,🐟 漏网之鱼
+  # - DOMAIN-SUFFIX,blob.core.windows.net,🐟 漏网之鱼
   - DOMAIN-SUFFIX,gradle.org,🚀 选择代理
 
 
@@ -384,9 +382,9 @@ rules:
   - DOMAIN-SUFFIX,foxnow.com,🚀 选择代理
   - DOMAIN-SUFFIX,foxplus.com,🚀 选择代理
   - DOMAIN-SUFFIX,foxplay.com,🚀 选择代理
+
   - DOMAIN-SUFFIX,ipinfo.io,🚀 选择代理
   - DOMAIN-SUFFIX,mstage.io,🚀 选择代理
-  - DOMAIN-SUFFIX,now.com,🚀 选择代理
   - DOMAIN-SUFFIX,theplatform.com,🚀 选择代理
   - DOMAIN-SUFFIX,urlload.net,🚀 选择代理
 
@@ -410,13 +408,14 @@ rules:
   - DOMAIN-SUFFIX,joox.com,🚀 选择代理
 
   # > Hong Kong TV
-  - DOMAIN-KEYWORD,nowtv100,🚀 选择代理
   - DOMAIN-KEYWORD,rthklive,🚀 选择代理
+  - DOMAIN-KEYWORD,rthktv,🚀 选择代理
   - DOMAIN-SUFFIX,rthk.hk,🚀 选择代理
-  - DOMAIN,news.tvb.com,🐟 漏网之鱼
-  - DOMAIN-SUFFIX,mytvsuper.com,🚀 选择代理
-  - DOMAIN-SUFFIX,tvb.com,🚀 选择代理
-  - DOMAIN-SUFFIX,tvb.com.hk,🚀 选择代理
+  - DOMAIN-SUFFIX,now.com,🚀 选择代理
+  - DOMAIN-SUFFIX,viu.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,mytvsuper.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,tvb.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,tvb.com.hk,🚀 选择代理
 
   # > Netflix
   - DOMAIN-SUFFIX,netflix.com,🚀 选择代理
@@ -479,9 +478,9 @@ rules:
 
   # China Area Network
   # > Microsoft
-  - DOMAIN-SUFFIX,microsoft.com,DIRECT
-  - DOMAIN-SUFFIX,windows.com,DIRECT
-  - DOMAIN-SUFFIX,windows.net,DIRECT
+  # - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  # - DOMAIN-SUFFIX,windows.com,DIRECT
+  # - DOMAIN-SUFFIX,windows.net,DIRECT
   - DOMAIN-SUFFIX,sfx.ms,DIRECT
   - DOMAIN-SUFFIX,sharepoint.com,DIRECT
   - DOMAIN-KEYWORD,officecdn,DIRECT
@@ -812,7 +811,6 @@ rules:
   - DOMAIN-SUFFIX,naver.com,🚀 选择代理
   - DOMAIN-SUFFIX,nikkei.com,🚀 选择代理
   - DOMAIN-SUFFIX,nofile.io,🚀 选择代理
-  - DOMAIN-SUFFIX,now.com,🚀 选择代理
   - DOMAIN-SUFFIX,nyt.com,🚀 选择代理
   - DOMAIN-SUFFIX,nytchina.com,🚀 选择代理
   - DOMAIN-SUFFIX,nytcn.me,🚀 选择代理
@@ -886,52 +884,52 @@ rules:
   - DOMAIN,id.heroku.com,🚀 选择代理
 
   # (Region-Restricted Access Denied)
-  - DOMAIN-SUFFIX,apartmentratings.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,apartments.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,bankmobilevibe.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,bing.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,booktopia.com.au,🌐 突破锁区
-  - DOMAIN-SUFFIX,centauro.com.br,🌐 突破锁区
-  - DOMAIN-SUFFIX,clearsurance.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,costco.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,crackle.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,depositphotos.cn,🌐 突破锁区
-  - DOMAIN-SUFFIX,dish.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,dmm.co.jp,🌐 突破锁区
-  - DOMAIN-SUFFIX,dmm.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,dnvod.tv,🌐 突破锁区
-  - DOMAIN-SUFFIX,esurance.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,extmatrix.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,fastpic.ru,🌐 突破锁区
-  - DOMAIN-SUFFIX,flipboard.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,fnac.be,🌐 突破锁区
-  - DOMAIN-SUFFIX,fnac.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,funkyimg.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,fxnetworks.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,gettyimages.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,jcpenney.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,kknews.cc,🌐 突破锁区
-  - DOMAIN-SUFFIX,nationwide.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,nbc.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,nordstrom.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,nordstromimage.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,nordstromrack.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,read01.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,superpages.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,target.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,thinkgeek.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,tracfone.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,uploader.jp,🌐 突破锁区
-  - DOMAIN-SUFFIX,vevo.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,viu.tv,🌐 突破锁区
-  - DOMAIN-SUFFIX,vk.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,vsco.co,🌐 突破锁区
-  - DOMAIN-SUFFIX,xfinity.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,zattoo.com,🌐 突破锁区
-  - DOMAIN,abc.com,🌐 突破锁区
-  - DOMAIN,abc.go.com,🌐 突破锁区
-  - DOMAIN,abc.net.au,🌐 突破锁区
-  - DOMAIN,wego.here.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,apartmentratings.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,apartments.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,bankmobilevibe.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,bing.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,booktopia.com.au,🌐 突破锁区
+  # - DOMAIN-SUFFIX,centauro.com.br,🌐 突破锁区
+  # - DOMAIN-SUFFIX,clearsurance.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,costco.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,crackle.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,depositphotos.cn,🌐 突破锁区
+  # - DOMAIN-SUFFIX,dish.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,dmm.co.jp,🌐 突破锁区
+  # - DOMAIN-SUFFIX,dmm.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,dnvod.tv,🌐 突破锁区
+  # - DOMAIN-SUFFIX,esurance.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,extmatrix.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,fastpic.ru,🌐 突破锁区
+  # - DOMAIN-SUFFIX,flipboard.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,fnac.be,🌐 突破锁区
+  # - DOMAIN-SUFFIX,fnac.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,funkyimg.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,fxnetworks.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,gettyimages.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,jcpenney.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,kknews.cc,🌐 突破锁区
+  # - DOMAIN-SUFFIX,nationwide.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,nbc.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,nordstrom.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,nordstromimage.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,nordstromrack.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,read01.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,superpages.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,target.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,thinkgeek.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,tracfone.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,uploader.jp,🌐 突破锁区
+  # - DOMAIN-SUFFIX,vevo.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,viu.tv,🌐 突破锁区
+  # - DOMAIN-SUFFIX,vk.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,vsco.co,🌐 突破锁区
+  # - DOMAIN-SUFFIX,xfinity.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,zattoo.com,🌐 突破锁区
+  # - DOMAIN,abc.com,🌐 突破锁区
+  # - DOMAIN,abc.go.com,🌐 突破锁区
+  # - DOMAIN,abc.net.au,🌐 突破锁区
+  # - DOMAIN,wego.here.com,🌐 突破锁区
   #USER-AGENT,Roam*,🌐 突破锁区
 
   # (The Most Popular Sites)
@@ -1258,7 +1256,7 @@ rules:
   - DOMAIN-SUFFIX,nytimes.com,🚀 选择代理
   - DOMAIN-SUFFIX,onedrive.com,🚀 选择代理
   - DOMAIN-SUFFIX,openvpn.net,🚀 选择代理
-  - DOMAIN-SUFFIX,parallels.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,parallels.com,🌐 突破锁区
   - DOMAIN-SUFFIX,pinterest.com,🚀 选择代理
   - DOMAIN-SUFFIX,pixiv.net,🚀 选择代理
   - DOMAIN-SUFFIX,shadowsocks.org,🚀 选择代理
