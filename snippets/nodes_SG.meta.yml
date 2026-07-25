@@ -15,12 +15,12 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 新加坡|@ripaojiedian
+- name: 🇸🇬SG_4|4.1MB/s
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
   server: 43.207.96.164
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
@@ -31,7 +31,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3|@ripaojiedian
+- name: 🇺🇸US_4|2.6MB/s
   network: tcp
   password: BxceQaOe
   port: 29085
@@ -39,39 +39,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: 🇸🇬SG_1|2.6MB/s
-  network: xhttp
-  packet-encoding: xudp
-  port: 443
-  server: cdd.themesh.site
-  servername: cdd.themesh.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6fa9f6ae-877b-4858-b128-a8377fd9038b
-  xhttp-opts:
-    host: cdd.themesh.site
-    mode: packet-up
-    path: /api/v3/content/
-    sc-max-each-post-bytes: 1500000
-    sc-min-posts-interval-ms: 50-100
-    seq-key: x_seq
-    seq-placement: query
-    session-key: x_session
-    session-placement: query
-    uplink-chunk-size: 4096-8192
-    uplink-data-key: X-Data
-    uplink-data-placement: header
-    uplink-http-method: GET
-    x-padding-header: Referer
-    x-padding-key: utm_source
-    x-padding-method: tokenish
-    x-padding-placement: queryInHeader
-- name: 🇸🇬SG_2|2.8MB/s
+- name: 🇸🇬SG_1|3.8MB/s
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
@@ -83,18 +51,3 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
-- name: 🇸🇬SG_3|2.0MB/s
-  network: ws
-  port: '2095'
-  server: www.wto.org
-  servername: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2228.0 Safari/537.36
-    path: /
-  xudp: true
