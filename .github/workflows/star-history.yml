@@ -1,0 +1,30 @@
+name: Star History
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours; see interval table below
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: star-history
+  cancel-in-progress: true  # collapse a burst of stars into one run
+
+jobs:
+  star-history:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: narayann7/star-history-action@v1
+      with:
+        update-readme: false
+        commit: false
+    - name: 提交更改
+      run: |                 
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git pull origin master
+        git add .
+        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新 Star History"

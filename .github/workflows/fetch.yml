@@ -31,12 +31,6 @@ jobs:
     - name: 执行任务
       run: python ./fetch.py
 
-    - name: 更新 Star History
-      uses: narayann7/star-history-action@v1
-      with:
-        update-readme: false
-        commit: false
-
     - name: 提交更改
       run: |                 
         git config --local user.email "actions@github.com"
