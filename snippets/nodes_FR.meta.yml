@@ -1,15 +1,14 @@
 proxies:
-- alpn:
-  - h3
-  congestion-controller: bbr
-  disable-sni: false
-  name: 🇫🇷FR_1|1.6MB/s
-  password: dongtaiwang.com
-  port: 33888
-  server: 195.154.41.99
-  skip-cert-verify: true
-  sni: bing.com
-  type: tuic
-  udp: true
-  udp-relay-mode: native
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇫🇷FR_1|1.5MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: '!!str 4fa44664f6a566d3'
+  server: germany.superbuba.top
+  servername: germany.superbuba.top
+  tls: true
+  type: vless
+  uuid: b6af5776-fede-4765-b86c-806e827e9a07
