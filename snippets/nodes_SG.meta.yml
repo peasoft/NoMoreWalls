@@ -15,57 +15,110 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 新加坡|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡|@ripaojiedian
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
   server: 43.207.96.164
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡2|@ripaojiedian
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
   server: 18.166.52.50
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 29085
   server: 18.166.50.152
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 48738
+  server: 18.166.29.24
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 48738
+  server: 18.163.181.97
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 32434
+  server: 18.166.29.72
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇸🇬SG_1|2.5MB/s
+  name: 🇸🇬SG_1|1.8MB/s
   network: ws
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: '443'
-  server: 173.245.58.87
-  servername: t1s1.rittbo.kdns.fr
+  server: 188.164.248.122
+  skip-cert-verify: false
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.101 Safari/537.36
+    path: /in-pdr
+- encryption: none
+  name: 🇸🇬SG_2|3.3MB/s
+  network: ws
+  port: '8080'
+  server: 162.159.43.177
+  servername: still-shadow-7b68.lakll.workers.dev
+  type: vless
+  udp: true
+  uuid: 0a8fb8ca-385a-c7bb-41b3-884a0000001a
+  ws-opts:
+    headers:
+      Host: still-shadow-7b68.lakll.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.115 Safari/537.36
+    path: /mohsen
+  xudp: true
+- encryption: none
+  name: 🇸🇬SG_3|3.0MB/s
+  network: ws
+  port: '2095'
+  server: openai.com
+  type: vless
+  udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-q.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇸🇬SG_4|1.8MB/s
+  network: grpc
+  port: '44443'
+  reality-opts:
+    public-key: kk6t0xig_xZViUWnM-hjRGY_-P29fA6DUggL2eEkyRg
+    short-id: '!!str '
+  server: 193.233.218.49
+  servername: 5post-gate.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /fp
+  uuid: b4ee2a7b-1966-4611-897f-c27f3e0e0b4a
   xudp: true
-- down: ''
-  fingerprint: ''
-  name: 🇸🇬SG_2|3.8MB/s
-  obfs: salamander
-  obfs-password: xK9mN2pLq5vR8wB3
-  password: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D
-  port: '20878'
-  server: sg5.dexlos.com
-  skip-cert-verify: false
-  sni: ''
-  type: hysteria2
-  up: ''
