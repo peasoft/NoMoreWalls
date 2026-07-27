@@ -25,13 +25,21 @@ jobs:
         update-readme: false
         commit: false
     - name: 提交更改
+      id: commit
       run: |                 
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
         git add .
+        if git diff --cached --quiet; then
+          echo "No staged changes to commit."
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新 Star History"
+        echo "changed=true" >> "$GITHUB_OUTPUT"
     - name: 推送更改
+      if: ${{ steps.commit.outputs.changed == 'true' }}
       uses: ad-m/github-push-action@master
       with:
         branch: master
