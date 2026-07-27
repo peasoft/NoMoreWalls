@@ -72,7 +72,7 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 55 Mbps
-  name: 🇩🇪DE_1|1.8MB/s
+  name: 🇩🇪DE_1|1.9MB/s
   port: 26691
   protocol: udp
   server: 5.83.129.143
@@ -84,7 +84,7 @@ proxies:
   - h3
   congestion-controller: bbr
   disable-sni: false
-  name: 🇩🇪DE_2|2.2MB/s
+  name: 🇩🇪DE_2|2.4MB/s
   password: 261d95d4-73c0-4c33-957a-04b6d407bea2
   port: 27947
   reduce-rtt: false
@@ -95,96 +95,70 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2
-- client-fingerprint: firefox
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.S5tQO3pPOG2nemudouz-HV4ocOjLbBcECmPWbc5l3hc
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|2.9MB/s
-  network: tcp
-  port: 443
+  http-opts:
+    headers:
+      Host:
+      - icloud.com
+    method: GET
+    path:
+    - /@ProxyVPNVip
+  name: 🇩🇪DE_3|1.8MB/s
+  network: http
+  packet-encoding: xudp
+  port: 8080
   reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: '!!str d67ec5a8fc40ebea'
-  server: ger16.myxasecure.space
-  servername: ger16.myxasecure.space
+    public-key: 43RSx9zmb505nLdhUUbRQueJhKnWMoVo1Gia8aB3VD0
+    short-id: '!!str 49d12a'
+  server: 95.38.197.126
+  servername: icloud.com
   tls: true
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-- name: 🇩🇪DE_4|2.7MB/s
-  network: ws
-  port: 80
-  server: 151.101.56.7
-  tls: false
-  type: vless
   udp: true
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-    path: /
-- encryption: none
-  name: 🇩🇪DE_5|1.5MB/s
-  network: ws
-  port: '80'
-  server: 151.101.193.54
-  type: vless
-  udp: true
-  uuid: a69d5300-8101-47b5-9448-6730f228af37
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: ''
-  xudp: true
+  uuid: 88888888-8888-8888-8888-888888888888
 - alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: 🇩🇪DE_6|2.3MB/s
-  network: xhttp
+  - h3
+  auth_str: dongtaiwang.com
+  down: '55'
+  name: 🇩🇪DE_4|2.0MB/s
+  port: 54177
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  udp: true
+  up: '11'
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_5|2.1MB/s
+  network: tcp
   port: '443'
-  server: 167.82.101.210
-  servername: global.fastly.coM.
+  reality-opts:
+    public-key: eOV98nPiIYiVYcA7k6ddPqgEVfbrR3jJmIQTGquJUgY
+    short-id: '!!str ba9cad63871fb391'
+  server: 159.195.159.12
+  servername: dem.themesh.site
   tls: true
   type: vless
   udp: true
-  uuid: 672e23dd-be41-44fc-b606-e6891fee5e6f
-  xhttp-opts:
-    host: farangis.global.ssl.fastly.neT.
-    mode: auto
-    path: /
-    sc-max-each-post-bytes: 1000000
-    sc-min-posts-interval-ms: 30
-    x-padding-bytes: 100-1000
+  uuid: 49e8f20c-6a27-4637-9e20-e0ea18a75766
   xudp: true
 - client-fingerprint: firefox
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_9|1.7MB/s
-  network: tcp
-  port: '443'
+  grpc-opts:
+    grpc-service-name: neurex
+  name: 🇩🇪DE_6|2.1MB/s
+  network: grpc
+  port: '16923'
   reality-opts:
-    public-key: ZCYpNgP7BsaN5WzpxhO8IXtfoHm2DWZuchCAl-ACmyI
-    short-id: '!!str 6e4a9c1f0b7d23a8'
-  server: 5.42.121.154
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: '!!str 10ffb85da1c2d986'
+  server: 89.222.123.209
   servername: api-maps.yandex.ru
   tls: true
   type: vless
   udp: true
-  uuid: 11113f77-b439-4911-a8dd-414d2ee36b59
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_10|2.4MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: inkvLvTWXaBAAubrTpivxrJAWPYldv2rBG25zzCd6k0
-    short-id: '!!str '
-  server: zonid.ietotozheproidet.site
-  servername: dowload.max.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: ad790e5f-3e31-43c6-b047-336577a3b3de
+  uuid: 3e5797ff-cb46-48b2-be3c-1fc78a37a439
   xudp: true
