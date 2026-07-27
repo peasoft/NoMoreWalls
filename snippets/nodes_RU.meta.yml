@@ -1,8 +1,34 @@
 proxies:
+- alpn:
+  - h3
+  auth: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  name: 🇷🇺RU_1|2.1MB/s
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  port: 443
+  server: 91.196.32.163
+  skip-cert-verify: true
+  sni: germany3.h2corp.local
+  type: hysteria2
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇷🇺RU_1|1.6MB/s
+  name: 🇷🇺RU_2|2.5MB/s
+  network: raw
+  port: '443'
+  reality-opts:
+    public-key: F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA
+    short-id: '!!str '
+  server: 178.213.18.92
+  servername: pro-ru-bridge.emrata.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 42c3337e-57f5-48d8-b7ad-46f75f5e7e8a
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺RU_3|2.7MB/s
   network: raw
   port: '443'
   reality-opts:
@@ -14,6 +40,23 @@ proxies:
   type: vless
   udp: true
   uuid: 42c3337e-57f5-48d8-b7ad-46f75f5e7e8a
+  xudp: true
+- client-fingerprint: edge
+  encryption: none
+  grpc-opts:
+    grpc-service-name: cdn-spb.buildsnow.top
+  name: 🇷🇺RU_4|2.7MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: SthWDW71MJzhV10XWlbGwdc0BJ6W1ILfny_xn2D0e1A
+    short-id: '!!str 0ac1b591aafcfa51'
+  server: 89.125.55.113
+  servername: cdn-spb.buildsnow.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: f9922bed-4524-4a6a-8709-9c2e26dedee9
   xudp: true
 - client-fingerprint: qq
   flow: xtls-rprx-vision
