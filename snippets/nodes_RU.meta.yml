@@ -1,11 +1,11 @@
 proxies:
 - client-fingerprint: edge
+  encryption: none
   grpc-opts:
-    grpc-mode: gun
     grpc-service-name: cdn-spb.buildsnow.top
-  name: 🇷🇺RU_1|2.0MB/s
+  name: 🇷🇺RU_1|3.6MB/s
   network: grpc
-  port: 443
+  port: '443'
   reality-opts:
     public-key: SthWDW71MJzhV10XWlbGwdc0BJ6W1ILfny_xn2D0e1A
     short-id: '!!str 0ac1b591aafcfa51'
@@ -15,48 +15,20 @@ proxies:
   type: vless
   udp: true
   uuid: f9922bed-4524-4a6a-8709-9c2e26dedee9
-- client-fingerprint: edge
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_2|3.0MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc
-    short-id: '!!str 9b0c1d2e'
-  server: 62.233.43.34
-  servername: www.amd.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2b947013-7551-4a8e-bc4f-470e9e987e88
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_3|3.2MB/s
-  network: tcp
-  port: '12303'
-  reality-opts:
-    public-key: djNTwe-D7XWCrj4sG3b0Kz2tSuJ7epWKoQYHIv1AtzQ
-    short-id: '!!str 4646ff0a2c0bafbb'
-  server: 213.108.3.228
-  servername: dl.google.com
-  tls: true
+- encryption: none
+  name: RU_speednode_0076
+  network: ws
+  port: 8880
+  server: 194.67.102.65
+  servername: rutube.ummapeople.online
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 40e2d726-40fb-46c8-b4e2-5a88de1d3da6
+  uuid: fd22ad82-2d89-4338-b72c-5092ae699c7d
+  ws-opts:
+    headers:
+      Host: rutube.ummapeople.online
+    path: /rutube
   xudp: true
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: RU_speednode_0067
-  port: 443
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  server: ruded1.onlinestreamself.com
-  servername: apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 64b6f905-94d5-4745-8f92-cafa107b7c16

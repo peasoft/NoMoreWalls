@@ -1,5 +1,5 @@
 proxies:
-- name: 美国|@ripaojiedian
+- name: 🇺🇸US_7|2.7MB/s
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 17005
@@ -7,7 +7,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国2|@ripaojiedian
+- name: 🇺🇸US_8|2.5MB/s
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 49277
@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
+- name: 🇺🇸US_9|2.3MB/s
   network: tcp
   password: BxceQaOe
   port: 29085
@@ -23,20 +23,35 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alpn:
-  - h3
-  auth: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  name: 🇺🇸US_1|2.5MB/s
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+- auth: 3f3da036-ab8f-405e-a5fd-e7223cb39866
+  name: 🇺🇸US_1|2.6MB/s
+  password: 3f3da036-ab8f-405e-a5fd-e7223cb39866
   port: 443
-  server: 91.196.32.163
+  server: 72.56.22.209
   skip-cert-verify: true
-  sni: germany3.h2corp.local
+  sni: h1.fogplay-mts.ru
   type: hysteria2
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   name: 🇺🇸US_2|2.0MB/s
+  network: ws
+  password: MiTiVPN
+  port: '2087'
+  server: 104.18.6.178
+  skip-cert-verify: true
+  sni: g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/nl
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇺🇸US_3|2.6MB/s
   network: ws
   password: MITIVPN
   port: '2053'
@@ -47,83 +62,90 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de
-- alterId: 2
-  cipher: auto
-  name: 🇺🇸US_3|3.5MB/s
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.Ytz2lj69scaM0GCvRluz5R-bsLN3G7hyDmkZpZSS1UA
+  name: 🇺🇸US_4|2.8MB/s
+  network: xhttp
+  port: '8443'
+  server: panel.vguardnet.xyz
+  servername: pcdn.vguardnet.xyz
+  tls: true
+  type: vless
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 511af603-acac-4343-a2e5-a90bc4a9321a
+  xhttp-opts:
+    host: pcdn.vguardnet.xyz
+    mode: auto
+    path: /rsfsgssdfdsg
+    x-padding-bytes: 100-1000
+  xudp: true
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸US_5|3.1MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
 - down: ''
   fingerprint: ''
-  name: 🇺🇸US_4|2.7MB/s
+  name: 🇺🇸US_6|2.4MB/s
   obfs: ''
   obfs-password: ''
-  password: 042a1881-44e4-4781-bd40-bf75164faf4f
-  port: '443'
-  server: usp.noesissite.ru
-  skip-cert-verify: false
-  sni: usp.noesissite.ru
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸US_5|2.6MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 3f3da036-ab8f-405e-a5fd-e7223cb39866
-  port: '443'
-  server: 72.56.22.209
-  skip-cert-verify: false
-  sni: h1.fogplay-mts.ru
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-us-004.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-us-004.fastervpn.world
   type: hysteria2
   up: ''
 - alpn:
   - http/1.1
-  client-fingerprint: ios
+  client-fingerprint: chrome
   encryption: none
-  name: 🇺🇸US_6|2.4MB/s
+  name: 🇺🇸US_10|2.3MB/s
   network: ws
   port: '443'
-  server: rvg-production-3b6b.up.railway.app
-  servername: rvg-production-3b6b.up.railway.app
+  server: ezaccess1-spider-ezaccess1-c797.up.railway.app
+  servername: ezaccess1-spider-ezaccess1-c797.up.railway.app
   tls: true
   type: vless
   udp: true
-  uuid: 2426131a-e344-8a52-f535-7148cc61ae0f
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: rvg-production-3b6b.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/35.0.1916.153 Safari/537.36
-    path: /ws/2426131a-e344-8a52-f535-7148cc61ae0f
+      Host: ezaccess1-spider-ezaccess1-c797.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /ws/4687a63de90b8e1b65dd1a6d1610968c
   xudp: true
-- encryption: none
-  name: 🇺🇸US_7|1.5MB/s
-  network: ws
-  port: '8880'
-  server: 50.62.194.30
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_11|2.5MB/s
+  network: raw
+  port: '443'
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+    short-id: '!!str '
+  server: 94.139.251.189
+  servername: apple.com
+  tls: true
   type: vless
   udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime37.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/68.0.3440.106 Safari/537.36
-    path: /
+  uuid: 64b6f905-94d5-4745-8f92-cafa107b7c16
   xudp: true
 - client-fingerprint: firefox
   encryption: none
   grpc-opts:
     grpc-service-name: moktana.net.v1.StreamService
-  name: 🇺🇸US_8|2.1MB/s
+  name: 🇺🇸US_12|1.9MB/s
   network: grpc
   port: '443'
   reality-opts:
@@ -136,40 +158,9 @@ proxies:
   udp: true
   uuid: 696915f2-5ad4-452b-987c-d83d29d0503a
   xudp: true
-- encryption: none
-  name: 🇺🇸US_9|2.6MB/s
-  network: ws
-  port: '8880'
-  server: 130.49.148.134
-  type: vless
-  udp: true
-  uuid: 6ed59a5b-efef-4ddf-99f2-57d200caed47
-  ws-opts:
-    headers:
-      Host: cnd.usa.newwaycdn.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.87 Safari/537.36
-    path: /cdn/assets/stream
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_10|1.5MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I
-    short-id: '!!str 197e9c7abe'
-  server: r-nl-host.musicboss.eu
-  servername: musicboss.eu
-  tls: true
-  type: vless
-  udp: true
-  uuid: 817c009c-bfaa-47b4-b5b8-2930f83568ca
-  xudp: true
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 🇺🇸US_11|2.1MB/s
+  name: 🇺🇸US_13|1.6MB/s
   network: tcp
   port: '443'
   reality-opts:
@@ -182,102 +173,73 @@ proxies:
   udp: true
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   xudp: true
-- encryption: none
-  name: 🇺🇸US_12|2.8MB/s
-  network: ws
-  port: '8880'
-  server: 104.16.98.215
-  type: vless
-  udp: true
-  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
-  ws-opts:
-    headers:
-      Host: super-sunset-010c.24-43d.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-  xudp: true
-- client-fingerprint: firefox
+- client-fingerprint: ios
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_13|1.9MB/s
-  network: tcp
-  port: '443'
+  name: 🇺🇸US_14|1.8MB/s
+  network: xhttp
+  port: '58903'
   reality-opts:
-    public-key: QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I
-    short-id: '!!str 197e9c7abe'
-  server: 153.76.117.91
-  servername: musicboss.eu
+    public-key: 1d2s37bpFzTxo6cbhflLu7It7pIydGn5E3FVQh_8cnI
+    short-id: '!!str c47dd7bde0'
+  server: 66.33.22.225
+  servername: is1-ssl.mzstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: 817c009c-bfaa-47b4-b5b8-2930f83568ca
+  uuid: adeed323-e702-409a-afb1-1d2e4fdb6ee9
+  xhttp-opts:
+    mode: packet-up
+    path: /
+    seq-placement: path
+    session-placement: path
+    uplink-data-placement: body
+    x-padding-bytes: 100-1000
   xudp: true
-- name: US_speednode_0068
-  password: 16955d72-1794-11f0-a035-f23c95b6f51d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0078
   port: 443
-  server: 87992eef-te9j40-teq7xb-dnss.fmtdc1.sghuawei.com
+  reality-opts:
+    public-key: 4ndg8TcyXMWmnEvthjh9mIWJ9mc85jzy_G9D4D5xGxM
+    short-id: '!!str 808a7e8a2e32c697'
+  server: 130.49.185.196
+  servername: site.rumedia-cdn.com
+  skip-cert-verify: false
   tls: true
-  type: http
+  type: vless
   udp: true
-  username: 16955d72-1794-11f0-a035-f23c95b6f51d
-- name: US_speednode_0069
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.152.23
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: US_speednode_0070
-  network: ws
-  password: humanity
-  port: 443
-  server: 208.103.161.170
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
-- name: US_speednode_0071
+  uuid: e3c56988-5261-400f-b21b-6af5fa6efae1
+- name: US_speednode_0079
   network: ws
   port: 80
-  server: 167.82.0.1
+  server: 151.101.56.7
   servername: BankMelat.glObal.ssl.faStly.nEt.
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   ws-opts:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
     path: /
-- name: US_speednode_0073
+- name: US_speednode_0080
   network: ws
   port: 80
-  server: 151.101.56.7
-  servername: 151.101.56.7
+  server: 151.101.193.54
+  servername: BankMelat.glObal.ssl.faStly.nEt.
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   ws-opts:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
     path: /
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: US_speednode_0075
+  name: US_speednode_0081
   port: 443
   reality-opts:
     public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
