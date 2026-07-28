@@ -39,20 +39,20 @@ proxies:
   sni: www.refersion.com
   tls: false
   type: hysteria2
-- name: 🇩🇪 Telegram = V2RayyNGvpn 🇩🇪
-  obfs: salamander
-  obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
-  password: V2RayyNGvpn
-  port: 443
-  server: 91.107.178.22
-  skip-cert-verify: true
-  sni: www.refersion.com
-  tls: false
-  type: hysteria2
 - name: 🇩🇪 t- me - V2RayyNGvpn 🇩🇪
   obfs: salamander
   obfs-password: V2RayyNGvpn
   password: c8L7Asi4ur
+  port: 43913
+  server: 91.107.178.22
+  skip-cert-verify: false
+  sni: assets.gateway-stream.com
+  tls: false
+  type: hysteria2
+- name: 🇩🇪 Telegram= V2RayyNGvpn 🇩🇪2
+  obfs: salamander
+  obfs-password: V2RayyNGvpn
+  password: pBrV8FUdJf
   port: 43913
   server: 91.107.178.22
   skip-cert-verify: false
@@ -69,14 +69,119 @@ proxies:
   sni: www.refersion.com
   tls: false
   type: hysteria2
-- auth: 92e82460-9a6f-4a1d-b455-d96e036eee4a
-  name: 🇩🇪DE_1|2.1MB/s
-  password: 92e82460-9a6f-4a1d-b455-d96e036eee4a
-  port: 8443
-  server: s1.monitoring-msk.online
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪DE_1|1.7MB/s
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
   skip-cert-verify: true
-  sni: s1.monitoring-msk.online
-  type: hysteria2
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🇩🇪DE_2|2.0MB/s
+  port: 26691
+  protocol: udp
+  server: 5.83.129.143
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- name: 🇩🇪DE_3|2.6MB/s
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: de.catxstar.com
+  type: trojan
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇩🇪DE_4|1.7MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: '!!str 3303c7a5'
+  server: 194.93.0.28
+  servername: media2.tcpdoor.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
+  name: 🇩🇪DE_5|2.6MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: 8foPheDUi9ULJfe5UuxfspzwQ7J5JZg-2J1XkhL1B1I
+    short-id: '!!str 0768452b5e736e7f'
+  server: get.noneok.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad5ff95a-81a8-4006-8771-8e33f0bcd9aa
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_6|2.6MB/s
+  network: tcp
+  port: '31911'
+  reality-opts:
+    public-key: p1V7w_ax6Zq_Hd8eQnYisYSvfffmxu-t4KVDy6tVFGE
+    short-id: '!!str ec'
+  server: ray1.gogoli.xyz
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e1eaf7f-97e8-4465-9de6-0cc55e106c3e
+  xudp: true
+- name: 🇩🇪DE_7|2.6MB/s
+  network: ws
+  port: '2052'
+  server: 172.67.157.241
+  type: vless
+  udp: true
+  uuid: 5cdcbd83-0742-4f45-a098-02340aa18f2b
+  ws-opts:
+    headers:
+      Host: n5.droonix.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: neurex
+  name: 🇩🇪DE_8|1.8MB/s
+  network: grpc
+  port: '16923'
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: '!!str 10ffb85da1c2d986'
+  server: 159.195.12.98
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 753dd705-f4ae-4f76-9b78-0362a3039035
+  xudp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: DE_speednode_0003
@@ -112,21 +217,6 @@ proxies:
   network: ws
   port: 2053
   server: 147.45.196.240
-  servername: forfreeuse.sub-flow.online
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  ws-opts:
-    headers:
-      Host: forfreeuse.sub-flow.online
-    path: /
-- client-fingerprint: chrome
-  name: DE_speednode_0006
-  network: ws
-  port: 2053
-  server: 150.230.146.170
   servername: forfreeuse.sub-flow.online
   skip-cert-verify: true
   tls: true
