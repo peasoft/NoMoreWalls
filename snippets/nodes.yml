@@ -107,32 +107,32 @@ proxies:
 - name: 香港3|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 47867
-  server: 18.166.67.128
+  port: 13118
+  server: 18.163.118.58
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 7674
-  server: 16.162.119.232
+  port: 11035
+  server: 95.40.61.23
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 39412
-  server: 43.198.187.250
+  port: 27161
+  server: 43.199.34.153
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 6102
-  server: 18.183.93.4
+  port: 45691
+  server: 18.163.208.174
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -140,7 +140,7 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 38937
-  server: 16.162.91.50
+  server: 18.162.62.144
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -148,7 +148,7 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 40138
-  server: 16.163.57.145
+  server: 18.163.85.97
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -156,23 +156,23 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
-  server: 18.166.67.128
+  server: 18.163.180.201
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 6357
-  server: 16.162.91.50
-  skip-cert-verify: true
+  port: 48738
+  server: 18.163.180.201
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 32434
-  server: 18.166.29.72
+  port: 9194
+  server: 18.162.152.65
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -180,7 +180,7 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 17005
-  server: 18.163.123.29
+  server: 16.162.105.149
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -188,15 +188,15 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 49277
-  server: 18.163.123.29
+  server: 16.162.105.149
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 34638
-  server: 18.183.93.4
+  port: 29085
+  server: 95.41.27.1
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -211,54 +211,65 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇺🇸US_3|2.2MB/s
+  name: 🇬🇧GB_1|3.8MB/s
   password: amazonskr05
   port: 443
-  server: 100.58.124.178
+  server: 18.170.212.188
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇦UA_1|1.8MB/s
-  password: XF0klw7870vXn3uQIxe19Q
-  port: '1080'
-  server: 194.54.80.37
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇴RO_1|2.0MB/s
-  password: XF0klw7870vXn3uQIxe19Q
-  port: '1080'
-  server: 146.70.254.238
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇭🇰HK_1|2.1MB/s
-  network: tcp
-  password: FC60532879
-  port: '443'
-  server: saved-mudfish.rooster465.autos
-  skip-cert-verify: false
-  sni: saved-mudfish.rooster465.autos
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇺🇸US_2|2.0MB/s
+  network: ws
+  password: MITIVPN
+  port: '2053'
+  server: 104.17.147.22
+  skip-cert-verify: true
+  sni: ikk---7-MiTiVPN----o.kingnetwork.ir
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷KR_1|2.7MB/s
-  network: tcp
-  password: FC60532879
-  port: '443'
-  server: quick-tiger.rooster465.autos
-  skip-cert-verify: false
-  sni: quick-tiger.rooster465.autos
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪DE_1|3.3MB/s
+  network: ws
+  password: MiTiVPN
+  port: '2096'
+  server: 162.159.140.91
+  skip-cert-verify: true
+  sni: ib-bbg--MiTiVPN---MiTiVPN-u.kingnetwork.ir
   type: trojan
   udp: true
-- name: 🇹🇭TH_1|3.8MB/s
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/fl
+- client-fingerprint: chrome
+  name: 🇲🇾MY_1|4.8MB/s
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20023
+  port: '20048'
   server: oplosgru-c.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- name: 🇺🇦UA_2|2.4MB/s
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_3|3.5MB/s
+  port: 30808
+  server: v8.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇺🇦UA_1|2.6MB/s
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20066
   server: oplosgru-c.catcat321.com
@@ -266,13 +277,54 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- name: 🇩🇪DE_4|2.0MB/s
+- name: 🇩🇪DE_5|1.8MB/s
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: Hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   sni: de.catxstar.com
   type: trojan
+  udp: true
+- name: 🇲🇾MY_2|3.4MB/s
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20031
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇯🇵JP_1|3.0MB/s
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20129
+  server: Hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇳🇴NO_1|1.7MB/s
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20085
+  server: Hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|3.3MB/s
+  network: tcp
+  password: JT80563429
+  port: '443'
+  server: 15.237.217.186
+  skip-cert-verify: false
+  sni: desired-pony.rooster465.autos
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG_2|2.1MB/s
+  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
+  port: '56927'
+  server: 161.118.215.232
+  type: ss
   udp: true
 - name: US_speednode_0069
   network: ws
