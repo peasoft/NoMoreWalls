@@ -23,18 +23,10 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- auth: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  name: 🇺🇸US_1|2.5MB/s
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: taga2.api3-max.ru
-  skip-cert-verify: true
-  sni: taga2.api3-max.ru
-  type: hysteria2
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸US_2|2.6MB/s
+  name: 🇺🇸US_1|2.7MB/s
   network: tcp
   port: '443'
   reality-opts:
@@ -47,39 +39,84 @@ proxies:
   udp: true
   uuid: 00144519-7e0d-476b-8d28-435576af9262
   xudp: true
-- name: 🇺🇸US_3|3.6MB/s
+- encryption: none
+  name: 🇺🇸US_2|2.1MB/s
+  network: ws
+  port: '80'
+  server: 18.239.134.69
+  type: vless
+  udp: true
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  ws-opts:
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
+    path: /
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_3|1.6MB/s
+  network: xhttp
+  port: '443'
+  server: x4g-production-9068d.up.railway.app
+  servername: x4g-production-9068d.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01fc9d6a-7a5a-7efa-a786-3fecadacafa3
+  xhttp-opts:
+    host: x4g-production-9068d.up.railway.app
+    mode: auto
+    path: /xhttp-siz10/01fc9d6a-7a5a-7efa-a786-3fecadacafa3
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: neurex
+  name: 🇺🇸US_4|2.1MB/s
+  network: grpc
+  port: '16923'
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: '!!str 10ffb85da1c2d986'
+  server: 152.53.169.29
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2702228d-880f-410a-bf39-bdbe26228ead
+  xudp: true
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_5|2.1MB/s
+  port: 30808
+  server: v8.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇺🇸US_6|2.5MB/s
   password: None
   port: 9002
-  server: 138.199.35.195
+  server: 138.199.35.208
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_4|3.1MB/s
-  password: None
+- name: 🇺🇸US_7|3.0MB/s
+  password: ''
   port: 9002
-  server: 138.199.35.204
+  server: 138.199.35.219
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
-- name: 🇺🇸US_5|2.1MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.211
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_6|1.6MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_7|2.5MB/s
+  username: ''
+- name: 🇺🇸US_8|2.5MB/s
   password: None
   port: 9002
   server: 138.199.35.205
@@ -87,31 +124,23 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_8|3.2MB/s
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸US_9|3.3MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- name: 🇺🇸US_10|2.1MB/s
   password: None
   port: 9002
-  server: 138.199.35.199
+  server: 156.146.59.50
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_9|2.4MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.217
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_10|1.8MB/s
-  password: None
-  port: 9002
-  server: 156.146.59.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_11|2.3MB/s
+- name: 🇺🇸US_11|2.1MB/s
   password: None
   port: 9002
   server: 156.146.59.8
@@ -119,37 +148,41 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_12|2.1MB/s
+- name: 🇺🇸US_12|2.5MB/s
   password: None
   port: 9002
-  server: 156.146.59.23
+  server: 156.146.59.25
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_13|2.5MB/s
-  password: ''
-  port: 9002
-  server: 156.146.59.49
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸US_13|3.2MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 76dff95d-a720-4909-8ca6-3d848e786a9c
+  port: '443'
+  server: 159.65.178.189
   skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇺🇸US_14|2.0MB/s
+  network: raw
+  port: '2053'
+  reality-opts:
+    public-key: SZNBUj0YVHSGrLNr_1G11ezb5SShqv0_8bDbNGbVJTo
+    short-id: '!!str 905d014aef48adf6'
+  server: 198.251.78.29
+  servername: www.apple.com
   tls: true
-  type: http
-  username: ''
-- name: 🇺🇸US_14|2.6MB/s
-  password: ''
-  port: '9002'
-  server: 156.146.59.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: US_speednode_0081
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20066
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  type: trojan
+  type: vless
   udp: true
+  uuid: 4486dc5a-823c-4507-840f-df9ce6c696fb
+  xudp: true
 - client-fingerprint: chrome
   name: US_speednode_0082
   network: ws
