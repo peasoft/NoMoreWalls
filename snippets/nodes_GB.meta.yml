@@ -1,7 +1,29 @@
 proxies:
+- name: GB_speednode_0005
+  port: 2090
+  server: 31.56.204.32
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+- name: GB_speednode_0006
+  network: ws
+  port: 8880
+  server: 80.93.202.40
+  servername: vms.lifetime02.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime02.workers.dev
+    path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇬🇧GB_1|3.0MB/s
+  name: GB_speednode_0007
   network: tcp
   port: 443
   reality-opts:
@@ -9,53 +31,8 @@ proxies:
     short-id: '!!str 0a2d53503fdec721'
   server: de.prime-net.me
   servername: de.prime-net.me
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 30702f28-0a64-4f96-bd8f-cc601ca87e4d
-- client-fingerprint: firefox
-  name: 🇬🇧GB_2|2.1MB/s
-  network: xhttp
-  port: 8443
-  reality-opts:
-    public-key: p9ISfhV0uZpKSgrK_8R6Mm4A01tWdzpKMlFR2TIj81s
-  server: stockholm-meow.nethcloud.top
-  servername: wikihow.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4cbefb4d-328c-411d-bf76-780df1082df8
-  xhttp-opts:
-    host: wikihow.com
-    mode: auto
-    path: /
-- auth: 9b08bee0-2615-46c6-8939-54b575517a26
-  name: 🇬🇧GB_3|3.2MB/s
-  password: 9b08bee0-2615-46c6-8939-54b575517a26
-  port: 8443
-  server: 78.159.240.215
-  skip-cert-verify: true
-  sni: quic.tyr-agentstvo.tech
-  type: hysteria2
-- name: 🇬🇧GB_4|2.6MB/s
-  port: 2553
-  server: 195.21.129.117
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: d8b42cd5-a149-4356-9e61-000000000000
-- client-fingerprint: firefox
-  name: GB_speednode_0005
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: '!!str 0b'
-  server: 45.155.52.231
-  servername: ru2.skydrgn-online.online
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
