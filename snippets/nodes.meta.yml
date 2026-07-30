@@ -493,12 +493,12 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 🇸🇬SG_3|3.7MB/s
+- name: 新加坡|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
   server: 43.199.32.78
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
@@ -553,98 +553,50 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- auth: ba845a48-cfcb-48c4-ab8c-0836e360112e
-  name: 🇦🇪AE_1|1.5MB/s
-  password: ba845a48-cfcb-48c4-ab8c-0836e360112e
-  port: 56789
-  server: ceo69.ceoiii.com
-  skip-cert-verify: true
-  sni: ajax.microsoft.com
-  type: hysteria2
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  name: 🇩🇪DE_1|2.2MB/s
-  network: tcp
-  port: 443
-  server: 203.23.179.151
-  servername: ddc-akn.astralweb.tech
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
-- name: 🇩🇪DE_2|3.1MB/s
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: de.catxstar.com
-  type: trojan
 - client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇵🇱PL_1|1.6MB/s
-  network: tcp
-  port: 443
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ns
+  name: 🇷🇺RU_1|1.9MB/s
+  network: grpc
+  port: 2096
   reality-opts:
-    public-key: FiGwAuKMy_5VK62hqCxDZn1jUjrplWTM1RmAwoA5o1w
-    short-id: '0d6c02fda165f38c'
-  server: lbvzo.falsemirrov.com
-  servername: lbvzo.falsemirrov.com
+    public-key: 7tNfb6-ZygNxIdttru_PiB9ZfmZBs0CSZb1CEb20qmo
+  server: 176.109.92.191
+  servername: id.pervye.ru
   tls: true
   type: vless
   udp: true
-  uuid: 0fd412c1-6904-4ccc-bb6e-9653975c73f3
+  uuid: a852c438-b983-46ce-a789-53c70d426505
 - multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸US_1|1.5MB/s
+  name: 🇺🇸US_1|2.1MB/s
   password: dongtaiwang.com
   port: 34567
   server: 157.254.223.44
   transport: TCP
   type: mieru
   username: dongtaiwang.com
-- alpn:
-  - h2%2Chttp%2F1.1
-  client-fingerprint: qq
-  name: 🇺🇸US_2|2.1MB/s
-  network: xhttp
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬SG_1|4.5MB/s
+  network: ws
   port: 443
-  server: us2.denverpresents.top
-  servername: us2.denverpresents.top
+  server: 172.64.146.86
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
   type: vless
   udp: true
-  uuid: db2072f3-728b-4381-a9ec-51629decc2b8
-  xhttp-opts:
-    host: us2.denverpresents.top
-    mode: auto
-    path: /assets/build/_app/immutable/chunks/stream-one/
-- name: NL_speednode_0019
-  port: 9002
-  server: 84.17.47.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_3|2.5MB/s
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇩🇪DE_4|1.9MB/s
-  network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: '20041'
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hkdcrtc-e.catcat321.com
-  type: trojan
-  udp: true
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /sg-melbi
+  xudp: true
 - down: ''
   fingerprint: ''
-  name: 🇺🇸US_3|2.1MB/s
+  name: 🇺🇸US_2|1.7MB/s
   obfs: ''
   obfs-password: ''
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -654,79 +606,25 @@ proxies:
   sni: vpn-us-003.fastervpn.world
   type: hysteria2
   up: ''
-- name: 🇺🇸US_4|2.5MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.220
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: TunService
+  name: 🇷🇺RU_2|2.1MB/s
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+    short-id: ''
+  server: 88.218.44.4
+  servername: dl.google.com
   tls: true
-  type: http
-  username: null
-- down: ''
-  fingerprint: ''
-  name: 🇨🇭CH_1|2.1MB/s
-  obfs: ''
-  obfs-password: ''
-  password: Uq5DgLZRU6hpn7ydRcePOeOk4i1c2tJIEk3rMZMUobo
-  port: 25447
-  server: 144.31.107.101
-  skip-cert-verify: true
-  sni: devideo.h2corp.org
-  type: hysteria2
-  up: ''
-- client-fingerprint: chrome
-  name: 🇭🇰HK_6|3.1MB/s
-  password: BxceQaOe
-  port: '11035'
-  server: 18.163.122.92
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇭🇰HK_7|3.5MB/s
-  password: BxceQaOe
-  port: '27161'
-  server: 16.163.138.98
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_4|3.3MB/s
-  password: BxceQaOe
-  port: '32434'
-  server: 43.198.12.180
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- encryption: none
-  name: 🇵🇱PL_2|1.9MB/s
-  network: ws
-  port: '2086'
-  server: 91.124.209.138
   type: vless
   udp: true
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
-  ws-opts:
-    headers:
-      Host: cdn-cloudflare91.korvexe.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
   xudp: true
-- name: 🇺🇸US_5|2.5MB/s
-  password: 'null'
-  port: '9002'
-  server: 138.199.35.199
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
 - down: ''
   fingerprint: ''
-  name: 🇺🇸US_6|1.8MB/s
+  name: 🇺🇸US_3|2.1MB/s
   obfs: ''
   obfs-password: ''
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
@@ -736,11 +634,28 @@ proxies:
   sni: taga6.api3-max.ru
   type: hysteria2
   up: ''
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: ns
+  name: 🇱🇻LV_1|1.8MB/s
+  network: grpc
+  port: '9443'
+  reality-opts:
+    public-key: 7tNfb6-ZygNxIdttru_PiB9ZfmZBs0CSZb1CEb20qmo
+    short-id: ''
+  server: 176.109.94.87
+  servername: id.pervye.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: a852c438-b983-46ce-a789-53c70d426505
+  xudp: true
 - client-fingerprint: chrome
-  name: 🇺🇸US_7|2.2MB/s
+  name: 🇸🇬SG_2|4.6MB/s
   network: ws
   port: '443'
-  server: 104.17.99.222
+  server: 104.18.39.150
   servername: u61op.o3ue.5g1.hh.vavava.kdns.fr
   tls: true
   type: vless
@@ -749,9 +664,9 @@ proxies:
   ws-opts:
     headers:
       Host: u61op.o3ue.5g1.hh.vavava.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/46.0.2490.71 Safari/537.36
-    path: /?ed=2560
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /
   xudp: true
 - alpn:
   - http/1.1
@@ -868,6 +783,13 @@ proxies:
 - name: NL_speednode_0018
   port: 9002
   server: 84.17.47.148
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: NL_speednode_0019
+  port: 9002
+  server: 84.17.47.146
   skip-cert-verify: true
   tls: true
   type: http
