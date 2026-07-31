@@ -87,53 +87,17 @@ proxies:
   sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  name: 🇩🇪DE_1|2.4MB/s
-  network: xhttp
-  port: 443
-  server: nl29.abvpn.net
-  servername: nl29.abvpn.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  xhttp-opts:
-    host: nl29.abvpn.net
-    mode: auto
-    path: /xhttp/
-- client-fingerprint: chrome
-  name: 🇩🇪DE_2|1.7MB/s
-  network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: '20041'
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: de.catxstar.com
-  type: trojan
-  udp: true
-- client-fingerprint: safari
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|2.4MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: sntQ0HsOXhaye-K7bKrMw1w3cRmjgp0lT5IhP-ngwlU
-    short-id: '!!str 998432bc'
-  server: 103.88.241.176
-  servername: userapi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9cddcc01-3dfb-46e0-85d8-e3c6818232cf
-  xudp: true
-- name: DE_speednode_0009
-  port: 49518
-  server: 49.12.130.109
-  skip-cert-verify: true
+- name: DE_speednode_0004
+  network: ws
+  port: 8880
+  server: 45.80.111.175
+  servername: cnd.poland.myfilecdn.com
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 73c8ad8a-5803-49fb-8183-39f34ad3a3ea
+  uuid: 6ed59a5b-efef-4ddf-99f2-57d200caed47
+  ws-opts:
+    headers:
+      Host: cnd.poland.myfilecdn.com
+    path: /cdn/assets/stream
