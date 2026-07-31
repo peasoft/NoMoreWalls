@@ -87,84 +87,53 @@ proxies:
   sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|2.0MB/s
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: de.catxstar.com
-  type: trojan
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: 🇩🇪DE_1|2.4MB/s
+  network: xhttp
+  port: 443
+  server: nl29.abvpn.net
+  servername: nl29.abvpn.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  xhttp-opts:
+    host: nl29.abvpn.net
+    mode: auto
+    path: /xhttp/
 - client-fingerprint: chrome
-  name: 🇩🇪DE_2|2.0MB/s
+  name: 🇩🇪DE_2|1.7MB/s
+  network: tcp
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: '20041'
   server: hkdcrtc-e.catcat321.com
   skip-cert-verify: true
+  sni: de.catxstar.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_3|2.0MB/s
-  network: ws
-  port: '443'
-  server: 199.232.78.159
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 957797d5-1710-4e4a-bf41-9f5b641503e3
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.115 Safari/537.36
-    path: ''
-  xudp: true
-- client-fingerprint: random
+- client-fingerprint: safari
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|1.5MB/s
-  network: tcp
+  name: 🇩🇪DE_3|2.4MB/s
+  network: raw
   port: '443'
   reality-opts:
-    public-key: X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc
-    short-id: '!!str '
-  server: 94.249.225.41
-  servername: grand-lynx.cdn.cachefleet.com
+    public-key: sntQ0HsOXhaye-K7bKrMw1w3cRmjgp0lT5IhP-ngwlU
+    short-id: '!!str 998432bc'
+  server: 103.88.241.176
+  servername: userapi.com
   tls: true
   type: vless
   udp: true
-  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
+  uuid: 9cddcc01-3dfb-46e0-85d8-e3c6818232cf
   xudp: true
-- client-fingerprint: random
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_5|2.4MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc
-    short-id: '!!str '
-  server: 94.249.225.84
-  servername: grand-lynx.cdn.cachefleet.com
-  tls: true
+- name: DE_speednode_0009
+  port: 49518
+  server: 49.12.130.109
+  skip-cert-verify: true
+  tls: false
   type: vless
   udp: true
-  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_6|2.1MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: x8AqgiU2yHx67Yv2opPUV17wRjAz1ftFtVi2CcVup10
-    short-id: '!!str e132826d'
-  server: 77.90.61.47
-  servername: api.led.samsung.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: da0f3291-c93e-4a19-b3f2-d150aad828ed
-  xudp: true
+  uuid: 73c8ad8a-5803-49fb-8183-39f34ad3a3ea

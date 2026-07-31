@@ -1,5 +1,5 @@
 proxies:
-- name: 🇸🇬SG_2|3.9MB/s
+- name: HK_speednode_0013
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
@@ -7,6 +7,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: 新加坡2|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -15,7 +16,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬SG_3|2.3MB/s
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 32434
@@ -23,19 +24,21 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- alpn:
-  - h2%2Chttp%2F1.1
-  client-fingerprint: qq
+- client-fingerprint: chrome
+  encryption: none
   name: 🇸🇬SG_1|1.6MB/s
-  network: xhttp
-  port: 443
-  server: sg.ethicsdinnerpave.online
-  servername: sg.ethicsdinnerpave.online
+  network: ws
+  port: '443'
+  server: sg-batman.up.railway.app
+  servername: sg-batman.up.railway.app
   tls: true
   type: vless
   udp: true
-  uuid: db2072f3-728b-4381-a9ec-51629decc2b8
-  xhttp-opts:
-    host: sg.ethicsdinnerpave.online
-    mode: auto
-    path: /assets/build/_app/immutable/chunks/stream-one/
+  uuid: 7bd1e0fa-ec35-4dc2-9da4-2e8bc2f1f6c0
+  ws-opts:
+    headers:
+      Host: sg-batman.up.railway.app
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: /in1
+  xudp: true
