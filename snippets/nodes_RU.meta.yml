@@ -1,20 +1,53 @@
 proxies:
 - client-fingerprint: chrome
   encryption: none
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🇷🇺RU_1|1.1MB/s
-  network: grpc
-  port: '2053'
+  flow: xtls-rprx-vision
+  name: US_speednode_0103
+  network: tcp
+  port: 993
   reality-opts:
-    public-key: RaAQd349NbMoL5WJOfT_RWvlT2s6sav0pOgEsoSm2zw
-    short-id: '!!str f0131a4772b494d4'
-  server: 85.209.135.3
-  servername: dns.adguard-dns.com
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+  server: 88.218.44.4
+  servername: dl.google.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 347e34f2-3211-4e01-b475-409f46788d3f
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  xudp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: TunService
+  name: 🇷🇺RU_2|2.1MB/s
+  network: grpc
+  packet-encoding: xudp
+  port: 8443
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+  server: 88.218.44.4
+  servername: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇷🇺RU_4|1.5MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+    short-id: '!!str '
+  server: 88.218.44.4
+  servername: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  xhttp-opts:
+    mode: auto
+    path: /
   xudp: true
 - client-fingerprint: random
   flow: xtls-rprx-vision
