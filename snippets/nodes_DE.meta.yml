@@ -77,10 +77,17 @@ proxies:
   sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
+- name: 🇩🇪DE_1|2.5MB/s
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: de.catxstar.com
+  type: trojan
 - alpn:
   - h2
   client-fingerprint: qq
-  name: 🇩🇪DE_1|1.2MB/s
+  name: 🇩🇪DE_2|1.6MB/s
   network: xhttp
   port: 443
   server: wx-deu-037.cdnphotos.org
@@ -93,28 +100,12 @@ proxies:
     host: wx-deu-037.cdnphotos.org
     mode: auto
     path: /api/v1/
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_2|1.0MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: 3HQlKcaGPbJcrgPzKvsC0WxHucb7yIZmm_C6sLJKeyk
-    short-id: '!!str 2a616bf021be8169'
-  server: 5.252.26.190
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 92a8de02-b311-487b-a4ff-3d790cd28898
-  xudp: true
 - alpn:
   - h2
   client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_3|4.0MB/s
+  name: 🇩🇪DE_3|2.4MB/s
   network: ws
-  port: '443'
+  port: 443
   server: 104.26.12.41
   servername: pinalo.zenvorix.ir
   tls: true
@@ -124,33 +115,79 @@ proxies:
   ws-opts:
     headers:
       Host: pinalo.zenvorix.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /nova-geo-psiphon-de
-  xudp: true
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '1000'
-  name: 🇩🇪DE_4|1.4MB/s
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_4|1.8MB/s
+  port: 443
+  reality-opts:
+    public-key: X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc
+  server: 94.249.225.84
+  servername: grand-lynx.cdn.cachefleet.com
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '500'
-- name: DE_speednode_0004
-  network: ws
-  port: 8880
-  server: 45.80.111.175
-  servername: cnd.poland.myfilecdn.com
-  skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
-  uuid: 6ed59a5b-efef-4ddf-99f2-57d200caed47
-  ws-opts:
-    headers:
-      Host: cnd.poland.myfilecdn.com
-    path: /cdn/assets/stream
+  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  name: 🇩🇪DE_5|1.2MB/s
+  network: xhttp
+  port: '8443'
+  server: 162.159.38.119
+  servername: argentinavsspain.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  xhttp-opts:
+    host: argentinavsspain.dpdns.org
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+- client-fingerprint: random
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_6|1.7MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc
+    short-id: '!!str '
+  server: 94.249.225.41
+  servername: grand-lynx.cdn.cachefleet.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_7|2.6MB/s
+  network: raw
+  port: '9443'
+  reality-opts:
+    public-key: 5M0khPdwiXYhayuP4i76J1am-q85Sno7vGnqEnZ1ngI
+    short-id: '!!str ccaaaa'
+  server: 91.185.83.64
+  servername: muzgrape.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: c62c870e-295f-4380-97fd-bf71e0826df0
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_8|4.7MB/s
+  network: tcp
+  port: '443'
+  server: de-nuremberg.chocolatemango.live
+  servername: de-nuremberg.chocolatemango.live
+  tls: true
+  type: vless
+  udp: true
+  uuid: e0920517-fcd8-41ad-9f73-ec7343fe8243
+  xudp: true
