@@ -19,6 +19,21 @@ proxies:
   sni: www.refersion.com
   tls: false
   type: hysteria2
+- alpn:
+  - h3
+  down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_4|3.9MB/s
+  obfs: salamander
+  obfs-password: 83v9muumcyikh5ch
+  password: TelegramVPNjey
+  port: '37003'
+  server: 179.61.251.253
+  skip-cert-verify: false
+  sni: de.jey.cc.cd
+  tls: false
+  type: hysteria2
+  up: ''
 - name: 🇩🇪 Telegram= V2RayyNGvpn 🇩🇪7
   obfs: salamander
   obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
@@ -29,16 +44,63 @@ proxies:
   sni: www.refersion.com
   tls: false
   type: hysteria2
-- name: 🇩🇪 Telegram= V2RayyNGvpn 🇩🇪6
-  obfs: salamander
-  obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
-  password: mY0pSnWDFk
+- alpn:
+  - h2
+  client-fingerprint: ios
+  name: 🇩🇪DE_1|3.2MB/s
+  network: xhttp
   port: 443
-  server: 91.107.178.22
+  server: deu513.globalunlock.org
+  servername: deu513.globalunlock.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 77930005-ea92-44dc-9d94-e9192427f519
+  xhttp-opts:
+    host: deu513.globalunlock.org
+    mode: auto
+    path: /api/v1/
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '1000'
+  name: 🇩🇪DE_2|1.9MB/s
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
   skip-cert-verify: true
-  sni: www.refersion.com
-  tls: false
+  sni: apple.com
+  type: hysteria
+  up: '500'
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_3|1.0MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 1hOIVDVBG2hdKtJwOV2aUEFTDaFArCSH9-HrcOnps8yqQZeq
+  port: '443'
+  server: prodfr.h2corp.org
+  skip-cert-verify: false
+  sni: prodfr.h2corp.org
   type: hysteria2
+  up: ''
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc-direct
+  name: 🇩🇪DE_5|1.8MB/s
+  network: grpc
+  port: '2053'
+  reality-opts:
+    public-key: yjmr4nFrDGjHa32A9Uriq3co86CE-waGH3pmZt2_oQk
+    short-id: '!!str 619aad46679010cf'
+  server: cam-msk-7.videomonitor.cloud
+  servername: cam-msk-7.videomonitor.cloud
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b49a248-5e9d-11f1-bd95-ee5f4ed81fa1
+  xudp: true
 - name: DE_speednode_0004
   port: 443
   server: secdn-105.nem-osh-rkp.net
