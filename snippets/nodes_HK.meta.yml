@@ -43,20 +43,38 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇭🇰HK_1|1.1MB/s
-  port: 443
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: movie
+  name: 🇭🇰HK_1|5.2MB/s
+  network: grpc
+  port: 10130
   reality-opts:
-    public-key: 84d_aHtsBvclx_Y6FnTmhhTqsZyQdfCGWtmFvefTrUI
-    short-id: '!!str ee57ea513371ce89'
-  server: code-sandbox.blog
-  servername: code-sandbox.blog
-  skip-cert-verify: true
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: hk5-r.link-t7.com
+  servername: s0.awsstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  uuid: 42AD99DB-EC24-47B7-BE3D-8BEE715C2D2B
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: movie
+  name: 🇭🇰HK_2|5.0MB/s
+  network: grpc
+  port: '10130'
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: 95.40.104.115
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 42AD99DB-EC24-47B7-BE3D-8BEE715C2D2B
+  xudp: true
 - name: HK_speednode_0022
   password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
   port: 8443
