@@ -7,13 +7,30 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_1|3.0MB/s
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-  port: '61312'
-  server: 129.151.64.234
-  type: ss
+- http-opts:
+    headers:
+      Host:
+      - www.icloud.com
+    method: GET
+    path:
+    - /
+  name: 🇬🇧GB_1|3.4MB/s
+  network: http
+  port: 4568
+  server: s1.pro-vip-cnavippanel.xyz
+  tls: false
+  type: vless
   udp: true
+  uuid: 4ca31b44-9188-4cc7-adc6-f940888e5282
+- encryption: none
+  name: 🇬🇧GB_2|4.1MB/s
+  network: tcp
+  port: '31013'
+  server: fin.sillyvpn.cc
+  type: vless
+  udp: true
+  uuid: ddd9a320-9e93-437f-a5b6-6bf9647334a9
+  xudp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: GB_speednode_0008
