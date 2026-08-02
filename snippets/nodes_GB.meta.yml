@@ -8,7 +8,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 🇬🇧GB_1|2.6MB/s
+  name: 🇬🇧GB_1|1.5MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -20,39 +20,29 @@ proxies:
   udp: true
   uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
 - client-fingerprint: firefox
-  name: 🇬🇧GB_2|2.8MB/s
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_2|2.0MB/s
   network: tcp
-  port: 443
+  port: '443'
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  server: pro-jp.emrata.top
-  servername: pro-jp.emrata.top
+    short-id: '!!str '
+  server: 31.76.123.32
+  servername: pro-fi.emrata.top
   tls: true
   type: vless
   udp: true
-  uuid: d3b3f278-2cca-4abf-aa27-bf0c0f27cbd0
-- client-fingerprint: firefox
-  name: 🇬🇧GB_3|2.1MB/s
-  network: tcp
-  port: '22012'
-  reality-opts:
-    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
-    short-id: '!!str c6e19c434dc87df7'
-  server: 168.119.156.100
-  servername: login.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: de5dcb9e-6a72-45a2-8d3d-de00e5431426
+  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
   xudp: true
 - client-fingerprint: firefox
-  name: 🇬🇧GB_4|3.2MB/s
+  name: 🇬🇧GB_3|1.6MB/s
   network: tcp
   port: '22012'
   reality-opts:
     public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
     short-id: '!!str c6e19c434dc87df7'
-  server: 78.47.104.140
+  server: 168.119.156.101
   servername: login.yahoo.com
   tls: true
   type: vless
@@ -128,6 +118,21 @@ proxies:
     path: /52872/BNzG4FvIAr
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
+  name: GB_speednode_0039
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6INA8Jxa9oQT3XrW4uXd0leo2upMdUn8s_XbSP0qB3I
+    short-id: '!!str f0a9d2b1c7e4f648'
+  server: 217.177.75.7
+  servername: usa.tunnelx.space
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: GB_speednode_0040
   network: tcp
   port: 443
@@ -171,6 +176,23 @@ proxies:
     headers:
       Host: 31.76.251.127.cdn-one.org
     path: /10336/2GCOqG7bvA
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: GB_speednode_0043
+  network: ws
+  port: 443
+  server: 185.170.154.80.vhub.pro
+  servername: 185.170.154.80.vhub.pro
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5083f498-4894-5553-8648-40a2faf4b545
+  ws-opts:
+    headers:
+      Host: 185.170.154.80.vhub.pro
+    path: /websocket?ed=2560
 - client-fingerprint: chrome
   name: GB_speednode_0044
   network: ws

@@ -1,6 +1,5 @@
 proxies:
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
   name: US_speednode_0283
   network: tcp
@@ -10,6 +9,21 @@ proxies:
   server: 88.218.44.4
   servername: download.nvidia.com
   skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: TunService
+  name: 🇷🇺RU_2|3.6MB/s
+  network: grpc
+  port: '8443'
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+    short-id: '!!str '
+  server: 88.218.44.4
+  servername: dl.google.com
   tls: true
   type: vless
   udp: true
