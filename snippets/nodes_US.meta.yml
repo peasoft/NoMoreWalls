@@ -1,4 +1,12 @@
 proxies:
+- name: 🇺🇸US
+  password: c2948c84-748f-47f6-bc7a-b949ef279f85
+  port: 443
+  server: 78.159.240.215
+  skip-cert-verify: true
+  sni: quic.tyr-agentstvo.tech
+  tls: false
+  type: hysteria2
 - name: 美国|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -24,36 +32,36 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇺🇸US_2|1.9MB/s
-  network: ws
-  port: 8443
-  server: 104.16.248.27
-  servername: sni.ehb.cc.cd
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: US_speednode_0312
+  network: tcp
+  port: 993
+  reality-opts:
+    public-key: JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0
+  server: 64.49.38.6
+  servername: download.nvidia.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
 - client-fingerprint: chrome
-  name: 🇺🇸US_3|1.9MB/s
-  network: ws
-  port: 2096
-  server: 104.19.70.167
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: api.v1.telemetry.EventStream
+  name: 🇺🇸US_2|1.6MB/s
+  network: grpc
+  port: '8443'
+  reality-opts:
+    public-key: BLEVlyhgrYYDwsqJjm5wi1yUC7z6MBH_eM6vvYUdUQY
+    short-id: '!!str 530db35e324c3aa5'
+  server: 98.142.251.31
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  uuid: f50822b7-02ec-4611-83bd-ff29411e0e10
+  xudp: true
 - name: US_speednode_0243
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
@@ -320,20 +328,6 @@ proxies:
   uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: US_speednode_0312
-  network: tcp
-  port: 993
-  reality-opts:
-    public-key: JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0
-  server: 64.49.38.6
-  servername: download.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
   name: US_speednode_0281
   network: tcp
   port: 443
@@ -435,21 +429,6 @@ proxies:
   udp: true
   uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
 - client-fingerprint: chrome
-  name: US_speednode_0291
-  network: ws
-  port: 443
-  server: 108.162.198.113
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
   name: US_speednode_0292
   network: ws
   port: 443
@@ -510,36 +489,6 @@ proxies:
       Host: sni.ehb.cc.cd
     path: /proxyip=ProxyIP.CMLiussss.net
 - client-fingerprint: chrome
-  name: US_speednode_0296
-  network: ws
-  port: 2087
-  server: 162.159.45.38
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
-  name: US_speednode_0297
-  network: ws
-  port: 2096
-  server: 162.159.38.181
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
   name: US_speednode_0298
   network: ws
   port: 2083
@@ -555,70 +504,10 @@ proxies:
       Host: sni.ehb.cc.cd
     path: /proxyip=ProxyIP.CMLiussss.net
 - client-fingerprint: chrome
-  name: US_speednode_0299
-  network: ws
-  port: 2096
-  server: 162.159.45.38
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
-  name: US_speednode_0300
-  network: ws
-  port: 2083
-  server: 172.64.52.117
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
-  name: US_speednode_0301
-  network: ws
-  port: 8443
-  server: 108.162.198.76
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
   name: US_speednode_0302
   network: ws
   port: 2087
   server: 172.64.229.179
-  servername: sni.ehb.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
-  ws-opts:
-    headers:
-      Host: sni.ehb.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
-  name: US_speednode_0303
-  network: ws
-  port: 2087
-  server: 162.159.44.227
   servername: sni.ehb.cc.cd
   skip-cert-verify: true
   tls: true
