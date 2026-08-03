@@ -19,16 +19,72 @@ proxies:
   sni: www.refersion.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|3.2MB/s
-  network: ws
-  password: 82dd5d38-1a65-42b9-835e-497b5b51eb84
+- alpn:
+  - h3
+  client-fingerprint: unsafe
+  down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_4|3.9MB/s
+  obfs: salamander
+  obfs-password: 4693t4m6i5ebs8ha
+  password: dac7qy87teimbiq4
+  port: '8443'
+  server: v.dianawmoon.dpdns.org
+  skip-cert-verify: false
+  sni: ''
+  tls: false
+  type: hysteria2
+  up: ''
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: 🇩🇪DE_1|1.3MB/s
+  network: tcp
   port: 443
-  server: 172.67.78.22
-  skip-cert-verify: true
-  sni: kamonka.eu.org
-  type: trojan
+  server: 217.60.193.1
+  servername: ddc-akn.astralweb.tech
+  tls: true
+  type: vless
   udp: true
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+- name: 🇩🇪DE_2|1.2MB/s
+  network: ws
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
+  port: 443
+  server: 104.25.242.132
+  skip-cert-verify: true
+  sni: yks-dd9.pages.dev
+  type: trojan
   ws-opts:
     headers:
-      Host: kamonka.eu.org
+      Host: yks-dd9.pages.dev
     path: /
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: AE_speednode_0003
+  port: 443
+  server: 217.60.193.1
+  servername: ddc-akn.astralweb.tech
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
+- client-fingerprint: safari
+  encryption: none
+  grpc-opts:
+    grpc-service-name: neurex
+  name: 🇩🇪DE_5|3.9MB/s
+  network: grpc
+  port: '16923'
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: '!!str 10ffb85da1c2d986'
+  server: usd.kosmosapp.ru
+  servername: market.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 28863986-75fb-4b2f-b006-65e62194358d
+  xudp: true
