@@ -7,42 +7,86 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
   name: 🇬🇧GB_1|1.5MB/s
-  network: tcp
+  network: xhttp
+  packet-encoding: xudp
   port: 443
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  server: pro-it.emrata.top
-  servername: pro-it.emrata.top
+  server: 188.72.103.3
+  servername: grape.hotwigga.space
   tls: true
   type: vless
   udp: true
-  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
+  uuid: 26909d5d-6f82-4de5-b7e1-769127cb55d5
+  xhttp-opts:
+    host: grape.hotwigga.space
+    mode: packet-up
+    path: /content/assets/main-6e1a/
+    seq-key: chunk_id
+    seq-placement: query
+    session-key: X-Upload-Token
+    session-placement: header
+    uplink-chunk-size: 0
+    uplink-http-method: GET
+    x-padding-header: X-Client-Version
+    x-padding-key: hash
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: queryInHeader
 - client-fingerprint: firefox
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧GB_2|2.0MB/s
+  name: 🇬🇧GB_2|1.4MB/s
   network: tcp
   port: '443'
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
     short-id: '!!str '
-  server: 31.76.123.32
-  servername: pro-fi.emrata.top
+  server: 2.26.95.2
+  servername: pro-jp.emrata.top
   tls: true
   type: vless
   udp: true
-  uuid: 4bce450e-0a37-4fdd-8c9e-ba6a5e4730aa
+  uuid: caeb0482-d3d9-4271-8fbe-bc2cfe694efa
   xudp: true
 - client-fingerprint: firefox
-  name: 🇬🇧GB_3|1.6MB/s
+  name: 🇬🇧GB_3|2.8MB/s
   network: tcp
   port: '22012'
   reality-opts:
     public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
     short-id: '!!str c6e19c434dc87df7'
-  server: 168.119.156.101
+  server: 128.140.114.57
+  servername: login.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: de5dcb9e-6a72-45a2-8d3d-de00e5431426
+  xudp: true
+- client-fingerprint: firefox
+  name: 🇬🇧GB_4|1.5MB/s
+  network: tcp
+  port: '22012'
+  reality-opts:
+    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
+    short-id: '!!str c6e19c434dc87df7'
+  server: 62.238.55.96
+  servername: login.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: de5dcb9e-6a72-45a2-8d3d-de00e5431426
+  xudp: true
+- client-fingerprint: firefox
+  name: 🇬🇧GB_5|1.9MB/s
+  network: tcp
+  port: '22012'
+  reality-opts:
+    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
+    short-id: '!!str c6e19c434dc87df7'
+  server: 91.99.119.155
   servername: login.yahoo.com
   tls: true
   type: vless
