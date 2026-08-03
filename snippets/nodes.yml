@@ -175,7 +175,6 @@ proxies:
   server: 16.162.22.218
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-  tls: false
   type: trojan
   udp: true
 - name: 美国|@ripaojiedian
@@ -212,8 +211,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇩🇪DE_1|3.2MB/s
+  network: ws
+  password: 82dd5d38-1a65-42b9-835e-497b5b51eb84
+  port: 443
+  server: 172.67.78.22
+  skip-cert-verify: true
+  sni: kamonka.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: kamonka.eu.org
+    path: /
 - client-fingerprint: chrome
-  name: 🇯🇵JP_16|4.2MB/s
+  name: 🇯🇵JP_14|2.1MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -221,18 +233,7 @@ proxies:
   skip-cert-verify: true
   sni: casual-bee.rooster465.autos
   type: trojan
-- name: JP_speednode_0010
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: definite-sturgeon.rooster465.autos
-  skip-cert-verify: true
-  sni: definite-sturgeon.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵JP_19|5.9MB/s
-  network: tcp
+- name: 🇯🇵JP_2|4.7MB/s
   password: ND91608427
   port: 443
   server: tough-robin.rooster465.autos
@@ -240,26 +241,7 @@ proxies:
   sni: tough-robin.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: JP_speednode_0011
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: upright-impala.rooster465.autos
-  skip-cert-verify: true
-  sni: upright-impala.rooster465.autos
-  type: trojan
-  udp: true
-- name: KR_speednode_0013
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: moved-meerkat.rooster465.autos
-  skip-cert-verify: true
-  sni: moved-meerkat.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷KR_9|2.1MB/s
+  name: 🇰🇷KR_5|4.3MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -267,25 +249,45 @@ proxies:
   skip-cert-verify: true
   sni: chief-bluegill.rooster465.autos
   type: trojan
-- name: 🇸🇬SG_1|1.1MB/s
-  password: BxceQaOe
-  port: 9149
-  server: 16.162.22.218
-  skip-cert-verify: true
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-- client-fingerprint: chrome
-  name: KR_speednode_0012
-  network: tcp
-  password: ND91608427
+- name: 🇳🇱NL_1|1.0MB/s
+  network: ws
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
   port: 443
-  server: definite-malamute.rooster465.autos
+  server: 104.21.84.3
   skip-cert-verify: true
-  sni: definite-malamute.rooster465.autos
+  sni: yks-dd9.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: yks-dd9.pages.dev
+    path: /
+- alpn:
+  - http/1.1
+  name: 🇺🇸US_7|3.0MB/s
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 104.18.36.192
+  skip-cert-verify: true
+  sni: hk1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: hk1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/HK---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_8|1.9MB/s
+  port: 9028
+  server: select-us.ddnskunlun.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
 - client-fingerprint: chrome
-  name: 🇸🇬SG_3|3.8MB/s
+  name: 🇸🇬SG_1|1.7MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -293,24 +295,15 @@ proxies:
   skip-cert-verify: true
   sni: sacred-treefrog.rooster465.autos
   type: trojan
-- client-fingerprint: chrome
-  name: 🇸🇬SG_4|4.3MB/s
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: tidy-gelding.rooster465.autos
-  skip-cert-verify: true
-  sni: tidy-gelding.rooster465.autos
-  type: trojan
 - cipher: aes-256-cfb
-  name: 🇯🇵JP_6|5.8MB/s
+  name: 🇯🇵JP_3|5.7MB/s
   password: amazonskr05
   port: 443
   server: 52.194.190.172
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 🇯🇵JP_7|3.9MB/s
+  name: 🇯🇵JP_4|4.2MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -319,7 +312,7 @@ proxies:
   sni: better-molly.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_8|2.3MB/s
+  name: 🇯🇵JP_5|4.4MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -328,7 +321,7 @@ proxies:
   sni: picked-guinea.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_9|4.2MB/s
+  name: 🇯🇵JP_6|5.3MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -337,7 +330,7 @@ proxies:
   sni: adjusted-labrador.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_10|4.3MB/s
+  name: 🇯🇵JP_7|4.7MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -346,7 +339,16 @@ proxies:
   sni: learning-leopard.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_11|5.4MB/s
+  name: 🇯🇵JP_8|5.8MB/s
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: right-seahorse.rooster465.autos
+  skip-cert-verify: true
+  sni: right-seahorse.rooster465.autos
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇯🇵JP_9|4.1MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -355,7 +357,7 @@ proxies:
   sni: social-mutt.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_12|5.6MB/s
+  name: 🇯🇵JP_10|5.8MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -364,7 +366,7 @@ proxies:
   sni: smart-pup.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_13|3.1MB/s
+  name: 🇯🇵JP_11|3.6MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -373,7 +375,7 @@ proxies:
   sni: perfect-slug.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_14|4.8MB/s
+  name: 🇯🇵JP_12|4.2MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -382,7 +384,7 @@ proxies:
   sni: sensible-mongrel.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_15|2.3MB/s
+  name: 🇯🇵JP_13|4.9MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -391,7 +393,7 @@ proxies:
   sni: thankful-mustang.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_18|5.4MB/s
+  name: 🇯🇵JP_15|5.4MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -400,7 +402,7 @@ proxies:
   sni: wise-bengal.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_20|2.4MB/s
+  name: 🇯🇵JP_16|5.3MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -409,7 +411,7 @@ proxies:
   sni: becoming-hare.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_21|4.7MB/s
+  name: 🇯🇵JP_17|2.6MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -418,7 +420,16 @@ proxies:
   sni: prompt-duckling.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_22|5.6MB/s
+  name: 🇯🇵JP_18|5.6MB/s
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: happy-mutt.rooster465.autos
+  skip-cert-verify: true
+  sni: happy-mutt.rooster465.autos
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇯🇵JP_19|5.5MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -427,7 +438,7 @@ proxies:
   sni: nearby-egret.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_23|3.3MB/s
+  name: 🇯🇵JP_20|5.4MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -436,7 +447,7 @@ proxies:
   sni: internal-sunbird.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_24|4.8MB/s
+  name: 🇯🇵JP_21|5.6MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -445,7 +456,7 @@ proxies:
   sni: clear-snail.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_25|4.9MB/s
+  name: 🇯🇵JP_22|5.9MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -454,7 +465,7 @@ proxies:
   sni: immense-gnu.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_26|5.5MB/s
+  name: 🇯🇵JP_23|4.3MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -463,7 +474,7 @@ proxies:
   sni: healthy-louse.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_27|2.6MB/s
+  name: 🇯🇵JP_24|5.9MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -472,7 +483,7 @@ proxies:
   sni: moral-buzzard.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_28|5.4MB/s
+  name: 🇯🇵JP_25|5.5MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -481,7 +492,7 @@ proxies:
   sni: real-werewolf.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_29|4.7MB/s
+  name: 🇯🇵JP_26|4.4MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -490,7 +501,7 @@ proxies:
   sni: sure-humpback.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵JP_30|5.3MB/s
+  name: 🇯🇵JP_27|3.5MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -499,7 +510,7 @@ proxies:
   sni: devoted-heron.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_6|5.4MB/s
+  name: 🇰🇷KR_2|3.6MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -508,7 +519,7 @@ proxies:
   sni: communal-sunbird.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_7|4.3MB/s
+  name: 🇰🇷KR_3|4.6MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -517,7 +528,7 @@ proxies:
   sni: grateful-owl.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_8|5.7MB/s
+  name: 🇰🇷KR_4|4.9MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -526,16 +537,7 @@ proxies:
   sni: humorous-malamute.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_10|5.5MB/s
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: upward-puma.rooster465.autos
-  skip-cert-verify: true
-  sni: upward-puma.rooster465.autos
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇰🇷KR_11|3.8MB/s
+  name: 🇰🇷KR_6|5.2MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -544,7 +546,7 @@ proxies:
   sni: main-whippet.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_12|4.5MB/s
+  name: 🇰🇷KR_7|4.8MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -553,7 +555,7 @@ proxies:
   sni: distinct-llama.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_13|3.5MB/s
+  name: 🇰🇷KR_8|5.2MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -562,7 +564,16 @@ proxies:
   sni: uncommon-feline.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_14|4.9MB/s
+  name: 🇰🇷KR_9|3.9MB/s
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: intimate-moray.rooster465.autos
+  skip-cert-verify: true
+  sni: intimate-moray.rooster465.autos
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇰🇷KR_10|4.9MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -571,7 +582,16 @@ proxies:
   sni: pure-ram.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_15|1.5MB/s
+  name: 🇰🇷KR_11|2.8MB/s
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: exotic-chow.rooster465.autos
+  skip-cert-verify: true
+  sni: exotic-chow.rooster465.autos
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇰🇷KR_12|4.9MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -580,7 +600,7 @@ proxies:
   sni: select-ferret.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 🇰🇷KR_16|1.8MB/s
+  name: 🇰🇷KR_13|5.0MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -588,8 +608,15 @@ proxies:
   skip-cert-verify: true
   sni: striking-maggot.rooster465.autos
   type: trojan
+- cipher: aes-256-cfb
+  name: 🇺🇸US_10|2.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 98.93.33.57
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 🇯🇵JP_32|4.9MB/s
+  name: 🇯🇵JP_28|4.7MB/s
   network: tcp
   password: ND91608427
   port: 443
@@ -597,6 +624,44 @@ proxies:
   skip-cert-verify: true
   sni: stunning-mite.rooster465.autos
   type: trojan
+- name: 🇺🇦UA_1|1.9MB/s
+  network: tcp
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  port: 20066
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+- name: 🇭🇰HK_2|4.6MB/s
+  network: ws
+  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+  port: 2053
+  server: cf.csdjhajkshdjkas.com
+  sni: a1.xunfastcdn.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aa1.xunfastcdn.com
+    path: /api/v3/media/update
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /43588/G43plZahWW
+  name: 🇳🇱NL_4|1.8MB/s
+  network: grpc
+  password: 32b2m2w7hsdd93z7
+  port: '443'
+  server: titandarkness.mooo.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|2.5MB/s
+  password: QV31589740
+  port: '443'
+  server: great-krill.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - name: HK_speednode_0007
   password: BxceQaOe
   port: 9149
@@ -610,6 +675,38 @@ proxies:
   port: 9149
   server: 16.162.22.218
   skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: JP_speednode_0010
+  password: ND91608427
+  port: 443
+  server: definite-sturgeon.rooster465.autos
+  skip-cert-verify: true
+  sni: definite-sturgeon.rooster465.autos
+  type: trojan
+  udp: true
+- name: JP_speednode_0011
+  password: ND91608427
+  port: 443
+  server: upright-impala.rooster465.autos
+  skip-cert-verify: true
+  sni: upright-impala.rooster465.autos
+  type: trojan
+  udp: true
+- name: KR_speednode_0012
+  password: ND91608427
+  port: 443
+  server: definite-malamute.rooster465.autos
+  skip-cert-verify: true
+  sni: definite-malamute.rooster465.autos
+  type: trojan
+  udp: true
+- name: KR_speednode_0013
+  password: ND91608427
+  port: 443
+  server: moved-meerkat.rooster465.autos
+  skip-cert-verify: true
+  sni: moved-meerkat.rooster465.autos
   type: trojan
   udp: true
 - name: NL_speednode_0017
