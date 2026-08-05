@@ -24,7 +24,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇭🇰HK_6|2.1MB/s
+- name: 香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 50115
@@ -32,7 +32,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰HK_7|1.8MB/s
+- name: 香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 11231
@@ -50,15 +50,42 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK_1|4.2MB/s
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: '19001'
-  server: ss.047.node-for-bigairport.win
-  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: update
+  name: 🇭🇰HK_1|4.5MB/s
+  network: grpc
+  port: '10127'
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: hk2-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 57A71E7F-E6B5-42BF-A4A6-47ECCBE7F50C
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: update
+  name: 🇭🇰HK_2|4.8MB/s
+  network: grpc
+  port: '10126'
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: hk1-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57A71E7F-E6B5-42BF-A4A6-47ECCBE7F50C
+  xudp: true
 - cipher: aes-128-gcm
-  name: 🇭🇰HK_4|5.4MB/s
+  name: 🇭🇰HK_3|3.3MB/s
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -69,33 +96,32 @@ proxies:
   skip-cert-verify: true
   type: ss
   udp: true
-- client-fingerprint: ios
-  name: 🇭🇰HK_5|4.4MB/s
-  network: ws
-  port: 443
-  server: cos-cdn-u.alicdn.win
-  servername: mms-statlc-7uopb-f.codeu.men
+- cipher: aes-128-gcm
+  name: 🇭🇰HK_4|1.8MB/s
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 2fce243671.download.windowsupdate.com
+    mode: http
+  port: 20012
+  server: 260323.1.0.l3.unclemanco.com
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇭🇰HK_5|3.0MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo
+    short-id: '!!str ec2c7091fe76336c'
+  server: 35.241.98.220
+  servername: www.cloudflare.com
   tls: true
   type: vless
-  uuid: c95edc3e-cb00-4504-ae38-9d36d96a08ca
-  ws-opts:
-    headers:
-      Host: mms-static-fetch-f.codeu.men
-    path: /newlogin/login.do
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 🇭🇰HK_8|2.3MB/s
-  network: grpc
-  password: 29db38f0-e302-3768-8867-0b9bf00c77e4cmynw
-  port: '443'
-  server: kaizen-hk-2.gocmydns.com
-  skip-cert-verify: false
-  sni: www.zueuqnpjvcllc.co
-  type: trojan
   udp: true
+  uuid: 96563f88-f743-4395-a3b2-27ec462ae45e
+  xudp: true
 - name: HK_speednode_0008
   password: ND91608427
   port: 443
