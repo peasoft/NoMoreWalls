@@ -15,28 +15,46 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬SG_2|3.1MB/s
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 26704
   server: 95.40.205.94
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  type: trojan
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬SG_1|3.7MB/s
+  network: ws
+  port: '443'
+  server: 172.64.146.86
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
-  type: trojan
+  type: vless
   udp: true
-- name: 🇸🇬SG_1|1.1MB/s
-  password: 55354c2b8ee339571bd657a9bb9858cc
-  port: 40783
-  server: 106.75.132.91
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /sg-melbi
+  xudp: true
+- name: 🇸🇬SG_2|1.3MB/s
+  password: '!!str 111'
+  port: 20000
+  server: 101.33.74.115
   skip-cert-verify: true
-  type: trojan
+  type: socks5
+  udp: true
+  username: '111'
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇸🇬SG_3|2.0MB/s
+  name: 🇸🇬SG_3|1.9MB/s
   network: ws
   port: '2096'
   server: 104.17.70.206
@@ -49,6 +67,6 @@ proxies:
     headers:
       Host: freenet.sahanwickramasinghevip.shop
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.86 Safari/537.36
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
     path: /
   xudp: true
