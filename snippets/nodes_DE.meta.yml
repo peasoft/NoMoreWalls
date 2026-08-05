@@ -1,11 +1,17 @@
 proxies:
-- name: 德国
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_3|3.2MB/s
+  obfs: ''
+  obfs-password: ''
   password: 2ef4cf10-34df-4c0f-9d82-bf6ca9e45025
   port: 443
   server: node-degame.bangboonet.ru
+  skip-cert-verify: false
   sni: node-degame.bangboonet.ru
   tls: false
   type: hysteria2
+  up: ''
 - name: 🇩🇪德国
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
   port: 443
@@ -13,10 +19,12 @@ proxies:
   sni: taga8.api3-max.ru
   tls: false
   type: hysteria2
-- name: '德国 #1'
+- auth: 71cada65-d23e-418c-88e4-a06188d14689
+  name: 🇩🇪DE_4|2.0MB/s
   password: 71cada65-d23e-418c-88e4-a06188d14689
   port: 443
   server: de-two.quiet-rogue.site
+  skip-cert-verify: true
   sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
@@ -71,23 +79,10 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_2|3.8MB/s
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 104.26.2.173
-  skip-cert-verify: true
-  sni: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|2.5MB/s
+  name: 🇩🇪DE_1|2.7MB/s
   network: tcp
   port: '443'
   reality-opts:
@@ -100,34 +95,13 @@ proxies:
   udp: true
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
   xudp: true
-- name: 🇩🇪DE_4|2.0MB/s
-  port: 1081
-  server: 46.37.123.166
-  type: socks5
-- name: 🇩🇪DE_5|1.6MB/s
-  password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
-  port: 2056
-  server: dg1.mangshe.xyz
+- client-fingerprint: firefox
+  name: 🇩🇪DE_2|1.0MB/s
+  port: 443
+  server: 217.60.193.1
+  servername: ddc-akn.astralweb.tech
   skip-cert-verify: true
-  sni: dg1.mangshe.xyz
-  type: hysteria2
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '1000'
-  name: 🇩🇪DE_6|1.6MB/s
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '500'
-- client-fingerprint: chrome
-  name: 🇩🇪DE_7|1.0MB/s
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: '20041'
-  server: Hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
