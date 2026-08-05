@@ -67,50 +67,88 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
-  name: 🇩🇪DE_1|2.7MB/s
-  network: tcp
-  packet-encoding: xudp
-  port: 25520
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: api.v1.StreamService
+  name: 🇩🇪DE_1|1.8MB/s
+  network: grpc
+  port: 443
   reality-opts:
-    public-key: CdbZitEgBioklscSAiU8eGR_sRvzLPrH3davu5DrNBc
-    short-id: '!!str a8de8bc1e9f5ef'
-  server: 91.107.182.197
-  servername: yahoo.com
+    public-key: q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g
+    short-id: '!!str d3b394558cfe0266'
+  server: 88.216.220.88
+  servername: files.noneok.com
   tls: true
   type: vless
   udp: true
-  uuid: 7fc1ee8b-3abf-4b4e-ab73-007460d767bd
-- alpn:
-  - http/1.1
-  name: 🇩🇪DE_2|3.3MB/s
-  network: ws
-  password: MiTiVPN
+  uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 5post.gate.v1
+  name: 🇩🇪DE_2|3.4MB/s
+  network: grpc
   port: 443
-  server: 104.26.2.173
-  skip-cert-verify: true
-  sni: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
-  type: trojan
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '!!str abcd'
+  server: 95.163.232.183
+  servername: 5post-gate.x5.ru
+  tls: true
+  type: vless
   udp: true
+  uuid: ce774085-ab7b-468a-9282-a5199a525518
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 5post.gate.v1
+  name: 🇩🇪DE_3|2.6MB/s
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '!!str abcd'
+  server: 95.163.232.183
+  servername: 5post-gate.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 236d1f18-40c5-49d8-9611-85355754c326
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 5post.gate.v1
+  name: 🇩🇪DE_4|3.2MB/s
+  network: grpc
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '!!str abcd'
+  server: 95.163.232.183
+  servername: 5post-gate.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6a61e92c-8816-43b3-bf4e-05c754505181
+- name: 🇩🇪DE_5|2.8MB/s
+  network: ws
+  password: ersi13mjahoao8e6
+  port: 443
+  server: hyperon.site
+  skip-cert-verify: true
+  sni: ramz.xuithree.dpdns.org
+  type: trojan
   ws-opts:
     headers:
-      Host: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- client-fingerprint: firefox
-  name: AE_speednode_0001
-  port: 443
-  server: 217.60.193.1
-  servername: ddc-akn.astralweb.tech
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+      Host: ramz.xuithree.dpdns.org
+    path: /dksk
 - alpn:
   - h2
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪DE_4|2.8MB/s
-  network: raw
+  name: 🇩🇪DE_6|2.9MB/s
+  network: tcp
   port: '443'
   server: 217.60.193.1
   servername: ddc-akn.astralweb.tech
@@ -120,9 +158,45 @@ proxies:
   uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
   xudp: true
 - alpn:
+  - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 🇩🇪DE_5|1.8MB/s
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  name: 🇩🇪DE_7|1.1MB/s
+  network: xhttp
+  port: '8443'
+  server: 104.16.6.189
+  servername: butimcreepimweirdo.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  xhttp-opts:
+    host: butimcreepimweirdo.dpdns.org
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇩🇪DE_8|2.0MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: '!!str 3303c7a5'
+  server: 194.93.0.28
+  servername: media2.tcpdoor.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  xudp: true
+- alpn:
+  - http/1.1
+  name: 🇩🇪DE_9|2.8MB/s
   network: ws
   password: ersi13mjahoao8e6
   port: '443'
@@ -136,54 +210,25 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/61.0.3163.100 Safari/537.36
     path: /dksk
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇩🇪DE_6|1.7MB/s
-  network: ws
-  password: ersi13mjahoao8e6
-  port: '443'
-  server: hikvision-plus.com
-  skip-cert-verify: false
-  sni: ramz.xuithree.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.110 Safari/537.36
-    path: /dksk
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇩🇪DE_7|2.4MB/s
-  network: ws
-  password: ersi13mjahoao8e6
-  port: '443'
-  server: hyperon.site
-  skip-cert-verify: false
-  sni: ramz.xuithree.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /dksk
-- client-fingerprint: qq
+- name: 🇩🇪DE_10|2.7MB/s
+  port: 1081
+  server: 46.37.123.166
+  type: socks5
+- client-fingerprint: chrome
   encryption: none
-  grpc-opts:
-    grpc-service-name: 5post.gate.v1
-  name: 🇩🇪DE_8|2.8MB/s
-  network: grpc
-  port: '443'
-  reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: '!!str abcd'
-  server: 95.163.232.183
-  servername: 5post-gate.x5.ru
+  name: 🇩🇪DE_11|1.7MB/s
+  network: ws
+  port: '8443'
+  server: 172.67.225.147
+  servername: ftp.skylinknet.ir
   tls: true
   type: vless
   udp: true
-  uuid: 236d1f18-40c5-49d8-9611-85355754c326
+  uuid: 187cba2e-94df-407e-8d0a-f6d34311fe34
+  ws-opts:
+    headers:
+      Host: ftp.skylinknet.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /
   xudp: true
