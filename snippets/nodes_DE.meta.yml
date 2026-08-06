@@ -1,17 +1,11 @@
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪DE_3|3.2MB/s
-  obfs: ''
-  obfs-password: ''
+- name: 德国
   password: 2ef4cf10-34df-4c0f-9d82-bf6ca9e45025
   port: 443
   server: node-degame.bangboonet.ru
-  skip-cert-verify: false
   sni: node-degame.bangboonet.ru
   tls: false
   type: hysteria2
-  up: ''
 - name: 🇩🇪德国
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
   port: 443
@@ -19,12 +13,10 @@ proxies:
   sni: taga8.api3-max.ru
   tls: false
   type: hysteria2
-- auth: 71cada65-d23e-418c-88e4-a06188d14689
-  name: 🇩🇪DE_4|2.0MB/s
+- name: '德国 #1'
   password: 71cada65-d23e-418c-88e4-a06188d14689
   port: 443
   server: de-two.quiet-rogue.site
-  skip-cert-verify: true
   sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
@@ -79,24 +71,22 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_1|2.7MB/s
+  name: 🇩🇪DE_1|3.0MB/s
   network: tcp
   port: '443'
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: '!!str bbc68cec8bb8d2e3'
-  server: node20.mxvpn.dev
-  servername: node20.mxvpn.dev
+  server: 217.60.193.1
+  servername: ddc-akn.astralweb.tech
   tls: true
   type: vless
   udp: true
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
   xudp: true
 - client-fingerprint: firefox
-  name: 🇩🇪DE_2|1.0MB/s
+  name: 🇩🇪DE_2|2.4MB/s
   port: 443
   server: 217.60.193.1
   servername: ddc-akn.astralweb.tech
@@ -105,3 +95,19 @@ proxies:
   type: vless
   udp: true
   uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_3|3.3MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: '!!str fdda9806fe5d8584'
+  server: 45.129.78.196
+  servername: ger05.skorostnet.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  xudp: true
