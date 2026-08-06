@@ -13,13 +13,19 @@ proxies:
   sni: taga8.api3-max.ru
   tls: false
   type: hysteria2
-- name: '德国 #1'
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_4|3.5MB/s
+  obfs: ''
+  obfs-password: ''
   password: 71cada65-d23e-418c-88e4-a06188d14689
-  port: 443
+  port: '443'
   server: de-two.quiet-rogue.site
+  skip-cert-verify: false
   sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
+  up: ''
 - name: '德国 #2'
   password: 8645697d-51c1-4e90-aca5-ba63a0392f11
   port: 443
@@ -72,42 +78,72 @@ proxies:
   tls: false
   type: hysteria2
 - alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_1|3.0MB/s
-  network: tcp
-  port: '443'
-  server: 217.60.193.1
-  servername: ddc-akn.astralweb.tech
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
-  xudp: true
-- client-fingerprint: firefox
-  name: 🇩🇪DE_2|2.4MB/s
-  port: 443
-  server: 217.60.193.1
-  servername: ddc-akn.astralweb.tech
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🇩🇪DE_1|2.0MB/s
+  port: 26691
+  protocol: udp
+  server: 5.83.129.143
   skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- client-fingerprint: firefox
+  name: 🇩🇪DE_2|1.4MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  server: pro-de.emrata.top
+  servername: pro-de.emrata.top
+  tls: true
+  type: vless
+  uuid: 95f50108-2bae-4634-948c-b22e01ae3133
+- name: 🇩🇪DE_3|1015KB/s
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 104.26.2.173
+  skip-cert-verify: true
+  sni: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- client-fingerprint: qq
+  encryption: none
+  grpc-opts:
+    grpc-service-name: 5post.gate.v1
+  name: 🇩🇪DE_5|1.0MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '!!str abcd'
+  server: 95.163.232.183
+  servername: 5post-gate.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+  uuid: a0dc0921-f49b-4ae2-a449-799d68407f15
+  xudp: true
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|3.3MB/s
-  network: tcp
-  port: '443'
+  name: 🇩🇪DE_6|1.0MB/s
+  network: raw
+  port: '9442'
   reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: '!!str fdda9806fe5d8584'
-  server: 45.129.78.196
-  servername: ger05.skorostnet.space
+    public-key: 4T_g0pGf0GLsp9y7xfFGY8Iy-TGH-gcsCAHwkOPPhG0
+    short-id: '!!str 4321916c00ee1ca6'
+  server: 194.55.239.14
+  servername: ads.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  uuid: b251ec8f-47ec-4ab4-8bd2-13ac333a4100
   xudp: true
