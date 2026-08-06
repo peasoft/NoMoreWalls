@@ -8,14 +8,6 @@ proxies:
   type: hysteria2
 - name: '🇺🇸美国 #1'
   password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  port: 8080
-  server: 23.95.75.151
-  skip-cert-verify: true
-  sni: hopp-us.yyuyy.com
-  tls: false
-  type: hysteria2
-- name: '🇺🇸美国 #2'
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
   port: 8443
   server: 23.95.75.151
   sni: hopp-us.yyuyy.com
@@ -62,47 +54,59 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- auth: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  name: 🇺🇸US_1|2.5MB/s
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  port: 8443
-  server: 172.245.233.237
-  skip-cert-verify: true
-  sni: hopp-us.yyuyy.com
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 🇺🇸US_4|2.5MB/s
-  network: tcp
-  password: 55354c2b8ee339571bd657a9bb9858cc
-  port: '53199'
-  server: speed-01.aliyun-web-tracker.cn
-  skip-cert-verify: true
-  sni: speed-01.aliyun-web-tracker.cn
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_3|1.1MB/s
-  network: tcp
+- client-fingerprint: random
+  name: 🇺🇸US_1|4.7MB/s
+  network: ws
+  packet-encoding: xudp
   port: 443
-  server: usamd2.95318.cf
-  servername: usamd2.95318.cf
+  server: saas.sin.fan
+  servername: us-lax.862400.xyz
   tls: true
   type: vless
-  uuid: de515b65-ad6f-4dfa-b3a2-405a7eef71be
-- client-fingerprint: firefox
-  name: 🇺🇸US_5|2.3MB/s
-  network: tcp
+  uuid: e23fad70-be58-4dea-b6c6-70f94b3abdd7
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: us-lax.862400.xyz
+    max-early-data: 2048
+    path: /announcement
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_2|1.2MB/s
+  network: ws
   port: '443'
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    short-id: '!!str '
-  server: pro-de.emrata.top
-  servername: pro-de.emrata.top
+  server: 104.18.152.229
+  servername: H-k-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.s88r.iR
   tls: true
   type: vless
   udp: true
-  uuid: da86df16-a80c-0032-90be-3e174fe0076d
+  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
+  ws-opts:
+    headers:
+      Host: Hk-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.s88r.iR
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/HK---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇺🇸US_3|1.6MB/s
+  network: ws
+  port: '443'
+  server: 104.17.126.160
+  servername: ohxnj.75kt.gdl.hh.vavava.kdns.fr
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: ohxnj.75kt.gdl.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision

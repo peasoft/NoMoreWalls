@@ -1,4 +1,20 @@
 proxies:
+- name: 新加坡
+  password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
+  port: 2055
+  server: xjp1.mangshe.xyz
+  skip-cert-verify: true
+  sni: xjp1.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: '新加坡 #1'
+  password: f64c72a1-7e1f-4dd1-8929-7e41682542e2
+  port: 4466
+  server: sg3.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: sg3.xiaoliyu.cyou
+  tls: false
+  type: hysteria2
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -23,3 +39,41 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇸🇬SG_1|4.8MB/s
+  network: ws
+  port: '443'
+  server: me.khantry.net
+  servername: me.khantry.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 050c83fa-fcec-4d34-d984-3bba9bd5b6f9
+  ws-opts:
+    headers:
+      Host: me.khantry.net
+    path: /khantri
+  xudp: true
+- fingerprint: ''
+  name: 🇸🇬SG_2|1.3MB/s
+  password: f93d0a97-c3a8-47af-b2be-ea4904c9918b
+  port: '17961'
+  server: jjz.jjznodenode.top
+  skip-cert-verify: true
+  sni: jjz.jjznodenode.top
+  type: anytls
+  udp: true
+  username: f93d0a97-c3a8-47af-b2be-ea4904c9918b
+- client-fingerprint: chrome
+  name: 🇸🇬SG_3|1.4MB/s
+  network: tcp
+  password: 55354c2b8ee339571bd657a9bb9858cc
+  port: '29072'
+  server: 106.75.132.91
+  skip-cert-verify: true
+  type: trojan
+  udp: true
