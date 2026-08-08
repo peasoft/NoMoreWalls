@@ -37,11 +37,19 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
+- auth: 7836b28e-8451-4596-ad3e-e3601b2335ba
+  name: 🇬🇧GB_1|2.1MB/s
+  password: 7836b28e-8451-4596-ad3e-e3601b2335ba
+  port: 8443
+  server: 78.159.240.69
+  skip-cert-verify: true
+  sni: quic.tyr-agentstvo.tech
+  type: hysteria2
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 🇬🇧GB_1|2.6MB/s
+  name: 🇬🇧GB_2|1.9MB/s
   network: xhttp
   port: 443
   server: www.speedtest.net
@@ -55,6 +63,46 @@ proxies:
     mode: auto
     path: /
     x-padding-bytes: 100-1000
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_3|1.4MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: '!!str 15affa0af66dfc79'
+  server: italy.funvideorus.net
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 33c150b7-c0ca-4133-9a52-6f1207da9b8b
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧GB_4|1.1MB/s
+  network: tcp
+  port: '443'
+  server: it1-akn.astralweb.tech
+  servername: it1-akn.astralweb.tech
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧GB_5|1.1MB/s
+  network: tcp
+  port: '443'
+  server: 31.76.113.187
+  servername: it1-akn.astralweb.tech
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd1673b3-7cec-4fe6-bedf-b534eb54e647
+  xudp: true
 - name: GB_speednode_0002
   password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
   port: 443
