@@ -1,44 +1,3 @@
-NoMoreWalls:
-  name-map:
-    ⛔ 广告拦截: adblock
-    🚀 选择代理: proxy
-    🌐 突破锁区: region
-    🚨 病毒网站: malware
-    DIRECT: direct
-  categories:
-    redir: [Relay, 中转, OVERALL]
-    JP: [JP, Japan, 日, 东京, 🇯🇵]
-    US: [US, United States, 美, 🇺🇸]
-    TW: [TW, Taiwan, 台, 🇹🇼, OVERALL]
-    CN: [CN, China, 中国, 上海, 浙江, 广东, 深圳, 🇨🇳]
-    HK: [HK, Hong Kong, 港, 🇭🇰]
-    CA: [CA, Canada, 加拿大, 🇨🇦]
-    FR: [FR, French, France, Paris, 法, 🇫🇷]
-    SG: [SG, Singapore, 新加坡, 狮城, 🇸🇬]
-    GB: [GB, UK, United Kindom, Britain, 英, 🇬🇧]
-    KR: [KR, Korea, 韩, 🇰🇷]
-    RU: [RU, Russia, 俄, 🇷🇺]
-    DE: [DE, Germany, 德, 🇩🇪]
-    SE: [SE, Sweden, 瑞典, 🇸🇪]
-    CH: [CH, Switzerland, 瑞士, 🇨🇭]
-    EE: [EE, Estonia, 爱沙尼亚, 🇪🇪]
-  categories_disp:
-    JP: 🇯🇵 日本
-    US: 🇺🇸 美国
-    HK: 🇭🇰 香港
-    TW: 🇨🇳 台湾
-    SG: 🇸🇬 新加坡
-    CA: 🇨🇦 加拿大
-    FR: 🇫🇷 法国
-    GB: 🇬🇧 英国
-    KR: 🇰🇷 韩国
-    DE: 🇩🇪 德国
-    CN: 🇨🇳 中国
-    RU: 🇷🇺 俄罗斯
-    # SE: 🇸🇪 瑞典
-    # CH: 🇨🇭 瑞士
-    # EE: 🇪🇪 爱沙尼亚
-
 #---------------------------------------------------#
 ## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
 #---------------------------------------------------#
@@ -124,18 +83,18 @@ proxy-groups:
     type: fallback
     url: https://www.google.com/
     interval: 300
-    proxies: []
+    include-all: true
 
   - name: 🔰 延迟最低
     type: url-test
     url: https://www.google.com/
     interval: 300
     tolerance: 20
-    proxies: []
+    include-all: true
 
   - name: ✅ 手动选择
     type: select
-    proxies: []
+    include-all: true
 
   - name: 🌐 突破锁区
     type: select
@@ -171,7 +130,8 @@ proxy-groups:
 
   - name: 🗺️ 选择地区
     type: select
-    proxies: []
+    proxies:
+      - REJECT
 
 rules:
   # 应急响应：BootCDN/Staticfile 被投毒！
@@ -282,6 +242,91 @@ rules:
   # - DOMAIN-SUFFIX,blob.core.windows.net,🐟 漏网之鱼
   - DOMAIN-SUFFIX,gradle.org,🚀 选择代理
 
+  # TikTok
+  - DOMAIN-KEYWORD,byteoversea,🚀 选择代理
+  - DOMAIN-KEYWORD,tiktokcdn,🚀 选择代理
+  - DOMAIN-KEYWORD,tiktok-cdns,🚀 选择代理
+  - DOMAIN-SUFFIX,bytedance.info,🚀 选择代理
+  - DOMAIN-SUFFIX,bytedance.net,🚀 选择代理
+  - DOMAIN-SUFFIX,byteeffecttos-g.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bytefcdn-oversea.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bytefcdn-ttpeu.com,🚀 选择代理
+  - DOMAIN-SUFFIX,byteglb.com,🚀 选择代理
+  - DOMAIN-SUFFIX,byteigtm.com,🚀 选择代理
+  - DOMAIN-SUFFIX,byteimg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,byteintl.com,🚀 选择代理
+  - DOMAIN-SUFFIX,byteintl.net,🚀 选择代理
+  - DOMAIN-SUFFIX,byteintlapi.com,🚀 选择代理
+  - DOMAIN-SUFFIX,bytetcdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,eviltiktok.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ibytedtos.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ibyteimg.com,🚀 选择代理
+  - DOMAIN-SUFFIX,muscdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,musemuse.cn,🚀 选择代理
+  - DOMAIN-SUFFIX,musical.ly,🚀 选择代理
+  - DOMAIN-SUFFIX,musical.lyjapan,🚀 选择代理
+  - DOMAIN-SUFFIX,musically.ly,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-eu.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-minis.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-minis.eu,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-minis.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-row.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-row.org,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-studio.onelink.me,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-us.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-usts.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok-usts.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.controller,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.da,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.feed.fyp,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.ies,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.in,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.org,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.shop,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.sorter,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.usmain,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokcreativeone.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokd.net,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokd.org,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokglobalshop-governance.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokglobalshop.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokglobalshop.eu,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokglobalshop.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokglobalshopv.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokimpact.co.uk,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokimpact.com.au,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktoklinksafety.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktoklinksafety.eu,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktoklinksafety.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokminis.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokmusic.app,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokresumes.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokshop.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokshopglobalselling.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokshops.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokstaticb.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokv-eu.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokv-us.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokv.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokv.eu,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokv.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokw.eu,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktokw.us,🚀 选择代理
+  - DOMAIN-SUFFIX,tiktok.tiltify.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tlivecdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tlivepush.com,🚀 选择代理
+  - DOMAIN-SUFFIX,tplv-tiktokx-origin.heic,🚀 选择代理
+  - DOMAIN-SUFFIX,tplv-tiktokx-origin.image,🚀 选择代理
+  - DOMAIN-SUFFIX,ttapis.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ttcdn-us.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ttdns2.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ttlivecdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ttlstatic.com,🚀 选择代理
+  - DOMAIN-SUFFIX,ttoversea.net,🚀 选择代理
+  - DOMAIN-SUFFIX,ttoverseaus.net,🚀 选择代理
+  - DOMAIN-SUFFIX,ttwstatic.com,🚀 选择代理
 
   # 国内网站（优先，避免 google.cn 走代理）
   - DOMAIN-SUFFIX,cn,DIRECT

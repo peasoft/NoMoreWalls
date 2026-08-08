@@ -90,7 +90,7 @@
     pip install -r requirements.txt
     ```
 3. 如果你所在地区没有墙或你在使用 Tun 模式或透明代理：创建空白文件 `local_proxy.conf`，填入 `NONE`，然后跳到第 9 步
-4. 如果你已有代理，请跳到第 8 步。
+4. 如果你已有代理，请跳到第 8 步
 5. 创建空白文件 `local_proxy.conf`
 6. 运行 `fetch.py`
 7. 将生成的订阅导入代理工具并正确配置好代理
@@ -98,8 +98,9 @@
     ```plain
     http://127.0.0.1:7890/
     ```
-9. 运行 `fetch.py`
-10. 你已获得完整订阅
+9. 如有需要，可将 `fetch_config.yml` 复制为 `local_fetch_config.yml` 并调整相关设置
+10. 运行 `fetch.py`
+11. 你已获得完整订阅
 
 如果本地仓库长期未更新，也请使用 `--depth=1` 更新仓库：
 

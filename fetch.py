@@ -1,33 +1,4 @@
 #!/usr/bin/env python3
-# ========== User Configs Begin ==========
-# 以下是可以自定义的配置：
-STOP = False              # 暂停抓取节点
-NAME_SHOW_TYPE = False    # 在节点名称前添加如 [Vmess] 的标签
-NAME_NO_FLAGS  = False    # 将节点名称中的地区旗帜改为文本地区码
-NAME_SHOW_SRC  = False    # 在节点名称前显示所属订阅编号 (订阅见 list_result.csv)
-ABFURLS = (           # Adblock 规则黑名单
-    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
-    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
-    "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
-    # "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
-    # "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag.txt",
-    # "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
-    # "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    # "https://anti-ad.net/adguard.txt",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
-    "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
-    # "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
-    # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
-    # "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt",
-    "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
-    # "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt",
-)
-ABFWHITE = (          # Adblock 规则白名单
-    "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt",
-    "file:///./abpwhite.txt",
-)
-# ========== User Configs End ==========
-
 # pyright: reportConstantRedefinition = none
 # pyright: reportMissingTypeStubs = none
 # pyright: reportRedeclaration = none
@@ -42,7 +13,7 @@ ABFWHITE = (          # Adblock 规则白名单
 import yaml
 import json
 import base64
-from urllib.parse import quote, unquote, urlparse
+from urllib.parse import quote, unquote, urlparse, ParseResult
 import requests
 from requests_file import FileAdapter
 import datetime
@@ -55,8 +26,35 @@ import copy
 from types import FunctionType as function
 from typing import Set, List, Dict, Union, Callable, Any, Optional, Iterable, TypedDict
 
+class TYPE_FETCH_CONFIG(TypedDict):
+    stop: bool
+    name_show_type: bool
+    name_no_flags: bool
+    name_show_src: bool
+    abfurls: List[str]
+    abfwhite: List[str]
+    name_map: Dict[str, str]
+    categories: Dict[str, List[str]]
+    categories_disp: Dict[str, str]
+
+FETCH_CONFIG: TYPE_FETCH_CONFIG = {
+    'stop': False,
+    'name_show_type': False,
+    'name_no_flags': False,
+    'name_show_src': False,
+    'abfurls': [],
+    'abfwhite': [],
+    'name_map': {},
+    'categories': {},
+    'categories_disp': {}
+}
+for fn in ("fetch_config.yml", "local_fetch_config.yml"):
+    try:
+        FETCH_CONFIG.update(yaml.safe_load(open(fn, encoding="utf-8").read()))
+    except OSError:
+        pass
 try: PROXY = open("local_proxy.conf").read().strip()
-except FileNotFoundError: LOCAL = False; PROXY = None
+except OSError: LOCAL = False; PROXY = None
 else:
     if not PROXY: PROXY = None
     LOCAL = not PROXY
@@ -124,9 +122,14 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NUU4Nlx1Nzk1RFx1NEUyRFx1NTZGRFx1NTE3
 """
 
 d = datetime.datetime.now()
-if STOP or ((d.month, d.day) in ((6, 4), (7, 1), (10, 1)) and not (LOCAL or PROXY)):
-    DEBUG_NO_NODES = DEBUG_NO_DYNAMIC = STOP = True
-    NAME_SHOW_TYPE = NAME_NO_FLAGS = NAME_SHOW_SRC = False
+if FETCH_CONFIG['stop'] or ((d.month, d.day) in ((6, 4), (7, 1), (10, 1)) and not (LOCAL or PROXY)):
+    FETCH_CONFIG.update({
+        'stop': True,
+        'name_show_type': False,
+        'name_no_flags': False,
+        'name_show_src': False
+    })
+    DEBUG_NO_NODES = DEBUG_NO_DYNAMIC = True
     BANNED_WORDS = []
 
 session = requests.Session()
@@ -227,8 +230,21 @@ class Node:
         else:
             return False
 
-    @staticmethod
-    def urlparse(url: str, scheme='', allow_fragments=True):
+    @classmethod
+    def urlparse0(cls, url: str, scheme=''):
+        # For non-standard node url only!
+        if '#' in url:
+            segs = url.split('#')
+            fragment = segs[-1]
+            url = '#'.join(segs[:-1])
+        else:
+            fragment = ''
+        scheme0, r = url.split('://', 1)
+        netloc, query = r.split('/?', 1)
+        return ParseResult(scheme0 or scheme, netloc, '', '', query, fragment)
+
+    @classmethod
+    def urlparse(cls, url: str, scheme='', allow_fragments=True):
         if allow_fragments and '#' in url:
             segs = url.split('#')
             fragment = segs[-1]
@@ -236,6 +252,9 @@ class Node:
         else:
             fragment = None
         res = urlparse(url, scheme, allow_fragments=False)
+        if res.netloc.endswith(':'):
+            # hy2://https://XXX@server:443/?#
+            return cls.urlparse0(url, scheme)
         if fragment:
             res = res._replace(fragment=fragment)
         return res
@@ -515,7 +534,7 @@ class Node:
                 for c in name
             ]
         for ch in ('\N{MATHEMATICAL BOLD SMALL A}\N{MATHEMATICAL SANS-SERIF BOLD SMALL A}'
-                    +'\N{REGIONAL INDICATOR SYMBOL LETTER A}'*NAME_NO_FLAGS):
+                    +'\N{REGIONAL INDICATOR SYMBOL LETTER A}'*FETCH_CONFIG['name_no_flags']):
             name = [
                 c - ord(ch) + ord('a') if ord(ch) <= c < ord(ch)+26 else c
                 for c in name
@@ -530,7 +549,7 @@ class Node:
                 name += '\N{LEFT-TO-RIGHT MARK}'
                 print(name)
             name += '...'
-        if NAME_SHOW_TYPE:
+        if FETCH_CONFIG['name_show_type']:
             if self.type in ('ss', 'ssr', 'vless', 'tuic'):
                 tp = self.type.upper()
             else:
@@ -547,7 +566,7 @@ class Node:
 
     @property
     def isfake(self) -> bool:
-        if STOP: return False
+        if FETCH_CONFIG['stop']: return False
         try:
             if 'server' not in self.data: return True
             if self.data['server'] in FAKE_IPS: return True
@@ -1021,7 +1040,9 @@ def merge(source_obj: Source, sourceId=-1):
             if len(e.args) == 1:
                 print(f"不支持的类型：{e}")
             unknown.add(p)
-        except: traceback.print_exc()
+        except:
+            print(f"无法处理 `{p}`：")
+            traceback.print_exc()
         else:
             n.format_name()
             Node.gNames.add(n.data['name'])
@@ -1036,21 +1057,22 @@ def merge(source_obj: Source, sourceId=-1):
 
 def raw2fastly(url: str) -> str:
     if not LOCAL: return url
-    url: Union[str, List[str]]
     if url.startswith("https://raw.githubusercontent.com/"):
-        url = url[34:].split('/')
-        url[1] += '@'+url[2]
-        del url[2]
-        url = "https://fastly.jsdelivr.net/gh/"+('/'.join(url))
-        return url
-        # return "https://ghproxy.cfd/"+url
+        return "https://ghproxy.net/"+url
+    # url: Union[str, List[str]]
+    # if url.startswith("https://raw.githubusercontent.com/"):
+    #     url = url[34:].split('/')
+    #     url[1] += '@'+url[2]
+    #     del url[2]
+    #     url = "https://fastly.jsdelivr.net/gh/"+('/'.join(url))
+    #     return url
     return url
 
 def merge_adblock(adblock_name: str, rules: Dict[str, str]):
     print("正在解析 Adblock 列表... ", end='', flush=True)
     blocked: Set[str] = set()
     unblock: Set[str] = set()
-    for url in ABFURLS:
+    for url in FETCH_CONFIG['abfurls']:
         url = raw2fastly(url)
         try:
             res = session.get(normpath(url))
@@ -1073,7 +1095,7 @@ def merge_adblock(adblock_name: str, rules: Dict[str, str]):
                             (line[-1] == '^' or line.endswith("$all")):
                 blocked.add(line.strip('al').strip('|^$'))
 
-    for url in ABFWHITE:
+    for url in FETCH_CONFIG['abfwhite']:
         url = raw2fastly(url)
         try:
             res = session.get(normpath(url))
@@ -1236,12 +1258,12 @@ def main():
             print("正在退出...")
             break
 
-    if STOP:
+    if FETCH_CONFIG['stop']:
         merged = {}
         for nid, nd in enumerate(STOP_FAKE_NODES.splitlines()):
             merged[nid] = Node(nd)
 
-    elif NAME_SHOW_SRC:
+    elif FETCH_CONFIG['name_show_src']:
         for hashp, p in merged.items():
             if hashp in used:
                 src = ','.join([str(_) for _ in sorted(list(used[hashp]))])
@@ -1280,26 +1302,18 @@ def main():
     else:
         merge_adblock(conf['proxy-groups'][-2]['name'], rules)
 
-    snip_conf: Dict[str, Dict[str, Any]] = {}
     ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}
     ctg_nodes_meta: Dict[str, List[Node.DATA_TYPE]] = {}
-    categories: Dict[str, List[str]] = {}
-    try:
-        snip_conf = conf['NoMoreWalls']
-    except KeyError:
-        print("未设置片段配置：", file=sys.stderr)
-        traceback.print_exc()
-    else:
-        del conf['NoMoreWalls']
+    CATEGORIES = FETCH_CONFIG['categories']
+    if CATEGORIES:
         print("正在按地区分类节点...")
-        categories = snip_conf['categories']
-        for ctg in categories:
+        for ctg in CATEGORIES:
             ctg_nodes[ctg] = []
             ctg_nodes_meta[ctg] = []
         for node in merged.values():
             if node.supports_meta():
                 ctgs: List[str] = []
-                for ctg, keys in categories.items():
+                for ctg, keys in CATEGORIES.items():
                     for key in keys:
                         if key in node.name:
                             ctgs.append(ctg)
@@ -1356,28 +1370,24 @@ def main():
     conf['rules'] = [','.join(_) for _ in rules.items()]+[match_rule]
 
     # Clash & Meta
-    global_fp: Optional[str] = conf.get('global-client-fingerprint', None)
     proxies: List[Node.DATA_TYPE] = []
-    proxies_snip: List[Node.DATA_TYPE] = []
     proxies_meta: List[Node.DATA_TYPE] = []
-    proxies_meta_snip: List[Node.DATA_TYPE] = []
-    ctg_base: Dict[str, Any] = conf['proxy-groups'][3].copy()
+    ctg_base: Dict[str, Any] = conf['proxy-groups'][-1].copy()
     names_clash: Union[Set[str], List[str]] = set()
     names_clash_meta: Union[Set[str], List[str]] = set()
     for p in merged.values():
         if p.supports_meta():
-            clash_data = p.clash_data
-            clash_data_snip = clash_data.copy()
-            if ('client-fingerprint' in clash_data and
-                    clash_data['client-fingerprint'] == global_fp):
-                del clash_data['client-fingerprint']
-            if p.supports_clash():
-                proxies.append(clash_data)
-                proxies_snip.append(clash_data_snip)
-                names_clash.add(p.data['name'])
-            proxies_meta.append(clash_data)
-            proxies_meta_snip.append(clash_data_snip)
-            names_clash_meta.add(p.data['name'])
+            try:
+                data = p.clash_data
+                name = p.data['name']
+            except:
+                traceback.print_exc()
+            else:
+                proxies_meta.append(data)
+                names_clash_meta.add(name)
+                if p.supports_clash():
+                    proxies.append(data)
+                    names_clash.add(name)
     names_clash = list(names_clash)
     names_clash_meta = list(names_clash_meta)
     conf_meta = copy.deepcopy(conf)
@@ -1385,12 +1395,13 @@ def main():
     # Clash
     conf['proxies'] = proxies
     for group in conf['proxy-groups']:
-        if not group['proxies']:
+        if group.get('include-all'):
+            del group['include-all']
             group['proxies'] = names_clash
-    if snip_conf:
+    if CATEGORIES:
         conf['proxy-groups'][-1]['proxies'] = []
         ctg_selects: List[str] = conf['proxy-groups'][-1]['proxies']
-        ctg_disp: Dict[str, str] = snip_conf['categories_disp']
+        ctg_disp: Dict[str, str] = FETCH_CONFIG['categories_disp']
         for ctg, payload in ctg_nodes.items():
             if ctg in ctg_disp:
                 disp = ctg_base.copy()
@@ -1409,18 +1420,19 @@ def main():
         f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
         f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
-        f.write(yaml.dump({'proxies': proxies_snip}, allow_unicode=True).replace('!!str ',''))
+        f.write(yaml.dump({'proxies': proxies}, allow_unicode=True).replace('!!str ',''))
 
     # Meta
     conf = conf_meta
     conf['proxies'] = proxies_meta
     for group in conf['proxy-groups']:
-        if not group['proxies']:
+        if group.get('include-all'):
+            del group['include-all']
             group['proxies'] = names_clash_meta
-    if snip_conf:
+    if CATEGORIES:
         conf['proxy-groups'][-1]['proxies'] = []
         ctg_selects: List[str] = conf['proxy-groups'][-1]['proxies']
-        ctg_disp: Dict[str, str] = snip_conf['categories_disp']
+        ctg_disp: Dict[str, str] = FETCH_CONFIG['categories_disp']
         for ctg, payload in ctg_nodes_meta.items():
             if ctg in ctg_disp:
                 disp = ctg_base.copy()
@@ -1435,11 +1447,11 @@ def main():
         f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
         f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
     with open("snippets/nodes.meta.yml", 'w', encoding="utf-8") as f:
-        f.write(yaml.dump({'proxies': proxies_meta_snip}, allow_unicode=True).replace('!!str ',''))
+        f.write(yaml.dump({'proxies': proxies_meta}, allow_unicode=True).replace('!!str ',''))
 
-    if snip_conf:
+    if CATEGORIES:
         print("正在写出配置片段...")
-        name_map: Dict[str, str] = snip_conf['name-map']
+        name_map: Dict[str, str] = FETCH_CONFIG['name_map']
         snippets: Dict[str, List[str]] = {}
         for rpolicy in name_map.values(): snippets[rpolicy] = []
         for rule, rpolicy in rules.items():
