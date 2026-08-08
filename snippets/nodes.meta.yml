@@ -91,7 +91,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - down: ''
   fingerprint: ''
-  name: 🇺🇸US_5|1.6MB/s
+  name: 🇺🇸US_3|2.2MB/s
   obfs: ''
   obfs-password: ''
   password: 042a1881-44e4-4781-bd40-bf75164faf4f
@@ -102,33 +102,30 @@ proxies:
   tls: false
   type: hysteria2
   up: ''
-- name: 🇯🇵JP
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵JP_2|1.1MB/s
+  obfs: ''
+  obfs-password: ''
   password: 0c3bd8c8-53db-4126-a98f-d12d908d5301
-  port: 11000
+  port: '11000'
   server: jpa.nnpy.org
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱NL_2|2.3MB/s
-  obfs: ''
-  obfs-password: ''
+  up: ''
+- name: '荷兰 #1'
   password: 16ab4d4a-fd81-4535-9b7b-346677226ce8
-  port: '443'
+  port: 443
   server: lin.cryptoofarm.com
-  skip-cert-verify: true
   sni: lin.cryptoofarm.com
   tls: false
   type: hysteria2
-  up: ''
-- auth: 16ab4d4a-fd81-4535-9b7b-346677226ce8
-  name: 🇵🇱PL_1|1.6MB/s
+- name: 波兰
   password: 16ab4d4a-fd81-4535-9b7b-346677226ce8
   port: 443
   server: pol.cryptoofarm.com
-  skip-cert-verify: true
   sni: pol.cryptoofarm.com
   tls: false
   type: hysteria2
@@ -142,7 +139,7 @@ proxies:
   type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 🇫🇮FI_1|1.1MB/s
+  name: 🇫🇮FI_1|1.2MB/s
   obfs: salamander
   obfs-password: 8zzng75tz4tf82pj
   password: 22j0d00lev7mq0yv
@@ -307,7 +304,7 @@ proxies:
   type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 🇳🇱NL_3|2.8MB/s
+  name: 🇳🇱NL_1|1.8MB/s
   obfs: ''
   obfs-password: ''
   password: 99800091-8337-4112-8756-8cc60eb1ffa8
@@ -608,16 +605,6 @@ proxies:
   server: 185.47.172.226
   skip-cert-verify: false
   sni: 185.47.172.226
-  tls: false
-  type: hysteria2
-- name: ♾️Join->🆔️@ATLAS_V2VPN🆓️🛜🔷️491...
-  obfs: salamander
-  obfs-password: l960g2kn19nphlra
-  password: 4z2oldt85p494bgb
-  port: 52060
-  server: assets.gateway-stream.com
-  skip-cert-verify: false
-  sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
 - name: 👉🆔@v2ray_configs_pool📡🇫🇮®️Finl...
@@ -1082,15 +1069,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  name: 🇷🇴RO_1|2.5MB/s
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  port: 8443
-  server: 76.164.202.217
-  skip-cert-verify: true
-  sni: mercedes-grape.yyuyy.com
-  type: hysteria2
-- name: 🇯🇵JP_1|3.9MB/s
+- name: 🇯🇵JP_1|3.4MB/s
   password: f93d0a97-c3a8-47af-b2be-ea4904c9918b
   port: 17968
   server: jjz.jjznodenode.top
@@ -1098,11 +1077,27 @@ proxies:
   sni: jjz.jjznodenode.top
   type: anytls
   udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
+  name: 🇷🇺RU_1|2.9MB/s
+  network: xhttp
+  port: 443
+  server: qwesd.rutendingaltos.top
+  servername: qwesd.rutendingaltos.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
+  xhttp-opts:
+    host: qwesd.rutendingaltos.top
+    path: /assets/build/_app/immutable/chunks/stream-one/
 - client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  name: 🇸🇬SG_1|4.5MB/s
+  name: 🇸🇬SG_1|5.2MB/s
   network: grpc
   port: 10036
   reality-opts:
@@ -1114,97 +1109,45 @@ proxies:
   type: vless
   udp: true
   uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
-- client-fingerprint: random
-  name: 🇺🇸US_1|3.8MB/s
-  network: ws
-  port: 443
-  server: ct.877774.xyz
-  servername: us-lax.862400.xyz
-  tls: true
-  type: vless
-  uuid: e4281fbe-7729-4ef1-ad3b-f33aca54e339
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: /announcement
-- name: 🇺🇸US_2|3.0MB/s
+- name: 🇹🇼TW_1|1.3MB/s
   password: f93d0a97-c3a8-47af-b2be-ea4904c9918b
-  port: 17963
+  port: 17964
   server: jjz.jjznodenode.top
   skip-cert-verify: true
   sni: jjz.jjznodenode.top
   type: anytls
   udp: true
-- name: 🇩🇪DE_1|1.1MB/s
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸US_1|1006KB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬SG_2|5.0MB/s
   network: ws
-  password: chrysanthemum
-  port: 443
-  server: 104.20.48.11
-  skip-cert-verify: true
-  sni: cmee.ezbiz.dynv6.net
-  type: trojan
+  port: '443'
+  server: 172.64.146.86
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  type: vless
   udp: true
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   ws-opts:
     headers:
-      Host: cmee.ezbiz.dynv6.net
-    path: /
-- client-fingerprint: chrome
-  name: 🇳🇱NL_1|1.1MB/s
-  port: 443
-  server: ddc-chr.astralweb.tech
-  servername: ddc-chr.astralweb.tech
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-- name: 🇰🇷KR_1|2.5MB/s
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- name: 🇺🇸US_3|4.1MB/s
-  port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  sni: fan.365747.xyz
-  tls: true
-  type: http
-- down: ''
-  fingerprint: ''
-  name: 🇯🇵JP_2|4.7MB/s
-  obfs: ''
-  obfs-password: ''
-  password: claire123
-  port: '8443'
-  server: 60.71.150.71
-  skip-cert-verify: true
-  sni: tuimao.space
-  type: hysteria2
-  up: ''
-- client-fingerprint: edge
-  encryption: none
-  name: 🇷🇺RU_1|1.0MB/s
-  network: xhttp
-  port: '443'
-  server: 135.106.140.23
-  servername: qwesd.rutendingaltos.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
-  xhttp-opts:
-    host: qwesd.rutendingaltos.top
-    path: /assets/build/_app/immutable/chunks/stream-one/
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /sg-melbi
   xudp: true
 - client-fingerprint: chrome
+  encryption: none
   grpc-opts:
     grpc-service-name: update
-  name: 🇸🇬SG_2|4.9MB/s
+  name: 🇸🇬SG_3|5.2MB/s
   network: grpc
   port: '10038'
   reality-opts:
@@ -1216,57 +1159,134 @@ proxies:
   type: vless
   udp: true
   uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
+  xudp: true
+- name: 🇫🇷FR_1|1.3MB/s
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  port: 443
+  server: 527b5b47-t9zts0-tighxj-12hj8.fr.oshuawei.com
+  sni: 527b5b47-t9zts0-tighxj-12hj8.fr.oshuawei.com
+  tls: true
+  type: http
+  username: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+- name: 🇺🇸US_2|4.4MB/s
+  port: 443
+  server: fan.365747.xyz
+  skip-cert-verify: true
+  sni: fan.365747.xyz
+  tls: true
+  type: http
+- name: 🇸🇨SC_1|2.4MB/s
+  password: None
+  port: 1080
+  server: 27.155.93.29
+  type: http
+  username: null
 - client-fingerprint: qq
   encryption: none
-  name: 🇺🇸US_4|1.0MB/s
-  network: xhttp
-  port: '443'
+  flow: xtls-rprx-vision
+  name: 🇵🇱PL_1|1.1MB/s
+  network: tcp
+  port: '49001'
   reality-opts:
-    public-key: XBBVeMURFu7jmYJ9MZwjEWgfQlGTnRs0B5So5Fy7jWs
-    short-id: 'c1cdebeccbb470ae'
-  server: sa-84018978331c4eaf.sr-37f423695609b2ef.r.vpvpn.club
-  servername: obrienteamnissan.com
+    public-key: _LbLyj6OynSREglFpkhdrxVmh_bf9p60uTEWfQbtUWo
+    short-id: '1a6b1f9d0e'
+  server: pl-4.techprovide.icu
+  servername: de-7.techprovide.icu
   tls: true
   type: vless
   udp: true
-  uuid: 8c7ac0ea-b1e4-4c20-bc16-1437559f3ac4
-  xhttp-opts:
-    mode: auto
-    path: /
-    sc-max-each-post-bytes: 1000000
-    sc-min-posts-interval-ms: 30
-    x-padding-bytes: 100-1000
+  uuid: 41784775-8846-4579-9d9d-9ad6ea802e2e
   xudp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇲🇾MY_1|5.3MB/s
-  network: tcp
-  port: '443'
+  grpc-opts:
+    grpc-service-name: update
+  name: 🇸🇬SG_4|4.3MB/s
+  network: grpc
+  port: '10037'
   reality-opts:
-    public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
-    short-id: 'ed77ac35a310'
-  server: my2.miyazono-kaori.com
-  servername: www.setel.com
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '686c0ef0'
+  server: 13.229.94.179
+  servername: s0.awsstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: d36b40ec-5328-48e7-b8c1-ce9f1cfa0430
-  xudp: true
+  uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_2|1.7MB/s
-  network: tcp
-  port: '443'
+  grpc-opts:
+    grpc-service-name: update
+  name: 🇭🇰HK_1|4.4MB/s
+  network: grpc
+  port: '10126'
   reality-opts:
-    public-key: JH9UnU0LFCDS3Q8zR7dhQDYrQ4iZGDgDB-sQcQ1q-kA
-    short-id: '5a9ab320'
-  server: de2.miyazono-kaori.com
-  servername: www.siemens.com
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '686c0ef0'
+  server: 18.166.210.12
+  servername: s0.awsstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: d36b40ec-5328-48e7-b8c1-ce9f1cfa0430
-  xudp: true
+  uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: update
+  name: 🇯🇵JP_3|6.0MB/s
+  network: grpc
+  port: '10035'
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '686c0ef0'
+  server: 18.181.77.188
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: movie
+  name: 🇭🇰HK_2|3.9MB/s
+  network: grpc
+  port: '10129'
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '686c0ef0'
+  server: 43.198.96.23
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: update
+  name: 🇸🇬SG_5|2.9MB/s
+  network: grpc
+  port: '10036'
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '686c0ef0'
+  server: 54.179.114.52
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: update
+  name: 🇯🇵JP_4|4.9MB/s
+  network: grpc
+  port: '10035'
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '686c0ef0'
+  server: jp5-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7651FEC2-07B1-4904-8985-8EAAA1B781F3
 - name: GB_speednode_0002
   password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
   port: 443

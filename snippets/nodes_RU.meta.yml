@@ -28,12 +28,14 @@ proxies:
   sni: www.linux.com
   tls: false
   type: hysteria2
-- client-fingerprint: edge
-  encryption: none
-  name: 🇷🇺RU_1|1.0MB/s
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
+  name: 🇷🇺RU_1|2.9MB/s
   network: xhttp
-  port: '443'
-  server: 135.106.140.23
+  port: 443
+  server: qwesd.rutendingaltos.top
   servername: qwesd.rutendingaltos.top
   tls: true
   type: vless
@@ -42,4 +44,3 @@ proxies:
   xhttp-opts:
     host: qwesd.rutendingaltos.top
     path: /assets/build/_app/immutable/chunks/stream-one/
-  xudp: true
