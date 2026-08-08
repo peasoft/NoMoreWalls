@@ -17,29 +17,29 @@ proxies:
   type: hysteria2
 - name: 新加坡|@ripaojiedian
   network: tcp
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 51396
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 36580
   server: 18.163.100.58
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
   network: tcp
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 51396
-  server: 18.166.178.12
-  skip-cert-verify: false
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 32434
+  server: 57.183.7.187
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 41421
-  server: 43.198.209.68
+  port: 45744
+  server: 18.166.178.40
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇸🇬SG_1|4.5MB/s
+- name: 🇸🇬SG_1|2.5MB/s
   password: f93d0a97-c3a8-47af-b2be-ea4904c9918b
   port: 17967
   server: jjz.jjznodenode.top
@@ -47,15 +47,44 @@ proxies:
   sni: jjz.jjznodenode.top
   type: anytls
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇸🇬SG_2|5.3MB/s
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬SG_2|2.2MB/s
+  network: ws
+  port: '443'
+  server: 172.64.146.86
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  type: vless
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /sg-melbi
   xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇸🇬SG_3|2.1MB/s
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: 104.18.32.47
+  skip-cert-verify: true
+  sni: fls-bbg--MiTiVPN---MiTiVPN-u.aPp-cLoud.IR
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/F-ls
+- name: 🇸🇬SG_4|3.7MB/s
+  password: ESfDSCxpD
+  port: 64462
+  server: 154.219.254.66
+  type: http
+  username: n17sMRE7S
