@@ -1,39 +1,10 @@
 proxies:
-- name: 🇷🇺俄罗斯
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: taga3.api3-max.ru
-  sni: taga3.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '🇷🇺俄罗斯 #1'
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: wopa5.api3-max.ru
-  sni: wopa5.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '🇷🇺俄罗斯 #2'
-  password: 71cada65-d23e-418c-88e4-a06188d14689
-  port: 8443
-  server: 82.117.87.248
-  sni: de-two.quiet-rogue.site
-  tls: false
-  type: hysteria2
-- name: '荷兰 #6'
+- name: '荷兰 #7'
   password: gf1
   port: 443
   server: 5.129.235.85
   skip-cert-verify: true
   sni: www.linux.com
-  tls: false
-  type: hysteria2
-- name: 🇷🇺RU-🚀@VPNine1
-  password: 7836b28e-8451-4596-ad3e-e3601b2335ba
-  port: 8443
-  server: 78.159.240.69
-  skip-cert-verify: true
-  sni: quic.tyr-agentstvo.tech
   tls: false
   type: hysteria2
 - alpn:
@@ -43,7 +14,20 @@ proxies:
   name: 🇷🇺RU_1|1.1MB/s
   network: xhttp
   port: 443
-  server: ru6.ethicsdinnerpave.online
+  server: 135.106.140.23
+  servername: qwesd.rutendingaltos.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
+  xhttp-opts:
+    host: qwesd.rutendingaltos.top
+    path: /assets/build/_app/immutable/chunks/stream-one/
+- client-fingerprint: edge
+  name: 🇷🇺RU_2|1.8MB/s
+  network: xhttp
+  port: 443
+  server: 178.72.162.73
   servername: ru6.ethicsdinnerpave.online
   tls: true
   type: vless
@@ -55,24 +39,8 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  client-fingerprint: edge
-  name: 🇷🇺RU_2|2.1MB/s
-  network: xhttp
-  port: 443
-  server: qwesd.rutendingaltos.top
-  servername: qwesd.rutendingaltos.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
-  xhttp-opts:
-    host: qwesd.rutendingaltos.top
-    path: /assets/build/_app/immutable/chunks/stream-one/
-- alpn:
-  - h2
-  - http/1.1
   client-fingerprint: firefox
-  name: 🇷🇺RU_3|1.6MB/s
+  name: 🇷🇺RU_3|1002KB/s
   network: xhttp
   port: 443
   server: wqeds.denverpresents.top
@@ -84,3 +52,20 @@ proxies:
   xhttp-opts:
     host: wqeds.denverpresents.top
     path: /assets/build/_app/immutable/chunks/stream-one/
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc-tuning-stream
+  name: 🇷🇺RU_4|1.4MB/s
+  network: grpc
+  port: '9441'
+  reality-opts:
+    public-key: xTk5dX6E0DGuQj19bWDMafx13XoUK8euqlmtwJIg8wY
+    short-id: '!!str 8a7137d4e9c49b9c'
+  server: mws-fc-1.ghost-lan.com
+  servername: max.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: b251ec8f-47ec-4ab4-8bd2-13ac333a4100
+  xudp: true
