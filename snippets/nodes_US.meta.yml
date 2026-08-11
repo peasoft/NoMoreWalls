@@ -53,14 +53,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇺🇸140322 | ⚡️Telegram = t.me/S...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 44.251.47.95
-  skip-cert-verify: true
-  sni: css.rbxcdn.com
-  tls: false
-  type: hysteria2
 - name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -85,23 +77,63 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇺🇸US_1|2.1MB/s
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_3|1.6MB/s
+  network: ws
+  port: '443'
+  server: ansooyefilter-hhh.up.railway.app
+  servername: ansooyefilter-hhh.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
+  ws-opts:
+    headers:
+      Host: ansooyefilter-hhh.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /ws/f4e637c2-f9c0-0bce-75f9-f1f4e44d1553
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_2|1.7MB/s
+  network: ws
+  port: '443'
+  server: 69.46.46.12
+  servername: rvg-production-1ff1.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: b07f0c03-a875-ec14-18b3-41298277bb25
+  ws-opts:
+    headers:
+      Host: rvg-production-1ff1.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /ws/b07f0c03-a875-ec14-18b3-41298277bb25
+  xudp: true
+- name: US_speednode_0126
+  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
   port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  sni: fan.365747.xyz
+  server: b0746e33-tcxds0-tgl02u-1jr1u.sjc.oshuawei.com
   tls: true
   type: http
-- auth: 53b59cb5-c741-3399-9065-93dc34685f5b
-  name: 🇺🇸US_2|2.7MB/s
-  obfs: salamander
-  obfs-password: XBvVbvzQCq6Ovbnh
-  password: 53b59cb5-c741-3399-9065-93dc34685f5b
-  port: 14101
-  server: usaw2.awo-link.com
-  sni: usaw2.awo-link.com
-  type: hysteria2
   udp: true
+  username: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+- name: 🇺🇸US_5|3.0MB/s
+  password: ''
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: ''
 - client-fingerprint: firefox
   name: US_speednode_0117
   network: tcp
@@ -173,6 +205,21 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0123
+  network: tcp
+  port: 31877
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: '!!str bc8e3658db7d1323'
+  server: 155.117.199.12
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
 - name: US_speednode_0124
   port: 9002
   server: 138.199.35.210
@@ -180,14 +227,37 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0126
-  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  port: 443
-  server: b0746e33-tcxds0-tgl02u-1jr1u.sjc.oshuawei.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0125
+  network: tcp
+  port: 39395
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: '!!str bc8e3658db7d1323'
+  server: 155.117.199.12
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: false
   tls: true
-  type: http
+  type: vless
   udp: true
-  username: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0127
+  network: tcp
+  packet-encoding: xudp
+  port: 9713
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: '!!str bc8e3658db7d1323'
+  server: 155.117.199.12
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
 - name: US_speednode_0128
   port: 9002
   server: 138.199.35.212
