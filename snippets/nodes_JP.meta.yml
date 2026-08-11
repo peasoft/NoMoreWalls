@@ -43,7 +43,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  name: 🇯🇵JP_1|1.6MB/s
+  name: 🇯🇵JP_1|3.6MB/s
   network: grpc
   port: 10035
   reality-opts:
@@ -55,13 +55,23 @@ proxies:
   type: vless
   udp: true
   uuid: F5516AD2-22A9-413B-8DBE-60B72D30D31F
-- name: 🇯🇵JP_2|1.5MB/s
-  password: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
-  port: 443
-  server: e9b9c37c-t9zts0-tcw58g-1p0be.jp.oshuawei.com
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇯🇵JP_2|1.1MB/s
+  network: grpc
+  packet-encoding: xudp
+  port: 10035
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: jp5-r.link-t7.com
+  servername: s0.awsstatic.com
   tls: true
-  type: http
-  username: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  type: vless
+  udp: true
+  uuid: F5516AD2-22A9-413B-8DBE-60B72D30D31F
 - name: JP_speednode_0014
   password: 7d8e6db4-96cc-4710-afc0-619edde2d7a1
   port: 55682
