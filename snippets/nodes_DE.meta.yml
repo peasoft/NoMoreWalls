@@ -83,67 +83,43 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- encryption: none
-  name: 🇩🇪DE_1|3.4MB/s
-  network: ws
-  port: '80'
-  server: 104.24.33.28
-  servername: web-app-nm50pq.hamedalirajabi.workers.dev
+- client-fingerprint: firefox
+  name: 🇩🇪DE_1|2.1MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
+    short-id: '!!str 9d3734f3ff471b68'
+  server: 150.241.70.0
+  servername: stats.vk-portal.net
+  tls: true
   type: vless
   udp: true
-  uuid: 50414e45-4c5f-5a45-5553-a84ff0bc14f1
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_2|1.3MB/s
+  network: ws
+  port: '8443'
+  server: n8.loyalemu.sbs
+  servername: n8.loyalemu.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6df75f42-4447-4ade-a53e-350f4eb69858
   ws-opts:
     headers:
-      Host: web-app-nm50pq.hamedalirajabi.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.87 Safari/537.36
-    path: /api/ws
+      Host: n8.loyalemu.sbs
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /ws8
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_2|2.8MB/s
-  network: xhttp
-  port: '30435'
-  reality-opts:
-    public-key: PWtRN7kd2FVRySxKp2BiWVhb1KBrCqPXnM1AI4f41Sc
-    short-id: '!!str 1fc17662d2794df9'
-  server: panelhz.tdomainasite.ir
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d3335be1-78db-44af-8200-215d6856b5c5
-  xhttp-opts:
-    mode: auto
-    path: /
-  xudp: true
-- encryption: none
-  name: 🇩🇪DE_6|1.6MB/s
-  network: raw
-  port: '2056'
-  server: ger1.ilia.iranstoresf.ir
-  type: vless
-  udp: true
-  uuid: d14b7d3c-bdda-40ab-8e5e-ee1b67ef0357
-  xudp: true
-- name: 🇩🇪DE_4|1.1MB/s
-  port: 11111
-  server: 103.237.102.191
-  type: http
-- client-fingerprint: qq
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  name: 🇩🇪DE_5|2.1MB/s
-  network: grpc
-  port: '9877'
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: '!!str '
-  server: 194.87.226.71
-  servername: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 553e3253-c454-431d-a7e6-42bc06ea5e14
-  xudp: true
+- name: 🇩🇪DE_3|1.0MB/s
+  password: ''
+  port: '1080'
+  server: 159.195.49.27
+  skip-cert-verify: true
+  type: socks5
+  username: ''

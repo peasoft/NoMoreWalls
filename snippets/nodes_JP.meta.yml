@@ -15,29 +15,7 @@ proxies:
   sni: freedom.chenlan.top
   tls: false
   type: hysteria2
-- name: 🇯🇵 日本|@ripaojiedian
-  password: BxceQaOe
-  port: 4099
-  server: 18.167.76.203
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本2|@ripaojiedian
-  password: 6ec301428255a78a1d826988d86cc87e
-  port: 7630
-  server: 18.166.178.12
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
-  password: 6ec301428255a78a1d826988d86cc87e
-  port: 18286
-  server: 18.166.178.12
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本|@ripaojiedian
+- name: 🇯🇵JP_4|3.3MB/s
   network: tcp
   password: BxceQaOe
   port: 9408
@@ -53,24 +31,36 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_1|4.4MB/s
+- name: 日本3|@ripaojiedian
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: mFfDWNmPFHIN3ojAw2GENgpklJUCOvfj1i_zix8Pnkc
-    short-id: '!!str 73122674fa25a3ab'
-  server: 20.89.106.34
-  servername: www.stanford.edu
-  tls: true
-  type: vless
-  uuid: 7781929f-165f-4a94-b07b-689edf7913e2
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 18286
+  server: 18.166.178.12
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  name: 🇯🇵JP_2|1.9MB/s
+  name: 🇯🇵JP_1|3.5MB/s
+  network: grpc
+  packet-encoding: xudp
+  port: 10035
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: jp5-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: F5516AD2-22A9-413B-8DBE-60B72D30D31F
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇯🇵JP_2|2.0MB/s
   network: grpc
   port: 10035
   reality-opts:
@@ -82,18 +72,19 @@ proxies:
   type: vless
   udp: true
   uuid: F5516AD2-22A9-413B-8DBE-60B72D30D31F
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵JP_3|5.1MB/s
-  network: ws
-  port: 16617
-  server: planb.mojcn.com.linuxlh.xin
+- name: 🇯🇵JP_3|4.8MB/s
+  password: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  port: 443
+  server: e9b9c37c-t9zts0-tcw58g-1p0be.jp.oshuawei.com
+  tls: true
+  type: http
+  username: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+- client-fingerprint: chrome
+  name: 🇯🇵JP_5|4.4MB/s
+  password: BxceQaOe
+  port: '9408'
+  server: 16.162.92.128
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: t.me%2Fripaojiedian
+  type: trojan
   udp: true
-  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
-  ws-opts:
-    headers:
-      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
-    path: /
