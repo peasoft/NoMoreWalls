@@ -107,7 +107,7 @@ proxies:
   type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 🇩🇪DE_7|4.5MB/s
+  name: 🇩🇪DE_5|3.5MB/s
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
   password: cd74c0a406664a5bc0bac098220a2468
@@ -118,13 +118,64 @@ proxies:
   tls: false
   type: hysteria2
   up: ''
-- client-fingerprint: qq
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: 5post.gate.v1
-  name: 🇩🇪DE_1|2.9MB/s
-  network: grpc
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪DE_1|1.1MB/s
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🇩🇪DE_2|2.4MB/s
+  port: 26691
+  protocol: udp
+  server: 5.83.129.143
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪DE_3|1.1MB/s
+  network: xhttp
   port: 443
+  server: 185.229.190.148
+  servername: moein-bf821.b-cdn.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 311cadaf-79ed-4f84-be27-bcf46f920b41
+  xhttp-opts:
+    host: moein-bf821.b-cdn.net
+    mode: auto
+    path: /api
+- name: 🇩🇪DE_4|3.9MB/s
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  port: 2056
+  server: mg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+  type: hysteria2
+- client-fingerprint: qq
+  encryption: none
+  grpc-opts:
+    grpc-service-name: 5post.gate.v1
+  name: 🇩🇪DE_6|2.0MB/s
+  network: grpc
+  port: '443'
   reality-opts:
     public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
     short-id: '!!str abcd'
@@ -133,79 +184,40 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 5329ce60-8b95-4439-95fb-62cca20bd109
-- client-fingerprint: chrome
-  name: 🇩🇪DE_2|1.7MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lFP2ImTpt15m2yw6EivkehLp6smfaH8GRDoXdmcJbVM
-    short-id: '!!str f070801a38d9f30e'
-  server: 2.27.18.136
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7bd8e88e-56d3-4396-87b3-854315db88f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|2.4MB/s
-  network: tcp
-  port: 443
-  server: de151.mechvpn.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.8MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: nTyGEX99oLzIlXTD12u9fvk2rsByCP2XAjoskFV2Qx8
-    short-id: '!!str 7b2e9f4a1c830d5e'
-  server: 2.56.178.136
-  servername: userapi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 47975fcf-1f4c-4808-9012-114569b081e4
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 🇩🇪DE_5|2.5MB/s
-  port: 26691
-  protocol: udp
-  server: 5.83.129.143
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- name: 🇩🇪DE_6|2.7MB/s
-  password: su2j2TfjY
-  port: 64200
-  server: 154.195.173.209
-  type: http
-  username: WwDyfLyzH
-- client-fingerprint: firefox
+  uuid: 733d70b2-a94d-4703-9810-8f7dcc812cc2
+  xudp: true
+- client-fingerprint: random
   encryption: none
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🇩🇪DE_8|1.7MB/s
-  network: grpc
-  port: '18443'
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_7|1.6MB/s
+  network: raw
+  port: '443'
   reality-opts:
-    public-key: YvhcuqXRqPigT7_rp9vsV5LAdxXHN8eWB_17SchS_S8
-    short-id: '!!str '
-  server: 193.233.91.177
-  servername: 5post-gate.x5.ru
+    public-key: Ec54Eop0jZft7rcJsPN4RHc4xG9smXhtenM52pJFUQI
+    short-id: '!!str 27e53bbcab7593d7'
+  server: 84.201.178.175
+  servername: yandex.ru
   tls: true
   type: vless
   udp: true
-  uuid: 499735db-03b7-47a7-8569-c8662a34ad56
+  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇩🇪DE_8|1.1MB/s
+  network: ws
+  port: '2087'
+  server: 172.67.65.53
+  servername: shanxp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  ws-opts:
+    headers:
+      Host: shanxp.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
   xudp: true
 - name: DE_speednode_0001
   password: e4b72b531a2d10900519
