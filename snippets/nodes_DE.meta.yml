@@ -21,14 +21,6 @@ proxies:
   sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
-- name: 🇩🇪DE
-  password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
-  port: 2056
-  server: dg1.mangshe.xyz
-  skip-cert-verify: true
-  sni: dg1.mangshe.xyz
-  tls: false
-  type: hysteria2
 - name: '德国 #3'
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   port: 8443
@@ -113,28 +105,51 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 🇩🇪DE-🚀@VPNine1
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_7|4.5MB/s
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
   password: cd74c0a406664a5bc0bac098220a2468
-  port: 443
+  port: '443'
   server: de2.sferavpn.pro
+  skip-cert-verify: false
   sni: de2.sferavpn.pro
   tls: false
   type: hysteria2
-- auth: 9cc2113e-6b5b-4ced-9c46-70cf78d2c599
-  name: 🇩🇪DE_1|3.0MB/s
-  obfs: salamander
-  obfs-password: AIbOe_791iQ4k6kPUgdsO7B9
-  password: 9cc2113e-6b5b-4ced-9c46-70cf78d2c599
-  port: 2082
-  server: dns.tokyoservice.ir
-  skip-cert-verify: true
-  sni: hy2.tokyoservice.ir
-  type: hysteria2
+  up: ''
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 5post.gate.v1
+  name: 🇩🇪DE_1|2.9MB/s
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '!!str abcd'
+  server: 95.163.232.183
+  servername: 5post-gate.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5329ce60-8b95-4439-95fb-62cca20bd109
+- client-fingerprint: chrome
+  name: 🇩🇪DE_2|1.7MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lFP2ImTpt15m2yw6EivkehLp6smfaH8GRDoXdmcJbVM
+    short-id: '!!str f070801a38d9f30e'
+  server: 2.27.18.136
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7bd8e88e-56d3-4396-87b3-854315db88f5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_2|3.8MB/s
+  name: 🇩🇪DE_3|2.4MB/s
   network: tcp
   port: 443
   server: de151.mechvpn.online
@@ -142,33 +157,55 @@ proxies:
   type: vless
   udp: true
   uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪DE_3|3.4MB/s
-  obfs: salamander
-  obfs-password: AIbOe_791iQ4k6kPUgdsO7B9
-  password: 9cc2113e-6b5b-4ced-9c46-70cf78d2c599
-  port: '2082'
-  server: 91.107.176.41
-  skip-cert-verify: false
-  sni: hy2.tokyoservice.ir
-  type: hysteria2
-  up: ''
 - client-fingerprint: firefox
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.1MB/s
+  name: 🇩🇪DE_4|2.8MB/s
   network: tcp
-  port: '50443'
+  port: 443
   reality-opts:
-    public-key: hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ
-    short-id: '!!str '
-  server: 45.155.71.170
-  servername: www.icloud.com
+    public-key: nTyGEX99oLzIlXTD12u9fvk2rsByCP2XAjoskFV2Qx8
+    short-id: '!!str 7b2e9f4a1c830d5e'
+  server: 2.56.178.136
+  servername: userapi.com
   tls: true
   type: vless
   udp: true
-  uuid: 000f16e8-cc68-4951-b336-acd81996efde
+  uuid: 47975fcf-1f4c-4808-9012-114569b081e4
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🇩🇪DE_5|2.5MB/s
+  port: 26691
+  protocol: udp
+  server: 5.83.129.143
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- name: 🇩🇪DE_6|2.7MB/s
+  password: su2j2TfjY
+  port: 64200
+  server: 154.195.173.209
+  type: http
+  username: WwDyfLyzH
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇩🇪DE_8|1.7MB/s
+  network: grpc
+  port: '18443'
+  reality-opts:
+    public-key: YvhcuqXRqPigT7_rp9vsV5LAdxXHN8eWB_17SchS_S8
+    short-id: '!!str '
+  server: 193.233.91.177
+  servername: 5post-gate.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 499735db-03b7-47a7-8569-c8662a34ad56
   xudp: true
 - name: DE_speednode_0001
   password: e4b72b531a2d10900519

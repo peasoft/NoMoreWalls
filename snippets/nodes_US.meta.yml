@@ -22,15 +22,6 @@ proxies:
   sni: 144.225.187.153#美国4@wxgqlfx
   tls: false
   type: hysteria2
-- name: 🇺🇸US
-  obfs: salamander
-  obfs-password: XBvVbvzQCq6Ovbnh
-  password: bd37d63b-c75d-3e48-acbf-1d5954fe9cdc
-  port: 14101
-  server: usaw2.awo-link.com
-  sni: usaw2.awo-link.com
-  tls: false
-  type: hysteria2
 - name: '美国 #3'
   password: e0c7af35-e2db-47c7-b1a3-ce5ec0dd0474
   port: 8458
@@ -56,103 +47,77 @@ proxies:
 - name: 美国|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 28051
-  server: 95.40.14.234
+  port: 10418
+  server: 18.163.126.92
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 10418
-  server: 16.162.100.124
+  port: 39024
+  server: 95.40.14.234
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 28051
-  server: 16.162.100.124
+  port: 10418
+  server: 18.166.211.66
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alpn:
-  - http/1.1
-  name: 🇺🇸US_1|3.1MB/s
-  network: ws
-  password: MITIVPN
-  port: 443
-  server: 104.19.229.21
-  skip-cert-verify: true
-  sni: d--AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-  type: trojan
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_16|1.8MB/s
+  network: raw
+  port: '49003'
+  reality-opts:
+    public-key: jH_LLqDnSPNz8SU_PC30VKKVKxQGU3QkbAr33bb9RGo
+    short-id: '!!str 27e53bbcab7593d7'
+  server: 194.55.239.152
+  servername: ads.x5.ru
+  tls: true
+  type: vless
   udp: true
+  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
+  xudp: true
+- encryption: none
+  name: 🇺🇸US_2|1.5MB/s
+  network: ws
+  port: '8880'
+  server: 155.46.167.30
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: d--AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: US_speednode_0124
-  port: 9002
-  server: 138.199.35.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0129
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0131
+      Host: vms.lifetime50.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: ''
+  xudp: true
+- name: US_speednode_0145
   password: None
   port: 9002
-  server: 138.199.35.206
+  server: 156.146.59.21
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: US_speednode_0134
+- name: US_speednode_0147
+  port: 9002
+  server: 156.146.59.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0149
   password: None
   port: 9002
-  server: 138.199.35.209
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0136
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0138
-  port: 9002
-  server: 138.199.35.211
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0139
-  port: 9002
-  server: 138.199.35.199
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0140
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0146
-  port: 9002
-  server: 156.146.59.23
+  server: 156.146.59.19
   skip-cert-verify: true
   tls: true
   type: http
@@ -164,90 +129,35 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0154
+- name: US_speednode_0155
   port: 9002
-  server: 156.146.59.15
+  server: 156.146.59.27
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: US_speednode_0157
-  port: 9002
-  server: 156.146.59.10
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0158
-  port: 9002
-  server: 156.146.59.39
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0159
-  port: 9002
-  server: 156.146.59.11
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_16|2.1MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.203
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸US_17|2.9MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.215
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_18|1.1MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.202
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_19|1.8MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.201
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 🇺🇸US_20|4.3MB/s
+- name: 🇺🇸US_8|2.6MB/s
   port: 443
-  server: efr-marktplatz.club
-  sni: efr-marktplatz.club
+  server: voteshirleysew.club
+  sni: voteshirleysew.club
   tls: true
   type: http
-- name: 🇺🇸US_21|2.7MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.200
+- name: 🇺🇸US_9|4.4MB/s
+  port: 443
+  server: purecambogiasl.live
   skip-cert-verify: true
+  sni: purecambogiasl.live
   tls: true
   type: http
-  username: null
-- name: 🇺🇸US_22|1.6MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
+- name: 🇺🇸US_10|2.0MB/s
+  password: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+  port: 443
+  server: 7778ff8c-tcxds0-tnsc3a-1f0gu.se.oshuawei.com
+  sni: 7778ff8c-tcxds0-tnsc3a-1f0gu.se.oshuawei.com
   tls: true
   type: http
-  username: ''
-- name: 🇺🇸US_23|3.5MB/s
+  username: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+- name: 🇺🇸US_11|1.3MB/s
   password: None
   port: 9002
   server: 156.146.59.20
@@ -255,7 +165,7 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_24|3.5MB/s
+- name: 🇺🇸US_12|2.7MB/s
   password: None
   port: 9002
   server: 156.146.59.38
@@ -263,74 +173,35 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_25|3.3MB/s
-  password: ''
-  port: 9002
-  server: 156.146.59.46
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 🇺🇸US_26|3.3MB/s
+- name: 🇺🇸US_13|1.8MB/s
   password: None
   port: 9002
-  server: 156.146.59.44
+  server: 156.146.59.5
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_27|3.4MB/s
-  password: test123
-  port: 1080
-  server: 104.168.249.36
-  type: socks5
-  username: test123
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇺🇸US_28|4.2MB/s
-  network: ws
-  password: MiTiVPN
-  port: '443'
-  server: 104.17.148.22
-  skip-cert-verify: true
-  sni: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_29|2.2MB/s
-  network: ws
-  port: '443'
-  server: x4g-production-dcd94.up.railway.app
-  servername: x4g-production-dcd94.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1a030b37-e210-1c8b-aa0a-5b3113c9dff6
-  ws-opts:
-    headers:
-      Host: x4g-production-dcd94.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /ws/1a030b37-e210-1c8b-aa0a-5b3113c9dff6
-  xudp: true
-- name: 🇺🇸US_30|4.2MB/s
-  password: 'null'
-  port: '9002'
-  server: 138.199.35.200
+- name: 🇺🇸US_14|1.4MB/s
+  port: 8090
+  server: 209.148.53.153
   skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_15|3.0MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
+    short-id: '!!str 7f2e9c4b1a8d6e53'
+  server: usa.n.belka.network
+  servername: yahoo.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
 - client-fingerprint: firefox
   name: US_speednode_0117
   network: tcp
@@ -417,6 +288,13 @@ proxies:
   type: vless
   udp: true
   uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+- name: US_speednode_0124
+  port: 9002
+  server: 138.199.35.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0125
@@ -463,9 +341,24 @@ proxies:
   tls: true
   type: http
   udp: true
+- name: US_speednode_0129
+  port: 9002
+  server: 138.199.35.208
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: US_speednode_0130
   port: 9002
   server: 138.199.35.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0131
+  password: None
+  port: 9002
+  server: 138.199.35.206
   skip-cert-verify: true
   tls: true
   type: http
@@ -484,10 +377,25 @@ proxies:
   tls: true
   type: http
   udp: true
+- name: US_speednode_0134
+  password: None
+  port: 9002
+  server: 138.199.35.209
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: US_speednode_0135
   password: None
   port: 9002
   server: 138.199.35.204
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0136
+  port: 9002
+  server: 138.199.35.195
   skip-cert-verify: true
   tls: true
   type: http
@@ -507,6 +415,27 @@ proxies:
   type: vless
   udp: true
   uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+- name: US_speednode_0138
+  port: 9002
+  server: 138.199.35.211
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0139
+  port: 9002
+  server: 138.199.35.199
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0140
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: US_speednode_0141
   port: 443
   server: fan.226278.xyz
@@ -534,17 +463,9 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0145
-  password: None
+- name: US_speednode_0146
   port: 9002
-  server: 156.146.59.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0147
-  port: 9002
-  server: 156.146.59.33
+  server: 156.146.59.23
   skip-cert-verify: true
   tls: true
   type: http
@@ -552,14 +473,6 @@ proxies:
 - name: US_speednode_0148
   port: 9002
   server: 156.146.59.9
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0149
-  password: None
-  port: 9002
-  server: 156.146.59.19
   skip-cert-verify: true
   tls: true
   type: http
@@ -585,9 +498,9 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0155
+- name: US_speednode_0154
   port: 9002
-  server: 156.146.59.27
+  server: 156.146.59.15
   skip-cert-verify: true
   tls: true
   type: http
@@ -595,6 +508,27 @@ proxies:
 - name: US_speednode_0156
   port: 9002
   server: 156.146.59.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0157
+  port: 9002
+  server: 156.146.59.10
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0158
+  port: 9002
+  server: 156.146.59.39
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0159
+  port: 9002
+  server: 156.146.59.11
   skip-cert-verify: true
   tls: true
   type: http
