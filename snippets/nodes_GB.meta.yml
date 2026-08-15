@@ -21,12 +21,30 @@ proxies:
   sni: grape-turbo-fr.roxa.org
   tls: false
   type: hysteria2
-- name: 🇬🇧GB_1|2.8MB/s
+- name: 🇬🇧GB_1|1.4MB/s
   port: 9443
   server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧GB_2|1.6MB/s
+  network: ws
+  port: '443'
+  server: 199.232.78.159
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4b5eaa0-c6e0-400c-bcaf-2bf30b50a0df
+  ws-opts:
+    headers:
+      Host: SvnTeamChannel.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
 - name: GB_speednode_0003
   password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
   port: 443

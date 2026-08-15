@@ -14,18 +14,20 @@ proxies:
   sni: www.linux.com
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  client-fingerprint: chrome
-  name: 🇷🇺RU_1|3.9MB/s
-  network: xhttp
-  port: 443
-  server: 104.18.32.47
-  servername: rus.aba-hum.store
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇷🇺RU_1|1.6MB/s
+  network: grpc
+  port: '2096'
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+    short-id: '!!str 1ed136481e0ede74'
+  server: 5.188.140.5
+  servername: strm.yandex.net
   tls: true
   type: vless
   udp: true
-  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
-  xhttp-opts:
-    mode: auto
-    path: /
+  uuid: 4a334454-22f7-491b-9bec-583e1e8a2773
+  xudp: true
