@@ -71,29 +71,68 @@ proxies:
   sni: gr.nexovip.cyou
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|1.1MB/s
-  password: None
-  port: 11111
-  server: 103.237.102.191
-  type: http
-  username: null
-- client-fingerprint: qq
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  name: 🇩🇪DE_2|1.0MB/s
-  network: grpc
-  port: 9871
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: '!!str aabb'
-  server: 200.165.228.114
-  servername: dl.google.com
-  skip-cert-verify: true
-  tfo: false
+- client-fingerprint: chrome
+  name: 🇩🇪DE_1|2.3MB/s
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  servername: ssl.fastly.com
   tls: true
   type: vless
-  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  udp: true
+  uuid: 0a12328a-572e-46a5-9332-84d21a986407
+  ws-opts:
+    headers:
+      Host: SvnTeamChannel.global.ssl.fastly.net
+    path: /
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_2|1.9MB/s
+  network: tcp
+  port: '443'
+  server: 194.24.161.133
+  servername: fr133.mechvpn.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_3|1.5MB/s
+  network: tcp
+  port: '443'
+  server: 82.38.4.126
+  servername: de126.mechvpn.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  fingerprint: 52c36f3722d73827cc3977541830ab65967d8335c6e7122dd5ff810de57252bb
+  name: 🇩🇪DE_4|1.2MB/s
+  network: xhttp
+  port: '2087'
+  server: s5.zynetrax.ir
+  servername: s5.zynetrax.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48d73053-4464-436e-7efe-8367e4bc6592
+  xhttp-opts:
+    host: s5.zynetrax.ir
+    mode: auto
+    path: /BetForward
+    x-padding-bytes: 100-1000
+  xudp: true
 - name: DE_speednode_0001
   password: e4b72b531a2d10900519
   port: 443

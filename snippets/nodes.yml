@@ -211,11 +211,38 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.0MB/s
+  name: 🇫🇷FR_1|1.1MB/s
   network: ws
   password: humanity
   port: '443'
-  server: 104.16.174.117
+  server: 172.67.149.60
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
+- alterId: 2
+  cipher: auto
+  name: 🇸🇬SG_2|5.9MB/s
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.1MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: www.speedtest.org
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -223,47 +250,61 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
     path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_2|2.5MB/s
+- alpn:
+  - http/1.1
+  - h2
+  - h3
+  client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.7MB/s
   network: ws
   password: humanity
   port: '443'
-  server: render.com
+  server: 198.41.223.96
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
     path: /assignment
-- cipher: chacha20-ietf
-  name: 🇭🇰HK_3|4.9MB/s
-  password: passwd
-  plugin: obfs
-  plugin-opts:
-    host: 43309-nIao34iu.download.microsoft.com
-    mode: http
-  port: 8103
-  server: cn01.somethingstranges.com
-  type: ss
-- cipher: chacha20-ietf
-  name: 🇵🇭PH_1|4.3MB/s
-  password: passwd
-  plugin: obfs
-  plugin-opts:
-    host: 43309-nIao34iu.download.microsoft.com
-    mode: http
-  port: 8231
-  server: cn06.somethingstranges.com
-  type: ss
+- client-fingerprint: chrome
+  name: 🇫🇷FR_4|1.4MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.67.221.242
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_5|1.0MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /assignment
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 🇬🇧GB_1|3.1MB/s
+  name: 🇳🇱NL_4|1.1MB/s
   password: SEYnpOitNLndBhDtkZyeAShl
   port: '443'
   server: nl-vk.tkbvpcompany.site
@@ -271,17 +312,84 @@ proxies:
   sni: nl-vk.tkbvpcompany.site
   type: trojan
   udp: true
+- cipher: chacha20-ietf
+  name: 🇭🇰HK_3|1.9MB/s
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 43309-nIao34iu.download.microsoft.com
+    mode: http
+  port: 8110
+  server: cn02.somethingstranges.com
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇭🇰HK_4|4.0MB/s
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 43309-nIao34iu.download.microsoft.com
+    mode: http
+  port: 8115
+  server: cn03.somethingstranges.com
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇭🇰HK_6|4.2MB/s
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 43309-nIao34iu.download.microsoft.com
+    mode: http
+  port: 8102
+  server: cn01.somethingstranges.com
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇭🇰HK_7|3.8MB/s
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 43309-nIao34iu.download.microsoft.com
+    mode: http
+  port: 8106
+  server: cn02.somethingstranges.com
+  type: ss
 - alpn:
   - http/1.1
-  client-fingerprint: chrome
-  name: 🇧🇬BG_1|1.7MB/s
-  password: bptHV5U91mWneB61rRKhCQ8f
-  port: '443'
-  server: 87.121.218.169
+  alterId: 0
+  cipher: auto
+  name: 🇹🇷TR_1|2.1MB/s
+  network: ws
+  port: 443
+  server: StreaMcORENODE8-aPilInkHub4-NetWeBGaTE.clOUdsYnC9.coM
+  servername: streAmcOREnODE8-apILiNkhUb4-nEtwebGATe.clOUDsync9.CoM
   skip-cert-verify: false
-  sni: 87.121.218.169
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: dc598800-f4fa-46dd-abd4-218f1ba2f0b4
+  ws-opts:
+    headers:
+      Host: sTreamcoReNoDe8-APilInkHub4-nETWeBGaTE.cLOUdsYNc9.CoM
+    path: /mU5O3LNBc0Byn1BgoYh8
+  xudp: true
+- alpn:
+  - http/1.1
+  alterId: 0
+  cipher: auto
+  name: 🇹🇷TR_2|2.2MB/s
+  network: ws
+  port: 443
+  server: wEBCOReLInk4-hUbdAtAGAtE8-NoDEstREamab.clOudsyNC9.coM
+  servername: bAseporTlinK5-wEBGATeAPI1-HuBDatanet.ClouDsync9.COM
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: dc598800-f4fa-46dd-abd4-218f1ba2f0b4
+  ws-opts:
+    headers:
+      Host: BaseportlINk5-weBGaTEaPi1-hubDAtanET.CLouDSYNC9.CoM
+    path: /mU5O3LNBc0Byn1BgoYh8
+  xudp: true
 - name: HK_speednode_0012
   password: BxceQaOe
   port: 27161
