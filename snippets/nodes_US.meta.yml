@@ -99,64 +99,97 @@ proxies:
 - name: 美国|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 28051
-  server: 18.163.126.92
+  port: 39024
+  server: 16.162.192.182
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 28051
-  server: 16.162.192.182
+  port: 39024
+  server: 16.162.100.124
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 39024
-  server: 16.163.144.245
+  port: 53001
+  server: 16.162.103.28
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_1|4.2MB/s
-  network: xhttp
-  port: '443'
-  server: 69.46.46.107
-  servername: rvg-production-2aea.up.railway.app
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_1|1.0MB/s
+  network: tcp
+  port: 11094
+  reality-opts:
+    public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
+    short-id: '!!str a356addf'
+  server: 51.81.223.225
+  servername: www.yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: b6fbfc7e-2ab5-c52d-a4ed-7d2b62c0eb8a
-  xhttp-opts:
-    host: rvg-production-2aea.up.railway.app
-    mode: stream-up
-    path: /xhttp-siz10/stream-up/b6fbfc7e-2ab5-c52d-a4ed-7d2b62c0eb8a
+  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_2|2.9MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 169.40.42.229
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_3|1.7MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 169.40.42.35
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_4|2.4MB/s
+  network: ws
+  port: '2053'
+  server: 91.193.58.125
+  servername: vlso5.1d.mom
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /socks5=888:888@hkip.1d.mom:1080
   xudp: true
-- name: US_speednode_0121
+- name: US_speednode_0129
   port: 9002
-  server: 138.199.35.215
+  server: 138.199.35.208
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: US_speednode_0131
-  password: None
+- name: US_speednode_0136
   port: 9002
-  server: 138.199.35.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0138
-  port: 9002
-  server: 138.199.35.211
+  server: 138.199.35.195
   skip-cert-verify: true
   tls: true
   type: http
@@ -168,57 +201,41 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0150
-  port: 9002
-  server: 156.146.59.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0155
-  port: 9002
-  server: 156.146.59.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_8|3.2MB/s
+- cipher: aes-256-cfb
+  name: 🇺🇸US_8|2.3MB/s
+  password: amazonskr05
   port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 169.40.42.229
-  servername: yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
+  server: 18.191.198.248
+  type: ss
   udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: 🇺🇸US_9|3.5MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸US_10|2.7MB/s
-  port: 443
-  server: carolinafreigh.fun
-  sni: carolinafreigh.fun
-  tls: true
-  type: http
-- name: 🇺🇸US_11|2.6MB/s
+- name: 🇺🇸US_9|1.4MB/s
   password: 'null'
   port: 9002
-  server: 138.199.35.214
+  server: 138.199.35.205
   skip-cert-verify: true
   tls: true
   type: http
   username: 'null'
-- name: 🇺🇸US_12|2.9MB/s
+- name: 🇺🇸US_10|1.7MB/s
+  port: 443
+  server: zebpay.site
+  sni: zebpay.site
+  tls: true
+  type: http
+- name: 🇺🇸US_11|4.5MB/s
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_12|2.4MB/s
+  port: 443
+  server: purposebydesig.club
+  sni: purposebydesig.club
+  tls: true
+  type: http
+- name: 🇺🇸US_13|3.7MB/s
   password: 'null'
   port: 9002
   server: 138.199.35.195
@@ -226,102 +243,72 @@ proxies:
   tls: true
   type: http
   username: 'null'
-- client-fingerprint: edge
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_13|1007KB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: '!!str 00bca5982f82d083'
-  server: 144.31.242.1
-  servername: eu-central.cendora.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_14|4.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.191.198.248
-  type: ss
-  udp: true
-- name: 🇺🇸US_15|1.1MB/s
+- name: 🇺🇸US_14|2.9MB/s
+  password: None
   port: 9002
-  server: 156.146.59.38
+  server: 138.199.35.208
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_16|1.3MB/s
+  username: null
+- name: 🇺🇸US_15|2.4MB/s
   password: ''
   port: 9002
-  server: 156.146.59.17
+  server: 138.199.35.203
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇺🇸US_17|4.1MB/s
-  network: tcp
-  port: '47212'
-  server: 216.167.54.75
-  type: vless
-  udp: true
-  uuid: cd477134-ffce-473a-8dca-8ce5fc6eb3eb
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_18|1.9MB/s
-  network: ws
-  port: '443'
-  server: spider-panel-production-c21d.up.railway.app
-  servername: spider-panel-production-c21d.up.railway.app
+- name: 🇺🇸US_16|4.1MB/s
+  password: None
+  port: 443
+  server: kimberlymilano.icu
+  skip-cert-verify: false
   tls: true
-  type: vless
+  type: http
+  username: null
+- name: 🇺🇸US_17|2.3MB/s
+  port: 9002
+  server: 156.146.59.44
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_18|2.3MB/s
+  port: 9002
+  server: 156.146.59.20
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  uuid: aeb8b162-0fb7-469b-94f2-611d1a23ff53
-  ws-opts:
-    headers:
-      Host: spider-panel-production-c21d.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.102 Safari/537.36
-    path: /ws/aeb8b162-0fb7-469b-94f2-611d1a23ff53
-  xudp: true
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸US_19|3.4MB/s
+  name: 🇺🇸US_19|2.6MB/s
   network: tcp
   port: '443'
   reality-opts:
-    public-key: wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8
-    short-id: '!!str e4f6a3446ac34a24'
-  server: 140.99.223.61
-  servername: savesafe.run
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: '!!str f63805c3ecc7a483'
+  server: savesafe.co
   tls: true
   type: vless
   udp: true
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   xudp: true
-- client-fingerprint: firefox
-  encryption: none
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸US_20|2.0MB/s
+  name: 🇺🇸US_20|2.6MB/s
   network: tcp
-  port: '443'
+  port: '10877'
   reality-opts:
-    public-key: wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8
-    short-id: '!!str e4f6a3446ac34a24'
-  server: savesafe.run
-  servername: savesafe.run
+    public-key: zX35soHloTc-mNt8U2GiZQaRZuKr4v_GjMEV7SMyiUw
+    short-id: '!!str '
+  server: 104.225.232.25
+  servername: www.paypal.com
   tls: true
   type: vless
   udp: true
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  uuid: 42613786-2036-4a79-ad64-cc65d4e60a8d
   xudp: true
 - client-fingerprint: firefox
   name: US_speednode_0117
@@ -373,6 +360,13 @@ proxies:
     headers:
       Host: d1yxsk0zprgivr.cloudfront.net
     path: /
+- name: US_speednode_0121
+  port: 9002
+  server: 138.199.35.215
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: US_speednode_0122
   network: ws
   port: 443
@@ -455,16 +449,17 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0129
+- name: US_speednode_0130
   port: 9002
-  server: 138.199.35.208
+  server: 138.199.35.214
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: US_speednode_0130
+- name: US_speednode_0131
+  password: None
   port: 9002
-  server: 138.199.35.214
+  server: 138.199.35.206
   skip-cert-verify: true
   tls: true
   type: http
@@ -499,13 +494,6 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0136
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0137
@@ -521,6 +509,13 @@ proxies:
   type: vless
   udp: true
   uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+- name: US_speednode_0138
+  port: 9002
+  server: 138.199.35.211
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: US_speednode_0139
   port: 9002
   server: 138.199.35.199
@@ -592,6 +587,13 @@ proxies:
   tls: true
   type: http
   udp: true
+- name: US_speednode_0150
+  port: 9002
+  server: 156.146.59.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: US_speednode_0151
   port: 9002
   server: 156.146.59.41
@@ -616,6 +618,13 @@ proxies:
 - name: US_speednode_0154
   port: 9002
   server: 156.146.59.15
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0155
+  port: 9002
+  server: 156.146.59.27
   skip-cert-verify: true
   tls: true
   type: http

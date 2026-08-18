@@ -15,20 +15,19 @@ proxies:
   sni: 152-67-200-82.liao.kdns.fr
   tls: false
   type: hysteria2
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇰🇷KR_1|1.1MB/s
-  network: ws
-  password: a196faa4-403e-4a8b-987a-d1789f379685
-  port: '49755'
-  server: 139.162.100.58
-  skip-cert-verify: true
-  sni: vpn-node.internal
-  type: trojan
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇰🇷KR_2|4.5MB/s
+  network: grpc
+  port: 10049
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: kr4-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /xVpnTrojanWsSvc7f3a
+  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5

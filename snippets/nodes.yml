@@ -107,39 +107,39 @@ proxies:
 - name: 香港3|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 14684
-  server: 16.163.156.207
+  port: 50887
+  server: 18.162.156.145
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 29444
-  server: 43.198.240.223
+  port: 7674
+  server: 18.163.114.228
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 14684
-  server: 43.198.109.134
+  port: 7674
+  server: 16.162.103.28
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 49811
-  server: 16.163.139.175
+  port: 9408
+  server: 54.46.126.133
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 55564
+  port: 18617
   server: 16.162.109.29
   skip-cert-verify: true
   sni: www.nintendogames.net
@@ -147,23 +147,15 @@ proxies:
 - name: 日本3|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 3415
-  server: 16.162.192.182
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
-  password: 6ec301428255a78a1d826988d86cc87e
-  port: 51396
-  server: 95.40.14.234
+  port: 26704
+  server: 18.163.114.228
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 7375
+  port: 51396
   server: 16.162.100.124
   skip-cert-verify: true
   sni: www.nintendogames.net
@@ -179,24 +171,24 @@ proxies:
 - name: 美国|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 28051
-  server: 18.163.126.92
+  port: 39024
+  server: 16.162.192.182
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
-  port: 28051
-  server: 16.162.192.182
+  port: 39024
+  server: 16.162.100.124
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 39024
-  server: 16.163.144.245
+  port: 53001
+  server: 16.162.103.28
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -211,44 +203,72 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇰🇷KR_1|1.1MB/s
-  network: ws
-  password: a196faa4-403e-4a8b-987a-d1789f379685
-  port: '49755'
-  server: 139.162.100.58
-  skip-cert-verify: true
-  sni: vpn-node.internal
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /xVpnTrojanWsSvc7f3a
-- alterId: '0'
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇭🇰HK_1|4.7MB/s
+  name: 🇩🇪DE_1|1.2MB/s
   network: ws
-  port: '16632'
-  server: planb.mojcn.com.linuxlh.xin
+  port: '80'
+  server: 68.183.209.180
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  uuid: d5121154-ced6-460d-a9fd-5892027ab4a0
   ws-opts:
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
+    headers: {}
+    path: /graphql
   xudp: true
+- alpn:
+  - h2
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪DE_2|3.0MB/s
+  network: grpc
+  password: HaZLUMP__fVySm7WzxFcnk7Nm8-f1CCK
+  port: '443'
+  server: ru-5b7331.atlanta-games.com
+  skip-cert-verify: false
+  sni: ru-5b7331.atlanta-games.com
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.0MB/s
+  name: 🇫🇷FR_1|3.1MB/s
   network: ws
   password: humanity
   port: '443'
-  server: 104.18.23.63
+  server: 104.16.174.36
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.7MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.208
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|2.1MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.229
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -256,26 +276,42 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
     path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧GB_2|2.9MB/s
-  network: ws
-  port: 53224
-  server: 192.248.163.148
-  tls: false
-  type: vmess
-  uuid: 647c2dc6-fd48-4a84-9b59-163df19ad6f9
-  ws-opts:
-    path: /647c2dc6-fd48-4a84-9b59-163df19ad6f9
 - cipher: aes-256-cfb
-  name: 🇺🇸US_14|4.3MB/s
+  name: 🇺🇸US_8|2.3MB/s
   password: amazonskr05
   port: 443
   server: 18.191.198.248
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_5|2.1MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.109
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /assignment
+- alterId: '0'
+  cipher: auto
+  name: 🇭🇰HK_6|3.1MB/s
+  network: tcp
+  port: '29008'
+  server: 366-1095.rabbitpro-in-3.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  xudp: true
 - name: HK_speednode_0012
   password: BxceQaOe
   port: 27161
