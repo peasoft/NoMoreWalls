@@ -39,19 +39,14 @@ proxies:
   sni: germany3.h2corp.local
   tls: false
   type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪DE_1|1.9MB/s
-  obfs: ''
-  obfs-password: ''
+- name: 🇩🇪|DE|@wxgqlfx|22
   password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  port: '2056'
+  port: 2056
   server: mg2.mangshe.xyz
   skip-cert-verify: true
   sni: mg2.mangshe.xyz
   tls: false
   type: hysteria2
-  up: ''
 - name: 🇩🇪|DE|@wxgqlfx|220
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
@@ -111,30 +106,72 @@ proxies:
   sni: germany1.h2corp.local
   tls: false
   type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪DE_2|3.1MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  port: '2056'
-  server: mg2.mangshe.xyz
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪DE_1|1.3MB/s
+  network: grpc
+  password: HaZLUMP__fVySm7WzxFcnk7Nm8-f1CCK
+  port: '443'
+  server: ru-5b7331.atlanta-games.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- client-fingerprint: safari
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇩🇪DE_2|1.5MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: '!!str 3303c7a5'
+  server: 194.93.0.28
+  servername: media2.tcpdoor.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇩🇪DE_3|1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.79.230.55
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
+  name: 🇩🇪DE_5|1.6MB/s
+  password: 3ebac90b-6977-47c0-bef5-b2e37554432c
+  port: 17306
+  server: 89.144.35.232
   skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪DE_3|3.2MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  port: '2056'
-  server: mg2.mangshe.xyz
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
+  sni: www.microsoft.com
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: 3ebac90b-6977-47c0-bef5-b2e37554432c
+  version: 5
+- alpn:
+  - h2
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪DE_8|1.3MB/s
+  network: grpc
+  password: HaZLUMP__fVySm7WzxFcnk7Nm8-f1CCK
+  port: '443'
+  server: 176.108.242.191
+  skip-cert-verify: false
+  sni: ru-5b7331.atlanta-games.com
+  type: trojan
+  udp: true
 - name: DE_speednode_0001
   password: e4b72b531a2d10900519
   port: 443
