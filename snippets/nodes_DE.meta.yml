@@ -9,6 +9,20 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
+- name: 德国
+  password: c175d956-d1f4-4c53-b2b1-8493bf8529c6
+  port: 443
+  server: 87.120.84.189
+  sni: de1.apexvpn.space
+  tls: false
+  type: hysteria2
+- name: '德国 #1'
+  password: d1224950-ffab-4b9a-8696-431b40a6cfbd
+  port: 443
+  server: bel-03.node.lumixnet.com
+  sni: bel-03.node.lumixnet.com
+  tls: false
+  type: hysteria2
 - name: 🇩🇪|DE|@wxgqlfx|182
   password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
   port: 8443
@@ -17,14 +31,27 @@ proxies:
   sni: keyhop-offshore.roxa.org
   tls: false
   type: hysteria2
-- name: 🇩🇪|DE|@wxgqlfx|22
+- name: '德国 #2'
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  port: 443
+  server: de.1.23.h2corp.org
+  skip-cert-verify: true
+  sni: germany3.h2corp.local
+  tls: false
+  type: hysteria2
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_4|3.1MB/s
+  obfs: ''
+  obfs-password: ''
   password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  port: 2056
+  port: '2056'
   server: mg2.mangshe.xyz
   skip-cert-verify: true
   sni: mg2.mangshe.xyz
   tls: false
   type: hysteria2
+  up: ''
 - name: 🇩🇪|DE|@wxgqlfx|220
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
@@ -64,9 +91,15 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
+- cipher: aes-256-cfb
+  name: 🇩🇪DE_1|3.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 63.178.246.78
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_1|1.2MB/s
+  name: 🇩🇪DE_2|1005KB/s
   network: tcp
   port: 443
   reality-opts:
@@ -77,12 +110,49 @@ proxies:
   tls: true
   type: vless
   uuid: 56971dae-1974-4ebe-a903-00e310828dd5
-- name: DE_speednode_0001
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 167.172.172.190
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_5|2.9MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  port: '2056'
+  server: mg2.mangshe.xyz
   skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+  up: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_6|1.1MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: fkYk0Ow--0GYExpBFb2wZjooymT7uASOQLw9ESC3DF8
+    short-id: '!!str 62b6d6e64d461d78'
+  server: 103.109.234.113
+  servername: api.getsavesafe.space
   tls: true
-  type: http
+  type: vless
   udp: true
-  username: testuser1
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts: {}
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇩🇪DE_7|1.3MB/s
+  network: xhttp
+  port: '443'
+  server: 85.117.243.16
+  servername: de6.gracefultun.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94c15d29-e850-409e-88ff-6976257e80ba
+  xhttp-opts:
+    host: de6.gracefultun.xyz
+    path: /assets/build/_app/immutable/chunks/stream-one/
+  xudp: true

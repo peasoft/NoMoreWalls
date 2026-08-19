@@ -1,4 +1,18 @@
 proxies:
+- name: 瑞典
+  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
+  port: 8443
+  server: swe.frkn.org
+  sni: swe.frkn.org
+  tls: false
+  type: hysteria2
+- name: '瑞典 #1'
+  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  port: 443
+  server: us54.mechvpn.online
+  sni: us54.mechvpn.online
+  tls: false
+  type: hysteria2
 - name: 🇸🇪|SE|@wxgqlfx|238
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
@@ -16,16 +30,21 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: SE_speednode_0116
-  network: tcp
-  port: 443
+  encryption: none
+  name: 🇸🇪SE_1|1.5MB/s
+  network: xhttp
+  port: '8444'
   reality-opts:
-    public-key: sBSNX3DhJSWOkqTmRHisayVLisCBQLb4JcpKzwCrvC0
-  server: 164.37.105.38
-  servername: gb.cdn.cachefleet.com
-  skip-cert-verify: false
+    public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
+    short-id: '!!str 635a76c25a4b1820'
+  server: 81.90.21.59
+  servername: dl.google.com
   tls: true
   type: vless
   udp: true
-  uuid: f4dbc770-016d-4a0f-82f0-d83ee6f45da3
+  uuid: 15e83ced-7544-422e-863d-deafe29a1dbe
+  xhttp-opts:
+    mode: stream-one
+    path: /xh
+    x-padding-bytes: 100-1000
+  xudp: true
