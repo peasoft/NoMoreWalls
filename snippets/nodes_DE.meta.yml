@@ -116,51 +116,79 @@ proxies:
   sni: germany1.h2corp.local
   tls: false
   type: hysteria2
-- encryption: none
-  name: 🇩🇪DE_1|5.0MB/s
-  network: tcp
-  port: '22222'
-  server: 63.183.54.159
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- auth: 81378ef7-89a1-43b5-9a9d-a04a8af25b7c
-  name: 🇩🇪DE_2|4.1MB/s
-  password: 81378ef7-89a1-43b5-9a9d-a04a8af25b7c
+- alpn:
+  - h2
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mygrpc
+  name: 🇩🇪DE_1|3.5MB/s
+  network: grpc
   port: 443
-  server: 194.31.223.107
-  skip-cert-verify: true
-  sni: de1.apexvpn.space
-  type: hysteria2
-- name: 🇩🇪DE_3|2.5MB/s
-  network: tcp
-  password: fg20mtCFHy
-  port: 5859
-  server: 209.38.240.27
-  skip-cert-verify: true
-  sni: uyped.southbyte.xyz
-  type: trojan
-- name: 🇩🇪DE_4|2.3MB/s
-  password: qGwNSnw1
-  port: 64218
-  server: 200.225.173.142
-  type: http
-  username: ZJWRqQLE
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_6|2.9MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: YkcQyTOh9YpZmilRob-eVxwoo4uwBAa9oHmURMTFzEM
-    short-id: '!!str 2b8c5e91'
-  server: 2.26.71.73
-  servername: www.cloudflare.com
+  server: 212.41.26.84
+  servername: v1.api2.ttpservers.ru
   tls: true
   type: vless
   udp: true
-  uuid: 4e843ed6-09e7-4be5-bd52-a1dc46568aeb
+  uuid: 163dc809-7970-4ff8-a7e5-8080ad53e7bb
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_2|2.8MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: jkGStCLgX1e3kQ31H1_ycSuYm_zSNQ4qVafasU7bkwU
+    short-id: '!!str 4c0be5bf40e9f5ce'
+  server: 43.224.150.71
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0a31984d-b06f-4e79-b255-0dc64ee5d419
+  xudp: true
+- encryption: mlkem768x25519plus.random.0rtt.swY_aKEuuHUHKO0BHVV2uot-UFbtrXpLWr7g8uZk0xk
+  http-opts:
+    headers:
+      Host:
+      - us.demonware.net
+    path:
+    - /
+  name: 🇩🇪DE_3|1.2MB/s
+  network: http
+  port: '42538'
+  server: 91.107.158.251
+  type: vless
+  udp: true
+  uuid: 5d07b438-63c1-43fa-aa45-b6810de6d030
+  xudp: true
+- name: 🇩🇪DE_4|1.2MB/s
+  password: LBuHKNUpT
+  port: 63062
+  server: 185.78.79.39
+  type: http
+  username: kdEWXsS2E
+- cipher: aes-256-cfb
+  name: 🇩🇪DE_5|1.5MB/s
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 120.232.250.163
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_6|2.6MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: jkGStCLgX1e3kQ31H1_ycSuYm_zSNQ4qVafasU7bkwU
+    short-id: '!!str 4c0be5bf40e9f5ce'
+  server: qeip-c6a0cn.wealthix.top
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0a31984d-b06f-4e79-b255-0dc64ee5d419
   xudp: true
 - name: DE_speednode_0001
   password: e4b72b531a2d10900519

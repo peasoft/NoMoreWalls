@@ -21,35 +21,40 @@ proxies:
   sni: 94-229-64-108.liao.kdns.fr
   tls: false
   type: hysteria2
-- name: 🇬🇧GB_1|1.7MB/s
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: sync.v2.SyncService
+  name: 🇬🇧GB_1|1.5MB/s
+  network: grpc
   port: 443
-  server: 193.36.118.210
+  server: 213.193.254.131
+  servername: video.she-happ.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ea6db8fa-7e15-4eb2-87f1-22004ac00061
+- name: 🇬🇧GB_2|2.2MB/s
+  port: 9443
+  server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|2.7MB/s
-  network: tcp
-  port: '64584'
-  server: uk.zelnora.ir
-  type: vless
-  udp: true
-  uuid: a8307b5d-2d9e-4d34-912d-5b5dd8340082
-  xudp: true
 - client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🇬🇧GB_3|1.1MB/s
-  network: grpc
-  port: '2054'
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_3|2.5MB/s
+  network: tcp
+  port: '443'
   reality-opts:
-    public-key: Re5uQKjLVnOpmsyTQKCiqh8LLJ-UAyZy0s3KO6PRtEY
-    short-id: '!!str 300580005a374a9f'
-  server: 85.137.249.157
-  servername: max.ru
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: '!!str f63805c3ecc7a483'
+  server: 195.184.247.225
+  servername: savesafe.co
   tls: true
   type: vless
   udp: true
-  uuid: f6da8274-44be-4599-a8d8-66929c980677
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   xudp: true
 - name: GB_speednode_0003
   password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
