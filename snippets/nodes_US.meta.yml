@@ -87,19 +87,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸US_1|1.2MB/s
-  password: amazonskr05
-  port: '443'
-  server: 18.188.213.207
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_2|1.0MB/s
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.234
-  type: ss
+- name: 🇺🇸US_1|1.9MB/s
+  password: e7ed168e-2a59-49bd-a3f2-689c149dc344
+  port: 40991
+  server: umoso-eo669-zhse.clodom.com
+  skip-cert-verify: true
+  sni: us1.clodom.top
+  type: anytls
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -116,6 +110,67 @@ proxies:
   type: vless
   udp: true
   uuid: 5905d91f-c3bc-4e80-bd66-4b17beb166cb
+- client-fingerprint: chrome
+  name: 🇺🇸US_3|1.1MB/s
+  network: ws
+  port: 2083
+  server: 104.17.123.101
+  servername: wzknb.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  ws-opts:
+    headers:
+      Host: wzknb.pages.dev
+    path: /proxyip=167.253.153.215fp=chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_4|2.4MB/s
+  network: ws
+  port: '443'
+  server: 69.46.46.150
+  servername: web-production-ca609.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2a838e0a-21e4-4d0a-b467-3ad45686f34e
+  ws-opts:
+    headers:
+      Host: web-production-ca609.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /ws/vless/2a838e0a-21e4-4d0a-b467-3ad45686f34e?ed=2048
+  xudp: true
+- name: 🇺🇸US_5|3.3MB/s
+  port: 443
+  server: fullmanfirm.icu
+  skip-cert-verify: true
+  sni: fullmanfirm.icu
+  tls: true
+  type: http
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_7|1002KB/s
+  network: ws
+  port: '443'
+  server: adad-production.up.railway.app
+  servername: adad-production.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47c6b6f5-f2d0-4965-8bd0-a0d33bbfa740
+  ws-opts:
+    headers:
+      Host: adad-production.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /ws/vless/47c6b6f5-f2d0-4965-8bd0-a0d33bbfa740?ed=2048
+  xudp: true
 - name: US_speednode_0131
   password: 'null'
   port: 9002
@@ -212,6 +267,21 @@ proxies:
   tls: true
   type: http
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0142
+  network: tcp
+  port: 39211
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: '!!str bc8e3658db7d1323'
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
 - name: US_speednode_0143
   port: 9002
   server: 138.199.35.198
