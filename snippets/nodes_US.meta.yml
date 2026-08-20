@@ -96,20 +96,57 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇺🇸US_1|1.2MB/s
-  password: None
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_1|1.1MB/s
+  network: tcp
   port: 443
-  server: efr-marktplatz.club
+  reality-opts:
+    public-key: tOWJAWnCPaJZvqorglX2JAuT5mDrSSA9VPCd90DSZRY
+    short-id: '!!str 241c2a5b9073f934'
+  server: 38.125.120.76
+  servername: www.apple.com
+  tls: true
+  type: vless
+  uuid: 085c75ad-c00b-43fb-8fea-fa0caefa0a60
+- name: 🇺🇸US_2|1.2MB/s
+  port: 443
+  server: crosscards.site
+  sni: crosscards.site
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_4|1.7MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: s8LsdrKbLX2USYl-t9Olxo4yYUlJXjmbbjBh1OONTCE
+    short-id: '!!str f210a210add58f09'
+  server: 38.244.20.98
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05a582ec-e74b-46fe-b131-6e9e5575a836
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_5|1.9MB/s
+  network: ws
+  port: 443
+  server: node.socks5.kdns.fr
+  servername: pas-seo-delays-safe.trycloudflare.com
   skip-cert-verify: false
   tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_2|1.1MB/s
-  port: 443
-  server: kimberlymilano.icu
-  sni: kimberlymilano.icu
-  tls: true
-  type: http
+  type: vmess
+  udp: true
+  uuid: 20a16a21-6468-4e63-96e1-d9cecf0035ce
+  ws-opts:
+    headers:
+      Host: pas-seo-delays-safe.trycloudflare.com
+    path: /20a16a21-6468-4e63-96e1-d9cecf0035ce-vm
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0130
