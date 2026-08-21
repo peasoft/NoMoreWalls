@@ -1,26 +1,28 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE_2|3.0MB/s
-  port: 53225
-  server: jpaws.ccwink.photos
-  servername: gw.alicdn.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_3|3.5MB/s
+  name: 🇩🇪DE_2|2.9MB/s
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: '21118'
   server: 211.91.158.26
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_4|3.7MB/s
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21118'
-  server: 211.91.158.44
-  type: ss
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - www.apple.com
+    path:
+    - /
+  name: 🇩🇪DE_4|1.2MB/s
+  network: http
+  port: '80'
+  server: 167.233.242.189
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 7209d7ee-cfd0-46c0-a580-d92e2f0c801c
+  xudp: true
