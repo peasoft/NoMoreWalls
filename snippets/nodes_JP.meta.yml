@@ -31,26 +31,46 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇯🇵JP_1|2.7MB/s
-  password: 7eadc6dbe2ae
-  port: '65443'
-  server: 121.46.230.136
+- name: 🇯🇵JP_1|2.8MB/s
+  password: 3b32eb1c-150e-4eb4-8323-370844489508
+  port: 443
+  server: jd-jp01jg.y1static-content-distribution.shop
+  skip-cert-verify: true
+  sni: jd-jp01jg.y1static-content-distribution.shop
+  type: anytls
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵JP_2|4.3MB/s
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: fad7f33618.download.windowsupdate.com
+    mode: http
+  port: 9059
+  server: 260323.1.0.l3.unclemanco.com
   type: ss
+- client-fingerprint: chrome
+  name: 🇯🇵JP_3|2.1MB/s
+  password: BxceQaOe
+  port: '16691'
+  server: 43.198.21.141
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
   udp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵JP_2|1.4MB/s
+  name: 🇯🇵JP_4|2.2MB/s
   network: tcp
-  port: '443'
+  port: '8443'
   reality-opts:
-    public-key: h2GGazCHLBtmIUxiCxGUvsaEF8mGi8xFeCcI14sAJTI
-    short-id: '!!str 4bbe62498d4cc3c9'
-  server: 156.231.113.153
-  servername: www.cloudflare.com
+    public-key: AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs
+    short-id: '!!str '
+  server: 217.60.24.2
+  servername: ads.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: 3340c44a-042e-4dfd-b82c-33192d56ba98
+  uuid: 8e85752d-c04f-427d-9d70-b10d144c8492
   xudp: true

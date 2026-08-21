@@ -1,9 +1,33 @@
 proxies:
-- name: 🇷🇺RU_1|1.8MB/s
-  network: tcp
-  port: '443'
-  server: 89.19.223.136
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-reality
+  name: 🇷🇺RU_1|1.6MB/s
+  network: grpc
+  port: 9001
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 217.19.122.88
+  servername: api-maps.yandex.ru
+  tls: true
   type: vless
   udp: true
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: media.playback.v1.SessionGateway
+  name: 🇷🇺RU_2|2.5MB/s
+  network: grpc
+  port: '443'
+  server: 194.55.239.17
+  servername: harknmav.fun
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2c7e5320-7f9e-4af8-9024-c4790929ddef
   xudp: true

@@ -43,7 +43,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 香港4|@ripaojiedian
+- name: 🇭🇰HK_3|1.6MB/s
   network: tcp
   password: BxceQaOe
   port: 27161
@@ -51,7 +51,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 香港5|@ripaojiedian
+- name: 🇭🇰HK_4|4.5MB/s
   network: tcp
   password: BxceQaOe
   port: 27161
@@ -69,20 +69,31 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_1|3.1MB/s
-  network: ws
-  port: 443
-  server: node.socks5.kdns.fr
-  servername: suspected-confirmed-origin-pocket.trycloudflare.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+- name: 🇭🇰HK_1|4.9MB/s
+  password: 3b32eb1c-150e-4eb4-8323-370844489508
+  port: 25135
+  server: yazhouany02.downapptwo.cc
+  skip-cert-verify: true
+  sni: hk27.pulsarcore.site
+  type: anytls
   udp: true
-  uuid: 3d6fb203-616e-4bb2-851b-e37a0903a4bc
-  ws-opts:
-    headers:
-      Host: suspected-confirmed-origin-pocket.trycloudflare.com
-    path: /3d6fb203-616e-4bb2-851b-e37a0903a4bc-vm
-  xudp: true
+- congestion-controller: bbr
+  disable-sni: false
+  name: 🇭🇰HK_2|3.7MB/s
+  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  port: 443
+  reduce-rtt: false
+  request-timeout: 0
+  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
+  skip-cert-verify: true
+  type: tuic
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+- client-fingerprint: chrome
+  name: 🇭🇰HK_5|4.4MB/s
+  password: BxceQaOe
+  port: '27161'
+  server: 43.198.21.141
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
