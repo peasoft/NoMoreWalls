@@ -1,4 +1,13 @@
 proxies:
+- auth: ef18d810-719c-4bf1-83c6-615d01f217eb
+  name: 🇱🇹LT_1|1.6MB/s
+  password: ef18d810-719c-4bf1-83c6-615d01f217eb
+  port: 443
+  server: jp.cryptoofarm.com
+  skip-cert-verify: true
+  sni: jp.cryptoofarm.com
+  tls: false
+  type: hysteria2
 - name: JP
   password: oU4tGn37oQ9JGmqnlTGkU3knrfAbclsq
   port: 32135
@@ -31,46 +40,26 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇯🇵JP_1|2.8MB/s
-  password: 3b32eb1c-150e-4eb4-8323-370844489508
-  port: 443
-  server: jd-jp01jg.y1static-content-distribution.shop
-  skip-cert-verify: true
-  sni: jd-jp01jg.y1static-content-distribution.shop
-  type: anytls
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇯🇵JP_2|4.3MB/s
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: fad7f33618.download.windowsupdate.com
-    mode: http
-  port: 9059
-  server: 260323.1.0.l3.unclemanco.com
+- cipher: aes-256-cfb
+  name: 🇯🇵JP_1|1.5MB/s
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.136
   type: ss
-- client-fingerprint: chrome
-  name: 🇯🇵JP_3|2.1MB/s
-  password: BxceQaOe
-  port: '16691'
-  server: 43.198.21.141
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
   udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_4|2.2MB/s
-  network: tcp
-  port: '8443'
-  reality-opts:
-    public-key: AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs
-    short-id: '!!str '
-  server: 217.60.24.2
-  servername: ads.x5.ru
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵JP_7|2.3MB/s
+  network: ws
+  port: '443'
+  server: node.socks5.kdns.fr
+  skip-cert-verify: false
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 8e85752d-c04f-427d-9d70-b10d144c8492
+  uuid: e98ae327-f7b8-4984-bb96-8f021c36a9ed
+  ws-opts:
+    headers:
+      Host: instructor-theme-persons-clients.trycloudflare.com
+    path: /e98ae327-f7b8-4984-bb96-8f021c36a9ed-vm
   xudp: true
