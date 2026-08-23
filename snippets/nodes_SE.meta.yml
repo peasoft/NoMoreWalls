@@ -13,9 +13,20 @@ proxies:
   sni: us54.mechvpn.online
   tls: false
   type: hysteria2
-- name: 🇸🇪SE_1|1.6MB/s
-  port: 443
-  server: 79.142.77.63
-  skip-cert-verify: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+  name: 🇸🇪SE_1|2.6MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: '!!str 9e2a6f4c3b7d1e8a'
+  server: se.moktana.app
+  servername: se.moktana.app
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 2642342c-fa52-4f62-b44d-fb77de8f75e3
+  xudp: true
