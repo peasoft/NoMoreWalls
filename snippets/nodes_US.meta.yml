@@ -120,24 +120,105 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸US_1|1.2MB/s
+  name: 🇺🇸US_1|1.8MB/s
   network: tcp
-  port: 443
-  server: 143.246.136.78
-  servername: wok1.api3-max.ru
+  port: 20132
+  reality-opts:
+    public-key: eArO61_5sdHyxJvTm0iRZ6fx4qHGOIg6LQqcjMekZGY
+    short-id: '!!str f8de9610860bb6e8'
+  server: transit01.ccdn3.work
+  servername: i1.hdslb.com
   tls: true
   type: vless
   udp: true
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-- cipher: aes-256-gcm
-  name: 🇺🇸US_2|4.6MB/s
-  password: b160be88-28c2-31bb-a153-8b050228f0c3
-  port: '20016'
-  server: f.4.h.5.3.i.i.9.6.us02-ae5.entry.v51124-3a.qpon
+  uuid: d5e77b10-7374-11eb-b739-9160314e12e6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_2|3.1MB/s
+  network: tcp
+  port: 733
+  reality-opts:
+    public-key: HYgpFMGD32D4WsZUct6VMxgEax13DGzP_bLykxAnwQo
+    short-id: '!!str 056feca4a91fdc96'
+  server: hk03.ccdn3.work
+  servername: www.bilibili.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d5e77b10-7374-11eb-b739-9160314e12e6
+- name: 🇺🇸US_3|1.2MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.218
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US_4|3.2MB/s
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21105'
+  server: 211.91.158.44
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US_5|2.6MB/s
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21108'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_6|1.1MB/s
+  network: ws
+  port: '443'
+  server: hgvh-production.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4a09b051-3e49-425a-9fd3-1f074d7e587a
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
+        Gecko) Chrome/26.0.1410.64 Safari/537.31
+    path: /ws/4a09b051-3e49-425a-9fd3-1f074d7e587a
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_7|3.7MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: HCa-dCIFGG7LF3wPOBlrRzk_T1m-YIkhmupepQy0bzI
+    short-id: '!!str 616ead1cdc4486ca'
+  server: 192.220.55.133
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a54fec73-26a1-4c05-b948-6a01c157927e
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_8|1.1MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: RR_ziRYgWg-MGdK-7E3NGVwwqKSOsJlQiH1TGLBYESE
+    short-id: '!!str 72003ac19ea6cb2f'
+  server: 216.36.83.150
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e2e71114-5bae-48ab-a69b-4a091d03b112
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0130
