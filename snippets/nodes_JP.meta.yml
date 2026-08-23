@@ -1,4 +1,20 @@
 proxies:
+- name: 日本
+  password: Foc_Mcxi45rM9v3ve_N92fdrK_10_Ssc5
+  port: 8443
+  server: 185.39.31.117
+  skip-cert-verify: true
+  sni: grape-beer.yyuyy.com
+  tls: false
+  type: hysteria2
+- name: '日本 #1'
+  password: ef18d810-719c-4bf1-83c6-615d01f217eb
+  port: 443
+  server: jp.cryptoofarm.com
+  skip-cert-verify: true
+  sni: jp.cryptoofarm.com
+  tls: false
+  type: hysteria2
 - name: JP
   password: oU4tGn37oQ9JGmqnlTGkU3knrfAbclsq
   port: 32135
@@ -64,30 +80,32 @@ proxies:
     headers:
       Host: UcKniXjfd2JOKBmx.v.3dns.vip
     path: /ws-vmess
-- cipher: aes-128-gcm
-  name: 🇯🇵JP_1|3.7MB/s
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10925
-  server: mn.qwer-cn.org
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_2|1.1MB/s
-  network: tcp
-  port: 771
-  reality-opts:
-    public-key: 8lVH2hOKaovzzmCn6DVEHI8CoEn-0AxbQgsMbtToi38
-    short-id: '!!str e89440e56ecf6255'
-  server: hk04.ccdn3.work
-  servername: i1.hdslb.com
-  tls: true
-  type: vless
+- name: 🇯🇵JP_1|1.0MB/s
+  password: 29204996-a723-4291-8c70-30843b592d40
+  port: 443
+  server: as-jp39.y1static-content-distribution.shop
+  skip-cert-verify: true
+  sni: as-jp39.y1static-content-distribution.shop
+  type: anytls
   udp: true
-  uuid: d5e77b10-7374-11eb-b739-9160314e12e6
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP_3|1.7MB/s
+  name: 🇯🇵JP_2|4.2MB/s
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: '21109'
   server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵JP_3|1.8MB/s
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21119'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵JP_4|3.5MB/s
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: '10937'
+  server: mn.qwer-cn.org
   type: ss
   udp: true
