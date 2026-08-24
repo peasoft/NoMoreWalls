@@ -1,45 +1,18 @@
 proxies:
-- name: 'A - 🇨🇦 CA 01 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 50.62.195.50
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime38.workers.dev
-    path: /?ed=2560
-- client-fingerprint: random
-  encryption: none
-  name: 'B - 🇨🇦 CA 02 TG: @nodpai'
-  network: ws
+- name: 加拿大
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  security: tls
-  server: shopify.com
-  servername: misaka.cndyw.ggff.net
-  tls: true
-  type: vless
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  ws-opts:
-    headers:
-      Host: misaka.cndyw.ggff.net
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇨🇦CA_1|3.5MB/s
-  password: amazonskr05
+  server: vpn-ca-001.fastervpn.world
+  skip-cert-verify: true
+  sni: t.me
+  tls: false
+  type: hysteria2
+- auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  name: 🇨🇦CA_1|2.0MB/s
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
-  server: 3.97.15.59
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA_2|1021KB/s
-  password: be6cbb46-ebb0-4726-9202-6a3bac1d0afb
-  port: 13345
-  server: 140.238.153.81
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA_3|1.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.99.171.23
-  type: ss
+  server: vpn-ca-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-ca-002.fastervpn.world
+  type: hysteria2
   udp: true
