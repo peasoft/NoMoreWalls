@@ -1,4 +1,51 @@
 proxies:
+- name: 'A - 🇬🇧 GB 01 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 185.193.30.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime09.workers.dev
+- name: 'A - 🇬🇧 GB 02 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.40.146.50
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /?ed=2560
+- name: 'A - 🇬🇧 GB 03 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.80.110.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+- name: 'B - 🇬🇧 GB 04 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 185.159.247.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
+    path: /
+- name: 'B - 🇬🇧 GB 05 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 77.75.199.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
 - name: 英国
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
@@ -13,14 +60,19 @@ proxies:
   sni: hy2-germany.unlimited-access.ru
   tls: false
   type: hysteria2
-- name: '英国 #2'
+- down: ''
+  fingerprint: ''
+  name: 🇬🇱GL_1|1.1MB/s
+  obfs: ''
+  obfs-password: ''
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  port: 8080
+  port: '8080'
   server: 138.124.0.168
   skip-cert-verify: true
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
+  up: ''
 - name: '英国 #3'
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   port: 8080
@@ -29,47 +81,48 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧GB_1|1.5MB/s
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_1|2.6MB/s
+  password: amazonskr05
   port: 443
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: '!!str ff776ff77be48b88'
-  server: kz.freeinternat.com
-  servername: kz.freeinternat.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
+  server: 13.135.73.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_2|3.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.135.161.144
+  type: ss
   udp: true
-  uuid: fbb74aa8-b89a-4f20-9504-6b25aadf6681
-- name: 🇬🇧GB_2|1.1MB/s
+- name: 🇬🇧GB_3|1.6MB/s
   password: None
   port: 443
-  server: 193.36.118.210
+  server: 185.235.0.34
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- encryption: none
-  name: 🇬🇧GB_3|1.3MB/s
-  network: ws
-  port: '8080'
-  server: snapp.ir
+- name: 🇬🇧GB_4|2.2MB/s
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_5|2.1MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: 0DU2XI6J-aVzvYzrKQ7XOI9WPRMOADKTyn2V9E71WA8
+    short-id: '!!str b4c513c67294b791'
+  server: swe-one.letsgodance.site
+  servername: swe-one.letsgodance.site
+  tls: true
   type: vless
   udp: true
-  uuid: aad5bbbe-5c87-4af3-bc72-f36986f7e9ea
-  ws-opts:
-    headers:
-      Host: rt.orvexa.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/43.0.2357.65 Safari/537.36
-    path: /
+  uuid: 5d36ddf8-dde5-4b2d-8213-d3255f22a0f1
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_4|3.5MB/s
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21117'
-  server: 211.91.158.26
-  type: ss
-  udp: true
