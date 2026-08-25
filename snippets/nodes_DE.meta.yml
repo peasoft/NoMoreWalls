@@ -89,19 +89,44 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|2.3MB/s
+- client-fingerprint: chrome
+  name: 🇩🇪DE_1|2.9MB/s
+  network: tcp
+  port: 22216
+  reality-opts:
+    public-key: sTE0YXI6Pv6OQUNbM-hNpNOhzon0_m2YUd7B1_g-JAU
+    short-id: '!!str 0f4412d42129f080'
+  server: gernoad.whooisthebest.ir
+  servername: amp-api-edge.apps.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c5619e4-0577-48d4-8d0c-6ad9c5cc0ecf
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_2|2.8MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: '!!str 43dcff53849b81e6'
+  server: 152.53.33.73
+  servername: at.quattro-tech.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85cc845e-644c-4148-8288-f0c03c83c1ec
+  xudp: true
+- name: 🇩🇪DE_3|1.8MB/s
   password: None
-  port: 9443
-  server: 87.249.132.97
+  port: 443
+  server: 138.201.56.241
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇩🇪DE_2|3.6MB/s
-  port: 5228
-  server: 139.59.140.242
-  type: http
-- name: 🇩🇪DE_3|2.2MB/s
+- name: 🇩🇪DE_6|1.2MB/s
   password: None
   port: 443
   server: 149.36.50.157
@@ -109,35 +134,46 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇩🇪DE_4|1.6MB/s
-  port: 443
-  server: 141.17.83.78
-  skip-cert-verify: true
-  tls: true
+- name: 🇩🇪DE_5|2.3MB/s
+  port: 9870
+  server: 195.201.35.63
   type: http
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇩🇪DE_5|2.8MB/s
-  network: ws
-  port: '8444'
-  server: nl2.meshbeat.online
-  servername: nl2.meshbeat.online
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: 🇩🇪DE_7|3.6MB/s
+  network: grpc
+  port: '9892'
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: '!!str aa'
+  server: 200.165.235.98
+  servername: dl.google.com
   tls: true
   type: vless
   udp: true
-  uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
-  ws-opts:
-    headers:
-      Host: nl2.meshbeat.online
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /api/v1/devices/b83f16ad5e/telemetry
+  uuid: 14777bd9-56a5-46f6-a94f-826b4800dc05
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc-reality
+  name: 🇩🇪DE_8|3.4MB/s
+  network: grpc
+  port: '8444'
+  reality-opts:
+    public-key: Ng71fIN6Rqh8dWkwWgoCUN6Qmsl4vkCjNZNLXT3_YHA
+    short-id: '!!str bd4a2659'
+  server: 178.250.242.219
+  servername: max.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84e3de56-4917-4a35-a7db-9c3464e25a5a
   xudp: true
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_6|1.2MB/s
+  name: 🇩🇪DE_9|2.4MB/s
   network: tcp
   port: '3444'
   reality-opts:
@@ -148,19 +184,21 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 43f45b5a-a514-423a-b610-7660e62741a9
+  uuid: 90e12a40-ea12-4951-a0ef-142a1fb164ec
   xudp: true
-- name: 🇩🇪DE_7|2.6MB/s
-  network: ws
-  port: '80'
-  server: 45.130.125.114
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: vless
+  name: 🇩🇪DE_10|4.2MB/s
+  network: grpc
+  port: '7443'
+  reality-opts:
+    public-key: fYyYNkbi8gAi12cu0bLDPzatCm8taK4dpBG86o6Ggxk
+    short-id: '!!str a1b2c3d4e5f60708'
+  server: 89.39.121.186
+  servername: www.bing.com
+  tls: true
   type: vless
   udp: true
-  uuid: b0c1d2e3-f4a5-4b6c-8d7e-8f9a0b1c2d3e
-  ws-opts:
-    headers:
-      Host: free-hzr18-cdn.sabzi.name.ng.
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /
+  uuid: 90e12a40-ea12-4951-a0ef-142a1fb164ec
   xudp: true

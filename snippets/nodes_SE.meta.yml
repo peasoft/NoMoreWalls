@@ -6,11 +6,16 @@ proxies:
   sni: swe.frkn.org
   tls: false
   type: hysteria2
-- name: 🇸🇪SE_1|2.3MB/s
-  password: None
-  port: 443
-  server: 149.50.216.65
-  skip-cert-verify: true
+- client-fingerprint: qq
+  encryption: none
+  grpc-opts:
+    grpc-service-name: edge.sync.v1
+  name: 🇸🇪SE_1|3.4MB/s
+  network: grpc
+  port: '443'
+  server: swa.mythos-wargame.fun
   tls: true
-  type: http
-  username: null
+  type: vless
+  udp: true
+  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
+  xudp: true
