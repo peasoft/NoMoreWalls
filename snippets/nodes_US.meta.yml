@@ -16,13 +16,21 @@ proxies:
   tls: false
   type: hysteria2
 - name: 美国
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 18.226.172.222
+  skip-cert-verify: true
+  sni: vpn-us-003.fastervpn.world
+  tls: false
+  type: hysteria2
+- name: '美国 #1'
   password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
   port: 8080
   server: 82.39.214.98
   sni: hopp-us.yyuyy.com
   tls: false
   type: hysteria2
-- name: '美国 #1'
+- name: '美国 #2'
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
   password: cd74c0a406664a5bc0bac098220a2468
@@ -32,7 +40,7 @@ proxies:
   sni: nl1.sferavpn.pro
   tls: false
   type: hysteria2
-- name: '美国 #2'
+- name: '美国 #3'
   password: fe475179-d8a8-420d-a4ac-3e415ed8dc72
   port: 11683
   server: uswx4.wxgqlfx.vip
@@ -48,8 +56,7 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- auth: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  name: 🇦🇪AE_1|1.4MB/s
+- name: '美国 #4'
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   port: 443
   server: faq.wwwinternetvideo.click
@@ -77,54 +84,72 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: qq
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: edge.sync.v1
-  name: 🇺🇸US_1|1007KB/s
-  network: grpc
-  port: 443
-  server: eea.mythos-wargame.fun
-  servername: eea.mythos-wargame.fun
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
-- client-fingerprint: firefox
-  name: 🇺🇸US_2|3.1MB/s
-  network: ws
-  port: 8443
-  server: 172.64.229.252
-  servername: apkav-1.bosx.net
+- name: 🇺🇸US_1|1.0MB/s
+  password: c857562678594197
+  port: 20063
+  server: saj2000e.pacemakere.com
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: d7b4fa04-dd2d-45ae-8331-f4b490ada85f
-  ws-opts:
-    headers:
-      Host: apkav-1.bosx.net
-    path: /api/connect
-- name: 🇺🇸US_3|4.3MB/s
+- name: 🇺🇸US_2|3.8MB/s
+  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+  port: 2056
+  server: dg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: dg2.mangshe.xyz
+  type: hysteria2
+- name: US_speednode_0134
+  port: 443
+  server: voteshirleysew.club
+  sni: voteshirleysew.club
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_5|1.1MB/s
   password: 39b27e20-16f5-45a1-8139-7c9b7f51b6f8
   port: 4433
   server: us2.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
-- name: 🇺🇸US_4|2.5MB/s
+- name: 🇺🇸US_6|3.3MB/s
   password: 39b27e20-16f5-45a1-8139-7c9b7f51b6f8
   port: 4433
   server: nl1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
-- name: 🇺🇸US_5|1.3MB/s
-  password: None
+- name: 🇺🇸US_7|2.6MB/s
   port: 443
-  server: efr-marktplatz.club
-  skip-cert-verify: false
+  server: webdrone.club
+  sni: webdrone.club
   tls: true
   type: http
-  username: null
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: edge.sync.v1
+  name: 🇺🇸US_8|1.1MB/s
+  network: grpc
+  port: '443'
+  server: dec.mythos-wargame.fun
+  servername: dec.mythos-wargame.fun
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_9|1.2MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str '
+  server: youtube.sfproxy.fuck-rkn.dev
+  servername: jobinvest.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0130
@@ -168,12 +193,6 @@ proxies:
   port: 443
   server: fan.365747.xyz
   skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0134
-  port: 443
-  server: voteshirleysew.club
   tls: true
   type: http
   udp: true
