@@ -117,11 +117,82 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 🪞18@oneclickvpnkeys
-  password: zhangyang
-  port: 6443
-  server: 130.61.50.75
+- encryption: none
+  name: 🇩🇪DE_1|1.3MB/s
+  network: ws
+  port: '2095'
+  server: go.lumen.com
+  type: vless
+  udp: true
+  uuid: c122fae8-7875-421f-a425-ff7b32be16dd
+  ws-opts:
+    headers:
+      Host: eco-de.v2shop.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: download
+  xudp: true
+- name: 🇩🇪DE_3|1.0MB/s
+  port: 11000
+  server: 116.202.172.187
+  type: http
+- name: 🇩🇪DE_4|1.7MB/s
+  password: None
+  port: 443
+  server: 141.17.83.78
   skip-cert-verify: true
-  sni: 130.61.50.75
-  tls: false
-  type: hysteria2
+  tls: true
+  type: http
+  username: null
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.JgBGQxcFxZdwwvHJgyYQ9Qw8ezpz532ZMa6I4XEadAo
+  name: 🇩🇪DE_5|2.5MB/s
+  network: ws
+  port: '443'
+  server: aliconfig.speedoraa.ir
+  servername: pas.speedoraa.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: be4cecbe-3658-4daf-8c9a-7b00898c7318
+  ws-opts:
+    headers:
+      Host: pas.speedoraa.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_6|3.3MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: tzOeyllk2VtPXZ_BJ2lOZcGtsnn41ZHBa9dE6s9sFiQ
+    short-id: '!!str c8c75aaf699259b4'
+  server: 159.195.242.180
+  servername: at2.tsumshop.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75079a7f-75b5-418b-8a65-f7b2f438cd4a
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_7|1.2MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: 8aZEMoyzOdSoIbSp_6iuWr3dmuPkXrMqZlw_Pgn6yCw
+    short-id: '!!str 269d1166a11cf1b0'
+  server: 159.195.232.193
+  servername: us1.tsumshop.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  xudp: true
