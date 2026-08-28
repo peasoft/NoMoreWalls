@@ -211,33 +211,37 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - cipher: aes-256-cfb
-  name: 🇺🇸US_1|3.1MB/s
+  name: 🇺🇸US_1|1.9MB/s
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.233
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_2|3.6MB/s
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.232
-  type: ss
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇭🇰HK_2|3.2MB/s
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.7MB/s
   network: ws
-  port: '16632'
-  server: t.cnmjcn.cyou
+  password: humanity
+  port: '443'
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /assignment
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_1|3.1MB/s
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: true
+  type: vmess
   uuid: 62319519-82bc-46ff-99cd-237bd0882cef
   ws-opts:
     headers:
       Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
     path: /
-  xudp: true

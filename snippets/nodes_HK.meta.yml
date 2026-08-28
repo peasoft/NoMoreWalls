@@ -7,13 +7,6 @@ proxies:
   sni: hk2.xiaoliyu.cyou
   tls: false
   type: hysteria2
-- name: 🇭🇰HK
-  password: 9q3Mb0IzSVbnwaqK
-  port: 16001
-  server: 18.162.42.61
-  sni: hk-ls-r-1.czzhkractqqakfzdmrgd.cc
-  tls: false
-  type: hysteria2
 - name: 🇭🇰 HK
   password: f4927789e58bcd24b6f6
   port: 10444
@@ -75,29 +68,62 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰HK_1|2.8MB/s
-  password: cba96915-8098-41a7-9997-efb01ccc598a
-  port: 42316
-  server: a16.toppp.cc
-  skip-cert-verify: true
-  sni: osxapps.itunes.apple.com
-  type: anytls
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 🇭🇰HK_2|3.2MB/s
+  name: 🇭🇰HK_1|3.1MB/s
   network: ws
-  port: '16632'
+  port: 16632
   server: t.cnmjcn.cyou
-  skip-cert-verify: false
-  tls: false
+  skip-cert-verify: true
   type: vmess
-  udp: true
   uuid: 62319519-82bc-46ff-99cd-237bd0882cef
   ws-opts:
     headers:
       Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
     path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇭🇰HK_2|4.4MB/s
+  network: tcp
+  port: '15003'
+  reality-opts:
+    public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
+    short-id: '!!str 4c517b9e'
+  server: 82.38.46.66
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇭🇰HK_3|4.7MB/s
+  network: raw
+  port: '15003'
+  reality-opts:
+    public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
+    short-id: '!!str 4c517b9e'
+  server: nian.001.url111.kcloud02.top
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇭🇰HK_4|4.3MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: 2kl8isq7ajNv3BR6Z1EPag_LqJHmsfo2pn0dA7yetko
+    short-id: '!!str a2d13d677624197e'
+  server: hk6.miyazono-kaori.com
+  servername: www.hsbc.com.hk
+  tls: true
+  type: vless
+  udp: true
+  uuid: fbef76ca-9bf2-415d-9872-4700c8ca7673
   xudp: true
