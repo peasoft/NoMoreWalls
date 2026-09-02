@@ -134,44 +134,117 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|2.8MB/s
-  password: bd54ceae-9b5c-477d-b364-ffd8e5c734a7
-  port: 443
-  server: as-de003.y1static-content-distribution.shop
-  skip-cert-verify: true
-  sni: as-de003.y1static-content-distribution.shop
-  type: anytls
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_1|1.3MB/s
+  network: tcp
+  port: '101'
+  reality-opts:
+    public-key: VxFkVk2SKEQrRnBnhzvl29UpHlS2i5t6Is__HGPmuRU
+    short-id: '!!str 03e5ac759d2e7e90'
+  server: 49.12.244.56
+  servername: amp-api-edge.apps.apple.com
+  tls: true
+  type: vless
   udp: true
-- name: 🇩🇪DE_2|3.7MB/s
-  port: 11000
-  server: 116.202.172.187
-  type: http
-- name: 🇩🇪DE_3|1.1MB/s
+  uuid: 40c81dcc-bc8a-4690-abdf-75ea8530234b
+  xudp: true
+- encryption: none
+  name: 🇩🇪DE_2|1.1MB/s
+  network: ws
+  port: '2087'
+  server: 188.220.67.181
+  type: vless
+  udp: true
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /8f2690e2d016
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - amp-api-edge.apps.apple.com
+    path:
+    - /
+  name: 🇩🇪DE_3|3.0MB/s
+  network: http
+  port: '28111'
+  server: tp.paydar.site
+  type: vless
+  udp: true
+  uuid: 82c6792a-ea57-42a1-9b7c-eca252d0b8ea
+  xudp: true
+- encryption: none
+  name: 🇩🇪DE_4|1.3MB/s
+  network: ws
+  port: '2087'
+  server: 188.220.67.140
+  type: vless
+  udp: true
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+    path: /8f2690e2d016
+  xudp: true
+- name: 🇩🇪DE_5|1.0MB/s
   password: None
   port: 11111
   server: 103.237.102.191
   type: http
   username: null
-- name: 🇩🇪DE_4|2.9MB/s
-  password: None
-  port: 9443
+- name: 🇩🇪DE_6|1.8MB/s
+  port: 443
   server: 87.249.132.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_7|3.7MB/s
+  password: None
+  port: 443
+  server: 149.36.50.157
   skip-cert-verify: true
   tls: true
   type: http
   username: null
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_5|3.2MB/s
+  name: 🇩🇪DE_8|4.1MB/s
   network: tcp
-  port: '12443'
+  port: '8443'
   reality-opts:
-    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
-    short-id: '!!str a1b2c3d4'
-  server: 31.77.220.185
-  servername: special.aeternavpn.space
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str '
+  server: 159.195.137.29
+  servername: sellflow.org
   tls: true
   type: vless
   udp: true
-  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
+  uuid: 2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1
+  xudp: true
+- encryption: none
+  name: 🇩🇪DE_9|1.0MB/s
+  network: ws
+  port: '2087'
+  server: 188.220.67.161
+  type: vless
+  udp: true
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
+    path: /8f2690e2d016
   xudp: true
