@@ -26,3 +26,44 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - Microsoft.com
+    path:
+    - /
+  name: 🇫🇷FR_1|3.2MB/s
+  network: http
+  port: '2829'
+  server: 152.89.253.143
+  type: vless
+  udp: true
+  uuid: c041788d-1801-4bd7-863f-781a8af0854d
+  xudp: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.2MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /assignment
+- name: 🇫🇷FR_3|3.1MB/s
+  port: 443
+  server: 103.82.101.44
+  skip-cert-verify: true
+  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
+  tls: true
+  type: http
