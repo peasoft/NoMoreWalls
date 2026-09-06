@@ -1,15 +1,51 @@
 proxies:
-- name: 🇸🇪SE_1|2.8MB/s
-  password: None
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇪SE_1|1.8MB/s
+  network: xhttp
+  port: '2053'
+  server: page.irhubby.ir
+  servername: vips.irhubby.ir
   tls: true
-  type: http
-  username: null
-- name: 🇸🇪SE_2|1.2MB/s
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 3c481672-8818-45f3-afdd-ad677ce98923
+  xhttp-opts:
+    host: vips.irhubby.ir
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+- encryption: none
+  name: 🇸🇪SE_2|3.1MB/s
+  network: ws
+  port: '8080'
+  server: vips.irhubby.ir
+  type: vless
+  udp: true
+  uuid: 3c481672-8818-45f3-afdd-ad677ce98923
+  ws-opts:
+    headers:
+      Host: vips.irhubby.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇪SE_3|3.1MB/s
+  network: tcp
+  port: '2087'
+  reality-opts:
+    public-key: 06ep3nkkA60Jh8rWJSz3dCpLWxUPYLN0uZnESYsoQFo
+    short-id: '!!str 2b044515f70accef'
+  server: sw.mrhservice.ir
+  servername: amp-api-edge.apps.apple.com
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: c9c64c4b-c12a-4673-be52-21c080ac07a1
+  xudp: true
