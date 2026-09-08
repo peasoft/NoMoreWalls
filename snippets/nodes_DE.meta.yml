@@ -83,16 +83,6 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 🇩🇪165624 | ⚡️Telegram = t.me/S...
-  obfs: salamander
-  obfs-password: t38lc9pdw1uhtgn6
-  password: b0d431139ded4333aa805a1567c761bb
-  port: 53062
-  server: dep.charsoulink3.ir
-  skip-cert-verify: false
-  sni: dep.charsoulink3.ir
-  tls: false
-  type: hysteria2
 - name: 🇩🇪All³ | @BigSmoke_Config
   password: fmaznn1lrzys7ddy
   port: 52050
@@ -145,7 +135,19 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|1.6MB/s
+- name: 🇩🇪DE_1|3.0MB/s
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_2|1.1MB/s
+  password: None
+  port: 11111
+  server: 103.237.102.191
+  type: http
+  username: null
+- name: 🇩🇪DE_3|1.8MB/s
   password: None
   port: 443
   server: 149.36.50.157
@@ -153,34 +155,58 @@ proxies:
   tls: true
   type: http
   username: null
-- encryption: mlkem768x25519plus.native.0rtt.krmkbckycnkKq29MKnNpZCtkqMKlO9q4svhCzMA5enw
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_2|1.4MB/s
+- name: 🇩🇪DE_4|2.9MB/s
+  password: None
+  port: 443
+  server: 138.201.56.241
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇩🇪DE_5|2.6MB/s
+  password: None
+  port: 443
+  server: 141.17.83.78
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.JgBGQxcFxZdwwvHJgyYQ9Qw8ezpz532ZMa6I4XEadAo
+  name: 🇩🇪DE_6|3.0MB/s
   network: ws
-  port: '9932'
-  server: 4de.arosakforosh.ir
-  type: vless
-  udp: true
-  uuid: 9f6f094d-0f59-4422-9575-3cfe3d8e0ed2
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|3.1MB/s
-  network: tcp
   port: '443'
-  reality-opts:
-    public-key: QfQwHAZyrDBB7m_NWWSbzblY83R_F8SaqnVA3nTHERQ
-    short-id: '!!str 683e7a619f453455'
-  server: 49.13.92.156
-  servername: www.cloudflare.com
+  server: mobileomrani.speedoraa.ir
+  servername: pas.speedoraa.ir
   tls: true
   type: vless
   udp: true
-  uuid: c686af39-cfe4-4c67-bc99-536a505af27e
+  uuid: 1d9b478e-f82b-430b-bcea-3fe236342e1f
+  ws-opts:
+    headers:
+      Host: pas.speedoraa.ir
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: UpdateService
+  name: 🇩🇪DE_7|2.0MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: HHZwsut0m8Z4tTCbU0QdnbyfQMQfk8XuEbBO0wFObis
+    short-id: '!!str 7765b2a4cef1033e'
+  server: 46.8.208.29
+  servername: cdn.okko.tv
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5f922903-69b5-4d99-924d-52ca6337741e
   xudp: true
