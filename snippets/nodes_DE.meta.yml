@@ -116,17 +116,41 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|3.5MB/s
+- encryption: mlkem768x25519plus.native.0rtt.UIj8DGzlc6BltM32rsxWO_NYIp7KK2bzYWdnRIOJPn4
+  name: 🇩🇪DE_1|3.1MB/s
+  network: tcp
+  port: '27634'
+  server: 45.74.158.39
+  type: vless
+  udp: true
+  uuid: f8ac5397-4ccb-4ba8-b490-32032e752038
+  xudp: true
+- name: 🇩🇪DE_2|2.8MB/s
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_3|2.1MB/s
   password: None
   port: 443
-  server: 138.201.56.241
+  server: 149.36.50.1
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇩🇪DE_2|2.6MB/s
-  port: 443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
+- encryption: none
+  name: 🇩🇪DE_4|3.5MB/s
+  network: ws
+  port: '2052'
+  server: snapp.ir
+  type: vless
+  udp: true
+  uuid: 8619f429-1ca5-4e53-a94e-1dd36b585396
+  ws-opts:
+    headers:
+      Host: cdn.pershiansport.ir
+      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /
+  xudp: true
