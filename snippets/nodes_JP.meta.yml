@@ -57,14 +57,36 @@ proxies:
   port: 40002
   server: 103.236.66.4
   type: ss
-- alpn:
-  - h2
-  - http/1.1
-  name: 🇯🇵JP_1|4.1MB/s
-  password: 34da2119-c5ff-45df-870c-9ddb75d88d3b
-  port: 21123
-  server: xj.salirukou.shop
-  skip-cert-verify: true
-  sni: tdfycft.yfftftf.shop
-  type: anytls
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇯🇵JP_1|4.7MB/s
+  network: grpc
+  port: 10034
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: jp4-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
   udp: true
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+- client-fingerprint: chrome
+  name: 🇯🇵JP_2|1.1MB/s
+  network: ws
+  port: '443'
+  server: cf5.466688.xyz
+  servername: mia3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  ws-opts:
+    headers:
+      Host: mia3.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /buy/out.php?ed=2560
+  xudp: true
