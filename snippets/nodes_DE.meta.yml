@@ -93,37 +93,69 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|3.0MB/s
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+  name: 🇩🇪DE_1|3.3MB/s
+  network: ws
+  port: '443'
+  server: 199.232.237.79
+  servername: turboo-server.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 60a2998c-cd85-562e-a3fd-396e4925dd3a
+  ws-opts:
+    headers:
+      Host: turboo-server.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇩🇪DE_2|3.2MB/s
+  password: None
   port: 443
   server: 149.36.50.1
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_2|3.0MB/s
+  username: null
+- name: 🇩🇪DE_3|2.5MB/s
   password: None
   port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇩🇪DE_3|2.8MB/s
-  password: None
-  port: 9443
   server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇩🇪DE_4|2.8MB/s
-  password: None
+- client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  name: 🇩🇪DE_4|3.1MB/s
+  network: ws
   port: 443
-  server: 149.36.50.129
+  server: 138.124.25.250
+  servername: cdn8848.776676.xyz
   skip-cert-verify: true
   tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /team/index?ed=2560
+- name: 🇩🇪DE_5|1.3MB/s
+  password: None
+  port: 11111
+  server: 103.237.102.191
   type: http
   username: null
-- name: 🇩🇪DE_5|2.6MB/s
+- name: 🇩🇪DE_6|2.0MB/s
   password: None
   port: 443
   server: 141.17.83.78
@@ -131,50 +163,3 @@ proxies:
   tls: true
   type: http
   username: null
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_6|3.1MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: '!!str '
-  server: 144.31.168.59
-  servername: aotocon.ggisopi.su
-  tls: true
-  type: vless
-  udp: true
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_7|4.0MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: '!!str '
-  server: aotocon.ggisopi.su
-  servername: aotocon.ggisopi.su
-  tls: true
-  type: vless
-  udp: true
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  xudp: true
-- encryption: mlkem768x25519plus.native.0rtt.OZkVYz6Uu5zyCKee6bqFh5SbH0yByTD-2jaNO0Y5Uyo
-  name: 🇩🇪DE_8|3.6MB/s
-  network: ws
-  port: '2565'
-  server: content2.macau24.com
-  type: vless
-  udp: true
-  uuid: 7e0faccc-1d74-4ddf-bbdf-7258e155115d
-  ws-opts:
-    headers:
-      Host: play-apps-features.googleusercontent.com
-      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
-        like Gecko) Chrome/5.0.342.1 Safari/533.2
-    path: /api/v1/gpu-stream/socket?ed=2560
-  xudp: true
