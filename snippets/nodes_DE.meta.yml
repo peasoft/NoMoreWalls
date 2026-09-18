@@ -63,14 +63,6 @@ proxies:
   sni: de1.sferavpn.pro
   tls: false
   type: hysteria2
-- name: '[ 🇩🇪 ] | @Cfox_SerVer #2'
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: 64.188.98.171
-  skip-cert-verify: true
-  sni: germany3.h2corp.local
-  tls: false
-  type: hysteria2
 - alpn:
   - h3
   client-fingerprint: chrome
@@ -93,73 +85,54 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
-  name: 🇩🇪DE_1|3.3MB/s
-  network: ws
-  port: '443'
-  server: 199.232.237.79
-  servername: turboo-server.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 60a2998c-cd85-562e-a3fd-396e4925dd3a
-  ws-opts:
-    headers:
-      Host: turboo-server.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /
-  xudp: true
-- name: 🇩🇪DE_2|3.2MB/s
+- name: 🇩🇪DE_1|1.9MB/s
   password: None
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇩🇪DE_3|2.5MB/s
-  password: None
-  port: 443
+  port: 9443
   server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 🇩🇪DE_4|3.1MB/s
-  network: ws
-  port: 443
-  server: 138.124.25.250
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /team/index?ed=2560
-- name: 🇩🇪DE_5|1.3MB/s
+- name: 🇩🇪DE_2|1.2MB/s
   password: None
   port: 11111
   server: 103.237.102.191
   type: http
   username: null
-- name: 🇩🇪DE_6|2.0MB/s
-  password: None
-  port: 443
-  server: 141.17.83.78
-  skip-cert-verify: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE_3|4.3MB/s
+  password: VuR-wK82ssFWKyLbZAVtv6vAPY3Uh1Zt
+  port: '1080'
+  server: config-germany.zelnora.ir
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇩🇪DE_4|4.0MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: fwS6bEyF28VsSapBZZ2vz6LJmVismH0NYupk6STFRWc
+    short-id: '!!str f373df45a687eaff'
+  server: jsv-de1.jmovies.ir
+  servername: numpy.org
   tls: true
-  type: http
-  username: null
+  type: vless
+  udp: true
+  uuid: c26fe2f0-5c69-000B-8a1a-bf116ceb9215
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇩🇪DE_5|1.5MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: fwS6bEyF28VsSapBZZ2vz6LJmVismH0NYupk6STFRWc
+    short-id: '!!str f373df45a687eaff'
+  server: jsv-ir2.jmovies.ir
+  servername: aparat.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c26fe2f0-5c69-000B-8a1a-bf116ceb9215
+  xudp: true
