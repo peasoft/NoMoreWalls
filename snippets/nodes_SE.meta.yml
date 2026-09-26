@@ -1,11 +1,4 @@
 proxies:
-- name: 🕊️64@oneclickvpnkeys
-  password: 02bd8b5a-170b-4a79-8e68-9cec710272c7
-  port: 443
-  server: se1.chromevpn.cc
-  sni: se1.chromevpn.cc
-  tls: false
-  type: hysteria2
 - name: Telegram 🆔@cnetvpn 🇸🇪
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
@@ -16,15 +9,28 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇸🇪SE_1|3.2MB/s
-  password: None
+- cipher: aes-256-cfb
+  name: 🇸🇪SE_1|2.5MB/s
+  password: amazonskr05
   port: 443
-  server: 146.70.242.130
+  server: 13.49.64.122
+  type: ss
+- client-fingerprint: unsafe
+  name: 🇸🇪SE_2|1.1MB/s
+  network: ws
+  port: 443
+  server: 103.71.23.244
+  servername: shin-ra.ccwu.cc
   skip-cert-verify: true
   tls: true
-  type: http
-  username: null
-- name: 🇸🇪SE_2|3.9MB/s
+  type: vless
+  udp: true
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  ws-opts:
+    headers:
+      Host: shin-ra.ccwu.cc
+    path: /
+- name: 🇸🇪SE_3|3.0MB/s
   password: None
   port: 443
   server: 146.70.242.146
@@ -32,11 +38,20 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇸🇪SE_3|1.9MB/s
-  password: None
-  port: 443
-  server: 79.142.77.63
-  skip-cert-verify: true
+- client-fingerprint: ios
+  encryption: none
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+  name: 🇸🇪SE_4|2.4MB/s
+  network: grpc
+  port: '443'
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: '!!str 3f8e2d1c9b4a7e6f'
+  server: 201.24.52.151
+  servername: hexagonicfield.com
   tls: true
-  type: http
-  username: null
+  type: vless
+  udp: true
+  uuid: 8c40bb2c-157a-4830-a2c3-0b35ef50c660
+  xudp: true
