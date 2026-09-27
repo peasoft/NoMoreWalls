@@ -29,79 +29,38 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: 🇩🇪DE_1|2.1MB/s
-  network: ws
-  port: 443
-  server: 172.67.73.170
-  servername: edgetunnel-4uw.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  ws-opts:
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 🇩🇪DE_2|2.9MB/s
-  network: ws
-  port: 443
-  server: 2.26.30.216
-  servername: edgetunnel-4uw.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  ws-opts:
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-    path: /
-- client-fingerprint: random
-  name: 🇩🇪DE_3|3.3MB/s
-  network: ws
-  port: 443
-  server: 206.81.30.239
-  servername: yf.962456.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
-  ws-opts:
-    headers:
-      Host: yf.962456.xyz
-    path: /proxyip=kr.william.us.ci
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.EvqGmJhHfNsRhxENFhkBpY3TDQZfpIeaet93vsXSaUU
+- client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.9MB/s
-  network: xhttp
+  name: 🇩🇪DE_1|3.5MB/s
+  network: tcp
   port: '443'
-  server: 199.232.79.166
-  servername: cdn.fastly.com
+  reality-opts:
+    public-key: 8w1MyEJV4l9QeNWbYMXny5tTLNTw_9nsQ7jOuiQhix4
+    short-id: '!!str 0123456789abcdef'
+  server: 31.76.111.79
+  servername: hh.ru
   tls: true
   type: vless
   udp: true
-  uuid: 80a3739d-bb54-42ec-8a7e-158d3c64f880
-  xhttp-opts:
-    host: telegram-uonvpn.global.ssl.fastly.net
-    mode: auto
-    path: /@UonVPN-/-@UonVPN-*-@UonVPN--*-@UonVPN--**-@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN-*--@UonVPN
-    x-padding-bytes: 100-1000
+  uuid: ac9a573b-67ff-4953-9e13-4cf43576f8f0
   xudp: true
-- name: 🇩🇪DE_5|1.9MB/s
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_2|1.1MB/s
+  network: tcp
+  port: '20410'
+  reality-opts:
+    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
+    short-id: '!!str e2ce3e050232978c'
+  server: 109.94.164.85
+  servername: secureconnect-pa.mtls.clients6.google.com
   tls: true
-  type: http
-- name: 🇩🇪DE_6|1.2MB/s
-  password: udp-relay=true
-  port: 11111
-  server: 103.237.102.191
-  type: http
-  username: None
-- name: 🇩🇪DE_7|3.0MB/s
+  type: vless
+  udp: true
+  uuid: c5cfb08f-e42d-4a08-94e1-4f591a2f7a6f
+  xudp: true
+- name: 🇩🇪DE_5|2.8MB/s
   password: None
   port: 443
   server: 149.36.50.129
@@ -109,17 +68,43 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇩🇪DE_8|4.1MB/s
-  network: ws
-  port: '80'
-  server: 45.77.143.204
+- name: 🇩🇪DE_4|2.5MB/s
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_6|2.8MB/s
+  network: xhttp
+  port: '443'
+  server: 162.159.243.105
+  servername: usa1.tolkun-tv.ru
+  tls: true
   type: vless
   udp: true
-  uuid: 8ccc4581-eba9-4226-abbc-64e7d8fb415e
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /
+  uuid: 63be06d6-a169-482e-a047-4101797d0420
+  xhttp-opts:
+    host: usa1.tolkun-tv.ru
+    mode: auto
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: game-grpc
+  name: 🇩🇪DE_8|2.9MB/s
+  network: grpc
+  port: '2087'
+  reality-opts:
+    public-key: 8w1MyEJV4l9QeNWbYMXny5tTLNTw_9nsQ7jOuiQhix4
+    short-id: '!!str 0123456789abcdef'
+  server: secret-test-de1.minetis.net
+  servername: hh.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: ac9a573b-67ff-4953-9e13-4cf43576f8f0
   xudp: true
