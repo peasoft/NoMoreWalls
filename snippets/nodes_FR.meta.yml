@@ -1,47 +1,82 @@
 proxies:
-- name: 🇫🇷FR_1|2.4MB/s
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.1MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 162.159.136.234
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /assignment
+- alpn:
+  - http/1.1
+  - h2
+  - h3
+  client-fingerprint: chrome
+  name: 🇫🇷FR_2|3.9MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 198.41.223.96
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /assignment
+- name: 🇫🇷FR_3|2.9MB/s
   password: github.com/Alvin9999-newpac/fanqiang
   port: 30099
   server: ip5.934618.xyz
   sni: ip5.934618.xyz
   type: anytls
   udp: true
-- name: 🇫🇷FR_2|1.2MB/s
+- name: 🇫🇷FR_4|1.4MB/s
   port: 443
-  server: 51.210.167.149
+  server: 103.82.101.43
+  skip-cert-verify: true
+  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
+  tls: true
+  type: http
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷FR_5|1.4MB/s
+  network: tcp
+  port: '52006'
+  server: 31.77.227.10
+  servername: fr.setlisting.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  xudp: true
+- name: 🇫🇷FR_6|2.3MB/s
+  password: ''
+  port: 443
+  server: 149.102.245.65
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_3|3.1MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: zcA1E7_aUxhHP1B4po52NeviW16smzEqcyb2qiQYaTc
-    short-id: '!!str '
-  server: 79.137.192.2
-  servername: cdn.cloudflare.steamstatic.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇫🇷FR_4|1.9MB/s
-  network: ws
-  port: '8443'
-  server: 45.38.228.94
-  servername: shephe.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  ws-opts:
-    headers:
-      Host: shephe.dpdns.org
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
+  username: ''
+- down: null
+  name: 🇫🇷FR_7|4.1MB/s
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 60111
+  server: 62.210.7.139
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  up: null
