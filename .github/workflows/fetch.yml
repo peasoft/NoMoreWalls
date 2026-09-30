@@ -13,16 +13,21 @@ on:
       - '.github/workflows/fetch.yml'
       - '**.py'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
     - name: 迁出代码
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 安装 Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
         cache: 'pip'
