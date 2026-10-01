@@ -37,8 +37,19 @@ proxies:
       Host: edgetunnel-4uw.pages.dev
     path: /
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸[www.v2nodes.com] vless-US-1...
+  name: '🇸🇪[www.v2nodes.com] vless-SE-9... #3'
+  network: ws
+  port: 8443
+  server: 103.71.22.234
+  servername: shephe.dpdns.org
+  tls: true
+  type: vless
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  ws-opts:
+    headers:
+      Host: shephe.dpdns.org
+    path: /
+- name: 🇺🇸[www.v2nodes.com] vless-US-1...
   network: ws
   port: 8443
   server: 103.71.22.234
@@ -50,17 +61,24 @@ proxies:
   ws-opts:
     headers:
       Host: shephe.dpdns.org
-    path: /
+    path: /fp=chrome
 - cipher: 2022-blake3-aes-256-gcm
   name: 🇸🇪[www.v2nodes.com] ss-SE-1581...
   password: g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU=
   port: 2053
   server: 188.225.78.31
   type: ss
-- name: '🇸🇪 瑞典 | SWE #2'
-  password: Trojan@82164024
-  port: 443
-  server: se.tronsg.com
-  skip-cert-verify: true
-  sni: se.tronsg.com
-  type: trojan
+- client-fingerprint: chrome
+  name: '🇸🇪 瑞典 | SWE #2'
+  network: ws
+  port: 2053
+  server: 94.183.191.31
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
