@@ -161,6 +161,12 @@ proxies:
   port: 8388
   server: 132.243.175.144
   type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇱[www.v2nodes.com] ss-CL-1564...
+  password: xBStBEVqvGwHPocc
+  port: 8388
+  server: 64.176.2.21
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇪🇸[www.v2nodes.com] ss-ES-1443...
   password: qItG8SueYQcP
@@ -190,6 +196,12 @@ proxies:
   password: BqnqToih0PbU
   port: 8388
   server: 51.255.13.232
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇭🇰[www.v2nodes.com] ss-HK-1584...
+  password: 72553320ae6bcc8f
+  port: 20999
+  server: 212.192.13.143
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇮🇩[www.v2nodes.com] ss-ID-1553...
@@ -223,21 +235,9 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: 🇰🇷[www.v2nodes.com] ss-KR-1185...
-  password: KixLvKzwjekG00rm
-  port: 8000
+  password: RexnBgU7EV5ADxG
+  port: 7001
   server: 141.164.45.187
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇲🇽[www.v2nodes.com] ss-MX-1564...
-  password: BWyPPTusFKhGgzKh
-  port: 8388
-  server: 64.177.90.30
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱[www.v2nodes.com] ss-NL-1584...
-  password: vUtLhCy8T6zoZv9Y6EP2G9oyWXFFUv-d
-  port: 1080
-  server: 176.120.17.22
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇴[www.v2nodes.com] ss-NO-1220...
@@ -268,6 +268,12 @@ proxies:
   password: QFWzCw2uX9B9i6qAYeFBIE
   port: 443
   server: 154.46.31.106
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1584...
+  password: bKgENdAl@8Zx3lAc-HK-BD-20260622
+  port: 24443
+  server: 154.86.30.45
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇬[www.v2nodes.com] ss-SG-1581...
@@ -329,7 +335,7 @@ proxies:
   port: 16233
   server: 102.133.165.160
   type: ss
-- name: 🇪🇪[www.v2nodes.com] trojan-EE-...
+- name: 🏳[www.v2nodes.com] trojan-
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   port: 449
   server: 109.206.241.10
@@ -347,11 +353,11 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
   network: ws
   password: humanity
   port: 443
-  server: 185.220.100.168
+  server: 185.225.68.232
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -406,6 +412,18 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.220.100.168
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
   password: humanity
   port: 443
@@ -764,25 +782,46 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #1'
-  network: ws
+- name: '🇪🇸 西班牙 | ESP #2'
+  password: Trojan@82164024
   port: 443
-  server: yg1.ygkkk.dpdns.org
-  servername: jmp1.907737.xyz
+  server: es.tronsg.com
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  sni: es.tronsg.com
+  type: trojan
+- name: '🇮🇳 印度 | IND #1'
+  password: Tg3RnK7Xp8B1
+  port: 443
+  server: 64.176.96.237
+  skip-cert-verify: true
+  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
+  type: trojan
+  udp: true
+- name: '🇯🇵 日本 | JPN #1'
+  password: Trojan@82164024
+  port: 443
+  server: jp.tronsg.com
+  skip-cert-verify: true
+  sni: jp.tronsg.com
+  type: trojan
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  network: ws
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  port: 2053
+  server: nimm.mpd.cc.cd
+  skip-cert-verify: true
+  sni: nimm.mpd.cc.cd
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: jmp1.907737.xyz
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港 | HKG #2'
-  password: 72553320ae6bcc8f
-  port: 20999
-  server: 212.192.13.143
-  type: ss
-  udp: true
+      Host: nimm.mpd.cc.cd
+    path: /0962
+- name: '🇹🇷 土耳其 | TUR #1'
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  port: 2053
+  server: nimm.mpd.cc.cd
+  skip-cert-verify: true
+  sni: nimm.mpd.cc.cd
+  type: trojan

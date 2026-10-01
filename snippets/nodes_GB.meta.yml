@@ -1,17 +1,53 @@
 proxies:
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
+- encryption: none
+  grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
+  network: grpc
   port: 2083
-  server: 66.90.104.42
-  tls: false
+  server: 66.90.104.43
+  tls: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - encryption: none
   grpc-opts:
     grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
   network: grpc
   port: 2083
   server: 66.90.105.211
   tls: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: '🇬🇧 英国 | GBR #1'
+  network: ws
+  port: 443
+  server: cd.dlclive.click
+  servername: cd-sr1.k8k8110.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e548f821-b286-4264-a9f9-63eb5c4a38b2
+  ws-opts:
+    headers:
+      Host: cd-sr1.k8k8110.com
+    path: /
+- name: 🇬🇧 英国 | GBR 2
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 53274
+  server: jp-02-hdja-kido.younai-ytl.shop
+  skip-cert-verify: true
+  sni: jp33.swiftrelay.cc
+  type: anytls
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 53991
+  server: yazhouany02.downapptwo.cc
+  skip-cert-verify: true
+  sni: jp03.pulsarcore.site
+  type: anytls
+  udp: true

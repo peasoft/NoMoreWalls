@@ -3,13 +3,21 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
+  encryption: none
   name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
+  network: tcp
   port: 11907
   server: 195.58.144.56
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+- cipher: aes-256-gcm
+  name: 🇭🇰[www.v2nodes.com] ss-HK-1584...
+  password: 72553320ae6bcc8f
+  port: 20999
+  server: 212.192.13.143
+  type: ss
 - alpn:
   - http/1.1
   name: 🇭🇰[www.v2nodes.com] trojan-HK-...
@@ -149,38 +157,15 @@ proxies:
   skip-cert-verify: true
   type: socks5
   username: admin
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #1'
-  network: ws
-  port: 443
-  server: yg1.ygkkk.dpdns.org
-  servername: jmp1.907737.xyz
+- name: 🇭🇰 香港 | HKG
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 25135
+  server: yazhouany02.downapptwo.cc
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  ws-opts:
-    headers:
-      Host: jmp1.907737.xyz
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港 | HKG #2'
-  password: 72553320ae6bcc8f
-  port: 20999
-  server: 212.192.13.143
-  type: ss
+  sni: hk27.pulsarcore.site
+  type: anytls
   udp: true
-- auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  name: '🇭🇰 香港 | HKG #3'
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  port: 2060
-  server: xg1.mangshe.xyz
-  skip-cert-verify: true
-  sni: xg1.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: 🇭🇰 香港 | HKG 4
+- name: 🇭🇰 香港 | HKG 2
   password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
   port: 28680
   server: test01.y1static-content-distribution.shop
@@ -188,17 +173,12 @@ proxies:
   sni: hk15.swiftrelay.cc
   type: anytls
   udp: true
-- client-fingerprint: unsafe
-  name: '🇭🇰 香港 | HKG #4'
-  network: ws
-  port: 8443
-  server: 43.129.80.179
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
+- auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  name: '🇭🇰 香港 | HKG #1'
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  port: 2060
+  server: xg1.mangshe.xyz
+  skip-cert-verify: true
+  sni: xg1.mangshe.xyz
+  tls: false
+  type: hysteria2
