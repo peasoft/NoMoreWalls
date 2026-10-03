@@ -7,9 +7,44 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- encryption: none
+- client-fingerprint: chrome
+  name: 🇺🇸[www.v2nodes.com] vless-US
+  network: ws
+  port: 443
+  server: 40.116.88.35
+  servername: edgetunnel-4uw.pages.dev
+  tls: true
+  type: vless
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  ws-opts:
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #1'
+  network: ws
+  port: 25517
+  server: 69.63.221.116
+  servername: wzs.echo.net.eu.org
+  tls: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  ws-opts:
+    headers:
+      Host: wzs.echo.net.eu.org
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
+- client-fingerprint: android
   name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
-  network: tcp
+  network: ws
+  port: 5002
+  server: 213.171.31.34
+  servername: us.centermass.net
+  tls: true
+  type: vless
+  uuid: 8e8ea5d2-6941-40fb-9efe-f9062b11b2b9
+  ws-opts:
+    path: media.playback.v1.SessionGateway
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
   port: 49433
   server: 31.14.123.220
   tls: false
@@ -18,7 +53,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #6'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
   network: grpc
   port: 443
   server: 201.34.159.213
@@ -26,7 +61,7 @@ proxies:
   tls: true
   type: vless
   uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #11'
   network: ws
   port: 443
   server: 158.94.173.107
@@ -38,31 +73,12 @@ proxies:
     headers:
       Host: shephe.dpdns.org
     path: /fp=chrome
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #10'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #13'
   port: 443
   server: 169.40.42.182
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #11'
-  port: 8443
-  server: 104.252.19.114
-  tls: false
-  type: vless
-  uuid: 40cba749-bca9-4089-9c02-84a357244ce0
-- client-fingerprint: edge
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #12'
-  network: ws
-  port: 8443
-  server: 85.149.211.28
-  servername: hk.152568.xyz
-  tls: true
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  ws-opts:
-    headers:
-      Host: hk.152568.xyz
-    path: /cdn/packages/runtime-core.tar.gz
 - cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1586...
   password: 6c4993acd1ca7f12f0a18bdcb3c37c6c
@@ -165,147 +181,86 @@ proxies:
         like Gecko) Chrome/54.0.2840.99 Safari/537.36
     path: /?ed=2560
   xudp: true
-- client-fingerprint: chrome
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  network: xhttp
-  port: 2053
-  server: randomquaint.net
-  servername: randomquaint.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: c2bbf90c-7f13-47dd-b68d-f0bd38b6b3c8
-  xhttp-opts:
-    host: randomquaint.net
-    mode: auto
-    path: /api/v1/upload
+- auth: b42d90fa667942aebc734d60
+  name: 🇦🇺 澳大利亚 | AUS
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  password: b42d90fa667942aebc734d60
+  port: 20000
+  ports: 20000-30000
+  server: 137.23.3.238
+  skip-cert-verify: true
+  sni: rmgyvpn.rest
+  type: hysteria2
 - alpn:
-  - http/1.1
-  client-fingerprint: chrome
+  - ''
+  alterId: 0
+  cipher: auto
   name: '🇺🇸 美国 | USA #1'
   network: ws
   port: 443
-  server: minimize-evenness.cdn-content.com
-  servername: minimize-evenness.cdn-content.com
+  server: WIVnYXQlO7TuwFo9.v.3dns.vip
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: eb83d75d-a282-49cd-88be-395b509e013d
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
   ws-opts:
     headers:
-      Host: minimize-evenness.cdn-content.com
-    path: /ws
+      Host: WIVnYXQlO7TuwFo9.v.3dns.vip
+    path: /ws-vmess
 - name: 🇺🇸 美国 | USA 2
   network: ws
-  password: 43b07c4f-a447-4e39-bd2c-96b349f16d28
-  port: 2053
+  password: b792ffa6-7007-43a9-ae9f-46f68da52a6a
+  port: 8443
   server: x.com
   skip-cert-verify: true
-  sni: avengers2.yang-1989.xyz
+  sni: avengers1.yang-1989.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: avengers2.yang-1989.xyz
-    path: /9xg2
-- client-fingerprint: android
-  name: '🇺🇸 美国 | USA #5'
-  network: ws
-  port: 5002
-  server: 213.171.31.34
-  servername: us.centermass.net
+      Host: avengers1.yang-1989.xyz
+    path: /hm4m
+- name: '🇺🇸 美国 | USA #3'
+  password: UX82473651
+  port: 443
+  server: happy-gibbon.rooster465.autos
+  skip-cert-verify: true
+  sni: happy-gibbon.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: edge
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: cdn.v1.AssetService
+  name: 🇺🇸 美国 | USA 5
+  network: grpc
+  port: 443
+  server: 159.194.240.25
+  servername: us1.avroraservice.online
   tls: true
   type: vless
   udp: true
-  uuid: 8e8ea5d2-6941-40fb-9efe-f9062b11b2b9
-  ws-opts:
-    path: media.playback.v1.SessionGateway
-- auth: https://xship.best
-  name: 🇺🇸 美国 | USA 6
-  password: https://xship.best
-  port: 443
-  server: starlink-ft.251313.xyz
-  skip-cert-verify: true
-  sni: xship.top
-  type: hysteria2
-  udp: true
-- auth: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  name: 🇺🇸 美国 | USA 7
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  port: 7443
-  server: me17.msjia8844.site
-  skip-cert-verify: true
-  sni: me17.msjia8844.site
-  type: hysteria2
-- name: 🇺🇸 美国 | USA 8
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: awefd2313fefarg23fr24.pnuqcnp.cn
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
-- auth: https://xship.top
-  name: 🇺🇸 美国 | USA 9
-  password: https://xship.top
-  port: 443
-  server: starlink-ft.251313.xyz
-  skip-cert-verify: true
-  sni: xship.top
-  type: hysteria2
-  udp: true
-- auth: 5fa748137b6d822308eea4611f474ad5
-  name: 🇺🇸 美国 | USA 10
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-  password: 5fa748137b6d822308eea4611f474ad5
-  port: 443
-  server: 155.117.19.17
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: '🇺🇸 美国 | USA #8'
-  network: ws
-  port: 2052
-  server: 162.159.43.187
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  tls: false
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 - name: '🇺🇸 美国 | USA #2'
-  password: 43b07c4f-a447-4e39-bd2c-96b349f16d28
-  port: 2053
+  password: b792ffa6-7007-43a9-ae9f-46f68da52a6a
+  port: 8443
   server: x.com
   skip-cert-verify: true
-  sni: avengers2.yang-1989.xyz
+  sni: avengers1.yang-1989.xyz
   type: trojan
-- name: '🇺🇸 美国 | USA #6'
-  obfs: salamander
-  obfs-password: salamander
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  port: 7443
-  server: me17.msjia8844.site
-  skip-cert-verify: true
-  sni: me17.msjia8844.site
-  tls: false
-  type: hysteria2
-- name: '🇺🇸 美国 | USA #7'
-  obfs: salamander
-  obfs-password: salamander
-  password: 5fa748137b6d822308eea4611f474ad5
+- client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇺🇸 美国 | USA #5'
+  network: grpc
   port: 443
-  server: 155.117.19.17
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
+  server: 159.194.240.25
+  servername: us1.avroraservice.online
+  tls: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 - name: US_speednode_0131
   password: 'null'
   port: 9002
