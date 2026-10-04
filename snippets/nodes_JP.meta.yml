@@ -1,5 +1,5 @@
 proxies:
-- name: '🇰🇷[www.v2nodes.com] vless-KR-1... #9'
+- name: 🇯🇵[www.v2nodes.com] vless-JP
   network: ws
   port: 8080
   server: 162.159.39.218
@@ -19,19 +19,6 @@ proxies:
   uuid: ac76a374-7447-4dab-bfa9-b7f83a7a7946
   ws-opts:
     path: /
-- client-fingerprint: chrome
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
-  network: ws
-  port: 443
-  server: cn.uxuan.cfd
-  servername: digjp.murphyweb.top
-  tls: true
-  type: vless
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-  ws-opts:
-    headers:
-      Host: digjp.murphyweb.top
-    path: /9b8cb96f0fdf/57654fd6b8b4n2M4bV6cC8xX0zZ1aQ3w/e532fbf9-cc5f-4da4-9bb1-66c16ec49137
 - name: 🇯🇵[www.v2nodes.com] trojan-JP-...
   password: UX82473651
   port: 443
@@ -190,21 +177,27 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- client-fingerprint: chrome
-  name: 🇯🇵JP_1|4.8MB/s
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇯🇵JP_2|5.5MB/s
   network: ws
   port: 443
-  server: cf.130519.xyz
-  servername: 819.18827466.bot.cd
-  skip-cert-verify: true
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: cd7c5c42-7677-4002-8ad3-4433b166a5d1
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: 819.18827466.bot.cd
-    path: /
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.110 Safari/537.36
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+  xudp: true
 - name: '🇯🇵 日本 | JPN #1'
   password: UX82473651
   port: 443
