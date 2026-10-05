@@ -5,12 +5,6 @@ proxies:
   port: 16444
   server: 103.214.109.197
   type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸[www.v2nodes.com] ss-US-1586...
-  password: 6c4993acd1ca7f12f0a18bdcb3c37c6c
-  port: 10272
-  server: 66.23.201.172
-  type: ss
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
   password: UX82473651
   port: 443
@@ -71,24 +65,54 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- alterId: '2'
+  cipher: auto
+  name: 🇺🇸US_2|3.2MB/s
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸US_2|3.1MB/s
+  name: '🇺🇸 美国 | USA #4'
   password: amazonskr05
   port: 443
-  server: 3.95.209.183
+  server: 98.88.252.127
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_7|2.8MB/s
-  password: amazonskr05
+- alpn:
+  - http/1.1
+  name: 🇺🇸 美国 | USA 5
+  network: ws
+  password: humanity
   port: 443
-  server: 3.84.97.225
+  server: 104.19.157.30
+  skip-cert-verify: true
+  sni: www.volumeroot.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.volumeroot.com
+    path: /assignment
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国 | USA 8
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)fa03bb5:137563
+    mode: tls
+  port: 2377
+  server: 134.195.101.117
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '🇺🇸 美国 | USA #5'
-  password: amazonskr05
+- name: '🇺🇸 美国 | USA #5'
+  password: humanity
   port: 443
-  server: 54.208.227.172
-  type: ss
-  udp: true
+  server: 104.19.157.30
+  skip-cert-verify: true
+  sni: www.volumeroot.com
+  type: trojan

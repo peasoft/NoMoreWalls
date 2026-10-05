@@ -14,9 +14,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  encryption: none
   name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-  network: tcp
   port: 11907
   server: 195.58.144.56
   skip-cert-verify: false
@@ -35,9 +33,16 @@ proxies:
   port: 1080
   server: telegramx.khp25.com
   type: ss
+- name: 🇭🇰[www.v2nodes.com] trojan-HK-...
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  port: 2052
+  server: 47.240.80.220
+  skip-cert-verify: true
+  sni: vpn.12169.top
+  type: trojan
 - alpn:
   - http/1.1
-  name: 🇭🇰[www.v2nodes.com] trojan-HK-...
+  name: '🇭🇰[www.v2nodes.com] trojan-HK-... #1'
   network: ws
   password: Telegram_healer_config
   port: 443
@@ -159,6 +164,19 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇭🇰HK_1|1.6MB/s
+  network: tcp
+  port: 14343
+  server: 14.17.78.146
+  servername: thuk.huaweiyouxuan.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  xudp: true
 - alterId: 0
   cipher: auto
   name: '🇭🇰 香港 | HKG #1'
@@ -175,19 +193,20 @@ proxies:
     headers:
       Host: i2psm3knof5qjjix.v.3dns.vip
     path: /ws-vmess
-- name: '🇭🇰 香港 | HKG #2'
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  port: 2052
-  server: 47.240.80.220
-  skip-cert-verify: true
-  sni: vpn.12169.top
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
+- auth: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
   name: '🇭🇰 香港 | HKG #3'
+  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
+  port: 443
+  server: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
+  skip-cert-verify: true
+  sni: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #4'
   network: ws
-  port: 8443
-  server: 43.129.80.179
+  port: 443
+  server: 95.182.95.178
   servername: ccc.010304.xyz
   tls: true
   type: vless
@@ -197,23 +216,20 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - sjskendn.dingtalk.com
-    method: GET
-    path:
-    - /x
+- auth: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
   name: '🇭🇰 香港 | HKG #5'
-  network: http
-  port: 800
-  server: 47.86.167.194
+  password: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+  port: 443
+  server: 4dfe79ca-tmm5c0-tpftcp-13x18.hk3.hyhuawei.com
   skip-cert-verify: true
+  sni: 127.0.0.1
   tls: false
-  type: vmess
+  type: hysteria2
+- name: 🇭🇰 香港 | HKG 6
+  password: 9sK2mP8xQ7vL3nZ6
+  port: 443
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  skip-cert-verify: true
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  type: anytls
   udp: true
-  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0

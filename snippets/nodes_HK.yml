@@ -11,9 +11,16 @@ proxies:
   port: 1080
   server: telegramx.khp25.com
   type: ss
+- name: 🇭🇰[www.v2nodes.com] trojan-HK-...
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  port: 2052
+  server: 47.240.80.220
+  skip-cert-verify: true
+  sni: vpn.12169.top
+  type: trojan
 - alpn:
   - http/1.1
-  name: 🇭🇰[www.v2nodes.com] trojan-HK-...
+  name: '🇭🇰[www.v2nodes.com] trojan-HK-... #1'
   network: ws
   password: Telegram_healer_config
   port: 443
@@ -151,31 +158,3 @@ proxies:
     headers:
       Host: i2psm3knof5qjjix.v.3dns.vip
     path: /ws-vmess
-- name: '🇭🇰 香港 | HKG #2'
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  port: 2052
-  server: 47.240.80.220
-  skip-cert-verify: true
-  sni: vpn.12169.top
-  type: trojan
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - sjskendn.dingtalk.com
-    method: GET
-    path:
-    - /x
-  name: '🇭🇰 香港 | HKG #5'
-  network: http
-  port: 800
-  server: 47.86.167.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
