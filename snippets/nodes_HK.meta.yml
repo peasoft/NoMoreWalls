@@ -1,5 +1,5 @@
 proxies:
-- name: 🇭🇰[www.v2nodes.com] vless-HK-1...
+- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
   network: ws
   port: 26506
   server: 216.38.170.8
@@ -14,13 +14,21 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
+  encryption: none
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #3'
+  network: tcp
   port: 11907
   server: 195.58.144.56
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+- cipher: aes-256-gcm
+  name: 🇭🇰[www.v2nodes.com] ss-HK-1588...
+  password: 705syYDLPLMzEfcC
+  port: 8388
+  server: 212.192.15.48
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰[www.v2nodes.com] ss-HK-1585...
   password: pno0e2keji2gsfea
@@ -33,13 +41,14 @@ proxies:
   port: 1080
   server: telegramx.khp25.com
   type: ss
-- name: 🇭🇰[www.v2nodes.com] trojan-HK-...
+- name: '🇭🇰 香港 | HKG #3'
   password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
   port: 2052
   server: 47.240.80.220
   skip-cert-verify: true
   sni: vpn.12169.top
   type: trojan
+  udp: true
 - alpn:
   - http/1.1
   name: '🇭🇰[www.v2nodes.com] trojan-HK-... #1'
@@ -164,26 +173,20 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇭🇰HK_1|1.6MB/s
-  network: tcp
-  port: 14343
-  server: 14.17.78.146
-  servername: thuk.huaweiyouxuan.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-  xudp: true
+- auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  name: '🇭🇰 香港 | HKG #1'
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  port: 2060
+  server: xg1.mangshe.xyz
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #1'
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
-  server: i2psm3knof5qjjix.v.3dns.vip
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  server: 47.83.207.148
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -191,45 +194,49 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
     path: /ws-vmess
-- auth: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
-  name: '🇭🇰 香港 | HKG #3'
-  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
-  port: 443
-  server: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
-  skip-cert-verify: true
-  sni: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
   name: '🇭🇰 香港 | HKG #4'
   network: ws
   port: 443
-  server: 95.182.95.178
-  servername: ccc.010304.xyz
+  server: 6JDvArazgU3qQR6Q.v.3dns.vip
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: ccc.010304.xyz
-    path: /
-- auth: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+    path: /ws-vmess
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - sjskendn.dingtalk.com
+    method: GET
+    path:
+    - /x
   name: '🇭🇰 香港 | HKG #5'
-  password: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-  port: 443
-  server: 4dfe79ca-tmm5c0-tpftcp-13x18.hk3.hyhuawei.com
+  network: http
+  port: 800
+  server: 47.86.167.194
   skip-cert-verify: true
-  sni: 127.0.0.1
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
+- auth: 19f72087-4591-4d72-930b-2697078ec2be
+  name: '🇭🇰 香港 | HKG #7'
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 4433
+  server: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: hk2.xiaoliyu.cyou
   tls: false
   type: hysteria2
-- name: 🇭🇰 香港 | HKG 6
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  skip-cert-verify: true
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  type: anytls
-  udp: true
