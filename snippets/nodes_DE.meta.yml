@@ -28,21 +28,20 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: safari
-  name: '🇩🇪 德国 | DEU #9'
+  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
   network: ws
   port: 8443
   server: 45.89.190.245
   servername: de.gokonstantin.com
   tls: true
   type: vless
-  udp: true
   uuid: 053682f4-c584-46df-ad81-069dec5f64f0
   ws-opts:
     headers:
       Host: de.gokonstantin.com
     path: /cdnws
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
   network: ws
   port: 443
   server: 167.179.103.224
@@ -58,7 +57,7 @@ proxies:
   - http/1.1
   client-fingerprint: random
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
   network: ws
   port: 443
   server: 91.215.43.80
@@ -70,6 +69,18 @@ proxies:
     headers:
       Host: sand.api.downloader-pet.xyz
     path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+  network: tcp
+  port: 8080
+  server: 91.107.151.122
+  tls: false
+  type: vless
+  uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
+  ws-opts:
+    headers:
+      Host: play.google.com
+    path: /
 - name: 🇩🇪[www.v2nodes.com] trojan-DE-...
   password: UX82473651
   port: 443
@@ -88,13 +99,34 @@ proxies:
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
-- name: 🇩🇪DE_1|1.4MB/s
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.21
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+- auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  name: '🇩🇪 德国 | DEU #1'
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.126.39
+  skip-cert-verify: true
+  sni: hop-germany-september.dynuddns.com
+  tls: false
+  type: hysteria2
+- name: 🇩🇪DE_3|2.2MB/s
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_2|1.8MB/s
+- name: 🇩🇪DE_4|2.6MB/s
   password: None
   port: 443
   server: 149.36.50.1
@@ -102,115 +134,125 @@ proxies:
   tls: true
   type: http
 - cipher: aes-256-cfb
-  name: 🇩🇪DE_3|2.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 63.177.230.112
-  type: ss
-  udp: true
-- name: '🇩🇪 德国 | DEU #1'
-  network: tcp
-  port: 39100
-  server: 46.225.255.204
-  tls: false
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '🇩🇪 德国 | DEU #2'
+  name: 🇩🇪DE_5|3.6MB/s
   password: amazonskr05
   port: 443
   server: 3.67.197.81
   type: ss
   udp: true
-- client-fingerprint: safari
-  name: '🇩🇪 德国 | DEU #3'
-  network: xhttp
+- cipher: aes-256-cfb
+  name: 🇩🇪DE_6|3.7MB/s
+  password: amazonskr05
   port: 443
-  server: fi.vip-get.ru
-  servername: fi.vip-get.ru
+  server: 18.196.88.40
+  type: ss
+  udp: true
+- name: 🇩🇪DE_7|1.1MB/s
+  port: 443
+  server: 87.249.132.97
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: db4fb2a7-a31d-46d8-b6d2-76eafe8cfe2a
-  xhttp-opts:
-    host: fi.vip-get.ru
-    path: /assets/v4/sync
-- encryption: mlkem768x25519plus.native.0rtt.bq1M9Mo7StSetydCuYnVBzGMeKNBRamRZfzcZEiulEY
-  http-opts:
-    headers:
-      Host:
-      - testspeed-foreign.tci.ir
-    method: GET
-    path:
-    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
-  name: '🇩🇪 德国 | DEU #5'
-  network: http
-  port: 7070
-  server: 91.107.240.245
-  tls: false
-  type: vless
-  udp: true
-  uuid: 9804f109-f750-4dec-9c3a-091982320501
+  type: http
+- name: 🇩🇪DE_8|2.4MB/s
+  password: None
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_9|1.8MB/s
+  port: 443
+  server: 185.232.70.11
+  skip-cert-verify: true
+  tls: true
+  type: http
 - auth: d402d4c0b8354a90b70bb2566dce9a08
-  name: '🇩🇪 德国 | DEU #6'
+  name: '🇩🇪 德国 | DEU #2'
   password: d402d4c0b8354a90b70bb2566dce9a08
   port: 8443
-  server: i.wareznet.ru
+  server: 78.17.209.108
   skip-cert-verify: true
   sni: i.wareznet.ru
   tls: false
   type: hysteria2
 - alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    method: GET
-    path:
-    - /3x
-  name: '🇩🇪 德国 | DEU #7'
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #5'
+  network: ws
+  port: 443
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
   udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #7'
+  network: xhttp
+  port: 33742
+  server: 193.223.106.13
+  servername: fi-966ffd3f4f.shamanapp.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  xhttp-opts:
+    host: fi-966ffd3f4f.shamanapp.online
+    mode: auto
+    path: /ShamanXHTTP2026
 - alpn:
   - h2
   - http/1.1
-  name: 🇩🇪 德国 | DEU 10
-  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #9'
+  network: xhttp
   port: 443
-  server: de.zhabulik.ru
-  skip-cert-verify: true
-  sni: de.zhabulik.ru
-  type: trojan
+  server: xzfp.gsgg.electrocitymarket.ru
+  servername: xzfp.gsgg.electrocitymarket.ru
+  tls: true
+  type: vless
   udp: true
+  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
+  xhttp-opts:
+    host: xzfp.gsgg.electrocitymarket.ru
+    mode: stream-up
+    path: /
 - alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 🇩🇪 德国 | DEU 11
-  port: 54177
-  protocol: udp
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 500
-- name: '🇩🇪 德国 | DEU #10'
-  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #10'
+  network: xhttp
   port: 443
-  server: de.zhabulik.ru
+  server: ijug.jffq.electrocitymarket.ru
+  servername: ijug.jffq.electrocitymarket.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
+  xhttp-opts:
+    host: ijug.jffq.electrocitymarket.ru
+    mode: stream-up
+    path: /
+- cipher: aes-256-cfb
+  name: '🇩🇪 德国 | DEU #11'
+  password: amazonskr05
+  port: 443
+  server: 63.177.230.112
+  type: ss
+  udp: true
+- auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  name: '🇩🇪 德国 | DEU #12'
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.107
   skip-cert-verify: true
-  sni: de.zhabulik.ru
-  type: trojan
+  sni: grape-test-italy.dynuddns.net
+  tls: false
+  type: hysteria2
