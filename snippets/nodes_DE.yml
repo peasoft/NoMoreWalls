@@ -18,10 +18,17 @@ proxies:
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
 - cipher: aes-256-cfb
-  name: 🇩🇪DE_2|1.8MB/s
+  name: 🇩🇪DE_3|2.2MB/s
   password: amazonskr05
   port: 443
-  server: 18.159.149.158
+  server: 63.177.230.112
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇩🇪 德国 | DEU #2'
+  password: amazonskr05
+  port: 443
+  server: 3.67.197.81
   type: ss
   udp: true
 - alpn:
@@ -35,7 +42,7 @@ proxies:
     method: GET
     path:
     - /3x
-  name: '🇩🇪 德国 | DEU #8'
+  name: '🇩🇪 德国 | DEU #7'
   network: http
   port: 52080
   server: 185.212.149.7
@@ -45,22 +52,20 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
 - alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    method: GET
-    path:
-    - /3x
-  name: '🇩🇪 德国 | DEU #11'
-  network: http
-  port: 2053
-  server: 185.212.149.7
+  - h2
+  - http/1.1
+  name: 🇩🇪 德国 | DEU 10
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  port: 443
+  server: de.zhabulik.ru
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: de.zhabulik.ru
+  type: trojan
   udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+- name: '🇩🇪 德国 | DEU #10'
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  port: 443
+  server: de.zhabulik.ru
+  skip-cert-verify: true
+  sni: de.zhabulik.ru
+  type: trojan
