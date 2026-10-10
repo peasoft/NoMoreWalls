@@ -1,19 +1,7 @@
 proxies:
-- name: 🇸🇬[www.v2nodes.com] vless-SG
-  network: ws
-  port: 443
-  server: 104.26.4.2
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
 - alpn:
   - http/1.1
-  name: '🇸🇬[www.v2nodes.com] vless-SG #1'
+  name: 🇸🇬[www.v2nodes.com] vless-SG
   network: ws
   port: 443
   server: 104.25.178.92
@@ -25,7 +13,7 @@ proxies:
     headers:
       Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
     path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560fp=chromesecurity=tls
-- name: '🇸🇬[www.v2nodes.com] vless-SG #2'
+- name: '🇸🇬[www.v2nodes.com] vless-SG #1'
   network: ws
   port: 8880
   server: 192.0.54.30
@@ -36,7 +24,7 @@ proxies:
     headers:
       Host: vms.lifetime35.workers.dev
     path: /
-- name: '🇸🇬[www.v2nodes.com] vless-SG #3'
+- name: '🇸🇬[www.v2nodes.com] vless-SG #2'
   network: ws
   port: 8880
   server: 185.162.229.30
@@ -48,7 +36,7 @@ proxies:
       Host: vms.lifetime61.workers.dev
     path: /
 - encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG #4'
+  name: '🇸🇬[www.v2nodes.com] vless-SG #3'
   network: ws
   port: 2082
   server: 172.64.150.28
@@ -61,7 +49,7 @@ proxies:
     path: /fp
 - client-fingerprint: chrome
   encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG #5'
+  name: '🇸🇬[www.v2nodes.com] vless-SG #4'
   network: ws
   port: 443
   server: 172.64.156.60
@@ -99,6 +87,13 @@ proxies:
   tls: false
   type: vless
   uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 新加坡 | SGP #3'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 13.212.173.211
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
   name: 🇸🇬[www.v2nodes.com] ss-SG-1592...
   password: 85590bd2-807b-49b9-af20-1101c18b9eda
@@ -191,25 +186,26 @@ proxies:
 - name: '🇸🇬[www.v2nodes.com] trojan-SG-... #12'
   password: UX82473651
   port: 443
+  server: inviting-ferret.rooster465.autos
+  sni: inviting-ferret.rooster465.autos
+  type: trojan
+- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #13'
+  password: UX82473651
+  port: 443
   server: holy-lamb.rooster465.autos
   sni: holy-lamb.rooster465.autos
   type: trojan
-- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #13'
+- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #14'
   password: UX82473651
   port: 443
   server: pet-antelope.rooster465.autos
   sni: pet-antelope.rooster465.autos
   type: trojan
-- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #14'
-  password: UX82473651
-  port: 443
-  server: desired-boxer.rooster465.autos
-  sni: desired-boxer.rooster465.autos
-  type: trojan
 - name: '🇸🇬[www.v2nodes.com] trojan-SG-... #15'
   password: UX82473651
   port: 443
-  server: 52.221.218.179
+  server: real-cardinal.rooster465.autos
+  sni: real-cardinal.rooster465.autos
   type: trojan
 - alterId: 0
   cipher: auto
@@ -249,51 +245,23 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇸🇬SG_1|2.1MB/s
-  port: 443
-  server: 154.26.139.24
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇬SG_2|2.0MB/s
+- name: 🇸🇬SG_1|4.0MB/s
   password: '!!str 1234'
   port: 2080
-  server: 54.169.52.51
+  server: 54.251.149.207
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: 🇸🇬SG_3|4.2MB/s
-  password: '!!str 1234'
-  port: 2080
-  server: 18.143.169.187
-  skip-cert-verify: true
-  type: http
-  username: '1234'
-- name: 🇸🇬 新加坡 | SGP 2
-  password: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
-  port: 1892
-  server: sin-a-02.auuas.com
-  skip-cert-verify: true
-  sni: images.apple.com
-  type: anytls
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
+- name: '🇸🇬 新加坡 | SGP #1'
   network: ws
-  password: trojan
-  port: 8443
+  port: 8080
   server: 104.18.35.86
-  skip-cert-verify: true
-  sni: longwanghen.pages.dev
-  type: trojan
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
+  type: vless
   udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
     headers:
-      Host: longwanghen.pages.dev
-    path: /
-- name: '🇸🇬 新加坡 | SGP #2'
-  password: trojan
-  port: 8443
-  server: 104.18.35.86
-  skip-cert-verify: true
-  sni: longwanghen.pages.dev
-  type: trojan
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi

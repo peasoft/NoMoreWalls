@@ -1,4 +1,10 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 🇹🇷[www.v2nodes.com] ss-TR-1567...
+  password: l2NidZbckMu4PnIHsJTYJg
+  port: 1468
+  server: www.asamping.ir
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1592...
   password: NcAXc0UZI6yQJE1p8QmOv8
@@ -18,9 +24,23 @@ proxies:
   server: ger2.fytpn.com
   skip-cert-verify: false
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
-  password: UX82473651
+- name: 🇩🇪 德国 | DEU 8
+  network: ws
+  password: humanity
   port: 443
-  server: meet-goshawk.rooster465.autos
-  sni: meet-goshawk.rooster465.autos
+  server: 45.80.111.7
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇩🇪 德国 | DEU #8'
+  password: humanity
+  port: 443
+  server: 45.80.111.7
+  skip-cert-verify: true
+  sni: www.calmlunch.com
   type: trojan
