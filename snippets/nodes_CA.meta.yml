@@ -3,7 +3,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇨🇦[www.v2nodes.com] vless-CA-1...
+  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
   network: ws
   port: 443
   server: 104.21.70.22
@@ -16,9 +16,7 @@ proxies:
     headers:
       Host: brightlux.forum
     path: /raccoonwsvless
-- encryption: none
-  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
-  network: tcp
+- name: '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
   port: 8080
   server: milo.rubinaz.xyz
   tls: false
@@ -90,19 +88,22 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
-- name: 🇨🇦CA_1|3.1MB/s
+- name: 🇨🇦CA_1|1.5MB/s
   port: 9443
   server: 198.44.157.19
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇨🇦CA_2|2.8MB/s
+- name: 🇨🇦CA_2|2.5MB/s
   port: 443
-  server: 206.223.161.47
+  server: 206.223.183.13
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇨🇦CA_3|3.5MB/s
-  port: 8080
-  server: 173.180.22.3
-  type: http
+- cipher: aes-256-cfb
+  name: '🇨🇦 加拿大 | CAN #1'
+  password: amazonskr05
+  port: 443
+  server: 3.97.11.240
+  type: ss
+  udp: true
