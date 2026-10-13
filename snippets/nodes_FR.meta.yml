@@ -1,4 +1,16 @@
 proxies:
+- encryption: none
+  name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+  network: ws
+  port: 20016
+  server: 51.75.118.149
+  tls: false
+  type: vless
+  uuid: e558719d-e09b-442c-a0c4-f9471fcc3075
+  ws-opts:
+    headers:
+      Host: 51.75.118.149
+    path: /alibodama-ws
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -14,12 +26,6 @@ proxies:
     headers:
       Host: Appxdn.global.ssl.fastly.net
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷[www.v2nodes.com] ss-FR-1536...
-  password: BqnqToih0PbU
-  port: 8388
-  server: 51.255.13.232
-  type: ss
 - name: 🇫🇷[www.v2nodes.com] trojan-FR-...
   network: ws
   password: humanity
@@ -32,13 +38,11 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- alpn:
-  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-  name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
   network: ws
   password: humanity
-  port: 8443
-  server: 212.227.144.37
+  port: 443
+  server: 185.220.100.168
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -72,18 +76,6 @@ proxies:
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
   network: ws
   password: humanity
-  port: 2053
-  server: 185.114.72.31
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
-  network: ws
-  password: humanity
   port: 443
   server: 45.130.125.160
   skip-cert-verify: false
@@ -93,16 +85,34 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: 🇫🇷FR_1|2.2MB/s
+- name: 🇫🇷FR_1|1.3MB/s
   port: 9443
   server: 138.199.47.247
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_2|1.8MB/s
+  port: 9443
+  server: 213.139.9.142
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_3|3.7MB/s
+  port: 443
+  server: 51.210.167.149
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_4|4.3MB/s
+  port: 443
+  server: 82.65.162.76
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_5|1.5MB/s
+  password: None
+  port: 443
+  server: 149.102.245.65
   skip-cert-verify: true
   tls: true
   type: http
