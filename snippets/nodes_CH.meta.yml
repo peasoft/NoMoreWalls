@@ -23,11 +23,46 @@ proxies:
   port: 8388
   server: 132.243.175.144
   type: ss
-- name: 🇨🇭 瑞士 | CHE
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1024
-  server: sj8aycl6.zf-mix.9999231.xyz
+- name: 🇨🇭CH_1|1.6MB/s
+  port: 443
+  server: 31.7.62.50
   skip-cert-verify: true
-  sni: ch-wy.9999231.xyz
-  type: anytls
+  tls: true
+  type: http
+- auth: 3a702d4d1de4949005d8431220e040fb
+  name: 🇨🇭 瑞士 | CHE 2
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+  password: 3a702d4d1de4949005d8431220e040fb
+  port: 443
+  server: 152.67.75.161
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.shwrr-SZXMfmu3Vc_3Ts3xVnLkri_jVutSWXpmT0KCc
+  name: '🇨🇭 瑞士 | CHE #3'
+  network: ws
+  port: 443
+  server: fastip.zabidat.ir
+  servername: speedtest.net
+  tls: true
+  type: vless
   udp: true
+  uuid: b4fb7995-b93b-4ffd-b49e-0cf2b47da15a
+  ws-opts:
+    headers:
+      Host: ceawvctcqshoivh.global.ssl.fastly.net
+    path: /
+- name: '🇨🇭 瑞士 | CHE #2'
+  obfs: salamander
+  obfs-password: salamander
+  password: 3a702d4d1de4949005d8431220e040fb
+  port: 443
+  server: 152.67.75.161
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2

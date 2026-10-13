@@ -10,7 +10,6 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: random
-  encryption: none
   grpc-opts:
     grpc-service-name: grpc-ru
   name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
@@ -38,3 +37,22 @@ proxies:
   port: 22037
   server: ruot.ayucloudservices.nl
   type: ss
+- alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇷🇺RU_1|1.0MB/s
+  network: xhttp
+  port: 2053
+  server: 78.159.246.179
+  servername: randomquaint.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
+  xhttp-opts:
+    host: randomquaint.net
+    mode: auto
+    path: /api/v1/upload
+  xudp: true

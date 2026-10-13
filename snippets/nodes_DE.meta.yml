@@ -34,10 +34,28 @@ proxies:
   type: vless
   uuid: b8df3f50-ffef-4c7e-9ef3-d5b156a47c02
 - alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  name: 🇩🇪 德国 | DEU 8
+  network: grpc
+  port: 443
+  server: renderer-bridge-2-114.mirra.now
+  servername: renderer-bridge-2-114.mirra.now
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  ws-opts:
+    path: VideoRenderer
+- alpn:
   - http/1.1
   client-fingerprint: random
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
   network: ws
   port: 2083
   server: 140.225.208.50
@@ -49,7 +67,7 @@ proxies:
   ws-opts:
     path: /vless-ws
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -62,7 +80,7 @@ proxies:
       Host: pan2e.global.ssl.fastly.net
     path: /
 - client-fingerprint: android
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
   network: ws
   port: 443
   server: msk.ai-boost.tech
@@ -75,7 +93,7 @@ proxies:
       Host: msk.ai-boost.tech
     path: /3a7lzIHlgUuz2QnV1CaQ
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -88,7 +106,7 @@ proxies:
     headers:
       Host: pannn1.global.ssl.fastly.net
     path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
   port: 40443
   server: arcturus.yokkastars.com
   tls: false
@@ -118,91 +136,53 @@ proxies:
   server: ger2.fytpn.com
   skip-cert-verify: false
   type: trojan
-- name: 🇩🇪DE_1|1.1MB/s
-  password: None
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  encryption: none
+  name: 🇩🇪DE_3|3.8MB/s
+  network: ws
   port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
+  server: 31.77.126.2
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
-- name: 🇩🇪DE_2|2.8MB/s
-  password: None
-  port: 9443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_3|2.4MB/s
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_4|3.3MB/s
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
+  xudp: true
+- name: 🇩🇪DE_4|2.7MB/s
   port: 9002
   server: 158.173.154.1
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_5|1.7MB/s
+- name: 🇩🇪DE_5|1.5MB/s
+  password: None
   port: 443
-  server: 79.127.156.177
+  server: 149.36.50.157
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_6|2.7MB/s
+- name: 🇩🇪DE_6|1.1MB/s
   port: 443
-  server: 193.233.75.115
+  server: 152.233.20.206
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_7|2.5MB/s
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_8|3.8MB/s
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_9|1.4MB/s
-  port: 9443
-  server: 213.177.229.161
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: qq
-  name: '🇩🇪 德国 | DEU #1'
-  network: xhttp
-  port: 443
-  server: no-lim2.nomush.ir
-  servername: speedtest.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  xhttp-opts:
-    host: nolimiraniserv1.global.ssl.fastly.net
-    mode: packet-up
-    path: /nolimitx
-- cipher: 2022-blake3-aes-256-gcm
-  name: '🇩🇪 德国 | DEU #2'
-  password: H0xd2BvITDs4Z8jwL4POl0CngqZjoUUAhoMvUd92cTY=:JNpUztWVZ7O+t34KTu3jbruxstkaqLzqIvO+BPmxUdg=
-  port: 31344
-  server: 91.98.105.50
-  type: ss
-  udp: true
 - alpn:
   - h3
   - h2
   client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #3'
+  name: '🇩🇪 德国 | DEU #1'
   network: ws
   port: 443
-  server: 162.159.135.234
+  server: saas.sin.fan
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -211,55 +191,77 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- encryption: mlkem768x25519plus.native.0rtt.BheP3zTPlA3cijplJnfrJSIp9rYlrGqnqEOnYD-wA20
-  name: '🇩🇪 德国 | DEU #6'
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #2'
   network: ws
-  port: 8880
-  server: 188.114.99.0
-  tls: false
+  port: 443
+  server: www.speedtest.net
+  servername: snip.edgeoneai.cc.cd
+  tls: true
   type: vless
   udp: true
-  uuid: 3ee10440-225e-4cbc-83ed-3c80b90bcb07
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: ovh-gr1.mahkhorshidi.ir
-    path: /notls
-- auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  name: '🇩🇪 德国 | DEU #7'
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-de-002.fastervpn.world
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪 德国 | DEU 6
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
   skip-cert-verify: true
-  sni: vpn-de-002.fastervpn.world
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #8'
+  sni: apple.com
+  type: hysteria
+  up: 500
+- alpn:
+  - h2
+  alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国 | DEU 13
   network: ws
   port: 443
-  server: 162.159.130.234
-  servername: snip.edgeoneai.cc.cd
+  server: renderer-stream-2-114.mirra.now
+  servername: renderer-stream-2-114.mirra.now
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
   ws-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-- client-fingerprint: qq
-  encryption: mlkem768x25519plus.native.0rtt.UZhmQ7SrtJB3vEJ5YZFId-JvYxzxdYlkXl1lQ4hxU08
-  name: '🇩🇪 德国 | DEU #9'
-  network: xhttp
+      Host: renderer-stream-2-114.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #7'
+  network: grpc
   port: 443
-  server: no-lim.nomush.ir
-  servername: speedtest.net
+  server: renderer-bridge-2-114.mirra.now
+  servername: renderer-bridge-2-114.mirra.now
   tls: true
   type: vless
-  udp: true
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  xhttp-opts:
-    host: nolimiraniserv2.global.ssl.fastly.net
-    mode: packet-up
-    path: /nolimitx
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #12'
+  network: ws
+  port: 443
+  server: renderer-stream-2-114.mirra.now
+  tls: true
+  type: vmess
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-114.mirra.now
+    path: /api/v1/gpu-stream/socket
