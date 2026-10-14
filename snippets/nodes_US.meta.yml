@@ -28,7 +28,7 @@ proxies:
   - h3
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
   network: ws
   port: 443
   server: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
@@ -40,6 +40,12 @@ proxies:
     headers:
       Host: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
     path: /ws/b8e59255-d392-c427-535d-bc1f8f444c4e
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+  port: 16586
+  server: 154.29.149.140
+  tls: false
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
   port: 41705
   server: 154.29.149.140
@@ -47,19 +53,9 @@ proxies:
   type: vless
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - encryption: none
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
-  network: ws
-  port: 2052
-  server: mail.loyalsmile.net
-  tls: false
-  type: vless
-  uuid: ff766b85-d50f-47b7-9b63-6ca4ea128f3f
-  ws-opts:
-    path: /wp-content4
-- encryption: none
   grpc-opts:
     grpc-service-name: vless
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
   network: grpc
   port: 2085
   server: 206.245.146.248
@@ -142,12 +138,88 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸US_1|1.0MB/s
+- name: '🇺🇸 美国 | USA #8'
+  password: ae7eb4dwyaz25pxwgq59
+  port: 59689
+  server: 66.23.203.21
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇺🇸US_2|3.1MB/s
   port: 443
-  server: 12.221.146.147
+  server: 12.202.180.118
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇺🇸US_3|1.0MB/s
+  port: 443
+  server: 149.22.88.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_4|2.1MB/s
+  port: 443
+  server: 68.235.56.51
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_5|2.6MB/s
+  port: 9443
+  server: 198.44.138.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_6|2.4MB/s
+  port: 9443
+  server: 149.88.21.140
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_7|1.7MB/s
+  port: 443
+  server: 192.227.176.234
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_8|1.5MB/s
+  port: 443
+  server: 12.202.180.10
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_9|1.8MB/s
+  network: ws
+  port: 443
+  server: 04b51566-9333-492b-b680-8f80752411f9.fly.dev
+  servername: 04b51566-9333-492b-b680-8f80752411f9.fly.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: fe15a643-4c5e-e133-f560-3b79074162da
+  ws-opts:
+    headers:
+      Host: 04b51566-9333-492b-b680-8f80752411f9.fly.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /ws/fe15a643-4c5e-e133-f560-3b79074162da
+  xudp: true
+- name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 8080
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
 - alterId: 0
   cipher: auto
   name: '🇺🇸 美国 | USA #2'
@@ -221,13 +293,6 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: '🇺🇸 美国 | USA #8'
-  password: ae7eb4dwyaz25pxwgq59
-  port: 59689
-  server: 66.23.203.21
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
