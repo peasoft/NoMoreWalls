@@ -1,6 +1,20 @@
 proxies:
+- client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #1'
+  network: ws
+  port: 443
+  server: 199.232.78.170
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
 - encryption: none
-  name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   network: ws
   port: 20016
   server: 51.75.118.149
@@ -11,12 +25,6 @@ proxies:
     headers:
       Host: 51.75.118.149
     path: /alibodama-ws
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
-  port: 443
-  server: 137.74.16.237
-  tls: false
-  type: vless
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
 - name: 🇫🇷[www.v2nodes.com] trojan-FR-...
   network: ws
   password: humanity
@@ -109,32 +117,34 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: 🇫🇷FR_1|1.6MB/s
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.19.229.21
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: 🇫🇷FR_1|1.3MB/s
+  port: 9443
+  server: 213.139.9.142
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_2|1.1MB/s
   port: 443
   server: 103.82.101.44
   skip-cert-verify: true
   sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
   tls: true
   type: http
-- name: 🇫🇷FR_2|3.5MB/s
+- name: 🇫🇷FR_3|2.1MB/s
   port: 443
-  server: 51.210.167.149
+  server: 82.66.235.221
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇫🇷FR_3|1.7MB/s
-  port: 443
-  server: 82.65.162.76
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷FR_4|3.4MB/s
-  port: 8082
-  server: 213.199.46.59
-  skip-cert-verify: true
-  type: http
-- name: 🇫🇷FR_5|1.3MB/s
-  port: 4402
-  server: 45.74.31.41
-  skip-cert-verify: true
-  type: socks5
