@@ -26,11 +26,11 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- encryption: none
-  name: 🇸🇪[www.v2nodes.com] vless-SE-1...
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
   network: ws
   port: 14430
   server: 5.178.109.174
+  servername: 5.178.109.174
   tls: false
   type: vless
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -38,19 +38,48 @@ proxies:
     headers:
       Host: 5.178.109.174
     path: /vless
-- encryption: none
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
-  network: ws
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: swedenfeed
+  name: 🇸🇪 瑞典 | SWE
+  network: grpc
   port: 443
-  server: sub.merky.top
-  servername: sub.merky.top
+  server: edge-lab-b.10media.top
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: swedenfeed
+  name: 🇸🇪 瑞典 | SWE 2
+  network: grpc
+  port: 443
+  server: 45.12.63.219
+  servername: edge-lab-b.10media.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+- client-fingerprint: chrome
+  name: '🇸🇪 瑞典 | SWE #3'
+  network: ws
+  port: 443
+  server: 121.127.37.211
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: sub.merky.top
-    path: /merky-connect/de6/
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ''
@@ -62,16 +91,14 @@ proxies:
   tls: true
   type: vless
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: swedenfeed
-  name: 🇸🇪 瑞典 | SWE
+    grpc-service-name: ''
+  name: '🇸🇪 瑞典 | SWE #2'
   network: grpc
   port: 443
-  server: edge-lab-b.10media.top
+  server: 45.12.63.219
   servername: edge-lab-b.10media.top
   tls: true
   type: vless
-  udp: true
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
