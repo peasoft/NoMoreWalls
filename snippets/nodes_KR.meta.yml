@@ -22,17 +22,18 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- client-fingerprint: chrome
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
   name: '🇰🇷 韩国 | KOR #1'
-  network: ws
+  network: http
   port: 443
-  server: 144.24.71.172
-  servername: snip.edgeoneai.cc.cd
-  tls: true
+  server: 43.202.6.222
+  tls: false
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
