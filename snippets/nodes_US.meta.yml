@@ -8,7 +8,7 @@ proxies:
   tls: false
   type: hysteria2
 - encryption: mlkem768x25519plus.native.0rtt.ANymG3pbNTc9XneprZhNvxHRz5_PxHksy0egsbnZXFA
-  name: 🇺🇸[www.v2nodes.com] vless-US-1...
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
   network: tcp
   port: 443
   server: 194.113.74.166
@@ -46,23 +46,18 @@ proxies:
   server: 185.215.132.9
   type: ss
   udp: true
-- name: 🇺🇸[www.v2nodes.com] trojan-US-...
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #4'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #5'
   password: dba20dcb635e430fa4d3bfc303a149d2
   port: 443
   server: blog.findlocaljobnetworkandbuildcommunityconnections.com
   skip-cert-verify: true
   sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #5'
-  password: ae7eb4dwyaz25pxwgq59
-  port: 59689
-  server: 66.23.203.21
   type: trojan
 - alterId: 0
   cipher: auto
@@ -110,15 +105,24 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸US_1|1.4MB/s
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇺🇸 美国 | USA #8'
+  network: http
   port: 443
-  server: 12.202.180.118
-  skip-cert-verify: true
-  tls: true
-  type: http
+  server: 77.113.104.85
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - alterId: 0
   cipher: auto
-  name: 🇺🇸US_2|3.2MB/s
+  name: 🇺🇸US_2|3.5MB/s
   network: ws
   port: 8033
   server: 120.232.202.14
@@ -132,54 +136,99 @@ proxies:
       Host: tms.dingtalk.com
     path: /3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US_3|3.6MB/s
-  network: ws
-  port: 8034
-  server: 120.232.202.14
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- name: 🇺🇸US_3|2.2MB/s
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  uuid: 2881d1b1-c6e7-4e2e-a9b6-3a7e3f32d4fb
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US_4|2.4MB/s
-  network: ws
-  port: 8039
-  server: 120.232.202.14
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- name: 🇺🇸US_4|1.5MB/s
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  uuid: 74499dd9-f4c0-4450-8a4a-e06c8b25b77d
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US_5|2.8MB/s
-  network: ws
-  port: 8032
-  server: 120.232.202.14
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- name: 🇺🇸US_5|2.9MB/s
+  port: 9002
+  server: 138.199.35.212
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  uuid: 2881d1b1-c6e7-4e2e-a9b6-3a7e3f32d4fb
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f
-  xudp: true
+- name: 🇺🇸US_6|3.7MB/s
+  port: 8443
+  server: 44.248.167.117
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_7|1.0MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_8|2.5MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_9|3.0MB/s
+  port: 9002
+  server: 138.199.35.211
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_10|1.3MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.199
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_11|1.2MB/s
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_12|2.0MB/s
+  port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_13|3.1MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_14|1.3MB/s
+  port: 443
+  server: 167.88.60.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_16|1.7MB/s|K001-260618
+  port: 443
+  server: 149.34.248.65
+  skip-cert-verify: true
+  sni: 149.34.248.65
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_17|3.6MB/s
+  port: 38182
+  server: 69.55.49.177
+  skip-cert-verify: true
+  type: socks5
 - client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #1'
   network: ws
@@ -267,21 +316,6 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: '🇺🇸 美国 | USA #8'
-  network: http
-  port: 443
-  server: 77.113.104.85
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #10'
   network: ws
