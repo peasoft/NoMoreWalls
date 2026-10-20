@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: qq
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #3'
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
   network: ws
   port: 443
   server: cf.130519.xyz
@@ -18,6 +18,12 @@ proxies:
   server: 4c2d5151.266nets.com
   skip-cert-verify: true
   sni: ixigua.com
+  type: trojan
+- name: '🇭🇰[www.v2nodes.com] trojan-HK-... #1'
+  password: XuMweB2PWs
+  port: 45464
+  server: 2.27.109.179
+  sni: 2.27.109.179.sslip.io
   type: trojan
 - alterId: 2
   cipher: auto
@@ -130,16 +136,22 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇭🇰 香港 | HKG
-  password: 0324fbc29561
-  port: 443
-  server: 654968169.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
 - client-fingerprint: chrome
   name: '🇭🇰 香港 | HKG #1'
+  network: ws
+  port: 8443
+  server: 43.161.233.40
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
   server: 216.235.248.133
@@ -153,34 +165,10 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
 - client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #2'
-  network: ws
-  port: 8443
-  server: 103.148.73.173
-  servername: ty986gfazs.cainiaohub.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  ws-opts:
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-- alpn:
-  - h3
-  auth: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
-  name: 🇭🇰 香港 | HKG 4
-  password: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
-  port: 58090
-  server: 202.73.4.182
-  skip-cert-verify: true
-  sni: 202.73.4.182
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #4'
+  name: '🇭🇰 香港 | HKG #3'
   network: ws
   port: 443
-  server: 207.57.132.76
+  server: 103.242.15.87
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -190,25 +178,3 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /
-- client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #6'
-  network: ws
-  port: 443
-  server: 38.207.177.113
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
-- name: '🇭🇰 香港 | HKG #3'
-  password: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
-  port: 58090
-  server: 202.73.4.182
-  skip-cert-verify: true
-  sni: 202.73.4.182
-  tls: false
-  type: hysteria2
