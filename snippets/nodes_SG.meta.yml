@@ -1,20 +1,33 @@
 proxies:
-- alpn:
-  - http/1.1
+- client-fingerprint: unsafe
+  encryption: none
   name: 🇸🇬[www.v2nodes.com] vless-SG
   network: ws
   port: 443
-  server: 188.114.96.9
-  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
+  server: 172.66.1.36
+  servername: ccc.010304.xyz
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrjfp=chrome
+      Host: ccc.010304.xyz
+    path: /
 - name: '🇸🇬[www.v2nodes.com] vless-SG #1'
+  network: ws
+  port: 443
+  server: 88.216.69.253
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chromefp=unsafe
+- name: '🇸🇬[www.v2nodes.com] vless-SG #2'
   network: ws
   port: 8880
   server: 135.84.72.30
@@ -27,6 +40,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   name: 🇸🇬[www.v2nodes.com] vless-SG-1...
+  network: tcp
   port: 56984
   server: sg1.zestapp778.com
   servername: sg1.zestapp778.com
@@ -44,7 +58,7 @@ proxies:
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
 - client-fingerprint: chrome
-  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #10'
   network: ws
   port: 443
   server: 104.20.17.210
@@ -68,33 +82,25 @@ proxies:
     headers:
       Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
     path: /
-- name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
+- encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
   network: ws
-  port: 8080
-  server: 104.16.215.234
-  tls: false
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fp=chrome
-- name: '🇸🇬[www.v2nodes.com] vless-SG-9... #2'
-  network: ws
-  port: 8080
+  port: 2082
   server: 104.18.0.181
+  servername: 'hhlfy.twiladaphne.ndjp.net '
   tls: false
   type: vless
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-    path: /
+    path: /fp
 - client-fingerprint: chrome
-  name: 🇸🇬[www.v2nodes.com] vless-SG-8...
+  encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-9... #2'
   network: ws
   port: 443
-  server: 104.26.4.2
+  server: 172.66.0.162
   servername: ccc.010304.xyz
   tls: true
   type: vless
@@ -104,10 +110,10 @@ proxies:
       Host: ccc.010304.xyz
     path: /
 - client-fingerprint: chrome
-  name: '🇸🇬[www.v2nodes.com] vless-SG-8... #1'
+  name: 🇸🇬[www.v2nodes.com] vless-SG-8...
   network: ws
   port: 443
-  server: 104.18.49.85
+  server: 104.26.4.2
   servername: ccc.010304.xyz
   tls: true
   type: vless
@@ -166,32 +172,26 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- client-fingerprint: random
-  name: 🇸🇬SG_1|4.2MB/s
-  network: ws
-  port: 443
-  server: ct.877774.xyz
-  servername: ap-south.862400.xyz
+- name: 🇸🇬SG_1|1.3MB/s
+  password: None
+  port: 9443
+  server: 152.233.9.239
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 4f735420-0179-45d7-ba4e-ed66d1bf3a89
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-    path: /announcement?ed=2048
-- name: 🇸🇬SG_2|4.5MB/s
+  type: http
+- name: 🇸🇬SG_2|1.1MB/s
+  password: None
+  port: 9090
+  server: 104.248.151.93
+  skip-cert-verify: true
+  type: http
+- name: 🇸🇬SG_3|1.0MB/s
   password: '!!str 1234'
   port: 2080
-  server: 13.250.8.222
+  server: 18.143.144.220
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: 🇸🇬SG_3|3.9MB/s
-  port: 1080
-  server: 121.43.176.35
-  skip-cert-verify: true
-  type: http
 - auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
   name: '🇸🇬 新加坡 | SGP #1'
