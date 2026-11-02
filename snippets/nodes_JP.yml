@@ -8,7 +8,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
-  port: 443
+  port: 80
   server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
@@ -16,6 +16,12 @@ proxies:
   password: shadowsocks
   port: 443
   server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1291...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
   type: ss
 - name: 🇯🇵[www.v2nodes.com] trojan-JP-...
   password: d050aca3-9df2-4461-90ec-92373c1d7636
@@ -28,107 +34,27 @@ proxies:
   server: 45.32.52.173
   sni: 45.32.52.173
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本|@ripaojiedian
-  network: ws
-  port: 443
-  server: Z9FfBx3zs2q5O0BG.v.3dns.vip
-  servername: Z9FfBx3zs2q5O0BG.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: Z9FfBx3zs2q5O0BG.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本2|@ripaojiedian
-  network: ws
-  port: 443
-  server: kQov7UKaDknXb8a3.v.3dns.vip
-  servername: kQov7UKaDknXb8a3.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: kQov7UKaDknXb8a3.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本3|@ripaojiedian
-  network: ws
-  port: 443
-  server: kneNaKHeSXnZH259.v.3dns.vip
-  servername: kneNaKHeSXnZH259.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: kneNaKHeSXnZH259.v.3dns.vip
-    path: /ws-vmess
+- name: 日本1|@ripaojiedian
+  network: tcp
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  port: 24914
+  server: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  type: trojan
 - name: 日本2|@ripaojiedian
   network: tcp
-  password: AA885B42-133C-3828-FB69-E45105C06092
-  port: 10125
-  server: 63182sh8-4d7b.aws-agent.net
-  skip-cert-verify: true
-  sni: m.ctrip.com
-  type: trojan
-- alterId: 1
-  cipher: auto
-  name: 🇯🇵 日本 | JPN
-  port: 28787
-  server: qdiysly-g05.jp06-jz-vm0.entry.fr0528.art
-  servername: qdiysly-g05.jp06-jz-vm0.entry.fr0528.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
-- name: 🇯🇵 日本 | JPN 2
-  password: ef95390a-0bcb-45b8-a2bc-3ab33bf0e297
-  port: 40014
-  server: zz.jp01.fogvip-zz.uk
-  skip-cert-verify: true
-  sni: ld.jp01.yuiuingkig.icu
-  type: trojan
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 | JPN 3
-  network: ws
-  port: 443
-  server: JP032008.ssgreen.org
-  servername: JP032008.ssgreen.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 9ddbe6b7-8ad5-43d5-b30a-35e35b633103
-  ws-opts:
-    headers:
-      Host: JP032008.ssgreen.org
-    path: /wes
-- name: '🇯🇵 日本 | JPN #1'
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   port: 18295
   server: ench-snet-app.w-ctrip.cn
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
-- name: '🇯🇵 日本 | JPN #2'
+- name: 日本3|@ripaojiedian
+  network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
-  port: 24914
+  port: 43992
   server: ench-snet-app.w-ctrip.cn
   skip-cert-verify: true
-  sni: cm.g.doubleclick.net
+  sni: wximg.qq.com
   type: trojan
