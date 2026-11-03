@@ -3,21 +3,7 @@ proxies:
   name: 🇸🇬[www.v2nodes.com] vless-SG
   network: ws
   port: 443
-  server: 172.64.146.66
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
-- client-fingerprint: chrome
-  encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG #1'
-  network: ws
-  port: 443
-  server: 104.17.154.123
+  server: 172.64.155.209
   servername: ccc.010304.xyz
   tls: true
   type: vless
@@ -26,12 +12,19 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- name: '🇸🇬[www.v2nodes.com] vless-SG #2'
+- client-fingerprint: chrome
+  name: '🇸🇬[www.v2nodes.com] vless-SG #1'
+  network: ws
   port: 443
-  server: 67.159.52.81
-  tls: false
+  server: 172.64.153.66
+  servername: ccc.010304.xyz
+  tls: true
   type: vless
-  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
 - client-fingerprint: chrome
   name: 🇸🇬[www.v2nodes.com] vless-SG-1...
   port: 56984
@@ -94,19 +87,6 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-- encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
-  network: ws
-  port: 2082
-  server: 104.18.0.181
-  servername: 'hhlfy.twiladaphne.ndjp.net '
-  tls: false
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fp
 - cipher: aes-256-gcm
   name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
   password: qpSevKaUXYQKvSjp
@@ -131,6 +111,18 @@ proxies:
   port: 8886
   server: 139.180.146.200
   type: trojan
+- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #3'
+  network: ws
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  port: 443
+  server: blackshadow.dpdns.org
+  skip-cert-verify: false
+  sni: blackshadow.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: blackshadow.dpdns.org
+    path: '%2F195.123.218.174-443'
 - name: 新加坡1|@ripaojiedian
   network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
@@ -155,27 +147,124 @@ proxies:
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
-- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
-  name: '🇸🇬 新加坡 | SGP #1'
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 443
-  server: 56.10.10.106
+- name: 🇸🇬 新加坡 | SGP
+  network: ws
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 2087
+  server: 104.18.43.20
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
+  sni: api.85s.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: api.85s.me
+    path: /
 - client-fingerprint: chrome
   name: '🇸🇬 新加坡 | SGP #2'
   network: ws
-  port: 443
-  server: 104.18.41.86
-  servername: ccc.010304.xyz
+  port: 2083
+  server: 104.18.35.86
+  servername: vlsovip.1d.mom
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   ws-opts:
     headers:
-      Host: ccc.010304.xyz
+      Host: vlsovip.1d.mom
+    path: /fp=unsafe
+- name: 🇸🇬 新加坡 | SGP 3
+  network: ws
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 443
+  server: 172.236.139.181
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: api.85s.me
     path: /
+- name: 🇸🇬 新加坡 | SGP 4
+  network: ws
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 443
+  server: cucc.cloudflare.seeck.cn
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: api.85s.me
+    path: /
+- name: 🇸🇬 新加坡 | SGP 6
+  network: ws
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 443
+  server: 172.104.161.198
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: api.85s.me
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 新加坡 | SGP #7'
+  password: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
+  port: 2096
+  server: 52.221.223.188
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 8
+  network: ws
+  password: '!!str 123456'
+  port: 2096
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: 321dfbc6.uir-9i6.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 321dfbc6.uir-9i6.pages.dev
+    path: /
+- name: '🇸🇬 新加坡 | SGP #1'
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 2087
+  server: 104.18.43.20
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+- name: '🇸🇬 新加坡 | SGP #3'
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 443
+  server: 172.236.139.181
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+- name: '🇸🇬 新加坡 | SGP #4'
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 443
+  server: cucc.cloudflare.seeck.cn
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+- name: '🇸🇬 新加坡 | SGP #6'
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 443
+  server: 172.104.161.198
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+- name: '🇸🇬 新加坡 | SGP #8'
+  password: '!!str 123456'
+  port: 2096
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: 321dfbc6.uir-9i6.pages.dev
+  type: trojan
