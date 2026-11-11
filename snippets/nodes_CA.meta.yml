@@ -106,9 +106,10 @@ proxies:
 - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #2'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 216.152.147.152
+  server: 216.152.147.201
+  sni: resources.connectingpeoplewithgreatjobs.com
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #4'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.74
@@ -118,41 +119,68 @@ proxies:
   port: 443
   server: 216.152.147.79
   type: trojan
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.93
+  sni: connectingpeoplewithgreatjobs.com
+  type: trojan
 - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #7'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.85
   type: trojan
-- name: 🇨🇦CA_1|3.0MB/s
+- name: 🇨🇦CA_1|1.3MB/s
   port: 9443
   server: 198.44.157.27
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇨🇦CA_2|1.4MB/s
+- name: 🇨🇦CA_2|2.5MB/s
   password: None
   port: 9443
   server: 23.169.224.34
   skip-cert-verify: true
   tls: true
   type: http
-- encryption: none
-  name: 🇨🇦CA_3|3.9MB/s
-  network: xhttp
-  port: 8008
-  server: 5.53.124.191
-  servername: 5.53.124.191
-  type: vless
-  udp: true
-  uuid: b48e1596-e835-4547-bdae-31daadf9ea17
-  xhttp-opts:
-    mode: auto
-    path: /
-  xudp: true
-- cipher: aes-256-cfb
-  name: '🇨🇦 加拿大 | CAN #1'
-  password: amazonskr05
+- name: 🇨🇦CA_3|1.3MB/s
+  password: None
   port: 443
-  server: 35.182.250.103
-  type: ss
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇨🇦CA_4|2.2MB/s
+  password: None
+  port: 9443
+  server: 149.88.98.81
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇨🇦CA_5|1015KB/s
+  password: None
+  port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇨🇦 加拿大 | CAN
+  network: ws
+  password: '!!str 123456'
+  port: 2096
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: 321dfbc6.uir-9i6.pages.dev
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: 321dfbc6.uir-9i6.pages.dev
+    path: /
+- name: '🇨🇦 加拿大 | CAN #1'
+  password: '!!str 123456'
+  port: 2096
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: 321dfbc6.uir-9i6.pages.dev
+  type: trojan
