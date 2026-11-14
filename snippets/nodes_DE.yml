@@ -1,10 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1621...
-  password: zZMNTGpPl38ASlbI1EKOBJ
-  port: 46303
-  server: 135.220.178.46
-  type: ss
 - cipher: aes-256-gcm
   name: 🇩🇪[www.v2nodes.com] ss-DE-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -23,27 +17,27 @@ proxies:
   port: 19999
   server: 23.157.88.43
   type: ss
-- cipher: aes-256-gcm
-  name: '🇩🇪[www.v2nodes.com] ss-DE-1615... #2'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.108.119.2
-  type: ss
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    method: GET
-    path:
-    - /QQqun-737805443
-  name: '🇩🇪 德国 | DEU #7'
-  network: http
-  port: 52080
-  server: 23.165.200.150
+- alpn:
+  - h2
+  - h3
+  - http/1.1
+  name: 🇩🇪 德国 | DEU 10
+  network: ws
+  password: X00HagvwL8gQXNDAnsxsN8dv1_VdneEo
+  port: 21443
+  server: 5.59.204.26
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: fi1.nebulaguard.org
+  type: trojan
   udp: true
-  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
+  ws-opts:
+    headers:
+      Host: fi1.nebulaguard.org
+    path: /trojan/
+- name: '🇩🇪 德国 | DEU #7'
+  password: X00HagvwL8gQXNDAnsxsN8dv1_VdneEo
+  port: 21443
+  server: 5.59.204.26
+  skip-cert-verify: true
+  sni: fi1.nebulaguard.org
+  type: trojan
