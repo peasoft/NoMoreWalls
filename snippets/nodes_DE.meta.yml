@@ -25,7 +25,7 @@ proxies:
   type: vless
   uuid: baded307-189c-4ffc-a271-9acdab51a324
 - client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   network: ws
   port: 443
   server: 188.225.37.43
@@ -37,7 +37,7 @@ proxies:
     headers:
       Host: torvani.cyou
     path: /api/boards/live
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   port: 49313
   server: 159.195.207.238
   tls: false
@@ -45,7 +45,7 @@ proxies:
   uuid: 855c7aaa-e7d6-463e-971e-d36032744428
 - client-fingerprint: firefox
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
   network: ws
   port: 8443
   server: 103.31.4.160
@@ -57,46 +57,19 @@ proxies:
     headers:
       Host: moz.ar-marz.fun
     path: /man
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1622...
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.169.3
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1621...
   password: zZMNTGpPl38ASlbI1EKOBJ
   port: 46303
   server: 135.220.178.46
   type: ss
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_1|1.1MB/s
-  network: ws
-  port: 8443
-  server: 104.17.70.206
-  servername: free.sahanwickramasinghe.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.86 Safari/537.36
-    path: /
-  xudp: true
-- name: 🇩🇪DE_2|2.8MB/s
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_3|1.0MB/s
-  password: None
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_4|2.5MB/s
+- name: 🇩🇪DE_1|2.0MB/s
   password: 'null'
   port: 443
   server: 172.64.68.89
@@ -104,29 +77,16 @@ proxies:
   tls: true
   type: http
   username: 'null'
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55
-  name: 🇩🇪 德国 | DEU 2
-  port: 54177
-  protocol: none
-  server: 5.83.129.90
+- name: 🇩🇪 德国 | DEU 2
+  password: 9b24e5d0-62be-41df-b967-9b670cf90ff8
+  port: 2086
+  server: forwarded.frnhk.xyz
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11
-- cipher: chacha20-ietf-poly1305
-  name: '🇩🇪 德国 | DEU #2'
-  password: VYSbsLYaCBSquKAq7Tc059Bppmhzs2Yw
-  port: 6079
-  server: 13.140.86.73
-  type: ss
+  sni: de.gosthk.site
+  type: anytls
   udp: true
 - client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #3'
+  name: '🇩🇪 德国 | DEU #5'
   network: xhttp
   port: 443
   server: 193.160.208.240
@@ -138,28 +98,28 @@ proxies:
   xhttp-opts:
     mode: auto
     path: /assets/twru01/
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #7'
-  network: xhttp
-  port: 443
-  server: 199.232.239.239
-  servername: community.fastly.steamstatic.com
-  tls: true
-  type: vless
+- name: 🇩🇪 德国 | DEU 9
+  password: 97e926e8-0fbf-4af5-89de-4a4c8708a12c
+  port: 2086
+  server: forwarded.frnhk.xyz
+  skip-cert-verify: true
+  sni: de.gosthk.site
+  type: anytls
   udp: true
-  uuid: 2237ac4b-a8a8-4476-ff67-d140d96b7a38
-  xhttp-opts:
-    host: cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net
-    mode: packet-up
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
-    x-padding-bytes: 100-300
-    x-padding-header: Referer
-    x-padding-key: x_padding
-    x-padding-method: repeat-x
-    x-padding-obfs-mode: true
-    x-padding-placement: queryInHeader
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇩🇪 德国 | DEU 10
+  port: 54177
+  protocol: none
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
