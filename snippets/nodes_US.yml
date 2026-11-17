@@ -23,18 +23,31 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 30004
-  server: 192.74.236.148
-  skip-cert-verify: true
-  tls: true
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 🇺🇸US_2|1.3MB/s
+  network: http
+  port: 44441
+  server: 104.225.148.201
+  tls: false
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.91334565.xyz
-    path: /path/1733477783705
+  uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
+  x-toolall-mihomo: true
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 🇺🇸US_3|1.9MB/s
+  network: http
+  port: 9983
+  server: 104.225.148.201
+  tls: false
+  type: vmess
+  uuid: 09e2eb90-14c7-4b79-bac7-f7b6f3f78054
+  x-toolall-mihomo: true
