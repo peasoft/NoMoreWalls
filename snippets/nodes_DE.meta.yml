@@ -46,12 +46,28 @@ proxies:
   tls: false
   type: vless
   uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  network: ws
+  port: 443
+  server: marina.gerqix.online
+  servername: marina.gerqix.online
+  tls: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: marina.gerqix.online
+    path: /api/de3/stream
 - cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1624...
+  name: '🇩🇪 德国 | DEU #7'
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   port: 443
   server: 47.254.167.157
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 🇩🇪[www.v2nodes.com] ss-DE-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -64,6 +80,13 @@ proxies:
   port: 443
   server: 47.85.238.210
   type: ss
+- cipher: aes-256-gcm
+  name: 意大利2|@ripaojiedian
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.27
+  type: ss
+  udp: true
 - name: 🇩🇪DE_1|1.3MB/s|P002-260618
   password: None
   port: 443
@@ -81,50 +104,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: DE_speednode_0003
-  password: None
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: DK_speednode_0004
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: DK_speednode_0005
-  password: None
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: DK_speednode_0006
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- encryption: mlkem768x25519plus.native.0rtt.xVKXiaXMBl2LULWjDWyoduB5RcOKfKsqKauMhCo-Vj0
-  name: 🇩🇪DE_7|1.2MB/s
-  network: ws
-  port: 5080
-  server: vip.orbxnet.ru
-  tls: false
-  type: vless
-  udp: true
-  uuid: b51f6369-b2ab-4dd6-a2e8-d0748f3da1f2
-  ws-opts:
-    headers:
-      Host: vip.orbxnet.shop
-    path: /
-- name: 🇩🇪DE_8|3.0MB/s|P002-260618
+- name: 🇩🇪DE_5|2.3MB/s
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
@@ -134,49 +114,86 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 🇩🇪DE_9|3.5MB/s
-  port: 3128
-  server: 172.236.213.178
-  skip-cert-verify: true
-  type: http
 - alpn:
-  - h2
-  client-fingerprint: firefox
+  - h3
+  down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_4|2.4MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: 128.254.186.190
+  skip-cert-verify: false
+  sni: mother-earth.fyi
+  type: hysteria2
+  up: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: ios
   name: '🇩🇪 德国 | DEU #1'
-  network: xhttp
+  network: ws
   port: 443
-  server: alderbloom.gerqix.online
-  servername: inlet.gerqix.online
+  server: sienna.merlano.monster
+  servername: sienna.merlano.monster
   tls: true
   type: vless
   udp: true
   uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
-  xhttp-opts:
-    host: inlet.gerqix.online
-    mode: packet-up
-    path: /api/de4/preview/
+  ws-opts:
+    headers:
+      Host: sienna.merlano.monster
+    path: /api/de4/stream
 - alpn:
-  - h2
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #3'
-  network: xhttp
+  name: '🇩🇪 德国 | DEU #2'
+  network: ws
   port: 443
-  server: greenhouse.elvano.website
-  servername: greenhouse.elvano.website
+  server: 185.247.224.206
+  servername: lagoon.gerqix.online
   tls: true
   type: vless
   udp: true
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  ws-opts:
+    headers:
+      Host: lagoon.gerqix.online
+    path: /api/de5/stream
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #3'
+  network: xhttp
+  port: 443
+  server: 193.160.208.240
+  servername: 193.160.208.240
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
   xhttp-opts:
-    host: greenhouse.elvano.website
     mode: auto
-    path: /api/de6/sync
+    path: /assets/twru01/
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #4'
+  network: ws
+  port: 443
+  server: 77.73.71.200
+  servername: lagoon.gerqix.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  ws-opts:
+    headers:
+      Host: lagoon.gerqix.online
+    path: /api/de5/stream
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #4'
+  name: '🇩🇪 德国 | DEU #5'
   network: xhttp
   port: 443
   server: wildflower.elvano.website
@@ -191,34 +208,322 @@ proxies:
     path: /api/de5/sync
 - alpn:
   - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #5'
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #6'
   network: xhttp
   port: 443
-  server: heatherfield.moltex.click
-  servername: heatherfield.moltex.click
+  server: alderbloom.gerqix.online
+  servername: inlet.gerqix.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  xhttp-opts:
+    host: inlet.gerqix.online
+    mode: packet-up
+    path: /api/de4/preview/
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #8'
+  network: tcp
+  port: 443
+  server: free-server.techsonic.dev
+  servername: tech-sonic.webex.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90711def-edd4-42da-ba1d-b2046b86b50a
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #9'
+  network: xhttp
+  port: 443
+  server: 46.17.45.116
+  servername: vcvdss.syncpointbase.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: f120881b-3d5c-4583-a039-6ecd07e04c3f
+  xhttp-opts:
+    host: vcvdss.syncpointbase.online
+    mode: packet-up
+    path: /xh
+    x-padding-bytes: 100-1000
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #10'
+  network: ws
+  port: 2083
+  server: 172.67.74.177
+  servername: site.check-looks.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
+  ws-opts:
+    headers:
+      Host: site.check-looks.space
+    path: /
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #11'
+  network: ws
+  port: 2083
+  server: 172.64.150.205
+  servername: site.check-looks.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
+  ws-opts:
+    headers:
+      Host: site.check-looks.space
+    path: /
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #12'
+  network: tcp
+  port: 443
+  server: free-server.techsonic.dev
+  servername: android.googleapis.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 398d124d-ed77-498e-acb6-be4a2c5d182a
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #13'
+  network: ws
+  port: 2083
+  server: 104.17.145.145
+  servername: site.check-looks.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
+  ws-opts:
+    headers:
+      Host: site.check-looks.space
+    path: /
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇩🇪 德国 | DEU #14'
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 18.197.131.255
+  type: ss
+  udp: true
+- name: '🇩🇪 德国 | DEU #15'
+  network: tcp
+  port: 31652
+  server: 195.110.15.216
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2da03bdf-8af3-4207-96c7-d70e0dd22c36
+  ws-opts:
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #17'
+  network: ws
+  port: 443
+  server: 31.57.28.169
+  servername: inlay.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: inlay.merlano.monster
+    path: /api/de3/stream
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #18'
+  network: ws
+  port: 443
+  server: mintleaf.moltex.click
+  servername: mintleaf.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  ws-opts:
+    headers:
+      Host: mintleaf.moltex.click
+    path: /api/de4/stream
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇩🇪 德国 | DEU #19'
+  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
+  port: 443
+  server: 35.178.82.244
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #20'
+  network: ws
+  port: 443
+  server: 81.49.182.202
+  servername: lagoon.gerqix.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  ws-opts:
+    headers:
+      Host: lagoon.gerqix.online
+    path: /api/de5/stream
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  name: 🇩🇪 德国 | DEU 21
+  network: grpc
+  port: 443
+  server: 5.129.253.99
+  servername: rookery.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #22'
+  network: tcp
+  port: 443
+  server: free-server.techsonic.dev
+  servername: aka.ms
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #23'
+  network: ws
+  port: 443
+  server: ws3.falmero.store
+  servername: paperbirch.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: paperbirch.merlano.monster
+    path: /api/de1/stream
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #24'
+  network: ws
+  port: 443
+  server: rowanberry.moltex.click
+  servername: rowanberry.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: rowanberry.moltex.click
+    path: /api/de7/stream
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #25'
+  network: ws
+  port: 443
+  server: 31.57.28.199
+  servername: inlay.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: inlay.merlano.monster
+    path: /api/de3/stream
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #27'
+  network: ws
+  port: 443
+  server: 193.168.140.175
+  servername: inlay.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: inlay.merlano.monster
+    path: /api/de3/stream
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #29'
+  network: xhttp
+  port: 443
+  server: ochre.merlano.monster
+  servername: ochre.merlano.monster
   tls: true
   type: vless
   udp: true
   uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   xhttp-opts:
-    host: heatherfield.moltex.click
+    host: ochre.merlano.monster
     mode: auto
     path: /api/de6/sync
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪 德国 | DEU #8'
-  network: ws
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  name: '🇩🇪 德国 | DEU #30'
+  network: xhttp
   port: 443
-  server: uk2-2.998998.best
-  servername: server3.9966338.xyz
+  server: mosaic.merlano.monster
+  servername: mosaic.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  xhttp-opts:
+    host: mosaic.merlano.monster
+    mode: auto
+    path: /api/de3/sync
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #21'
+  network: grpc
+  port: 443
+  server: 5.129.253.99
+  servername: rookery.moltex.click
+  tls: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+- name: DE_speednode_0003
+  password: None
+  port: 443
+  server: 149.36.50.1
   skip-cert-verify: true
   tls: true
-  type: vmess
+  type: http
   udp: true
-  uuid: bfc876fe-ecbc-4c13-a969-4b757e9e76fb
-  ws-opts:
-    headers:
-      Host: server3.9966338.xyz
-    path: /waetasiuofguiwer?ed=2560
