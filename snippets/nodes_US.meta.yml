@@ -1,5 +1,5 @@
 proxies:
-- name: ' 🇺🇸 23@exclavevpn'
+- name: 🇺🇸 24@exclavevpn
   obfs: salamander
   obfs-password: re61ep4ancwplwh8
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -17,17 +17,37 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- name: 🇺🇸230629 | ⚡️Telegram = t.me/L...
-  obfs: salamander
-  obfs-password: 7922smqtd5qm70fu
-  password: 5ictxgawam84vgrp
-  port: 2098
-  server: 107.181.112.141
-  sni: 107.181.112.141
+- name: 🇺🇸230832 | ⚡️Telegram = t.me/L...
+  password: 0b396097d052915ef304b40d2bda6a2d
+  port: 8443
+  server: 179.254.94.184
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 🇺🇸230834 | ⚡️Telegram = t.me/L...
+  password: AIcYjw5Oc9Rrrr9SGDUBbBIC
+  port: 36712
+  server: 38.76.150.108
+  skip-cert-verify: true
+  sni: 'off'
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
   name: 🇺🇸[www.v2nodes.com] vless-US-1...
+  network: ws
+  port: 443
+  server: 172.66.213.98
+  servername: us5-cdn.xyn.lgbt
+  tls: true
+  type: vless
+  uuid: 366449c5-ac1e-4314-8142-27a6b1c8c0fb
+  ws-opts:
+    headers:
+      Host: us5-cdn.xyn.lgbt
+    path: /yn-lax-fb366a66e8526ebc4a311464
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #1'
   network: ws
   port: 443
   server: vless.cloudxzw2027.ccwu.cc
@@ -45,82 +65,181 @@ proxies:
   port: 42878
   server: 23.230.52.119
   type: ss
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: edge
+- cipher: aes-256-gcm
+  name: 🇺🇸[www.v2nodes.com] ss-US-1551...
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 15.204.246.108
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸[www.v2nodes.com] ss-US-1539...
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 15.204.247.124
+  type: ss
+- client-fingerprint: chrome
   name: '🇷🇺 俄罗斯 | RUS #1'
   network: xhttp
-  port: 443
-  server: arbor.elvano.website
-  servername: arbor.elvano.website
+  port: 2053
+  server: 78.159.240.111
+  servername: curlypebble.com
   tls: true
   type: vless
   udp: true
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
   xhttp-opts:
-    host: arbor.elvano.website
+    host: curlypebble.com
     mode: auto
-    path: /api/de7/sync
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: v6-finaltelekom-globalinetforallalwaysandneverbanyoubelieveme-com
-  name: 🇷🇺 俄罗斯 | RUS 2
-  network: grpc
-  port: 29976
-  server: 195.208.123.6
-  servername: v6.finaltelekom.globalinetforallalwaysandneverbanyoubelieveme.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ad45aa-3acc-46fd-8b96-aa6589b6aa1c
+    path: /api/v1/upload
 - client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 3
-  network: grpc
-  port: 443
-  server: 201.51.12.98
-  servername: vps3.nemnogogo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- name: 🇺🇸 美国 | USA 2
-  password: 0324fbc29561
-  port: 443
-  server: sdf65h46wr.df6h451rh.xin
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  password: 98c394b5-2a27-4be2-b5e5-0daab762c058
-  port: 443
-  server: signal.lovehk.xyz
-  skip-cert-verify: true
-  sni: signal.lovehk.xyz
-  type: anytls
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
   name: '🇷🇺 俄罗斯 | RUS #2'
-  network: grpc
-  port: 29976
-  server: 195.208.123.6
-  servername: v6.finaltelekom.globalinetforallalwaysandneverbanyoubelieveme.com
+  network: xhttp
+  port: 443
+  server: 91.142.79.131
+  servername: ch07.tunnely.space
   tls: true
   type: vless
-  uuid: 44ad45aa-3acc-46fd-8b96-aa6589b6aa1c
+  udp: true
+  uuid: 11d14aed-3d44-4bb2-b9c0-24e661589e5a
+  xhttp-opts:
+    mode: packet-up
+    path: /xhttp/
 - client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  network: tcp
+  port: 443
+  server: 45.132.179.68
+  servername: onbtoaadqkctlepomo.fcloudservices.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-0001-0000-000000000000
+  ws-opts:
+    path: /
+- client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #4'
+  network: ws
+  port: 8459
+  server: 213.183.41.31
+  servername: photos.plumstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+  ws-opts:
+    path: /ws
+- client-fingerprint: chrome
+  name: '🇷🇺 俄罗斯 | RUS #5'
+  network: xhttp
+  port: 2053
+  server: 78.159.240.62
+  servername: polarladder.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  xhttp-opts:
+    host: polarladder.com
+    mode: auto
+    path: /api/v1/upload
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  name: 🇷🇺 俄罗斯 | RUS 6
+  network: grpc
+  port: 7489
+  server: cdn585.whitenw.net
+  servername: cdn13.cloud-cdn.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53d229e0-3d9a-4ca8-9e2d-9be298534773
+- client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #7'
+  network: tcp
+  port: 443
+  server: 168.113.253.81
+  servername: renycbfoxizjxwnlle.fcloudservices.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-0001-0000-000000000000
+  ws-opts:
+    path: /
+- client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #8'
+  network: ws
+  port: 8463
+  server: 213.183.41.31
+  servername: share.plumstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+  ws-opts:
+    path: /ws
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 8443
+  server: 172.64.154.113
+  servername: freeceshi6.frii.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  ws-opts:
+    headers:
+      Host: freeceshi6.frii.site
+    path: /proxyip=ProxyIP.JP.CMLiussss.net
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #5'
+  network: ws
+  port: 443
+  server: us.kkp.us.ci
+  servername: us.kkp.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
+  ws-opts:
+    headers:
+      Host: us.kkp.us.ci
+    path: /487e07e6-2930-4e71-99b3-6792e5909f16
+- client-fingerprint: qq
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: cos-cdn-g.alicdn.win
+  servername: mms-statlc-oyu9nl-e.oppocc.men
+  tls: true
+  type: vless
+  udp: true
+  uuid: c7678d5b-d2b6-40d8-bbf7-dfbfba355f7e
+  ws-opts:
+    headers:
+      Host: mms-static-origin-e.oppocc.men
+    path: /newlogin/login.do
+- alpn:
+  - h2
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #3'
+  name: '🇷🇺 俄罗斯 | RUS #6'
   network: grpc
-  port: 443
-  server: 201.51.12.98
-  servername: vps3.nemnogogo.com
+  port: 7489
+  server: cdn585.whitenw.net
+  servername: cdn13.cloud-cdn.xyz
   tls: true
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 53d229e0-3d9a-4ca8-9e2d-9be298534773
+- name: US_speednode_0027
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
