@@ -1,9 +1,6 @@
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪DE_9|3.9MB/s
-  obfs: ''
-  obfs-password: ''
+- auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  name: '🇬🇧 英国 | GBR #1'
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   port: 13337
   server: 128.254.186.57
@@ -11,7 +8,6 @@ proxies:
   sni: mother-earth.fyi
   tls: false
   type: hysteria2
-  up: ''
 - name: 🇬🇧[www.v2nodes.com] vless-GB-1...
   port: 8443
   server: node-uk.connectsuite.org
@@ -81,36 +77,8 @@ proxies:
   port: 443
   server: 141.98.101.178
   type: ss
-- name: GB_speednode_0008
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  name: '🇬🇧 英国 | GBR #1'
-  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  port: 13337
-  server: 128.254.186.190
-  skip-cert-verify: true
-  sni: mother-earth.fyi
-  tls: false
-  type: hysteria2
 - client-fingerprint: qq
   name: '🇬🇧 英国 | GBR #2'
-  network: tcp
-  port: 443
-  server: 136.148.83.70
-  servername: aszbk-ru-78dc.my-fade.cloud
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-0001-0000-000000000000
-  ws-opts:
-    path: /
-- client-fingerprint: qq
-  name: '🇬🇧 英国 | GBR #4'
   network: tcp
   port: 443
   server: 136.148.83.71
@@ -121,3 +89,32 @@ proxies:
   uuid: 00000000-0000-0001-0000-000000000000
   ws-opts:
     path: /
+- client-fingerprint: qq
+  name: '🇬🇧 英国 | GBR #3'
+  network: tcp
+  port: 443
+  server: 136.148.83.70
+  servername: aszbk-ru-78dc.my-fade.cloud
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-0001-0000-000000000000
+  ws-opts:
+    path: /
+- alpn:
+  - h3
+  auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  name: 🇬🇧 英国 | GBR 4
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: uk-tube-01.stre4m.net
+  skip-cert-verify: true
+  sni: mother-earth.fyi
+  type: hysteria2
+- name: GB_speednode_0008
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
