@@ -1,19 +1,23 @@
 proxies:
 - alpn:
   - http/1.1
-  client-fingerprint: firefox
-  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  client-fingerprint: chrome
+  name: 🇩🇪DE_5|2.3MB/s
   network: ws
   port: 443
   server: 188.225.33.67
   servername: e2.cdnwh.icu
   tls: true
   type: vless
+  udp: true
   uuid: b432a23a-acff-425c-bf69-70480cd6ed09
   ws-opts:
     headers:
       Host: e2.cdnwh.icu
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /stream/segment/3078a41dd7eb/
+  xudp: true
 - name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
   port: 9543
   server: 146.103.43.70
@@ -84,6 +88,24 @@ proxies:
   port: 443
   server: 193.108.119.78
   type: trojan
+- encryption: mlkem768x25519plus.native.0rtt.deywwZA3p0j7HoIWdGDoQdbUglXI4dyKHAOujCvK-Vk
+  name: '🇩🇪 德国 | DEU #1'
+  network: tcp
+  port: 443
+  server: 176.114.95.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 9a591702-24c7-4abf-9f14-ac59438a64e6
+  ws-opts:
+    path: /
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇩🇪 德国 | DEU #4'
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 8.211.56.98
+  type: ss
+  udp: true
 - name: US_speednode_0027
   port: 443
   server: 172.64.69.89
@@ -106,60 +128,78 @@ proxies:
   tls: true
   type: http
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇩🇪DE_8|4.4MB/s
-  network: ws
-  port: 27154
-  server: 94.130.237.57
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- name: DK_speednode_0005
+  password: None
+  port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  uuid: d9d02f3e-c877-4a1f-990e-f2418777f745
-  ws-opts:
-    headers:
-      Host: 94.130.237.57
-    path: /Telegram=@AmyraxVPN
-  xudp: true
-- client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #1'
-  network: xhttp
+- name: 🇩🇪DE_14|3.9MB/s
+  port: 10809
+  server: 91.107.179.68
+  skip-cert-verify: true
+  type: socks5
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_15|1.8MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 030e421e-9317-4cb8-8fbe-a07a565ad3db
   port: 443
-  server: 193.160.208.240
-  servername: 193.160.208.240
+  server: 4f070970.con.metricdraft.tech
+  skip-cert-verify: false
+  sni: 4f070970.con.metricdraft.tech
+  type: hysteria2
+  up: ''
+- name: 🇩🇪DE_17|1.1MB/s
+  port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_18|3.4MB/s
+  network: ws
+  port: 443
+  server: quiz.int.vidio.com.ex33r.eu.cc
+  servername: quiz.int.vidio.com.ex33r.eu.cc
   tls: true
   type: vless
   udp: true
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  xhttp-opts:
-    mode: auto
-    path: /assets/twru01/
-- cipher: aes-256-gcm
-  name: '🇩🇪 德国 | DEU #2'
-  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
-  port: 22084
-  server: 038b7750485a79a0.lebufflonfermegroup.us
-  type: ss
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国 | DEU 3
-  port: 28059
-  server: 194.110.210.41
+  uuid: 63ec2a82-e47c-4782-a89e-9aca2baf17ef
+  ws-opts:
+    headers:
+      Host: quiz.int.vidio.com.ex33r.eu.cc
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /id-pusat
+  xudp: true
+- name: 🇩🇪DE_19|2.7MB/s
+  port: 9002
+  server: 158.173.154.3
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c38605a8-89ae-4e57-b9b0-35606df2e1a3
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪 德国 | DEU #3'
+  tls: true
+  type: http
+- encryption: mlkem768x25519plus.native.0rtt.F4L-tzF4xZP8_exCC-za3YLuTJ7Jiya3scz-WVRnWjU
+  name: 🇩🇪 德国 | DEU 2
   network: tcp
-  port: 28059
-  server: 194.110.210.41
+  port: 443
+  server: Karen.shahankhan.ir
   tls: false
-  type: vmess
-  uuid: c38605a8-89ae-4e57-b9b0-35606df2e1a3
+  type: vless
+  udp: true
+  uuid: a6eed628-ef46-4eb1-b1c9-e13853e082c3
+- name: '🇩🇪 德国 | DEU #2'
+  network: tcp
+  port: 443
+  server: karen.shahankhan.ir
+  tls: false
+  type: vless
+  uuid: a6eed628-ef46-4eb1-b1c9-e13853e082c3
+  ws-opts:
+    headers:
+      Host: Karen.shahankhan.ir
+    path: /

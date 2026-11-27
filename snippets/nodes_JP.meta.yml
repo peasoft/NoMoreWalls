@@ -1,12 +1,13 @@
 proxies:
 - client-fingerprint: firefox
-  name: 🇯🇵[www.v2nodes.com] vless-JP-1...
+  name: '🇯🇵 日本 | JPN #1'
   network: ws
   port: 8463
   server: 213.183.41.31
   servername: share.plumstatic.com
   tls: true
   type: vless
+  udp: true
   uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   ws-opts:
     path: /ws
@@ -28,29 +29,23 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- name: 🇯🇵JP_1|3.9MB/s
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇯🇵JP_1|1.1MB/s
+  network: tcp
   port: 443
-  server: fan.571589.xyz
+  server: 50.7.159.242
+  servername: jp.reddotcorp.org
   tls: true
-  type: http
-- name: 🇯🇵JP_2|1.3MB/s
-  password: EGJDy5Kg
-  port: 42000
-  server: 103.248.150.50
+  type: vless
+  udp: true
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
+  xudp: true
+- name: 🇯🇵 日本 | JPN
+  password: c0e8e373-946f-4862-98e6-3aaf1db7b53c
+  port: 57180
+  server: media.gosthk.site
   skip-cert-verify: true
-  type: socks5
-  username: paZFN3JA
-- name: 🇯🇵JP_3|3.5MB/s
-  password: J5rM2xL9
-  port: 42000
-  server: 103.248.150.238
-  skip-cert-verify: true
-  type: socks5
-  username: tB4vN7qP
-- cipher: aes-256-gcm
-  name: '🇯🇵 日本 | JPN #1'
-  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
-  port: 22069
-  server: 038b7750485a79a0.lebufflonfermegroup.us
-  type: ss
+  sni: media.gosthk.site
+  type: anytls
   udp: true
